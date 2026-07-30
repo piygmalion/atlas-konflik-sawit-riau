@@ -17,6 +17,8 @@
     "kab_kota": 12,
     "polres": 12,
     "objek_agrinas": 139,
+    "objek_mappable": 34,
+    "objek_titik": 66,
     "kasus_konflik": 113,
     "choropleth": 12,
     "fitur_spasial": 82,
@@ -71,7 +73,7 @@
     "Nusantara Atlas / GFW (cocokan)"
   ],
   "update_command": "python website/scripts/apply_dq_fixes.py && python website/scripts/export_web_data.py",
-  "catatan": "Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); coverage 83/30 setelah DQ; skor = indeks liputan+objek+register. Bukan batas legal HGU/IUP.",
+  "catatan": "Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); coverage 83/30 setelah DQ; skor = indeks liputan+objek+register. Bukan batas legal HGU/IUP. objek_titik (66) ≠ objek_agrinas (139): dual grain — titik = proksi (20 OSINT + 12 REF + 34 mappable); jangan bandingkan 1:1.",
   "methodology": {
     "skor_type": "indeks_liputan_objek_register",
     "disclaimer": "Indeks liputan+objek+register terbuka — bukan vonis operasional. Setelah DQ: 83/30 entri terpetakan/tidak. Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi.",

@@ -32,12 +32,14 @@ root CSV/XLSX  →  apply_dq_fixes.py (opsional)  →  export_web_data.py  →  
 
 | | |
 |---|---|
-| **Grain** | 1 baris / objek Agrinas–Satgas |
+| **Grain** | 1 baris / objek Agrinas–Satgas (**entity registry**: badan hukum / mitra KSO / unit kelola) |
 | **PK** | `id` (`OBJ-###`) |
 | **Wajib** | `id`, `nama`, `prioritas`, `kab_primary`, `mappable` |
 | **Opsional** | `mitra_pair` (**sumber-null / non-wajib**), `luas_disebut`, `kab_list`, `polres_primary` |
 
 `kab_primary` = satu kab kanonik atau `MULTI`. Agregat choropleth sebaiknya memakai `kab_primary`, bukan string `kab_kota` bebas.
+
+**Policy titik vs objek (bukan gap 1:1):** `objek_agrinas` (≈139) ≠ layer `objek_titik` (≈66). Titik adalah **proksi spasial campuran**: hotspot OSINT tempat + centroid kab REF + expand DQ centroid-kab untuk objek `mappable=ya` prioritas Tinggi/Kritis. Objek `MULTI` / Mitra KSO agregat **tidak** dipaksa-plot. Metrik benar: coverage mappable (≈34/139), bukan 66/139.
 
 ### kasus (`kasus.json` / `master_kasus_sawit_riau.csv`)
 
