@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas Konflik Sawit Riau</title>
+  <meta name="description" content="Peta interaktif konflik dan permasalahan sawit di Provinsi Riau — objek Agrinas–Satgas, ranking Polres, dan celahan legal." />
+  <meta property="og:title" content="Atlas Konflik Sawit Riau" />
+  <meta property="og:description" content="Pemetaan spasial konflik sawit Riau — interaktif dan dapat diperbarui." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand-block">
+        <p class="brand">Atlas Konflik Sawit Riau</p>
+        <p class="brand-sub" id="updatedAt">Memuat data…</p>
+      </div>
+      <nav class="top-nav" aria-label="Navigasi utama">
+        <button class="nav-btn is-active" data-view="peta">Peta</button>
+        <button class="nav-btn" data-view="cerita">Cerita</button>
+        <button class="nav-btn" data-view="data">Data</button>
+      </nav>
+      <div class="search-wrap">
+        <label class="sr-only" for="searchInput">Cari wilayah, Polres, perusahaan</label>
+        <input id="searchInput" type="search" placeholder="Cari kabupaten, Polres, objek…" autocomplete="off" />
+        <div id="searchResults" class="search-results" hidden></div>
+      </div>
+    </header>
+
+    <main class="stage" id="mapStage">
+      <div class="map-shell" aria-label="Peta interaktif">
+        <div id="map"></div>
+
+        <aside class="float-panel rail" aria-label="Panel kontrol">
+          <div class="stat-strip" id="statsGrid"></div>
+
+          <section class="rail-section">
+            <h2>Lapisan</h2>
+            <div class="layer-list" id="layerList"></div>
+          </section>
+
+          <section class="rail-section">
+            <h2>Filter</h2>
+            <div class="chip-row" id="priorityFilters">
+              <button class="chip is-on" data-priority="all">Semua</button>
+              <button class="chip" data-priority="PRIORITAS">Prioritas</button>
+              <button class="chip" data-priority="WASPADA">Waspada</button>
+              <button class="chip" data-priority="PANTAU">Pantau</button>
+            </div>
+          </section>
+
+          <section class="rail-section grow">
+            <h2>Ranking Polres</h2>
+            <ol class="rank-list" id="polresList"></ol>
+          </section>
+        </aside>
+
+        <aside class="float-panel detail" id="detailPanel" aria-live="polite">
+          <button class="detail-close" id="detailClose" type="button" aria-label="Tutup panel">×</button>
+          <div id="detailContent">
+            <p class="eyebrow">Mulai di sini</p>
+            <h1>Konflik sawit, dibaca lewat ruang</h1>
+            <p class="lead">Klik titik di peta atau Polres di ranking untuk membuka kasus, objek Agrinas–Satgas, dan sinyal risiko yang saling terkait.</p>
+            <div class="howto">
+              <div><strong>1</strong><span>Atur lapisan &amp; filter</span></div>
+              <div><strong>2</strong><span>Klik fitur spasial</span></div>
+              <div><strong>3</strong><span>Telusuri kasus terkait</span></div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="map-legend" id="mapLegend">
+          <strong>Legenda</strong>
+          <div><span class="dot prioritas"></span> Prioritas</div>
+          <div><span class="dot waspada"></span> Waspada</div>
+          <div><span class="dot pantau"></span> Pantau</div>
+          <div><span class="swatch koridor"></span> Koridor</div>
+        </div>
+
+        <p class="map-note">Proksi OSINT — bukan batas HGU/IUP. Bukti satelit: <a href="https://map.nusantara-atlas.org/" target="_blank" rel="noopener">Nusantara Atlas</a></p>
+      </div>
+    </main>
+
+    <section class="story-view" id="storyView" hidden>
+      <article class="story-hero">
+        <p class="eyebrow">Narasi singkat</p>
+        <h1>Dari konsesi ke konflik: pola yang berulang di Riau</h1>
+        <p>Riau bukan frontier ekspansi baru seperti Papua. Polanya adalah <em>legacy landscape</em>: kebun lama, gambut terdegradasi, objek penertiban kawasan hutan, dan sengketa sosial yang menumpuk di koridor Polres tertentu.</p>
+      </article>
+      <div class="story-grid" id="storyGrid"></div>
+    </section>
+
+    <section class="data-view" id="dataView" hidden>
+      <div class="data-header">
+        <div>
+          <p class="eyebrow">Struktur data</p>
+          <h1>Siap di-update berkala</h1>
+          <p>Semua tampilan membaca folder <code>data/</code>. Setelah workbook berubah, jalankan skrip ekspor — frontend tidak perlu diubah.</p>
+        </div>
+        <code class="cmd">python scripts/export_web_data.py</code>
+      </div>
+      <div class="table-wrap">
+        <div class="table-tabs" id="tableTabs"></div>
+        <div class="table-scroll">
+          <table id="dataTable">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

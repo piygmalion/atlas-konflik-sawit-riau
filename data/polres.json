@@ -1,0 +1,288 @@
+{
+  "model": {
+    "kategori": {
+      "PANTAU": "0-39",
+      "WASPADA": "40-69",
+      "PRIORITAS": "70-100"
+    },
+    "catatan": "Skor early-warning OSINT terbuka, bukan vonis operasional."
+  },
+  "records": [
+    {
+      "peringkat": 1,
+      "polres": "Polres Rokan Hulu",
+      "skor": 86.0,
+      "kategori": "PRIORITAS",
+      "skor_osint": 92.0,
+      "skor_register": 72.2,
+      "n_entri": 13.0,
+      "n_aksi_massa": 2.0,
+      "n_kekerasan": 1.0,
+      "n_agrinas": 20.0,
+      "n_recent": 13.0,
+      "n_tabel_konflik": 9.0,
+      "komponen": {
+        "liputan": 90.4,
+        "aksi": 81.1,
+        "objek": 90.3,
+        "status": 84.2,
+        "adat": 79.9
+      },
+      "alasan": "Adat Rantau Kasai tolak kebijakan Agrinas (Jan 2026); bentrok karyawan Torganda–Agrinas (Mar 2026); KSO NSM; konsentrasi objek tinggi",
+      "tahun": "2025,2026"
+    },
+    {
+      "peringkat": 2,
+      "polres": "Polres Indragiri Hulu",
+      "skor": 77.4,
+      "kategori": "PRIORITAS",
+      "skor_osint": 81.0,
+      "skor_register": 69.0,
+      "n_entri": 10.0,
+      "n_aksi_massa": 3.0,
+      "n_kekerasan": 2.0,
+      "n_agrinas": 10.0,
+      "n_recent": 10.0,
+      "n_tabel_konflik": 13.0,
+      "komponen": {
+        "liputan": 80.7,
+        "aksi": 69.0,
+        "objek": 88.4,
+        "status": 76.0,
+        "adat": 68.7
+      },
+      "alasan": "Basis historis konflik Duta Palma; objek Tahap I; desa Penyaguan dkk.; risiko latensi pasca-pengambilalihan",
+      "tahun": "2026"
+    },
+    {
+      "peringkat": 3,
+      "polres": "Polres Kuantan Singingi",
+      "skor": 74.8,
+      "kategori": "PRIORITAS",
+      "skor_osint": 78.2,
+      "skor_register": 66.8,
+      "n_entri": 9.0,
+      "n_aksi_massa": 1.0,
+      "n_kekerasan": 2.0,
+      "n_agrinas": 14.0,
+      "n_recent": 9.0,
+      "n_tabel_konflik": 13.0,
+      "komponen": {
+        "liputan": 76.0,
+        "aksi": 62.0,
+        "objek": 79.2,
+        "status": 81.0,
+        "adat": 85.4
+      },
+      "alasan": "Konflik adat Siberakun/Kopah vs Duta Palma; HGU/ulayat; potensi berlanjut di bawah kelola baru",
+      "tahun": "2026"
+    },
+    {
+      "peringkat": 4,
+      "polres": "Polres Pelalawan",
+      "skor": 73.7,
+      "kategori": "PRIORITAS",
+      "skor_osint": 86.2,
+      "skor_register": 44.4,
+      "n_entri": 7.0,
+      "n_aksi_massa": 0.0,
+      "n_kekerasan": 0.0,
+      "n_agrinas": 10.0,
+      "n_recent": 7.0,
+      "n_tabel_konflik": 2.0,
+      "komponen": {
+        "liputan": 80.2,
+        "aksi": 66.5,
+        "objek": 75.4,
+        "status": 76.0,
+        "adat": 65.2
+      },
+      "alasan": "Tesso Nilo: aksi ribuan warga di Kejati (Nov 2025); tuntutan tarik Satgas/Agrinas; mediasi belum tuntas",
+      "tahun": "2024,2026"
+    },
+    {
+      "peringkat": 5,
+      "polres": "Polres Rokan Hilir",
+      "skor": 64.3,
+      "kategori": "WASPADA",
+      "skor_osint": 54.0,
+      "skor_register": 88.4,
+      "n_entri": 17.0,
+      "n_aksi_massa": 8.0,
+      "n_kekerasan": 4.0,
+      "n_agrinas": 22.0,
+      "n_recent": 17.0,
+      "n_tabel_konflik": 13.0,
+      "komponen": {
+        "liputan": 64.7,
+        "aksi": 59.3,
+        "objek": 77.6,
+        "status": 62.3,
+        "adat": 52.2
+      },
+      "alasan": "Konsentrasi entri KSO/Satgas di register situasional; perlu verifikasi objek spesifik di lapangan",
+      "tahun": "2024,2026"
+    },
+    {
+      "peringkat": 6,
+      "polres": "Polres Bengkalis",
+      "skor": 62.3,
+      "kategori": "WASPADA",
+      "skor_osint": 72.0,
+      "skor_register": 39.7,
+      "n_entri": 4.0,
+      "n_aksi_massa": 2.0,
+      "n_kekerasan": 0.0,
+      "n_agrinas": 5.0,
+      "n_recent": 4.0,
+      "n_tabel_konflik": 5.0,
+      "komponen": {
+        "liputan": 64.1,
+        "aksi": 59.1,
+        "objek": 62.6,
+        "status": 64.1,
+        "adat": 61.7
+      },
+      "alasan": "Lubuk Gaung/Siak Kecil: sengketa lahan eks SSS yang dikelola Agrinas (2026); tuntutan kepastian hukum",
+      "tahun": "2024,2025,2026"
+    },
+    {
+      "peringkat": 7,
+      "polres": "Polres Indragiri Hilir",
+      "skor": 52.4,
+      "kategori": "WASPADA",
+      "skor_osint": 57.2,
+      "skor_register": 41.0,
+      "n_entri": 5.0,
+      "n_aksi_massa": 0.0,
+      "n_kekerasan": 0.0,
+      "n_agrinas": 10.0,
+      "n_recent": 5.0,
+      "n_tabel_konflik": 7.0,
+      "komponen": {
+        "liputan": 55.7,
+        "aksi": 31.5,
+        "objek": 71.4,
+        "status": 58.3,
+        "adat": 47.7
+      },
+      "alasan": "Kehadiran klaster Duta Palma di koridor tapal batas; liputan lebih tipis dari Inhu/Kuansing",
+      "tahun": "2026"
+    },
+    {
+      "peringkat": 8,
+      "polres": "Polres Kampar",
+      "skor": 42.8,
+      "kategori": "WASPADA",
+      "skor_osint": 40.2,
+      "skor_register": 48.7,
+      "n_entri": 6.0,
+      "n_aksi_massa": 2.0,
+      "n_kekerasan": 2.0,
+      "n_agrinas": 4.0,
+      "n_recent": 6.0,
+      "n_tabel_konflik": 2.0,
+      "komponen": {
+        "liputan": 43.6,
+        "aksi": 41.6,
+        "objek": 49.2,
+        "status": 42.0,
+        "adat": 31.7
+      },
+      "alasan": "Entri situasional Satgas/KSO ada; sinyal aksi massa terbatas di sumber terbuka",
+      "tahun": "2024,2026"
+    },
+    {
+      "peringkat": 9,
+      "polres": "Polres Dumai",
+      "skor": 39.8,
+      "kategori": "PANTAU",
+      "skor_osint": 35.2,
+      "skor_register": 50.3,
+      "n_entri": 6.0,
+      "n_aksi_massa": 3.0,
+      "n_kekerasan": 0.0,
+      "n_agrinas": 8.0,
+      "n_recent": 6.0,
+      "n_tabel_konflik": 7.0,
+      "komponen": {
+        "liputan": 40.1,
+        "aksi": 34.0,
+        "objek": 53.1,
+        "status": 38.5,
+        "adat": 28.2
+      },
+      "alasan": "Objek KSO/Satgas situasional tercatat; monitoring rutin",
+      "tahun": "2026"
+    },
+    {
+      "peringkat": 10,
+      "polres": "Polres Pekanbaru",
+      "skor": 38.2,
+      "kategori": "PANTAU",
+      "skor_osint": 33.5,
+      "skor_register": 49.2,
+      "n_entri": 7.0,
+      "n_aksi_massa": 2.0,
+      "n_kekerasan": 0.0,
+      "n_agrinas": 10.0,
+      "n_recent": 7.0,
+      "n_tabel_konflik": 2.0,
+      "komponen": {
+        "liputan": 41.7,
+        "aksi": 38.1,
+        "objek": 40.4,
+        "status": 37.3,
+        "adat": 24.7
+      },
+      "alasan": "Pusat aksi/demo dimungkinkan; objek kebun terbatas",
+      "tahun": "2024,2026"
+    },
+    {
+      "peringkat": 11,
+      "polres": "Polres Siak",
+      "skor": 37.5,
+      "kategori": "PANTAU",
+      "skor_osint": 38.0,
+      "skor_register": 36.3,
+      "n_entri": 4.0,
+      "n_aksi_massa": 0.0,
+      "n_kekerasan": 1.0,
+      "n_agrinas": 6.0,
+      "n_recent": 4.0,
+      "n_tabel_konflik": 4.0,
+      "komponen": {
+        "liputan": 39.6,
+        "aksi": 25.4,
+        "objek": 48.8,
+        "status": 42.0,
+        "adat": 31.7
+      },
+      "alasan": "Sinyal sekunder/terbatas terkait objek Agrinas; monitoring rutin",
+      "tahun": "2026"
+    },
+    {
+      "peringkat": 12,
+      "polres": "Polres Kepulauan Meranti",
+      "skor": 16.6,
+      "kategori": "PANTAU",
+      "skor_osint": 23.2,
+      "skor_register": 1.0,
+      "n_entri": 0.0,
+      "n_aksi_massa": 0.0,
+      "n_kekerasan": 0.0,
+      "n_agrinas": 0.0,
+      "n_recent": 0.0,
+      "n_tabel_konflik": 1.0,
+      "komponen": {
+        "liputan": 17.5,
+        "aksi": 14.0,
+        "objek": 19.0,
+        "status": 17.5,
+        "adat": 14.0
+      },
+      "alasan": "Sinyal Agrinas terbatas di sumber terbuka",
+      "tahun": null
+    }
+  ]
+}
