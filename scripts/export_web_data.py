@@ -4,14 +4,13 @@ Ekspor workbook/CSV workspace -> website/data/*.json|geojson
 Jalankan berkala setelah update workbook:
 
   python website/scripts/export_web_data.py
-
-Skema keluaran dirancang stabil agar frontend tidak perlu diubah tiap update.
 """
 
 from __future__ import annotations
 
 import csv
 import json
+import math
 import re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -21,22 +20,52 @@ try:
 except ImportError as exc:
     raise SystemExit("openpyxl diperlukan: pip install openpyxl") from exc
 
+try:
+    from shapely.geometry import mapping, shape
+    from shapely.ops import transform as shp_transform
+
+    HAS_SHAPELY = True
+except ImportError:
+    HAS_SHAPELY = False
+
 HERE = Path(__file__).resolve()
-SITE = HERE.parents[1]  # website/ or repo root
-# Prefer parent workspace if workbooks live there (local monorepo layout)
+SITE = HERE.parents[1]
 _candidates = [SITE.parent, SITE]
 ROOT = next(
-    (p for p in _candidates if (p / "Master_List_Objek_Agrinas_Satgas_Riau.xlsx").exists() or (p / "master_list_objek_agrinas_satgas_riau.csv").exists()),
+    (
+        p
+        for p in _candidates
+        if (p / "Master_List_Objek_Agrinas_Satgas_Riau.xlsx").exists()
+        or (p / "master_list_objek_agrinas_satgas_riau.csv").exists()
+    ),
     SITE.parent,
 )
 OUT = SITE / "data"
 OUT.mkdir(parents=True, exist_ok=True)
 
+RIAU_BBOX = (100.0, -1.2, 103.6, 2.6)
+RIAU_ADM2_RAW = [
+    "bengkalis",
+    "dumai",
+    "kota dumai",
+    "indragiri hilir",
+    "indragiri hulu",
+    "kampar",
+    "kepulauan meranti",
+    "kuantan singingi",
+    "pelalawan",
+    "pekanbaru",
+    "kota pekanbaru",
+    "rokan hilir",
+    "rokan hulu",
+    "siak",
+]
+
 
 def clean(v):
     if v is None:
         return None
-    if isinstance(v, float) and v != v:  # NaN
+    if isinstance(v, float) and v != v:
         return None
     if isinstance(v, datetime):
         return v.date().isoformat()
@@ -67,21 +96,21 @@ def sheet_rows(wb_name: str, sheet: str, header_row: int = 1) -> list[dict]:
     wb.close()
     if len(rows) < header_row:
         return []
-    headers = []
-    for i, h in enumerate(rows[header_row - 1]):
-        headers.append(str(h).strip() if h else f"col_{i}")
+    headers = [str(h).strip() if h else f"col_{i}" for i, h in enumerate(rows[header_row - 1])]
     out = []
     for row in rows[header_row:]:
         if all(v is None or str(v).strip() == "" for v in row):
             continue
-        item = {headers[i]: clean(row[i] if i < len(row) else None) for i in range(len(headers))}
-        out.append(item)
+        out.append({headers[i]: clean(row[i] if i < len(row) else None) for i in range(len(headers))})
     return out
 
 
-def write_json(name: str, payload):
+def write_json(name: str, payload, compact: bool = False):
     path = OUT / name
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    if compact:
+        path.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    else:
+        path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"  wrote {path.name} ({path.stat().st_size:,} bytes)")
 
 
@@ -95,6 +124,90 @@ def to_float(v):
     return float(m.group(0)) if m else None
 
 
+def norm_name(s: str | None) -> str:
+    if not s:
+        return ""
+    t = str(s).lower()
+    t = t.replace("kabupaten", " ").replace("kab.", " ").replace("kota", " ")
+    t = t.replace("kepulauan", "kep").replace("kep.", "kep")
+    return re.sub(r"[^a-z0-9]+", " ", t).strip()
+
+
+RIAU_ADM2_NAMES = {norm_name(x) for x in RIAU_ADM2_RAW}
+
+
+def slug(s: str | None) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", (s or "unknown").lower()).strip("-")
+
+
+def parse_bbox(text: str | None):
+    if not text:
+        return None
+    t = str(text).lower().replace("–", "-").replace("—", "-")
+    m = re.search(
+        r"lon\s*(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)\s*;\s*lat\s*(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)",
+        t,
+    )
+    if m:
+        xs = sorted([float(m.group(1)), float(m.group(2))])
+        ys = sorted([float(m.group(3)), float(m.group(4))])
+        return xs[0], ys[0], xs[1], ys[1]
+    nums = [to_float(x) for x in re.split(r"[,;\s]+", t) if to_float(x) is not None]
+    if len(nums) >= 4:
+        xs = sorted([nums[0], nums[2]])
+        ys = sorted([nums[1], nums[3]])
+        return xs[0], ys[0], xs[1], ys[1]
+    return None
+
+
+def geom_centroid_lonlat(geom: dict):
+    if not geom:
+        return None, None
+    if HAS_SHAPELY:
+        try:
+            c = shape(geom).centroid
+            return float(c.x), float(c.y)
+        except Exception:
+            pass
+    coords = []
+
+    def walk(node):
+        if isinstance(node, (list, tuple)) and node and isinstance(node[0], (int, float)):
+            coords.append((float(node[0]), float(node[1])))
+        elif isinstance(node, (list, tuple)):
+            for child in node:
+                walk(child)
+
+    walk(geom.get("coordinates"))
+    if not coords:
+        return None, None
+    return sum(x for x, _ in coords) / len(coords), sum(y for _, y in coords) / len(coords)
+
+
+def in_riau_bbox(lon: float | None, lat: float | None) -> bool:
+    if lon is None or lat is None:
+        return False
+    minx, miny, maxx, maxy = RIAU_BBOX
+    return minx - 0.3 <= lon <= maxx + 0.3 and miny - 0.3 <= lat <= maxy + 0.3
+
+
+def simplify_geometry(geom: dict, tolerance: float = 0.004):
+    if not geom:
+        return geom
+    if HAS_SHAPELY:
+        try:
+            g = shape(geom)
+            if g.is_empty:
+                return geom
+            simple = g.simplify(tolerance, preserve_topology=True)
+            if simple.is_empty:
+                return geom
+            return mapping(simple)
+        except Exception:
+            return geom
+    return geom
+
+
 def export_kab_kota():
     clusters = read_csv("cluster_kabkota_agrinas.csv")
     risiko = sheet_rows("TABEL_KONFLIK_AGRARIA_SAWIT_RIAU.xlsx", "Peta_Risiko_Sawit_Kab")
@@ -104,7 +217,6 @@ def export_kab_kota():
         if kab is not None and str(kab).strip():
             risiko_map[str(kab).lower()] = r
 
-    features = []
     records = []
     for c in clusters:
         kab = c.get("kab_kota")
@@ -115,51 +227,98 @@ def export_kab_kota():
             if kab and (kab.lower() in key or key in kab.lower()):
                 risk = val
                 break
-        rec = {
-            "id": re.sub(r"[^a-z0-9]+", "-", (kab or "unknown").lower()).strip("-"),
-            "kab_kota": kab,
-            "cluster": c.get("cluster"),
-            "skor_komposit": to_float(c.get("skor_komposit")),
-            "kategori_peta": c.get("kategori_peta"),
-            "sinyal_agrinas": to_float(c.get("sinyal_agrinas_0_5")),
-            "sebaran": to_float(c.get("sebaran_0_5")),
-            "kasus_konflik_agrinas": to_float(c.get("kasus_konflik_agrinas")),
-            "luas_disebut_terbuka": c.get("luas_disebut_terbuka"),
-            "klhk_korp_kh_2022_ha": to_float(c.get("klhk_korp_kh_2022_ha")),
-            "objek_sinyal_utama": c.get("objek_sinyal_utama"),
-            "hotspot_kecamatan": c.get("hotspot_kecamatan_perkiraan"),
-            "polres_proksi": c.get("polres_proksi"),
-            "ketidakpastian": c.get("ketidakpastian"),
-            "lon": lon,
-            "lat": lat,
-            "catatan_peta": c.get("catatan_peta"),
-            "risiko_register": {
-                "skor": to_float(risk.get("Skor_Risiko_Sawit")),
-                "level": risk.get("Level_Risiko"),
-                "kasus_ops": to_float(risk.get("Jumlah_Kasus_Ops_Sawit")),
-                "jumlah_lp": to_float(risk.get("Jumlah_LP")),
-                "driver_utama": risk.get("Driver_Utama"),
-                "rekomendasi": risk.get("Rekomendasi"),
-            },
-        }
-        records.append(rec)
-        if lon is not None and lat is not None:
-            features.append(
-                {
-                    "type": "Feature",
-                    "geometry": {"type": "Point", "coordinates": [lon, lat]},
-                    "properties": {
-                        "id": rec["id"],
-                        "nama": kab,
-                        "tipe": "kab_kota",
-                        "kategori": rec["kategori_peta"],
-                        "skor": rec["skor_komposit"],
-                        "polres": rec["polres_proksi"],
-                        "level_risiko": rec["risiko_register"]["level"],
-                    },
-                }
-            )
-    write_json("kab_kota.json", {"updated": True, "records": records})
+        records.append(
+            {
+                "id": slug(kab),
+                "kab_kota": kab,
+                "shape_name": None,
+                "cluster": c.get("cluster"),
+                "skor_komposit": to_float(c.get("skor_komposit")),
+                "kategori_peta": c.get("kategori_peta"),
+                "sinyal_agrinas": to_float(c.get("sinyal_agrinas_0_5")),
+                "sebaran": to_float(c.get("sebaran_0_5")),
+                "kasus_konflik_agrinas": to_float(c.get("kasus_konflik_agrinas")),
+                "luas_disebut_terbuka": c.get("luas_disebut_terbuka"),
+                "klhk_korp_kh_2022_ha": to_float(c.get("klhk_korp_kh_2022_ha")),
+                "objek_sinyal_utama": c.get("objek_sinyal_utama"),
+                "hotspot_kecamatan": c.get("hotspot_kecamatan_perkiraan"),
+                "polres_proksi": c.get("polres_proksi"),
+                "ketidakpastian": c.get("ketidakpastian"),
+                "lon": lon,
+                "lat": lat,
+                "catatan_peta": c.get("catatan_peta"),
+                "n_kasus": 0,
+                "risiko_register": {
+                    "skor": to_float(risk.get("Skor_Risiko_Sawit")),
+                    "level": risk.get("Level_Risiko"),
+                    "kasus_ops": to_float(risk.get("Jumlah_Kasus_Ops_Sawit")),
+                    "jumlah_lp": to_float(risk.get("Jumlah_LP")),
+                    "driver_utama": risk.get("Driver_Utama"),
+                    "rekomendasi": risk.get("Rekomendasi"),
+                },
+            }
+        )
+    return records
+
+
+def match_kab_record(records: list[dict], name: str):
+    n = norm_name(name)
+    for rec in records:
+        rn = norm_name(rec.get("kab_kota"))
+        if not rn:
+            continue
+        if n == rn or n in rn or rn in n:
+            return rec
+    return None
+
+
+def export_adm2_choropleth(kab_records: list[dict]):
+    src = ROOT / "tmp" / "spatial" / "idn_adm2_simplified.geojson"
+    features = []
+    if not src.exists():
+        write_json("adm2_riau.geojson", {"type": "FeatureCollection", "features": []}, compact=True)
+        return []
+
+    raw = json.loads(src.read_text(encoding="utf-8"))
+    used = set()
+    for f in raw.get("features", []):
+        shape_name = (f.get("properties") or {}).get("shapeName")
+        n = norm_name(shape_name)
+        if n not in RIAU_ADM2_NAMES and not any(n == x or x in n or n in x for x in RIAU_ADM2_NAMES):
+            continue
+        lon, lat = geom_centroid_lonlat(f.get("geometry"))
+        if not in_riau_bbox(lon, lat):
+            continue
+        rec = match_kab_record(kab_records, shape_name)
+        if not rec:
+            continue
+        used.add(rec["id"])
+        rec["shape_name"] = shape_name
+        if lon and lat and (not rec.get("lon") or not rec.get("lat")):
+            rec["lon"], rec["lat"] = lon, lat
+        skor = rec.get("skor_komposit") or 0
+        risk_skor = (rec.get("risiko_register") or {}).get("skor")
+        features.append(
+            {
+                "type": "Feature",
+                "geometry": f.get("geometry"),
+                "properties": {
+                    "id": rec["id"],
+                    "nama": rec["kab_kota"],
+                    "shape_name": shape_name,
+                    "skor": skor,
+                    "skor_risiko": risk_skor,
+                    "level_risiko": (rec.get("risiko_register") or {}).get("level"),
+                    "kategori": rec.get("kategori_peta"),
+                    "polres": rec.get("polres_proksi"),
+                    "n_kasus": rec.get("n_kasus") or 0,
+                    "layer": "choropleth",
+                },
+            }
+        )
+
+    write_json("adm2_riau.geojson", {"type": "FeatureCollection", "features": features}, compact=True)
+    print(f"    choropleth polygons: {len(features)} (matched kab ids: {len(used)})")
     return features
 
 
@@ -207,102 +366,30 @@ def export_polres():
 
 def export_objek():
     rows = read_csv("master_list_objek_agrinas_satgas_riau.csv")
-    records = []
-    for r in rows:
-        records.append(
-            {
-                "id": r.get("id"),
-                "nama": r.get("nama_kanonik"),
-                "tipe_badan": r.get("tipe_badan"),
-                "lapisan": r.get("lapisan"),
-                "lapisan_semua": r.get("lapisan_semua"),
-                "peran": r.get("peran"),
-                "klaster": r.get("klaster"),
-                "kab_kota": r.get("kab_kota"),
-                "luas_disebut": r.get("luas_disebut"),
-                "status_kredibilitas": r.get("status_kredibilitas"),
-                "prioritas": r.get("prioritas"),
-                "kaitan_agrinas": r.get("kaitan_agrinas"),
-                "cro_regional": r.get("cro_regional"),
-                "mitra_pair": r.get("mitra_pair"),
-                "ada_di_bps": r.get("ada_di_bps"),
-                "ada_di_konflik_polda": r.get("ada_di_konflik_polda"),
-                "sumber": r.get("sumber"),
-            }
-        )
+    records = [
+        {
+            "id": r.get("id"),
+            "nama": r.get("nama_kanonik"),
+            "tipe_badan": r.get("tipe_badan"),
+            "lapisan": r.get("lapisan"),
+            "lapisan_semua": r.get("lapisan_semua"),
+            "peran": r.get("peran"),
+            "klaster": r.get("klaster"),
+            "kab_kota": r.get("kab_kota"),
+            "luas_disebut": r.get("luas_disebut"),
+            "status_kredibilitas": r.get("status_kredibilitas"),
+            "prioritas": r.get("prioritas"),
+            "kaitan_agrinas": r.get("kaitan_agrinas"),
+            "cro_regional": r.get("cro_regional"),
+            "mitra_pair": r.get("mitra_pair"),
+            "ada_di_bps": r.get("ada_di_bps"),
+            "ada_di_konflik_polda": r.get("ada_di_konflik_polda"),
+            "sumber": r.get("sumber"),
+        }
+        for r in rows
+    ]
     write_json("objek_agrinas.json", {"total": len(records), "records": records})
     return records
-
-
-def export_titik_geojson(kab_features):
-    path = ROOT / "proksi_peta_titik_agrinas.geojson"
-    features = []
-    if path.exists():
-        raw = json.loads(path.read_text(encoding="utf-8"))
-        for f in raw.get("features", []):
-            props = {k: clean(v) for k, v in (f.get("properties") or {}).items()}
-            features.append(
-                {
-                    "type": "Feature",
-                    "geometry": f.get("geometry"),
-                    "properties": {
-                        "id": props.get("id"),
-                        "nama": props.get("nama"),
-                        "kab_kota": props.get("kab_kota"),
-                        "tipe": props.get("tipe") or "objek",
-                        "prioritas": props.get("prioritas"),
-                        "catatan": props.get("catatan"),
-                        "polres_proksi": props.get("polres_proksi"),
-                        "sumber": props.get("sumber"),
-                        "layer": "objek_titik",
-                    },
-                }
-            )
-    for f in kab_features:
-        f2 = dict(f)
-        f2["properties"] = dict(f["properties"])
-        f2["properties"]["layer"] = "kab_centroid"
-        features.append(f2)
-
-    # koridor as bbox polygons if available
-    for k in read_csv("proksi_peta_koridor_agrinas.csv"):
-        bbox = k.get("bbox_approx")
-        if not bbox:
-            continue
-        nums = [to_float(x) for x in re.split(r"[,;\s]+", bbox) if to_float(x) is not None]
-        if len(nums) >= 4:
-            minx, miny, maxx, maxy = nums[:4]
-            features.append(
-                {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [
-                            [
-                                [minx, miny],
-                                [maxx, miny],
-                                [maxx, maxy],
-                                [minx, maxy],
-                                [minx, miny],
-                            ]
-                        ],
-                    },
-                    "properties": {
-                        "id": k.get("id"),
-                        "nama": k.get("nama"),
-                        "tipe": "koridor",
-                        "anggota_kab": k.get("anggota_kab"),
-                        "polres_proksi": k.get("polres_proksi"),
-                        "karakter": k.get("karakter"),
-                        "prioritas": k.get("prioritas_peta"),
-                        "layer": "koridor",
-                    },
-                }
-            )
-
-    geo = {"type": "FeatureCollection", "features": features}
-    write_json("layers.geojson", geo)
-    return geo
 
 
 def export_kasus():
@@ -335,6 +422,174 @@ def export_kasus():
         )
     write_json("kasus.json", {"total": len(records), "records": records})
     return records
+
+
+def attach_kasus_counts(kab_records: list[dict], kasus: list[dict]):
+    for rec in kab_records:
+        n = 0
+        for k in kasus:
+            if match_wilayah_py(k.get("kab_kota"), rec.get("kab_kota")) or match_wilayah_py(
+                k.get("polres"), rec.get("polres_proksi")
+            ):
+                n += 1
+        rec["n_kasus"] = n
+
+
+def match_wilayah_py(a, b) -> bool:
+    if not a or not b:
+        return False
+    na, nb = norm_name(a), norm_name(b)
+    aliases = {
+        "rokan hulu": ["rohul"],
+        "rokan hilir": ["rohil"],
+        "indragiri hulu": ["inhu"],
+        "indragiri hilir": ["inhil"],
+        "kuantan singingi": ["kuansing"],
+        "kepulauan meranti": ["meranti", "kep meranti"],
+    }
+    bag_a = {na}
+    bag_b = {nb}
+    for canon, als in aliases.items():
+        if na == canon or any(x in na for x in als) or canon in na:
+            bag_a |= {canon, *als}
+        if nb == canon or any(x in nb for x in als) or canon in nb:
+            bag_b |= {canon, *als}
+    return any(x in y or y in x for x in bag_a for y in bag_b if x and y)
+
+
+def export_spatial_layers(kab_records: list[dict]):
+    features = []
+
+    # Titik objek Agrinas
+    path = ROOT / "proksi_peta_titik_agrinas.geojson"
+    if path.exists():
+        raw = json.loads(path.read_text(encoding="utf-8"))
+        for f in raw.get("features", []):
+            props = {k: clean(v) for k, v in (f.get("properties") or {}).items()}
+            features.append(
+                {
+                    "type": "Feature",
+                    "geometry": f.get("geometry"),
+                    "properties": {
+                        "id": props.get("id"),
+                        "nama": props.get("nama"),
+                        "kab_kota": props.get("kab_kota"),
+                        "tipe": props.get("tipe") or "objek",
+                        "prioritas": props.get("prioritas"),
+                        "catatan": props.get("catatan"),
+                        "polres_proksi": props.get("polres_proksi"),
+                        "sumber": props.get("sumber"),
+                        "layer": "objek_titik",
+                    },
+                }
+            )
+
+    # Koridor dari bbox teks; fallback envelope dari anggota kab
+    koridor_n = 0
+    for k in read_csv("proksi_peta_koridor_agrinas.csv"):
+        bbox = parse_bbox(k.get("bbox_approx"))
+        if not bbox:
+            members = re.split(r"[;,]", k.get("anggota_kab") or "")
+            pts = []
+            for m in members:
+                rec = match_kab_record(kab_records, m.strip())
+                if rec and rec.get("lon") is not None and rec.get("lat") is not None:
+                    pts.append((rec["lon"], rec["lat"]))
+            if len(pts) >= 1:
+                xs = [p[0] for p in pts]
+                ys = [p[1] for p in pts]
+                pad = 0.25 if len(pts) == 1 else 0.15
+                bbox = (min(xs) - pad, min(ys) - pad, max(xs) + pad, max(ys) + pad)
+        if not bbox:
+            continue
+        minx, miny, maxx, maxy = bbox
+        koridor_n += 1
+        features.append(
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [minx, miny],
+                            [maxx, miny],
+                            [maxx, maxy],
+                            [minx, maxy],
+                            [minx, miny],
+                        ]
+                    ],
+                },
+                "properties": {
+                    "id": k.get("id"),
+                    "nama": k.get("nama"),
+                    "tipe": "koridor",
+                    "anggota_kab": k.get("anggota_kab"),
+                    "polres_proksi": k.get("polres_proksi"),
+                    "karakter": k.get("karakter"),
+                    "prioritas": k.get("prioritas_peta"),
+                    "layer": "koridor",
+                },
+            }
+        )
+
+    # Densitas kasus (proksi ke centroid kab)
+    densitas_n = 0
+    for rec in kab_records:
+        if rec.get("lon") is None or rec.get("lat") is None:
+            continue
+        n = int(rec.get("n_kasus") or 0)
+        if n <= 0:
+            continue
+        densitas_n += 1
+        features.append(
+            {
+                "type": "Feature",
+                "geometry": {"type": "Point", "coordinates": [rec["lon"], rec["lat"]]},
+                "properties": {
+                    "id": rec["id"],
+                    "nama": rec["kab_kota"],
+                    "n_kasus": n,
+                    "weight": n,
+                    "skor": rec.get("skor_komposit"),
+                    "level_risiko": (rec.get("risiko_register") or {}).get("level"),
+                    "layer": "densitas_kasus",
+                },
+            }
+        )
+
+    geo = {"type": "FeatureCollection", "features": features}
+    write_json("layers.geojson", geo, compact=True)
+    print(f"    layers: objek={sum(1 for f in features if f['properties']['layer']=='objek_titik')} "
+          f"koridor={koridor_n} densitas={densitas_n}")
+    return geo
+
+
+def export_gfw_overlay():
+    src = ROOT / "tmp" / "spatial" / "gfw_oilpalm_riau.geojson"
+    features = []
+    if src.exists():
+        raw = json.loads(src.read_text(encoding="utf-8"))
+        for f in raw.get("features", []):
+            props = f.get("properties") or {}
+            geom = simplify_geometry(f.get("geometry"), tolerance=0.005)
+            features.append(
+                {
+                    "type": "Feature",
+                    "geometry": geom,
+                    "properties": {
+                        "name": props.get("name") or props.get("company"),
+                        "company": props.get("company"),
+                        "group": props.get("group_comp"),
+                        "area_ha": props.get("area_ha"),
+                        "type": props.get("type"),
+                        "hgu": props.get("po_hgu"),
+                        "layer": "gfw_konsesi",
+                    },
+                }
+            )
+    write_json("gfw_konsesi.geojson", {"type": "FeatureCollection", "features": features}, compact=True)
+    print(f"    gfw polygons: {len(features)} (shapely={HAS_SHAPELY})")
+    return features
 
 
 def export_perusahaan():
@@ -421,28 +676,31 @@ def export_meta(counts: dict):
             "brand": "Atlas Konflik Sawit Riau",
             "subtitle": "Pemetaan spasial konflik, objek Agrinas–Satgas, dan celahan perizinan",
             "updated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
-            "bbox_riau": [100.0, -1.2, 103.6, 2.6],
+            "bbox_riau": list(RIAU_BBOX),
             "center": [101.45, 0.55],
             "zoom": 8,
             "counts": counts,
             "layers": [
-                {"id": "kab_centroid", "label": "Kabupaten / Kota", "default": True},
-                {"id": "objek_titik", "label": "Titik objek Agrinas", "default": True},
+                {"id": "choropleth", "label": "Choropleth kab/kota", "default": True},
                 {"id": "koridor", "label": "Koridor spasial", "default": True},
+                {"id": "densitas_kasus", "label": "Densitas kasus", "default": True},
+                {"id": "objek_titik", "label": "Titik objek Agrinas", "default": True},
+                {"id": "gfw_konsesi", "label": "Konsesi GFW (overlay)", "default": False},
             ],
             "sumber": [
-                "Inventarisasi_Sawit_Riau_v1.1",
                 "TABEL_KONFLIK_AGRARIA_SAWIT_RIAU",
                 "Master_List_Objek_Agrinas_Satgas_Riau",
                 "Ranking_Potensi_Konflik_Per_Polres",
-                "cluster_kabkota_proksi_peta_agrinas",
+                "cluster_kabkota_agrinas",
+                "idn_adm2_simplified (choropleth)",
+                "gfw_oilpalm_riau (overlay)",
                 "Tabulasi_Kepmenhut_36_2025",
                 "Nusantara Atlas / GFW (cocokan)",
             ],
             "update_command": "python website/scripts/export_web_data.py",
             "catatan": (
-                "Koordinat kab/kota dan titik objek bersifat proksi analisis OSINT, "
-                "bukan batas legal HGU/IUP. Overlay ke Nusantara Atlas untuk bukti spasial satelit."
+                "Choropleth memakai batas ADM2; koridor dari bbox proksi; densitas kasus dipetakan ke centroid kab; "
+                "overlay GFW disederhanakan. Bukan batas legal HGU/IUP."
             ),
         },
     )
@@ -451,19 +709,27 @@ def export_meta(counts: dict):
 def main():
     print(f"ROOT = {ROOT}")
     print(f"OUT  = {OUT}")
-    kab_features = export_kab_kota()
+    kab_records = export_kab_kota()
     polres = export_polres()
     objek = export_objek()
     kasus = export_kasus()
+    attach_kasus_counts(kab_records, kasus)
+    write_json("kab_kota.json", {"updated": True, "records": kab_records})
+    adm = export_adm2_choropleth(kab_records)
+    # rewrite kab after shape_name/n_kasus filled
+    write_json("kab_kota.json", {"updated": True, "records": kab_records})
     export_perusahaan()
     export_konsesi_atlas()
-    geo = export_titik_geojson(kab_features)
+    geo = export_spatial_layers(kab_records)
+    gfw = export_gfw_overlay()
     counts = {
-        "kab_kota": len(kab_features),
+        "kab_kota": len(kab_records),
         "polres": len(polres),
         "objek_agrinas": len(objek),
         "kasus_konflik": len(kasus),
+        "choropleth": len(adm),
         "fitur_spasial": len(geo["features"]),
+        "gfw_konsesi": len(gfw),
     }
     export_meta(counts)
     print("Selesai. Refresh website untuk melihat data terbaru.")

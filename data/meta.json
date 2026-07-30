@@ -1,7 +1,7 @@
 {
   "brand": "Atlas Konflik Sawit Riau",
   "subtitle": "Pemetaan spasial konflik, objek Agrinas–Satgas, dan celahan perizinan",
-  "updated_at": "2026-07-30T14:57:39+07:00",
+  "updated_at": "2026-07-30T15:19:19+07:00",
   "bbox_riau": [
     100.0,
     -1.2,
@@ -18,12 +18,24 @@
     "polres": 12,
     "objek_agrinas": 139,
     "kasus_konflik": 129,
-    "fitur_spasial": 44
+    "choropleth": 12,
+    "fitur_spasial": 48,
+    "gfw_konsesi": 287
   },
   "layers": [
     {
-      "id": "kab_centroid",
-      "label": "Kabupaten / Kota",
+      "id": "choropleth",
+      "label": "Choropleth kab/kota",
+      "default": true
+    },
+    {
+      "id": "koridor",
+      "label": "Koridor spasial",
+      "default": true
+    },
+    {
+      "id": "densitas_kasus",
+      "label": "Densitas kasus",
       "default": true
     },
     {
@@ -32,20 +44,21 @@
       "default": true
     },
     {
-      "id": "koridor",
-      "label": "Koridor spasial",
-      "default": true
+      "id": "gfw_konsesi",
+      "label": "Konsesi GFW (overlay)",
+      "default": false
     }
   ],
   "sumber": [
-    "Inventarisasi_Sawit_Riau_v1.1",
     "TABEL_KONFLIK_AGRARIA_SAWIT_RIAU",
     "Master_List_Objek_Agrinas_Satgas_Riau",
     "Ranking_Potensi_Konflik_Per_Polres",
-    "cluster_kabkota_proksi_peta_agrinas",
+    "cluster_kabkota_agrinas",
+    "idn_adm2_simplified (choropleth)",
+    "gfw_oilpalm_riau (overlay)",
     "Tabulasi_Kepmenhut_36_2025",
     "Nusantara Atlas / GFW (cocokan)"
   ],
   "update_command": "python website/scripts/export_web_data.py",
-  "catatan": "Koordinat kab/kota dan titik objek bersifat proksi analisis OSINT, bukan batas legal HGU/IUP. Overlay ke Nusantara Atlas untuk bukti spasial satelit."
+  "catatan": "Choropleth memakai batas ADM2; koridor dari bbox proksi; densitas kasus dipetakan ke centroid kab; overlay GFW disederhanakan. Bukan batas legal HGU/IUP."
 }

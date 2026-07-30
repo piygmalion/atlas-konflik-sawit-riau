@@ -4,6 +4,7 @@
     {
       "id": "rokan-hulu",
       "kab_kota": "Rokan Hulu",
+      "shape_name": "Rokan Hulu",
       "cluster": "K2 Utara-Barat — Torganda/KSO",
       "skor_komposit": 95.0,
       "kategori_peta": "Prioritas peta",
@@ -19,6 +20,7 @@
       "lon": 100.55,
       "lat": 0.88,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
+      "n_kasus": 13,
       "risiko_register": {
         "skor": 61.2,
         "level": "TINGGI",
@@ -31,6 +33,7 @@
     {
       "id": "rokan-hilir",
       "kab_kota": "Rokan Hilir",
+      "shape_name": "Rokan Hilir",
       "cluster": "K2 Utara-Barat — Torganda/KSO",
       "skor_komposit": 86.0,
       "kategori_peta": "Prioritas peta",
@@ -46,6 +49,7 @@
       "lon": 100.85,
       "lat": 1.85,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
+      "n_kasus": 17,
       "risiko_register": {
         "skor": 91.0,
         "level": "SANGAT TINGGI",
@@ -58,6 +62,7 @@
     {
       "id": "indragiri-hulu",
       "kab_kota": "Indragiri Hulu",
+      "shape_name": "Indragiri Hulu",
       "cluster": "K1 Selatan — Duta Palma",
       "skor_komposit": 82.0,
       "kategori_peta": "Prioritas peta",
@@ -73,6 +78,7 @@
       "lon": 102.35,
       "lat": -0.35,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
+      "n_kasus": 10,
       "risiko_register": {
         "skor": 84.0,
         "level": "SANGAT TINGGI",
@@ -85,6 +91,7 @@
     {
       "id": "kuantan-singingi",
       "kab_kota": "Kuantan Singingi",
+      "shape_name": "Kuantan Singingi",
       "cluster": "K1 Selatan — Duta Palma",
       "skor_komposit": 64.0,
       "kategori_peta": "Waspada / koridor",
@@ -100,6 +107,7 @@
       "lon": 101.55,
       "lat": -0.55,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
+      "n_kasus": 9,
       "risiko_register": {
         "skor": 64.5,
         "level": "TINGGI",
@@ -112,6 +120,7 @@
     {
       "id": "pelalawan",
       "kab_kota": "Pelalawan",
+      "shape_name": "Pelalawan",
       "cluster": "K3 Timur — TNTN & SSS",
       "skor_komposit": 62.0,
       "kategori_peta": "Waspada / koridor",
@@ -127,6 +136,7 @@
       "lon": 102.15,
       "lat": 0.25,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
+      "n_kasus": 7,
       "risiko_register": {
         "skor": 56.0,
         "level": "TINGGI",
@@ -139,6 +149,7 @@
     {
       "id": "indragiri-hilir",
       "kab_kota": "Indragiri Hilir",
+      "shape_name": "Indragiri Hilir",
       "cluster": "K1 Selatan — Duta Palma",
       "skor_komposit": 61.0,
       "kategori_peta": "Waspada / koridor",
@@ -154,6 +165,7 @@
       "lon": 103.05,
       "lat": -0.35,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
+      "n_kasus": 5,
       "risiko_register": {
         "skor": 58.0,
         "level": "TINGGI",
@@ -166,6 +178,7 @@
     {
       "id": "kampar",
       "kab_kota": "Kampar",
+      "shape_name": "Kampar",
       "cluster": "K4 Tengah — Kampar KSO",
       "skor_komposit": 61.0,
       "kategori_peta": "Waspada / koridor",
@@ -181,6 +194,7 @@
       "lon": 101.15,
       "lat": 0.35,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
+      "n_kasus": 6,
       "risiko_register": {
         "skor": 66.0,
         "level": "TINGGI",
@@ -193,6 +207,7 @@
     {
       "id": "bengkalis",
       "kab_kota": "Bengkalis",
+      "shape_name": "Bengkalis",
       "cluster": "K3 Timur — TNTN & SSS",
       "skor_komposit": 55.0,
       "kategori_peta": "Waspada / koridor",
@@ -208,6 +223,7 @@
       "lon": 101.95,
       "lat": 1.48,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
+      "n_kasus": 4,
       "risiko_register": {
         "skor": 53.5,
         "level": "SEDANG",
@@ -220,6 +236,7 @@
     {
       "id": "kota-pekanbaru",
       "kab_kota": "Kota Pekanbaru",
+      "shape_name": "Kota Pekanbaru",
       "cluster": "K5 Pendukung / periferi",
       "skor_komposit": 37.0,
       "kategori_peta": "Pantau",
@@ -235,6 +252,7 @@
       "lon": 101.45,
       "lat": 0.53,
       "catatan_peta": "Pendalaman / monitoring",
+      "n_kasus": 11,
       "risiko_register": {
         "skor": 77.0,
         "level": "SANGAT TINGGI",
@@ -247,6 +265,7 @@
     {
       "id": "kota-dumai",
       "kab_kota": "Kota Dumai",
+      "shape_name": "Kota Dumai",
       "cluster": "K5 Pendukung / periferi",
       "skor_komposit": 36.0,
       "kategori_peta": "Pantau",
@@ -262,6 +281,7 @@
       "lon": 101.45,
       "lat": 1.67,
       "catatan_peta": "Pendalaman / monitoring",
+      "n_kasus": 6,
       "risiko_register": {
         "skor": 58.5,
         "level": "TINGGI",
@@ -274,6 +294,7 @@
     {
       "id": "siak",
       "kab_kota": "Siak",
+      "shape_name": "Siak",
       "cluster": "K5 Pendukung / periferi",
       "skor_komposit": 36.0,
       "kategori_peta": "Pantau",
@@ -289,6 +310,7 @@
       "lon": 102.05,
       "lat": 0.85,
       "catatan_peta": "Pendalaman / monitoring",
+      "n_kasus": 4,
       "risiko_register": {
         "skor": 20.0,
         "level": "RENDAH",
@@ -301,6 +323,7 @@
     {
       "id": "kepulauan-meranti",
       "kab_kota": "Kepulauan Meranti",
+      "shape_name": "Kepulauan Meranti",
       "cluster": "K5 Pendukung / periferi",
       "skor_komposit": 0.0,
       "kategori_peta": "Rendah",
@@ -316,6 +339,7 @@
       "lon": 102.4,
       "lat": 0.9,
       "catatan_peta": "Pendalaman / monitoring",
+      "n_kasus": 0,
       "risiko_register": {
         "skor": null,
         "level": null,

@@ -340,6 +340,27 @@ body.is-scroll {
   background: rgba(22, 53, 40, 0.18);
   border: 1px solid var(--brand);
 }
+.swatch.choro { border-radius: 2px; }
+.swatch.choro.high { background: #c45620; }
+.swatch.choro.mid { background: #d09218; }
+.swatch.choro.low { background: #2f6a4c; }
+.swatch.densitas {
+  border-radius: 50%;
+  background: rgba(196, 86, 32, 0.35);
+  border: 1px solid #c45620;
+}
+.swatch.gfw {
+  border-radius: 2px;
+  background: rgba(111, 143, 120, 0.45);
+  border: 1px solid #5b7c65;
+}
+.section-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 1rem 0 0.45rem;
+}
 
 .map-note {
   position: absolute;
