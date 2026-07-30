@@ -778,8 +778,8 @@ th {
   line-height: 32px !important;
 }
 
-/* Map hover preview — replace default Leaflet tooltip chrome */
-.leaflet-tooltip.map-preview {
+/* Map hover preview — Leaflet popup card (interactive CTA safe) */
+.leaflet-popup.map-preview-popup .leaflet-popup-content-wrapper {
   padding: 0;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -787,20 +787,26 @@ th {
   box-shadow: var(--shadow);
   color: var(--ink);
   font-family: var(--font);
+}
+.leaflet-popup.map-preview-popup .leaflet-popup-content {
+  margin: 0;
+  min-width: 0;
   max-width: min(280px, 72vw);
-  white-space: normal;
   line-height: 1.35;
 }
-.leaflet-tooltip.map-preview::before {
-  border-top-color: var(--glass-strong);
+.leaflet-popup.map-preview-popup .leaflet-popup-tip {
+  background: var(--glass-strong);
+  box-shadow: none;
+  border: none;
 }
-.leaflet-tooltip-top.map-preview::before {
-  border-top-color: var(--glass-strong);
+.leaflet-popup.map-preview-popup a.leaflet-popup-close-button {
+  display: none;
 }
 .map-preview__card {
   padding: 0.65rem 0.75rem 0.55rem;
   display: grid;
   gap: 0.4rem;
+  pointer-events: auto;
 }
 .map-preview__eyebrow {
   margin: 0;
@@ -871,6 +877,21 @@ th {
   color: var(--brand);
 }
 
+/* Legacy tooltip class kept for safety if any remain */
+.leaflet-tooltip.map-preview {
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--glass-strong);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  font-family: var(--font);
+  max-width: min(280px, 72vw);
+  white-space: normal;
+  line-height: 1.35;
+  pointer-events: auto;
+}
+
 @keyframes rise {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
@@ -903,6 +924,7 @@ th {
     bottom: calc(38vh + 1.1rem);
   }
   .map-note { display: none; }
+  .leaflet-popup.map-preview-popup .leaflet-popup-content,
   .leaflet-tooltip.map-preview {
     max-width: min(240px, 78vw);
   }

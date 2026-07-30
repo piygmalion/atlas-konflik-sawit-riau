@@ -201,7 +201,7 @@ window.blendedPolresSkor = blendedPolresSkor;
 window.getBlendOsint = () => state.blendOsint;
 
 /** Cache-bust for GitHub Pages / local static server so meta+layers refresh with UI. */
-const DATA_VER = "f3b";
+const DATA_VER = "f3c";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${DATA_VER}`;
@@ -250,13 +250,49 @@ function mapPreviewHtml({
 }
 
 function bindMapPreview(layer, html) {
+  // Popup (bukan tooltip sticky) — kartu bisa di-hover & CTA diklik tanpa ikut kursor
+  if (layer.getPopup && layer.getPopup()) layer.unbindPopup();
   if (layer.getTooltip && layer.getTooltip()) layer.unbindTooltip();
-  layer.bindTooltip(html, {
-    className: "map-preview",
-    direction: "top",
-    opacity: 1,
-    sticky: true,
-    interactive: true,
+
+  layer.bindPopup(html, {
+    className: "map-preview-popup",
+    closeButton: false,
+    autoPan: false,
+    closeOnClick: false,
+    maxWidth: 300,
+    offset: L.point(0, -10),
+  });
+
+  const clearClose = () => {
+    if (layer._mapPreviewCloseTimer) {
+      clearTimeout(layer._mapPreviewCloseTimer);
+      layer._mapPreviewCloseTimer = null;
+    }
+  };
+  const scheduleClose = () => {
+    clearClose();
+    layer._mapPreviewCloseTimer = setTimeout(() => {
+      try {
+        layer.closePopup();
+      } catch (_) {
+        /* ignore */
+      }
+    }, 320);
+  };
+
+  layer.off("mouseover.mapPreview mouseout.mapPreview popupopen.mapPreview");
+  layer.on("mouseover.mapPreview", () => {
+    clearClose();
+    layer.openPopup();
+  });
+  layer.on("mouseout.mapPreview", scheduleClose);
+  layer.on("popupopen.mapPreview", (e) => {
+    const el = e.popup?.getElement?.();
+    if (!el) return;
+    L.DomEvent.disableClickPropagation(el);
+    L.DomEvent.disableScrollPropagation(el);
+    el.addEventListener("mouseenter", clearClose);
+    el.addEventListener("mouseleave", scheduleClose);
   });
 }
 
@@ -267,7 +303,12 @@ function setupMapPreviewActions() {
     "click",
     (e) => {
       const btn = e.target.closest?.("[data-action='polres']");
-      if (!btn || !btn.closest(".leaflet-tooltip.map-preview, .map-preview__card")) return;
+      if (
+        !btn ||
+        !btn.closest(".leaflet-popup.map-preview-popup, .leaflet-tooltip.map-preview, .map-preview__card")
+      ) {
+        return;
+      }
       e.preventDefault();
       e.stopPropagation();
       if (typeof L !== "undefined") L.DomEvent.stop(e);
@@ -671,14 +712,19 @@ function initMap() {
       fillColor: colorFor(level),
       fillOpacity: 0.92,
     });
+    const polresRaw = p.polres_proksi || "";
+    const polresNama =
+      (polresRaw &&
+        DATA.polres?.records?.find((x) => matchWilayah(x.polres, polresRaw))?.polres) ||
+      polresRaw;
     bindMapPreview(
       marker,
       mapPreviewHtml({
         eyebrow: "Objek Agrinas",
         title: p.nama || p.id || "Objek",
         level,
-        metaLines: [p.tipe || "Titik proksi", p.polres_proksi || p.kab_kota || ""].filter(Boolean),
-        polres: p.polres_proksi || "",
+        metaLines: [p.tipe || "Titik proksi", polresNama || p.kab_kota || ""].filter(Boolean),
+        polres: polresNama,
       })
     );
     marker.on("click", () => showTitik(p));
