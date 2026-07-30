@@ -684,7 +684,17 @@ body.is-scroll {
   font-size: 0.8rem;
   line-height: 1.4;
 }
-.chart-callout strong { color: var(--brand); font-weight: 600; }
+.method-note {
+  margin: 0.35rem 0 0;
+  padding: 0.5rem 0.55rem;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.45);
+}
+.stat-strip .stat span { font-size: 0.68rem; }
 .story-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));

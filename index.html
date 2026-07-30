@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/styles.css?v=f2a" />
+  <link rel="stylesheet" href="css/styles.css?v=f3a" />
 </head>
 <body>
   <div id="app">
@@ -58,6 +58,16 @@
           </section>
 
           <section class="rail-section">
+            <h2>Bobot skor</h2>
+            <div class="chip-row" id="blendWeight">
+              <button class="chip" data-blend="0" type="button">100% Reg</button>
+              <button class="chip is-on" data-blend="0.7" type="button">70/30</button>
+              <button class="chip" data-blend="1" type="button">100% OSINT</button>
+            </div>
+            <p class="rail-hint" id="blendHint">Skor Polres (blend 70/30) — ranking &amp; choropleth Gabungan ikut berubah.</p>
+          </section>
+
+          <section class="rail-section">
             <h2>Filter</h2>
             <div class="chip-row" id="priorityFilters">
               <button class="chip is-on" data-priority="all">Semua</button>
@@ -66,6 +76,8 @@
               <button class="chip" data-priority="PANTAU">Pantau</button>
             </div>
           </section>
+
+          <p class="method-note" id="methodNote">Skor = indeks liputan+objek+register — bukan vonis operasional.</p>
 
           <section class="rail-section grow">
             <h2 id="rankTitle">Ranking Polres</h2>
@@ -136,16 +148,19 @@
           <div class="block-head">
             <div>
               <p class="eyebrow">Timeline kasus</p>
-              <h2>Sebaran 2024–2026</h2>
+              <h2>Sebaran temporal</h2>
             </div>
-            <div class="chip-row" id="timelineChartMode">
-              <button class="chip is-on" data-mode="jenis">Per jenis</button>
-              <button class="chip" data-mode="polres">Per Polres</button>
+            <div class="chip-row" id="timelineYearMode">
+              <button class="chip is-on" data-year-mode="kejadian" type="button">Tahun kejadian</button>
+              <button class="chip" data-year-mode="disebut" type="button">Tahun disebut</button>
             </div>
           </div>
+          <div class="chip-row" id="timelineChartMode" style="margin-bottom:0.65rem">
+            <button class="chip is-on" data-mode="jenis">Per jenis</button>
+            <button class="chip" data-mode="polres">Per Polres</button>
+          </div>
           <p class="chart-callout" id="timelineBiasNote">
-            Sumbu menghitung <strong>tahun yang disebut di entri kasus</strong>, bukan tanggal kejadian bersih.
-            Spike 2026 bisa mencerminkan bias pengumpulan / liputan baru, bukan ledakan konflik mentah.
+            Mode <strong>tahun kejadian</strong> (dari uraian/LP). Spike tetap bisa bias liputan — bandingkan dengan mode “tahun disebut”.
           </p>
           <div class="chart-frame tall"><canvas id="chartTimeline"></canvas></div>
         </section>
@@ -189,9 +204,9 @@
             </div>
           </div>
           <div class="howto">
-            <div><strong>1</strong><span>Skor Polres = early-warning blend, bukan vonis</span></div>
-            <div><strong>2</strong><span>Klik batang Polres untuk buka peta</span></div>
-            <div><strong>3</strong><span>Timeline = tahun disebut di entri (bukan kejadian bersih)</span></div>
+            <div><strong>1</strong><span>Skor Polres = indeks liputan+objek+register, bukan vonis</span></div>
+            <div><strong>2</strong><span>Ubah bobot 100% Reg / 70-30 / 100% OSINT di tab Peta</span></div>
+            <div><strong>3</strong><span>Timeline: bandingkan tahun kejadian vs tahun disebut</span></div>
           </div>
         </section>
 
@@ -309,8 +324,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <script src="js/analytics.js?v=f2a"></script>
-  <script src="js/penertiban.js?v=f2a"></script>
-  <script src="js/app.js?v=f2a"></script>
+  <script src="js/analytics.js?v=f3a"></script>
+  <script src="js/penertiban.js?v=f3a"></script>
+  <script src="js/app.js?v=f3a"></script>
 </body>
 </html>

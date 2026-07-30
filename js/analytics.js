@@ -81,9 +81,18 @@ function renderPolresChart() {
   const canvas = document.getElementById("chartPolres");
   if (!canvas || !window.Chart) return;
   destroyChart("polres");
-  const rows = [...(DATA.analytics.polres_komponen || [])].sort(
-    (a, b) => (a.peringkat || 99) - (b.peringkat || 99)
-  );
+  const blendFn = typeof window.blendedPolresSkor === "function" ? window.blendedPolresSkor : null;
+  const rows = [...(DATA.analytics.polres_komponen || [])]
+    .map((r) => {
+      const full = (DATA.polres?.records || []).find((p) => p.polres === r.polres) || {};
+      const skor = blendFn
+        ? blendFn({ ...full, skor_osint: full.skor_osint ?? r.skor, skor_register: full.skor_register })
+        : Number(r.skor) || 0;
+      const kategori =
+        skor >= 70 ? "PRIORITAS" : skor >= 40 ? "WASPADA" : "PANTAU";
+      return { ...r, skor, kategori, skor_osint: full.skor_osint, skor_register: full.skor_register };
+    })
+    .sort((a, b) => (Number(b.skor) || 0) - (Number(a.skor) || 0));
   if (chartState.polresMode === "komponen") {
     renderPolresKomponen(canvas, rows);
   } else {
@@ -98,7 +107,7 @@ function renderPolresSkor(canvas, rows) {
       labels: rows.map((r) => r.label),
       datasets: [
         {
-          label: "Skor komposit",
+          label: "Skor (bobot aktif)",
           data: rows.map((r) => Number(r.skor) || 0),
           backgroundColor: rows.map((r) => kategoriColor(r.kategori)),
           borderWidth: 0,
@@ -224,10 +233,36 @@ function renderTimelineChart() {
   }
 }
 
-function renderTimelineByJenis(canvas) {
+function activeTimelineBag() {
   const tl = DATA.analytics.timeline || {};
+  const mode = typeof window.getTimelineYearMode === "function" ? window.getTimelineYearMode() : tl.default_mode || "kejadian";
+  const bag = tl[mode] || null;
+  if (bag?.by_jenis) {
+    return {
+      years: bag.years || Object.keys(bag.by_jenis).sort(),
+      categories: tl.categories || [],
+      by_jenis: bag.by_jenis,
+      by_polres: bag.by_polres || {},
+      mode,
+    };
+  }
+  return {
+    years: tl.years || [],
+    categories: tl.categories || [],
+    by_jenis: tl.by_jenis || {},
+    by_polres: tl.by_polres || {},
+    mode: "legacy",
+  };
+}
+
+function renderTimelineByJenis(canvas) {
+  const tl = activeTimelineBag();
   const years = tl.years || [];
   const cats = tl.categories || [];
+  const yTitle =
+    tl.mode === "disebut"
+      ? "Jumlah kasus (tahun disebut di Tahun_Referensi)"
+      : "Jumlah kasus (tahun kejadian dari uraian/LP)";
   charts.timeline = new Chart(canvas, {
     type: "bar",
     data: {
@@ -241,12 +276,12 @@ function renderTimelineByJenis(canvas) {
         stack: "kasus",
       })),
     },
-    options: stackedTimelineOptions("Jumlah kasus (tahun disebut pada entri — bukan kejadian bersih)"),
+    options: stackedTimelineOptions(yTitle),
   });
 }
 
 function renderTimelineByPolres(canvas) {
-  const tl = DATA.analytics.timeline || {};
+  const tl = activeTimelineBag();
   const years = tl.years || [];
   const byPolres = tl.by_polres || {};
 
@@ -268,6 +303,11 @@ function renderTimelineByPolres(canvas) {
       .sort((a, b) => totals[b] - totals[a]),
   ].slice(0, 12);
 
+  const yTitle =
+    tl.mode === "disebut"
+      ? "Jumlah kasus per Polres (tahun disebut)"
+      : "Jumlah kasus per Polres (tahun kejadian)";
+
   charts.timeline = new Chart(canvas, {
     type: "bar",
     data: {
@@ -288,7 +328,7 @@ function renderTimelineByPolres(canvas) {
         stack: "polres",
       })),
     },
-    options: stackedTimelineOptions("Jumlah kasus per Polres / unit (tahun disebut — bukan kejadian bersih)"),
+    options: stackedTimelineOptions(yTitle),
   });
 }
 
@@ -533,6 +573,18 @@ function setupAnalyticsControls() {
       timelineMode.querySelectorAll(".chip").forEach((c) => c.classList.remove("is-on"));
       btn.classList.add("is-on");
       chartState.timelineMode = btn.dataset.mode || "jenis";
+      renderTimelineChart();
+    });
+  }
+
+  const yearMode = document.getElementById("timelineYearMode");
+  if (yearMode) {
+    yearMode.addEventListener("click", (e) => {
+      const btn = e.target.closest(".chip");
+      if (!btn) return;
+      if (typeof window.setTimelineYearMode === "function") {
+        window.setTimelineYearMode(btn.dataset.yearMode || "kejadian");
+      }
       renderTimelineChart();
     });
   }

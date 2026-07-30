@@ -463,7 +463,14 @@
     ]
   },
   "timeline": {
+    "default_mode": "kejadian",
     "years": [
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
       "2024",
       "2025",
       "2026"
@@ -476,49 +483,300 @@
       "Lainnya"
     ],
     "by_jenis": {
+      "2025": {
+        "Situasional KSO/Agrinas": 2,
+        "Sengketa lahan": 8,
+        "Ekonomi": 0,
+        "Aksi / kekerasan": 0,
+        "Lainnya": 6
+      },
       "2024": {
+        "Situasional KSO/Agrinas": 0,
+        "Sengketa lahan": 4,
+        "Ekonomi": 0,
+        "Aksi / kekerasan": 0,
+        "Lainnya": 4
+      },
+      "2026": {
+        "Situasional KSO/Agrinas": 94,
+        "Sengketa lahan": 14,
+        "Ekonomi": 0,
+        "Aksi / kekerasan": 0,
+        "Lainnya": 0
+      },
+      "2021": {
         "Situasional KSO/Agrinas": 0,
         "Sengketa lahan": 2,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 10
+        "Lainnya": 0
       },
-      "2025": {
-        "Situasional KSO/Agrinas": 1,
-        "Sengketa lahan": 3,
+      "2023": {
+        "Situasional KSO/Agrinas": 0,
+        "Sengketa lahan": 4,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 10
+        "Lainnya": 3
       },
-      "2026": {
-        "Situasional KSO/Agrinas": 93,
-        "Sengketa lahan": 24,
+      "2019": {
+        "Situasional KSO/Agrinas": 0,
+        "Sengketa lahan": 0,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 11
+        "Lainnya": 1
+      },
+      "2020": {
+        "Situasional KSO/Agrinas": 0,
+        "Sengketa lahan": 0,
+        "Ekonomi": 0,
+        "Aksi / kekerasan": 0,
+        "Lainnya": 2
+      },
+      "2018": {
+        "Situasional KSO/Agrinas": 0,
+        "Sengketa lahan": 2,
+        "Ekonomi": 0,
+        "Aksi / kekerasan": 0,
+        "Lainnya": 0
+      },
+      "2022": {
+        "Situasional KSO/Agrinas": 0,
+        "Sengketa lahan": 1,
+        "Ekonomi": 0,
+        "Aksi / kekerasan": 0,
+        "Lainnya": 0
       }
     },
     "by_polres": {
       "2025": {
         "Bengkalis": 1,
-        "Polda Riau (Ditreskrimum)": 12,
+        "Inhu": 1,
+        "Polda Riau (Ditreskrimum)": 6,
+        "Kuansing": 3,
+        "Rohil": 2,
+        "Rohul": 1,
+        "Dumai": 1,
         "Polda Riau (Intelkam)": 1
       },
       "2024": {
-        "Polda Riau (Ditreskrimum)": 12
+        "Polda Riau (Ditreskrimum)": 5,
+        "Dumai": 1,
+        "Rohil": 1,
+        "Siak": 1
       },
       "2026": {
-        "Polda Riau (Ditreskrimum)": 13,
         "Inhil": 2,
         "Inhu": 5,
-        "Kuansing": 5,
-        "Rohil": 5,
-        "Rohul": 3,
-        "Dumai": 2,
-        "Siak": 1,
+        "Kuansing": 2,
+        "Polda Riau (Ditreskrimum)": 3,
+        "Rohil": 2,
+        "Rohul": 2,
         "Polda Riau (Intelkam)": 92
+      },
+      "2021": {
+        "Inhu": 1,
+        "Rohil": 1
+      },
+      "2023": {
+        "Inhu": 1,
+        "Polda Riau (Ditreskrimum)": 3,
+        "Kuansing": 2,
+        "Siak": 1
+      },
+      "2019": {
+        "Polda Riau (Ditreskrimum)": 1
+      },
+      "2020": {
+        "Polda Riau (Ditreskrimum)": 2
+      },
+      "2018": {
+        "Kuansing": 1,
+        "Rohil": 1
+      },
+      "2022": {
+        "Kuansing": 1
       }
-    }
+    },
+    "disebut": {
+      "years": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "by_jenis": {
+        "2025": {
+          "Situasional KSO/Agrinas": 1,
+          "Sengketa lahan": 3,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 10
+        },
+        "2024": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 2,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 10
+        },
+        "2026": {
+          "Situasional KSO/Agrinas": 95,
+          "Sengketa lahan": 23,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 10
+        }
+      },
+      "by_polres": {
+        "2025": {
+          "Bengkalis": 1,
+          "Polda Riau (Ditreskrimum)": 12,
+          "Polda Riau (Intelkam)": 1
+        },
+        "2024": {
+          "Polda Riau (Ditreskrimum)": 12
+        },
+        "2026": {
+          "Polda Riau (Ditreskrimum)": 13,
+          "Inhil": 2,
+          "Inhu": 5,
+          "Kuansing": 5,
+          "Rohil": 5,
+          "Rohul": 3,
+          "Dumai": 2,
+          "Siak": 1,
+          "Polda Riau (Intelkam)": 92
+        }
+      }
+    },
+    "kejadian": {
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "by_jenis": {
+        "2025": {
+          "Situasional KSO/Agrinas": 2,
+          "Sengketa lahan": 8,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 6
+        },
+        "2024": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 4,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 4
+        },
+        "2026": {
+          "Situasional KSO/Agrinas": 94,
+          "Sengketa lahan": 14,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 0
+        },
+        "2021": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 2,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 0
+        },
+        "2023": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 4,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 3
+        },
+        "2019": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 0,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 1
+        },
+        "2020": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 0,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 2
+        },
+        "2018": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 2,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 0
+        },
+        "2022": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 1,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 0
+        }
+      },
+      "by_polres": {
+        "2025": {
+          "Bengkalis": 1,
+          "Inhu": 1,
+          "Polda Riau (Ditreskrimum)": 6,
+          "Kuansing": 3,
+          "Rohil": 2,
+          "Rohul": 1,
+          "Dumai": 1,
+          "Polda Riau (Intelkam)": 1
+        },
+        "2024": {
+          "Polda Riau (Ditreskrimum)": 5,
+          "Dumai": 1,
+          "Rohil": 1,
+          "Siak": 1
+        },
+        "2026": {
+          "Inhil": 2,
+          "Inhu": 5,
+          "Kuansing": 2,
+          "Polda Riau (Ditreskrimum)": 3,
+          "Rohil": 2,
+          "Rohul": 2,
+          "Polda Riau (Intelkam)": 92
+        },
+        "2021": {
+          "Inhu": 1,
+          "Rohil": 1
+        },
+        "2023": {
+          "Inhu": 1,
+          "Polda Riau (Ditreskrimum)": 3,
+          "Kuansing": 2,
+          "Siak": 1
+        },
+        "2019": {
+          "Polda Riau (Ditreskrimum)": 1
+        },
+        "2020": {
+          "Polda Riau (Ditreskrimum)": 2
+        },
+        "2018": {
+          "Kuansing": 1,
+          "Rohil": 1
+        },
+        "2022": {
+          "Kuansing": 1
+        }
+      }
+    },
+    "catatan": "Mode kejadian = tahun di uraian/LP; mode disebut = Tahun_Referensi. Spike bisa tetap bias pengumpulan."
   },
   "kepmenhut": {
     "buckets": [

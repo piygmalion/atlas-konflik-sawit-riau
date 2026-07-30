@@ -19,7 +19,13 @@
       "perusahaan": "PT. Priatama Masyarakat Desa Darul Aman Kec.; PT. Priatama Riau Kec. Rupat Di Jalan; PT. Priatama Riau Kec. Rupat Pada; PT. PT. PRIATAMA RIAU; PT PRIATAMA RIAU",
       "tema": "penyerobotan/okupasi; HGU; plasma/PIR; sawit; mediasi",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; kata:TBS; plasma/PIR; HGU; perkebunan; kebun"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; kata:TBS; plasma/PIR; HGU; perkebunan; kebun",
+      "tahun_disebut": [
+        "2025"
+      ],
+      "tahun_kejadian": [
+        "2025"
+      ]
     },
     {
       "id": "SW-002",
@@ -39,7 +45,15 @@
       "perusahaan": null,
       "tema": "sawit; unjuk rasa",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit"
+      "indikator_sawit": "kata:sawit",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2024"
+      ]
     },
     {
       "id": "SW-003",
@@ -59,7 +73,13 @@
       "perusahaan": "PT. Agrinas",
       "tema": "sawit; Agrinas/KSO; kekerasan",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; Agrinas/KSO; perkebunan"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; Agrinas/KSO; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-004",
@@ -79,7 +99,13 @@
       "perusahaan": "PT. Citra Mutiara Bumi Riau; PT. CMBR",
       "tema": "plasma/PIR; hutan/PKH/TNTN",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "plasma/PIR"
+      "indikator_sawit": "plasma/PIR",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-005",
@@ -99,7 +125,13 @@
       "perusahaan": null,
       "tema": "sawit; mediasi; kekerasan",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-006",
@@ -119,7 +151,13 @@
       "perusahaan": null,
       "tema": "sawit; klaim waris",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan; kebun"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-007",
@@ -139,7 +177,13 @@
       "perusahaan": null,
       "tema": "sawit",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-008",
@@ -159,7 +203,13 @@
       "perusahaan": "PT. SBP; PT Sinar Belilas Perkasa; PT. SBP.",
       "tema": "HGU; sawit; unjuk rasa; kekerasan",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; HGU; kebun"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; HGU; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-009",
@@ -179,7 +229,16 @@
       "perusahaan": "PT. SBP; PT. Sinar Belilas Perkasa; PT. SML",
       "tema": "sawit; unjuk rasa; sertifikat",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan; kebun"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2021",
+        "2023",
+        "2025",
+        "2026"
+      ]
     },
     {
       "id": "SW-010",
@@ -199,7 +258,18 @@
       "perusahaan": null,
       "tema": "sawit; unjuk rasa; sertifikat",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2019",
+        "2020",
+        "2023",
+        "2024"
+      ]
     },
     {
       "id": "SW-011",
@@ -219,7 +289,15 @@
       "perusahaan": null,
       "tema": "sawit; unjuk rasa",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2024"
+      ]
     },
     {
       "id": "SW-012",
@@ -239,7 +317,16 @@
       "perusahaan": null,
       "tema": "sawit; SKT/SKGR",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2023",
+        "2024"
+      ]
     },
     {
       "id": "SW-013",
@@ -259,7 +346,16 @@
       "perusahaan": null,
       "tema": "sawit; sertifikat",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kebun"
+      "indikator_sawit": "kata:sawit; kebun",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2023",
+        "2025"
+      ]
     },
     {
       "id": "SW-014",
@@ -279,7 +375,16 @@
       "perusahaan": "PT. Barito Riau Jaya; PT BRJ",
       "tema": "tumpang tindih; sawit; mediasi; sertifikat; SKT/SKGR",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kebun"
+      "indikator_sawit": "kata:sawit; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2018",
+        "2022",
+        "2023",
+        "2025"
+      ]
     },
     {
       "id": "SW-015",
@@ -299,7 +404,13 @@
       "perusahaan": "PT Duta Palma Nusantara; PT. Duta Palma Nusantara; PT. Duta Palma Nusantara Kec. Benai; PT Duta Palma Grup; PT Agrinas Palma Nusantara; PT. Duta Palma Nusantara. Tanggal; PT Duta Palma; PT Agrinas Palma",
       "tema": "penyerobotan/okupasi; HGU; plasma/PIR; sawit; Agrinas/KSO; hutan/PKH/TNTN; mediasi; unjuk rasa",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; plasma/PIR; HGU; Agrinas/KSO; kebun"
+      "indikator_sawit": "kata:sawit; plasma/PIR; HGU; Agrinas/KSO; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2025"
+      ]
     },
     {
       "id": "SW-016",
@@ -319,7 +430,13 @@
       "perusahaan": "PT. Wanasari Nusantara; PT. Citra Riau Sarana",
       "tema": "HGU; sawit; mediasi",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; HGU"
+      "indikator_sawit": "kata:sawit; HGU",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-017",
@@ -339,7 +456,15 @@
       "perusahaan": null,
       "tema": "sawit; pemalsuan dokumen; SKT/SKGR",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; kebun"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; kebun",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2025"
+      ]
     },
     {
       "id": "SW-018",
@@ -359,7 +484,15 @@
       "perusahaan": null,
       "tema": "sawit",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit"
+      "indikator_sawit": "kata:sawit",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-019",
@@ -379,7 +512,13 @@
       "perusahaan": "PT Torganda; PT Torganda. Berdasarkan",
       "tema": "plasma/PIR; sawit; mediasi; unjuk rasa; kekerasan; SKT/SKGR",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; kata:TBS; plasma/PIR; perkebunan; kebun"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; kata:TBS; plasma/PIR; perkebunan; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2018"
+      ]
     },
     {
       "id": "SW-020",
@@ -399,7 +538,14 @@
       "perusahaan": "PT. Torganda; PT. Torganda. Setelah KKP; PT. Torganda. Melakukan",
       "tema": "plasma/PIR; sawit; mediasi; unjuk rasa",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2021",
+        "2025"
+      ]
     },
     {
       "id": "SW-021",
@@ -419,7 +565,13 @@
       "perusahaan": "PT. RUJ. Masyarakat Kepenghuluan Jumrah; PT. RUJ. Lahan; PT. RUJ; PT. RUJ. Berkoordinasi; PT. Ruas Utama Jaya",
       "tema": "sawit; mediasi",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-022",
@@ -439,7 +591,14 @@
       "perusahaan": "PT. Agrinas Palma Nusantara; PT. Salim Ivomas Pratama; PT. Agrinas Palma Nusantara. Pada",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa; kekerasan",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "Agrinas/KSO; perkebunan"
+      "indikator_sawit": "Agrinas/KSO; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2025",
+        "2026"
+      ]
     },
     {
       "id": "SW-023",
@@ -459,7 +618,16 @@
       "perusahaan": null,
       "tema": "sawit; unjuk rasa",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2020",
+        "2025"
+      ]
     },
     {
       "id": "SW-024",
@@ -479,7 +647,16 @@
       "perusahaan": null,
       "tema": "sawit; mediasi; unjuk rasa",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2024",
+        "2026"
+      ]
     },
     {
       "id": "SW-025",
@@ -499,7 +676,15 @@
       "perusahaan": null,
       "tema": "penyerobotan/okupasi; sawit; unjuk rasa; SKT/SKGR",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit"
+      "indikator_sawit": "kata:sawit",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2025"
+      ]
     },
     {
       "id": "SW-026",
@@ -519,7 +704,13 @@
       "perusahaan": "PT. Ekadura Indonesia Kelurahan Kota Lama Kec.; PT. EKADURA Indonesia; PT. EKA DURA INDONESIA; PT. EKA DURA",
       "tema": "HGU; sawit; mediasi",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; HGU; kebun"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; HGU; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2025"
+      ]
     },
     {
       "id": "SW-027",
@@ -539,7 +730,13 @@
       "perusahaan": "PT. Hutahaean; PT. Hutahean",
       "tema": "plasma/PIR; sawit; mediasi",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan; kebun"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-028",
@@ -559,7 +756,13 @@
       "perusahaan": null,
       "tema": "sawit; mediasi",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; kebun"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-029",
@@ -579,7 +782,13 @@
       "perusahaan": null,
       "tema": "penyerobotan/okupasi; sawit; unjuk rasa",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2024"
+      ]
     },
     {
       "id": "SW-030",
@@ -599,7 +808,13 @@
       "perusahaan": null,
       "tema": "penyerobotan/okupasi; sawit; unjuk rasa",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2025"
+      ]
     },
     {
       "id": "SW-031",
@@ -619,7 +834,14 @@
       "perusahaan": "PT. Karya Tama Bakti Mulia; PT. KTBM PT. KTBM; PT KTBM; PT Tri Bakti Sarimas; PT. KTBM",
       "tema": "tumpang tindih; HGU; sawit; sertifikat",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:TBS; HGU; kebun"
+      "indikator_sawit": "kata:sawit; kata:TBS; HGU; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2023",
+        "2025"
+      ]
     },
     {
       "id": "SW-032",
@@ -639,7 +861,13 @@
       "perusahaan": "PT. Sailan Antau Batuah; PT. Adimulia Agrolestari Desa Bumi Mulya Kec.; PT. AA; PT. AA Desa Bumi Mulya; PT. AA. Selain; PT. Agrinas Palma Nusantara. Kegiatan; PT Agrinas Palma Nusantara Pekanbaru; PT Sailan Antau Batuah",
       "tema": "sawit; Agrinas/KSO; mediasi",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; Agrinas/KSO"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "SW-033",
@@ -659,7 +887,13 @@
       "perusahaan": "PT. Sindora Seraya. Masyarakat Kecamatan Batu Hampar; PT. Sindora Seraya. Areal; PT. Sindora Seraya; PT. Sindora Seraya. Masyarakat",
       "tema": "tumpang tindih; plasma/PIR; sawit; mediasi",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan; kebun"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2024"
+      ]
     },
     {
       "id": "SW-034",
@@ -679,7 +913,14 @@
       "perusahaan": "PT. Tri Daya Rubber; PT. Datin Agung Cabang Pekanbaru; PT. Datin Agung; PT. Datin Agung. Pada; PT. Datin Agung Medan; PT. Dhatin Agung",
       "tema": "sawit; sertifikat; SKT/SKGR",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; perkebunan"
+      "indikator_sawit": "kata:sawit; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2023",
+        "2024"
+      ]
     },
     {
       "id": "SW-035",
@@ -699,7 +940,15 @@
       "perusahaan": null,
       "tema": "sawit; unjuk rasa",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2025"
+      ]
     },
     {
       "id": "SW-036",
@@ -719,7 +968,15 @@
       "perusahaan": null,
       "tema": "sawit; unjuk rasa; sertifikat",
       "tipe_entri": "Kasus operasional",
-      "indikator_sawit": "kata:sawit"
+      "indikator_sawit": "kata:sawit",
+      "tahun_disebut": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2025"
+      ]
     },
     {
       "id": "ST-037",
@@ -739,7 +996,13 @@
       "perusahaan": "PT SPM LUAS SEBELUM TERDAMPAK SATGAS; PT SPM",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-038",
@@ -759,7 +1022,13 @@
       "perusahaan": "PT. TAMAN HUTAN LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-039",
@@ -779,7 +1048,13 @@
       "perusahaan": "PT. ASI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-040",
@@ -799,7 +1074,13 @@
       "perusahaan": "PT. BUMI LUAS SEBELUM TERDAMPAK SATGAS; PT. BUMI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-041",
@@ -819,7 +1100,13 @@
       "perusahaan": "PT. OSCAR LUAS SEBELUM TERDAMPAK SATGAS; PT. OSCAR",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-042",
@@ -839,7 +1126,13 @@
       "perusahaan": "PT. BANYU LUAS SEBELUM TERDAMPAK SATGAS; PT. BANYU",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-043",
@@ -859,7 +1152,13 @@
       "perusahaan": null,
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-044",
@@ -879,7 +1178,13 @@
       "perusahaan": "PT. TUNGGAL LUAS SEBELUM TERDAMPAK SATGAS; PT. TUNGGAL",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-045",
@@ -899,7 +1204,13 @@
       "perusahaan": "PT. PERKEBUNAN LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO; perkebunan"
+      "indikator_sawit": "Agrinas/KSO; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-046",
@@ -919,7 +1230,13 @@
       "perusahaan": "PT. EKA SARI LUAS SEBELUM TERDAMPAK SATGAS; PT. EKA SARI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-047",
@@ -939,7 +1256,13 @@
       "perusahaan": "PT. SARINDO AGRO LUAS SEBELUM TERDAMPAK SATGAS; PT. SARINDO AGRO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-048",
@@ -959,7 +1282,13 @@
       "perusahaan": "PT. CV. JAYA LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-049",
@@ -979,7 +1308,13 @@
       "perusahaan": "PT. MERAUKE LUAS SEBELUM TERDAMPAK SATGAS Entri; PT. MERAUKE",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-050",
@@ -999,7 +1334,13 @@
       "perusahaan": "PT. KSO; PT. AGRINAS LUAS LAHAN KSO; PT. WANA AGRI SANTOSA KARENA HISTORIKONFLIK HISTORIKONFLIK; PT. MERAUKE TETAP JAYA",
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; Agrinas/KSO"
+      "indikator_sawit": "kata:sawit; kata:kelapa sawit; Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-051",
@@ -1019,7 +1360,13 @@
       "perusahaan": "PT. WANASARI LUAS SEBELUM TERDAMPAK SATGAS Entri; PT. WANASARI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-052",
@@ -1039,7 +1386,13 @@
       "perusahaan": null,
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-053",
@@ -1059,7 +1412,13 @@
       "perusahaan": null,
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-054",
@@ -1079,7 +1438,13 @@
       "perusahaan": "PT. MEKAR LUAS SEBELUM TERDAMPAK SATGAS MAULID; PT. MEKAR",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-055",
@@ -1099,7 +1464,13 @@
       "perusahaan": "PT VIKTORINDO LUAS SEBELUM TERDAMPAK SATGAS SYAMSUHADI; PT VIKTORINDO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-056",
@@ -1119,7 +1490,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-057",
@@ -1139,7 +1516,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-058",
@@ -1159,7 +1542,13 @@
       "perusahaan": "PT. CIBALIUNG LUAS SEBELUM TERDAMPAK SATGAS PKH; PT. CIBALIUNG",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-059",
@@ -1179,7 +1568,13 @@
       "perusahaan": "PT. KSO; PT. UJUNG NANTINGGI LUAS LAHAN KSO; PT. SALIM IVOMAS; PT. DIGJAYA NATA PERSADA MASYARAKAT KELOMPOK W.",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa; kekerasan",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-060",
@@ -1199,7 +1594,13 @@
       "perusahaan": "PT. ANDIKA LUAS SEBELUM TERDAMPAK SATGAS; PT. ANDIKA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-061",
@@ -1219,7 +1620,13 @@
       "perusahaan": "PT. SUPRA LUAS SEBELUM TERDAMPAK SATGAS; PT. SUPRA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-062",
@@ -1239,7 +1646,13 @@
       "perusahaan": "PT. RUAS UTAMA LUAS SEBELUM TERDAMPAK SATGAS; PT. RUAS UTAMA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-063",
@@ -1259,7 +1672,13 @@
       "perusahaan": "PT. KEBUN SAWIT LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "kata:sawit; Agrinas/KSO; kebun"
+      "indikator_sawit": "kata:sawit; Agrinas/KSO; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-064",
@@ -1279,7 +1698,13 @@
       "perusahaan": "PT. PULAU TILAN LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-065",
@@ -1299,7 +1724,13 @@
       "perusahaan": "PT. KAWASAN LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-066",
@@ -1319,7 +1750,13 @@
       "perusahaan": "PT. KSO; PT. PELINTUNG; PT. RIDEN JAYA HISTORIKONFLIK KONSTRUKSI DENGAN PT.; PT. BENTROKAN FISIK ANTARA PIHAK; PT. PELINTUNG BENTROKAN FISIK ANTARA PIHAK; PT. PELINTUNG KEGIATAN PENGUSAAN LAHAN OLEH PT.; PT. AGRINAS PALMA NUSANTARA DI LAHAN SITAAN; PT. DUTA MAS BENTROK ANTAR SESAMA MASYARAKAT",
       "tema": "penyerobotan/okupasi; sawit; Agrinas/KSO; hutan/PKH/TNTN; kekerasan",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "kata:sawit; Agrinas/KSO; perkebunan; kebun"
+      "indikator_sawit": "kata:sawit; Agrinas/KSO; perkebunan; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-067",
@@ -1339,7 +1776,13 @@
       "perusahaan": "PT. APSL",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-068",
@@ -1359,7 +1802,13 @@
       "perusahaan": "PT. HUTAHEAN LUAS SEBELUM TERDAMPAK SATGAS PKH; PT. HUTAHEAN",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-069",
@@ -1379,7 +1828,14 @@
       "perusahaan": "PT. KSO; PT. CINTYA LUAS LAHAN KSO; PT. AGRINAS HISTORIKONFLIK PALMA NUSANTARA TELAH MELAKUKAN; PT. SDR. SAHMADI MALAU",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO; perkebunan"
+      "indikator_sawit": "Agrinas/KSO; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2025",
+        "2026"
+      ]
     },
     {
       "id": "ST-070",
@@ -1399,7 +1855,13 @@
       "perusahaan": "PT. SUMBER ALAM",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-071",
@@ -1419,7 +1881,13 @@
       "perusahaan": "PT. TORGANDA KARYA LUAS SEBELUM TERDAMPAK SATGAS; PT. TORGANDA KARYA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-072",
@@ -1439,7 +1907,13 @@
       "perusahaan": "PT. SAWIT ASAHAN LUAS SEBELUM TERDAMPAK SATGAS; PT. SAWIT ASAHAN",
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "kata:sawit; Agrinas/KSO"
+      "indikator_sawit": "kata:sawit; Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-073",
@@ -1459,7 +1933,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-074",
@@ -1479,7 +1959,13 @@
       "perusahaan": "PT. AGRO MITRA LUAS SEBELUM TERDAMPAK SATGAS; PT. AGRO MITRA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-075",
@@ -1499,7 +1985,13 @@
       "perusahaan": "PT. TORGANDA LUAS SEBELUM TERDAMPAK SATGAS PKH; PT. TORGANDA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-076",
@@ -1519,7 +2011,14 @@
       "perusahaan": "PT. Nusantara Sawit Majuma Hasil Pemeriksaan Dasar",
       "tema": "sawit; hutan/PKH/TNTN; kekerasan",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "kata:sawit"
+      "indikator_sawit": "kata:sawit",
+      "tahun_disebut": [
+        "2025",
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-077",
@@ -1539,7 +2038,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-078",
@@ -1559,7 +2064,13 @@
       "perusahaan": "PT. ARARA LUAS SEBELUM TERDAMPAK SATGAS; PT. ARARA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-079",
@@ -1579,7 +2090,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-080",
@@ -1599,7 +2116,13 @@
       "perusahaan": "PT. SINAR INTI LUAS SEBELUM TERDAMPAK SATGAS; PT. SINAR INTI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-081",
@@ -1619,7 +2142,13 @@
       "perusahaan": "PT. CV. SEPAKAT LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-082",
@@ -1639,7 +2168,13 @@
       "perusahaan": "PT. KSO; PT. RIDEN LUAS LAHAN KSO; PT. DUTA MAS MAKMUR PERKASA SEPAKAT BERSATU",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-083",
@@ -1659,7 +2194,13 @@
       "perusahaan": "PT. DUTA MAS LUAS SEBELUM TERDAMPAK SATGAS; PT. DUTA MAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-084",
@@ -1679,7 +2220,13 @@
       "perusahaan": "PT. IP",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-085",
@@ -1699,7 +2246,13 @@
       "perusahaan": "PT. BINTANG LUAS SEBELUM TERDAMPAK SATGAS Entri; PT. BINTANG",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-086",
@@ -1719,7 +2272,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-087",
@@ -1739,7 +2298,13 @@
       "perusahaan": "PT. DUTA LUAS SEBELUM TERDAMPAK SATGAS; PT. DUTA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-088",
@@ -1759,7 +2324,13 @@
       "perusahaan": "PT. SUMATRA LUAS SEBELUM TERDAMPAK SATGAS Entri; PT. SUMATRA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-089",
@@ -1779,7 +2350,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-090",
@@ -1799,7 +2376,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-091",
@@ -1819,7 +2402,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-092",
@@ -1839,7 +2428,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-093",
@@ -1859,7 +2454,13 @@
       "perusahaan": "PT. KSO; PT TIGA LUAS LAHAN KSO",
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN; kekerasan",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "kata:sawit; Agrinas/KSO"
+      "indikator_sawit": "kata:sawit; Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-094",
@@ -1879,7 +2480,13 @@
       "perusahaan": "PT. KSO; PT. PAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO; perkebunan"
+      "indikator_sawit": "Agrinas/KSO; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-095",
@@ -1899,7 +2506,13 @@
       "perusahaan": "PT. KSO; PT. LUAS LAHAN KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-096",
@@ -1919,7 +2532,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-097",
@@ -1939,7 +2558,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-098",
@@ -1959,7 +2584,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-099",
@@ -1979,7 +2610,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-100",
@@ -1999,7 +2636,13 @@
       "perusahaan": "PT. KSO; PT. DIGJAYA NATA HA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-101",
@@ -2019,7 +2662,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-102",
@@ -2039,7 +2688,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-103",
@@ -2059,7 +2714,13 @@
       "perusahaan": "PT. KSO; PT. SATAHI LUAS LAHAN KSO; PT. RAMA SALOMO. PENGELOLA PT. RAMA SALOMO; PT. AGRINAS PALMA SIANIPAR; PT. SATAHI SAURDOT SAOLOAN",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO; kebun"
+      "indikator_sawit": "Agrinas/KSO; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-104",
@@ -2079,7 +2740,13 @@
       "perusahaan": "PT. KSO; PT. NIHIL NIHIL AGRINAS PALMA NUSANTARA DAN; PT. BWB SESIP PERKASA OLEH MASYARAKAT PEMILIK",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO; perkebunan"
+      "indikator_sawit": "Agrinas/KSO; perkebunan",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-105",
@@ -2099,7 +2766,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-106",
@@ -2119,7 +2792,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-107",
@@ -2139,7 +2818,13 @@
       "perusahaan": "PT. KSO; PT. NUSANTARA SAWIT MAJUMA BERKONFLIK NIHIL DENGAN; PT. BK; PT BERKAT",
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "kata:sawit; Agrinas/KSO"
+      "indikator_sawit": "kata:sawit; Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-108",
@@ -2159,7 +2844,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-109",
@@ -2179,7 +2870,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-110",
@@ -2199,7 +2896,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-111",
@@ -2219,7 +2922,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-112",
@@ -2239,7 +2948,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-113",
@@ -2259,7 +2974,13 @@
       "perusahaan": "PT. KSO; PT. CITRA BUMI Entri; PT. CITRA BUMI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-114",
@@ -2279,7 +3000,13 @@
       "perusahaan": "PT. KSO; PT. CITRA MUTIARA BUMI RIAU DAN DALAM",
       "tema": "plasma/PIR; Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "plasma/PIR; Agrinas/KSO; kebun"
+      "indikator_sawit": "plasma/PIR; Agrinas/KSO; kebun",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-115",
@@ -2299,7 +3026,13 @@
       "perusahaan": "PT. KSO; PT. CITRA LUAS LAHAN KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-116",
@@ -2319,7 +3052,13 @@
       "perusahaan": "PT. RIAU SAKTI LUAS SEBELUM TERDAMPAK SATGAS; PT. RIAU SAKTI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-117",
@@ -2339,7 +3078,13 @@
       "perusahaan": "PT. KSO; PT. WANA LUAS YANG DISITA SATGAS PKH; PT. WANA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-118",
@@ -2359,7 +3104,13 @@
       "perusahaan": "PT. KSO; PT. AGRINAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-119",
@@ -2379,7 +3130,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-120",
@@ -2399,7 +3156,13 @@
       "perusahaan": "PT. KSO; PT. BINTANG SINERGI INDONESIA LUAS LAHAN KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-121",
@@ -2419,7 +3182,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-122",
@@ -2439,7 +3208,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-123",
@@ -2459,7 +3234,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-124",
@@ -2479,7 +3260,13 @@
       "perusahaan": "PT. KSO; PT. AGUNG",
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "kata:sawit; Agrinas/KSO"
+      "indikator_sawit": "kata:sawit; Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-125",
@@ -2499,7 +3286,13 @@
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-126",
@@ -2519,7 +3312,13 @@
       "perusahaan": "PT. KSO; PT. PARUH",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-127",
@@ -2539,7 +3338,13 @@
       "perusahaan": "PT. KSO; PT. RIDEN JAYA Entri; PT. RIDEN JAYA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "ST-128",
@@ -2559,7 +3364,13 @@
       "perusahaan": "PT. KSO; PT. SINAR RIAU",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     },
     {
       "id": "AN-129",
@@ -2579,7 +3390,13 @@
       "perusahaan": "PT Agrinas Provinsi Riau; PT. AGRIN",
       "tema": "Agrinas/KSO; sertifikat",
       "tipe_entri": "Analisis strategis",
-      "indikator_sawit": "Agrinas/KSO"
+      "indikator_sawit": "Agrinas/KSO",
+      "tahun_disebut": [
+        "2026"
+      ],
+      "tahun_kejadian": [
+        "2026"
+      ]
     }
   ]
 }

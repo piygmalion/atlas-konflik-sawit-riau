@@ -20,6 +20,8 @@ const state = {
   view: "peta",
   priority: "all",
   compare: "all",
+  blendOsint: 0.7, // 0 = 100% register, 0.7 = default, 1 = 100% OSINT
+  timelineYearMode: "kejadian", // kejadian | disebut
   layerOn: {
     choropleth: true,
     koridor: false,
@@ -167,20 +169,39 @@ function resolveChoroplethMetric(nama) {
       polres,
     };
   }
-  // Gabungan default: skor Polres blend terproyeksi ke kab
-  const skor = Number(polres?.skor) || Number(kab?.skor_komposit) || 0;
+  // Gabungan default: skor Polres blend terproyeksi ke kab (mengikuti bobot UI)
+  const skor = polres ? blendedPolresSkor(polres) : Number(kab?.skor_komposit) || 0;
   return {
     skor,
     metricKey: "polres_blend",
-    label: METRIC_LABELS.polres_blend,
-    kategori: polres?.kategori || kategoriFromSkor(skor),
+    label: blendMetricLabel(),
+    kategori: kategoriFromSkor(skor),
     kab,
     polres,
   };
 }
 
+function blendedPolresSkor(p) {
+  if (!p) return 0;
+  const w = Number(state.blendOsint);
+  const o = Number(p.skor_osint) || 0;
+  const r = Number(p.skor_register) || 0;
+  if (Number.isNaN(w)) return Number(p.skor) || 0;
+  return w * o + (1 - w) * r;
+}
+
+function blendMetricLabel() {
+  const w = Number(state.blendOsint);
+  if (w >= 0.99) return "Skor OSINT (100%)";
+  if (w <= 0.01) return "Skor register (100%)";
+  return `Skor Polres (blend ${Math.round(w * 100)}/${Math.round((1 - w) * 100)})`;
+}
+
+window.blendedPolresSkor = blendedPolresSkor;
+window.getBlendOsint = () => state.blendOsint;
+
 /** Cache-bust for GitHub Pages / local static server so meta+layers refresh with UI. */
-const DATA_VER = "f2a";
+const DATA_VER = "f3a";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${DATA_VER}`;
@@ -228,6 +249,8 @@ async function boot() {
   document.getElementById("updatedAt").textContent =
     `Diperbarui ${formatDate(meta.updated_at)} · ${meta.counts.kasus_konflik} kasus · ${meta.counts.objek_agrinas} objek`;
 
+  state.timelineYearMode = DATA.analytics?.timeline?.default_mode || "kejadian";
+
   renderStats();
   renderLayers();
   renderRankPanel();
@@ -237,9 +260,11 @@ async function boot() {
   setupNav();
   setupFilters();
   setupCompareMode();
+  setupBlendWeight();
   setupDataTables();
   setupAnalyticsControls?.();
   setupPenertibanControls?.();
+  syncTimelineYearModeUI();
 }
 
 function formatDate(iso) {
@@ -251,16 +276,28 @@ function formatDate(iso) {
 }
 
 function renderStats() {
-  const c = DATA.meta.counts;
-  const prioritas = DATA.polres.records.filter((p) => p.kategori === "PRIORITAS").length;
+  const c = DATA.meta.counts || {};
+  const cov = DATA.polres?.coverage || {};
+  const mapped = cov.total_entri_terpetakan ?? c.entri_terpetakan ?? "–";
+  const unmapped = cov.entri_tidak_terpetakan ?? c.entri_tidak_terpetakan ?? "–";
+  const prioritas = DATA.polres.records.filter((p) => kategoriFromSkor(blendedPolresSkor(p)) === "PRIORITAS").length;
   document.getElementById("statsGrid").innerHTML = [
     ["kasus", "Kasus konflik", c.kasus_konflik],
-    ["objek", "Objek Agrinas", c.objek_agrinas],
-    ["gfw", "Konsesi GFW", c.gfw_konsesi],
-    ["prio", "Polres prioritas", prioritas],
+    ["map", "Terpetakan Polres", mapped],
+    ["unmap", "Lintas Riau / n/a", unmapped],
+    ["prio", "Polres prioritas*", prioritas],
   ]
     .map(([, label, val]) => `<div class="stat"><strong>${val ?? "–"}</strong><span>${label}</span></div>`)
     .join("");
+
+  const methodEl = document.getElementById("methodNote");
+  if (methodEl) {
+    const disc =
+      DATA.meta?.methodology?.disclaimer ||
+      DATA.polres?.model?.catatan ||
+      "Skor = indeks liputan+objek+register — bukan vonis operasional.";
+    methodEl.textContent = disc;
+  }
 }
 
 function renderLayers() {
@@ -368,17 +405,19 @@ function renderRankPanel() {
       (a, b) =>
         (Number(b.skor_register) || Number(b.n_recent) || 0) - (Number(a.skor_register) || Number(a.n_recent) || 0)
     );
+  } else {
+    rows.sort((a, b) => blendedPolresSkor(b) - blendedPolresSkor(a));
   }
   rows = rows.filter((p) => {
     if (state.priority === "all") return true;
-    const primary = mode === "register" ? Number(p.skor_register) || 0 : Number(p.skor) || 0;
+    const primary = mode === "register" ? Number(p.skor_register) || 0 : blendedPolresSkor(p);
     return kategoriFromSkor(primary) === state.priority || p.kategori === state.priority;
   });
   ol.innerHTML = rows
     .map((p, idx) => {
-      const primary = Number(mode === "register" ? p.skor_register || p.skor : p.skor) || 0;
-      const kat = mode === "register" ? kategoriFromSkor(primary) : p.kategori;
-      const rankN = mode === "register" ? idx + 1 : p.peringkat;
+      const primary = Number(mode === "register" ? p.skor_register || p.skor : blendedPolresSkor(p)) || 0;
+      const kat = kategoriFromSkor(primary);
+      const rankN = idx + 1;
       return `
       <li>
         <button type="button" data-polres="${escapeAttr(p.polres)}">
@@ -387,7 +426,7 @@ function renderRankPanel() {
             <strong>${escapeHtml(p.polres.replace(/^Polres\s+/i, ""))}</strong><br/>
             <small>OSINT ${fmtNum(p.skor_osint)} · Reg ${fmtNum(p.skor_register)}</small>
           </span>
-          <span class="score" title="${mode === "register" ? "Risiko register" : "Skor Polres (blend)"}">${primary.toFixed(0)}</span>
+          <span class="score" title="${mode === "register" ? "Risiko register" : blendMetricLabel()}">${primary.toFixed(0)}</span>
         </button>
       </li>`;
     })
@@ -558,7 +597,7 @@ function updateMapLegend() {
     <div><span class="swatch choro mid"></span> Sedang (${CHORO_BREAKS.mid}–${CHORO_BREAKS.high - 1})</div>
     <div><span class="swatch choro low"></span> Rendah (&lt;${CHORO_BREAKS.mid})</div>
     <div><span class="swatch densitas"></span> Densitas kasus</div>
-    <div><span class="swatch koridor"></span> Koridor proksi (bbox)</div>
+    <div><span class="swatch koridor"></span> Koridor proksi (hull)</div>
     <div><span class="swatch gfw"></span> Konsesi GFW</div>
   `;
 }
@@ -686,15 +725,15 @@ function showPolres(nama) {
     <h1>${escapeHtml(p.polres)}</h1>
     <p class="lead">${escapeHtml(p.alasan || "")}</p>
     <div class="meta-grid">
-      <div class="meta-item"><label>Peringkat</label><strong>#${p.peringkat}</strong></div>
-      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.polres_blend)}</label><strong>${fmtNum(p.skor)}</strong> <span class="badge ${escapeAttr(p.kategori)}">${escapeHtml(p.kategori)}</span></div>
+      <div class="meta-item"><label>Peringkat model</label><strong>#${p.peringkat}</strong></div>
+      <div class="meta-item"><label>${escapeHtml(blendMetricLabel())}</label><strong>${fmtNum(blendedPolresSkor(p))}</strong> <span class="badge ${escapeAttr(kategoriFromSkor(blendedPolresSkor(p)))}">${escapeHtml(kategoriFromSkor(blendedPolresSkor(p)))}</span></div>
       <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.osint)}</label><strong>${fmtNum(p.skor_osint)}</strong></div>
       <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.register)}</label><strong>${fmtNum(p.skor_register)}</strong> <span class="badge ${escapeAttr(kategoriFromSkor(p.skor_register))}">${escapeHtml(kategoriFromSkor(p.skor_register))}</span></div>
       <div class="meta-item"><label>Aksi massa · Kekerasan</label>${fmtNum(p.n_aksi_massa)} · ${fmtNum(p.n_kekerasan)}</div>
       <div class="meta-item"><label>Objek Agrinas/KSO</label>${fmtNum(p.n_agrinas)}</div>
       <div class="meta-item"><label>Entri 2024+</label>${fmtNum(p.n_recent)}</div>
     </div>
-    <p class="muted small">Blend = 70% OSINT Agrinas + 30% register. Bukan vonis operasional.</p>
+    <p class="muted small">${escapeHtml(DATA.polres?.model?.catatan || "Indeks liputan+objek+register — bukan vonis operasional.")}</p>
     <h2 class="section-label">Kasus di wilayah Polres</h2>
     <div class="case-list">${kasus.map(caseCard).join("") || "<p class='lead'>Tidak ada kasus terfilter.</p>"}</div>
   `);
@@ -724,14 +763,15 @@ function showTitik(p) {
 
 function showKoridor(p) {
   setDetail(`
-    <p class="eyebrow">Koridor proksi (bbox)</p>
+    <p class="eyebrow">Koridor proksi (hull/bbox)</p>
     <h1>${escapeHtml(p.nama || "Koridor")}</h1>
-    <p class="lead">${escapeHtml(p.karakter || "Zona bounding box analitis — bukan koridor geografis resmi.")}</p>
+    <p class="lead">${escapeHtml(p.karakter || "Hull/envelope dari titik objek — bukan koridor geografis resmi.")}</p>
     <div class="meta-grid">
       <div class="meta-item"><label>Anggota kab</label>${escapeHtml(p.anggota_kab || "–")}</div>
       <div class="meta-item"><label>Polres</label>${escapeHtml(p.polres_proksi || "–")}</div>
+      <div class="meta-item"><label>Geometri</label>${escapeHtml(p.geom_source || "proksi")} · ${fmtNum(p.n_titik)} titik</div>
       <div class="meta-item"><label>Prioritas peta</label><span class="badge ${escapeAttr(p.prioritas || "")}">${escapeHtml(p.prioritas || "–")}</span></div>
-      <div class="meta-item"><label>Catatan</label>${escapeHtml(p.catatan || "Bounding box dari agregat kab/hotspot, bukan poligon legal.")}</div>
+      <div class="meta-item"><label>Catatan</label>${escapeHtml(p.catatan || "Tetap proksi OSINT.")}</div>
     </div>
   `);
 }
@@ -924,6 +964,52 @@ function setupFilters() {
     renderRankPanel();
   });
 }
+
+function setupBlendWeight() {
+  const wrap = document.getElementById("blendWeight");
+  if (!wrap) return;
+  const apply = (w) => {
+    state.blendOsint = Number(w);
+    wrap.querySelectorAll(".chip").forEach((c) => {
+      c.classList.toggle("is-on", Number(c.dataset.blend) === state.blendOsint);
+    });
+    const hint = document.getElementById("blendHint");
+    if (hint) hint.textContent = blendMetricLabel() + " — ranking & choropleth Gabungan ikut berubah.";
+    renderStats();
+    renderRankPanel();
+    refreshChoroplethForMode();
+    if (state.view === "analisis" && typeof window.renderAnalytics === "function") {
+      window.renderAnalytics();
+    }
+  };
+  wrap.addEventListener("click", (e) => {
+    const btn = e.target.closest(".chip");
+    if (!btn) return;
+    apply(btn.dataset.blend);
+  });
+  apply(state.blendOsint);
+}
+
+function syncTimelineYearModeUI() {
+  const wrap = document.getElementById("timelineYearMode");
+  if (!wrap) return;
+  wrap.querySelectorAll(".chip").forEach((c) => {
+    c.classList.toggle("is-on", c.dataset.yearMode === state.timelineYearMode);
+  });
+  const note = document.getElementById("timelineBiasNote");
+  if (note) {
+    note.innerHTML =
+      state.timelineYearMode === "kejadian"
+        ? `Mode <strong>tahun kejadian</strong> (dari uraian/LP). Spike tetap bisa bias liputan — bandingkan dengan mode “tahun disebut”.`
+        : `Mode <strong>tahun disebut</strong> di Tahun_Referensi. Spike 2026 sering mencerminkan pengumpulan/liputan baru, bukan ledakan konflik mentah.`;
+  }
+}
+
+window.getTimelineYearMode = () => state.timelineYearMode;
+window.setTimelineYearMode = (mode) => {
+  state.timelineYearMode = mode === "disebut" ? "disebut" : "kejadian";
+  syncTimelineYearModeUI();
+};
 
 async function applyCompareMode(mode) {
   const preset = COMPARE_PRESETS[mode] || COMPARE_PRESETS.all;

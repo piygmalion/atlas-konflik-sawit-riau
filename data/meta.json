@@ -21,7 +21,9 @@
     "choropleth": 12,
     "fitur_spasial": 36,
     "gfw_konsesi": 287,
-    "gfw_bbox_full": 287
+    "gfw_bbox_full": 287,
+    "entri_terpetakan": 88,
+    "entri_tidak_terpetakan": 41
   },
   "layers": [
     {
@@ -31,7 +33,7 @@
     },
     {
       "id": "koridor",
-      "label": "Koridor proksi (bbox)",
+      "label": "Koridor proksi (hull)",
       "default": false
     },
     {
@@ -69,5 +71,11 @@
     "Nusantara Atlas / GFW (cocokan)"
   ],
   "update_command": "python website/scripts/export_web_data.py",
-  "catatan": "Choropleth memakai batas ADM2; koridor dari bbox proksi (default off); densitas kasus ke centroid kab (default off); titik REF/centroid tidak diekspor ke objek_titik; overlay GFW lazy-load. Bukan batas legal HGU/IUP."
+  "catatan": "Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); coverage 88/41; skor = indeks liputan+objek+register. Bukan batas legal HGU/IUP.",
+  "methodology": {
+    "skor_type": "indeks_liputan_objek_register",
+    "disclaimer": "Indeks liputan+objek+register terbuka — bukan vonis operasional. Skor early-warning intel terbuka, bukan vonis operasional. 41 entri tidak terpetakan ke Polres (umumnya 'Lintas Provinsi Riau'). Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi.",
+    "blend_default": "70% OSINT + 30% register",
+    "kalibrasi": "Menunggu rekap LP/SPKT 36 bulan resmi"
+  }
 }

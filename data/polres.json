@@ -5,7 +5,11 @@
       "WASPADA": "40-69",
       "PRIORITAS": "70-100"
     },
-    "catatan": "Skor early-warning OSINT terbuka, bukan vonis operasional."
+    "blend_default": {
+      "osint": 0.7,
+      "register": 0.3
+    },
+    "catatan": "Indeks liputan+objek+register terbuka — bukan vonis operasional. Skor early-warning intel terbuka, bukan vonis operasional. 41 entri tidak terpetakan ke Polres (umumnya 'Lintas Provinsi Riau'). Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi."
   },
   "records": [
     {
@@ -284,5 +288,16 @@
       "alasan": "Sinyal Agrinas terbatas di sumber terbuka",
       "tahun": null
     }
-  ]
+  ],
+  "coverage": {
+    "n_polres": 12,
+    "prioritas": 4,
+    "waspada": 4,
+    "pantau": 4,
+    "total_entri_terpetakan": 88,
+    "entri_tidak_terpetakan": 41,
+    "bucket_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
+    "label_terpetakan": "Entri terpetakan ke Polres",
+    "label_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres"
+  }
 }

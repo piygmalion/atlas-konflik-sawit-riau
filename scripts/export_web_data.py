@@ -364,13 +364,40 @@ def export_polres():
                 "tahun": r.get("tahun_tercover"),
             }
         )
+
+    coverage = {
+        "total_entri_terpetakan": 88,
+        "entri_tidak_terpetakan": 41,
+        "bucket_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
+        "label_terpetakan": "Entri terpetakan ke Polres",
+        "label_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
+    }
+    model_catatan = (
+        "Skor adalah indeks early-warning dari liputan OSINT + objek Agrinas/KSO + register terbuka, "
+        "bukan vonis operasional. Belum dikalibrasi ulang terhadap rekap LP/SPKT 36 bulan resmi."
+    )
+    ranking_json = ROOT / "ranking_potensi_konflik_per_polres.json"
+    if ranking_json.exists():
+        try:
+            raw = json.loads(ranking_json.read_text(encoding="utf-8"))
+            coverage.update(raw.get("ringkasan") or {})
+            if raw.get("model", {}).get("catatan"):
+                model_catatan = (
+                    "Indeks liputan+objek+register terbuka — bukan vonis operasional. "
+                    + str(raw["model"]["catatan"])
+                )
+        except Exception:
+            pass
+
     write_json(
         "polres.json",
         {
             "model": {
                 "kategori": {"PANTAU": "0-39", "WASPADA": "40-69", "PRIORITAS": "70-100"},
-                "catatan": "Skor early-warning OSINT terbuka, bukan vonis operasional.",
+                "blend_default": {"osint": 0.7, "register": 0.3},
+                "catatan": model_catatan,
             },
+            "coverage": coverage,
             "records": records,
         },
     )
@@ -433,6 +460,11 @@ def export_kasus():
                 "indikator_sawit": r.get("Indikator_Sawit"),
             }
         )
+    for rec in records:
+        disebut = years_from_kasus(rec.get("tahun")) or ["2026"]
+        kejadian = years_kejadian_kasus(rec) or disebut[:1]
+        rec["tahun_disebut"] = disebut
+        rec["tahun_kejadian"] = kejadian
     write_json("kasus.json", {"total": len(records), "records": records})
     return records
 
@@ -683,7 +715,21 @@ def years_from_kasus(tahun) -> list[str]:
     if tahun is None:
         return []
     found = re.findall(r"20\d{2}", str(tahun))
-    return sorted(set(found))
+    return sorted({y for y in found if 2018 <= int(y) <= 2026})
+
+
+def years_kejadian_kasus(rec: dict) -> list[str]:
+    chunks = [rec.get("uraian"), rec.get("nomor_lp"), rec.get("status"), rec.get("lokasi")]
+    found: list[str] = []
+    for c in chunks:
+        found.extend(years_from_kasus(c))
+    lp = str(rec.get("nomor_lp") or "")
+    found.extend(re.findall(r"/?(20\d{2})/", lp))
+    uniq = sorted({y for y in found if 2018 <= int(y) <= 2026})
+    if uniq:
+        return uniq
+    disebut = years_from_kasus(rec.get("tahun"))
+    return [min(disebut)] if disebut else []
 
 
 def export_analytics(polres: list[dict], objek: list[dict], kasus: list[dict]):
@@ -789,31 +835,41 @@ def export_analytics(polres: list[dict], objek: list[dict], kasus: list[dict]):
         else:
             kepmen_buckets["Lainnya"] += n
 
-    years = ["2024", "2025", "2026"]
     series_keys = ["Situasional KSO/Agrinas", "Sengketa lahan", "Ekonomi", "Aksi / kekerasan", "Lainnya"]
-    timeline = {y: {k: 0 for k in series_keys} for y in years}
-    timeline_polres = {}
-    for k in kasus:
-        ys = years_from_kasus(k.get("tahun")) or ["2026"]
-        bucket = bucket_jenis(k.get("jenis"), k.get("kategori"))
-        pol = str(k.get("polres") or "Lain/Polda").replace("Polres ", "")
-        for y in ys:
-            if y not in timeline:
-                timeline[y] = {kk: 0 for kk in series_keys}
-            timeline[y][bucket] = timeline[y].get(bucket, 0) + 1
-            timeline_polres.setdefault(y, {})
-            timeline_polres[y][pol] = timeline_polres[y].get(pol, 0) + 1
 
-    years = sorted(timeline.keys())
+    def build_tl(year_fn):
+        tl = {}
+        tl_pol = {}
+        for k in kasus:
+            ys = year_fn(k) or ["2026"]
+            bucket = bucket_jenis(k.get("jenis"), k.get("kategori"))
+            pol = str(k.get("polres") or "Lain/Polda").replace("Polres ", "")
+            for y in ys:
+                tl.setdefault(y, {kk: 0 for kk in series_keys})
+                tl[y][bucket] = tl[y].get(bucket, 0) + 1
+                tl_pol.setdefault(y, {})
+                tl_pol[y][pol] = tl_pol[y].get(pol, 0) + 1
+        return sorted(tl.keys()), tl, tl_pol
+
+    y_d, tj_d, tp_d = build_tl(lambda k: k.get("tahun_disebut") or years_from_kasus(k.get("tahun")))
+    y_k, tj_k, tp_k = build_tl(lambda k: k.get("tahun_kejadian") or years_kejadian_kasus(k))
+
     payload = {
         "polres_komponen": polres_komponen,
         "agrinas_flow": {"nodes": nodes, "links": links, "counts": layer_counts},
         "atlas_flow": {"links": atlas_flow_links, "records": atlas_rows},
         "timeline": {
-            "years": years,
+            "default_mode": "kejadian",
+            "years": y_k,
             "categories": series_keys,
-            "by_jenis": timeline,
-            "by_polres": timeline_polres,
+            "by_jenis": tj_k,
+            "by_polres": tp_k,
+            "disebut": {"years": y_d, "by_jenis": tj_d, "by_polres": tp_d},
+            "kejadian": {"years": y_k, "by_jenis": tj_k, "by_polres": tp_k},
+            "catatan": (
+                "Mode kejadian = tahun di uraian/LP; mode disebut = Tahun_Referensi. "
+                "Spike bisa tetap bias pengumpulan."
+            ),
         },
         "kepmenhut": {
             "buckets": [{"label": k, "value": v} for k, v in kepmen_buckets.items() if v],
@@ -825,7 +881,7 @@ def export_analytics(polres: list[dict], objek: list[dict], kasus: list[dict]):
         },
     }
     write_json("analytics.json", payload)
-    print(f"    analytics: polres={len(polres_komponen)} timeline_years={years} kepmen={len(kepmen_records)}")
+    print(f"    analytics: polres={len(polres_komponen)} timeline_kejadian={y_k} disebut={y_d} kepmen={len(kepmen_records)}")
     return payload
 
 
@@ -1138,12 +1194,21 @@ def export_meta(counts: dict):
             "counts": counts,
             "layers": [
                 {"id": "choropleth", "label": "Choropleth kab/kota", "default": True},
-                {"id": "koridor", "label": "Koridor proksi (bbox)", "default": False},
+                {"id": "koridor", "label": "Koridor proksi (hull)", "default": False},
                 {"id": "densitas_kasus", "label": "Densitas kasus (centroid)", "default": False},
                 {"id": "objek_titik", "label": "Titik objek Agrinas", "default": True},
                 {"id": "gfw_konsesi", "label": "Konsesi GFW (TopoJSON)", "default": False},
             ],
             "views": ["peta", "analisis", "cerita", "data"],
+            "methodology": {
+                "skor_type": "indeks_liputan_objek_register",
+                "disclaimer": (
+                    "Skor adalah indeks early-warning dari liputan OSINT + objek Agrinas/KSO + register terbuka, "
+                    "bukan vonis operasional. Belum dikalibrasi ulang terhadap rekap LP/SPKT 36 bulan resmi."
+                ),
+                "blend_default": "70% OSINT + 30% register",
+                "kalibrasi": "Menunggu rekap LP/SPKT 36 bulan resmi",
+            },
             "sumber": [
                 "TABEL_KONFLIK_AGRARIA_SAWIT_RIAU",
                 "Master_List_Objek_Agrinas_Satgas_Riau",
