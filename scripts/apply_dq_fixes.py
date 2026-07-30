@@ -560,6 +560,14 @@ def fix_objek():
     return records
 
 
+def is_ref_or_centroid_feature(props: dict) -> bool:
+    """True for kab-centroid REF placeholders that should not appear as objek_titik."""
+    prioritas = str(props.get("prioritas") or "").upper()
+    tipe = str(props.get("tipe") or "").lower()
+    nama = str(props.get("nama") or "").lower()
+    return "REF" in prioritas or "centroid" in tipe or "centroid" in nama
+
+
 def expand_spatial_points(objek_records: list[dict]):
     """Add proksi points for mappable high-priority objek not already in layers."""
     print("Fase 3b: expand spatial points")
@@ -569,17 +577,22 @@ def expand_spatial_points(objek_records: list[dict]):
     if geo_path.exists():
         existing = load_json(geo_path)
     feats = existing.get("features") or []
+    # Drop REF/centroid noise from the plottable set (keep source file otherwise intact below)
+    plottable = [
+        f
+        for f in feats
+        if not is_ref_or_centroid_feature(f.get("properties") or {})
+    ]
     existing_names = {
         norm_company(str((f.get("properties") or {}).get("nama") or ""))
-        for f in feats
+        for f in plottable
     }
     existing_ids = {
         str((f.get("properties") or {}).get("id") or "")
-        for f in feats
+        for f in plottable
     }
 
-    # Keep non-centroid features; append new ones
-    new_feats = list(feats)
+    new_feats = list(plottable)
     n_add = 0
     seq = 100
     for r in objek_records:
@@ -622,14 +635,17 @@ def expand_spatial_points(objek_records: list[dict]):
             }
         )
         existing_names.add(key)
+        existing_ids.add(oid)
         n_add += 1
         if n_add >= 40:
             break
 
-    existing["features"] = new_feats
+    # Preserve REF/centroid rows in source geojson inventory, but layers only get plottable
+    ref_kept = [f for f in feats if is_ref_or_centroid_feature(f.get("properties") or {})]
+    existing["features"] = new_feats + ref_kept
     write_json(geo_path, existing)
 
-    # Rebuild layers with unique ids
+    # Rebuild layers with unique ids — objek_titik excludes REF/centroid
     if layers_path.exists():
         layers = load_json(layers_path)
         other = [
@@ -640,6 +656,8 @@ def expand_spatial_points(objek_records: list[dict]):
         titik = []
         for f in new_feats:
             props = dict(f.get("properties") or {})
+            if is_ref_or_centroid_feature(props):
+                continue
             props["layer"] = "objek_titik"
             titik.append({"type": "Feature", "geometry": f.get("geometry"), "properties": props})
         all_feats = titik + other
@@ -658,7 +676,10 @@ def expand_spatial_points(objek_records: list[dict]):
             "densitas_kasus": ["id", "nama", "n_kasus", "level_risiko", "layer"],
         }
         write_json(layers_path, layers)
-    print(f"    spatial points total={len(new_feats)} added~={n_add}")
+    print(
+        f"    spatial points plottable={len(new_feats)} added~={n_add} "
+        f"ref_kept_in_source={len(ref_kept)}"
+    )
 
 
 # ─── Fase 4: alias + company flags ───────────────────────────────────────────
@@ -839,8 +860,17 @@ def update_meta_counts(kasus):
     counts["kasus_konflik"] = len(kasus)
     objek = load_json(DATA / "objek_agrinas.json").get("records") or []
     counts["objek_agrinas"] = len(objek)
+    counts["objek_mappable"] = sum(
+        1
+        for r in objek
+        if str(r.get("mappable") or "").strip().lower() in {"ya", "true", "1", "yes"}
+    )
     layers = load_json(DATA / "layers.geojson") if (DATA / "layers.geojson").exists() else {}
-    counts["fitur_spasial"] = len(layers.get("features") or [])
+    feats = layers.get("features") or []
+    counts["fitur_spasial"] = len(feats)
+    counts["objek_titik"] = sum(
+        1 for f in feats if (f.get("properties") or {}).get("layer") == "objek_titik"
+    )
     lintas = sum(
         1
         for r in kasus
@@ -851,9 +881,12 @@ def update_meta_counts(kasus):
     counts["entri_tidak_terpetakan"] = lintas
     meta["counts"] = counts
     meta["catatan"] = (
-        "Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); "
+        f"Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); "
         f"coverage {mapped}/{lintas} setelah DQ; skor = indeks liputan+objek+register. "
-        "Bukan batas legal HGU/IUP."
+        f"Bukan batas legal HGU/IUP. objek_titik ({counts['objek_titik']}) ≠ "
+        f"objek_agrinas ({counts['objek_agrinas']}): dual grain — titik = proksi spasial "
+        f"(bukan 1:1 dengan registry). Metrik benar: objek_mappable "
+        f"({counts['objek_mappable']}/{counts['objek_agrinas']})."
     )
     meta["update_command"] = (
         "python website/scripts/apply_dq_fixes.py && python website/scripts/export_web_data.py"
@@ -867,6 +900,10 @@ def update_meta_counts(kasus):
         "Indeks liputan+objek+register terbuka — bukan vonis operasional. "
         f"Setelah DQ: {mapped}/{lintas} entri terpetakan/tidak. "
         "Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi."
+    )
+    meth["dual_grain"] = (
+        "objek_agrinas = entity registry; objek_titik = proksi spasial campuran; "
+        "objek_mappable = subset registry yang layak diplot. Jangan bandingkan titik vs registry 1:1."
     )
     meta["methodology"] = meth
     from datetime import datetime, timezone

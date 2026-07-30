@@ -1335,7 +1335,39 @@ def export_konsesi_atlas():
     )
 
 
-def export_meta(counts: dict):
+def dual_grain_catatan(
+    mapped: int,
+    lintas: int,
+    n_objek: int,
+    n_mappable: int,
+    n_titik: int,
+) -> str:
+    return (
+        f"Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); "
+        f"coverage {mapped}/{lintas} setelah DQ; skor = indeks liputan+objek+register. "
+        f"Bukan batas legal HGU/IUP. objek_titik ({n_titik}) ≠ objek_agrinas ({n_objek}): "
+        f"dual grain — titik = proksi spasial (bukan 1:1 dengan registry). "
+        f"Metrik benar: objek_mappable ({n_mappable}/{n_objek})."
+    )
+
+
+def count_objek_titik(features: list) -> int:
+    return sum(
+        1
+        for f in features
+        if (f.get("properties") or {}).get("layer") == "objek_titik"
+    )
+
+
+def count_objek_mappable(objek: list[dict]) -> int:
+    return sum(
+        1
+        for r in objek
+        if str(r.get("mappable") or "").strip().lower() in {"ya", "true", "1", "yes"}
+    )
+
+
+def export_meta(counts: dict, catatan: str | None = None):
     write_json(
         "meta.json",
         {
@@ -1357,11 +1389,21 @@ def export_meta(counts: dict):
             "methodology": {
                 "skor_type": "indeks_liputan_objek_register",
                 "disclaimer": (
-                    "Skor adalah indeks early-warning dari liputan OSINT + objek Agrinas/KSO + register terbuka, "
-                    "bukan vonis operasional. Belum dikalibrasi ulang terhadap rekap LP/SPKT 36 bulan resmi."
+                    "Indeks liputan+objek+register terbuka — bukan vonis operasional. "
+                    f"Setelah DQ: {counts.get('entri_terpetakan', '–')}/"
+                    f"{counts.get('entri_tidak_terpetakan', '–')} entri terpetakan/tidak. "
+                    "Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi."
                 ),
                 "blend_default": "70% OSINT + 30% register",
                 "kalibrasi": "Menunggu rekap LP/SPKT 36 bulan resmi",
+                "dq_note": (
+                    "DQ plan applied: noise kasus dropped; tanpa_lp flag; kab_primary pada objek; "
+                    "match_id cocokan; sk36 record_id; company alias."
+                ),
+                "dual_grain": (
+                    "objek_agrinas = entity registry; objek_titik = proksi spasial campuran; "
+                    "objek_mappable = subset registry yang layak diplot. Jangan bandingkan titik vs registry 1:1."
+                ),
             },
             "sumber": [
                 "TABEL_KONFLIK_AGRARIA_SAWIT_RIAU",
@@ -1375,10 +1417,16 @@ def export_meta(counts: dict):
                 "tabulasi_konsesi_sawit_gfw_bbox_riau (287)",
                 "Nusantara Atlas / GFW (cocokan)",
             ],
-            "update_command": "python website/scripts/export_web_data.py",
-            "catatan": (
-                "Choropleth memakai batas ADM2; koridor dari bbox proksi; densitas kasus dipetakan ke centroid kab; "
-                "overlay GFW = TopoJSON ter-simplify (lazy-load). Bukan batas legal HGU/IUP."
+            "update_command": (
+                "python website/scripts/apply_dq_fixes.py && python website/scripts/export_web_data.py"
+            ),
+            "catatan": catatan
+            or dual_grain_catatan(
+                counts.get("entri_terpetakan", 0),
+                counts.get("entri_tidak_terpetakan", 0),
+                counts.get("objek_agrinas", 0),
+                counts.get("objek_mappable", 0),
+                counts.get("objek_titik", 0),
             ),
         },
     )
@@ -1410,10 +1458,14 @@ def main():
         if "lintas" in str(r.get("polres") or "").lower()
         or "lintas" in str(r.get("kab_kota") or "").lower()
     )
+    n_mappable = count_objek_mappable(objek)
+    n_titik = count_objek_titik(geo["features"])
     counts = {
         "kab_kota": len(kab_records),
         "polres": len(polres),
         "objek_agrinas": len(objek),
+        "objek_mappable": n_mappable,
+        "objek_titik": n_titik,
         "kasus_konflik": len(kasus),
         "choropleth": len(adm),
         "fitur_spasial": len(geo["features"]),
@@ -1422,7 +1474,16 @@ def main():
         "entri_terpetakan": len(kasus) - lintas,
         "entri_tidak_terpetakan": lintas,
     }
-    export_meta(counts)
+    export_meta(
+        counts,
+        catatan=dual_grain_catatan(
+            counts["entri_terpetakan"],
+            counts["entri_tidak_terpetakan"],
+            counts["objek_agrinas"],
+            counts["objek_mappable"],
+            counts["objek_titik"],
+        ),
+    )
     # DQ gate + report
     try:
         from validate_web_data import main as validate_main

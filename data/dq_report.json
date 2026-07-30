@@ -2,7 +2,7 @@
   "generated_at": "2026-07-30T21:00:46+07:00",
   "validate_exit_code": 0,
   "validate_pass": true,
-  "validate_stdout": "=== validate_web_data ===\ndata: C:\\Users\\Patron\\Documents\\Konflik Sawit di Riau\\website\\data\nkasus=113 objek=139 kab=12 polres=12 gfw=287\nRESULT: PASS (0 warnings)\n",
+  "validate_stdout": "=== validate_web_data ===\ndata: website/data\nkasus=113 objek=139 kab=12 polres=12 gfw=287\nRESULT: PASS (0 warnings)\n",
   "validate_stderr": "",
   "grade_counts": {
     "A": 26,

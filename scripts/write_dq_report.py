@@ -15,6 +15,31 @@ DATA = SITE / "data"
 ROOT = SITE.parent if (SITE.parent / "master_list_objek_agrinas_satgas_riau.csv").exists() else SITE
 
 
+def scrub_local_paths(text: str) -> str:
+    """Remove machine-absolute paths from committed artifacts."""
+    if not text:
+        return text
+    # Normalize separators then replace known roots with repo-relative labels
+    out = text.replace("\\", "/")
+    site_s = str(SITE).replace("\\", "/")
+    root_s = str(ROOT).replace("\\", "/")
+    data_s = str(DATA).replace("\\", "/")
+    # Longest first
+    for abs_path, label in (
+        (data_s, "website/data"),
+        (site_s, "website"),
+        (root_s, "workspace"),
+    ):
+        if abs_path and abs_path in out:
+            out = out.replace(abs_path, label)
+    # Generic Windows user home leak
+    import re
+
+    out = re.sub(r"[A-Za-z]:/Users/[^/\s]+/", "~/ ", out)
+    out = re.sub(r"/home/[^/\s]+/", "~/ ", out)
+    return out
+
+
 def main():
     # Run audit
     audit_script = HERE.parent / "audit_data_quality.py"
@@ -47,8 +72,8 @@ def main():
         "generated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
         "validate_exit_code": val.returncode,
         "validate_pass": val.returncode == 0,
-        "validate_stdout": (val.stdout or "")[-2000:],
-        "validate_stderr": (val.stderr or "")[-2000:],
+        "validate_stdout": scrub_local_paths((val.stdout or "")[-2000:]),
+        "validate_stderr": scrub_local_paths((val.stderr or "")[-2000:]),
         "grade_counts": grades,
         "overview": overview,
         "cross": audit.get("cross") or {},

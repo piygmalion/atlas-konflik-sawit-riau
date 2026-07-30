@@ -8,8 +8,11 @@ from pathlib import Path
 
 import openpyxl
 
-ROOT = Path(r"C:\Users\Patron\Documents\Konflik Sawit di Riau")
-WEB = ROOT / "website" / "data"
+HERE = Path(__file__).resolve()
+SITE = HERE.parents[1]
+# Prefer parent workspace when master Agrinas CSV exists; else site itself.
+ROOT = SITE.parent if (SITE.parent / "master_list_objek_agrinas_satgas_riau.csv").exists() else SITE
+WEB = SITE / "data"
 
 
 def count_csv(path: Path) -> int:

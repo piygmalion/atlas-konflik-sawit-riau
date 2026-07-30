@@ -32,6 +32,8 @@ python website/scripts/write_dq_report.py
 
 Commit & push perubahan di `website/data/` hanya jika `validate_web_data.py` **PASS**.
 
+CI: GitHub Action **Validate serving data** menjalankan gate yang sama pada setiap push/PR ke `main`.
+
 Ambang lulus utama:
 
 - 0 duplikat PK: `kasus.id`, `objek.id`, `kab.id`, `polres`, `gfwid`, `match_id`, `record_id` SK36

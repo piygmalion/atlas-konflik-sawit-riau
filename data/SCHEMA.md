@@ -39,7 +39,7 @@ root CSV/XLSX  →  apply_dq_fixes.py (opsional)  →  export_web_data.py  →  
 
 `kab_primary` = satu kab kanonik atau `MULTI`. Agregat choropleth sebaiknya memakai `kab_primary`, bukan string `kab_kota` bebas.
 
-**Policy titik vs objek (bukan gap 1:1):** `objek_agrinas` (≈139) ≠ layer `objek_titik` (≈66). Titik adalah **proksi spasial campuran**: hotspot OSINT tempat + centroid kab REF + expand DQ centroid-kab untuk objek `mappable=ya` prioritas Tinggi/Kritis. Objek `MULTI` / Mitra KSO agregat **tidak** dipaksa-plot. Metrik benar: coverage mappable (≈34/139), bukan 66/139.
+**Policy titik vs objek (bukan gap 1:1):** `objek_agrinas` (≈139) ≠ layer `objek_titik` (≈54 di serving). Titik serving = **proksi spasial plottable**: hotspot OSINT + expand DQ centroid-kab untuk objek `mappable=ya` prioritas Tinggi/Kritis. Placeholder **REF/centroid kab** tetap boleh ada di sumber `proksi_peta_titik_agrinas.geojson` tetapi **tidak** di-inject ke `layers.geojson`. Objek `MULTI` / Mitra KSO agregat **tidak** dipaksa-plot. Metrik benar: coverage mappable (≈34/139), bukan membandingkan titik vs registry 1:1.
 
 ### kasus (`kasus.json` / `master_kasus_sawit_riau.csv`)
 

@@ -24,6 +24,7 @@ const state = {
   layersDirty: false,
   blendOsint: 0.7, // 0 = 100% register, 0.7 = default, 1 = 100% OSINT
   timelineYearMode: "kejadian", // kejadian | disebut
+  gfwFullLoading: null,
   layerOn: {
     choropleth: true,
     koridor: false,
@@ -211,11 +212,15 @@ function blendMetricLabel() {
 window.blendedPolresSkor = blendedPolresSkor;
 window.getBlendOsint = () => state.blendOsint;
 
-/** Cache-bust for GitHub Pages / local static server so meta+layers refresh with UI. */
-const DATA_VER = "f3e";
+/**
+ * Single cache-bust token for all data fetches.
+ * Source of truth: <meta name="atlas-asset-ver"> in index.html (keep ?v= on assets in sync).
+ */
+const ASSET_VER =
+  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0db7";
 
 async function loadJSON(path) {
-  const url = path.includes("?") ? path : `${path}?v=${DATA_VER}`;
+  const url = path.includes("?") ? path : `${path}?v=${ASSET_VER}`;
   const res = await fetch(url, { cache: "no-cache" });
   if (!res.ok) throw new Error(`Gagal memuat ${path}`);
   return res.json();
@@ -331,7 +336,7 @@ function setupMapPreviewActions() {
 }
 
 async function boot() {
-  const [meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, analytics, penertiban, gfwFull] =
+  const [meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, analytics, penertiban] =
     await Promise.all([
       loadJSON("data/meta.json"),
       loadJSON("data/kab_kota.json"),
@@ -344,7 +349,6 @@ async function boot() {
       loadJSON("data/adm2_riau.geojson"),
       loadJSON("data/analytics.json"),
       loadJSON("data/penertiban.json"),
-      loadJSON("data/konsesi_gfw_full.json"),
     ]);
   Object.assign(DATA, {
     meta,
@@ -359,7 +363,7 @@ async function boot() {
     gfw: null,
     analytics,
     penertiban,
-    gfwFull,
+    gfwFull: null,
   });
 
   (meta.layers || []).forEach((l) => {
@@ -886,7 +890,28 @@ function refreshChoroplethForMode() {
   updateMapLegend();
 }
 
+async function ensureGfwFull() {
+  if (DATA.gfwFull?.records) return DATA.gfwFull;
+  if (state.gfwFullLoading) return state.gfwFullLoading;
+  state.gfwFullLoading = (async () => {
+    try {
+      DATA.gfwFull = await loadJSON("data/konsesi_gfw_full.json");
+    } catch (err) {
+      console.error("konsesi_gfw_full gagal dimuat", err);
+      DATA.gfwFull = { records: [], total: 0 };
+    }
+    return DATA.gfwFull;
+  })();
+  try {
+    return await state.gfwFullLoading;
+  } finally {
+    state.gfwFullLoading = null;
+  }
+}
+
 async function ensureGfwLayer() {
+  // Attribute table is only needed for detail enrichment — load in parallel with overlay.
+  ensureGfwFull();
   if (state.gfwReady) return;
   if (state.gfwLoading) return state.gfwLoading;
 
@@ -1065,7 +1090,8 @@ function showKoridor(p) {
   `);
 }
 
-function showGfw(p) {
+async function showGfw(p) {
+  await ensureGfwFull();
   const atlas = findAtlasMatch(p.name || p.company);
   const gfw = findGfwRecord(p.name || p.company) || p;
   const link = atlasDeepLink(atlas?.atlas_nama || p.name || p.company, gfw);
@@ -1093,7 +1119,8 @@ function showGfw(p) {
   `);
 }
 
-function showAtlasMatch(atlasNama, namaLokal) {
+async function showAtlasMatch(atlasNama, namaLokal) {
+  await ensureGfwFull();
   const row = findAtlasMatch(atlasNama) || findAtlasMatch(namaLokal);
   const gfw = findGfwRecord(namaLokal || atlasNama) || findGfwRecord(atlasNama);
   if (gfw?.lat && gfw?.lon) {
@@ -1572,8 +1599,9 @@ function setupDataTables() {
       .map((t) => `<button class="chip ${t.id === active.id ? "is-on" : ""}" data-id="${t.id}">${t.label}</button>`)
       .join("");
     tabBar.querySelectorAll("button").forEach((b) =>
-      b.addEventListener("click", () => {
+      b.addEventListener("click", async () => {
         active = tabs.find((t) => t.id === b.dataset.id);
+        if (active?.id === "gfwfull") await ensureGfwFull();
         paintTabs();
         paintTable();
       })

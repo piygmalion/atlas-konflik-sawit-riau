@@ -130,6 +130,32 @@ def main() -> int:
             if k in counts and int(counts[k]) != n:
                 errors.append(f"meta.counts.{k}={counts[k]} != len(records)={n}")
 
+        # Dual-grain: objek_titik must match layers.geojson point features
+        layers_path = SITE / "layers.geojson"
+        if layers_path.exists() and "objek_titik" in counts:
+            layers = json.loads(layers_path.read_text(encoding="utf-8"))
+            n_titik = sum(
+                1
+                for f in (layers.get("features") or [])
+                if (f.get("properties") or {}).get("layer") == "objek_titik"
+            )
+            if int(counts["objek_titik"]) != n_titik:
+                errors.append(
+                    f"meta.counts.objek_titik={counts['objek_titik']} != "
+                    f"layers objek_titik features={n_titik}"
+                )
+        if "objek_mappable" in counts:
+            n_map = sum(
+                1
+                for r in objek
+                if str(r.get("mappable") or "").strip().lower() in {"ya", "true", "1", "yes"}
+            )
+            if int(counts["objek_mappable"]) != n_map:
+                errors.append(
+                    f"meta.counts.objek_mappable={counts['objek_mappable']} != "
+                    f"objek mappable=ya count={n_map}"
+                )
+
     # Kasus DQ thresholds (post Fase-1 friendly; warn before hard fail if still baseline)
     ops = [r for r in kasus if str(r.get("tipe_entri") or "").lower().startswith("kasus")]
     if ops:
