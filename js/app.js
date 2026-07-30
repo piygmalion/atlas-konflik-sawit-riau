@@ -77,12 +77,21 @@ const colorFor = (level) => {
   return "#2f6a4c";
 };
 
+/** Choropleth fill for kab skor 0–100 (not 1–5). Bands match PRIORITAS/WASPADA/PANTAU. */
+const CHORO_BREAKS = { high: 70, mid: 40 };
+
 const choroplethColor = (skor) => {
   const s = Number(skor) || 0;
-  if (s >= 4) return "#c45620";
-  if (s >= 3) return "#d09218";
-  if (s >= 2) return "#7a9a4a";
+  if (s >= CHORO_BREAKS.high) return "#c45620";
+  if (s >= CHORO_BREAKS.mid) return "#d09218";
   return "#2f6a4c";
+};
+
+const choroplethBandLabel = (skor) => {
+  const s = Number(skor) || 0;
+  if (s >= CHORO_BREAKS.high) return `tinggi (≥${CHORO_BREAKS.high})`;
+  if (s >= CHORO_BREAKS.mid) return `sedang (≥${CHORO_BREAKS.mid})`;
+  return `rendah (<${CHORO_BREAKS.mid})`;
 };
 
 async function loadJSON(path) {
@@ -331,7 +340,7 @@ function initMap() {
     onEachFeature: (f, layer) => {
       const p = f.properties || {};
       layer.bindTooltip(
-        `<strong>${escapeHtml(p.nama || "")}</strong><br/>Skor ${fmtNum(p.skor)} · ${escapeHtml(p.kategori || "")}`
+        `<strong>${escapeHtml(p.nama || "")}</strong><br/>Skor ${fmtNum(p.skor)} · ${escapeHtml(p.kategori || choroplethBandLabel(p.skor))}`
       );
       layer.on({
         mouseover: (e) => e.target.setStyle({ weight: 2.2, fillOpacity: 0.72 }),
