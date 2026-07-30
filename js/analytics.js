@@ -18,10 +18,21 @@ const P2_COLORS = {
   pantau: "#2f6a4c",
   soft: "#7a9a4a",
   ink: "#5a675f",
-  series: ["#c45620", "#d09218", "#2f6a4c", "#5b7c65", "#8aa090", "#4a6b58", "#b dig"],
+  series: [
+    "#c45620",
+    "#d09218",
+    "#2f6a4c",
+    "#5b7c65",
+    "#8aa090",
+    "#6a8f7a",
+    "#a0673a",
+    "#3d5c4a",
+    "#c4891a",
+    "#4f7a62",
+    "#8b5a3c",
+    "#5a7a5a",
+  ],
 };
-
-P2_COLORS.series = ["#c45620", "#d09218", "#2f6a4c", "#5b7c65", "#8aa090", "#6a8f7a", "#a0673a", "#3d5c4a", "#c4891a", "#4f7a62", "#8b5a3c", "#5a7a5a"];
 
 const POLRES_ALIAS = {
   rohul: "Rokan Hulu",
