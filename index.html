@@ -9,15 +9,19 @@
   <meta property="og:description" content="Pemetaan spasial konflik sawit Riau — interaktif dan dapat diperbarui." />
   <meta property="og:type" content="website" />
   <!-- Bump atlas-asset-ver AND every ?v= below together on each release. -->
-  <meta name="atlas-asset-ver" content="0db9" />
+  <meta name="atlas-asset-ver" content="0dba" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/styles.css?v=0db9" />
+  <link rel="stylesheet" href="css/styles.css?v=0dba" />
 </head>
-<body>
+<body class="is-booting">
   <div id="app">
+    <div id="statusBanner" class="status-banner" hidden role="alert">
+      <p id="statusBannerText"></p>
+      <button type="button" class="status-banner__close" id="statusBannerClose" aria-label="Tutup peringatan">×</button>
+    </div>
     <header class="topbar">
       <div class="brand-block">
         <p class="brand">Atlas Konflik Sawit Riau</p>
@@ -40,12 +44,24 @@
       <div class="map-shell" aria-label="Peta interaktif">
         <div id="map"></div>
 
+        <div id="bootOverlay" class="boot-overlay" role="status" aria-live="polite" aria-busy="true">
+          <div class="boot-overlay__card">
+            <div class="skeleton skeleton-line skeleton-line--lg"></div>
+            <div class="skeleton skeleton-line"></div>
+            <div class="skeleton skeleton-line skeleton-line--sm"></div>
+            <p class="boot-overlay__label">Memuat lapisan &amp; register…</p>
+          </div>
+        </div>
+
         <aside class="float-panel rail" id="railPanel" aria-label="Panel kontrol">
           <button type="button" class="rail-handle" id="railToggle" aria-expanded="false" aria-controls="railPanel">
             <span class="rail-handle-bar" aria-hidden="true"></span>
             <span class="rail-handle-label">Kontrol &amp; ranking</span>
           </button>
-          <div class="stat-strip" id="statsGrid"></div>
+          <div class="stat-strip stat-strip--primary" id="statsGrid" aria-busy="true">
+            <div class="stat"><span class="skeleton skeleton-block"></span><span class="skeleton skeleton-line skeleton-line--sm"></span></div>
+            <div class="stat"><span class="skeleton skeleton-block"></span><span class="skeleton skeleton-line skeleton-line--sm"></span></div>
+          </div>
 
           <section class="rail-section">
             <h2>Mode bandingkan</h2>
@@ -345,8 +361,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <script src="js/analytics.js?v=0db9"></script>
-  <script src="js/penertiban.js?v=0db9"></script>
-  <script src="js/app.js?v=0db9"></script>
+  <script src="js/analytics.js?v=0dba"></script>
+  <script src="js/penertiban.js?v=0dba"></script>
+  <script src="js/app.js?v=0dba"></script>
 </body>
 </html>

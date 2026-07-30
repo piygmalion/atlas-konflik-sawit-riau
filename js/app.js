@@ -217,13 +217,91 @@ window.getBlendOsint = () => state.blendOsint;
  * Source of truth: <meta name="atlas-asset-ver"> in index.html (keep ?v= on assets in sync).
  */
 const ASSET_VER =
-  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0db9";
+  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0dba";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${ASSET_VER}`;
   const res = await fetch(url, { cache: "no-cache" });
   if (!res.ok) throw new Error(`Gagal memuat ${path}`);
   return res.json();
+}
+
+const BOOT_MANIFEST = [
+  { key: "meta", path: "data/meta.json", critical: true },
+  { key: "kab", path: "data/kab_kota.json", critical: true },
+  { key: "polres", path: "data/polres.json", critical: true },
+  { key: "objek", path: "data/objek_agrinas.json", critical: true },
+  { key: "kasus", path: "data/kasus.json", critical: true },
+  { key: "perusahaan", path: "data/perusahaan.json", critical: false, fallback: { records: [] } },
+  { key: "konsesi", path: "data/konsesi.json", critical: false, fallback: { atlas_match: { records: [], total: 0 } } },
+  { key: "layers", path: "data/layers.geojson", critical: true },
+  { key: "adm2", path: "data/adm2_riau.geojson", critical: true },
+  { key: "analytics", path: "data/analytics.json", critical: false, fallback: { timeline: { default_mode: "kejadian" } } },
+  { key: "penertiban", path: "data/penertiban.json", critical: false, fallback: { normalized: {} } },
+];
+
+function setBooting(on) {
+  document.body.classList.toggle("is-booting", on);
+  const ov = document.getElementById("bootOverlay");
+  if (ov) {
+    ov.hidden = !on;
+    ov.setAttribute("aria-busy", on ? "true" : "false");
+  }
+  const stats = document.getElementById("statsGrid");
+  if (stats && !on) stats.removeAttribute("aria-busy");
+}
+
+function showStatusBanner(message) {
+  const banner = document.getElementById("statusBanner");
+  const text = document.getElementById("statusBannerText");
+  if (!banner || !text) return;
+  text.textContent = message;
+  banner.hidden = false;
+}
+
+function hideStatusBanner() {
+  const banner = document.getElementById("statusBanner");
+  if (banner) banner.hidden = true;
+}
+
+function setupStatusBanner() {
+  document.getElementById("statusBannerClose")?.addEventListener("click", hideStatusBanner);
+}
+
+function emptyRankHtml(msg) {
+  return `<li class="rank-empty" role="status">${escapeHtml(msg)}</li>`;
+}
+
+async function loadBootPayload() {
+  const settled = await Promise.all(
+    BOOT_MANIFEST.map(async (item) => {
+      try {
+        return { ...item, ok: true, data: await loadJSON(item.path) };
+      } catch (err) {
+        return { ...item, ok: false, err };
+      }
+    })
+  );
+
+  const failed = settled.filter((r) => !r.ok);
+  const criticalFailed = failed.filter((r) => r.critical);
+  if (failed.length) {
+    const names = failed.map((f) => f.path.replace(/^data\//, "")).join(", ");
+    showStatusBanner(
+      criticalFailed.length
+        ? `Gagal memuat data inti (${names}). Periksa file serving atau jalankan ekspor ulang.`
+        : `Sebagian data opsional gagal dimuat (${names}). Peta tetap jalan; modul terkait mungkin kosong.`
+    );
+  }
+  if (criticalFailed.length) {
+    const detail = criticalFailed.map((f) => f.err?.message || f.path).join("; ");
+    throw new Error(detail || "Data inti belum tersedia");
+  }
+
+  const byKey = Object.fromEntries(
+    settled.map((r) => [r.key, r.ok ? r.data : structuredClone(r.fallback)])
+  );
+  return byKey;
 }
 
 /** Kartu preview hover peta — satu template untuk semua lapisan. */
@@ -336,42 +414,31 @@ function setupMapPreviewActions() {
 }
 
 async function boot() {
-  const [meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, analytics, penertiban] =
-    await Promise.all([
-      loadJSON("data/meta.json"),
-      loadJSON("data/kab_kota.json"),
-      loadJSON("data/polres.json"),
-      loadJSON("data/objek_agrinas.json"),
-      loadJSON("data/kasus.json"),
-      loadJSON("data/perusahaan.json"),
-      loadJSON("data/konsesi.json"),
-      loadJSON("data/layers.geojson"),
-      loadJSON("data/adm2_riau.geojson"),
-      loadJSON("data/analytics.json"),
-      loadJSON("data/penertiban.json"),
-    ]);
+  setupStatusBanner();
+  setBooting(true);
+  const loaded = await loadBootPayload();
   Object.assign(DATA, {
-    meta,
-    kab,
-    polres,
-    objek,
-    kasus,
-    perusahaan,
-    konsesi,
-    layers,
-    adm2,
+    meta: loaded.meta,
+    kab: loaded.kab,
+    polres: loaded.polres,
+    objek: loaded.objek,
+    kasus: loaded.kasus,
+    perusahaan: loaded.perusahaan,
+    konsesi: loaded.konsesi,
+    layers: loaded.layers,
+    adm2: loaded.adm2,
     gfw: null,
-    analytics,
-    penertiban,
+    analytics: loaded.analytics,
+    penertiban: loaded.penertiban,
     gfwFull: null,
   });
 
-  (meta.layers || []).forEach((l) => {
+  (DATA.meta.layers || []).forEach((l) => {
     state.layerOn[l.id] = !!l.default;
   });
 
   document.getElementById("updatedAt").textContent =
-    `Diperbarui ${formatDate(meta.updated_at)} · ${meta.counts.kasus_konflik} kasus · ${meta.counts.objek_agrinas} objek`;
+    `Diperbarui ${formatDate(DATA.meta.updated_at)} · ${DATA.meta.counts?.kasus_konflik ?? "–"} kasus · ${DATA.meta.counts?.objek_agrinas ?? "–"} objek`;
 
   state.timelineYearMode = DATA.analytics?.timeline?.default_mode || "kejadian";
 
@@ -394,6 +461,7 @@ async function boot() {
   syncRailDetailsForViewport();
   window.addEventListener("resize", syncRailDetailsForViewport);
   syncMobileStartCta();
+  setBooting(false);
 }
 
 function formatDate(iso) {
@@ -565,10 +633,11 @@ function renderRankPanel() {
     const rows = (DATA.konsesi?.atlas_match?.records || [])
       .filter((r) => String(r.status || "").toLowerCase().includes("cocok"))
       .slice(0, 16);
-    ol.innerHTML = rows
-      .map((r, i) => {
-        const link = atlasDeepLink(r.atlas_nama || r.nama_lokal);
-        return `<li>
+    ol.innerHTML =
+      rows
+        .map((r, i) => {
+          const link = atlasDeepLink(r.atlas_nama || r.nama_lokal);
+          return `<li>
           <button type="button" data-atlas="${escapeAttr(r.atlas_nama || "")}" data-lokal="${escapeAttr(r.nama_lokal || "")}" title="Buka detail match Atlas" aria-label="Buka detail ${escapeAttr(r.atlas_nama || "match Atlas")}">
             <span class="n pantau">${i + 1}</span>
             <span>
@@ -578,8 +647,8 @@ function renderRankPanel() {
             <span class="score"><a class="rank-ext" href="${escapeAttr(link.href)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">↗</a></span>
           </button>
         </li>`;
-      })
-      .join("");
+        })
+        .join("") || emptyRankHtml("Tidak ada cocokan Atlas untuk ditampilkan.");
     ol.querySelectorAll("button[data-atlas]").forEach((btn) => {
       btn.addEventListener("click", () => showAtlasMatch(btn.dataset.atlas, btn.dataset.lokal));
     });
@@ -599,9 +668,10 @@ function renderRankPanel() {
         return wa - wb;
       })
       .slice(0, 16);
-    ol.innerHTML = rows
-      .map(
-        (o, i) => `<li>
+    ol.innerHTML =
+      rows
+        .map(
+          (o, i) => `<li>
         <button type="button" data-objek="${escapeAttr(o.id || o.nama || "")}" title="Buka detail objek" aria-label="Buka detail objek ${escapeAttr(o.nama || o.id || "")}">
           <span class="n ${escapeAttr(o.prioritas || "pantau")}">${i + 1}</span>
           <span>
@@ -611,8 +681,8 @@ function renderRankPanel() {
           <span class="score">${escapeHtml(o.prioritas || "–")}</span>
         </button>
       </li>`
-      )
-      .join("");
+        )
+        .join("") || emptyRankHtml("Tidak ada objek untuk filter ini.");
     ol.querySelectorAll("button[data-objek]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const o = DATA.objek.records.find((x) => x.id === btn.dataset.objek || x.nama === btn.dataset.objek);
@@ -637,13 +707,14 @@ function renderRankPanel() {
     const primary = mode === "register" ? Number(p.skor_register) || 0 : blendedPolresSkor(p);
     return kategoriFromSkor(primary) === state.priority || p.kategori === state.priority;
   });
-  ol.innerHTML = rows
-    .map((p, idx) => {
-      const primary = Number(mode === "register" ? p.skor_register || p.skor : blendedPolresSkor(p)) || 0;
-      const kat = kategoriFromSkor(primary);
-      const rankN = idx + 1;
-      const shortName = p.polres.replace(/^Polres\s+/i, "");
-      return `
+  ol.innerHTML =
+    rows
+      .map((p, idx) => {
+        const primary = Number(mode === "register" ? p.skor_register || p.skor : blendedPolresSkor(p)) || 0;
+        const kat = kategoriFromSkor(primary);
+        const rankN = idx + 1;
+        const shortName = p.polres.replace(/^Polres\s+/i, "");
+        return `
       <li>
         <button type="button" data-polres="${escapeAttr(p.polres)}" title="Buka detail Polres ${escapeAttr(shortName)}" aria-label="Buka detail Polres ${escapeAttr(shortName)}">
           <span class="n ${escapeAttr(kat)}">${rankN}</span>
@@ -654,8 +725,8 @@ function renderRankPanel() {
           <span class="score" title="${mode === "register" ? "Risiko register" : blendMetricLabel()}">${primary.toFixed(0)}</span>
         </button>
       </li>`;
-    })
-    .join("");
+      })
+      .join("") || emptyRankHtml("Tidak ada Polres untuk filter ini.");
   ol.querySelectorAll("button[data-polres]").forEach((btn) => {
     btn.addEventListener("click", () => showPolres(btn.dataset.polres));
   });
@@ -932,6 +1003,7 @@ async function ensureGfwLayer() {
         geo = await loadJSON("data/gfw_konsesi.geojson");
       } catch (err2) {
         console.error("Overlay GFW tidak tersedia", err2);
+        showStatusBanner("Lapisan konsesi GFW tidak tersedia saat ini. Lapisan lain tetap bisa dipakai.");
         return;
       }
     }
@@ -1342,7 +1414,7 @@ function matchWilayah(a, b) {
 
 function renderStory() {
   const top = DATA.polres.records.slice(0, 3);
-  const atlasHits = (DATA.konsesi.atlas_match.records || []).filter((r) =>
+  const atlasHits = (DATA.konsesi?.atlas_match?.records || []).filter((r) =>
     String(r.status || "").toLowerCase().includes("cocok")
   ).length;
   document.getElementById("storyGrid").innerHTML = [
@@ -1363,7 +1435,7 @@ function renderStory() {
     },
     {
       t: "Jembatan ke Atlas",
-      h: `${atlasHits || DATA.konsesi.atlas_match.total} nama tercocokkan`,
+      h: `${atlasHits || DATA.konsesi?.atlas_match?.total || 0} nama tercocokkan`,
       p: "Setiap cocokan punya deep-link ke Nusantara Atlas sebagai bukti satelit; workspace ini memegang aktor dan konflik.",
     },
   ]
@@ -1589,6 +1661,11 @@ function setupSearch() {
         box.hidden = true;
         return;
       }
+      if (!DATA.kab?.records || !DATA.polres?.records || !DATA.objek?.records) {
+        box.innerHTML = `<p class="search-empty" role="status">Data pencarian belum siap. Tunggu sebentar…</p>`;
+        box.hidden = false;
+        return;
+      }
       const hits = [];
       DATA.kab.records.forEach((k) => {
         if ((k.kab_kota || "").toLowerCase().includes(q))
@@ -1602,14 +1679,18 @@ function setupSearch() {
         if ((o.nama || "").toLowerCase().includes(q))
           hits.push({ type: "objek", label: o.nama, sub: o.kab_kota || o.lapisan, ref: o.id });
       });
-      box.innerHTML =
-        hits
-          .slice(0, 12)
-          .map(
-            (h) =>
-              `<button type="button" data-type="${h.type}" data-ref="${escapeAttr(h.ref)}"><strong>${escapeHtml(h.label)}</strong><small>${escapeHtml(h.sub || "")}</small></button>`
-          )
-          .join("") || `<button type="button">Tidak ada hasil</button>`;
+      if (!hits.length) {
+        box.innerHTML = `<p class="search-empty" role="status">Tidak ada hasil untuk “${escapeHtml(input.value.trim())}”. Coba nama kab/kota, Polres, atau objek.</p>`;
+        box.hidden = false;
+        return;
+      }
+      box.innerHTML = hits
+        .slice(0, 12)
+        .map(
+          (h) =>
+            `<button type="button" data-type="${h.type}" data-ref="${escapeAttr(h.ref)}"><strong>${escapeHtml(h.label)}</strong><small>${escapeHtml(h.sub || "")}</small></button>`
+        )
+        .join("");
       box.hidden = false;
       box.querySelectorAll("button").forEach((b) => {
         b.addEventListener("click", () => {
@@ -1633,7 +1714,7 @@ function setupDataTables() {
     { id: "objek", label: "Objek Agrinas", rows: () => DATA.objek.records, cols: ["id", "nama", "lapisan", "kab_primary", "kab_kota", "mappable", "prioritas", "status_kredibilitas", "kaitan_agrinas"] },
     { id: "polres", label: "Ranking Polres", rows: () => DATA.polres.records, cols: ["peringkat", "polres", "skor", "kategori", "n_agrinas", "n_aksi_massa", "alasan"] },
     { id: "kab", label: "Kab/Kota", rows: () => DATA.kab.records, cols: ["kab_kota", "kategori_peta", "skor_komposit", "n_kasus", "polres_proksi", "objek_sinyal_utama"] },
-    { id: "atlas", label: "Cocokan Atlas", rows: () => DATA.konsesi.atlas_match.records, cols: ["match_id", "atlas_nama", "tahun", "tipe", "status", "match_confidence", "nama_lokal", "area_ha"] },
+    { id: "atlas", label: "Cocokan Atlas", rows: () => DATA.konsesi?.atlas_match?.records || [], cols: ["match_id", "atlas_nama", "tahun", "tipe", "status", "match_confidence", "nama_lokal", "area_ha"] },
   {
       id: "gfwfull",
       label: "GFW bbox 287",
@@ -1711,10 +1792,16 @@ function escapeAttr(s) {
 
 boot().catch((err) => {
   console.error(err);
+  setBooting(false);
   document.getElementById("updatedAt").textContent = "Gagal memuat data — jalankan skrip ekspor.";
-  document.getElementById("detailContent").innerHTML = `
+  showStatusBanner("Data inti gagal dimuat. Chrome tetap tampil; perbaiki file data lalu muat ulang.");
+  const content = document.getElementById("detailContent");
+  if (content) {
+    content.innerHTML = `
     <p class="eyebrow">Error</p>
     <h1>Data belum tersedia</h1>
     <p class="lead">${escapeHtml(err.message)}</p>
     <code class="cmd">python website/scripts/export_web_data.py</code>`;
+  }
+  openDetail();
 });
