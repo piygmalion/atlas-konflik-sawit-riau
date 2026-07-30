@@ -217,7 +217,7 @@ window.getBlendOsint = () => state.blendOsint;
  * Source of truth: <meta name="atlas-asset-ver"> in index.html (keep ?v= on assets in sync).
  */
 const ASSET_VER =
-  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0db8";
+  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0db9";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${ASSET_VER}`;
@@ -389,9 +389,11 @@ async function boot() {
   setupDataTables();
   setupAnalyticsControls?.();
   setupPenertibanControls?.();
+  setupMobileChrome();
   syncTimelineYearModeUI();
   syncRailDetailsForViewport();
   window.addEventListener("resize", syncRailDetailsForViewport);
+  syncMobileStartCta();
 }
 
 function formatDate(iso) {
@@ -968,12 +970,69 @@ async function ensureGfwLayer() {
 }
 
 function openDetail() {
-  document.getElementById("detailPanel").classList.add("is-open");
+  const panel = document.getElementById("detailPanel");
+  panel?.classList.add("is-open");
+  // On mobile, collapse rail so map + detail aren't fighting for space
+  if (window.matchMedia("(max-width: 980px)").matches) {
+    const rail = document.getElementById("railPanel");
+    const toggle = document.getElementById("railToggle");
+    rail?.classList.remove("is-expanded");
+    toggle?.setAttribute("aria-expanded", "false");
+  }
+  syncMobileStartCta();
+}
+
+function closeDetail() {
+  document.getElementById("detailPanel")?.classList.remove("is-open");
+  syncMobileStartCta();
 }
 
 function setDetail(html) {
   document.getElementById("detailContent").innerHTML = html;
   openDetail();
+}
+
+function isWelcomeDetail() {
+  const eye = document.querySelector("#detailContent .eyebrow");
+  return /mulai di sini/i.test(eye?.textContent || "");
+}
+
+function syncMobileStartCta() {
+  const start = document.getElementById("mobileStart");
+  if (!start) return;
+  const narrow = window.matchMedia("(max-width: 980px)").matches;
+  const onPeta = state.view === "peta";
+  const detailOpen = document.getElementById("detailPanel")?.classList.contains("is-open");
+  start.hidden = !(narrow && onPeta && isWelcomeDetail() && !detailOpen);
+}
+
+function setupMobileChrome() {
+  const rail = document.getElementById("railPanel");
+  const toggle = document.getElementById("railToggle");
+  const start = document.getElementById("mobileStart");
+
+  toggle?.addEventListener("click", () => {
+    if (!rail) return;
+    const on = rail.classList.toggle("is-expanded");
+    toggle.setAttribute("aria-expanded", String(on));
+    setTimeout(() => state.map?.invalidateSize(), 300);
+  });
+
+  start?.addEventListener("click", () => {
+    openDetail();
+  });
+
+  const sync = () => {
+    if (!window.matchMedia("(max-width: 980px)").matches) {
+      rail?.classList.remove("is-expanded");
+      toggle?.setAttribute("aria-expanded", "false");
+    }
+    syncMobileStartCta();
+    document.body.classList.toggle("is-map-view", state.view === "peta");
+  };
+  sync();
+  window.addEventListener("resize", sync);
+  window.syncMobileStartCta = syncMobileStartCta;
 }
 
 function showKabupaten(nama) {
@@ -1334,7 +1393,9 @@ function setupNav() {
       if (data) data.hidden = state.view !== "data";
       if (analisis) analisis.hidden = state.view !== "analisis";
       document.body.classList.toggle("is-scroll", state.view !== "peta");
+      document.body.classList.toggle("is-map-view", state.view === "peta");
       if (state.view === "peta") setTimeout(() => state.map?.invalidateSize(), 80);
+      syncMobileStartCta();
       if (state.view === "analisis") {
         setTimeout(() => {
           if (typeof window.renderAnalytics === "function") window.renderAnalytics();
@@ -1347,7 +1408,7 @@ function setupNav() {
     });
   });
   document.getElementById("detailClose").addEventListener("click", () => {
-    document.getElementById("detailPanel").classList.remove("is-open");
+    closeDetail();
   });
 }
 

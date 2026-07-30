@@ -52,6 +52,8 @@ body.is-scroll {
 .table-tabs .chip:focus-visible,
 .rail-details > summary:focus-visible,
 .method-note-details > summary:focus-visible,
+.rail-handle:focus-visible,
+.mobile-start:focus-visible,
 .layer-item input:focus-visible,
 .leaflet-control-zoom a:focus-visible {
   outline: none;
@@ -211,6 +213,11 @@ body.is-scroll {
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
+}
+
+.rail-handle,
+.mobile-start {
+  display: none;
 }
 
 .detail {
@@ -1075,35 +1082,162 @@ th {
 }
 
 @media (max-width: 980px) {
-  .topbar { grid-template-columns: 1fr; }
+  /* Map-first: fill viewport below topbar so rail sits on the real bottom edge */
+  body.is-map-view {
+    overflow: hidden;
+    height: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+  body.is-map-view .topbar { flex: none; }
+  body.is-map-view .stage {
+    flex: 1 1 auto;
+    min-height: 0;
+    position: relative;
+  }
+  body.is-map-view .map-shell {
+    position: absolute;
+    inset: 0;
+    min-height: 0;
+  }
+
+  .topbar {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.55rem 0.75rem;
+  }
+  .brand-sub {
+    display: none;
+  }
   .search-wrap { justify-self: stretch; width: 100%; }
+  .nav-btn {
+    min-height: 40px;
+    padding: 0.5rem 0.9rem;
+  }
+  .chip {
+    min-height: 40px;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.82rem;
+  }
+  .rank-list button {
+    min-height: 48px;
+  }
+  .detail-close {
+    width: 44px;
+    height: 44px;
+    top: 0.35rem;
+    right: 0.35rem;
+    display: grid;
+    place-items: center;
+    border-radius: var(--radius-sm);
+  }
+
   .rail {
     top: auto;
-    left: 0.7rem;
-    right: 0.7rem;
-    bottom: 0.7rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: auto;
-    max-height: 38vh;
+    max-height: 30vh;
+    padding: 0.55rem 0.75rem 0.75rem;
+    border-radius: var(--radius) var(--radius) 0 0;
+    transition: max-height 0.28s ease;
+  }
+  .rail.is-expanded {
+    max-height: min(64vh, 560px);
+  }
+  .rail-handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: var(--ink-soft);
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0.35rem 0.25rem 0.55rem;
+    flex: none;
+  }
+  .rail-handle-bar {
+    width: 36px;
+    height: 4px;
+    border-radius: 999px;
+    background: rgba(20, 32, 25, 0.22);
   }
   .rail-section.grow {
-    min-height: 6.5rem;
+    min-height: 5.5rem;
   }
+
   .detail {
-    top: 0.7rem;
-    right: 0.7rem;
-    left: 0.7rem;
+    top: 0.65rem;
+    right: 0.65rem;
+    left: 0.65rem;
     bottom: auto;
     width: auto;
-    max-height: 42vh;
-    transform: translateY(-120%);
+    max-height: min(48vh, 420px);
+    transform: translateY(calc(-100% - 1.5rem));
     transition: transform 0.25s ease;
+    z-index: 25;
   }
   .detail.is-open { transform: translateY(0); }
-  .map-legend {
-    left: 0.7rem;
-    bottom: calc(38vh + 1.1rem);
+  .detail.is-open ~ .map-legend {
+    opacity: 0;
+    pointer-events: none;
   }
-  .map-note { display: none; }
+
+  .map-legend {
+    left: 0.65rem;
+    top: 0.65rem;
+    bottom: auto;
+    max-width: min(200px, 52vw);
+    font-size: 0.68rem;
+  }
+  .map-note {
+    display: block;
+    left: 0.65rem;
+    right: 0.65rem;
+    bottom: calc(30vh + 0.45rem);
+    font-size: 0.62rem;
+    padding: 0.35rem 0.5rem;
+    border-radius: 8px;
+  }
+  .rail.is-expanded ~ .map-note {
+    bottom: 0.55rem;
+    opacity: 0.92;
+  }
+
+  .mobile-start {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 24;
+    right: 0.75rem;
+    bottom: calc(30vh + 0.65rem);
+    min-height: 44px;
+    padding: 0.55rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    background: var(--brand);
+    color: #f4f8f3;
+    font: inherit;
+    font-size: 0.86rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+  .mobile-start:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring), var(--shadow);
+  }
+
   .leaflet-popup.map-preview-popup .leaflet-popup-content,
   .leaflet-tooltip.map-preview {
     max-width: min(240px, 78vw);
@@ -1113,7 +1247,5 @@ th {
 }
 
 @media (max-width: 640px) {
-  body { overflow: auto; }
-  .stage { min-height: 72vh; }
-  .map-shell { min-height: 72vh; position: relative; }
+  body:not(.is-map-view) { overflow: auto; }
 }
