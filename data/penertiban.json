@@ -1,0 +1,4171 @@
+{
+  "source": "Tabulasi_Penertiban_Kawasan_Hutan_Sawit_Riau.xlsx",
+  "updated_note": "Ekspor terstruktur dari workbook penertiban kawasan hutan sawit Riau",
+  "normalized": {
+    "sebaran_kab_korporasi_kh": {
+      "total": 12,
+      "records": [
+        {
+          "kab_kota": "Kab. Indragiri Hulu",
+          "luas_ha": 144385.0,
+          "peringkat": 1.0,
+          "porsi": "26.8%",
+          "catatan": "Inti Duta Palma / tipikor; gelombang 1: 5 PT"
+        },
+        {
+          "kab_kota": "Kab. Rokan Hulu",
+          "luas_ha": 68677.0,
+          "peringkat": 2.0,
+          "porsi": "12.7%",
+          "catatan": "Terbanyak di daftar 27 PT gelombang 1 (8 PT)"
+        },
+        {
+          "kab_kota": "Kab. Indragiri Hilir",
+          "luas_ha": 66321.0,
+          "peringkat": 3.0,
+          "porsi": "12.3%",
+          "catatan": "4 PT di gelombang 1; plasma KCH"
+        },
+        {
+          "kab_kota": "Kab. Rokan Hilir",
+          "luas_ha": 56662.0,
+          "peringkat": 4.0,
+          "porsi": "10.5%",
+          "catatan": "Konflik pasca-Agrinas (dataset lokal)"
+        },
+        {
+          "kab_kota": "Kab. Pelalawan",
+          "luas_ha": 56011.0,
+          "peringkat": 5.0,
+          "porsi": "10.4%",
+          "catatan": "TNTN + Mekarsari; buruh koperasi terdampak"
+        },
+        {
+          "kab_kota": "Kab. Kampar",
+          "luas_ha": 52730.0,
+          "peringkat": 6.0,
+          "porsi": "9.8%",
+          "catatan": "Johan Sentosa 5.764 ha disegel; Pansus: 59 kebun"
+        },
+        {
+          "kab_kota": "Kab. Kuantan Singingi",
+          "luas_ha": 41058.0,
+          "peringkat": 7.0,
+          "porsi": "7.6%",
+          "catatan": "Duta Palma; tuntutan plasma 20%"
+        },
+        {
+          "kab_kota": "Kab. Bengkalis",
+          "luas_ha": 39216.0,
+          "peringkat": 8.0,
+          "porsi": "7.3%",
+          "catatan": "Konflik Sakai–SIS / KSO Agrinas"
+        },
+        {
+          "kab_kota": "Kab. Siak",
+          "luas_ha": 7255.0,
+          "peringkat": 9.0,
+          "porsi": "1.3%",
+          "catatan": "—"
+        },
+        {
+          "kab_kota": "Kota Dumai",
+          "luas_ha": 5697.0,
+          "peringkat": 10.0,
+          "porsi": "1.1%",
+          "catatan": "—"
+        },
+        {
+          "kab_kota": "Kota Pekanbaru",
+          "luas_ha": 643.0,
+          "peringkat": 11.0,
+          "porsi": "0.1%",
+          "catatan": "—"
+        },
+        {
+          "kab_kota": "Kab. Kep. Meranti",
+          "luas_ha": 522.0,
+          "peringkat": 12.0,
+          "porsi": "0.1%",
+          "catatan": "—"
+        }
+      ]
+    },
+    "gelombang1_27_pt": {
+      "total": 27,
+      "records": [
+        {
+          "no": 1,
+          "perusahaan": "PT Perdana Inti Sawit Perkasa",
+          "kabupaten": "Rokan Hulu",
+          "afiliasi": "First Resources / Surya Dumai",
+          "catatan": null
+        },
+        {
+          "no": 2,
+          "perusahaan": "PT Panca Surya Agrindo",
+          "kabupaten": "Rokan Hulu",
+          "afiliasi": "First Resources / Surya Dumai",
+          "catatan": null
+        },
+        {
+          "no": 3,
+          "perusahaan": "PT Perdana Inti Sawit",
+          "kabupaten": "Rokan Hulu",
+          "afiliasi": "First Resources / Surya Dumai",
+          "catatan": null
+        },
+        {
+          "no": 4,
+          "perusahaan": "PT Pratama Riau",
+          "kabupaten": "Rokan Hulu",
+          "afiliasi": null,
+          "catatan": null
+        },
+        {
+          "no": 5,
+          "perusahaan": "PT Gerbang Sawit Indah",
+          "kabupaten": "Rokan Hulu",
+          "afiliasi": null,
+          "catatan": null
+        },
+        {
+          "no": 6,
+          "perusahaan": "PT Gerbang Sawit Indah II",
+          "kabupaten": "Rokan Hulu",
+          "afiliasi": null,
+          "catatan": "SK 36: 898 ha dimohon, 867 berproses"
+        },
+        {
+          "no": 7,
+          "perusahaan": "PT Ariando Tri Sejahtera",
+          "kabupaten": "Kampar",
+          "afiliasi": null,
+          "catatan": null
+        },
+        {
+          "no": 8,
+          "perusahaan": "PT Ciliandra Perkasa",
+          "kabupaten": "Kampar",
+          "afiliasi": "First Resources",
+          "catatan": "SK 36: 2.285 ha; 2.178 berproses"
+        },
+        {
+          "no": 9,
+          "perusahaan": "PT Karya Tama Bhakti Mulia",
+          "kabupaten": "Kampar",
+          "afiliasi": null,
+          "catatan": null
+        },
+        {
+          "no": 10,
+          "perusahaan": "PT Subur Arum Makmur",
+          "kabupaten": "Kampar",
+          "afiliasi": null,
+          "catatan": "SK 36: 2.383 ha berproses penuh"
+        },
+        {
+          "no": 11,
+          "perusahaan": "PT Karya Tama Bhakti Mulia (eks Tri Bakti Sarimas)",
+          "kabupaten": "Kuantan Singingi",
+          "afiliasi": null,
+          "catatan": "Tri Bakti SK 36: 594 ha"
+        },
+        {
+          "no": 12,
+          "perusahaan": "PT Citra Palma Kencana",
+          "kabupaten": "Indragiri Hilir",
+          "afiliasi": null,
+          "catatan": null
+        },
+        {
+          "no": 13,
+          "perusahaan": "PT Indogreen Jaya Abadi",
+          "kabupaten": "Indragiri Hilir",
+          "afiliasi": null,
+          "catatan": "SK 36: 514 ha; 380 berproses"
+        },
+        {
+          "no": 14,
+          "perusahaan": "PT Setia Agrindo Lestari",
+          "kabupaten": "Indragiri Hilir",
+          "afiliasi": null,
+          "catatan": null
+        },
+        {
+          "no": 15,
+          "perusahaan": "PT Eluan Mahkota",
+          "kabupaten": "Rokan Hulu",
+          "afiliasi": "Mahkota Group",
+          "catatan": null
+        },
+        {
+          "no": 16,
+          "perusahaan": "PT Aditya Palma Nusantara",
+          "kabupaten": "Rokan Hulu",
+          "afiliasi": "Afiliasi Duta Palma (indikasi)",
+          "catatan": "SK 36: 795 ha; 744 berproses"
+        },
+        {
+          "no": 17,
+          "perusahaan": "PT Johan Sentosa",
+          "kabupaten": "Kampar",
+          "afiliasi": "Duta Palma Group",
+          "catatan": "Disegel 26 Feb 2025; 5.764 ha"
+        },
+        {
+          "no": 18,
+          "perusahaan": "PT Mekarsari Alam Lestari",
+          "kabupaten": "Pelalawan",
+          "afiliasi": null,
+          "catatan": "SK 36: 547 ha; 497 berproses"
+        },
+        {
+          "no": 19,
+          "perusahaan": "PT Duta Palma Nusantara",
+          "kabupaten": "Kuantan Singingi",
+          "afiliasi": "Duta Palma Group",
+          "catatan": "Tipikor; serah Agrinas"
+        },
+        {
+          "no": 20,
+          "perusahaan": "PT Warna Jingga Timur",
+          "kabupaten": "Kuantan Singingi",
+          "afiliasi": "Duta Palma Group",
+          "catatan": null
+        },
+        {
+          "no": 21,
+          "perusahaan": "PT Cerenti Subur",
+          "kabupaten": "Kuantan Singingi",
+          "afiliasi": "Duta Palma Group",
+          "catatan": null
+        },
+        {
+          "no": 22,
+          "perusahaan": "PT Palma Satu",
+          "kabupaten": "Indragiri Hulu",
+          "afiliasi": "Duta Palma Group",
+          "catatan": "Tersangka tipikor"
+        },
+        {
+          "no": 23,
+          "perusahaan": "PT Panca Agro Lestari",
+          "kabupaten": "Indragiri Hulu",
+          "afiliasi": "Duta Palma Group",
+          "catatan": "Tersangka tipikor"
+        },
+        {
+          "no": 24,
+          "perusahaan": "PT Banyu Bening Utama",
+          "kabupaten": "Indragiri Hulu",
+          "afiliasi": "Duta Palma Group",
+          "catatan": "Tersangka tipikor"
+        },
+        {
+          "no": 25,
+          "perusahaan": "PT Kencana Amal Tani",
+          "kabupaten": "Indragiri Hulu",
+          "afiliasi": "Duta Palma Group",
+          "catatan": "Tersangka tipikor"
+        },
+        {
+          "no": 26,
+          "perusahaan": "PT Seberida Subur",
+          "kabupaten": "Indragiri Hulu",
+          "afiliasi": "Duta Palma Group",
+          "catatan": "Tersangka tipikor"
+        },
+        {
+          "no": 27,
+          "perusahaan": "PT Agrosari Mas",
+          "kabupaten": "Indragiri Hilir",
+          "afiliasi": null,
+          "catatan": null
+        }
+      ]
+    },
+    "sk36_2025_110a": {
+      "total": 92,
+      "records": [
+        {
+          "no": 1,
+          "nama": "Adi, dkk.",
+          "dimohon_ha": 907.0,
+          "berproses_ha": 907.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 2,
+          "nama": "PT Adimulia Agrolestari",
+          "dimohon_ha": 374.0,
+          "berproses_ha": 102.0,
+          "ditolak_ha": 272.0,
+          "rasio_ditolak": "73%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 3,
+          "nama": "PT Aditya Palma Nusantara",
+          "dimohon_ha": 795.0,
+          "berproses_ha": 744.0,
+          "ditolak_ha": 51.0,
+          "rasio_ditolak": "6%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 4,
+          "nama": "PT Agro Mitra Rokan",
+          "dimohon_ha": 3605.0,
+          "berproses_ha": 380.0,
+          "ditolak_ha": 3225.0,
+          "rasio_ditolak": "89%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 5,
+          "nama": "PT Agro Sarimas Indonesia",
+          "dimohon_ha": 4661.0,
+          "berproses_ha": 1636.0,
+          "ditolak_ha": 3298.0,
+          "rasio_ditolak": "71%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 6,
+          "nama": "PT Air Jernih",
+          "dimohon_ha": 397.0,
+          "berproses_ha": 370.0,
+          "ditolak_ha": 27.0,
+          "rasio_ditolak": "7%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 7,
+          "nama": "PT Air Kampar",
+          "dimohon_ha": 129.0,
+          "berproses_ha": 128.0,
+          "ditolak_ha": 1.0,
+          "rasio_ditolak": "1%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 8,
+          "nama": "PT Bina Pitri Jaya",
+          "dimohon_ha": 378.0,
+          "berproses_ha": 313.0,
+          "ditolak_ha": 65.0,
+          "rasio_ditolak": "17%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 9,
+          "nama": "PT Bumi Sawit Perkasa",
+          "dimohon_ha": 5330.0,
+          "berproses_ha": 5330.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 10,
+          "nama": "PT Central Warisan Indah Makmur",
+          "dimohon_ha": 479.0,
+          "berproses_ha": 413.0,
+          "ditolak_ha": 66.0,
+          "rasio_ditolak": "14%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 11,
+          "nama": "PT Ciliandra Perkasa",
+          "dimohon_ha": 2285.0,
+          "berproses_ha": 2178.0,
+          "ditolak_ha": 107.0,
+          "rasio_ditolak": "5%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 12,
+          "nama": "PT Citra Sardela Abadi",
+          "dimohon_ha": 2439.0,
+          "berproses_ha": 2439.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 13,
+          "nama": "PT Ekadaya Sejati Sukses",
+          "dimohon_ha": 735.0,
+          "berproses_ha": 735.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 14,
+          "nama": "PT Ekadura Indonesia",
+          "dimohon_ha": 232.0,
+          "berproses_ha": 101.0,
+          "ditolak_ha": 131.0,
+          "rasio_ditolak": "56%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 15,
+          "nama": "PT Gandaerah Hendana (2)",
+          "dimohon_ha": 361.0,
+          "berproses_ha": 111.0,
+          "ditolak_ha": 250.0,
+          "rasio_ditolak": "69%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 16,
+          "nama": "PT Gandaerah Hendana",
+          "dimohon_ha": 2092.0,
+          "berproses_ha": 485.0,
+          "ditolak_ha": 1607.0,
+          "rasio_ditolak": "77%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 17,
+          "nama": "PT Gatipura Mulya",
+          "dimohon_ha": 1281.0,
+          "berproses_ha": 1136.0,
+          "ditolak_ha": 145.0,
+          "rasio_ditolak": "11%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 18,
+          "nama": "PT Gerbang Sawit Indah II",
+          "dimohon_ha": 898.0,
+          "berproses_ha": 867.0,
+          "ditolak_ha": 31.0,
+          "rasio_ditolak": "3%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 19,
+          "nama": "PT Graha Permata Hijau",
+          "dimohon_ha": 167.0,
+          "berproses_ha": 139.0,
+          "ditolak_ha": 28.0,
+          "rasio_ditolak": "17%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 20,
+          "nama": "PT Guna Dodos",
+          "dimohon_ha": 491.0,
+          "berproses_ha": 406.0,
+          "ditolak_ha": 84.0,
+          "rasio_ditolak": "17%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 21,
+          "nama": "PT Gunung Mas Raya",
+          "dimohon_ha": 3149.0,
+          "berproses_ha": 592.0,
+          "ditolak_ha": 2557.0,
+          "rasio_ditolak": "81%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 22,
+          "nama": "PT Indogreen Jaya Abadi",
+          "dimohon_ha": 514.0,
+          "berproses_ha": 380.0,
+          "ditolak_ha": 134.0,
+          "rasio_ditolak": "26%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 23,
+          "nama": "PT Indrawan Perkasa",
+          "dimohon_ha": 769.0,
+          "berproses_ha": 64.0,
+          "ditolak_ha": 705.0,
+          "rasio_ditolak": "92%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 24,
+          "nama": "PT Inecda",
+          "dimohon_ha": 1516.0,
+          "berproses_ha": 1367.0,
+          "ditolak_ha": 149.0,
+          "rasio_ditolak": "10%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 25,
+          "nama": "PT Inti Indosawit Subur",
+          "dimohon_ha": 449.0,
+          "berproses_ha": 440.0,
+          "ditolak_ha": 9.0,
+          "rasio_ditolak": "2%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 26,
+          "nama": "PT Lindai Jaya Lestari",
+          "dimohon_ha": 634.0,
+          "berproses_ha": 568.0,
+          "ditolak_ha": 66.0,
+          "rasio_ditolak": "10%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 27,
+          "nama": "PT Mekarsari Alam Lestari",
+          "dimohon_ha": 547.0,
+          "berproses_ha": 497.0,
+          "ditolak_ha": 50.0,
+          "rasio_ditolak": "9%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 28,
+          "nama": "Misgianto dkk",
+          "dimohon_ha": 427.0,
+          "berproses_ha": 220.0,
+          "ditolak_ha": 207.0,
+          "rasio_ditolak": "48%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 29,
+          "nama": "PT Mitra Unggul Pusaka",
+          "dimohon_ha": 368.0,
+          "berproses_ha": 242.0,
+          "ditolak_ha": 126.0,
+          "rasio_ditolak": "34%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 30,
+          "nama": "PT Muriniwood Indah Industri",
+          "dimohon_ha": 315.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 315.0,
+          "rasio_ditolak": "100%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 31,
+          "nama": "PT Peputra Maha Raya",
+          "dimohon_ha": 523.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 523.0,
+          "rasio_ditolak": "100%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 32,
+          "nama": "Peputra Supra Jaya",
+          "dimohon_ha": 445.0,
+          "berproses_ha": 253.0,
+          "ditolak_ha": 192.0,
+          "rasio_ditolak": "43%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 33,
+          "nama": "PT Permata Hijau Indonesia",
+          "dimohon_ha": 433.0,
+          "berproses_ha": 379.0,
+          "ditolak_ha": 54.0,
+          "rasio_ditolak": "12%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 34,
+          "nama": "PT Perkebunan Nusantara V (PTPN IV)",
+          "dimohon_ha": 790.0,
+          "berproses_ha": 15.0,
+          "ditolak_ha": 775.0,
+          "rasio_ditolak": "98%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 35,
+          "nama": "PT Tasma Puja",
+          "dimohon_ha": 949.0,
+          "berproses_ha": 926.0,
+          "ditolak_ha": 23.0,
+          "rasio_ditolak": "2%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 36,
+          "nama": "PT Ramajaya Pramukti",
+          "dimohon_ha": 561.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 561.0,
+          "rasio_ditolak": "100%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 37,
+          "nama": "PT Riau Sawit Indah I",
+          "dimohon_ha": 303.0,
+          "berproses_ha": 303.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 38,
+          "nama": "PT Riau Sawit Indah II",
+          "dimohon_ha": 226.0,
+          "berproses_ha": 222.0,
+          "ditolak_ha": 4.0,
+          "rasio_ditolak": "2%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 39,
+          "nama": "PT Riau Sawitindo Abadi",
+          "dimohon_ha": 3240.0,
+          "berproses_ha": 2692.0,
+          "ditolak_ha": 549.0,
+          "rasio_ditolak": "17%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 40,
+          "nama": "PT Safari Riau",
+          "dimohon_ha": 745.0,
+          "berproses_ha": 745.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 41,
+          "nama": "PT Sari Lembah Subur",
+          "dimohon_ha": 202.0,
+          "berproses_ha": 183.0,
+          "ditolak_ha": 19.0,
+          "rasio_ditolak": "9%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 42,
+          "nama": "PT Sawit Asahan Indah",
+          "dimohon_ha": 362.0,
+          "berproses_ha": 358.0,
+          "ditolak_ha": 4.0,
+          "rasio_ditolak": "1%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 43,
+          "nama": "PT Sawit Betuah Lestari",
+          "dimohon_ha": 626.0,
+          "berproses_ha": 494.0,
+          "ditolak_ha": 132.0,
+          "rasio_ditolak": "21%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 44,
+          "nama": "PT Sekarbumi Alam Lestari",
+          "dimohon_ha": 405.0,
+          "berproses_ha": 190.0,
+          "ditolak_ha": 215.0,
+          "rasio_ditolak": "53%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 45,
+          "nama": "PT Seko Indah (I)",
+          "dimohon_ha": 919.0,
+          "berproses_ha": 899.0,
+          "ditolak_ha": 20.0,
+          "rasio_ditolak": "2%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 46,
+          "nama": "PT Seko Indah (II)",
+          "dimohon_ha": 442.0,
+          "berproses_ha": 396.0,
+          "ditolak_ha": 46.0,
+          "rasio_ditolak": "10%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 47,
+          "nama": "PT Simas Sawit Alianta (2)",
+          "dimohon_ha": 543.0,
+          "berproses_ha": 124.0,
+          "ditolak_ha": 419.0,
+          "rasio_ditolak": "77%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 48,
+          "nama": "PT Simas Sawit Alianta (1)",
+          "dimohon_ha": 961.0,
+          "berproses_ha": 895.0,
+          "ditolak_ha": 66.0,
+          "rasio_ditolak": "7%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 49,
+          "nama": "PT Sinar Inti Sawit",
+          "dimohon_ha": 1601.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 1601.0,
+          "rasio_ditolak": "100%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 50,
+          "nama": "PT Sinar Widita Pamarta (II)",
+          "dimohon_ha": 491.0,
+          "berproses_ha": 412.0,
+          "ditolak_ha": 79.0,
+          "rasio_ditolak": "16%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 51,
+          "nama": "PT Sinar Widita Pamarta (I)",
+          "dimohon_ha": 1480.0,
+          "berproses_ha": 1007.0,
+          "ditolak_ha": 473.0,
+          "rasio_ditolak": "32%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 52,
+          "nama": "PT Subur Arun Makmur",
+          "dimohon_ha": 2383.0,
+          "berproses_ha": 2383.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 53,
+          "nama": "PT Subur Mandiri Lestari",
+          "dimohon_ha": 375.0,
+          "berproses_ha": 88.0,
+          "ditolak_ha": 287.0,
+          "rasio_ditolak": "77%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 54,
+          "nama": "PT Sugih Indah Lestari",
+          "dimohon_ha": 749.0,
+          "berproses_ha": 675.0,
+          "ditolak_ha": 74.0,
+          "rasio_ditolak": "10%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 55,
+          "nama": "PT Sumatera Timur Indonesia",
+          "dimohon_ha": 323.0,
+          "berproses_ha": 309.0,
+          "ditolak_ha": 14.0,
+          "rasio_ditolak": "4%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 56,
+          "nama": "PT Sumber Alam Makmur Sentosa",
+          "dimohon_ha": 899.0,
+          "berproses_ha": 653.0,
+          "ditolak_ha": 246.0,
+          "rasio_ditolak": "27%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 57,
+          "nama": "PT Sumber Inti Alam Makmur",
+          "dimohon_ha": 304.0,
+          "berproses_ha": 293.0,
+          "ditolak_ha": 11.0,
+          "rasio_ditolak": "4%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 58,
+          "nama": "PT Sumber Sawindo Kencana",
+          "dimohon_ha": 800.0,
+          "berproses_ha": 508.0,
+          "ditolak_ha": 292.0,
+          "rasio_ditolak": "36%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 59,
+          "nama": "PT Supra Matra Abadi",
+          "dimohon_ha": 823.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 823.0,
+          "rasio_ditolak": "100%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 60,
+          "nama": "PT Surya Agrolika Reksa",
+          "dimohon_ha": 1191.0,
+          "berproses_ha": 959.0,
+          "ditolak_ha": 232.0,
+          "rasio_ditolak": "19%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 61,
+          "nama": "PT Surya Dumai Agrindo",
+          "dimohon_ha": 126.0,
+          "berproses_ha": 12.0,
+          "ditolak_ha": 114.0,
+          "rasio_ditolak": "90%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 62,
+          "nama": "PT Surya Agro Sukses Sejahtera",
+          "dimohon_ha": 421.0,
+          "berproses_ha": 421.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 63,
+          "nama": "Sutowo Lukman dkk",
+          "dimohon_ha": 212.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 212.0,
+          "rasio_ditolak": "100%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 64,
+          "nama": "PT Swakarsa Sawit Raya",
+          "dimohon_ha": 52.0,
+          "berproses_ha": 45.0,
+          "ditolak_ha": 7.0,
+          "rasio_ditolak": "13%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 65,
+          "nama": "Sylvia dkk",
+          "dimohon_ha": 86.0,
+          "berproses_ha": 86.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 66,
+          "nama": "PT Talang Jerinjing Sawit",
+          "dimohon_ha": 20.0,
+          "berproses_ha": 9.0,
+          "ditolak_ha": 11.0,
+          "rasio_ditolak": "55%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 67,
+          "nama": "PT Tasma Puja (entri 2)",
+          "dimohon_ha": 94.0,
+          "berproses_ha": 94.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 68,
+          "nama": "PT Teluk Mega Abadi",
+          "dimohon_ha": 224.0,
+          "berproses_ha": 203.0,
+          "ditolak_ha": 21.0,
+          "rasio_ditolak": "9%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 69,
+          "nama": "PT TH Indo Plantation",
+          "dimohon_ha": 4252.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 4252.0,
+          "rasio_ditolak": "100%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 70,
+          "nama": "PT Tor Ganda (Kebun Rantau Kasai)",
+          "dimohon_ha": 10616.0,
+          "berproses_ha": 5897.0,
+          "ditolak_ha": 4719.0,
+          "rasio_ditolak": "44%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 71,
+          "nama": "PT Tri Bakti Sarimas",
+          "dimohon_ha": 594.0,
+          "berproses_ha": 386.0,
+          "ditolak_ha": 208.0,
+          "rasio_ditolak": "35%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 72,
+          "nama": "PT Trimas FDI",
+          "dimohon_ha": 927.0,
+          "berproses_ha": 600.0,
+          "ditolak_ha": 327.0,
+          "rasio_ditolak": "35%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 73,
+          "nama": "PT Tumpuan",
+          "dimohon_ha": 150.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 150.0,
+          "rasio_ditolak": "100%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 74,
+          "nama": "PT Tunggal Perkasa Plantation",
+          "dimohon_ha": 1280.0,
+          "berproses_ha": 706.0,
+          "ditolak_ha": 574.0,
+          "rasio_ditolak": "45%",
+          "prioritas": "Penguasaan kembali / pidana / Satgas"
+        },
+        {
+          "no": 75,
+          "nama": "PT Udaya Lohjinawi I",
+          "dimohon_ha": 110.0,
+          "berproses_ha": 39.0,
+          "ditolak_ha": 71.0,
+          "rasio_ditolak": "65%",
+          "prioritas": "Campuran"
+        },
+        {
+          "no": 76,
+          "nama": "PT Usaha Kita Makmur",
+          "dimohon_ha": 19.0,
+          "berproses_ha": 19.0,
+          "ditolak_ha": 0.0,
+          "rasio_ditolak": "0%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 77,
+          "nama": "PT Wasundari Indah",
+          "dimohon_ha": 223.0,
+          "berproses_ha": 214.0,
+          "ditolak_ha": 9.0,
+          "rasio_ditolak": "4%",
+          "prioritas": "Monitor pembayaran PSDH-DR"
+        },
+        {
+          "no": 1,
+          "nama": "PT Tor Ganda (Kebun Rantau Kasai)",
+          "dimohon_ha": 10616.0,
+          "berproses_ha": 5897.0,
+          "ditolak_ha": 4719.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 2,
+          "nama": "PT TH Indo Plantation",
+          "dimohon_ha": 4252.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 4252.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 3,
+          "nama": "PT Agro Sarimas Indonesia",
+          "dimohon_ha": 4661.0,
+          "berproses_ha": 1636.0,
+          "ditolak_ha": 3298.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 4,
+          "nama": "PT Agro Mitra Rokan",
+          "dimohon_ha": 3605.0,
+          "berproses_ha": 380.0,
+          "ditolak_ha": 3225.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 5,
+          "nama": "PT Gunung Mas Raya",
+          "dimohon_ha": 3149.0,
+          "berproses_ha": 592.0,
+          "ditolak_ha": 2557.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 6,
+          "nama": "PT Gandaerah Hendana",
+          "dimohon_ha": 2092.0,
+          "berproses_ha": 485.0,
+          "ditolak_ha": 1607.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 7,
+          "nama": "PT Sinar Inti Sawit",
+          "dimohon_ha": 1601.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 1601.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 8,
+          "nama": "PT Supra Matra Abadi",
+          "dimohon_ha": 823.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 823.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 9,
+          "nama": "PT Perkebunan Nusantara V (PTPN IV)",
+          "dimohon_ha": 790.0,
+          "berproses_ha": 15.0,
+          "ditolak_ha": 775.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 10,
+          "nama": "PT Indrawan Perkasa",
+          "dimohon_ha": 769.0,
+          "berproses_ha": 64.0,
+          "ditolak_ha": 705.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 11,
+          "nama": "PT Tunggal Perkasa Plantation",
+          "dimohon_ha": 1280.0,
+          "berproses_ha": 706.0,
+          "ditolak_ha": 574.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 12,
+          "nama": "PT Ramajaya Pramukti",
+          "dimohon_ha": 561.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 561.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 13,
+          "nama": "PT Riau Sawitindo Abadi",
+          "dimohon_ha": 3240.0,
+          "berproses_ha": 2692.0,
+          "ditolak_ha": 549.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 14,
+          "nama": "PT Peputra Maha Raya",
+          "dimohon_ha": 523.0,
+          "berproses_ha": 0.0,
+          "ditolak_ha": 523.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        },
+        {
+          "no": 15,
+          "nama": "PT Sinar Widita Pamarta (I)",
+          "dimohon_ha": 1480.0,
+          "berproses_ha": 1007.0,
+          "ditolak_ha": 473.0,
+          "rasio_ditolak": null,
+          "prioritas": null
+        }
+      ]
+    }
+  },
+  "sections": {
+    "estimasi_sawit_kh": {
+      "sheet": "02_Estimasi_Sawit_KH",
+      "total": 5,
+      "records": [
+        {
+          "Sumber": "KLHK (Dirjen Planologi)",
+          "Tahun data": "±2021–2022",
+          "Luas (ha)": "1.400.000",
+          "Metode / definisi": "Inventarisasi resmi sawit dalam kawasan hutan",
+          "Implikasi penertiban": "Baseline penertiban & 110A/110B pemerintah",
+          "Tingkat keandalan untuk operasional": "Tinggi (resmi), perlu update spasial",
+          "col_6": null
+        },
+        {
+          "Sumber": "Pemda Riau / Pansus DPRD / Komisi IV",
+          "Tahun data": "2020–2022",
+          "Luas (ha)": "1.800.000",
+          "Metode / definisi": "Monitoring perizinan lahan perkebunan",
+          "Implikasi penertiban": "Menyoroti gap data pusat–daerah",
+          "Tingkat keandalan untuk operasional": "Sedang — beda dengan KLHK",
+          "col_6": null
+        },
+        {
+          "Sumber": "Eyes on the Forest (GIS)",
+          "Tahun data": "2019/2020 (laporan 2021; update 2023)",
+          "Luas (ha)": "2.519.854",
+          "Metode / definisi": "Overlay tutupan sawit vs kawasan hutan SK 2016",
+          "Implikasi penertiban": "Menangkap tutupan ilegal termasuk di KSA/HL",
+          "Tingkat keandalan untuk operasional": "Tinggi untuk analisis spasial; bukan daftar izin",
+          "col_6": null
+        },
+        {
+          "Sumber": "EoF kutipan data KLHK Riau total kebun",
+          "Tahun data": "±2022–2023",
+          "Luas (ha)": "1.400.000 (dari total kebun 3,3 juta)",
+          "Metode / definisi": "KLHK: 3,3 juta total; 1,9 juta non-KH; 1,4 juta di KH",
+          "Implikasi penertiban": "Konsisten dengan angka Planologi",
+          "Tingkat keandalan untuk operasional": "Tinggi",
+          "col_6": null
+        },
+        {
+          "Sumber": "Inventarisasi nasional sawit di KH",
+          "Tahun data": "UUCK era",
+          "Luas (ha)": "3.370.000 (nasional)",
+          "Metode / definisi": "Riau ≈ separuh nasional → prioritas percontohan",
+          "Implikasi penertiban": "Justifikasi Riau sebagai pilot penertiban",
+          "Tingkat keandalan untuk operasional": "Tinggi (narasi kebijakan)",
+          "col_6": null
+        }
+      ]
+    },
+    "fungsi_kawasan_eof": {
+      "sheet": "03_Fungsi_Kawasan_EoF",
+      "total": 6,
+      "records": [
+        {
+          "Fungsi kawasan": "Hutan Produksi dapat Dikonversi",
+          "Kode": "HPK",
+          "Luas (ha)": 908759,
+          "Persen dari sawit di KH": "36,1%",
+          "Rezim penertiban tipikal": "110A/110B; pelepasan/konversi (jika memenuhi syarat)",
+          "Catatan": "Porsi terbesar; jalur administratif paling mungkin",
+          "col_6": null
+        },
+        {
+          "Fungsi kawasan": "Hutan Produksi",
+          "Kode": "HP",
+          "Luas (ha)": 830211,
+          "Persen dari sawit di KH": "32,9%",
+          "Rezim penertiban tipikal": "110A (bila punya izin usaha+sesuai RTR) / 110B; atau penguasaan kembali",
+          "Catatan": "Dominan korporasi",
+          "col_6": null
+        },
+        {
+          "Fungsi kawasan": "Hutan Produksi Terbatas",
+          "Kode": "HPT",
+          "Luas (ha)": 561714,
+          "Persen dari sawit di KH": "22,3%",
+          "Rezim penertiban tipikal": "Lebih ketat; 110B / penguasaan kembali / pemulihan",
+          "Catatan": "Risiko tinggi untuk legalisasi penuh",
+          "col_6": null
+        },
+        {
+          "Fungsi kawasan": "Hutan Lindung",
+          "Kode": "HL",
+          "Luas (ha)": 116105,
+          "Persen dari sawit di KH": "4,6%",
+          "Rezim penertiban tipikal": "Pemulihan fungsi; denda + pengembalian; pidana dimungkinkan",
+          "Catatan": "Tidak untuk budidaya sawit",
+          "col_6": null
+        },
+        {
+          "Fungsi kawasan": "Kawasan Konservasi (KSA/KPA)",
+          "Kode": "KSA/KPA",
+          "Luas (ha)": 103009,
+          "Persen dari sawit di KH": "4,0%",
+          "Rezim penertiban tipikal": "Penguasaan kembali + pemusnahan + restorasi (contoh TNTN)",
+          "Catatan": "Termasuk ±49.176 ha di TN Tesso Nilo (EoF)",
+          "col_6": null
+        },
+        {
+          "Fungsi kawasan": "TOTAL sawit di kawasan hutan (EoF)",
+          "Kode": "—",
+          "Luas (ha)": 2519854,
+          "Persen dari sawit di KH": "100%",
+          "Rezim penertiban tipikal": "Campuran administratif & fisik",
+          "Catatan": "47% dari total tutupan sawit Riau",
+          "col_6": null
+        }
+      ]
+    },
+    "capaian_satgas_pkh": {
+      "sheet": "04_Capaian_Satgas_PKH",
+      "total": 17,
+      "records": [
+        {
+          "Provinsi": "Kalimantan Tengah",
+          "Luas dikuasai kembali (ha)": 400816.53,
+          "Peringkat": 1,
+          "Porsi vs total Juni 2025": "39.3%",
+          "Catatan": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Riau",
+          "Luas dikuasai kembali (ha)": 331838.67,
+          "Peringkat": 2,
+          "Porsi vs total Juni 2025": "32.5%",
+          "Catatan": "Fokus sawit & TNTN",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Kalimantan Barat",
+          "Luas dikuasai kembali (ha)": 153359.44,
+          "Peringkat": 3,
+          "Porsi vs total Juni 2025": "15.0%",
+          "Catatan": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Kalimantan Selatan",
+          "Luas dikuasai kembali (ha)": 30516.21,
+          "Peringkat": 4,
+          "Porsi vs total Juni 2025": "3.0%",
+          "Catatan": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Kalimantan Timur",
+          "Luas dikuasai kembali (ha)": 26185.84,
+          "Peringkat": 5,
+          "Porsi vs total Juni 2025": "2.6%",
+          "Catatan": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Sumatera Selatan",
+          "Luas dikuasai kembali (ha)": 25601.12,
+          "Peringkat": 6,
+          "Porsi vs total Juni 2025": "2.5%",
+          "Catatan": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Sumatera Utara",
+          "Luas dikuasai kembali (ha)": 22559.47,
+          "Peringkat": 7,
+          "Porsi vs total Juni 2025": "2.2%",
+          "Catatan": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Jambi",
+          "Luas dikuasai kembali (ha)": 14836.59,
+          "Peringkat": 8,
+          "Porsi vs total Juni 2025": "1.5%",
+          "Catatan": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Sumatera Barat",
+          "Luas dikuasai kembali (ha)": 3897.44,
+          "Peringkat": 9,
+          "Porsi vs total Juni 2025": "0.4%",
+          "Catatan": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "TOTAL (cut-off Juni 2025)",
+          "Luas dikuasai kembali (ha)": 1019611.31,
+          "Peringkat": "—",
+          "Porsi vs total Juni 2025": "100%",
+          "Catatan": "64 kabupaten; 406 perusahaan",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Tahap",
+          "Luas dikuasai kembali (ha)": "Tanggal (approx)",
+          "Peringkat": "Luas (ha)",
+          "Porsi vs total Juni 2025": "Asal / cakupan",
+          "Catatan": "Catatan Riau",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "I — Duta Palma / Tipikor",
+          "Luas dikuasai kembali (ha)": "10 Mar 2025",
+          "Peringkat": 221868.421,
+          "Porsi vs total Juni 2025": "9 korporasi Duta Palma Group; 37 bidang",
+          "Catatan": "Sebagian besar di Inhu + Kuansing/Rohul/Kampar/Pelalawan (Riau) dan Kalbar",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "II — Multi-perusahaan",
+          "Luas dikuasai kembali (ha)": "26 Mar 2025",
+          "Peringkat": 216997.75,
+          "Porsi vs total Juni 2025": "109 perusahaan",
+          "Catatan": "Termasuk areal di Riau (rincian publik terbatas)",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "III — Torganda (eksekusi)",
+          "Luas dikuasai kembali (ha)": "2025",
+          "Peringkat": 48761,
+          "Porsi vs total Juni 2025": "Putusan eksekusi PT Torganda",
+          "Catatan": "Disebut dalam rekap penyerahan Agrinas",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Lanjutan verifikasi BA",
+          "Luas dikuasai kembali (ha)": "2025",
+          "Peringkat": 230084.14,
+          "Porsi vs total Juni 2025": "144 perusahaan (BA penguasaan)",
+          "Catatan": "Nasional",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "Penyerahan Juli 2025",
+          "Luas dikuasai kembali (ha)": "9 Jul 2025",
+          "Peringkat": 394547.29,
+          "Porsi vs total Juni 2025": "232 perusahaan di Kalteng, Riau, Sumut, Sumsel",
+          "Catatan": "Riau termasuk batch penyerahan",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Provinsi": "TNTN (jalur konservasi)",
+          "Luas dikuasai kembali (ha)": "Juni–Juli 2025",
+          "Peringkat": 81793,
+          "Porsi vs total Juni 2025": "TN Tesso Nilo — dikuasai kembali",
+          "Catatan": "Tidak untuk budidaya Agrinas; pemulihan fungsi TN",
+          "col_5": null,
+          "col_6": null
+        }
+      ]
+    },
+    "operasi_tesso_nilo": {
+      "sheet": "05_Operasi_Tesso_Nilo",
+      "total": 12,
+      "records": [
+        {
+          "Peristiwa / indikator": "Luas kawasan TNTN",
+          "Periode": "2025",
+          "Luas / jumlah": "81.739–81.793 ha",
+          "Lokasi": "Kab. Pelalawan",
+          "Aktor": "Balai TNTN / Kemenhut",
+          "Sumber": "Kemenhut SP; Satgas PKH",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "Estimasi lahan dibuka/ditanami sawit ilegal",
+          "Periode": "2025",
+          "Luas / jumlah": "±40.000 ha",
+          "Lokasi": "Dalam TNTN",
+          "Aktor": "Satgas Garuda / Kemenhut",
+          "Sumber": "Kemenhut SP 19 Jun 2025",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "Estimasi sawit di TNTN (EoF historis)",
+          "Periode": "2019/2020",
+          "Luas / jumlah": "49.176 ha",
+          "Lokasi": "Dalam KSA/KPA Riau",
+          "Aktor": "EoF GIS",
+          "Sumber": "EoF Omnibus Law",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "Operasi pemusnahan sawit muda",
+          "Periode": "15–19 Nov 2023",
+          "Luas / jumlah": "600 ha; 36 pondok; 2 jembatan diputus",
+          "Lokasi": "Dusun Take Jaya, Desa Air Hitam",
+          "Aktor": "Gabungan KLHK–Polri (~370 personel)",
+          "Sumber": "Betahita / KLHK",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "Penguasaan kembali negara atas TNTN",
+          "Periode": "10 Jun 2025",
+          "Luas / jumlah": "81.793 ha",
+          "Lokasi": "TNTN",
+          "Aktor": "Satgas PKH",
+          "Sumber": "Kejaksaan / media",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "Pemusnahan sawit (batch Segati dll.)",
+          "Periode": "Juni 2025",
+          "Luas / jumlah": "401 ha",
+          "Lokasi": "Desa Segati",
+          "Aktor": "Satgas PKH + Kemenhut",
+          "Sumber": "Liputan4 / Gakkum",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "Pemusnahan sukarela",
+          "Periode": "2 Jul 2025",
+          "Luas / jumlah": "311 ha",
+          "Lokasi": "TNTN",
+          "Aktor": "Satgas PKH; penyerahan warga",
+          "Sumber": "Riau Online / Antara",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "Pemusnahan kumulatif Mei–Juli 2025",
+          "Periode": "Mei–Jul 2025",
+          "Luas / jumlah": "±4.700 ha",
+          "Lokasi": "Bagan Limau, Lubuk Kembang Bunga, Kesuma, Segati",
+          "Aktor": "Satgas PKH + Kemenhut",
+          "Sumber": "Media Indonesia",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "Personel & pos pengamanan",
+          "Periode": "Juni 2025",
+          "Luas / jumlah": "380 personel; 13 titik",
+          "Lokasi": "TNTN",
+          "Aktor": "Satgas Garuda",
+          "Sumber": "Kemenhut SP",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "SHM di dalam kawasan (audit)",
+          "Periode": "2025",
+          "Luas / jumlah": "1.805 SHM",
+          "Lokasi": "TNTN",
+          "Aktor": "Satgas + BPN",
+          "Sumber": "Kemenhut SP",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "Populasi pendatang / penduduk",
+          "Periode": "2025",
+          "Luas / jumlah": "±15.000 jiwa",
+          "Lokasi": "Dalam TNTN",
+          "Aktor": "Pemda / Satgas",
+          "Sumber": "Kemenhut SP",
+          "col_6": null
+        },
+        {
+          "Peristiwa / indikator": "Hutan primer tersisa (klaim pengelola, 2023)",
+          "Periode": "Nov 2023",
+          "Luas / jumlah": "±8.000 ha",
+          "Lokasi": "TNTN",
+          "Aktor": "Kepala Balai TNTN",
+          "Sumber": "Betahita",
+          "col_6": null
+        }
+      ]
+    },
+    "kerangka_hukum": {
+      "sheet": "06_Kerangka_Hukum",
+      "total": 15,
+      "records": [
+        {
+          "Instrumen": "UU 41/1999 jo. UU 18/2013",
+          "Substansi inti": "Larangan kegiatan budidaya di kawasan hutan tanpa izin",
+          "Jalur penertiban": "Pidana kehutanan / perambahan",
+          "Relevansi sawit Riau": "Dasar ilegalitas sawit di KH",
+          "Output tipikal": "Penyidikan; barang bukti lahan",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "UUCK Pasal 110A",
+          "Substansi inti": "Usaha terbangun + punya izin usaha/lokasi + sesuai RTR, belum izin kehutanan",
+          "Jalur penertiban": "Administratif: bayar PSDH-DR; selesaikan perizinan",
+          "Relevansi sawit Riau": "Dispute ruang Riau–Kalteng",
+          "Output tipikal": "Invoice PSDH-DR; pelepasan/izin",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "UUCK Pasal 110B",
+          "Substansi inti": "Usaha di KH tanpa perizinan kehutanan (sebelum UUCK)",
+          "Jalur penertiban": "Denda administratif; sisa 1 siklus; lalu kembalikan ke negara",
+          "Relevansi sawit Riau": "Mayoritas tipologi tanpa izin",
+          "Output tipikal": "Denda PNBP; penguasaan kembali",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "PP 24/2021 (dan revisi terkait)",
+          "Substansi inti": "Tata cara sanksi administratif & PNBP denda kehutanan",
+          "Jalur penertiban": "Penagihan denda",
+          "Relevansi sawit Riau": "Bottleneck Satgas (revisi PP disebut masih dibahas awal 2025)",
+          "Output tipikal": "PNBP; paksaan pemerintah",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "Perpres 5/2025",
+          "Substansi inti": "Satgas PKH: penagihan denda, penguasaan kembali, pemulihan aset",
+          "Jalur penertiban": "Operasi lintas kementerian/TNI/Polri/Kejaksaan",
+          "Relevansi sawit Riau": "Riau 331.838 ha; TNTN; Agrinas",
+          "Output tipikal": "BA penguasaan; serah kelola BUMN",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "Inpres moratorium sawit (8/2018 dkk.)",
+          "Substansi inti": "Tunda pelepasan/tukar menukar untuk sawit baru",
+          "Jalur penertiban": "Pencegahan ekspansi baru",
+          "Relevansi sawit Riau": "Tidak menyelesaikan stok keterlanjuran",
+          "Output tipikal": "Moratorium administratif",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "ISPO (Perpres 44/2020)",
+          "Substansi inti": "Sertifikasi wajib",
+          "Jalur penertiban": "Compliance pasar — bukan penghapus pelanggaran KH",
+          "Relevansi sawit Riau": "Risiko greenwashing bila masih bermasalah 110A/gambut",
+          "Output tipikal": "Sertifikat vs audit lintas data",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "Tipologi penanganan (matriks kerja)",
+          "Substansi inti": null,
+          "Jalur penertiban": null,
+          "Relevansi sawit Riau": null,
+          "Output tipikal": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "Tipologi",
+          "Substansi inti": "Ciri",
+          "Jalur penertiban": "Instrumen utama",
+          "Relevansi sawit Riau": "Prioritas APH",
+          "Output tipikal": "Contoh Riau",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "A — Dispute ruang (110A)",
+          "Substansi inti": "Punya IUP/izin usaha; masuk peta KH",
+          "Jalur penertiban": "PSDH-DR + perizinan kehutanan",
+          "Relevansi sawit Riau": "Audit paralel izin; pantau pembayaran",
+          "Output tipikal": "Korporasi di HP/HPK",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "B — Tanpa izin (110B)",
+          "Substansi inti": "Tidak punya izin kehutanan",
+          "Jalur penertiban": "Denda + 1 siklus / penguasaan kembali",
+          "Relevansi sawit Riau": "Inventaris subjek; BA penguasaan",
+          "Output tipikal": "Mayoritas stok EoF di HP/HPK/HPT",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "C — Konservasi / lindung",
+          "Substansi inti": "Di KSA/KPA/HL",
+          "Jalur penertiban": "Pemusnahan + restorasi; pidana",
+          "Relevansi sawit Riau": "Operasi gabungan; relokasi humanis",
+          "Output tipikal": "TN Tesso Nilo",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "D — Tipikor / izin melawan hukum",
+          "Substansi inti": "Korupsi perizinan / pelepasan",
+          "Jalur penertiban": "Tipikor + PKH + sita aset",
+          "Relevansi sawit Riau": "Kejaksaan; Satgas",
+          "Output tipikal": "Duta Palma Group → Agrinas",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "E — Plasma / masyarakat terdampak",
+          "Substansi inti": "Plasma terdampak sita PKH",
+          "Jalur penertiban": "Mediasi; verifikasi hak; perlindungan sosial",
+          "Relevansi sawit Riau": "Polri + Pemda + Satgas",
+          "Output tipikal": "Kasus KCH Plasma 3 / CMBR (Inhil)",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Instrumen": "F — Petani <5 ha",
+          "Substansi inti": "Sawit rakyat di KH",
+          "Jalur penertiban": "Inventarisasi Pemda; skema khusus (bukan denda korporasi)",
+          "Relevansi sawit Riau": "Validasi desa–kabupaten",
+          "Output tipikal": "Permintaan Gubernur Riau ke Komisi IV (2022)",
+          "col_5": null,
+          "col_6": null
+        }
+      ]
+    },
+    "kronologi": {
+      "sheet": "07_Kronologi",
+      "total": 14,
+      "records": [
+        {
+          "Tanggal / periode": "2013",
+          "Peristiwa": "UU 18/2013 tentang Pencegahan dan Pemberantasan Perusakan Hutan",
+          "Skala": "Nasional",
+          "Implikasi untuk Riau": "Landasan pidana perambahan",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "2018",
+          "Peristiwa": "Inpres moratorium pelepasan kawasan hutan untuk sawit",
+          "Skala": "Nasional",
+          "Implikasi untuk Riau": "Hentikan ekspansi baru; stok lama tetap",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "Nov 2020",
+          "Peristiwa": "UU Cipta Kerja — Pasal 110A & 110B",
+          "Skala": "Nasional",
+          "Implikasi untuk Riau": "Jalur denda administratif keterlanjuran",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "2021",
+          "Peristiwa": "PP 24/2021 sanksi administratif kehutanan",
+          "Skala": "Nasional",
+          "Implikasi untuk Riau": "Teknis penagihan PSDH-DR / denda",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "2021–2022",
+          "Peristiwa": "Riau ditetapkan percontohan penertiban sawit di KH",
+          "Skala": "Riau",
+          "Implikasi untuk Riau": "Prioritas nasional; gap data 1,4 vs 1,8 juta ha",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "2 Nov 2023",
+          "Peristiwa": "Deadline pengurusan 110A/110B (3 tahun)",
+          "Skala": "Nasional",
+          "Implikasi untuk Riau": "Pasca-tenggat: risiko sanksi naik / pidana",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "Nov 2023",
+          "Peristiwa": "Operasi musnahkan 600 ha sawit di TNTN",
+          "Skala": "Pelalawan",
+          "Implikasi untuk Riau": "Preseden penertiban fisik konservasi",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "21 Jan 2025",
+          "Peristiwa": "Perpres 5/2025 — Satgas PKH",
+          "Skala": "Nasional",
+          "Implikasi untuk Riau": "Gelombang penguasaan kembali 2025",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "10 Mar 2025",
+          "Peristiwa": "Serah kelola eks Duta Palma ke Agrinas (±221.868 ha)",
+          "Skala": "Riau–Kalbar",
+          "Implikasi untuk Riau": "Kasus tipikor–sawit terbesar yang menyentuh Riau",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "26 Mar 2025",
+          "Peristiwa": "Serah kelola tahap II (±216.998 ha, 109 perusahaan)",
+          "Skala": "Nasional",
+          "Implikasi untuk Riau": "Termasuk perusahaan di Riau",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "10 Jun 2025",
+          "Peristiwa": "Penguasaan kembali TNTN 81.793 ha",
+          "Skala": "Pelalawan",
+          "Implikasi untuk Riau": "Negara kuasai de jure/de facto TN",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "Mei–Jul 2025",
+          "Peristiwa": "Pemusnahan kumulatif ±4.700 ha sawit di TNTN",
+          "Skala": "Pelalawan",
+          "Implikasi untuk Riau": "Pemulihan ekosistem dimulai",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "9 Jul 2025",
+          "Peristiwa": "Serah kelola tahap lanjut 394.547 ha (termasuk Riau)",
+          "Skala": "Multi-provinsi",
+          "Implikasi untuk Riau": "Perluasan KSO Agrinas",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Tanggal / periode": "s.d. Jun/Jul 2025",
+          "Peristiwa": "Riau 331.838,67 ha dikuasai kembali (cut-off Juni)",
+          "Skala": "Riau",
+          "Implikasi untuk Riau": "Peringkat 2 nasional",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        }
+      ]
+    },
+    "sebaran_lokal_inventaris": {
+      "sheet": "08_Sebaran_Lokal_Inventaris",
+      "total": 18,
+      "records": [
+        {
+          "Kabupaten/Kota": "Lintas Provinsi Riau",
+          "Entri ST terdampak PKH/Agrinas": 40,
+          "Kasus operasional (SW) terkait PKH": 0,
+          "Catatan lapangan dari dataset": "Entri lintas kab/multi-lokasi",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Rokan Hulu",
+          "Entri ST terdampak PKH/Agrinas": 10,
+          "Kasus operasional (SW) terkait PKH": 0,
+          "Catatan lapangan dari dataset": "Konsentrasi perusahaan terdampak",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Rokan Hilir",
+          "Entri ST terdampak PKH/Agrinas": 9,
+          "Kasus operasional (SW) terkait PKH": 1,
+          "Catatan lapangan dari dataset": "Sengketa kelola pasca-Agrinas (SW-022)",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Indragiri Hulu",
+          "Entri ST terdampak PKH/Agrinas": 5,
+          "Kasus operasional (SW) terkait PKH": 0,
+          "Catatan lapangan dari dataset": "Wilayah inti Duta Palma / tipikor",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Pelalawan",
+          "Entri ST terdampak PKH/Agrinas": 5,
+          "Kasus operasional (SW) terkait PKH": 0,
+          "Catatan lapangan dari dataset": "TNTN & perusahaan sekitar",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kota Pekanbaru",
+          "Entri ST terdampak PKH/Agrinas": 5,
+          "Kasus operasional (SW) terkait PKH": 0,
+          "Catatan lapangan dari dataset": "Administratif / kantor",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Kuantan Singingi",
+          "Entri ST terdampak PKH/Agrinas": 4,
+          "Kasus operasional (SW) terkait PKH": 1,
+          "Catatan lapangan dari dataset": "Pengambilalihan Duta Palma (SW-015)",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kota Dumai",
+          "Entri ST terdampak PKH/Agrinas": 4,
+          "Kasus operasional (SW) terkait PKH": 0,
+          "Catatan lapangan dari dataset": "—",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Indragiri Hilir",
+          "Entri ST terdampak PKH/Agrinas": 3,
+          "Kasus operasional (SW) terkait PKH": 1,
+          "Catatan lapangan dari dataset": "Plasma KCH disita PKH (SW-004)",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Siak",
+          "Entri ST terdampak PKH/Agrinas": 3,
+          "Kasus operasional (SW) terkait PKH": 0,
+          "Catatan lapangan dari dataset": "—",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Bengkalis",
+          "Entri ST terdampak PKH/Agrinas": 2,
+          "Kasus operasional (SW) terkait PKH": 0,
+          "Catatan lapangan dari dataset": "—",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Kampar",
+          "Entri ST terdampak PKH/Agrinas": 2,
+          "Kasus operasional (SW) terkait PKH": 0,
+          "Catatan lapangan dari dataset": "Disebut dalam sebaran aset Duta Palma",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "TOTAL",
+          "Entri ST terdampak PKH/Agrinas": 92,
+          "Kasus operasional (SW) terkait PKH": 3,
+          "Catatan lapangan dari dataset": "Filter kata kunci PKH/Agrinas/hutan di dataset",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "Contoh kasus operasional (ringkas)",
+          "Entri ST terdampak PKH/Agrinas": null,
+          "Kasus operasional (SW) terkait PKH": null,
+          "Catatan lapangan dari dataset": null,
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "ID",
+          "Entri ST terdampak PKH/Agrinas": "Kabupaten",
+          "Kasus operasional (SW) terkait PKH": "Pokok perkara",
+          "Catatan lapangan dari dataset": "Perusahaan / pihak",
+          "col_4": "Implikasi penertiban",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "SW-004",
+          "Entri ST terdampak PKH/Agrinas": "Indragiri Hilir",
+          "Kasus operasional (SW) terkait PKH": "Plasma KCH Blok 4206/4207 disita Satgas PKH karena masuk kawasan hutan",
+          "Catatan lapangan dari dataset": "PT Citra Mutiara Bumi Riau (CMBR)",
+          "col_4": "Tipologi E — perlindungan plasma vs penguasaan kembali",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "SW-015",
+          "Entri ST terdampak PKH/Agrinas": "Kuantan Singingi",
+          "Kasus operasional (SW) terkait PKH": "Pengambilalihan PT Duta Palma Nusantara oleh Satgas PKH",
+          "Catatan lapangan dari dataset": "PT Duta Palma Nusantara",
+          "col_4": "Tipologi D — tipikor + serah kelola Agrinas",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Kabupaten/Kota": "SW-022",
+          "Entri ST terdampak PKH/Agrinas": "Rokan Hilir",
+          "Kasus operasional (SW) terkait PKH": "Sengketa penguasaan/pengelolaan lahan pasca keterlibatan Agrinas",
+          "Catatan lapangan dari dataset": "PT Agrinas Palma Nusantara; PT Salim Ivomas Pratama",
+          "col_4": "Konflik pasca-penertiban / KSO",
+          "col_5": null,
+          "col_6": null
+        }
+      ]
+    },
+    "denda_pnbp_110a_b": {
+      "sheet": "09_Denda_PNBP_110A_B",
+      "total": 7,
+      "records": [
+        {
+          "Aspek": "Syarat tipologi",
+          "Pasal 110A": "Usaha terbangun; ada izin usaha/lokasi; sesuai RTR saat izin; belum izin kehutanan",
+          "Pasal 110B": "Usaha di KH tanpa perizinan kehutanan (sebelum UUCK)",
+          "Catatan untuk Riau": "Riau & Kalteng disebut pusat 'dispute ruang' 110A",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Aspek": "Bentuk kewajiban",
+          "Pasal 110A": "PSDH + DR",
+          "Pasal 110B": "Denda administratif (rumus luas × tahun × keuntungan bersih/ha)",
+          "Catatan untuk Riau": "Invoice 110A lebih dulu keluar (akhir 2023)",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Aspek": "Kisaran nilai (publik)",
+          "Pasal 110A": "± Rp 1–6,5 juta / ha (tergantung tegakan)",
+          "Pasal 110B": "Bisa > Rp 96 juta / ha (contoh tagihan)",
+          "Catatan untuk Riau": "Gapki: 365 subjek 110A ~600 ribu ha mendapat invoice",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Aspek": "Nasib lahan setelah bayar",
+          "Pasal 110A": "Dapat lanjut proses perizinan/pelepasan sesuai ketentuan",
+          "Pasal 110B": "Umumnya sisa 1 siklus tanam, lalu kembali ke negara",
+          "Catatan untuk Riau": "Stok 110B besar → tekanan penguasaan kembali PKH",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Aspek": "Potensi PNBP (ilustrasi pejabat)",
+          "Pasal 110A": "Contoh: 1 juta ha × Rp 6 jt ≈ Rp 6 T",
+          "Pasal 110B": "Potensi lebih besar karena tarif tinggi",
+          "Catatan untuk Riau": "Realisasi nasional jauh di bawah potensi (ratusan miliar vs triliunan)",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Aspek": "Pasca-tenggat 2 Nov 2023",
+          "Pasal 110A": "Risiko sanksi diperberat / pidana jika tidak selesaikan",
+          "Pasal 110B": "Sama — ultimum remedium bisa bergeser ke pidana",
+          "Catatan untuk Riau": "Dasar penguatan Satgas PKH 2025",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Aspek": "Perusahaan Riau tanpa HGU (contoh Kejati)",
+          "Pasal 110A": "—",
+          "Pasal 110B": "—",
+          "Catatan untuk Riau": "84 perusahaan perkebunan di Riau dilaporkan belum kantongi HGU (FGD 2022)",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null
+        }
+      ]
+    },
+    "sumber_data": {
+      "sheet": "10_Sumber_Data",
+      "total": 13,
+      "records": [
+        {
+          "No": 1,
+          "Sumber": "Perpres 5/2025",
+          "Jenis": "Regulasi",
+          "URL / identitas": "jdih.kehutanan.go.id",
+          "Dipakai untuk": "Dasar Satgas PKH",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 2,
+          "Sumber": "SK Menhut 36/2025 (kutipan media)",
+          "Jenis": "Keputusan + lampiran",
+          "URL / identitas": "SabangMerauke; KNPI/Radar Pekanbaru",
+          "Dipakai untuk": "118 PT Riau; 77 daftar luas 110A",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 3,
+          "Sumber": "KLHK paparan Komisi IV 22 Agu 2022",
+          "Jenis": "Pemerintah",
+          "URL / identitas": "SabangMerauke #5213",
+          "Dipakai untuk": "Sebaran korporasi per kab",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 4,
+          "Sumber": "P3ES via Gubernur Riau 2022",
+          "Jenis": "Pemerintah daerah",
+          "URL / identitas": "Riauin; WALHI Riau 2023",
+          "Dipakai untuk": "1,89 juta ha; tipologi pemilik",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 5,
+          "Sumber": "Satgas PKH rekap tahap 1 & 2",
+          "Jenis": "Pejabat/media",
+          "URL / identitas": "Media Perkebunan; Derak Post",
+          "Dipakai untuk": "331.838 ha/141 PT; 209.464 ha/128 PT",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 6,
+          "Sumber": "Daftar 27 PT gelombang 1 Riau",
+          "Jenis": "Media + Jikalahari",
+          "URL / identitas": "EksposeKasus; Kampoeng News",
+          "Dipakai untuk": "Nama PT + kabupaten",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 7,
+          "Sumber": "Kemenhut SP TNTN Jun 2025",
+          "Jenis": "Siaran pers",
+          "URL / identitas": "kehutanan.go.id",
+          "Dipakai untuk": "40.000 ha; 1.805 SHM",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 8,
+          "Sumber": "Kejaksaan / Satgas denda 2026",
+          "Jenis": "Siaran/media",
+          "URL / identitas": "Kompas; Tempo; Detik",
+          "Dipakai untuk": "Realisasi denda nasional",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 9,
+          "Sumber": "Katadata/Tempo Duta Palma–Agrinas",
+          "Jenis": "Media",
+          "URL / identitas": "katadata.co.id",
+          "Dipakai untuk": "43.824 ha bagian Riau",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 10,
+          "Sumber": "Eyes on the Forest",
+          "Jenis": "Laporan GIS",
+          "URL / identitas": "eyesontheforest.or.id",
+          "Dipakai untuk": "2,52 juta ha; fungsi kawasan",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 11,
+          "Sumber": "Mongabay buruh Agrinas",
+          "Jenis": "Media",
+          "URL / identitas": "mongabay.co.id 8 Des 2025",
+          "Dipakai untuk": "Dampak buruh",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 12,
+          "Sumber": "Potret24 Inhu 1.500 KK",
+          "Jenis": "Media lokal",
+          "URL / identitas": "potret24.com",
+          "Dipakai untuk": "Penolakan plasma/KSO",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 13,
+          "Sumber": "Inventaris konflik workspace",
+          "Jenis": "Dataset lokal",
+          "URL / identitas": "_source_rows.json",
+          "Dipakai untuk": "Entri PKH/Agrinas per kab",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        }
+      ]
+    },
+    "sebaran_kab_korporasi": {
+      "sheet": "11_Sebaran_Kab_Korporasi",
+      "total": 20,
+      "records": [
+        {
+          "Kabupaten/Kota": "Kab. Indragiri Hulu",
+          "Luas korporasi di KH tanpa izin (ha)": 144385,
+          "Peringkat": 1,
+          "Porsi vs total korporasi Riau": "26.8%",
+          "Catatan operasi": "Inti Duta Palma / tipikor; gelombang 1: 5 PT",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Rokan Hulu",
+          "Luas korporasi di KH tanpa izin (ha)": 68677,
+          "Peringkat": 2,
+          "Porsi vs total korporasi Riau": "12.7%",
+          "Catatan operasi": "Terbanyak di daftar 27 PT gelombang 1 (8 PT)",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Indragiri Hilir",
+          "Luas korporasi di KH tanpa izin (ha)": 66321,
+          "Peringkat": 3,
+          "Porsi vs total korporasi Riau": "12.3%",
+          "Catatan operasi": "4 PT di gelombang 1; plasma KCH",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Rokan Hilir",
+          "Luas korporasi di KH tanpa izin (ha)": 56662,
+          "Peringkat": 4,
+          "Porsi vs total korporasi Riau": "10.5%",
+          "Catatan operasi": "Konflik pasca-Agrinas (dataset lokal)",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Pelalawan",
+          "Luas korporasi di KH tanpa izin (ha)": 56011,
+          "Peringkat": 5,
+          "Porsi vs total korporasi Riau": "10.4%",
+          "Catatan operasi": "TNTN + Mekarsari; buruh koperasi terdampak",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Kampar",
+          "Luas korporasi di KH tanpa izin (ha)": 52730,
+          "Peringkat": 6,
+          "Porsi vs total korporasi Riau": "9.8%",
+          "Catatan operasi": "Johan Sentosa 5.764 ha disegel; Pansus: 59 kebun",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Kuantan Singingi",
+          "Luas korporasi di KH tanpa izin (ha)": 41058,
+          "Peringkat": 7,
+          "Porsi vs total korporasi Riau": "7.6%",
+          "Catatan operasi": "Duta Palma; tuntutan plasma 20%",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Bengkalis",
+          "Luas korporasi di KH tanpa izin (ha)": 39216,
+          "Peringkat": 8,
+          "Porsi vs total korporasi Riau": "7.3%",
+          "Catatan operasi": "Konflik Sakai–SIS / KSO Agrinas",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Siak",
+          "Luas korporasi di KH tanpa izin (ha)": 7255,
+          "Peringkat": 9,
+          "Porsi vs total korporasi Riau": "1.3%",
+          "Catatan operasi": "—",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kota Dumai",
+          "Luas korporasi di KH tanpa izin (ha)": 5697,
+          "Peringkat": 10,
+          "Porsi vs total korporasi Riau": "1.1%",
+          "Catatan operasi": "—",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kota Pekanbaru",
+          "Luas korporasi di KH tanpa izin (ha)": 643,
+          "Peringkat": 11,
+          "Porsi vs total korporasi Riau": "0.1%",
+          "Catatan operasi": "—",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kab. Kep. Meranti",
+          "Luas korporasi di KH tanpa izin (ha)": 522,
+          "Peringkat": 12,
+          "Porsi vs total korporasi Riau": "0.1%",
+          "Catatan operasi": "—",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "TOTAL korporasi teridentifikasi",
+          "Luas korporasi di KH tanpa izin (ha)": 539177,
+          "Peringkat": "—",
+          "Porsi vs total korporasi Riau": "100%",
+          "Catatan operasi": "KLHK ke Komisi IV DPR, 22 Agu 2022",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Kelompok non-korporasi (masyarakat/koperasi/dll)",
+          "Luas korporasi di KH tanpa izin (ha)": 800000,
+          "Peringkat": "—",
+          "Porsi vs total korporasi Riau": "—",
+          "Catatan operasi": "Estimasi KLHK: hampir 800 ribu ha",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "TOTAL sawit di KH tanpa izin (klaim KLHK 2022)",
+          "Luas korporasi di KH tanpa izin (ha)": 1350000,
+          "Peringkat": "—",
+          "Porsi vs total korporasi Riau": "—",
+          "Catatan operasi": "1,35 juta ha; +148 ribu ha belum teridentifikasi",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Tipologi pemilik (P3ES)",
+          "Luas korporasi di KH tanpa izin (ha)": "Luas (ha)",
+          "Peringkat": "Persen",
+          "Porsi vs total korporasi Riau": "Implikasi penertiban",
+          "Catatan operasi": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Terindikasi korporasi",
+          "Luas korporasi di KH tanpa izin (ha)": 308070.55,
+          "Peringkat": "16,3%",
+          "Porsi vs total korporasi Riau": "Prioritas Satgas / 110A-B / tipikor",
+          "Catatan operasi": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Terindikasi masyarakat",
+          "Luas korporasi di KH tanpa izin (ha)": 50886.24,
+          "Peringkat": "2,7%",
+          "Porsi vs total korporasi Riau": "Skema petani <5 ha / inventaris Pemda",
+          "Catatan operasi": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "Belum teridentifikasi",
+          "Luas korporasi di KH tanpa izin (ha)": 1534024.2,
+          "Peringkat": "81,0%",
+          "Porsi vs total korporasi Riau": "Celahan terbesar — perlu ground-truth",
+          "Catatan operasi": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Kabupaten/Kota": "TOTAL P3ES",
+          "Luas korporasi di KH tanpa izin (ha)": 1893618.59,
+          "Peringkat": "100%",
+          "Porsi vs total korporasi Riau": "Baseline Pemda/P3ES (~1,89 juta ha)",
+          "Catatan operasi": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        }
+      ]
+    },
+    "satgas_tahap_residual": {
+      "sheet": "12_Satgas_Tahap_Residual",
+      "total": 13,
+      "records": [
+        {
+          "Indikator": "Penguasaan tahap 1 (cut-off ~Juni 2025)",
+          "Nilai": 331838.67,
+          "Satuan": "ha",
+          "Sumber / catatan": "10 kabupaten; 141 perusahaan",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Indikator": "Penguasaan tahap 2 (Apr–Jun 2025 batch)",
+          "Nilai": 209464.2,
+          "Satuan": "ha",
+          "Sumber / catatan": "128 perusahaan; 14 dari data Kemenhut",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Indikator": "Jumlah perusahaan tahap 1",
+          "Nilai": 141,
+          "Satuan": "PT",
+          "Sumber / catatan": "Fokus korporasi, belum petani/koperasi",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Indikator": "Jumlah perusahaan tahap 2",
+          "Nilai": 128,
+          "Satuan": "PT",
+          "Sumber / catatan": "Masih fokus perusahaan",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Indikator": "Penguasaan TNTN (jalur konservasi)",
+          "Nilai": 81793,
+          "Satuan": "ha",
+          "Sumber / catatan": "Dikembalikan ke fungsi konservasi",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Indikator": "Serah kelola eks Duta Palma (bagian Riau)",
+          "Nilai": 43824.52,
+          "Satuan": "ha",
+          "Sumber / catatan": "7 bidang di Kuansing, Rohul, Kampar, Pelalawan",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Indikator": "Serah kelola eks Duta Palma (total Riau+Kalbar)",
+          "Nilai": 221868.421,
+          "Satuan": "ha",
+          "Sumber / catatan": "Nasional tahap I Agrinas",
+          "col_4": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Indikator": "Estimasi residual stok (ha) — tiga baseline",
+          "Nilai": null,
+          "Satuan": null,
+          "Sumber / catatan": null,
+          "col_4": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Indikator": "Baseline stok sawit di KH",
+          "Nilai": "Stok (ha)",
+          "Satuan": "Minus tahap 1",
+          "Sumber / catatan": "Residual setelah tahap 1",
+          "col_4": "Minus tahap 1+2*",
+          "col_5": "Residual setelah 1+2*",
+          "col_6": "Catatan",
+          "col_7": null
+        },
+        {
+          "Indikator": "KLHK Planologi",
+          "Nilai": 1400000,
+          "Satuan": 331839,
+          "Sumber / catatan": 1068161,
+          "col_4": 541303,
+          "col_5": 858697,
+          "col_6": "Baseline resmi penertiban",
+          "col_7": null
+        },
+        {
+          "Indikator": "P3ES / Pemda",
+          "Nilai": 1893619,
+          "Satuan": 331839,
+          "Sumber / catatan": 1561780,
+          "col_4": 541303,
+          "col_5": 1352316,
+          "col_6": "Termasuk belum teridentifikasi",
+          "col_7": null
+        },
+        {
+          "Indikator": "EoF GIS tutupan",
+          "Nilai": 2519854,
+          "Satuan": 331839,
+          "Sumber / catatan": 2188015,
+          "col_4": 541303,
+          "col_5": 1978551,
+          "col_6": "Tutupan, bukan daftar izin",
+          "col_7": null
+        },
+        {
+          "Indikator": "KLHK korporasi saja (2022)",
+          "Nilai": 539177,
+          "Satuan": 331839,
+          "Sumber / catatan": 207338,
+          "col_4": 541303,
+          "col_5": 0,
+          "col_6": "Proxy korporasi",
+          "col_7": null
+        }
+      ]
+    },
+    "gelombang1_27_pt": {
+      "sheet": "13_27_PT_Gelombang1_PKH",
+      "total": 35,
+      "records": [
+        {
+          "No": 1,
+          "Perusahaan": "PT Perdana Inti Sawit Perkasa",
+          "Kabupaten": "Rokan Hulu",
+          "Afiliasi / grup (indikasi)": "First Resources / Surya Dumai",
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 2,
+          "Perusahaan": "PT Panca Surya Agrindo",
+          "Kabupaten": "Rokan Hulu",
+          "Afiliasi / grup (indikasi)": "First Resources / Surya Dumai",
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 3,
+          "Perusahaan": "PT Perdana Inti Sawit",
+          "Kabupaten": "Rokan Hulu",
+          "Afiliasi / grup (indikasi)": "First Resources / Surya Dumai",
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 4,
+          "Perusahaan": "PT Pratama Riau",
+          "Kabupaten": "Rokan Hulu",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 5,
+          "Perusahaan": "PT Gerbang Sawit Indah",
+          "Kabupaten": "Rokan Hulu",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 6,
+          "Perusahaan": "PT Gerbang Sawit Indah II",
+          "Kabupaten": "Rokan Hulu",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": "SK 36: 898 ha dimohon, 867 berproses",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 7,
+          "Perusahaan": "PT Ariando Tri Sejahtera",
+          "Kabupaten": "Kampar",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 8,
+          "Perusahaan": "PT Ciliandra Perkasa",
+          "Kabupaten": "Kampar",
+          "Afiliasi / grup (indikasi)": "First Resources",
+          "Catatan luas / status terbuka": "SK 36: 2.285 ha; 2.178 berproses",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 9,
+          "Perusahaan": "PT Karya Tama Bhakti Mulia",
+          "Kabupaten": "Kampar",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 10,
+          "Perusahaan": "PT Subur Arum Makmur",
+          "Kabupaten": "Kampar",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": "SK 36: 2.383 ha berproses penuh",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 11,
+          "Perusahaan": "PT Karya Tama Bhakti Mulia (eks Tri Bakti Sarimas)",
+          "Kabupaten": "Kuantan Singingi",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": "Tri Bakti SK 36: 594 ha",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 12,
+          "Perusahaan": "PT Citra Palma Kencana",
+          "Kabupaten": "Indragiri Hilir",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 13,
+          "Perusahaan": "PT Indogreen Jaya Abadi",
+          "Kabupaten": "Indragiri Hilir",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": "SK 36: 514 ha; 380 berproses",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 14,
+          "Perusahaan": "PT Setia Agrindo Lestari",
+          "Kabupaten": "Indragiri Hilir",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 15,
+          "Perusahaan": "PT Eluan Mahkota",
+          "Kabupaten": "Rokan Hulu",
+          "Afiliasi / grup (indikasi)": "Mahkota Group",
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 16,
+          "Perusahaan": "PT Aditya Palma Nusantara",
+          "Kabupaten": "Rokan Hulu",
+          "Afiliasi / grup (indikasi)": "Afiliasi Duta Palma (indikasi)",
+          "Catatan luas / status terbuka": "SK 36: 795 ha; 744 berproses",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 17,
+          "Perusahaan": "PT Johan Sentosa",
+          "Kabupaten": "Kampar",
+          "Afiliasi / grup (indikasi)": "Duta Palma Group",
+          "Catatan luas / status terbuka": "Disegel 26 Feb 2025; 5.764 ha",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 18,
+          "Perusahaan": "PT Mekarsari Alam Lestari",
+          "Kabupaten": "Pelalawan",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": "SK 36: 547 ha; 497 berproses",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 19,
+          "Perusahaan": "PT Duta Palma Nusantara",
+          "Kabupaten": "Kuantan Singingi",
+          "Afiliasi / grup (indikasi)": "Duta Palma Group",
+          "Catatan luas / status terbuka": "Tipikor; serah Agrinas",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 20,
+          "Perusahaan": "PT Warna Jingga Timur",
+          "Kabupaten": "Kuantan Singingi",
+          "Afiliasi / grup (indikasi)": "Duta Palma Group",
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 21,
+          "Perusahaan": "PT Cerenti Subur",
+          "Kabupaten": "Kuantan Singingi",
+          "Afiliasi / grup (indikasi)": "Duta Palma Group",
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 22,
+          "Perusahaan": "PT Palma Satu",
+          "Kabupaten": "Indragiri Hulu",
+          "Afiliasi / grup (indikasi)": "Duta Palma Group",
+          "Catatan luas / status terbuka": "Tersangka tipikor",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 23,
+          "Perusahaan": "PT Panca Agro Lestari",
+          "Kabupaten": "Indragiri Hulu",
+          "Afiliasi / grup (indikasi)": "Duta Palma Group",
+          "Catatan luas / status terbuka": "Tersangka tipikor",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 24,
+          "Perusahaan": "PT Banyu Bening Utama",
+          "Kabupaten": "Indragiri Hulu",
+          "Afiliasi / grup (indikasi)": "Duta Palma Group",
+          "Catatan luas / status terbuka": "Tersangka tipikor",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 25,
+          "Perusahaan": "PT Kencana Amal Tani",
+          "Kabupaten": "Indragiri Hulu",
+          "Afiliasi / grup (indikasi)": "Duta Palma Group",
+          "Catatan luas / status terbuka": "Tersangka tipikor",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 26,
+          "Perusahaan": "PT Seberida Subur",
+          "Kabupaten": "Indragiri Hulu",
+          "Afiliasi / grup (indikasi)": "Duta Palma Group",
+          "Catatan luas / status terbuka": "Tersangka tipikor",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": 27,
+          "Perusahaan": "PT Agrosari Mas",
+          "Kabupaten": "Indragiri Hilir",
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": "Rekap jumlah perusahaan gelombang 1 per kabupaten",
+          "Perusahaan": null,
+          "Kabupaten": null,
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": "Kabupaten",
+          "Perusahaan": "Jumlah PT gelombang 1",
+          "Kabupaten": null,
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": "Rokan Hulu",
+          "Perusahaan": 8,
+          "Kabupaten": null,
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": "Kampar",
+          "Perusahaan": 5,
+          "Kabupaten": null,
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": "Indragiri Hulu",
+          "Perusahaan": 5,
+          "Kabupaten": null,
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": "Kuantan Singingi",
+          "Perusahaan": 4,
+          "Kabupaten": null,
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": "Indragiri Hilir",
+          "Perusahaan": 4,
+          "Kabupaten": null,
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "No": "Pelalawan",
+          "Perusahaan": 1,
+          "Kabupaten": null,
+          "Afiliasi / grup (indikasi)": null,
+          "Catatan luas / status terbuka": null,
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        }
+      ]
+    },
+    "sk36_2025_110a_riau": {
+      "sheet": "14_SK36_2025_110A_Riau",
+      "total": 96,
+      "records": [
+        {
+          "No": 1,
+          "Subjek hukum": "Adi, dkk.",
+          "Dimohon (ha)": 907,
+          "Berproses 110A (ha)": 907,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 2,
+          "Subjek hukum": "PT Adimulia Agrolestari",
+          "Dimohon (ha)": 374,
+          "Berproses 110A (ha)": 102,
+          "Ditolak (ha)": 272,
+          "Rasio ditolak": "73%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 3,
+          "Subjek hukum": "PT Aditya Palma Nusantara",
+          "Dimohon (ha)": 795,
+          "Berproses 110A (ha)": 744,
+          "Ditolak (ha)": 51,
+          "Rasio ditolak": "6%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 4,
+          "Subjek hukum": "PT Agro Mitra Rokan",
+          "Dimohon (ha)": 3605,
+          "Berproses 110A (ha)": 380,
+          "Ditolak (ha)": 3225,
+          "Rasio ditolak": "89%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 5,
+          "Subjek hukum": "PT Agro Sarimas Indonesia",
+          "Dimohon (ha)": 4661,
+          "Berproses 110A (ha)": 1636,
+          "Ditolak (ha)": 3298,
+          "Rasio ditolak": "71%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 6,
+          "Subjek hukum": "PT Air Jernih",
+          "Dimohon (ha)": 397,
+          "Berproses 110A (ha)": 370,
+          "Ditolak (ha)": 27,
+          "Rasio ditolak": "7%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 7,
+          "Subjek hukum": "PT Air Kampar",
+          "Dimohon (ha)": 129,
+          "Berproses 110A (ha)": 128,
+          "Ditolak (ha)": 1,
+          "Rasio ditolak": "1%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 8,
+          "Subjek hukum": "PT Bina Pitri Jaya",
+          "Dimohon (ha)": 378,
+          "Berproses 110A (ha)": 313,
+          "Ditolak (ha)": 65,
+          "Rasio ditolak": "17%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 9,
+          "Subjek hukum": "PT Bumi Sawit Perkasa",
+          "Dimohon (ha)": 5330,
+          "Berproses 110A (ha)": 5330,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 10,
+          "Subjek hukum": "PT Central Warisan Indah Makmur",
+          "Dimohon (ha)": 479,
+          "Berproses 110A (ha)": 413,
+          "Ditolak (ha)": 66,
+          "Rasio ditolak": "14%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 11,
+          "Subjek hukum": "PT Ciliandra Perkasa",
+          "Dimohon (ha)": 2285,
+          "Berproses 110A (ha)": 2178,
+          "Ditolak (ha)": 107,
+          "Rasio ditolak": "5%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 12,
+          "Subjek hukum": "PT Citra Sardela Abadi",
+          "Dimohon (ha)": 2439,
+          "Berproses 110A (ha)": 2439,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 13,
+          "Subjek hukum": "PT Ekadaya Sejati Sukses",
+          "Dimohon (ha)": 735,
+          "Berproses 110A (ha)": 735,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 14,
+          "Subjek hukum": "PT Ekadura Indonesia",
+          "Dimohon (ha)": 232,
+          "Berproses 110A (ha)": 101,
+          "Ditolak (ha)": 131,
+          "Rasio ditolak": "56%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 15,
+          "Subjek hukum": "PT Gandaerah Hendana (2)",
+          "Dimohon (ha)": 361,
+          "Berproses 110A (ha)": 111,
+          "Ditolak (ha)": 250,
+          "Rasio ditolak": "69%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 16,
+          "Subjek hukum": "PT Gandaerah Hendana",
+          "Dimohon (ha)": 2092,
+          "Berproses 110A (ha)": 485,
+          "Ditolak (ha)": 1607,
+          "Rasio ditolak": "77%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 17,
+          "Subjek hukum": "PT Gatipura Mulya",
+          "Dimohon (ha)": 1281,
+          "Berproses 110A (ha)": 1136,
+          "Ditolak (ha)": 145,
+          "Rasio ditolak": "11%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 18,
+          "Subjek hukum": "PT Gerbang Sawit Indah II",
+          "Dimohon (ha)": 898,
+          "Berproses 110A (ha)": 867,
+          "Ditolak (ha)": 31,
+          "Rasio ditolak": "3%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 19,
+          "Subjek hukum": "PT Graha Permata Hijau",
+          "Dimohon (ha)": 167,
+          "Berproses 110A (ha)": 139,
+          "Ditolak (ha)": 28,
+          "Rasio ditolak": "17%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 20,
+          "Subjek hukum": "PT Guna Dodos",
+          "Dimohon (ha)": 491,
+          "Berproses 110A (ha)": 406,
+          "Ditolak (ha)": 84,
+          "Rasio ditolak": "17%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 21,
+          "Subjek hukum": "PT Gunung Mas Raya",
+          "Dimohon (ha)": 3149,
+          "Berproses 110A (ha)": 592,
+          "Ditolak (ha)": 2557,
+          "Rasio ditolak": "81%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 22,
+          "Subjek hukum": "PT Indogreen Jaya Abadi",
+          "Dimohon (ha)": 514,
+          "Berproses 110A (ha)": 380,
+          "Ditolak (ha)": 134,
+          "Rasio ditolak": "26%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 23,
+          "Subjek hukum": "PT Indrawan Perkasa",
+          "Dimohon (ha)": 769,
+          "Berproses 110A (ha)": 64,
+          "Ditolak (ha)": 705,
+          "Rasio ditolak": "92%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 24,
+          "Subjek hukum": "PT Inecda",
+          "Dimohon (ha)": 1516,
+          "Berproses 110A (ha)": 1367,
+          "Ditolak (ha)": 149,
+          "Rasio ditolak": "10%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 25,
+          "Subjek hukum": "PT Inti Indosawit Subur",
+          "Dimohon (ha)": 449,
+          "Berproses 110A (ha)": 440,
+          "Ditolak (ha)": 9,
+          "Rasio ditolak": "2%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 26,
+          "Subjek hukum": "PT Lindai Jaya Lestari",
+          "Dimohon (ha)": 634,
+          "Berproses 110A (ha)": 568,
+          "Ditolak (ha)": 66,
+          "Rasio ditolak": "10%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 27,
+          "Subjek hukum": "PT Mekarsari Alam Lestari",
+          "Dimohon (ha)": 547,
+          "Berproses 110A (ha)": 497,
+          "Ditolak (ha)": 50,
+          "Rasio ditolak": "9%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 28,
+          "Subjek hukum": "Misgianto dkk",
+          "Dimohon (ha)": 427,
+          "Berproses 110A (ha)": 220,
+          "Ditolak (ha)": 207,
+          "Rasio ditolak": "48%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 29,
+          "Subjek hukum": "PT Mitra Unggul Pusaka",
+          "Dimohon (ha)": 368,
+          "Berproses 110A (ha)": 242,
+          "Ditolak (ha)": 126,
+          "Rasio ditolak": "34%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 30,
+          "Subjek hukum": "PT Muriniwood Indah Industri",
+          "Dimohon (ha)": 315,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 315,
+          "Rasio ditolak": "100%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 31,
+          "Subjek hukum": "PT Peputra Maha Raya",
+          "Dimohon (ha)": 523,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 523,
+          "Rasio ditolak": "100%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 32,
+          "Subjek hukum": "Peputra Supra Jaya",
+          "Dimohon (ha)": 445,
+          "Berproses 110A (ha)": 253,
+          "Ditolak (ha)": 192,
+          "Rasio ditolak": "43%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 33,
+          "Subjek hukum": "PT Permata Hijau Indonesia",
+          "Dimohon (ha)": 433,
+          "Berproses 110A (ha)": 379,
+          "Ditolak (ha)": 54,
+          "Rasio ditolak": "12%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 34,
+          "Subjek hukum": "PT Perkebunan Nusantara V (PTPN IV)",
+          "Dimohon (ha)": 790,
+          "Berproses 110A (ha)": 15,
+          "Ditolak (ha)": 775,
+          "Rasio ditolak": "98%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 35,
+          "Subjek hukum": "PT Tasma Puja",
+          "Dimohon (ha)": 949,
+          "Berproses 110A (ha)": 926,
+          "Ditolak (ha)": 23,
+          "Rasio ditolak": "2%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 36,
+          "Subjek hukum": "PT Ramajaya Pramukti",
+          "Dimohon (ha)": 561,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 561,
+          "Rasio ditolak": "100%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 37,
+          "Subjek hukum": "PT Riau Sawit Indah I",
+          "Dimohon (ha)": 303,
+          "Berproses 110A (ha)": 303,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 38,
+          "Subjek hukum": "PT Riau Sawit Indah II",
+          "Dimohon (ha)": 226,
+          "Berproses 110A (ha)": 222,
+          "Ditolak (ha)": 4,
+          "Rasio ditolak": "2%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 39,
+          "Subjek hukum": "PT Riau Sawitindo Abadi",
+          "Dimohon (ha)": 3240,
+          "Berproses 110A (ha)": 2692,
+          "Ditolak (ha)": 549,
+          "Rasio ditolak": "17%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 40,
+          "Subjek hukum": "PT Safari Riau",
+          "Dimohon (ha)": 745,
+          "Berproses 110A (ha)": 745,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 41,
+          "Subjek hukum": "PT Sari Lembah Subur",
+          "Dimohon (ha)": 202,
+          "Berproses 110A (ha)": 183,
+          "Ditolak (ha)": 19,
+          "Rasio ditolak": "9%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 42,
+          "Subjek hukum": "PT Sawit Asahan Indah",
+          "Dimohon (ha)": 362,
+          "Berproses 110A (ha)": 358,
+          "Ditolak (ha)": 4,
+          "Rasio ditolak": "1%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 43,
+          "Subjek hukum": "PT Sawit Betuah Lestari",
+          "Dimohon (ha)": 626,
+          "Berproses 110A (ha)": 494,
+          "Ditolak (ha)": 132,
+          "Rasio ditolak": "21%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 44,
+          "Subjek hukum": "PT Sekarbumi Alam Lestari",
+          "Dimohon (ha)": 405,
+          "Berproses 110A (ha)": 190,
+          "Ditolak (ha)": 215,
+          "Rasio ditolak": "53%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 45,
+          "Subjek hukum": "PT Seko Indah (I)",
+          "Dimohon (ha)": 919,
+          "Berproses 110A (ha)": 899,
+          "Ditolak (ha)": 20,
+          "Rasio ditolak": "2%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 46,
+          "Subjek hukum": "PT Seko Indah (II)",
+          "Dimohon (ha)": 442,
+          "Berproses 110A (ha)": 396,
+          "Ditolak (ha)": 46,
+          "Rasio ditolak": "10%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 47,
+          "Subjek hukum": "PT Simas Sawit Alianta (2)",
+          "Dimohon (ha)": 543,
+          "Berproses 110A (ha)": 124,
+          "Ditolak (ha)": 419,
+          "Rasio ditolak": "77%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 48,
+          "Subjek hukum": "PT Simas Sawit Alianta (1)",
+          "Dimohon (ha)": 961,
+          "Berproses 110A (ha)": 895,
+          "Ditolak (ha)": 66,
+          "Rasio ditolak": "7%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 49,
+          "Subjek hukum": "PT Sinar Inti Sawit",
+          "Dimohon (ha)": 1601,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 1601,
+          "Rasio ditolak": "100%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 50,
+          "Subjek hukum": "PT Sinar Widita Pamarta (II)",
+          "Dimohon (ha)": 491,
+          "Berproses 110A (ha)": 412,
+          "Ditolak (ha)": 79,
+          "Rasio ditolak": "16%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 51,
+          "Subjek hukum": "PT Sinar Widita Pamarta (I)",
+          "Dimohon (ha)": 1480,
+          "Berproses 110A (ha)": 1007,
+          "Ditolak (ha)": 473,
+          "Rasio ditolak": "32%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 52,
+          "Subjek hukum": "PT Subur Arun Makmur",
+          "Dimohon (ha)": 2383,
+          "Berproses 110A (ha)": 2383,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 53,
+          "Subjek hukum": "PT Subur Mandiri Lestari",
+          "Dimohon (ha)": 375,
+          "Berproses 110A (ha)": 88,
+          "Ditolak (ha)": 287,
+          "Rasio ditolak": "77%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 54,
+          "Subjek hukum": "PT Sugih Indah Lestari",
+          "Dimohon (ha)": 749,
+          "Berproses 110A (ha)": 675,
+          "Ditolak (ha)": 74,
+          "Rasio ditolak": "10%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 55,
+          "Subjek hukum": "PT Sumatera Timur Indonesia",
+          "Dimohon (ha)": 323,
+          "Berproses 110A (ha)": 309,
+          "Ditolak (ha)": 14,
+          "Rasio ditolak": "4%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 56,
+          "Subjek hukum": "PT Sumber Alam Makmur Sentosa",
+          "Dimohon (ha)": 899,
+          "Berproses 110A (ha)": 653,
+          "Ditolak (ha)": 246,
+          "Rasio ditolak": "27%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 57,
+          "Subjek hukum": "PT Sumber Inti Alam Makmur",
+          "Dimohon (ha)": 304,
+          "Berproses 110A (ha)": 293,
+          "Ditolak (ha)": 11,
+          "Rasio ditolak": "4%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 58,
+          "Subjek hukum": "PT Sumber Sawindo Kencana",
+          "Dimohon (ha)": 800,
+          "Berproses 110A (ha)": 508,
+          "Ditolak (ha)": 292,
+          "Rasio ditolak": "36%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 59,
+          "Subjek hukum": "PT Supra Matra Abadi",
+          "Dimohon (ha)": 823,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 823,
+          "Rasio ditolak": "100%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 60,
+          "Subjek hukum": "PT Surya Agrolika Reksa",
+          "Dimohon (ha)": 1191,
+          "Berproses 110A (ha)": 959,
+          "Ditolak (ha)": 232,
+          "Rasio ditolak": "19%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 61,
+          "Subjek hukum": "PT Surya Dumai Agrindo",
+          "Dimohon (ha)": 126,
+          "Berproses 110A (ha)": 12,
+          "Ditolak (ha)": 114,
+          "Rasio ditolak": "90%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 62,
+          "Subjek hukum": "PT Surya Agro Sukses Sejahtera",
+          "Dimohon (ha)": 421,
+          "Berproses 110A (ha)": 421,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 63,
+          "Subjek hukum": "Sutowo Lukman dkk",
+          "Dimohon (ha)": 212,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 212,
+          "Rasio ditolak": "100%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 64,
+          "Subjek hukum": "PT Swakarsa Sawit Raya",
+          "Dimohon (ha)": 52,
+          "Berproses 110A (ha)": 45,
+          "Ditolak (ha)": 7,
+          "Rasio ditolak": "13%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 65,
+          "Subjek hukum": "Sylvia dkk",
+          "Dimohon (ha)": 86,
+          "Berproses 110A (ha)": 86,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 66,
+          "Subjek hukum": "PT Talang Jerinjing Sawit",
+          "Dimohon (ha)": 20,
+          "Berproses 110A (ha)": 9,
+          "Ditolak (ha)": 11,
+          "Rasio ditolak": "55%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 67,
+          "Subjek hukum": "PT Tasma Puja (entri 2)",
+          "Dimohon (ha)": 94,
+          "Berproses 110A (ha)": 94,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 68,
+          "Subjek hukum": "PT Teluk Mega Abadi",
+          "Dimohon (ha)": 224,
+          "Berproses 110A (ha)": 203,
+          "Ditolak (ha)": 21,
+          "Rasio ditolak": "9%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 69,
+          "Subjek hukum": "PT TH Indo Plantation",
+          "Dimohon (ha)": 4252,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 4252,
+          "Rasio ditolak": "100%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 70,
+          "Subjek hukum": "PT Tor Ganda (Kebun Rantau Kasai)",
+          "Dimohon (ha)": 10616,
+          "Berproses 110A (ha)": 5897,
+          "Ditolak (ha)": 4719,
+          "Rasio ditolak": "44%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 71,
+          "Subjek hukum": "PT Tri Bakti Sarimas",
+          "Dimohon (ha)": 594,
+          "Berproses 110A (ha)": 386,
+          "Ditolak (ha)": 208,
+          "Rasio ditolak": "35%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 72,
+          "Subjek hukum": "PT Trimas FDI",
+          "Dimohon (ha)": 927,
+          "Berproses 110A (ha)": 600,
+          "Ditolak (ha)": 327,
+          "Rasio ditolak": "35%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 73,
+          "Subjek hukum": "PT Tumpuan",
+          "Dimohon (ha)": 150,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 150,
+          "Rasio ditolak": "100%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 74,
+          "Subjek hukum": "PT Tunggal Perkasa Plantation",
+          "Dimohon (ha)": 1280,
+          "Berproses 110A (ha)": 706,
+          "Ditolak (ha)": 574,
+          "Rasio ditolak": "45%",
+          "Prioritas tindak lanjut jika ditolak": "Penguasaan kembali / pidana / Satgas",
+          "col_7": null
+        },
+        {
+          "No": 75,
+          "Subjek hukum": "PT Udaya Lohjinawi I",
+          "Dimohon (ha)": 110,
+          "Berproses 110A (ha)": 39,
+          "Ditolak (ha)": 71,
+          "Rasio ditolak": "65%",
+          "Prioritas tindak lanjut jika ditolak": "Campuran",
+          "col_7": null
+        },
+        {
+          "No": 76,
+          "Subjek hukum": "PT Usaha Kita Makmur",
+          "Dimohon (ha)": 19,
+          "Berproses 110A (ha)": 19,
+          "Ditolak (ha)": 0,
+          "Rasio ditolak": "0%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": 77,
+          "Subjek hukum": "PT Wasundari Indah",
+          "Dimohon (ha)": 223,
+          "Berproses 110A (ha)": 214,
+          "Ditolak (ha)": 9,
+          "Rasio ditolak": "4%",
+          "Prioritas tindak lanjut jika ditolak": "Monitor pembayaran PSDH-DR",
+          "col_7": null
+        },
+        {
+          "No": "—",
+          "Subjek hukum": "SUBTOTAL 77 entri terpublikasi",
+          "Dimohon (ha)": 80224,
+          "Berproses 110A (ha)": 48382,
+          "Ditolak (ha)": 32115,
+          "Rasio ditolak": "40%",
+          "Prioritas tindak lanjut jika ditolak": "Bukan 118 penuh; selisih ~41 PT belum di media",
+          "col_7": null
+        },
+        {
+          "No": "—",
+          "Subjek hukum": "TOTAL resmi Riau (ringkas media SK 36)",
+          "Dimohon (ha)": 85318,
+          "Berproses 110A (ha)": 51298,
+          "Ditolak (ha)": 32534,
+          "Rasio ditolak": "38%",
+          "Prioritas tindak lanjut jika ditolak": "118 perusahaan",
+          "col_7": null
+        },
+        {
+          "No": "Top 15 penolakan (ha) — kandidat prioritas Satgas/APH",
+          "Subjek hukum": null,
+          "Dimohon (ha)": null,
+          "Berproses 110A (ha)": null,
+          "Ditolak (ha)": null,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": "No",
+          "Subjek hukum": "Subjek",
+          "Dimohon (ha)": "Dimohon",
+          "Berproses 110A (ha)": "Berproses",
+          "Ditolak (ha)": "Ditolak",
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 1,
+          "Subjek hukum": "PT Tor Ganda (Kebun Rantau Kasai)",
+          "Dimohon (ha)": 10616,
+          "Berproses 110A (ha)": 5897,
+          "Ditolak (ha)": 4719,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 2,
+          "Subjek hukum": "PT TH Indo Plantation",
+          "Dimohon (ha)": 4252,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 4252,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 3,
+          "Subjek hukum": "PT Agro Sarimas Indonesia",
+          "Dimohon (ha)": 4661,
+          "Berproses 110A (ha)": 1636,
+          "Ditolak (ha)": 3298,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 4,
+          "Subjek hukum": "PT Agro Mitra Rokan",
+          "Dimohon (ha)": 3605,
+          "Berproses 110A (ha)": 380,
+          "Ditolak (ha)": 3225,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 5,
+          "Subjek hukum": "PT Gunung Mas Raya",
+          "Dimohon (ha)": 3149,
+          "Berproses 110A (ha)": 592,
+          "Ditolak (ha)": 2557,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 6,
+          "Subjek hukum": "PT Gandaerah Hendana",
+          "Dimohon (ha)": 2092,
+          "Berproses 110A (ha)": 485,
+          "Ditolak (ha)": 1607,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 7,
+          "Subjek hukum": "PT Sinar Inti Sawit",
+          "Dimohon (ha)": 1601,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 1601,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 8,
+          "Subjek hukum": "PT Supra Matra Abadi",
+          "Dimohon (ha)": 823,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 823,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 9,
+          "Subjek hukum": "PT Perkebunan Nusantara V (PTPN IV)",
+          "Dimohon (ha)": 790,
+          "Berproses 110A (ha)": 15,
+          "Ditolak (ha)": 775,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 10,
+          "Subjek hukum": "PT Indrawan Perkasa",
+          "Dimohon (ha)": 769,
+          "Berproses 110A (ha)": 64,
+          "Ditolak (ha)": 705,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 11,
+          "Subjek hukum": "PT Tunggal Perkasa Plantation",
+          "Dimohon (ha)": 1280,
+          "Berproses 110A (ha)": 706,
+          "Ditolak (ha)": 574,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 12,
+          "Subjek hukum": "PT Ramajaya Pramukti",
+          "Dimohon (ha)": 561,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 561,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 13,
+          "Subjek hukum": "PT Riau Sawitindo Abadi",
+          "Dimohon (ha)": 3240,
+          "Berproses 110A (ha)": 2692,
+          "Ditolak (ha)": 549,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 14,
+          "Subjek hukum": "PT Peputra Maha Raya",
+          "Dimohon (ha)": 523,
+          "Berproses 110A (ha)": 0,
+          "Ditolak (ha)": 523,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        },
+        {
+          "No": 15,
+          "Subjek hukum": "PT Sinar Widita Pamarta (I)",
+          "Dimohon (ha)": 1480,
+          "Berproses 110A (ha)": 1007,
+          "Ditolak (ha)": 473,
+          "Rasio ditolak": null,
+          "Prioritas tindak lanjut jika ditolak": null,
+          "col_7": null
+        }
+      ]
+    },
+    "denda_dampak_sosial": {
+      "sheet": "15_Denda_Dan_Dampak_Sosial",
+      "total": 15,
+      "records": [
+        {
+          "Periode / cut-off": "Jan 2026",
+          "Indikator": "Denda diterima Satgas (sawit+tambang)",
+          "Nilai": "Rp 5,2 T",
+          "Cakupan": "Nasional; +potensi Rp4,1 T siap bayar",
+          "Sumber": "Kompas / Kejagung",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Mar 2026",
+          "Indikator": "Denda dibayar sektor sawit",
+          "Nilai": "Rp 7,397 T",
+          "Cakupan": "51 perusahaan",
+          "Sumber": "Kompas / Tempo",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Mar 2026",
+          "Indikator": "Denda dibayar sektor tambang",
+          "Nilai": "Rp 0,614 T",
+          "Cakupan": "7 dari 53 korporasi",
+          "Sumber": "Tempo",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Mar 2026",
+          "Indikator": "Total denda dibayar sawit+tambang",
+          "Nilai": "Rp 8,012 T",
+          "Cakupan": "Nasional",
+          "Sumber": "Kompas",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "2026 (briefing lanjut)",
+          "Indikator": "Denda sawit dibayar",
+          "Nilai": "Rp 11,4 T",
+          "Cakupan": "92 perusahaan; sisa potensi Rp10,5 T",
+          "Sumber": "Detik / Lingkar / Kejagung",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "2026",
+          "Indikator": "Potensi denda administratif sawit",
+          "Nilai": "Rp 21,9 T",
+          "Cakupan": "134 perusahaan",
+          "Sumber": "Kejagung",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "2026",
+          "Indikator": "Potensi denda sawit+tambang",
+          "Nilai": "Rp 54,6 T",
+          "Cakupan": "Realisasi Rp14,2 T; sisa Rp40,3 T",
+          "Sumber": "Kejagung",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Des 2023 (era KLHK)",
+          "Indikator": "Invoice 110A PSDH-DR",
+          "Nilai": "365 subjek; ~600 ribu ha; Rp1–6,5 jt/ha",
+          "Cakupan": "Nasional",
+          "Sumber": "Gapki / Kontan",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Lokasi",
+          "Indikator": "Jenis dampak",
+          "Nilai": "Skala / angka",
+          "Cakupan": "Pihak",
+          "Sumber": "Sumber",
+          "col_5": "Implikasi APH",
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Indragiri Hulu",
+          "Indikator": "Penolakan KSO Agrinas atas kebun swadaya/plasma",
+          "Nilai": "≥1.500 KK; 5 desa; klaim 1.994 ha swadaya vs 355 ha plasma SML",
+          "Cakupan": "Warga vs PT APN / PT TDE",
+          "Sumber": "Potret24 Jan 2026",
+          "col_5": "Pisahkan plasma sah vs swadaya",
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Pelalawan",
+          "Indikator": "Buruh terdampak plang PKH pada koperasi",
+          "Nilai": "1.300 ha koperasi; 140 buruh ditarik",
+          "Cakupan": "Buruh / koperasi / PT Indo Sawit Subur",
+          "Sumber": "Mongabay Des 2025",
+          "col_5": "Transisi kerja; jaminan normatif",
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Kuantan Singingi",
+          "Indikator": "Tuntutan hak masyarakat & buruh eks Duta Palma",
+          "Nilai": "20% HGU; hak BHL/BPJS; KSO Koperasi Merah Putih",
+          "Cakupan": "FSPMI / Aliansi vs Agrinas",
+          "Sumber": "Kuansing Terkini Sep 2025",
+          "col_5": "Plasma 20% + hubungan industrial",
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Bengkalis (Batin Solapan)",
+          "Indikator": "Konflik masyarakat adat Sakai vs pengelola/KSO",
+          "Nilai": "Konflik berulang; bentrok; korban luka (media)",
+          "Cakupan": "Sakai vs PT Sinar Inti Sawit / Agrinas",
+          "Sumber": "Catatan Riau; Riau Satu",
+          "col_5": "Audit KSO; proteksi adat",
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Rokan Hilir",
+          "Indikator": "Sengketa kelola pasca-Agrinas",
+          "Nilai": "Kasus operasional dataset lokal (SW-022)",
+          "Cakupan": "Agrinas vs Salim Ivomas / warga",
+          "Sumber": "Inventaris lokal",
+          "col_5": "Mediasi Forkopimda",
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Periode / cut-off": "Umum Riau",
+          "Indikator": "Perubahan status kerja borongan tanpa BPJS",
+          "Nilai": "Pola dilaporkan serikat; belum ada sensus resmi",
+          "Cakupan": "Buruh kebun terdampak PKH",
+          "Sumber": "Mongabay / Serbuk",
+          "col_5": "SOP ketenagakerjaan pasca-penguasaan",
+          "col_6": null,
+          "col_7": null
+        }
+      ]
+    },
+    "status_celahan": {
+      "sheet": "00_Status_Celahan",
+      "total": 5,
+      "records": [
+        {
+          "Celahan semula": "Rincian kabupaten untuk 331.838 ha Riau",
+          "Status": "SEBAGIAN",
+          "Apa yang berhasil diisi": "Tahap 1: 10 kab, 141 PT; Tahap 2: 209.464 ha / 128 PT; daftar 27 PT gelombang 1 per kab; proxy stok korporasi KLHK 2022 per 12 kab",
+          "Sisa yang masih tertutup": "Ha penguasaan Satgas per kabupaten (bukan stok) belum ada di BA publik",
+          "Sumber utama": "Media Perkebunan/Derak Post; EksposeKasus; SabangMerauke (KLHK 2022)",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Celahan semula": "Daftar perusahaan 110A vs 110B per kab",
+          "Status": "SEBAGIAN BESAR",
+          "Apa yang berhasil diisi": "SK Menhut 36/2025: 118 PT Riau; 85.318 ha dimohon; 51.298 berproses; 32.534 ditolak; daftar 77 PT + luas berproses/ditolak",
+          "Sisa yang masih tertutup": "Kabupaten per perusahaan di SK 36 belum di lampiran media; tipologi 110B Riau-spesifik terbatas",
+          "Sumber utama": "SabangMerauke; KNPI/Radar Pekanbaru",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Celahan semula": "Realisasi PSDH-DR / denda per perusahaan Riau",
+          "Status": "SEBAGIAN",
+          "Apa yang berhasil diisi": "Denda administratif nasional Satgas: Rp7,4 T (51 PT sawit, Mar 2026) → Rp11,4 T (92 PT); potensi sawit Rp21,9 T / 134 PT",
+          "Sisa yang masih tertutup": "Breakdown Riau & nama pembayar belum dipublikasi per perusahaan",
+          "Sumber utama": "Kompas; Tempo; Detik; Lingkar (Kejagung)",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Celahan semula": "Peta residual stok setelah penguasaan",
+          "Status": "SEBAGIAN",
+          "Apa yang berhasil diisi": "Residual dihitung dari 3 baseline (KLHK/P3ES/EoF) minus capaian tahap; stok korporasi per kab KLHK 2022; P3ES tipologi pemilik",
+          "Sisa yang masih tertutup": "Overlay spasial resmi (shapefile BA) belum terbuka",
+          "Sumber utama": "KLHK; P3ES via Gubernur; EoF; Satgas",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        },
+        {
+          "Celahan semula": "Dampak sosial plasma & buruh pasca-Agrinas",
+          "Status": "SEBAGIAN BESAR",
+          "Apa yang berhasil diisi": "1.500 KK Inhu tolak KSO; 140 buruh Pelalawan terdampak plang; tuntutan 20% plasma Kuansing; konflik Sakai–SIS Bengkalis",
+          "Sisa yang masih tertutup": "Sensus formal jumlah buruh/plasma terdampak se-Riau belum ada",
+          "Sumber utama": "Mongabay; Potret24; Kuansing Terkini; Catatan Riau",
+          "col_5": null,
+          "col_6": null,
+          "col_7": null
+        }
+      ]
+    },
+    "ringkasan": {
+      "sheet": "01_Ringkasan",
+      "total": 15,
+      "records": [
+        {
+          "Indikator": "Estimasi sawit di kawasan hutan (KLHK)",
+          "Nilai / Angka": "1,4 juta",
+          "Satuan": "ha",
+          "Periode / Catatan": "Data resmi yang sering dikutip Dirjen Planologi",
+          "Sumber utama": "KLHK via Komisi IV DPR / InfoPublik 2022",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Estimasi sawit di kawasan hutan (Pansus DPRD / Pemda)",
+          "Nilai / Angka": "1,8 juta",
+          "Satuan": "ha",
+          "Periode / Catatan": "Versi Pemda/Pansus; beda dengan angka KLHK",
+          "Sumber utama": "Gubernur Riau / Komisi IV DPR 2022",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Tutupan sawit di kawasan hutan (analisis GIS EoF)",
+          "Nilai / Angka": "2.519.854",
+          "Satuan": "ha",
+          "Periode / Catatan": "47% dari ~5,41 juta ha tutupan sawit Riau (2019/2020)",
+          "Sumber utama": "Eyes on the Forest (EoF) 2021/2023",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Total sawit Riau (EoF)",
+          "Nilai / Angka": "5.413.709",
+          "Satuan": "ha",
+          "Periode / Catatan": "Analisis spasial EoF",
+          "Sumber utama": "EoF Omnibus Law report",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Sawit di kawasan hutan nasional (inventarisasi)",
+          "Nilai / Angka": "±3,37 juta",
+          "Satuan": "ha",
+          "Periode / Catatan": "Riau disebut memegang porsi terbesar (~separuh)",
+          "Sumber utama": "KLHK / UUCK implementasi",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Penguasaan kembali Satgas PKH di Riau",
+          "Nilai / Angka": "331.838,67",
+          "Satuan": "ha",
+          "Periode / Catatan": "s.d. Juni 2025; peringkat 2 nasional setelah Kalteng",
+          "Sumber utama": "Satgas PKH (media resmi/turunan)",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Penguasaan kembali Satgas PKH nasional",
+          "Nilai / Angka": "1.019.611,31 → ~2,09 juta",
+          "Satuan": "ha",
+          "Periode / Catatan": "Juni 2025 (1,02 juta); Juli 2025 dilaporkan ~2,09 juta",
+          "Sumber utama": "Kejaksaan / Satgas PKH",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Target nasional penertiban PKH",
+          "Nilai / Angka": "3 juta (hingga 3,7 juta di narasi pemulihan)",
+          "Satuan": "ha",
+          "Periode / Catatan": "Perpres 5/2025",
+          "Sumber utama": "Perpres 5/2025; Kemenhut",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Penguasaan kembali TNTN",
+          "Nilai / Angka": "81.793",
+          "Satuan": "ha",
+          "Periode / Catatan": "Fungsi dikembalikan ke konservasi (bukan Agrinas)",
+          "Sumber utama": "Satgas PKH / Kejaksaan Juli 2025",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Estimasi sawit ilegal di dalam TNTN",
+          "Nilai / Angka": "±40.000 (hingga ~49–60 ribu di beberapa sumber)",
+          "Satuan": "ha",
+          "Periode / Catatan": "Kemenhut: ~40.000 ha dibuka/ditanami; EoF: 49.176 ha di TNTN",
+          "Sumber utama": "Kemenhut SP Juni 2025; EoF",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Pemusnahan sawit TNTN (Mei–Juli 2025)",
+          "Nilai / Angka": "±4.700",
+          "Satuan": "ha",
+          "Periode / Catatan": "Desa Bagan Limau, Lubuk Kembang Bunga, Kesuma, Segati",
+          "Sumber utama": "Media Indonesia / Kemenhut",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "SHM terbit di dalam TNTN (diverifikasi)",
+          "Nilai / Angka": "1.805",
+          "Satuan": "sertifikat",
+          "Periode / Catatan": "Verifikasi bersama BPN",
+          "Sumber utama": "Kemenhut SP 19 Juni 2025",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Penduduk di dalam TNTN",
+          "Nilai / Angka": "±15.000 jiwa (hanya ~10% penduduk asli)",
+          "Satuan": "orang",
+          "Periode / Catatan": "Tantangan relokasi humanis",
+          "Sumber utama": "Kemenhut / Satgas Garuda",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Perusahaan terdampak PKH/Agrinas (inventaris lokal)",
+          "Nilai / Angka": "92 entri ST + kasus operasional",
+          "Satuan": "entri",
+          "Periode / Catatan": "Dari dataset konflik sawit workspace Polda Riau",
+          "Sumber utama": "Inventaris lokal proyek",
+          "col_5": null,
+          "col_6": null
+        },
+        {
+          "Indikator": "Potensi PNBP denda 110A (nasional, ilustratif)",
+          "Nilai / Angka": "Rp 6 jt/ha × 1 juta ha ≈ Rp 6 T (contoh Sekjen KLHK)",
+          "Satuan": "Rp",
+          "Periode / Catatan": "Realisasi jauh lebih rendah dari potensi; data Riau spesifik terbatas publik",
+          "Sumber utama": "KLHK / Ombudsman briefing",
+          "col_5": null,
+          "col_6": null
+        }
+      ]
+    }
+  }
+}

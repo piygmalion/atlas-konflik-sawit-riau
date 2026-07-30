@@ -12,6 +12,8 @@ const DATA = {
   adm2: null,
   gfw: null,
   analytics: null,
+  penertiban: null,
+  gfwFull: null,
 };
 
 const state = {
@@ -66,20 +68,37 @@ async function loadJSON(path) {
 }
 
 async function boot() {
-  const [meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, gfw, analytics] = await Promise.all([
-    loadJSON("data/meta.json"),
-    loadJSON("data/kab_kota.json"),
-    loadJSON("data/polres.json"),
-    loadJSON("data/objek_agrinas.json"),
-    loadJSON("data/kasus.json"),
-    loadJSON("data/perusahaan.json"),
-    loadJSON("data/konsesi.json"),
-    loadJSON("data/layers.geojson"),
-    loadJSON("data/adm2_riau.geojson"),
-    loadJSON("data/gfw_konsesi.geojson"),
-    loadJSON("data/analytics.json"),
-  ]);
-  Object.assign(DATA, { meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, gfw, analytics });
+  const [meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, gfw, analytics, penertiban, gfwFull] =
+    await Promise.all([
+      loadJSON("data/meta.json"),
+      loadJSON("data/kab_kota.json"),
+      loadJSON("data/polres.json"),
+      loadJSON("data/objek_agrinas.json"),
+      loadJSON("data/kasus.json"),
+      loadJSON("data/perusahaan.json"),
+      loadJSON("data/konsesi.json"),
+      loadJSON("data/layers.geojson"),
+      loadJSON("data/adm2_riau.geojson"),
+      loadJSON("data/gfw_konsesi.geojson"),
+      loadJSON("data/analytics.json"),
+      loadJSON("data/penertiban.json"),
+      loadJSON("data/konsesi_gfw_full.json"),
+    ]);
+  Object.assign(DATA, {
+    meta,
+    kab,
+    polres,
+    objek,
+    kasus,
+    perusahaan,
+    konsesi,
+    layers,
+    adm2,
+    gfw,
+    analytics,
+    penertiban,
+    gfwFull,
+  });
 
   (meta.layers || []).forEach((l) => {
     state.layerOn[l.id] = !!l.default;
@@ -611,6 +630,24 @@ function setupDataTables() {
     { id: "polres", label: "Ranking Polres", rows: () => DATA.polres.records, cols: ["peringkat", "polres", "skor", "kategori", "n_agrinas", "n_aksi_massa", "alasan"] },
     { id: "kab", label: "Kab/Kota", rows: () => DATA.kab.records, cols: ["kab_kota", "kategori_peta", "skor_komposit", "n_kasus", "polres_proksi", "objek_sinyal_utama"] },
     { id: "atlas", label: "Cocokan Atlas", rows: () => DATA.konsesi.atlas_match.records, cols: ["atlas_nama", "tahun", "tipe", "status", "nama_lokal", "area_ha"] },
+    {
+      id: "gfwfull",
+      label: "GFW bbox 287",
+      rows: () => DATA.gfwFull?.records || [],
+      cols: ["no", "company", "name", "group", "area_ha", "hgu", "gfwid", "lon", "lat"],
+    },
+    {
+      id: "penertiban",
+      label: "Penertiban KH",
+      rows: () => DATA.penertiban?.normalized?.gelombang1_27_pt?.records || [],
+      cols: ["no", "perusahaan", "kabupaten", "afiliasi", "catatan"],
+    },
+    {
+      id: "sk36",
+      label: "SK36 110A",
+      rows: () => DATA.penertiban?.normalized?.sk36_2025_110a?.records || [],
+      cols: ["no", "nama", "dimohon_ha", "berproses_ha", "ditolak_ha", "rasio_ditolak", "prioritas"],
+    },
   ];
   const tabBar = document.getElementById("tableTabs");
   let active = tabs[0];

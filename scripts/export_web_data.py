@@ -755,6 +755,225 @@ def export_analytics(polres: list[dict], objek: list[dict], kasus: list[dict]):
     return payload
 
 
+def parse_numeric(v):
+    if v is None:
+        return None
+    if isinstance(v, (int, float)):
+        return float(v)
+    s = str(v).strip().replace("%", "").replace(",", "")
+    # Indonesian thousand dots: 1.400.000
+    if re.fullmatch(r"\d{1,3}(\.\d{3})+(,\d+)?", s):
+        s = s.replace(".", "").replace(",", ".")
+    elif "," in s and "." not in s:
+        s = s.replace(",", ".")
+    m = re.search(r"-?\d+(?:\.\d+)?", s)
+    return float(m.group(0)) if m else None
+
+
+def extract_table_from_sheet(wb_name: str, sheet: str, min_header_cells: int = 3) -> list[dict]:
+    """Find first row with enough non-empty cells as header, then read records."""
+    path = ROOT / wb_name
+    if not path.exists():
+        return []
+    wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+    if sheet not in wb.sheetnames:
+        wb.close()
+        return []
+    rows = list(wb[sheet].iter_rows(values_only=True))
+    wb.close()
+    header_idx = None
+    headers = []
+    for i, row in enumerate(rows[:25]):
+        cells = [clean(v) for v in row]
+        nonempty = [c for c in cells if c]
+        if len(nonempty) >= min_header_cells and not all(str(c).startswith("http") for c in nonempty[:1]):
+            # Prefer rows that look like headers (many strings, few pure numbers)
+            numericish = sum(1 for c in nonempty if isinstance(c, (int, float)) or re.fullmatch(r"-?\d+(\.\d+)?", str(c) or ""))
+            if numericish <= max(1, len(nonempty) // 3):
+                header_idx = i
+                headers = []
+                for j, c in enumerate(cells):
+                    headers.append(str(c).strip() if c else f"col_{j}")
+                break
+    if header_idx is None:
+        return []
+    out = []
+    for row in rows[header_idx + 1 :]:
+        if all(v is None or str(v).strip() == "" for v in row):
+            continue
+        item = {}
+        empty = True
+        for j, h in enumerate(headers):
+            val = clean(row[j] if j < len(row) else None)
+            if val is not None:
+                empty = False
+            item[h] = val
+        if empty:
+            continue
+        # skip section titles that only fill first column
+        vals = [v for v in item.values() if v is not None]
+        if len(vals) == 1 and isinstance(vals[0], str) and len(vals[0]) > 60:
+            continue
+        out.append(item)
+    return out
+
+
+def export_penertiban():
+    wb_name = "Tabulasi_Penertiban_Kawasan_Hutan_Sawit_Riau.xlsx"
+    sheets = {
+        "estimasi_sawit_kh": "02_Estimasi_Sawit_KH",
+        "fungsi_kawasan_eof": "03_Fungsi_Kawasan_EoF",
+        "capaian_satgas_pkh": "04_Capaian_Satgas_PKH",
+        "operasi_tesso_nilo": "05_Operasi_Tesso_Nilo",
+        "kerangka_hukum": "06_Kerangka_Hukum",
+        "kronologi": "07_Kronologi",
+        "sebaran_lokal_inventaris": "08_Sebaran_Lokal_Inventaris",
+        "denda_pnbp_110a_b": "09_Denda_PNBP_110A_B",
+        "sumber_data": "10_Sumber_Data",
+        "sebaran_kab_korporasi": "11_Sebaran_Kab_Korporasi",
+        "satgas_tahap_residual": "12_Satgas_Tahap_Residual",
+        "gelombang1_27_pt": "13_27_PT_Gelombang1_PKH",
+        "sk36_2025_110a_riau": "14_SK36_2025_110A_Riau",
+        "denda_dampak_sosial": "15_Denda_Dan_Dampak_Sosial",
+        "status_celahan": "00_Status_Celahan",
+        "ringkasan": "01_Ringkasan",
+    }
+    sections = {}
+    for key, sheet in sheets.items():
+        records = extract_table_from_sheet(wb_name, sheet)
+        sections[key] = {"sheet": sheet, "total": len(records), "records": records}
+
+    # Normalized convenience extracts
+    kab_kh = []
+    for r in sections.get("sebaran_kab_korporasi", {}).get("records", []):
+        kab = r.get("Kabupaten/Kota") or r.get("Kabupaten") or r.get("col_0")
+        if not kab:
+            continue
+        kab_s = str(kab).strip()
+        if not (kab_s.lower().startswith("kab") or kab_s.lower().startswith("kota")):
+            continue
+        kab_kh.append(
+            {
+                "kab_kota": kab_s,
+                "luas_ha": parse_numeric(r.get("Luas korporasi di KH tanpa izin (ha)")),
+                "peringkat": parse_numeric(r.get("Peringkat")),
+                "porsi": r.get("Porsi vs total korporasi Riau"),
+                "catatan": r.get("Catatan operasi"),
+            }
+        )
+
+    gelombang1 = []
+    for r in sections.get("gelombang1_27_pt", {}).get("records", []):
+        nama = r.get("Perusahaan") or r.get("Nama") or r.get("col_1")
+        no = parse_numeric(r.get("No") or r.get("col_0"))
+        if not nama or not isinstance(nama, str):
+            continue
+        if no is None or no < 1 or no > 40:
+            continue
+        if not re.search(r"\bPT\b|Perusahaan|Koperasi|CV\b", nama, re.I) and not nama.upper().startswith("PT"):
+            # still allow plain company-like names with kabupaten filled
+            if not (r.get("Kabupaten") or r.get("col_2")):
+                continue
+        gelombang1.append(
+            {
+                "no": int(no),
+                "perusahaan": nama,
+                "kabupaten": r.get("Kabupaten") or r.get("col_2"),
+                "afiliasi": r.get("Afiliasi / grup (indikasi)") or r.get("col_3"),
+                "catatan": r.get("Catatan luas / status terbuka") or r.get("col_4"),
+            }
+        )
+
+    sk36 = []
+    for r in sections.get("sk36_2025_110a_riau", {}).get("records", []):
+        nama = r.get("Subjek hukum") or r.get("col_1")
+        no = parse_numeric(r.get("No") or r.get("col_0"))
+        if not nama or no is None:
+            continue
+        sk36.append(
+            {
+                "no": int(no),
+                "nama": nama,
+                "dimohon_ha": parse_numeric(r.get("Dimohon (ha)")),
+                "berproses_ha": parse_numeric(r.get("Berproses 110A (ha)")),
+                "ditolak_ha": parse_numeric(r.get("Ditolak (ha)")),
+                "rasio_ditolak": r.get("Rasio ditolak"),
+                "prioritas": r.get("Prioritas tindak lanjut jika ditolak"),
+            }
+        )
+
+    payload = {
+        "source": wb_name,
+        "updated_note": "Ekspor terstruktur dari workbook penertiban kawasan hutan sawit Riau",
+        "normalized": {
+            "sebaran_kab_korporasi_kh": {"total": len(kab_kh), "records": kab_kh},
+            "gelombang1_27_pt": {"total": len(gelombang1), "records": gelombang1},
+            "sk36_2025_110a": {"total": len(sk36), "records": sk36},
+        },
+        "sections": sections,
+    }
+    write_json("penertiban.json", payload)
+    print(
+        f"    penertiban: kab_kh={len(kab_kh)} gelombang1={len(gelombang1)} sk36={len(sk36)} "
+        f"sections={sum(1 for s in sections.values() if s['total'])}"
+    )
+    return payload
+
+
+def export_konsesi_gfw_full():
+    rows = read_csv("tabulasi_konsesi_sawit_gfw_bbox_riau.csv")
+    # Optional geometry centroid lookup from GFW geojson by name/company
+    centroids = {}
+    gfw_path = ROOT / "tmp" / "spatial" / "gfw_oilpalm_riau.geojson"
+    if gfw_path.exists():
+        raw = json.loads(gfw_path.read_text(encoding="utf-8"))
+        for f in raw.get("features", []):
+            props = f.get("properties") or {}
+            key = (str(props.get("name") or "").strip().upper(), str(props.get("company") or "").strip().upper())
+            lon, lat = geom_centroid_lonlat(f.get("geometry"))
+            if lon is not None and lat is not None:
+                centroids[key] = {"lon": lon, "lat": lat}
+
+    records = []
+    for r in rows:
+        name = r.get("name") or r.get("company")
+        company = r.get("company")
+        key = (str(name or "").strip().upper(), str(company or "").strip().upper())
+        key2 = (str(company or "").strip().upper(), str(company or "").strip().upper())
+        xy = centroids.get(key) or centroids.get(key2)
+        records.append(
+            {
+                "no": parse_numeric(r.get("no")),
+                "company": company,
+                "name": name,
+                "group": r.get("group_comp"),
+                "type": r.get("type"),
+                "legal": r.get("po_legalst"),
+                "hgu": r.get("po_hgu"),
+                "area_hgu_ha": parse_numeric(r.get("po_area_hg")),
+                "area_ha": parse_numeric(r.get("area_ha")),
+                "source": r.get("source"),
+                "gfwid": r.get("gfwid"),
+                "catatan": r.get("catatan"),
+                "lon": xy.get("lon") if xy else None,
+                "lat": xy.get("lat") if xy else None,
+            }
+        )
+
+    with_xy = sum(1 for r in records if r.get("lon") is not None)
+    payload = {
+        "source": "tabulasi_konsesi_sawit_gfw_bbox_riau.csv",
+        "geometry_source": "tmp/spatial/gfw_oilpalm_riau.geojson (centroid)",
+        "total": len(records),
+        "with_centroid": with_xy,
+        "bbox_note": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
+        "records": records,
+    }
+    write_json("konsesi_gfw_full.json", payload)
+    print(f"    konsesi_gfw_full: {len(records)} records, centroid={with_xy}")
+    return payload
+
+
 def export_perusahaan():
     rows = read_csv("daftar_perusahaan_sawit_riau_gabungan.csv")
     records = [
@@ -859,6 +1078,8 @@ def export_meta(counts: dict):
                 "idn_adm2_simplified (choropleth)",
                 "gfw_oilpalm_riau (overlay)",
                 "Tabulasi_Kepmenhut_36_2025",
+                "Tabulasi_Penertiban_Kawasan_Hutan_Sawit_Riau",
+                "tabulasi_konsesi_sawit_gfw_bbox_riau (287)",
                 "Nusantara Atlas / GFW (cocokan)",
             ],
             "update_command": "python website/scripts/export_web_data.py",
@@ -884,6 +1105,8 @@ def main():
     write_json("kab_kota.json", {"updated": True, "records": kab_records})
     export_perusahaan()
     export_konsesi_atlas()
+    export_penertiban()
+    gfw_full = export_konsesi_gfw_full()
     geo = export_spatial_layers(kab_records)
     gfw = export_gfw_overlay()
     export_analytics(polres, objek, kasus)
@@ -895,6 +1118,7 @@ def main():
         "choropleth": len(adm),
         "fitur_spasial": len(geo["features"]),
         "gfw_konsesi": len(gfw),
+        "gfw_bbox_full": gfw_full.get("total", 0),
     }
     export_meta(counts)
     print("Selesai. Refresh website untuk melihat data terbaru.")
