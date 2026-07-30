@@ -588,7 +588,7 @@ function renderRankPanel() {
           <span class="n ${escapeAttr(o.prioritas || "pantau")}">${i + 1}</span>
           <span>
             <strong>${escapeHtml(truncate(o.nama || o.id, 42))}</strong><br/>
-            <small>${escapeHtml([o.lapisan, o.kab_kota].filter(Boolean).join(" · "))}</small>
+            <small>${escapeHtml([o.lapisan, o.kab_primary && o.kab_primary !== "MULTI" ? o.kab_primary : o.kab_kota].filter(Boolean).join(" · "))}</small>
           </span>
           <span class="score">${escapeHtml(o.prioritas || "–")}</span>
         </button>
@@ -950,7 +950,16 @@ function showKabupaten(nama) {
   const kasus = DATA.kasus.records
     .filter((k) => matchWilayah(k.kab_kota, kab.kab_kota) || matchWilayah(k.polres, kab.polres_proksi))
     .slice(0, 8);
-  const objek = DATA.objek.records.filter((o) => matchWilayah(o.kab_kota, kab.kab_kota)).slice(0, 8);
+  const objek = DATA.objek.records
+    .filter(
+      (o) =>
+        matchWilayah(o.kab_primary, kab.kab_kota) ||
+        matchWilayah(o.kab_kota, kab.kab_kota) ||
+        String(o.kab_list || "")
+          .split("|")
+          .some((part) => matchWilayah(part, kab.kab_kota))
+    )
+    .slice(0, 8);
   const risk = kab.risiko_register || {};
   const polres = findPolresForKab(kab);
   const active = resolveChoroplethMetric(kab.kab_kota);
@@ -1018,9 +1027,11 @@ function showTitik(p) {
     <p class="lead">${escapeHtml(p.catatan || objek?.kaitan_agrinas || "Titik proksi analisis, bukan poligon legal.")}</p>
     <div class="meta-grid">
       <div class="meta-item"><label>Kab/Kota</label>${escapeHtml(p.kab_kota || objek?.kab_kota || "–")}</div>
+      <div class="meta-item"><label>Kab primer</label>${escapeHtml(objek?.kab_primary || p.kab_kota || "–")}</div>
       <div class="meta-item"><label>Tipe</label>${escapeHtml(p.tipe || objek?.lapisan || "–")}</div>
       <div class="meta-item"><label>Prioritas</label><span class="badge ${escapeAttr(p.prioritas || objek?.prioritas || "")}">${escapeHtml(p.prioritas || objek?.prioritas || "–")}</span></div>
-      <div class="meta-item"><label>Polres</label>${escapeHtml(p.polres_proksi || "–")}</div>
+      <div class="meta-item"><label>Polres</label>${escapeHtml(p.polres_proksi || objek?.polres_primary || "–")}</div>
+      <div class="meta-item"><label>Mappable</label>${escapeHtml(objek?.mappable || "–")}</div>
       <div class="meta-item"><label>Kredibilitas</label>${escapeHtml(objek?.status_kredibilitas || "–")}</div>
       <div class="meta-item"><label>Sumber</label>${escapeHtml(p.sumber || objek?.sumber || "–")}</div>
     </div>
@@ -1082,8 +1093,10 @@ function showAtlasMatch(atlasNama, namaLokal) {
     <h1>${escapeHtml(row?.atlas_nama || atlasNama || "Konsesi")}</h1>
     <p class="lead">Jembatan nama antara Nusantara Atlas dan register lokal workspace.</p>
     <div class="meta-grid">
+      <div class="meta-item"><label>Match ID</label>${escapeHtml(row?.match_id || "–")}</div>
       <div class="meta-item"><label>Nama lokal</label>${escapeHtml(row?.nama_lokal || namaLokal || "–")}</div>
       <div class="meta-item"><label>Status match</label>${escapeHtml(row?.status || "–")}</div>
+      <div class="meta-item"><label>Confidence</label>${escapeHtml(row?.match_confidence || "–")}</div>
       <div class="meta-item"><label>Tipe / tahun</label>${escapeHtml([row?.tipe, row?.tahun].filter(Boolean).join(" · ") || "–")}</div>
       <div class="meta-item"><label>Area (ha)</label>${fmtNum(row?.area_ha || gfw?.area_ha)}</div>
       <div class="meta-item"><label>Di BPS</label>${escapeHtml(row?.ada_di_bps || "–")}</div>
@@ -1107,6 +1120,7 @@ function caseCard(k) {
   const showId = k.id && cleanText(k.id) !== title;
 
   const chips = [
+    k.tipe_entri ? `<span class="case-chip">${escapeHtml(String(k.tipe_entri).startsWith("Kasus") ? "Operasional" : "Potensi")}</span>` : "",
     years ? `<span class="case-chip">${escapeHtml(years)}</span>` : "",
     company ? `<span class="case-chip">${escapeHtml(company)}</span>` : "",
     tema ? `<span class="case-chip case-chip--soft">${escapeHtml(truncate(tema, 32))}</span>` : "",
@@ -1126,7 +1140,10 @@ function caseCard(k) {
 
 function objCard(o) {
   const title = cleanText(o.nama || o.id || "Objek");
-  const meta = [o.lapisan, o.prioritas, o.status_kredibilitas].map(cleanText).filter(Boolean);
+  const kabLabel = o.kab_primary && o.kab_primary !== "MULTI" ? o.kab_primary : o.kab_kota;
+  const meta = [o.lapisan, kabLabel, o.prioritas, o.mappable === "ya" ? "mappable" : null, o.status_kredibilitas]
+    .map(cleanText)
+    .filter(Boolean);
   return `<article class="obj-card">
     <strong class="obj-card__title">${escapeHtml(truncate(title, 72))}</strong>
     ${meta.length ? `<div class="case-card__chips">${meta.map((m) => `<span class="case-chip case-chip--soft">${escapeHtml(m)}</span>`).join("")}</div>` : ""}
@@ -1512,16 +1529,16 @@ function setupSearch() {
 
 function setupDataTables() {
   const tabs = [
-    { id: "kasus", label: "Kasus konflik", rows: () => DATA.kasus.records, cols: ["id", "kab_kota", "polres", "tahun", "jenis", "perusahaan", "status", "uraian"] },
-    { id: "objek", label: "Objek Agrinas", rows: () => DATA.objek.records, cols: ["id", "nama", "lapisan", "kab_kota", "prioritas", "status_kredibilitas", "kaitan_agrinas"] },
+    { id: "kasus", label: "Kasus konflik", rows: () => DATA.kasus.records, cols: ["id", "tipe_entri", "kab_kota", "polres", "tahun", "nomor_lp", "perusahaan", "status", "uraian"] },
+    { id: "objek", label: "Objek Agrinas", rows: () => DATA.objek.records, cols: ["id", "nama", "lapisan", "kab_primary", "kab_kota", "mappable", "prioritas", "status_kredibilitas", "kaitan_agrinas"] },
     { id: "polres", label: "Ranking Polres", rows: () => DATA.polres.records, cols: ["peringkat", "polres", "skor", "kategori", "n_agrinas", "n_aksi_massa", "alasan"] },
     { id: "kab", label: "Kab/Kota", rows: () => DATA.kab.records, cols: ["kab_kota", "kategori_peta", "skor_komposit", "n_kasus", "polres_proksi", "objek_sinyal_utama"] },
-    { id: "atlas", label: "Cocokan Atlas", rows: () => DATA.konsesi.atlas_match.records, cols: ["atlas_nama", "tahun", "tipe", "status", "nama_lokal", "area_ha"] },
-    {
+    { id: "atlas", label: "Cocokan Atlas", rows: () => DATA.konsesi.atlas_match.records, cols: ["match_id", "atlas_nama", "tahun", "tipe", "status", "match_confidence", "nama_lokal", "area_ha"] },
+  {
       id: "gfwfull",
       label: "GFW bbox 287",
       rows: () => DATA.gfwFull?.records || [],
-      cols: ["no", "company", "name", "group", "area_ha", "hgu", "gfwid", "lon", "lat"],
+      cols: ["no", "company", "nama_kanonik", "name", "group", "area_ha", "hgu", "gfwid", "lon", "lat"],
     },
     {
       id: "penertiban",
@@ -1533,7 +1550,7 @@ function setupDataTables() {
       id: "sk36",
       label: "SK36 110A",
       rows: () => DATA.penertiban?.normalized?.sk36_2025_110a?.records || [],
-      cols: ["no", "nama", "dimohon_ha", "berproses_ha", "ditolak_ha", "rasio_ditolak", "prioritas"],
+      cols: ["record_id", "no", "nama", "status_proses", "dimohon_ha", "berproses_ha", "ditolak_ha", "prioritas"],
     },
   ];
   const tabBar = document.getElementById("tableTabs");

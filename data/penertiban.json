@@ -295,7 +295,11 @@
           "berproses_ha": 907.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-ADIDKK-1",
+          "no_partition": 1
         },
         {
           "no": 2,
@@ -304,7 +308,11 @@
           "berproses_ha": 102.0,
           "ditolak_ha": 272.0,
           "rasio_ditolak": "73%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-ADIMULIAAGROLESTARI-2",
+          "no_partition": 2
         },
         {
           "no": 3,
@@ -313,7 +321,11 @@
           "berproses_ha": 744.0,
           "ditolak_ha": 51.0,
           "rasio_ditolak": "6%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-ADITYAPALMANUSANTARA-3",
+          "no_partition": 3
         },
         {
           "no": 4,
@@ -322,7 +334,11 @@
           "berproses_ha": 380.0,
           "ditolak_ha": 3225.0,
           "rasio_ditolak": "89%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-AGROMITRAROKAN-4",
+          "no_partition": 4
         },
         {
           "no": 5,
@@ -331,7 +347,11 @@
           "berproses_ha": 1636.0,
           "ditolak_ha": 3298.0,
           "rasio_ditolak": "71%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-AGROSARIMASINDONESIA-5",
+          "no_partition": 5
         },
         {
           "no": 6,
@@ -340,7 +360,11 @@
           "berproses_ha": 370.0,
           "ditolak_ha": 27.0,
           "rasio_ditolak": "7%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-AIRJERNIH-6",
+          "no_partition": 6
         },
         {
           "no": 7,
@@ -349,7 +373,11 @@
           "berproses_ha": 128.0,
           "ditolak_ha": 1.0,
           "rasio_ditolak": "1%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-AIRKAMPAR-7",
+          "no_partition": 7
         },
         {
           "no": 8,
@@ -358,7 +386,11 @@
           "berproses_ha": 313.0,
           "ditolak_ha": 65.0,
           "rasio_ditolak": "17%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-BINAPITRIJAYA-8",
+          "no_partition": 8
         },
         {
           "no": 9,
@@ -367,7 +399,11 @@
           "berproses_ha": 5330.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-BUMISAWITPERKASA-9",
+          "no_partition": 9
         },
         {
           "no": 10,
@@ -376,7 +412,11 @@
           "berproses_ha": 413.0,
           "ditolak_ha": 66.0,
           "rasio_ditolak": "14%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-CENTRALWARISANINDAHMAKMUR-10",
+          "no_partition": 10
         },
         {
           "no": 11,
@@ -385,7 +425,11 @@
           "berproses_ha": 2178.0,
           "ditolak_ha": 107.0,
           "rasio_ditolak": "5%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-CILIANDRAPERKASA-11",
+          "no_partition": 11
         },
         {
           "no": 12,
@@ -394,7 +438,11 @@
           "berproses_ha": 2439.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-CITRASARDELAABADI-12",
+          "no_partition": 12
         },
         {
           "no": 13,
@@ -403,7 +451,11 @@
           "berproses_ha": 735.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-EKADAYASEJATISUKSES-13",
+          "no_partition": 13
         },
         {
           "no": 14,
@@ -412,7 +464,11 @@
           "berproses_ha": 101.0,
           "ditolak_ha": 131.0,
           "rasio_ditolak": "56%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-EKADURAINDONESIA-14",
+          "no_partition": 14
         },
         {
           "no": 15,
@@ -421,7 +477,11 @@
           "berproses_ha": 111.0,
           "ditolak_ha": 250.0,
           "rasio_ditolak": "69%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-GANDAERAHHENDANA2-15",
+          "no_partition": 15
         },
         {
           "no": 16,
@@ -430,7 +490,11 @@
           "berproses_ha": 485.0,
           "ditolak_ha": 1607.0,
           "rasio_ditolak": "77%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-GANDAERAHHENDANA-16",
+          "no_partition": 16
         },
         {
           "no": 17,
@@ -439,7 +503,11 @@
           "berproses_ha": 1136.0,
           "ditolak_ha": 145.0,
           "rasio_ditolak": "11%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-GATIPURAMULYA-17",
+          "no_partition": 17
         },
         {
           "no": 18,
@@ -448,7 +516,11 @@
           "berproses_ha": 867.0,
           "ditolak_ha": 31.0,
           "rasio_ditolak": "3%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-GERBANGSAWITINDAHII-18",
+          "no_partition": 18
         },
         {
           "no": 19,
@@ -457,7 +529,11 @@
           "berproses_ha": 139.0,
           "ditolak_ha": 28.0,
           "rasio_ditolak": "17%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-GRAHAPERMATAHIJAU-19",
+          "no_partition": 19
         },
         {
           "no": 20,
@@ -466,7 +542,11 @@
           "berproses_ha": 406.0,
           "ditolak_ha": 84.0,
           "rasio_ditolak": "17%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-GUNADODOS-20",
+          "no_partition": 20
         },
         {
           "no": 21,
@@ -475,7 +555,11 @@
           "berproses_ha": 592.0,
           "ditolak_ha": 2557.0,
           "rasio_ditolak": "81%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-GUNUNGMASRAYA-21",
+          "no_partition": 21
         },
         {
           "no": 22,
@@ -484,7 +568,11 @@
           "berproses_ha": 380.0,
           "ditolak_ha": 134.0,
           "rasio_ditolak": "26%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-INDOGREENJAYAABADI-22",
+          "no_partition": 22
         },
         {
           "no": 23,
@@ -493,7 +581,11 @@
           "berproses_ha": 64.0,
           "ditolak_ha": 705.0,
           "rasio_ditolak": "92%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-INDRAWANPERKASA-23",
+          "no_partition": 23
         },
         {
           "no": 24,
@@ -502,7 +594,11 @@
           "berproses_ha": 1367.0,
           "ditolak_ha": 149.0,
           "rasio_ditolak": "10%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-INECDA-24",
+          "no_partition": 24
         },
         {
           "no": 25,
@@ -511,7 +607,11 @@
           "berproses_ha": 440.0,
           "ditolak_ha": 9.0,
           "rasio_ditolak": "2%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-INTIINDOSAWITSUBUR-25",
+          "no_partition": 25
         },
         {
           "no": 26,
@@ -520,7 +620,11 @@
           "berproses_ha": 568.0,
           "ditolak_ha": 66.0,
           "rasio_ditolak": "10%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-LINDAIJAYALESTARI-26",
+          "no_partition": 26
         },
         {
           "no": 27,
@@ -529,7 +633,11 @@
           "berproses_ha": 497.0,
           "ditolak_ha": 50.0,
           "rasio_ditolak": "9%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-MEKARSARIALAMLESTARI-27",
+          "no_partition": 27
         },
         {
           "no": 28,
@@ -538,7 +646,11 @@
           "berproses_ha": 220.0,
           "ditolak_ha": 207.0,
           "rasio_ditolak": "48%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-MISGIANTODKK-28",
+          "no_partition": 28
         },
         {
           "no": 29,
@@ -547,7 +659,11 @@
           "berproses_ha": 242.0,
           "ditolak_ha": 126.0,
           "rasio_ditolak": "34%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-MITRAUNGGULPUSAKA-29",
+          "no_partition": 29
         },
         {
           "no": 30,
@@ -556,7 +672,11 @@
           "berproses_ha": 0.0,
           "ditolak_ha": 315.0,
           "rasio_ditolak": "100%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-MURINIWOODINDAHINDUSTRI-30",
+          "no_partition": 30
         },
         {
           "no": 31,
@@ -565,7 +685,11 @@
           "berproses_ha": 0.0,
           "ditolak_ha": 523.0,
           "rasio_ditolak": "100%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-PEPUTRAMAHARAYA-31",
+          "no_partition": 31
         },
         {
           "no": 32,
@@ -574,7 +698,11 @@
           "berproses_ha": 253.0,
           "ditolak_ha": 192.0,
           "rasio_ditolak": "43%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-PEPUTRASUPRAJAYA-32",
+          "no_partition": 32
         },
         {
           "no": 33,
@@ -583,7 +711,11 @@
           "berproses_ha": 379.0,
           "ditolak_ha": 54.0,
           "rasio_ditolak": "12%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-PERMATAHIJAUINDONESIA-33",
+          "no_partition": 33
         },
         {
           "no": 34,
@@ -592,7 +724,11 @@
           "berproses_ha": 15.0,
           "ditolak_ha": 775.0,
           "rasio_ditolak": "98%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-NUSANTARAVPTPNIV-34",
+          "no_partition": 34
         },
         {
           "no": 35,
@@ -601,7 +737,11 @@
           "berproses_ha": 926.0,
           "ditolak_ha": 23.0,
           "rasio_ditolak": "2%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-TASMAPUJA-35",
+          "no_partition": 35
         },
         {
           "no": 36,
@@ -610,7 +750,11 @@
           "berproses_ha": 0.0,
           "ditolak_ha": 561.0,
           "rasio_ditolak": "100%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-RAMAJAYAPRAMUKTI-36",
+          "no_partition": 36
         },
         {
           "no": 37,
@@ -619,7 +763,11 @@
           "berproses_ha": 303.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-RIAUSAWITINDAHI-37",
+          "no_partition": 37
         },
         {
           "no": 38,
@@ -628,7 +776,11 @@
           "berproses_ha": 222.0,
           "ditolak_ha": 4.0,
           "rasio_ditolak": "2%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-RIAUSAWITINDAHII-38",
+          "no_partition": 38
         },
         {
           "no": 39,
@@ -637,7 +789,11 @@
           "berproses_ha": 2692.0,
           "ditolak_ha": 549.0,
           "rasio_ditolak": "17%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-RIAUSAWITINDOABADI-39",
+          "no_partition": 39
         },
         {
           "no": 40,
@@ -646,7 +802,11 @@
           "berproses_ha": 745.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-SAFARIRIAU-40",
+          "no_partition": 40
         },
         {
           "no": 41,
@@ -655,7 +815,11 @@
           "berproses_ha": 183.0,
           "ditolak_ha": 19.0,
           "rasio_ditolak": "9%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SARILEMBAHSUBUR-41",
+          "no_partition": 41
         },
         {
           "no": 42,
@@ -664,7 +828,11 @@
           "berproses_ha": 358.0,
           "ditolak_ha": 4.0,
           "rasio_ditolak": "1%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SAWITASAHANINDAH-42",
+          "no_partition": 42
         },
         {
           "no": 43,
@@ -673,7 +841,11 @@
           "berproses_ha": 494.0,
           "ditolak_ha": 132.0,
           "rasio_ditolak": "21%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SAWITBETUAHLESTARI-43",
+          "no_partition": 43
         },
         {
           "no": 44,
@@ -682,7 +854,11 @@
           "berproses_ha": 190.0,
           "ditolak_ha": 215.0,
           "rasio_ditolak": "53%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SEKARBUMIALAMLESTARI-44",
+          "no_partition": 44
         },
         {
           "no": 45,
@@ -691,7 +867,11 @@
           "berproses_ha": 899.0,
           "ditolak_ha": 20.0,
           "rasio_ditolak": "2%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SEKOINDAHI-45",
+          "no_partition": 45
         },
         {
           "no": 46,
@@ -700,7 +880,11 @@
           "berproses_ha": 396.0,
           "ditolak_ha": 46.0,
           "rasio_ditolak": "10%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SEKOINDAHII-46",
+          "no_partition": 46
         },
         {
           "no": 47,
@@ -709,7 +893,11 @@
           "berproses_ha": 124.0,
           "ditolak_ha": 419.0,
           "rasio_ditolak": "77%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SIMASSAWITALIANTA2-47",
+          "no_partition": 47
         },
         {
           "no": 48,
@@ -718,7 +906,11 @@
           "berproses_ha": 895.0,
           "ditolak_ha": 66.0,
           "rasio_ditolak": "7%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SIMASSAWITALIANTA1-48",
+          "no_partition": 48
         },
         {
           "no": 49,
@@ -727,7 +919,11 @@
           "berproses_ha": 0.0,
           "ditolak_ha": 1601.0,
           "rasio_ditolak": "100%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-SINARINTISAWIT-49",
+          "no_partition": 49
         },
         {
           "no": 50,
@@ -736,7 +932,11 @@
           "berproses_ha": 412.0,
           "ditolak_ha": 79.0,
           "rasio_ditolak": "16%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SINARWIDITAPAMARTAII-50",
+          "no_partition": 50
         },
         {
           "no": 51,
@@ -745,7 +945,11 @@
           "berproses_ha": 1007.0,
           "ditolak_ha": 473.0,
           "rasio_ditolak": "32%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SINARWIDITAPAMARTAI-51",
+          "no_partition": 51
         },
         {
           "no": 52,
@@ -754,7 +958,11 @@
           "berproses_ha": 2383.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-SUBURARUNMAKMUR-52",
+          "no_partition": 52
         },
         {
           "no": 53,
@@ -763,7 +971,11 @@
           "berproses_ha": 88.0,
           "ditolak_ha": 287.0,
           "rasio_ditolak": "77%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SUBURMANDIRILESTARI-53",
+          "no_partition": 53
         },
         {
           "no": 54,
@@ -772,7 +984,11 @@
           "berproses_ha": 675.0,
           "ditolak_ha": 74.0,
           "rasio_ditolak": "10%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SUGIHINDAHLESTARI-54",
+          "no_partition": 54
         },
         {
           "no": 55,
@@ -781,7 +997,11 @@
           "berproses_ha": 309.0,
           "ditolak_ha": 14.0,
           "rasio_ditolak": "4%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SUMATERATIMURINDONESIA-55",
+          "no_partition": 55
         },
         {
           "no": 56,
@@ -790,7 +1010,11 @@
           "berproses_ha": 653.0,
           "ditolak_ha": 246.0,
           "rasio_ditolak": "27%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SUMBERALAMMAKMURSENTOSA-56",
+          "no_partition": 56
         },
         {
           "no": 57,
@@ -799,7 +1023,11 @@
           "berproses_ha": 293.0,
           "ditolak_ha": 11.0,
           "rasio_ditolak": "4%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SUMBERINTIALAMMAKMUR-57",
+          "no_partition": 57
         },
         {
           "no": 58,
@@ -808,7 +1036,11 @@
           "berproses_ha": 508.0,
           "ditolak_ha": 292.0,
           "rasio_ditolak": "36%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SUMBERSAWINDOKENCANA-58",
+          "no_partition": 58
         },
         {
           "no": 59,
@@ -817,7 +1049,11 @@
           "berproses_ha": 0.0,
           "ditolak_ha": 823.0,
           "rasio_ditolak": "100%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-SUPRAMATRAABADI-59",
+          "no_partition": 59
         },
         {
           "no": 60,
@@ -826,7 +1062,11 @@
           "berproses_ha": 959.0,
           "ditolak_ha": 232.0,
           "rasio_ditolak": "19%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SURYAAGROLIKAREKSA-60",
+          "no_partition": 60
         },
         {
           "no": 61,
@@ -835,7 +1075,11 @@
           "berproses_ha": 12.0,
           "ditolak_ha": 114.0,
           "rasio_ditolak": "90%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SURYADUMAIAGRINDO-61",
+          "no_partition": 61
         },
         {
           "no": 62,
@@ -844,7 +1088,11 @@
           "berproses_ha": 421.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-SURYAAGROSUKSESSEJAHTERA-62",
+          "no_partition": 62
         },
         {
           "no": 63,
@@ -853,7 +1101,11 @@
           "berproses_ha": 0.0,
           "ditolak_ha": 212.0,
           "rasio_ditolak": "100%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-SUTOWOLUKMANDKK-63",
+          "no_partition": 63
         },
         {
           "no": 64,
@@ -862,7 +1114,11 @@
           "berproses_ha": 45.0,
           "ditolak_ha": 7.0,
           "rasio_ditolak": "13%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SWAKARSASAWITRAYA-64",
+          "no_partition": 64
         },
         {
           "no": 65,
@@ -871,7 +1127,11 @@
           "berproses_ha": 86.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-SYLVIADKK-65",
+          "no_partition": 65
         },
         {
           "no": 66,
@@ -880,7 +1140,11 @@
           "berproses_ha": 9.0,
           "ditolak_ha": 11.0,
           "rasio_ditolak": "55%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-TALANGJERINJINGSAWIT-66",
+          "no_partition": 66
         },
         {
           "no": 67,
@@ -889,7 +1153,11 @@
           "berproses_ha": 94.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-TASMAPUJAENTRI2-67",
+          "no_partition": 67
         },
         {
           "no": 68,
@@ -898,7 +1166,11 @@
           "berproses_ha": 203.0,
           "ditolak_ha": 21.0,
           "rasio_ditolak": "9%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-TELUKMEGAABADI-68",
+          "no_partition": 68
         },
         {
           "no": 69,
@@ -907,7 +1179,11 @@
           "berproses_ha": 0.0,
           "ditolak_ha": 4252.0,
           "rasio_ditolak": "100%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-THINDOPLANTATION-69",
+          "no_partition": 69
         },
         {
           "no": 70,
@@ -916,7 +1192,11 @@
           "berproses_ha": 5897.0,
           "ditolak_ha": 4719.0,
           "rasio_ditolak": "44%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-TORGANDARANTAUKASAI-70",
+          "no_partition": 70
         },
         {
           "no": 71,
@@ -925,7 +1205,11 @@
           "berproses_ha": 386.0,
           "ditolak_ha": 208.0,
           "rasio_ditolak": "35%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-TRIBAKTISARIMAS-71",
+          "no_partition": 71
         },
         {
           "no": 72,
@@ -934,7 +1218,11 @@
           "berproses_ha": 600.0,
           "ditolak_ha": 327.0,
           "rasio_ditolak": "35%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-TRIMASFDI-72",
+          "no_partition": 72
         },
         {
           "no": 73,
@@ -943,7 +1231,11 @@
           "berproses_ha": 0.0,
           "ditolak_ha": 150.0,
           "rasio_ditolak": "100%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-TUMPUAN-73",
+          "no_partition": 73
         },
         {
           "no": 74,
@@ -952,7 +1244,11 @@
           "berproses_ha": 706.0,
           "ditolak_ha": 574.0,
           "rasio_ditolak": "45%",
-          "prioritas": "Penguasaan kembali / pidana / Satgas"
+          "prioritas": "Penguasaan kembali / pidana / Satgas",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-TUNGGALPERKASAPLANTATION-74",
+          "no_partition": 74
         },
         {
           "no": 75,
@@ -961,7 +1257,11 @@
           "berproses_ha": 39.0,
           "ditolak_ha": 71.0,
           "rasio_ditolak": "65%",
-          "prioritas": "Campuran"
+          "prioritas": "Campuran",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-UDAYALOHJINAWII-75",
+          "no_partition": 75
         },
         {
           "no": 76,
@@ -970,7 +1270,11 @@
           "berproses_ha": 19.0,
           "ditolak_ha": 0.0,
           "rasio_ditolak": "0%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses",
+          "record_id": "sk36-USAHAKITAMAKMUR-76",
+          "no_partition": 76
         },
         {
           "no": 77,
@@ -979,144 +1283,210 @@
           "berproses_ha": 214.0,
           "ditolak_ha": 9.0,
           "rasio_ditolak": "4%",
-          "prioritas": "Monitor pembayaran PSDH-DR"
+          "prioritas": "Monitor pembayaran PSDH-DR",
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-WASUNDARIINDAH-77",
+          "no_partition": 77
         },
         {
-          "no": 1,
+          "no": 78,
           "nama": "PT Tor Ganda (Kebun Rantau Kasai)",
           "dimohon_ha": 10616.0,
           "berproses_ha": 5897.0,
           "ditolak_ha": 4719.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-TORGANDARANTAUKASAI-78",
+          "no_partition": 78
         },
         {
-          "no": 2,
+          "no": 79,
           "nama": "PT TH Indo Plantation",
           "dimohon_ha": 4252.0,
           "berproses_ha": 0.0,
           "ditolak_ha": 4252.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-THINDOPLANTATION-79",
+          "no_partition": 79
         },
         {
-          "no": 3,
+          "no": 80,
           "nama": "PT Agro Sarimas Indonesia",
           "dimohon_ha": 4661.0,
           "berproses_ha": 1636.0,
           "ditolak_ha": 3298.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-AGROSARIMASINDONESIA-80",
+          "no_partition": 80
         },
         {
-          "no": 4,
+          "no": 81,
           "nama": "PT Agro Mitra Rokan",
           "dimohon_ha": 3605.0,
           "berproses_ha": 380.0,
           "ditolak_ha": 3225.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-AGROMITRAROKAN-81",
+          "no_partition": 81
         },
         {
-          "no": 5,
+          "no": 82,
           "nama": "PT Gunung Mas Raya",
           "dimohon_ha": 3149.0,
           "berproses_ha": 592.0,
           "ditolak_ha": 2557.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-GUNUNGMASRAYA-82",
+          "no_partition": 82
         },
         {
-          "no": 6,
+          "no": 83,
           "nama": "PT Gandaerah Hendana",
           "dimohon_ha": 2092.0,
           "berproses_ha": 485.0,
           "ditolak_ha": 1607.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-GANDAERAHHENDANA-83",
+          "no_partition": 83
         },
         {
-          "no": 7,
+          "no": 84,
           "nama": "PT Sinar Inti Sawit",
           "dimohon_ha": 1601.0,
           "berproses_ha": 0.0,
           "ditolak_ha": 1601.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-SINARINTISAWIT-84",
+          "no_partition": 84
         },
         {
-          "no": 8,
+          "no": 85,
           "nama": "PT Supra Matra Abadi",
           "dimohon_ha": 823.0,
           "berproses_ha": 0.0,
           "ditolak_ha": 823.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-SUPRAMATRAABADI-85",
+          "no_partition": 85
         },
         {
-          "no": 9,
+          "no": 86,
           "nama": "PT Perkebunan Nusantara V (PTPN IV)",
           "dimohon_ha": 790.0,
           "berproses_ha": 15.0,
           "ditolak_ha": 775.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-NUSANTARAVPTPNIV-86",
+          "no_partition": 86
         },
         {
-          "no": 10,
+          "no": 87,
           "nama": "PT Indrawan Perkasa",
           "dimohon_ha": 769.0,
           "berproses_ha": 64.0,
           "ditolak_ha": 705.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-INDRAWANPERKASA-87",
+          "no_partition": 87
         },
         {
-          "no": 11,
+          "no": 88,
           "nama": "PT Tunggal Perkasa Plantation",
           "dimohon_ha": 1280.0,
           "berproses_ha": 706.0,
           "ditolak_ha": 574.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-TUNGGALPERKASAPLANTATION-88",
+          "no_partition": 88
         },
         {
-          "no": 12,
+          "no": 89,
           "nama": "PT Ramajaya Pramukti",
           "dimohon_ha": 561.0,
           "berproses_ha": 0.0,
           "ditolak_ha": 561.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-RAMAJAYAPRAMUKTI-89",
+          "no_partition": 89
         },
         {
-          "no": 13,
+          "no": 90,
           "nama": "PT Riau Sawitindo Abadi",
           "dimohon_ha": 3240.0,
           "berproses_ha": 2692.0,
           "ditolak_ha": 549.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-RIAUSAWITINDOABADI-90",
+          "no_partition": 90
         },
         {
-          "no": 14,
+          "no": 91,
           "nama": "PT Peputra Maha Raya",
           "dimohon_ha": 523.0,
           "berproses_ha": 0.0,
           "ditolak_ha": 523.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|ditolak",
+          "record_id": "sk36-PEPUTRAMAHARAYA-91",
+          "no_partition": 91
         },
         {
-          "no": 15,
+          "no": 92,
           "nama": "PT Sinar Widita Pamarta (I)",
           "dimohon_ha": 1480.0,
           "berproses_ha": 1007.0,
           "ditolak_ha": 473.0,
           "rasio_ditolak": null,
-          "prioritas": null
+          "prioritas": null,
+          "status_proses": "dimohon",
+          "status_proses_all": "dimohon|berproses|ditolak",
+          "record_id": "sk36-SINARWIDITAPAMARTAI-92",
+          "no_partition": 92
         }
-      ]
+      ],
+      "pk": "record_id",
+      "note": "Composite identity via record_id; no is sequential after DQ fix"
     }
   },
   "sections": {

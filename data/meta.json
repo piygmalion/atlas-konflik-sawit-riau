@@ -1,7 +1,7 @@
 {
   "brand": "Atlas Konflik Sawit Riau",
   "subtitle": "Pemetaan spasial konflik, objek Agrinas–Satgas, dan celahan perizinan",
-  "updated_at": "2026-07-30T15:35:13+07:00",
+  "updated_at": "2026-07-30T20:59:59+07:00",
   "bbox_riau": [
     100.0,
     -1.2,
@@ -17,13 +17,13 @@
     "kab_kota": 12,
     "polres": 12,
     "objek_agrinas": 139,
-    "kasus_konflik": 129,
+    "kasus_konflik": 113,
     "choropleth": 12,
-    "fitur_spasial": 36,
+    "fitur_spasial": 82,
     "gfw_konsesi": 287,
     "gfw_bbox_full": 287,
-    "entri_terpetakan": 88,
-    "entri_tidak_terpetakan": 41
+    "entri_terpetakan": 83,
+    "entri_tidak_terpetakan": 30
   },
   "layers": [
     {
@@ -70,12 +70,13 @@
     "tabulasi_konsesi_sawit_gfw_bbox_riau (287)",
     "Nusantara Atlas / GFW (cocokan)"
   ],
-  "update_command": "python website/scripts/export_web_data.py",
-  "catatan": "Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); coverage 88/41; skor = indeks liputan+objek+register. Bukan batas legal HGU/IUP.",
+  "update_command": "python website/scripts/apply_dq_fixes.py && python website/scripts/export_web_data.py",
+  "catatan": "Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); coverage 83/30 setelah DQ; skor = indeks liputan+objek+register. Bukan batas legal HGU/IUP.",
   "methodology": {
     "skor_type": "indeks_liputan_objek_register",
-    "disclaimer": "Indeks liputan+objek+register terbuka — bukan vonis operasional. Skor early-warning intel terbuka, bukan vonis operasional. 41 entri tidak terpetakan ke Polres (umumnya 'Lintas Provinsi Riau'). Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi.",
+    "disclaimer": "Indeks liputan+objek+register terbuka — bukan vonis operasional. Setelah DQ: 83/30 entri terpetakan/tidak. Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi.",
     "blend_default": "70% OSINT + 30% register",
-    "kalibrasi": "Menunggu rekap LP/SPKT 36 bulan resmi"
+    "kalibrasi": "Menunggu rekap LP/SPKT 36 bulan resmi",
+    "dq_note": "DQ plan applied: noise kasus dropped; tanpa_lp flag; kab_primary pada objek; match_id cocokan; sk36 record_id; company alias."
   }
 }

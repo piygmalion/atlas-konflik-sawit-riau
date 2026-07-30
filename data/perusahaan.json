@@ -4,2135 +4,2846 @@
     {
       "no": "1",
       "nama": "CV HALIM GROUP",
+      "nama_kanonik": "HALIM",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "2",
       "nama": "CV SAHABAT JAYA",
+      "nama_kanonik": "SAHABAT JAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "3",
       "nama": "CV TIGA GARUDA SAKTI NUSANTARA",
+      "nama_kanonik": "TIGA GARUDA SAKTI NUSANTARA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "4",
       "nama": "KOPERASI LMMB PELALAWAN",
+      "nama_kanonik": "KOPERASI LMMB PELALAWAN",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "5",
       "nama": "KOPERASI PUTERA KARYA SIAK JAYA",
+      "nama_kanonik": "KOPERASI PUTERA KARYA SIAK JAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "6",
       "nama": "KUD ELOK MERAH PUTIH PEKANBARU",
+      "nama_kanonik": "KUD ELOK MERAH PUTIH PEKANBARU",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "7",
       "nama": "PT ADEI PLANTATION & INDUSTRY",
+      "nama_kanonik": "ADEI PLANTATION & INDUSTRY",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "8",
       "nama": "PT ADIMULIA AGROLESTARI",
+      "nama_kanonik": "ADIMULIA AGROLESTARI",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "9",
       "nama": "PT ADITYA PALMA NUSANTARA",
+      "nama_kanonik": "ADITYA PALMA NUSANTARA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "10",
       "nama": "PT AGRINAS PALMA NUSANTARA",
+      "nama_kanonik": "AGRINAS PALMA NUSANTARA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "11",
       "nama": "PT AGRITA SARI PRIMA",
+      "nama_kanonik": "AGRITA SARI PRIMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "12",
       "nama": "PT AGRO ABADI",
+      "nama_kanonik": "AGRO ABADI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "13",
       "nama": "PT AGRO MITRA",
+      "nama_kanonik": "AGRO MITRA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "14",
       "nama": "PT AGRO SARIMAS INDONESIA",
+      "nama_kanonik": "AGRO SARIMAS INDONESIA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "15",
       "nama": "PT AIR JERNIH ALIANTAN",
+      "nama_kanonik": "AIR JERNIH ALIANTAN",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "16",
       "nama": "PT AIR KAMPAR GROUP",
+      "nama_kanonik": "AIR KAMPAR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "17",
       "nama": "PT ALAM SARI LESTARI",
+      "nama_kanonik": "ALAM SARI LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "18",
       "nama": "PT ANDIKA",
+      "nama_kanonik": "ANDIKA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "perlu_verifikasi",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "19",
       "nama": "PT ANUGRAH AGRO NUSANTARA",
+      "nama_kanonik": "ANUGRAH AGRO NUSANTARA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "20",
       "nama": "PT ARINDO TRISEJAHTERA 1",
+      "nama_kanonik": "ARINDO TRI SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "21",
       "nama": "PT ARINDO TRISEJAHTERA 2",
+      "nama_kanonik": "ARINDO TRI SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "22",
       "nama": "PT ARISTAMA KARYA PERSADA",
+      "nama_kanonik": "ARISTAMA KARYA PERSADA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "23",
       "nama": "PT ARVENA SEPAKAT",
+      "nama_kanonik": "ARVENA SEPAKAT",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "24",
       "nama": "PT ASIA SAWIT MAKMUR JAYA",
+      "nama_kanonik": "ASIA SAWIT MAKMUR JAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "25",
       "nama": "PT ASTRA AGRO LESTARI",
+      "nama_kanonik": "ASTRA AGRO LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "26",
       "nama": "PT BANYU BENING UTAMA KEBUN 1",
+      "nama_kanonik": "BANYU BENING UTAMA 1",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "27",
       "nama": "PT BARITO RIAU JAYA",
+      "nama_kanonik": "BARITO RIAU JAYA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "28",
       "nama": "PT BERKAT SAWIT SEJAHTERA",
+      "nama_kanonik": "BERKAT SAWIT SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "29",
       "nama": "PT BHUMIREKSA NUSA SEJATI",
+      "nama_kanonik": "BHUMIREKSA NUSA SEJATI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "30",
       "nama": "PT BINA PITRI JAYA",
+      "nama_kanonik": "BINA PITRI JAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "31",
       "nama": "PT BINTANG LANGIT ABADI",
+      "nama_kanonik": "BINTANG LANGIT ABADI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "32",
       "nama": "PT BINTANG RIAU SEJAHTERA",
+      "nama_kanonik": "BINTANG RIAU SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "33",
       "nama": "PT BINTANG SINERGI INDONESIA",
+      "nama_kanonik": "BINTANG SINERGI INDONESIA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "34",
       "nama": "PT BUANA WIRALESTARI MAS NAGA MAS ESTATE",
+      "nama_kanonik": "BUANA WIRALESTARI MAS NAGA MAS ESTATE",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "35",
       "nama": "PT BUDI TANI KEMBANG JAYA",
+      "nama_kanonik": "BUDI TANI KEMBANG JAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "36",
       "nama": "PT BUMI MENTARI KARYA",
+      "nama_kanonik": "BUMI MENTARI KARYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "37",
       "nama": "PT BUMI PALMA LESTARI PERSADA",
+      "nama_kanonik": "BUMI PALMA LESTARI PERSADA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "38",
       "nama": "PT BUMI SAWIT PERKASA",
+      "nama_kanonik": "BUMI SAWIT PERKASA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "39",
       "nama": "PT CAHAYA AMAL GEMILANG",
+      "nama_kanonik": "CAHAYA AMAL GEMILANG",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "40",
       "nama": "PT CAKRA ALAM SEJATI",
+      "nama_kanonik": "CAKRA ALAM SEJATI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "41",
       "nama": "PT CENTRAL LUBUK SAWIT",
+      "nama_kanonik": "CENTRAL LUBUK SAWIT",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "42",
       "nama": "PT CENTRAL WARISAN INDAH MAKMUR",
+      "nama_kanonik": "CENTRAL WARISAN INDAH MAKMUR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "43",
       "nama": "PT CIBALIUNG",
+      "nama_kanonik": "CIBALIUNG",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "44",
       "nama": "PT CILIANDRA PERKASA",
+      "nama_kanonik": "CILIANDRA PERKASA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "45",
       "nama": "PT CINTYA",
+      "nama_kanonik": "CINTYA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "perlu_verifikasi",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "46",
       "nama": "PT CIPTA DAYA SEJATI LUHUR",
+      "nama_kanonik": "CIPTA DAYA SEJATI LUHUR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "47",
       "nama": "PT CITRA BUMI",
+      "nama_kanonik": "CITRA BUMI",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "48",
       "nama": "PT CITRA MUTIARA BUMI RIAU",
+      "nama_kanonik": "CITRA MUTIARA BUMI RIAU",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "49",
       "nama": "PT CITRA PALMA KENCANA",
+      "nama_kanonik": "CITRA PALMA KENCANA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "50",
       "nama": "PT CITRA RIAU SARANA",
+      "nama_kanonik": "PT CITRA MUTIARA BUMI RIAU",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "51",
       "nama": "PT CITRA SARDELA ABADI",
+      "nama_kanonik": "CITRA SARDELA ABADI",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "52",
       "nama": "PT DAMI MAS SEJAHTERA",
+      "nama_kanonik": "DAMI MAS SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "53",
       "nama": "PT DARMALI HAYA LESTARI",
+      "nama_kanonik": "DARMALI HAYA LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "54",
       "nama": "PT DARMALI JAYA LESTARI",
+      "nama_kanonik": "PT DARMALI HAYA LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "55",
       "nama": "PT DARMEX AGRO",
+      "nama_kanonik": "DARMEX AGRO",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "56",
       "nama": "PT DARMEX AGRO JAKARTA",
+      "nama_kanonik": "DARMEX AGRO JAKARTA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "57",
       "nama": "PT DARMEX PLANTATION",
+      "nama_kanonik": "DARMEX PLANTATION",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "58",
       "nama": "PT DATIN AGUNG",
+      "nama_kanonik": "DATIN AGUNG",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "59",
       "nama": "PT DIGJAYA NATA",
+      "nama_kanonik": "DIGJAYA NATA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "60",
       "nama": "PT DUTA MAS",
+      "nama_kanonik": "DUTA MAS",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "61",
       "nama": "PT DUTA PALMA NUSANTARA",
+      "nama_kanonik": "PT ADITYA PALMA NUSANTARA",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "62",
       "nama": "PT EGA SUTI NASAKTI",
+      "nama_kanonik": "EGA SUTI NASAKTI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "63",
       "nama": "PT EKA SARI",
+      "nama_kanonik": "EKA SARI",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "64",
       "nama": "PT EKADAYA SEJATI SUKSES",
+      "nama_kanonik": "EKADAYA SEJATI SUKSES",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "65",
       "nama": "PT EKADURA INDONESIA",
+      "nama_kanonik": "EKADURA INDONESIA",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "66",
       "nama": "PT ELUAN MAHKOTA",
+      "nama_kanonik": "ELUAN MAHKOTA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "67",
       "nama": "PT FIRST RESOURCES",
+      "nama_kanonik": "FIRST RESOURCES",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "68",
       "nama": "PT FLORA WAHANA TIRTA",
+      "nama_kanonik": "FLORA WAHANA TIRTA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "69",
       "nama": "PT GANDA BUANINDO",
+      "nama_kanonik": "GANDA BUANINDO",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "70",
       "nama": "PT GANDAERAH HENDANA",
+      "nama_kanonik": "GANDAERAH HENDANA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "71",
       "nama": "PT GATIPURA MULYA",
+      "nama_kanonik": "GATIPURA MULYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "72",
       "nama": "PT GERBANG SAWIT INDAH",
+      "nama_kanonik": "GERBANG SAWIT INDAH",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "73",
       "nama": "PT GNI PLANTATION",
+      "nama_kanonik": "GNI PLANTATION",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "74",
       "nama": "PT GUNA DODOS",
+      "nama_kanonik": "GUNA DODOS",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "75",
       "nama": "PT GUNA USAGRI PRATAMA",
+      "nama_kanonik": "GUNA USAGRI PRATAMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "76",
       "nama": "PT GUNUNG MAS RAYA KEBUN SUNGAI BANGKO",
+      "nama_kanonik": "GUNUNG MAS RAYA SUNGAI BANGKO",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "77",
       "nama": "PT GUNUNG MAS RAYA KEBUN SUNGAI RUMBIA 1",
+      "nama_kanonik": "GUNUNG MAS RAYA SUNGAI RUMBIA 1",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "78",
       "nama": "PT HUTAHAEAN",
+      "nama_kanonik": "HUTAHAEAN",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "79",
       "nama": "PT INDRAWAN PERKASA",
+      "nama_kanonik": "INDRAWAN PERKASA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "80",
       "nama": "PT INDRI PLANT",
+      "nama_kanonik": "INDRI PLANT",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "81",
       "nama": "PT INECDA",
+      "nama_kanonik": "INECDA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "82",
       "nama": "PT INTI INDOSAWIT SUBUR",
+      "nama_kanonik": "INTI INDOSAWIT SUBUR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "83",
       "nama": "PT INTI KAMPARINDO SEJAHTERA",
+      "nama_kanonik": "INTI KAMPARINDO SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "84",
       "nama": "PT IVO MAS TUNGGAL",
+      "nama_kanonik": "IVO MAS TUNGGAL",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "85",
       "nama": "PT JALUR PUSAKA SAKTI KUMALA",
+      "nama_kanonik": "JALUR PUSAKA SAKTI KUMALA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "86",
       "nama": "PT JATIM JAYA PERKASA",
+      "nama_kanonik": "JATIM JAYA PERKASA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "87",
       "nama": "PT JOSHAN SENTOSA",
+      "nama_kanonik": "JOSHAN SENTOSA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "88",
       "nama": "PT KARYA TAMA BAKTI MULIA",
+      "nama_kanonik": "KARYA TAMA BAKTI MULIA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "89",
       "nama": "PT KARYABADI SAMASEJATI",
+      "nama_kanonik": "KARYABADI SAMASEJATI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "90",
       "nama": "PT KEBUN CERENTI SUBUR II",
+      "nama_kanonik": "CERENTI SUBUR II",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "91",
       "nama": "PT KEBUN PANTAI RAJA",
+      "nama_kanonik": "PANTAI RAJA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "92",
       "nama": "PT KEBUN PERCOBAAN SEI PUTIH",
+      "nama_kanonik": "PERCOBAAN SEI PUTIH",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "93",
       "nama": "PT KENCANA AMAL TANI 1",
+      "nama_kanonik": "KENCANA AMAL TANI 1",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "94",
       "nama": "PT KENCANA AMAL TANI 2",
+      "nama_kanonik": "KENCANA AMAL TANI 2",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "95",
       "nama": "PT KENCANA AMAL TANI SEBERIDA III",
+      "nama_kanonik": "KENCANA AMAL TANI SEBERIDA III",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "96",
       "nama": "PT KERITANG SAWIT SEJAHTERA",
+      "nama_kanonik": "KERITANG SAWIT SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "97",
       "nama": "PT KHARISMA RIAU SENTOSA PRIMA",
+      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "98",
       "nama": "PT KIMIA TIRTA UTAMA",
+      "nama_kanonik": "KIMIA TIRTA UTAMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "99",
       "nama": "PT KOSTA PALMIRA",
+      "nama_kanonik": "KOSTA PALMIRA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "100",
       "nama": "PT KRISNA KERETA KENCANA",
+      "nama_kanonik": "KRISNA KERETA KENCANA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "101",
       "nama": "PT KRISTO AGRO",
+      "nama_kanonik": "KRISTO AGRO",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "102",
       "nama": "PT LAHAN TANI SAKTI",
+      "nama_kanonik": "LAHAN TANI SAKTI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "103",
       "nama": "PT LEKONINDO",
+      "nama_kanonik": "LEKONINDO",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "104",
       "nama": "PT LINDAI JAYA LESTARI KEBUN POPAL",
+      "nama_kanonik": "LINDAI JAYA LESTARI POPAL",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "105",
       "nama": "PT MARIHAT",
+      "nama_kanonik": "MARIHAT",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "106",
       "nama": "PT MARITA MAKMUR JAYA",
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "107",
       "nama": "PT MEGA NUSA INTI SAWIT",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "108",
       "nama": "PT MEKARSARI ALAM LESTARI",
+      "nama_kanonik": "PT ALAM SARI LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "109",
       "nama": "PT MERIDAN SEJATI SURYA PLANTATION",
+      "nama_kanonik": "MERIDAN SEJATI SURYA PLANTATION",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "110",
       "nama": "PT MESKOM AGRO SARIMAS",
+      "nama_kanonik": "PT AGRO SARIMAS INDONESIA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "111",
       "nama": "PT MITRA UNGGUL PUSAKA",
+      "nama_kanonik": "MITRA UNGGUL PUSAKA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "112",
       "nama": "PT MULTI GUNA ABADI LESTARI",
+      "nama_kanonik": "MULTI GUNA ABADI LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "113",
       "nama": "PT MULTI LESTARI SEJAHTERA",
+      "nama_kanonik": "MULTI LESTARI SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "114",
       "nama": "PT MURINI SAM SAM",
+      "nama_kanonik": "MURINI SAM SAM",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "115",
       "nama": "PT MURINIWOOD INDAH INDUSTRI",
+      "nama_kanonik": "MURINIWOOD INDAH INDUSTRI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "116",
       "nama": "PT MUSIM MAS",
+      "nama_kanonik": "MUSIM MAS",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "117",
       "nama": "PT MUSTIKA AGRO SARI",
+      "nama_kanonik": "MUSTIKA AGRO SARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "118",
       "nama": "PT OSCAR INVESTAMA",
+      "nama_kanonik": "OSCAR INVESTAMA",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "119",
       "nama": "PT PADASA ENAM UTAMA",
+      "nama_kanonik": "PADASA ENAM UTAMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "120",
       "nama": "PT PADASA ENAM UTAMA KALIANTA 2",
+      "nama_kanonik": "PADASA ENAM UTAMA KALIANTA 2",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "121",
       "nama": "PT PADASA KALIANTA UTAMA",
+      "nama_kanonik": "PADASA KALIANTA UTAMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "122",
       "nama": "PT PADASA UTAMA KALIATA SATU",
+      "nama_kanonik": "PADASA UTAMA KALIATA SATU",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "123",
       "nama": "PT PALM LESTARI MAKMUR",
+      "nama_kanonik": "PALM LESTARI MAKMUR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "124",
       "nama": "PT PALMA SATU KEBUN PALMA 2",
+      "nama_kanonik": "PALMA SATU PALMA 2",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "125",
       "nama": "PT PANCA AGRO LESTARI",
+      "nama_kanonik": "PANCA AGRO LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "126",
       "nama": "PT PANCA SURYA AGRINDO",
+      "nama_kanonik": "PANCA SURYA AGRINDO",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "127",
       "nama": "PT PANCA SURYA GARDEN",
+      "nama_kanonik": "PANCA SURYA GARDEN",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "128",
       "nama": "PT PANCUR SAWIT MAS",
+      "nama_kanonik": "PANCUR SAWIT MAS",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "129",
       "nama": "PT PARAWIRA ADITAMA",
+      "nama_kanonik": "PARAWIRA ADITAMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "130",
       "nama": "PT PARAWIRA PRIMAKONSIER",
+      "nama_kanonik": "PARAWIRA PRIMAKONSIER",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "131",
       "nama": "PT PARAWIRA UTAMA",
+      "nama_kanonik": "PARAWIRA UTAMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "132",
       "nama": "PT PASIRMAS GIRIRAYA",
+      "nama_kanonik": "PASIRMAS GIRIRAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "133",
       "nama": "PT PELINTUNG",
+      "nama_kanonik": "PELINTUNG",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "134",
       "nama": "PT PERDANA INTI SAWIT PERKASA",
+      "nama_kanonik": "PERDANA INTI SAWIT PERKASA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "135",
       "nama": "PT PERKEBUNAN NUSANTARA V",
+      "nama_kanonik": "NUSANTARA V",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "perlu_verifikasi",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "136",
       "nama": "PT PERKEBUNAN NUSANTARA V AIR MOLEK II",
+      "nama_kanonik": "NUSANTARA V AIR MOLEK II",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "137",
       "nama": "PT PERKEBUNAN NUSANTARA V KEBUN SEI GARO",
+      "nama_kanonik": "NUSANTARA V SEI GARO",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "138",
       "nama": "PT PERKEBUNAN NUSANTARA V KEBUN TANAH PERKEBUNAN NUSANTARA V TANJUNG MEDAN",
+      "nama_kanonik": "NUSANTARA V TANAH NUSANTARA V TANJUNG MEDAN",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "139",
       "nama": "PT PERKEBUNAN NUSANTARA V LUBUK DALAM",
+      "nama_kanonik": "NUSANTARA V LUBUK DALAM",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "140",
       "nama": "PT PERKEBUNAN NUSANTARA V SEI BUATAN",
+      "nama_kanonik": "NUSANTARA V SEI BUATAN",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "141",
       "nama": "PT PERKEBUNAN NUSANTARA V SEI INTAN",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "142",
       "nama": "PT PERKEBUNAN NUSANTARA V SEI KENCANA",
+      "nama_kanonik": "NUSANTARA V SEI KENCANA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "143",
       "nama": "PT PERKEBUNAN NUSANTARA V SEI LINDAI",
+      "nama_kanonik": "NUSANTARA V SEI LINDAI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "144",
       "nama": "PT PERKEBUNAN NUSANTARA V SEI ROKAN",
+      "nama_kanonik": "NUSANTARA V SEI ROKAN",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "145",
       "nama": "PT PERKEBUNAN NUSANTARA V SEI SIASAM",
+      "nama_kanonik": "NUSANTARA V SEI SIASAM",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "146",
       "nama": "PT PERKEBUNAN NUSANTARA V SEI TAPUNG",
+      "nama_kanonik": "NUSANTARA V SEI TAPUNG",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "147",
       "nama": "PT PESAWON RAYA",
+      "nama_kanonik": "PESAWON RAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "148",
       "nama": "PT PINANG MAS INTI RAYA",
+      "nama_kanonik": "PINANG MAS INTI RAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "149",
       "nama": "PT PRIATAMA RIAU",
+      "nama_kanonik": "PRIATAMA RIAU",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "150",
       "nama": "PT PRIMA AGRO SAWITINDO",
+      "nama_kanonik": "PRIMA AGRO SAWITINDO",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "151",
       "nama": "PT PULAU TILAN",
+      "nama_kanonik": "PULAU TILAN",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "152",
       "nama": "PT PUSAKA MEGAH BUMI NUSANTARA",
+      "nama_kanonik": "PUSAKA MEGAH BUMI NUSANTARA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "153",
       "nama": "PT RAMAJAYA PRAMUKTI",
+      "nama_kanonik": "RAMAJAYA PRAMUKTI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "154",
       "nama": "PT RIAU AGRI",
+      "nama_kanonik": "RIAU AGRI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "155",
       "nama": "PT RIAU ANUGRAH SENTOSA",
+      "nama_kanonik": "RIAU ANUGRAH SENTOSA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "156",
       "nama": "PT RIAU SAKTI",
+      "nama_kanonik": "RIAU SAKTI",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "157",
       "nama": "PT RIAU SAWITINDO ABADI",
+      "nama_kanonik": "RIAU SAWITINDO ABADI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "158",
       "nama": "PT RIDEN JAYA",
+      "nama_kanonik": "RIDEN JAYA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "159",
       "nama": "PT RIMBA SAWIT KUSUMA",
+      "nama_kanonik": "RIMBA SAWIT KUSUMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "160",
       "nama": "PT RIMBUN SAWIT SEJAHTERA",
+      "nama_kanonik": "RIMBUN SAWIT SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "161",
       "nama": "PT RISET PERKEBUNAN NUSANTARA",
+      "nama_kanonik": "RISET NUSANTARA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "162",
       "nama": "PT RISMAN SCHAM PALM",
+      "nama_kanonik": "RISMAN SCHAM PALM",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "163",
       "nama": "PT RUAS UTAMA JAYA",
+      "nama_kanonik": "RUAS UTAMA JAYA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "164",
       "nama": "PT SAFARI RIAU",
+      "nama_kanonik": "SAFARI RIAU",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "165",
       "nama": "PT SAILAN ANTAU BATUAH",
+      "nama_kanonik": "SAILAN ANTAU BATUAH",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "166",
       "nama": "PT SALIM IVOMAS PRATAMA",
+      "nama_kanonik": "SALIM IVOMAS PRATAMA",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "167",
       "nama": "PT SALIM IVOMAS PRATAMA TBK KEBUN BALAM",
+      "nama_kanonik": "SALIM IVOMAS PRATAMA BALAM",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "168",
       "nama": "PT SANDRIA SUKSES BERSAMA",
+      "nama_kanonik": "SANDRIA SUKSES BERSAMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "169",
       "nama": "PT SARI LEMBAH SUBUR",
+      "nama_kanonik": "SARI LEMBAH SUBUR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "170",
       "nama": "PT SARINDO AGRO",
+      "nama_kanonik": "SARINDO AGRO",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "171",
       "nama": "PT SATAHI",
+      "nama_kanonik": "SATAHI",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "perlu_verifikasi",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "172",
       "nama": "PT SATRIA WINDU SERAYA",
+      "nama_kanonik": "SATRIA WINDU SERAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "173",
       "nama": "PT SAWIT ASAHAN INDAH",
+      "nama_kanonik": "PT GERBANG SAWIT INDAH",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "174",
       "nama": "PT SAWIT BERTUAH LESTARI",
+      "nama_kanonik": "SAWIT BERTUAH LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "175",
       "nama": "PT SAWIT INTI RAYA",
+      "nama_kanonik": "SAWIT INTI RAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "176",
       "nama": "PT SAWIT UNGGUL PRIMA PLANTATIONS",
+      "nama_kanonik": "SAWIT UNGGUL PRIMA PLANTATIONS",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "177",
       "nama": "PT SEBANGA MULTI SAWIT",
+      "nama_kanonik": "SEBANGA MULTI SAWIT",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "178",
       "nama": "PT SEBERIDA SUBUR",
+      "nama_kanonik": "SEBERIDA SUBUR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "179",
       "nama": "PT SEKARBUMI ALAM LESTARI",
+      "nama_kanonik": "PT ALAM SARI LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "180",
       "nama": "PT SEKO INDAH",
+      "nama_kanonik": "SEKO INDAH",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "181",
       "nama": "PT SERIKAT PUTRA",
+      "nama_kanonik": "SERIKAT PUTRA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "182",
       "nama": "PT SETIA AGRINDO LESTARI",
+      "nama_kanonik": "SETIA AGRINDO LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "183",
       "nama": "PT SETIA AGRINDO MANDIRI",
+      "nama_kanonik": "SETIA AGRINDO MANDIRI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "184",
       "nama": "PT SEWANGI SEJATI LUHUR",
+      "nama_kanonik": "PT CIPTA DAYA SEJATI LUHUR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "185",
       "nama": "PT SIMAS SAWIT ALIANTAN",
+      "nama_kanonik": "SIMAS SAWIT ALIANTAN",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "186",
       "nama": "PT SINAR BELILAS PERKASA",
+      "nama_kanonik": "SINAR BELILAS PERKASA",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "187",
       "nama": "PT SINAR INTI SAWIT",
+      "nama_kanonik": "SINAR INTI SAWIT",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "188",
       "nama": "PT SINAR REKSA KENCANA",
+      "nama_kanonik": "SINAR REKSA KENCANA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "189",
       "nama": "PT SINAR RIAU",
+      "nama_kanonik": "SINAR RIAU",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "190",
       "nama": "PT SINAR SIAK DIAN PERMAI",
+      "nama_kanonik": "SINAR SIAK DIAN PERMAI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "191",
       "nama": "PT SINAR WIDITA PAMARTA",
+      "nama_kanonik": "SINAR WIDITA PAMARTA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "192",
       "nama": "PT SINDORA SERAYA",
+      "nama_kanonik": "SINDORA SERAYA",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "193",
       "nama": "PT SITAPONGAN LESTARI",
+      "nama_kanonik": "SITAPONGAN LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "194",
       "nama": "PT SMART TBK",
+      "nama_kanonik": "SMART",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "195",
       "nama": "PT STEELINDO WAHANA PERKASA",
+      "nama_kanonik": "STEELINDO WAHANA PERKASA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "196",
       "nama": "PT SUBUR ARUM MAKMUR",
+      "nama_kanonik": "SUBUR ARUM MAKMUR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "197",
       "nama": "PT SUGIH INDAH SEJATI",
+      "nama_kanonik": "SUGIH INDAH SEJATI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "198",
       "nama": "PT SUMATERA MAKMUR LESTARI",
+      "nama_kanonik": "SUMATERA MAKMUR LESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "199",
       "nama": "PT SUMBER ALAM",
+      "nama_kanonik": "SUMBER ALAM",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "200",
       "nama": "PT SUMBER JAYA INDAH NUSA COY",
+      "nama_kanonik": "SUMBER JAYA INDAH NUSA COY",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "201",
       "nama": "PT SUMBER SAWIT KENCANA",
+      "nama_kanonik": "SUMBER SAWIT KENCANA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "202",
       "nama": "PT SUMBER SAWIT SEJAHTERA",
+      "nama_kanonik": "SUMBER SAWIT SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "203",
       "nama": "PT SURYA AGROLIKA REKSA",
+      "nama_kanonik": "SURYA AGROLIKA REKSA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "204",
       "nama": "PT SURYA BRATASENA PLANTATION",
+      "nama_kanonik": "PT MERIDAN SEJATI SURYA PLANTATION",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "205",
       "nama": "PT SURYA DUMAI AGRINDO",
+      "nama_kanonik": "PT PANCA SURYA AGRINDO",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "206",
       "nama": "PT SURYA INTISARI RAYA",
+      "nama_kanonik": "PT PINANG MAS INTI RAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "207",
       "nama": "PT SURYA PALMA SEJAHTERA",
+      "nama_kanonik": "SURYA PALMA SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "208",
       "nama": "PT SWAKARSA SAWIT RAYA",
+      "nama_kanonik": "SWAKARSA SAWIT RAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "209",
       "nama": "PT TANI SUBUR MAKMUR",
+      "nama_kanonik": "TANI SUBUR MAKMUR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "210",
       "nama": "PT TASMA PUJA",
+      "nama_kanonik": "TASMA PUJA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "211",
       "nama": "PT TEGUHKARSA WANALESTARI",
+      "nama_kanonik": "TEGUHKARSA WANALESTARI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "212",
       "nama": "PT TERANG INTI SERAYA",
+      "nama_kanonik": "TERANG INTI SERAYA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "213",
       "nama": "PT TESO INDAH",
+      "nama_kanonik": "TESO INDAH",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "214",
       "nama": "PT TH. INDO PLANTATIONS",
+      "nama_kanonik": "TH INDO PLANTATIONS",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "215",
       "nama": "PT TORGANDA",
+      "nama_kanonik": "TORGANDA",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "perlu_verifikasi",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "216",
       "nama": "PT TORGANDA BATANG KUMU I",
+      "nama_kanonik": "TORGANDA BATANG KUMU I",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "217",
       "nama": "PT TORGANDA KARYA PERDANA",
+      "nama_kanonik": "TORGANDA KARYA PERDANA",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "218",
       "nama": "PT TRI BAKTI SARIMAS",
+      "nama_kanonik": "TRI BAKTI SARIMAS",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "219",
       "nama": "PT TRI DAYA RUBBER",
+      "nama_kanonik": "TRI DAYA RUBBER",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "220",
       "nama": "PT TRI HASTA PRIMA",
+      "nama_kanonik": "TRI HASTA PRIMA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "221",
       "nama": "PT TRIOMAS FDI",
+      "nama_kanonik": "TRIOMAS FDI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "222",
       "nama": "PT TULANGKAH INDO PERMAI",
+      "nama_kanonik": "TULANGKAH INDO PERMAI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "223",
       "nama": "PT TUMPUAN",
+      "nama_kanonik": "TUMPUAN",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "224",
       "nama": "PT TUNGGAL MITRA PLANTATIONS",
+      "nama_kanonik": "TUNGGAL MITRA PLANTATIONS",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "225",
       "nama": "PT TUNGGAL PERKASA PLANTATIONS",
+      "nama_kanonik": "TUNGGAL PERKASA PLANTATIONS",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "226",
       "nama": "PT TUNGGAL YUNUS ESTATE",
+      "nama_kanonik": "TUNGGAL YUNUS ESTATE",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "227",
       "nama": "PT UDAYA LOH JINAWI",
+      "nama_kanonik": "UDAYA LOH JINAWI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "228",
       "nama": "PT UJUNG NANTINGGI",
+      "nama_kanonik": "UJUNG NANTINGGI",
       "sumber": "Konflik Polda",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
       "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
     },
     {
       "no": "229",
       "nama": "PT VIKTORINDO ALAM LESTARI",
+      "nama_kanonik": "VIKTORINDO ALAM LESTARI",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "230",
       "nama": "PT WAHANA MANDIRI INDONESIA",
+      "nama_kanonik": "WAHANA MANDIRI INDONESIA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "231",
       "nama": "PT WANA JINGGA TIMUR",
+      "nama_kanonik": "WANA JINGGA TIMUR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Ya",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "232",
       "nama": "PT WANASARI NUSANTARA",
+      "nama_kanonik": "WANASARI NUSANTARA",
       "sumber": "BPS 2021 + Konflik Polda",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "233",
       "nama": "PT WASUNDARI INDAH",
+      "nama_kanonik": "WASUNDARI INDAH",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "234",
       "nama": "PT WILMAR GROUP",
+      "nama_kanonik": "WILMAR",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "235",
       "nama": "PT WIRA KARYA PRAMITA",
+      "nama_kanonik": "WIRA KARYA PRAMITA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "236",
       "nama": "PT YUNI BERSAUDARA SEJAHTERA",
+      "nama_kanonik": "YUNI BERSAUDARA SEJAHTERA",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     },
     {
       "no": "237",
       "nama": "PT YUTANI SUADIRI",
+      "nama_kanonik": "YUTANI SUADIRI",
       "sumber": "BPS 2021",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
+      "ada_di_gfw": "Tidak",
+      "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": ""
     }
   ]
 }

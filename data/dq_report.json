@@ -1,0 +1,434 @@
+{
+  "generated_at": "2026-07-30T21:00:46+07:00",
+  "validate_exit_code": 0,
+  "validate_pass": true,
+  "validate_stdout": "=== validate_web_data ===\ndata: C:\\Users\\Patron\\Documents\\Konflik Sawit di Riau\\website\\data\nkasus=113 objek=139 kab=12 polres=12 gfw=287\nRESULT: PASS (0 warnings)\n",
+  "validate_stderr": "",
+  "grade_counts": {
+    "A": 26,
+    "B": 1
+  },
+  "overview": [
+    {
+      "table": "kab_kota.json",
+      "n": 12,
+      "status": "ok",
+      "avg_fill_important": 98.5,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "hotspot_kecamatan 8.3%",
+        "luas_disebut_terbuka 8.3%",
+        "risiko_register.driver_utama 8.3%",
+        "risiko_register.jumlah_lp 8.3%",
+        "risiko_register.kasus_ops 8.3%"
+      ]
+    },
+    {
+      "table": "polres.json",
+      "n": 12,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "tahun 8.3%"
+      ]
+    },
+    {
+      "table": "objek_agrinas.json",
+      "n": 139,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "polres_primary 75.5%",
+        "kab_list 74.8%",
+        "mitra_pair 30.9%",
+        "luas_disebut 10.1%"
+      ]
+    },
+    {
+      "table": "kasus.json",
+      "n": 113,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "dq_flags.missing 100.0%",
+        "tanpa_lp_alasan 100.0%",
+        "hambatan 97.3%",
+        "nomor_lp 85.8%",
+        "status 75.2%"
+      ]
+    },
+    {
+      "table": "perusahaan.json",
+      "n": 237,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "catatan 86.5%"
+      ]
+    },
+    {
+      "table": "konsesi.json::gfw_match_bps",
+      "n": 126,
+      "status": "ok",
+      "avg_fill_important": 99.6,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "hgu 70.6%",
+        "legal 39.7%",
+        "type 38.9%",
+        "area_ha 2.4%"
+      ]
+    },
+    {
+      "table": "konsesi.json::atlas_match",
+      "n": 24,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 8,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "atlas_uid 100.0%",
+        "ada_di_konflik_polda 83.3%",
+        "ada_di_bps 45.8%",
+        "area_ha 16.7%",
+        "gfwid 16.7%"
+      ]
+    },
+    {
+      "table": "konsesi.json::kepmenhut_36_2025",
+      "n": 82,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": []
+    },
+    {
+      "table": "penertiban.json::sebaran_kab_korporasi_kh",
+      "n": 12,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": []
+    },
+    {
+      "table": "penertiban.json::gelombang1_27_pt",
+      "n": 27,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "catatan 48.1%",
+        "afiliasi 44.4%"
+      ]
+    },
+    {
+      "table": "penertiban.json::sk36_2025_110a",
+      "n": 92,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "prioritas 16.3%",
+        "rasio_ditolak 16.3%"
+      ]
+    },
+    {
+      "table": "konsesi_gfw_full.json",
+      "n": 287,
+      "status": "ok",
+      "avg_fill_important": 99.8,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "area_hgu_ha 80.1%",
+        "hgu 80.1%",
+        "legal 58.9%",
+        "type 58.5%",
+        "area_ha 1.7%"
+      ]
+    },
+    {
+      "table": "layers.geojson",
+      "n": 82,
+      "status": "ok",
+      "avg_fill_important": 94.2,
+      "pk_dup_groups": 0,
+      "grade": "B",
+      "note": "baik, null sekunder",
+      "top_null_fields": [
+        "anggota_kab 93.9%",
+        "geom_source 93.9%",
+        "karakter 93.9%",
+        "n_titik 93.9%",
+        "level_risiko 86.6%"
+      ]
+    },
+    {
+      "table": "adm2_riau.geojson",
+      "n": 12,
+      "status": "ok",
+      "avg_fill_important": 98.6,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "level_risiko 8.3%",
+        "skor_risiko 8.3%"
+      ]
+    },
+    {
+      "table": "analytics.json::polres_komponen",
+      "n": 12,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": []
+    },
+    {
+      "table": "master_list_objek_agrinas_satgas_riau.csv",
+      "n": 139,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "polres_primary 75.5%",
+        "kab_list 74.8%",
+        "mitra_pair 30.9%",
+        "luas_disebut 10.1%"
+      ]
+    },
+    {
+      "table": "ranking_potensi_konflik_per_polres.csv",
+      "n": 12,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "tahun_tercover 8.3%"
+      ]
+    },
+    {
+      "table": "cluster_kabkota_agrinas.csv",
+      "n": 12,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "hotspot_kecamatan_perkiraan 8.3%",
+        "luas_disebut_terbuka 8.3%"
+      ]
+    },
+    {
+      "table": "daftar_perusahaan_sawit_riau_gabungan.csv",
+      "n": 237,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "catatan 86.5%",
+        "nama_mentah_bps 13.5%"
+      ]
+    },
+    {
+      "table": "tabulasi_konsesi_sawit_nusantara_atlas_riau.csv",
+      "n": 436,
+      "status": "ok",
+      "avg_fill_important": 99.3,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "ispo 100.0%",
+        "spott_group 100.0%",
+        "luas_izin_ha 99.5%",
+        "nomor_izin 99.1%",
+        "status_izin 96.8%"
+      ]
+    },
+    {
+      "table": "tabulasi_konsesi_sawit_gfw_bbox_riau.csv",
+      "n": 287,
+      "status": "ok",
+      "avg_fill_important": 99.6,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "po_area_hg 80.1%",
+        "po_hgu 80.1%",
+        "po_legalst 58.9%",
+        "type 58.5%",
+        "area_ha 1.7%"
+      ]
+    },
+    {
+      "table": "tabulasi_konsesi_sawit_gfw_match_bps_riau.csv",
+      "n": 126,
+      "status": "ok",
+      "avg_fill_important": 99.2,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "po_area_hg 70.6%",
+        "po_hgu 70.6%",
+        "po_legalst 39.7%",
+        "type 38.9%",
+        "area_ha 2.4%"
+      ]
+    },
+    {
+      "table": "tabulasi_konsesi_sawit_kepmenhut_36_2025_riau_rapi.csv",
+      "n": 82,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "Nama di BPS/konflik 23.2%"
+      ]
+    },
+    {
+      "table": "tabulasi_konsesi_sawit_kepmenhut_36_2025_riau_parsial.csv",
+      "n": 82,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "Nama di BPS/konflik 23.2%"
+      ]
+    },
+    {
+      "table": "cocokan_atlas_gabungan_gfw.csv",
+      "n": 24,
+      "status": "ok",
+      "avg_fill_important": 95.8,
+      "pk_dup_groups": 8,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "atlas_uid 100.0%",
+        "ada_di_konflik_polda 83.3%",
+        "po_hgu 79.2%",
+        "nama_bps_match 62.5%",
+        "po_legalst 54.2%"
+      ]
+    },
+    {
+      "table": "tabulasi_perusahaan_konsesi_sawit_nusantara_atlas_riau.csv",
+      "n": 311,
+      "status": "ok",
+      "avg_fill_important": 99.5,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": [
+        "grup 3.5%"
+      ]
+    },
+    {
+      "table": "tabulasi_grup_konsesi_sawit_nusantara_atlas_riau.csv",
+      "n": 39,
+      "status": "ok",
+      "avg_fill_important": 100.0,
+      "pk_dup_groups": 0,
+      "grade": "A",
+      "note": "bersih",
+      "top_null_fields": []
+    }
+  ],
+  "cross": {
+    "layers_objek_titik": 66,
+    "objek_total": 139,
+    "kab_n": 12,
+    "polres_n": 12,
+    "kasus_n": 113,
+    "kasus_ops_n": 16,
+    "kasus_ops_lp_fill_pct": 100.0,
+    "kasus_ops_status_fill_pct": 100.0,
+    "kasus_polres_distinct": 10,
+    "kasus_polres_null": 0,
+    "kasus_nomor_lp_null": 97,
+    "kasus_uraian_null": 3,
+    "kasus_perusahaan_null": 21,
+    "kasus_kategori_null": 10,
+    "kasus_jenis_null": 30,
+    "objek_kab_primary_filled": 139,
+    "objek_kab_primary_single": 34,
+    "objek_kab_multi_or_broad": 105,
+    "objek_mitra_pair_null": 43,
+    "perusahaan_norm_dup_groups": 0,
+    "perusahaan_norm_dup_rows": 0,
+    "gfw_companies": 175,
+    "atlas_companies": 289,
+    "company_name_overlap_norm": 111
+  },
+  "baseline_cross": {
+    "layers_objek_titik": 20,
+    "objek_total": 139,
+    "kab_n": 12,
+    "polres_n": 12,
+    "kasus_n": 129,
+    "kasus_polres_distinct": 10,
+    "kasus_polres_null": 0,
+    "kasus_nomor_lp_null": 113,
+    "kasus_uraian_null": 3,
+    "kasus_perusahaan_null": 21,
+    "kasus_kategori_null": 10,
+    "kasus_jenis_null": 30,
+    "objek_kab_multi_or_broad": 108,
+    "objek_mitra_pair_null": 43,
+    "perusahaan_norm_dup_groups": 0,
+    "perusahaan_norm_dup_rows": 0,
+    "gfw_companies": 199,
+    "atlas_companies": 307,
+    "company_name_overlap_norm": 3
+  },
+  "notes": {
+    "source_null_fields": [
+      "ISPO / nomor_izin Atlas",
+      "HGU attributes GFW",
+      "mitra_pair objek (opsional)"
+    ],
+    "schema": "See website/data/SCHEMA.md"
+  }
+}

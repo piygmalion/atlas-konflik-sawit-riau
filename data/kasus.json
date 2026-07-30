@@ -1,5 +1,5 @@
 {
-  "total": 129,
+  "total": 113,
   "records": [
     {
       "id": "SW-001",
@@ -25,7 +25,14 @@
       ],
       "tahun_kejadian": [
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-002",
@@ -53,7 +60,14 @@
       ],
       "tahun_kejadian": [
         "2024"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-003",
@@ -79,7 +93,14 @@
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-004",
@@ -105,7 +126,14 @@
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-005",
@@ -124,14 +152,21 @@
       "hambatan": null,
       "perusahaan": null,
       "tema": "sawit; mediasi; kekerasan",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-006",
@@ -150,14 +185,21 @@
       "hambatan": null,
       "perusahaan": null,
       "tema": "sawit; klaim waris",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-007",
@@ -176,14 +218,21 @@
       "hambatan": null,
       "perusahaan": null,
       "tema": "sawit",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-008",
@@ -202,14 +251,21 @@
       "hambatan": null,
       "perusahaan": "PT. SBP; PT Sinar Belilas Perkasa; PT. SBP.",
       "tema": "HGU; sawit; unjuk rasa; kekerasan",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; HGU; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-009",
@@ -228,7 +284,7 @@
       "hambatan": null,
       "perusahaan": "PT. SBP; PT. Sinar Belilas Perkasa; PT. SML",
       "tema": "sawit; unjuk rasa; sertifikat",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan; kebun",
       "tahun_disebut": [
         "2026"
@@ -238,7 +294,14 @@
         "2023",
         "2025",
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-010",
@@ -269,7 +332,14 @@
         "2020",
         "2023",
         "2024"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-011",
@@ -297,7 +367,14 @@
       ],
       "tahun_kejadian": [
         "2024"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-012",
@@ -326,7 +403,14 @@
       "tahun_kejadian": [
         "2023",
         "2024"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-013",
@@ -340,7 +424,7 @@
       "pihak": null,
       "lokasi": "Jl. Desa Senama Nenek, Senama Nenenk, Tapung Hulu, Kab. Kampar, Riau.",
       "uraian": "Sejak Mei 2023 pelapor ditawarkan kebun oleh sdri. Ceria Saputri, kemudian pelapor tertarik dan membayarkan secara bertahap 2 kali pembayaran Rp.260.000.000,- ke rekening Ceria Saputri dan pada 24 Mei 2023 pelapor juga membeli kebun di lokasi yang sama yang ditawarkan oleh sdri. Ceria Saputri untuk pembayarannya sebesar Rp.120.000.000,- setelah 6 bulan pembelian pelapor tidak mendapatkan hasil kebun dan pelapor menemui terlapor, dan terlapor meminta surat sertifikat pelapor yang dititipkan ke koperasi KNES dan sertifikat tersebut diterima langsung oleh terlapor. Setelah pelapor menyerahkan sertifikat tersebut mulai dari bulan Agustus 2023 pihak koperasi KNES tidak pernah menyerahkan hasil dari penjualan buah sawit milik pelapor sampai saat ini dan SHM pelapor tidak diserahkan oleh terlapor.",
-      "upaya": null,
+      "upaya": "Belum terdokumentasi di sumber terbuka",
       "status": "LIDIK \nUNIT 1\nAIPDA RAFFLES",
       "hambatan": null,
       "perusahaan": null,
@@ -355,7 +439,14 @@
       "tahun_kejadian": [
         "2023",
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-014",
@@ -374,7 +465,7 @@
       "hambatan": null,
       "perusahaan": "PT. Barito Riau Jaya; PT BRJ",
       "tema": "tumpang tindih; sawit; mediasi; sertifikat; SKT/SKGR",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kebun",
       "tahun_disebut": [
         "2026"
@@ -384,7 +475,14 @@
         "2022",
         "2023",
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-015",
@@ -403,14 +501,21 @@
       "hambatan": null,
       "perusahaan": "PT Duta Palma Nusantara; PT. Duta Palma Nusantara; PT. Duta Palma Nusantara Kec. Benai; PT Duta Palma Grup; PT Agrinas Palma Nusantara; PT. Duta Palma Nusantara. Tanggal; PT Duta Palma; PT Agrinas Palma",
       "tema": "penyerobotan/okupasi; HGU; plasma/PIR; sawit; Agrinas/KSO; hutan/PKH/TNTN; mediasi; unjuk rasa",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; plasma/PIR; HGU; Agrinas/KSO; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-016",
@@ -429,14 +534,21 @@
       "hambatan": null,
       "perusahaan": "PT. Wanasari Nusantara; PT. Citra Riau Sarana",
       "tema": "HGU; sawit; mediasi",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; HGU",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-017",
@@ -464,7 +576,14 @@
       ],
       "tahun_kejadian": [
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-018",
@@ -478,7 +597,7 @@
       "pihak": null,
       "lokasi": "Jl. Sungai Tengkasi, Sungai Ara, Pelalawan, Kab. Pelalawan, Riau.",
       "uraian": "Pelapor merupakan ketua kelompok tani Tengkas Mandiri, merasa dirugikan yang mana dalam hal ini terdapat perbuatan terlapor dengan cara penguasaan, penggunaan, atau pengambilan alih tanah milik kelompok tani Tengkas Mandiri yang dilakukan oleh terlapor secara sewenangwenang tanpa izin yang sah. Terlapor menanam tanaman sawit di atas lahan milik kelompok tani Tengkas Mandiri. Terlapor juga sudah membuat surat berita acara pembentukan kelompok tani yang mereka beri nama Kelompok Tani Titian Bangke, yang beranggotakan 22 orang, pelapor merupakan ketua dari kelompok tani Tengkas Mandiri sudah memiliki legalitas pembuatan kelompok tani lebih awal dan sudah disertai dengan adanya dokumen akta notaris.",
-      "upaya": null,
+      "upaya": "Belum terdokumentasi di sumber terbuka",
       "status": "UNIT 2\n\nLIDIK\n\nDitreskrimum Polda Riau\neko",
       "hambatan": null,
       "perusahaan": null,
@@ -492,7 +611,14 @@
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-019",
@@ -511,14 +637,21 @@
       "hambatan": null,
       "perusahaan": "PT Torganda; PT Torganda. Berdasarkan",
       "tema": "plasma/PIR; sawit; mediasi; unjuk rasa; kekerasan; SKT/SKGR",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; kata:TBS; plasma/PIR; perkebunan; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2018"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-020",
@@ -537,7 +670,7 @@
       "hambatan": null,
       "perusahaan": "PT. Torganda; PT. Torganda. Setelah KKP; PT. Torganda. Melakukan",
       "tema": "plasma/PIR; sawit; mediasi; unjuk rasa",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan",
       "tahun_disebut": [
         "2026"
@@ -545,7 +678,14 @@
       "tahun_kejadian": [
         "2021",
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-021",
@@ -564,14 +704,21 @@
       "hambatan": null,
       "perusahaan": "PT. RUJ. Masyarakat Kepenghuluan Jumrah; PT. RUJ. Lahan; PT. RUJ; PT. RUJ. Berkoordinasi; PT. Ruas Utama Jaya",
       "tema": "sawit; mediasi",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-022",
@@ -590,7 +737,7 @@
       "hambatan": null,
       "perusahaan": "PT. Agrinas Palma Nusantara; PT. Salim Ivomas Pratama; PT. Agrinas Palma Nusantara. Pada",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa; kekerasan",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO; perkebunan",
       "tahun_disebut": [
         "2026"
@@ -598,7 +745,14 @@
       "tahun_kejadian": [
         "2025",
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-023",
@@ -627,7 +781,14 @@
       "tahun_kejadian": [
         "2020",
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-024",
@@ -656,7 +817,14 @@
       "tahun_kejadian": [
         "2024",
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-025",
@@ -684,7 +852,14 @@
       ],
       "tahun_kejadian": [
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-026",
@@ -703,14 +878,21 @@
       "hambatan": null,
       "perusahaan": "PT. Ekadura Indonesia Kelurahan Kota Lama Kec.; PT. EKADURA Indonesia; PT. EKA DURA INDONESIA; PT. EKA DURA",
       "tema": "HGU; sawit; mediasi",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; HGU; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-027",
@@ -729,14 +911,21 @@
       "hambatan": null,
       "perusahaan": "PT. Hutahaean; PT. Hutahean",
       "tema": "plasma/PIR; sawit; mediasi",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-028",
@@ -755,14 +944,21 @@
       "hambatan": null,
       "perusahaan": null,
       "tema": "sawit; mediasi",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-029",
@@ -781,14 +977,21 @@
       "hambatan": null,
       "perusahaan": null,
       "tema": "penyerobotan/okupasi; sawit; unjuk rasa",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2024"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-030",
@@ -807,14 +1010,21 @@
       "hambatan": null,
       "perusahaan": null,
       "tema": "penyerobotan/okupasi; sawit; unjuk rasa",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-031",
@@ -833,7 +1043,7 @@
       "hambatan": null,
       "perusahaan": "PT. Karya Tama Bakti Mulia; PT. KTBM PT. KTBM; PT KTBM; PT Tri Bakti Sarimas; PT. KTBM",
       "tema": "tumpang tindih; HGU; sawit; sertifikat",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:TBS; HGU; kebun",
       "tahun_disebut": [
         "2026"
@@ -841,7 +1051,14 @@
       "tahun_kejadian": [
         "2023",
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-032",
@@ -860,14 +1077,21 @@
       "hambatan": null,
       "perusahaan": "PT. Sailan Antau Batuah; PT. Adimulia Agrolestari Desa Bumi Mulya Kec.; PT. AA; PT. AA Desa Bumi Mulya; PT. AA. Selain; PT. Agrinas Palma Nusantara. Kegiatan; PT Agrinas Palma Nusantara Pekanbaru; PT Sailan Antau Batuah",
       "tema": "sawit; Agrinas/KSO; mediasi",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-033",
@@ -886,14 +1110,21 @@
       "hambatan": null,
       "perusahaan": "PT. Sindora Seraya. Masyarakat Kecamatan Batu Hampar; PT. Sindora Seraya. Areal; PT. Sindora Seraya; PT. Sindora Seraya. Masyarakat",
       "tema": "tumpang tindih; plasma/PIR; sawit; mediasi",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2024"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-034",
@@ -912,7 +1143,7 @@
       "hambatan": null,
       "perusahaan": "PT. Tri Daya Rubber; PT. Datin Agung Cabang Pekanbaru; PT. Datin Agung; PT. Datin Agung. Pada; PT. Datin Agung Medan; PT. Dhatin Agung",
       "tema": "sawit; sertifikat; SKT/SKGR",
-      "tipe_entri": "Kasus operasional",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; perkebunan",
       "tahun_disebut": [
         "2026"
@@ -920,7 +1151,14 @@
       "tahun_kejadian": [
         "2023",
         "2024"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-035",
@@ -948,7 +1186,14 @@
       ],
       "tahun_kejadian": [
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "SW-036",
@@ -976,7 +1221,14 @@
       ],
       "tahun_kejadian": [
         "2025"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-037",
@@ -995,14 +1247,21 @@
       "hambatan": null,
       "perusahaan": "PT SPM LUAS SEBELUM TERDAMPAK SATGAS; PT SPM",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-038",
@@ -1021,14 +1280,21 @@
       "hambatan": null,
       "perusahaan": "PT. TAMAN HUTAN LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-039",
@@ -1047,14 +1313,21 @@
       "hambatan": null,
       "perusahaan": "PT. ASI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-040",
@@ -1073,14 +1346,21 @@
       "hambatan": null,
       "perusahaan": "PT. BUMI LUAS SEBELUM TERDAMPAK SATGAS; PT. BUMI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-041",
@@ -1099,14 +1379,21 @@
       "hambatan": null,
       "perusahaan": "PT. OSCAR LUAS SEBELUM TERDAMPAK SATGAS; PT. OSCAR",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-042",
@@ -1125,14 +1412,21 @@
       "hambatan": null,
       "perusahaan": "PT. BANYU LUAS SEBELUM TERDAMPAK SATGAS; PT. BANYU",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-043",
@@ -1151,14 +1445,21 @@
       "hambatan": null,
       "perusahaan": null,
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-044",
@@ -1177,14 +1478,21 @@
       "hambatan": null,
       "perusahaan": "PT. TUNGGAL LUAS SEBELUM TERDAMPAK SATGAS; PT. TUNGGAL",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-045",
@@ -1203,14 +1511,21 @@
       "hambatan": null,
       "perusahaan": "PT. PERKEBUNAN LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO; perkebunan",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-046",
@@ -1229,14 +1544,21 @@
       "hambatan": null,
       "perusahaan": "PT. EKA SARI LUAS SEBELUM TERDAMPAK SATGAS; PT. EKA SARI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-047",
@@ -1255,14 +1577,21 @@
       "hambatan": null,
       "perusahaan": "PT. SARINDO AGRO LUAS SEBELUM TERDAMPAK SATGAS; PT. SARINDO AGRO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-048",
@@ -1281,14 +1610,21 @@
       "hambatan": null,
       "perusahaan": "PT. CV. JAYA LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-049",
@@ -1307,40 +1643,21 @@
       "hambatan": null,
       "perusahaan": "PT. MERAUKE LUAS SEBELUM TERDAMPAK SATGAS Entri; PT. MERAUKE",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-050",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Kab. Kuantan Singingi",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : PT. AGRINAS",
-      "lokasi": "LUAS LAHAN KSO : ± 8.929,00 HA PALMA NUSANTARA",
-      "uraian": "• LUAS LAHAN KSO : ± 8.929,00 HA PALMA NUSANTARA PENCURIAN KELAPA SAWIT YANG DILAKUKAN • LUAS LAHAN KSO : ± 4.196,00 HA OLEH KSO PT. WANA AGRI SANTOSA KARENA HISTORIKONFLIK HISTORIKONFLIK MASIH MENGANGGAP LAHAN TERSEBUT MILIK PT. MERAUKE TETAP JAYA / KOPERASI PRODUSEN NIHIL NIHIL GUNAKARYA SEJAHTERA DAN BELUM ADA SURAT PEMBERITAHUAN DARI PKH / AGRINAS PALMA NUSANTARA DAN PIHAK PT. MERAUKE TETAP JAYA / KOPERASI PRODUSEN GUNAKARYA SEJAHTERA MENGANGGAP LAHAN TERSEBUT BUKAN TERMASUK LAHAN KAWASA",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO; PT. AGRINAS LUAS LAHAN KSO; PT. WANA AGRI SANTOSA KARENA HISTORIKONFLIK HISTORIKONFLIK; PT. MERAUKE TETAP JAYA",
-      "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "kata:sawit; kata:kelapa sawit; Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-051",
@@ -1359,14 +1676,21 @@
       "hambatan": null,
       "perusahaan": "PT. WANASARI LUAS SEBELUM TERDAMPAK SATGAS Entri; PT. WANASARI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-052",
@@ -1385,14 +1709,21 @@
       "hambatan": null,
       "perusahaan": null,
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-053",
@@ -1411,14 +1742,21 @@
       "hambatan": null,
       "perusahaan": null,
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-054",
@@ -1437,14 +1775,21 @@
       "hambatan": null,
       "perusahaan": "PT. MEKAR LUAS SEBELUM TERDAMPAK SATGAS MAULID; PT. MEKAR",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-055",
@@ -1463,14 +1808,21 @@
       "hambatan": null,
       "perusahaan": "PT VIKTORINDO LUAS SEBELUM TERDAMPAK SATGAS SYAMSUHADI; PT VIKTORINDO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-056",
@@ -1489,40 +1841,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-057",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Kab. Pelalawan",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : KOPERASI LMMB PELALAWAN",
-      "lokasi": "LUAS LAHAN KSO : ± 5 HA DESA SEGATI • SEKTOR : PERKEBU",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL NIHIL NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-058",
@@ -1541,14 +1874,21 @@
       "hambatan": null,
       "perusahaan": "PT. CIBALIUNG LUAS SEBELUM TERDAMPAK SATGAS PKH; PT. CIBALIUNG",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-059",
@@ -1567,14 +1907,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. UJUNG NANTINGGI LUAS LAHAN KSO; PT. SALIM IVOMAS; PT. DIGJAYA NATA PERSADA MASYARAKAT KELOMPOK W.",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa; kekerasan",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-060",
@@ -1593,14 +1940,21 @@
       "hambatan": null,
       "perusahaan": "PT. ANDIKA LUAS SEBELUM TERDAMPAK SATGAS; PT. ANDIKA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-061",
@@ -1619,14 +1973,21 @@
       "hambatan": null,
       "perusahaan": "PT. SUPRA LUAS SEBELUM TERDAMPAK SATGAS; PT. SUPRA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-062",
@@ -1645,14 +2006,21 @@
       "hambatan": null,
       "perusahaan": "PT. RUAS UTAMA LUAS SEBELUM TERDAMPAK SATGAS; PT. RUAS UTAMA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-063",
@@ -1671,14 +2039,21 @@
       "hambatan": null,
       "perusahaan": "PT. KEBUN SAWIT LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; Agrinas/KSO; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-064",
@@ -1697,14 +2072,21 @@
       "hambatan": null,
       "perusahaan": "PT. PULAU TILAN LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-065",
@@ -1723,14 +2105,21 @@
       "hambatan": null,
       "perusahaan": "PT. KAWASAN LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-066",
@@ -1749,14 +2138,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. PELINTUNG; PT. RIDEN JAYA HISTORIKONFLIK KONSTRUKSI DENGAN PT.; PT. BENTROKAN FISIK ANTARA PIHAK; PT. PELINTUNG BENTROKAN FISIK ANTARA PIHAK; PT. PELINTUNG KEGIATAN PENGUSAAN LAHAN OLEH PT.; PT. AGRINAS PALMA NUSANTARA DI LAHAN SITAAN; PT. DUTA MAS BENTROK ANTAR SESAMA MASYARAKAT",
       "tema": "penyerobotan/okupasi; sawit; Agrinas/KSO; hutan/PKH/TNTN; kekerasan",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; Agrinas/KSO; perkebunan; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-067",
@@ -1775,14 +2171,21 @@
       "hambatan": null,
       "perusahaan": "PT. APSL",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-068",
@@ -1801,14 +2204,21 @@
       "hambatan": null,
       "perusahaan": "PT. HUTAHEAN LUAS SEBELUM TERDAMPAK SATGAS PKH; PT. HUTAHEAN",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-069",
@@ -1827,7 +2237,7 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. CINTYA LUAS LAHAN KSO; PT. AGRINAS HISTORIKONFLIK PALMA NUSANTARA TELAH MELAKUKAN; PT. SDR. SAHMADI MALAU",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO; perkebunan",
       "tahun_disebut": [
         "2026"
@@ -1835,7 +2245,14 @@
       "tahun_kejadian": [
         "2025",
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-070",
@@ -1854,14 +2271,21 @@
       "hambatan": null,
       "perusahaan": "PT. SUMBER ALAM",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-071",
@@ -1880,14 +2304,21 @@
       "hambatan": null,
       "perusahaan": "PT. TORGANDA KARYA LUAS SEBELUM TERDAMPAK SATGAS; PT. TORGANDA KARYA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-072",
@@ -1906,40 +2337,21 @@
       "hambatan": null,
       "perusahaan": "PT. SAWIT ASAHAN LUAS SEBELUM TERDAMPAK SATGAS; PT. SAWIT ASAHAN",
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-073",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Kab. Rokan Hulu",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : DALAM TAHAP DANRAMIL02RAMBAH",
-      "lokasi": "LUAS LAHAN KSO : ± 395 HA • LUAS LAHAN KSO : - HA • LU",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL NIHIL NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-074",
@@ -1958,14 +2370,21 @@
       "hambatan": null,
       "perusahaan": "PT. AGRO MITRA LUAS SEBELUM TERDAMPAK SATGAS; PT. AGRO MITRA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-075",
@@ -1984,14 +2403,21 @@
       "hambatan": null,
       "perusahaan": "PT. TORGANDA LUAS SEBELUM TERDAMPAK SATGAS PKH; PT. TORGANDA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-076",
@@ -2005,12 +2431,12 @@
       "pihak": "Terkait TNTN / Satgas PKH",
       "lokasi": "Kawasan TNTN / Pelalawan",
       "uraian": "NAS\nPenegakan Hukum\nPasca Bentrokan dilahanKSO PT. Nusantara Sawit Majuma\nHasil Pemeriksaan\nDasar : LP/B/7/II/2026/SPKT/Polsek Bonai Darussalam/ Polres Rokan Hulu/Polda\nRiau, tanggal08Februari 2026.\nTelah dilakukan pemeriksaan (BAP) oleh Sat Reskrim Polres Rokan Hulu terhadap 17\norang denganditetapkan 11menjadi Tersang",
-      "upaya": null,
-      "status": null,
+      "upaya": "Belum terdokumentasi di sumber terbuka",
+      "status": "Status belum terdokumentasi di sumber",
       "hambatan": null,
       "perusahaan": "PT. Nusantara Sawit Majuma Hasil Pemeriksaan Dasar",
       "tema": "sawit; hutan/PKH/TNTN; kekerasan",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit",
       "tahun_disebut": [
         "2025",
@@ -2018,33 +2444,14 @@
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-077",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Kab. Siak",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : BELUM",
-      "lokasi": "LUAS LAHAN KSO : ± HA ADA KSO",
-      "uraian": "HISTORIKONFLIK NIHIL NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-078",
@@ -2063,14 +2470,21 @@
       "hambatan": null,
       "perusahaan": "PT. ARARA LUAS SEBELUM TERDAMPAK SATGAS; PT. ARARA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-079",
@@ -2089,14 +2503,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-080",
@@ -2115,14 +2536,21 @@
       "hambatan": null,
       "perusahaan": "PT. SINAR INTI LUAS SEBELUM TERDAMPAK SATGAS; PT. SINAR INTI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-081",
@@ -2141,14 +2569,21 @@
       "hambatan": null,
       "perusahaan": "PT. CV. SEPAKAT LUAS SEBELUM TERDAMPAK SATGAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-082",
@@ -2167,14 +2602,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. RIDEN LUAS LAHAN KSO; PT. DUTA MAS MAKMUR PERKASA SEPAKAT BERSATU",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-083",
@@ -2193,14 +2635,21 @@
       "hambatan": null,
       "perusahaan": "PT. DUTA MAS LUAS SEBELUM TERDAMPAK SATGAS; PT. DUTA MAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-084",
@@ -2219,14 +2668,21 @@
       "hambatan": null,
       "perusahaan": "PT. IP",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-085",
@@ -2245,40 +2701,21 @@
       "hambatan": null,
       "perusahaan": "PT. BINTANG LUAS SEBELUM TERDAMPAK SATGAS Entri; PT. BINTANG",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-086",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Kota Pekanbaru",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : KUD ELOK MERAH PUTIHPEKANBARU",
-      "lokasi": "LUAS LAHAN KSO : ± 197 HA",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL KSO CV. GINTING SUKSES ABADI BERKONFLIK NIHIL DENGAN KELOMPOK MASYARAKAT DARI 5 DESA(KEL. KOTA LAMA, DESAKOTA INTAN, DESA KOTA RAYA, DESAKOTA BARU DAN DESA KEPENUHAN HULU) DIMANA MASYARAKAT LIMA DESA MENOLAK KEHADIRAN PIHAK KSO.",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-087",
@@ -2297,14 +2734,21 @@
       "hambatan": null,
       "perusahaan": "PT. DUTA LUAS SEBELUM TERDAMPAK SATGAS; PT. DUTA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-088",
@@ -2323,14 +2767,21 @@
       "hambatan": null,
       "perusahaan": "PT. SUMATRA LUAS SEBELUM TERDAMPAK SATGAS Entri; PT. SUMATRA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-089",
@@ -2349,14 +2800,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-090",
@@ -2375,92 +2833,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-091",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : AGUS S",
-      "lokasi": "LUAS LAHAN KSO : ± 9 HA",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL NIHIL NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
-    },
-    {
-      "id": "ST-092",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : OSTEN",
-      "lokasi": "LUAS LAHAN KSO : ± - HA PANJAITAN",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL NIHIL NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
-      ],
-      "tahun_kejadian": [
-        "2026"
-      ]
-    },
-    {
-      "id": "ST-093",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : PT TIGA",
-      "lokasi": "LUAS LAHAN KSO : ± 5123 HA • LUAS LAHAN KSO : ± 6535 H",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL NIHIL BENTROK ANTAR MASYARAKAT PEMANEN SAWIT",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO; PT TIGA LUAS LAHAN KSO",
-      "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN; kekerasan",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "kata:sawit; Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
-      ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-094",
@@ -2479,40 +2866,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. PAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO; perkebunan",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-095",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : PT.",
-      "lokasi": "LUAS LAHAN KSO : ± - HA AGRINAS",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL NIHIL NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO; PT. LUAS LAHAN KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-096",
@@ -2531,40 +2899,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-097",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO :",
-      "lokasi": "LUAS LAHAN KSO : ± - HA KELOMPOK TANI JD KARYA MANDIRI",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL NIHIL NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-098",
@@ -2583,40 +2932,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-099",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : ARISTAMA KARYA PERSADA",
-      "lokasi": "LUAS LAHAN KSO : ± HA • LUAS LAHAN KSO : ± HA • SEKTOR",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL NIHIL NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-100",
@@ -2635,14 +2965,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. DIGJAYA NATA HA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-101",
@@ -2661,14 +2998,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-102",
@@ -2687,14 +3031,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-103",
@@ -2713,40 +3064,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. SATAHI LUAS LAHAN KSO; PT. RAMA SALOMO. PENGELOLA PT. RAMA SALOMO; PT. AGRINAS PALMA SIANIPAR; PT. SATAHI SAURDOT SAOLOAN",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO; kebun",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-104",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : KOPERASI",
-      "lokasi": "LUAS LAHAN KSO : ± 1.988 HA • SEKTOR : PERKEBUNAN • LU",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK PENOLAKAN DAN PENCABUTAN PLANGKAT PT. NIHIL NIHIL AGRINAS PALMA NUSANTARA DAN KSO PT. BWB SESIP PERKASA OLEH MASYARAKAT PEMILIK LAHAN.",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO; PT. NIHIL NIHIL AGRINAS PALMA NUSANTARA DAN; PT. BWB SESIP PERKASA OLEH MASYARAKAT PEMILIK",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO; perkebunan",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-105",
@@ -2765,14 +3097,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-106",
@@ -2791,14 +3130,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-107",
@@ -2817,14 +3163,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. NUSANTARA SAWIT MAJUMA BERKONFLIK NIHIL DENGAN; PT. BK; PT BERKAT",
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-108",
@@ -2843,14 +3196,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-109",
@@ -2869,14 +3229,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-110",
@@ -2895,14 +3262,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-111",
@@ -2921,40 +3295,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-112",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : AGRINAS PALMA NUSANTARA NUSANTARA",
-      "lokasi": "LUAS LAHAN KSO : ± 12 HA • LUAS LAHAN KSO : ± 7.113,72",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL NIHIL NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-113",
@@ -2973,66 +3328,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. CITRA BUMI Entri; PT. CITRA BUMI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-114",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : POKTAN",
-      "lokasi": "LUAS LAHAN KSO : ± 2.980,61HA",
-      "uraian": "• LUAS LAHAN KSO : ± 35,54 HA • LUAS LAHAN KSO : ± 124 HA DALAM SITAAN TIM SATGAS PKH SAAT INI DIKELOLA OLEH KSO PT. CITRA MUTIARA BUMI RIAU DAN DALAM PENGELOLAANNYA PIHAK KOPERASI MEMINTA AGAR DAPAT DIKEMBALIKAN HISTORIKONFLIK HISTORIKONFLIK KEPADA KOPERASI PRODUSEN CITA HARAPAN (KPCH) AGAR MASYARAKAT PETANI PLASMA DAPAT NIHIL NIHIL KEMBALI MEMPEROLEH PENGHASILAN DARI KEBUN PLASMANYA.",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO; PT. CITRA MUTIARA BUMI RIAU DAN DALAM",
-      "tema": "plasma/PIR; Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "plasma/PIR; Agrinas/KSO; kebun",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
-    },
-    {
-      "id": "ST-115",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : PT. CITRA",
-      "lokasi": "LUAS LAHAN KSO : ± 256 HA • LUAS LAHAN KSO : ± 134 HA",
-      "uraian": "HISTORIKONFLIK INDUSTRI NIHIL NIHIL HISTORIKONFLIK NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO; PT. CITRA LUAS LAHAN KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
-      ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-116",
@@ -3051,14 +3361,21 @@
       "hambatan": null,
       "perusahaan": "PT. RIAU SAKTI LUAS SEBELUM TERDAMPAK SATGAS; PT. RIAU SAKTI",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-117",
@@ -3077,14 +3394,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. WANA LUAS YANG DISITA SATGAS PKH; PT. WANA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-118",
@@ -3103,14 +3427,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. AGRINAS",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-119",
@@ -3129,40 +3460,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
-    },
-    {
-      "id": "ST-120",
-      "sumber_dokumen": "12.02.2026 - PERMASALAHAN KSO PT. AGRINAS DI WILKUM POLDA RIAU",
-      "polres": "Polda Riau (Intelkam)",
-      "kab_kota": "Lintas Provinsi Riau",
-      "tahun": "2026",
-      "nomor_lp": null,
-      "jenis": "Situasional KSO/Agrinas",
-      "kategori": "Perusahaan terdampak Satgas PKH / KSO Agrinas",
-      "pihak": "PT. KSO : PT. BINTANG SINERGI INDONESIA",
-      "lokasi": "LUAS LAHAN KSO : ± 138,78 HA",
-      "uraian": "HISTORIKONFLIK HISTORIKONFLIK NIHIL NIHIL NIHIL",
-      "upaya": null,
-      "status": null,
-      "hambatan": null,
-      "perusahaan": "PT. KSO; PT. BINTANG SINERGI INDONESIA LUAS LAHAN KSO",
-      "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
-      "indikator_sawit": "Agrinas/KSO",
-      "tahun_disebut": [
-        "2026"
       ],
-      "tahun_kejadian": [
-        "2026"
-      ]
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-121",
@@ -3181,14 +3493,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-122",
@@ -3207,14 +3526,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-123",
@@ -3233,14 +3559,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-124",
@@ -3259,14 +3592,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. AGUNG",
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-125",
@@ -3285,14 +3625,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-126",
@@ -3311,14 +3658,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. PARUH",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-127",
@@ -3337,14 +3691,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. RIDEN JAYA Entri; PT. RIDEN JAYA",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "ST-128",
@@ -3363,14 +3724,21 @@
       "hambatan": null,
       "perusahaan": "PT. KSO; PT. SINAR RIAU",
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
-      "tipe_entri": "Situasional (bukan LP tunggal)",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     },
     {
       "id": "AN-129",
@@ -3389,14 +3757,21 @@
       "hambatan": null,
       "perusahaan": "PT Agrinas Provinsi Riau; PT. AGRIN",
       "tema": "Agrinas/KSO; sertifikat",
-      "tipe_entri": "Analisis strategis",
+      "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ]
+      ],
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "dq_flags": {
+        "missing": [],
+        "completeness": 100.0
+      },
+      "status_verifikasi": "ok"
     }
   ]
 }

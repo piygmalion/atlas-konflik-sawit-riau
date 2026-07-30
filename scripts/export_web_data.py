@@ -20,6 +20,10 @@ try:
 except ImportError as exc:
     raise SystemExit("openpyxl diperlukan: pip install openpyxl") from exc
 
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 try:
     from shapely.geometry import mapping, shape
     from shapely.ops import transform as shp_transform
@@ -416,6 +420,10 @@ def export_objek():
             "peran": r.get("peran"),
             "klaster": r.get("klaster"),
             "kab_kota": r.get("kab_kota"),
+            "kab_primary": r.get("kab_primary"),
+            "kab_list": r.get("kab_list"),
+            "polres_primary": r.get("polres_primary"),
+            "mappable": r.get("mappable"),
             "luas_disebut": r.get("luas_disebut"),
             "status_kredibilitas": r.get("status_kredibilitas"),
             "prioritas": r.get("prioritas"),
@@ -433,38 +441,81 @@ def export_objek():
 
 
 def export_kasus():
-    rows = sheet_rows("TABEL_KONFLIK_AGRARIA_SAWIT_RIAU.xlsx", "Master_Kasus_Sawit")
+    """Prefer DQ-cleaned CSV; fall back to workbook sheet."""
     records = []
-    for r in rows:
-        if not r.get("ID") and not r.get("Uraian_Singkat"):
-            continue
-        records.append(
-            {
-                "id": r.get("ID"),
-                "sumber_dokumen": r.get("Sumber_Dokumen"),
-                "polres": r.get("Wilayah_Polres"),
-                "kab_kota": r.get("Kabupaten_Kota"),
-                "tahun": r.get("Tahun_Referensi"),
-                "nomor_lp": r.get("Nomor_LP"),
-                "jenis": r.get("Jenis_Konflik"),
-                "kategori": r.get("Kategori_Konflik"),
-                "pihak": r.get("Pihak_Berkonflik"),
-                "lokasi": r.get("Lokasi"),
-                "uraian": r.get("Uraian_Singkat"),
-                "upaya": r.get("Upaya_Dilakukan"),
-                "status": r.get("Status_Keterangan"),
-                "hambatan": r.get("Hambatan"),
-                "perusahaan": r.get("Perusahaan_Terkait"),
-                "tema": r.get("Kata_Kunci_Tema"),
-                "tipe_entri": r.get("Tipe_Entri"),
-                "indikator_sawit": r.get("Indikator_Sawit"),
+    csv_rows = read_csv("master_kasus_sawit_riau.csv")
+    if csv_rows:
+        for r in csv_rows:
+            if not r.get("id"):
+                continue
+            # skip noise if reintroduced
+            if str(r.get("status_verifikasi") or "").lower() == "noise":
+                continue
+            uraian = str(r.get("uraian") or "")
+            if re.search(r"historikonflik\s*nihil|nihil\s*nihil", uraian, re.I):
+                continue
+            rec = {
+                "id": r.get("id"),
+                "sumber_dokumen": r.get("sumber_dokumen"),
+                "polres": r.get("polres"),
+                "kab_kota": r.get("kab_kota"),
+                "tahun": r.get("tahun"),
+                "nomor_lp": r.get("nomor_lp"),
+                "jenis": r.get("jenis"),
+                "kategori": r.get("kategori"),
+                "pihak": r.get("pihak"),
+                "lokasi": r.get("lokasi"),
+                "uraian": r.get("uraian"),
+                "upaya": r.get("upaya"),
+                "status": r.get("status"),
+                "hambatan": r.get("hambatan"),
+                "perusahaan": r.get("perusahaan"),
+                "tema": r.get("tema"),
+                "tipe_entri": r.get("tipe_entri"),
+                "indikator_sawit": r.get("indikator_sawit"),
+                "tanpa_lp": str(r.get("tanpa_lp") or "").lower() in {"true", "1", "ya"},
+                "tanpa_lp_alasan": r.get("tanpa_lp_alasan"),
+                "status_verifikasi": r.get("status_verifikasi") or "ok",
             }
-        )
+            records.append(rec)
+    else:
+        rows = sheet_rows("TABEL_KONFLIK_AGRARIA_SAWIT_RIAU.xlsx", "Master_Kasus_Sawit")
+        for r in rows:
+            if not r.get("ID") and not r.get("Uraian_Singkat"):
+                continue
+            if not r.get("ID"):
+                continue
+            records.append(
+                {
+                    "id": r.get("ID"),
+                    "sumber_dokumen": r.get("Sumber_Dokumen"),
+                    "polres": r.get("Wilayah_Polres"),
+                    "kab_kota": r.get("Kabupaten_Kota"),
+                    "tahun": r.get("Tahun_Referensi"),
+                    "nomor_lp": r.get("Nomor_LP"),
+                    "jenis": r.get("Jenis_Konflik"),
+                    "kategori": r.get("Kategori_Konflik"),
+                    "pihak": r.get("Pihak_Berkonflik"),
+                    "lokasi": r.get("Lokasi"),
+                    "uraian": r.get("Uraian_Singkat"),
+                    "upaya": r.get("Upaya_Dilakukan"),
+                    "status": r.get("Status_Keterangan"),
+                    "hambatan": r.get("Hambatan"),
+                    "perusahaan": r.get("Perusahaan_Terkait"),
+                    "tema": r.get("Kata_Kunci_Tema"),
+                    "tipe_entri": r.get("Tipe_Entri"),
+                    "indikator_sawit": r.get("Indikator_Sawit"),
+                }
+            )
     for rec in records:
         disebut = years_from_kasus(rec.get("tahun")) or ["2026"]
         kejadian = years_kejadian_kasus(rec) or disebut[:1]
         rec["tahun_disebut"] = disebut
         rec["tahun_kejadian"] = kejadian
+        # light DQ normalize
+        for k in ("nomor_lp", "status", "upaya", "uraian"):
+            if rec.get(k) is not None:
+                rec[k] = re.sub(r"[ \t]+", " ", str(rec[k]).replace("\r", "")).strip() or None
     write_json("kasus.json", {"total": len(records), "records": records})
     return records
 
@@ -950,6 +1001,42 @@ def extract_table_from_sheet(wb_name: str, sheet: str, min_header_cells: int = 3
 
 def export_penertiban():
     wb_name = "Tabulasi_Penertiban_Kawasan_Hutan_Sawit_Riau.xlsx"
+    wb_path = ROOT / wb_name
+    # If workbook absent, keep existing penertiban.json (DQ-fixed) but refresh sk36 from CSV
+    if not wb_path.exists():
+        existing = {}
+        path = OUT / "penertiban.json"
+        if path.exists():
+            existing = json.loads(path.read_text(encoding="utf-8"))
+        sk36 = []
+        for r in read_csv("tabulasi_sk36_2025_110a_riau_dq.csv"):
+            sk36.append(
+                {
+                    "no": int(to_float(r.get("no")) or 0),
+                    "no_partition": to_float(r.get("no_partition")),
+                    "nama": r.get("nama"),
+                    "dimohon_ha": to_float(r.get("dimohon_ha")),
+                    "berproses_ha": to_float(r.get("berproses_ha")),
+                    "ditolak_ha": to_float(r.get("ditolak_ha")),
+                    "rasio_ditolak": r.get("rasio_ditolak"),
+                    "prioritas": r.get("prioritas"),
+                    "status_proses": r.get("status_proses"),
+                    "status_proses_all": r.get("status_proses_all"),
+                    "record_id": r.get("record_id"),
+                }
+            )
+        if sk36:
+            existing.setdefault("normalized", {})["sk36_2025_110a"] = {
+                "total": len(sk36),
+                "records": sk36,
+                "pk": "record_id",
+                "note": "Composite identity via record_id after DQ fix",
+            }
+        existing["updated_note"] = "Preserved existing penertiban (workbook absent); SK36 from DQ CSV"
+        write_json("penertiban.json", existing)
+        print(f"    penertiban: workbook missing — preserved; sk36={len(sk36)}")
+        return existing
+
     sheets = {
         "estimasi_sawit_kh": "02_Estimasi_Sawit_KH",
         "fungsi_kawasan_eof": "03_Fungsi_Kawasan_EoF",
@@ -1015,22 +1102,44 @@ def export_penertiban():
         )
 
     sk36 = []
-    for r in sections.get("sk36_2025_110a_riau", {}).get("records", []):
-        nama = r.get("Subjek hukum") or r.get("col_1")
-        no = parse_numeric(r.get("No") or r.get("col_0"))
-        if not nama or no is None:
-            continue
-        sk36.append(
-            {
-                "no": int(no),
-                "nama": nama,
-                "dimohon_ha": parse_numeric(r.get("Dimohon (ha)")),
-                "berproses_ha": parse_numeric(r.get("Berproses 110A (ha)")),
-                "ditolak_ha": parse_numeric(r.get("Ditolak (ha)")),
-                "rasio_ditolak": r.get("Rasio ditolak"),
-                "prioritas": r.get("Prioritas tindak lanjut jika ditolak"),
-            }
-        )
+    # Prefer DQ-cleaned CSV if present
+    sk36_csv = read_csv("tabulasi_sk36_2025_110a_riau_dq.csv")
+    if sk36_csv:
+        for r in sk36_csv:
+            sk36.append(
+                {
+                    "no": int(to_float(r.get("no")) or 0),
+                    "no_partition": to_float(r.get("no_partition")),
+                    "nama": r.get("nama"),
+                    "dimohon_ha": to_float(r.get("dimohon_ha")),
+                    "berproses_ha": to_float(r.get("berproses_ha")),
+                    "ditolak_ha": to_float(r.get("ditolak_ha")),
+                    "rasio_ditolak": r.get("rasio_ditolak"),
+                    "prioritas": r.get("prioritas"),
+                    "status_proses": r.get("status_proses"),
+                    "status_proses_all": r.get("status_proses_all"),
+                    "record_id": r.get("record_id"),
+                }
+            )
+    else:
+        for r in sections.get("sk36_2025_110a_riau", {}).get("records", []):
+            nama = r.get("Subjek hukum") or r.get("col_1")
+            no = parse_numeric(r.get("No") or r.get("col_0"))
+            if not nama or no is None:
+                continue
+            sk36.append(
+                {
+                    "no": int(no),
+                    "nama": nama,
+                    "dimohon_ha": parse_numeric(r.get("Dimohon (ha)")),
+                    "berproses_ha": parse_numeric(r.get("Berproses 110A (ha)")),
+                    "ditolak_ha": parse_numeric(r.get("Ditolak (ha)")),
+                    "rasio_ditolak": r.get("Rasio ditolak"),
+                    "prioritas": r.get("Prioritas tindak lanjut jika ditolak"),
+                    "status_proses": "tidak_diketahui",
+                    "record_id": f"sk36-{int(no)}",
+                }
+            )
 
     payload = {
         "source": wb_name,
@@ -1038,7 +1147,12 @@ def export_penertiban():
         "normalized": {
             "sebaran_kab_korporasi_kh": {"total": len(kab_kh), "records": kab_kh},
             "gelombang1_27_pt": {"total": len(gelombang1), "records": gelombang1},
-            "sk36_2025_110a": {"total": len(sk36), "records": sk36},
+            "sk36_2025_110a": {
+                "total": len(sk36),
+                "records": sk36,
+                "pk": "record_id",
+                "note": "Composite identity via record_id after DQ fix",
+            },
         },
         "sections": sections,
     }
@@ -1110,9 +1224,12 @@ def export_perusahaan():
         {
             "no": r.get("no"),
             "nama": r.get("nama_perusahaan"),
+            "nama_kanonik": r.get("nama_kanonik") or r.get("nama_perusahaan"),
             "sumber": r.get("sumber"),
             "ada_di_bps": r.get("ada_di_bps"),
             "ada_di_konflik_polda": r.get("ada_di_konflik_polda"),
+            "ada_di_gfw": r.get("ada_di_gfw"),
+            "ada_di_atlas": r.get("ada_di_atlas"),
             "status_nama": r.get("status_nama"),
             "catatan": r.get("catatan"),
         }
@@ -1134,6 +1251,7 @@ def export_konsesi_atlas():
                 "records": [
                     {
                         "nama_bps": r.get("nama_bps_match"),
+                        "nama_kanonik": r.get("nama_kanonik"),
                         "company": r.get("company"),
                         "name": r.get("name"),
                         "group": r.get("group_comp"),
@@ -1150,14 +1268,20 @@ def export_konsesi_atlas():
                 "total": len(atlas),
                 "records": [
                     {
+                        "match_id": r.get("match_id"),
                         "atlas_nama": r.get("atlas_nama"),
+                        "atlas_uid": r.get("atlas_uid"),
+                        "gfwid": r.get("gfwid"),
                         "tahun": r.get("atlas_tahun"),
                         "tipe": r.get("atlas_tipe"),
                         "status": r.get("status_kecocokan"),
+                        "match_method": r.get("match_method"),
+                        "match_confidence": r.get("match_confidence"),
                         "nama_lokal": r.get("nama_lokal"),
                         "area_ha": to_float(r.get("area_ha")),
                         "ada_di_bps": r.get("ada_di_bps"),
                         "ada_di_konflik_polda": r.get("ada_di_konflik_polda"),
+                        "nama_kanonik": r.get("nama_kanonik"),
                     }
                     for r in atlas
                 ],
@@ -1249,6 +1373,12 @@ def main():
     geo = export_spatial_layers(kab_records)
     gfw = export_gfw_overlay()
     export_analytics(polres, objek, kasus)
+    lintas = sum(
+        1
+        for r in kasus
+        if "lintas" in str(r.get("polres") or "").lower()
+        or "lintas" in str(r.get("kab_kota") or "").lower()
+    )
     counts = {
         "kab_kota": len(kab_records),
         "polres": len(polres),
@@ -1258,8 +1388,25 @@ def main():
         "fitur_spasial": len(geo["features"]),
         "gfw_konsesi": len(gfw),
         "gfw_bbox_full": gfw_full.get("total", 0),
+        "entri_terpetakan": len(kasus) - lintas,
+        "entri_tidak_terpetakan": lintas,
     }
     export_meta(counts)
+    # DQ gate + report
+    try:
+        from validate_web_data import main as validate_main
+
+        rc = validate_main()
+        if rc != 0:
+            raise SystemExit(f"validate_web_data failed with code {rc}")
+    except ImportError:
+        print("WARN: validate_web_data not importable")
+    try:
+        from write_dq_report import main as dq_report_main
+
+        dq_report_main()
+    except ImportError:
+        print("WARN: write_dq_report not available yet")
     print("Selesai. Refresh website untuk melihat data terbaru.")
 
 

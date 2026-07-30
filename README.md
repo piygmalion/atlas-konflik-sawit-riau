@@ -14,17 +14,36 @@ Peta interaktif konflik dan permasalahan sawit di Provinsi Riau — objek Agrina
 
 ## Update data
 
-Dari workspace sumber (folder induk yang berisi workbook):
+Dari workspace sumber (folder induk yang berisi workbook/CSV):
 
 ```bash
-python scripts/export_web_data.py
+# 1) (Opsional) terapkan perbaikan kualitas data ke CSV/JSON
+python website/scripts/apply_dq_fixes.py
+
+# 2) Ekspor serving layer
+python website/scripts/export_web_data.py
+
+# 3) Gate validasi (juga dipanggil di akhir export)
+python website/scripts/validate_web_data.py
+
+# 4) Audit + laporan DQ
+python website/scripts/write_dq_report.py
 ```
 
-Lalu commit & push perubahan di `data/`.
+Commit & push perubahan di `website/data/` hanya jika `validate_web_data.py` **PASS**.
+
+Ambang lulus utama:
+
+- 0 duplikat PK: `kasus.id`, `objek.id`, `kab.id`, `polres`, `gfwid`, `match_id`, `record_id` SK36
+- `meta.counts` selaras dengan `len(records)`
+- Kasus operasional tanpa `nomor_lp` (dan tanpa flag `tanpa_lp`) ≤ 50%
+
+Lihat [SCHEMA.md](data/SCHEMA.md) dan `data/dq_report.json`.
 
 ## Pengembangan lokal
 
 ```bash
+cd website
 python -m http.server 8080
 ```
 
