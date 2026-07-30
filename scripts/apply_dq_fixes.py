@@ -841,15 +841,23 @@ def update_meta_counts(kasus):
     counts["objek_agrinas"] = len(objek)
     layers = load_json(DATA / "layers.geojson") if (DATA / "layers.geojson").exists() else {}
     counts["fitur_spasial"] = len(layers.get("features") or [])
-    # coverage
     lintas = sum(
         1
         for r in kasus
         if "lintas" in str(r.get("polres") or "").lower() or "lintas" in str(r.get("kab_kota") or "").lower()
     )
-    counts["entri_terpetakan"] = len(kasus) - lintas
+    mapped = len(kasus) - lintas
+    counts["entri_terpetakan"] = mapped
     counts["entri_tidak_terpetakan"] = lintas
     meta["counts"] = counts
+    meta["catatan"] = (
+        "Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); "
+        f"coverage {mapped}/{lintas} setelah DQ; skor = indeks liputan+objek+register. "
+        "Bukan batas legal HGU/IUP."
+    )
+    meta["update_command"] = (
+        "python website/scripts/apply_dq_fixes.py && python website/scripts/export_web_data.py"
+    )
     meth = meta.get("methodology") or {}
     meth["dq_note"] = (
         "DQ plan applied: noise kasus dropped; tanpa_lp flag; kab_primary pada objek; "
@@ -857,14 +865,24 @@ def update_meta_counts(kasus):
     )
     meth["disclaimer"] = (
         "Indeks liputan+objek+register terbuka — bukan vonis operasional. "
-        f"Setelah DQ: {counts.get('entri_terpetakan')}/{counts.get('entri_tidak_terpetakan')} "
-        "entri terpetakan/tidak. Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi."
+        f"Setelah DQ: {mapped}/{lintas} entri terpetakan/tidak. "
+        "Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi."
     )
     meta["methodology"] = meth
     from datetime import datetime, timezone
 
     meta["updated_at"] = datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
     write_json(meta_path, meta)
+
+    # Keep polres.coverage in sync with meta (UI historically read polres.coverage first)
+    polres_path = DATA / "polres.json"
+    if polres_path.exists():
+        pol = load_json(polres_path)
+        cov = pol.get("coverage") or {}
+        cov["total_entri_terpetakan"] = mapped
+        cov["entri_tidak_terpetakan"] = lintas
+        pol["coverage"] = cov
+        write_json(polres_path, pol)
 
 
 def main():

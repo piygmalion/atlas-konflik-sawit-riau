@@ -370,8 +370,8 @@ def export_polres():
         )
 
     coverage = {
-        "total_entri_terpetakan": 88,
-        "entri_tidak_terpetakan": 41,
+        "total_entri_terpetakan": None,
+        "entri_tidak_terpetakan": None,
         "bucket_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
         "label_terpetakan": "Entri terpetakan ke Polres",
         "label_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
@@ -406,6 +406,36 @@ def export_polres():
         },
     )
     return records
+
+
+def patch_polres_coverage(kasus: list[dict], polres_records: list[dict]):
+    """Recompute coverage from current kasus serving set (post-DQ)."""
+    lintas = sum(
+        1
+        for r in kasus
+        if "lintas" in str(r.get("polres") or "").lower()
+        or "lintas" in str(r.get("kab_kota") or "").lower()
+    )
+    mapped = len(kasus) - lintas
+    path = OUT / "polres.json"
+    payload = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"records": polres_records}
+    cov = payload.get("coverage") or {}
+    cov.update(
+        {
+            "n_polres": len(payload.get("records") or polres_records),
+            "prioritas": sum(1 for p in (payload.get("records") or []) if p.get("kategori") == "PRIORITAS"),
+            "waspada": sum(1 for p in (payload.get("records") or []) if p.get("kategori") == "WASPADA"),
+            "pantau": sum(1 for p in (payload.get("records") or []) if p.get("kategori") == "PANTAU"),
+            "total_entri_terpetakan": mapped,
+            "entri_tidak_terpetakan": lintas,
+            "bucket_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
+            "label_terpetakan": "Entri terpetakan ke Polres",
+            "label_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
+        }
+    )
+    payload["coverage"] = cov
+    write_json("polres.json", payload)
+    return cov
 
 
 def export_objek():
@@ -1361,6 +1391,7 @@ def main():
     polres = export_polres()
     objek = export_objek()
     kasus = export_kasus()
+    patch_polres_coverage(kasus, polres)
     attach_kasus_counts(kab_records, kasus)
     write_json("kab_kota.json", {"updated": True, "records": kab_records})
     adm = export_adm2_choropleth(kab_records)

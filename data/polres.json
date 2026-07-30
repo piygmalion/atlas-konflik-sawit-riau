@@ -294,8 +294,8 @@
     "prioritas": 4,
     "waspada": 4,
     "pantau": 4,
-    "total_entri_terpetakan": 88,
-    "entri_tidak_terpetakan": 41,
+    "total_entri_terpetakan": 83,
+    "entri_tidak_terpetakan": 30,
     "bucket_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
     "label_terpetakan": "Entri terpetakan ke Polres",
     "label_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres"

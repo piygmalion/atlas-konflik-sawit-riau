@@ -401,8 +401,9 @@ function formatDate(iso) {
 function renderStats() {
   const c = DATA.meta.counts || {};
   const cov = DATA.polres?.coverage || {};
-  const mapped = cov.total_entri_terpetakan ?? c.entri_terpetakan ?? "–";
-  const unmapped = cov.entri_tidak_terpetakan ?? c.entri_tidak_terpetakan ?? "–";
+  // Prefer meta.counts (updated by DQ/export) over stale polres.coverage snapshot
+  const mapped = c.entri_terpetakan ?? cov.total_entri_terpetakan ?? "–";
+  const unmapped = c.entri_tidak_terpetakan ?? cov.entri_tidak_terpetakan ?? "–";
   const prioritas = DATA.polres.records.filter((p) => kategoriFromSkor(blendedPolresSkor(p)) === "PRIORITAS").length;
   const grid = document.getElementById("statsGrid");
   if (grid) {
@@ -423,6 +424,16 @@ function renderStats() {
   const methodEl = document.getElementById("methodNote");
   if (summary) summary.textContent = short;
   if (methodEl) methodEl.textContent = disc;
+
+  // Seed kepmen heading before Analisis tab mounts charts
+  const kepmenTotal = document.getElementById("kepmenTotal");
+  if (kepmenTotal && (kepmenTotal.textContent || "").trim() === "–") {
+    const n =
+      DATA.analytics?.kepmenhut?.total ??
+      DATA.konsesi?.kepmenhut_36_2025?.total ??
+      DATA.konsesi?.kepmenhut_36_2025?.records?.length;
+    if (n != null) kepmenTotal.textContent = String(n);
+  }
 }
 
 function layerDisplay(metaLayer) {
