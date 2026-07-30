@@ -1,7 +1,7 @@
 {
   "brand": "Atlas Konflik Sawit Riau",
   "subtitle": "Pemetaan spasial konflik, objek Agrinas–Satgas, dan celahan perizinan",
-  "updated_at": "2026-07-30T15:19:19+07:00",
+  "updated_at": "2026-07-30T15:25:55+07:00",
   "bbox_riau": [
     100.0,
     -1.2,
@@ -48,6 +48,12 @@
       "label": "Konsesi GFW (overlay)",
       "default": false
     }
+  ],
+  "views": [
+    "peta",
+    "analisis",
+    "cerita",
+    "data"
   ],
   "sumber": [
     "TABEL_KONFLIK_AGRARIA_SAWIT_RIAU",

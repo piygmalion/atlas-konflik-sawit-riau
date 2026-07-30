@@ -1,0 +1,1298 @@
+{
+  "polres_komponen": [
+    {
+      "polres": "Polres Rokan Hulu",
+      "label": "Rokan Hulu",
+      "peringkat": 1,
+      "skor": 86.0,
+      "kategori": "PRIORITAS",
+      "komponen": {
+        "liputan": 90.4,
+        "aksi": 81.1,
+        "objek": 90.3,
+        "status": 84.2,
+        "adat": 79.9
+      }
+    },
+    {
+      "polres": "Polres Indragiri Hulu",
+      "label": "Indragiri Hulu",
+      "peringkat": 2,
+      "skor": 77.4,
+      "kategori": "PRIORITAS",
+      "komponen": {
+        "liputan": 80.7,
+        "aksi": 69.0,
+        "objek": 88.4,
+        "status": 76.0,
+        "adat": 68.7
+      }
+    },
+    {
+      "polres": "Polres Kuantan Singingi",
+      "label": "Kuantan Singingi",
+      "peringkat": 3,
+      "skor": 74.8,
+      "kategori": "PRIORITAS",
+      "komponen": {
+        "liputan": 76.0,
+        "aksi": 62.0,
+        "objek": 79.2,
+        "status": 81.0,
+        "adat": 85.4
+      }
+    },
+    {
+      "polres": "Polres Pelalawan",
+      "label": "Pelalawan",
+      "peringkat": 4,
+      "skor": 73.7,
+      "kategori": "PRIORITAS",
+      "komponen": {
+        "liputan": 80.2,
+        "aksi": 66.5,
+        "objek": 75.4,
+        "status": 76.0,
+        "adat": 65.2
+      }
+    },
+    {
+      "polres": "Polres Rokan Hilir",
+      "label": "Rokan Hilir",
+      "peringkat": 5,
+      "skor": 64.3,
+      "kategori": "WASPADA",
+      "komponen": {
+        "liputan": 64.7,
+        "aksi": 59.3,
+        "objek": 77.6,
+        "status": 62.3,
+        "adat": 52.2
+      }
+    },
+    {
+      "polres": "Polres Bengkalis",
+      "label": "Bengkalis",
+      "peringkat": 6,
+      "skor": 62.3,
+      "kategori": "WASPADA",
+      "komponen": {
+        "liputan": 64.1,
+        "aksi": 59.1,
+        "objek": 62.6,
+        "status": 64.1,
+        "adat": 61.7
+      }
+    },
+    {
+      "polres": "Polres Indragiri Hilir",
+      "label": "Indragiri Hilir",
+      "peringkat": 7,
+      "skor": 52.4,
+      "kategori": "WASPADA",
+      "komponen": {
+        "liputan": 55.7,
+        "aksi": 31.5,
+        "objek": 71.4,
+        "status": 58.3,
+        "adat": 47.7
+      }
+    },
+    {
+      "polres": "Polres Kampar",
+      "label": "Kampar",
+      "peringkat": 8,
+      "skor": 42.8,
+      "kategori": "WASPADA",
+      "komponen": {
+        "liputan": 43.6,
+        "aksi": 41.6,
+        "objek": 49.2,
+        "status": 42.0,
+        "adat": 31.7
+      }
+    },
+    {
+      "polres": "Polres Dumai",
+      "label": "Dumai",
+      "peringkat": 9,
+      "skor": 39.8,
+      "kategori": "PANTAU",
+      "komponen": {
+        "liputan": 40.1,
+        "aksi": 34.0,
+        "objek": 53.1,
+        "status": 38.5,
+        "adat": 28.2
+      }
+    },
+    {
+      "polres": "Polres Pekanbaru",
+      "label": "Pekanbaru",
+      "peringkat": 10,
+      "skor": 38.2,
+      "kategori": "PANTAU",
+      "komponen": {
+        "liputan": 41.7,
+        "aksi": 38.1,
+        "objek": 40.4,
+        "status": 37.3,
+        "adat": 24.7
+      }
+    },
+    {
+      "polres": "Polres Siak",
+      "label": "Siak",
+      "peringkat": 11,
+      "skor": 37.5,
+      "kategori": "PANTAU",
+      "komponen": {
+        "liputan": 39.6,
+        "aksi": 25.4,
+        "objek": 48.8,
+        "status": 42.0,
+        "adat": 31.7
+      }
+    },
+    {
+      "polres": "Polres Kepulauan Meranti",
+      "label": "Kepulauan Meranti",
+      "peringkat": 12,
+      "skor": 16.6,
+      "kategori": "PANTAU",
+      "komponen": {
+        "liputan": 17.5,
+        "aksi": 14.0,
+        "objek": 19.0,
+        "status": 17.5,
+        "adat": 14.0
+      }
+    }
+  ],
+  "agrinas_flow": {
+    "nodes": [
+      {
+        "id": "A. Pengelola",
+        "label": "A. Pengelola",
+        "value": 4
+      },
+      {
+        "id": "B. Eks pengelola",
+        "label": "B. Eks pengelola",
+        "value": 16
+      },
+      {
+        "id": "C. Mitra KSO",
+        "label": "C. Mitra KSO",
+        "value": 60
+      },
+      {
+        "id": "D. Eks lahan (via KSO)",
+        "label": "D. Eks lahan (via KSO)",
+        "value": 42
+      },
+      {
+        "id": "E. Gelombang 1 Satgas",
+        "label": "E. Gelombang 1 Satgas",
+        "value": 15
+      },
+      {
+        "id": "F. Objek kawasan",
+        "label": "F. Objek kawasan",
+        "value": 2
+      }
+    ],
+    "links": [
+      {
+        "source": "A. Pengelola",
+        "target": "C. Mitra KSO",
+        "value": 32,
+        "note": "pengelola → mitra operasional"
+      },
+      {
+        "source": "B. Eks pengelola",
+        "target": "C. Mitra KSO",
+        "value": 32,
+        "note": "eks pengelola → mitra/KSO"
+      },
+      {
+        "source": "C. Mitra KSO",
+        "target": "D. Eks lahan (via KSO)",
+        "value": 42,
+        "note": "mitra → eks lahan via KSO"
+      },
+      {
+        "source": "A. Pengelola",
+        "target": "E. Gelombang 1 Satgas",
+        "value": 4,
+        "note": "jalur satgas"
+      },
+      {
+        "source": "C. Mitra KSO",
+        "target": "E. Gelombang 1 Satgas",
+        "value": 11,
+        "note": "mitra dalam gelombang 1"
+      },
+      {
+        "source": "D. Eks lahan (via KSO)",
+        "target": "F. Objek kawasan",
+        "value": 2,
+        "note": "eks lahan ↔ objek kawasan"
+      }
+    ],
+    "counts": {
+      "A. Pengelola": 4,
+      "B. Eks pengelola": 16,
+      "C. Mitra KSO": 60,
+      "D. Eks lahan (via KSO)": 42,
+      "E. Gelombang 1 Satgas": 15,
+      "F. Objek kawasan": 2
+    }
+  },
+  "atlas_flow": {
+    "links": [
+      {
+        "source": "Nusantara Atlas",
+        "target": "cocok",
+        "value": 24
+      },
+      {
+        "source": "cocok",
+        "target": "tidak di konflik",
+        "value": 23
+      },
+      {
+        "source": "cocok",
+        "target": "ada di konflik",
+        "value": 1
+      }
+    ],
+    "records": [
+      {
+        "atlas_nama": "Uniseraya",
+        "nama_lokal": "PT KEBUN PANTAI RAJA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": null
+      },
+      {
+        "atlas_nama": "Uniseraya",
+        "nama_lokal": "PT. KEBUN PANTAI RAJA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 3135.0
+      },
+      {
+        "atlas_nama": "Uniseraya",
+        "nama_lokal": "PT. KEBUN PANTAI RAJA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 4499.0
+      },
+      {
+        "atlas_nama": "Uniseraya",
+        "nama_lokal": "PT. KEBUN PANTAI RAJA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 4255.0
+      },
+      {
+        "atlas_nama": "Uniseraya",
+        "nama_lokal": "PT. KEBUN PANTAI RAJA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 3135.0
+      },
+      {
+        "atlas_nama": "Uniseraya",
+        "nama_lokal": "PT. KEBUN PANTAI RAJA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 4499.0
+      },
+      {
+        "atlas_nama": "Uniseraya",
+        "nama_lokal": "PT. KEBUN PANTAI RAJA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 4255.0
+      },
+      {
+        "atlas_nama": "Alam Sari Lestari",
+        "nama_lokal": "PT ALAM SARI LESTARI",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": null
+      },
+      {
+        "atlas_nama": "Alam Sari Lestari",
+        "nama_lokal": "PT. ALAM SARI LESTARI",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 11789.0
+      },
+      {
+        "atlas_nama": "Alam Sari Lestari",
+        "nama_lokal": "PT. MEKAR SARI ALAM LESTARI",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 15394.0
+      },
+      {
+        "atlas_nama": "Alam Sari Lestari",
+        "nama_lokal": "PT. SEKAR BUMI ALAM LESTARI",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 6139.0
+      },
+      {
+        "atlas_nama": "Alam Sari Lestari",
+        "nama_lokal": "PT. ALAM SARI LESTARI",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 11789.0
+      },
+      {
+        "atlas_nama": "Alam Sari Lestari",
+        "nama_lokal": "PT. MEKAR SARI ALAM LESTARI",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 15394.0
+      },
+      {
+        "atlas_nama": "Wana Subur Sawit Indah",
+        "nama_lokal": "PT. WANA SUBUR SAWIT INDAH",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 6860.0
+      },
+      {
+        "atlas_nama": "Wana Subur Sawit Indah",
+        "nama_lokal": "PT. WANA SUBUR SAWIT INDAH",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2025",
+        "area_ha": 6860.0
+      },
+      {
+        "atlas_nama": "Sumber Sawit Sejahtera",
+        "nama_lokal": "PT SUMBER SAWIT SEJAHTERA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023-2024",
+        "area_ha": null
+      },
+      {
+        "atlas_nama": "Tani Swadaya Perdana",
+        "nama_lokal": "PT. TANI SWADAYA PERDANA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023",
+        "area_ha": 2024.0
+      },
+      {
+        "atlas_nama": "Karya Tama Bakti Mulya",
+        "nama_lokal": "PT KARYA TAMA BAKTI MULIA",
+        "status_match": "cocok",
+        "konflik": "ada di konflik",
+        "tahun": "2023",
+        "area_ha": null
+      },
+      {
+        "atlas_nama": "Karya Tama Bakti Mulya",
+        "nama_lokal": "PT. KARYA TAMA BAKTI MULIA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023",
+        "area_ha": 6701.0
+      },
+      {
+        "atlas_nama": "Karya Tama Bakti Mulya",
+        "nama_lokal": "PT. KARYA TAMA BAKTI MULIA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023",
+        "area_ha": 7707.0
+      },
+      {
+        "atlas_nama": "Karya Tama Bakti Mulya",
+        "nama_lokal": "PT. KARYA TAMA BAKTI MULIA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023",
+        "area_ha": 6701.0
+      },
+      {
+        "atlas_nama": "Karya Tama Bakti Mulya",
+        "nama_lokal": "PT. KARYA TAMA BAKTI MULIA",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2023",
+        "area_ha": 7707.0
+      },
+      {
+        "atlas_nama": "Toba Indah (Block B)",
+        "nama_lokal": "PT. TOBA INDAH",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2025",
+        "area_ha": 2356.0
+      },
+      {
+        "atlas_nama": "Toba Indah (Block B)",
+        "nama_lokal": "PT. TOBA INDAH",
+        "status_match": "cocok",
+        "konflik": "tidak di konflik",
+        "tahun": "2025",
+        "area_ha": 2394.0
+      }
+    ]
+  },
+  "timeline": {
+    "years": [
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "categories": [
+      "Situasional KSO/Agrinas",
+      "Sengketa lahan",
+      "Ekonomi",
+      "Aksi / kekerasan",
+      "Lainnya"
+    ],
+    "by_jenis": {
+      "2024": {
+        "Situasional KSO/Agrinas": 0,
+        "Sengketa lahan": 2,
+        "Ekonomi": 0,
+        "Aksi / kekerasan": 0,
+        "Lainnya": 10
+      },
+      "2025": {
+        "Situasional KSO/Agrinas": 1,
+        "Sengketa lahan": 3,
+        "Ekonomi": 0,
+        "Aksi / kekerasan": 0,
+        "Lainnya": 10
+      },
+      "2026": {
+        "Situasional KSO/Agrinas": 93,
+        "Sengketa lahan": 24,
+        "Ekonomi": 0,
+        "Aksi / kekerasan": 0,
+        "Lainnya": 11
+      }
+    },
+    "by_polres": {
+      "2025": {
+        "Bengkalis": 1,
+        "Polda Riau (Ditreskrimum)": 12,
+        "Polda Riau (Intelkam)": 1
+      },
+      "2024": {
+        "Polda Riau (Ditreskrimum)": 12
+      },
+      "2026": {
+        "Polda Riau (Ditreskrimum)": 13,
+        "Inhil": 2,
+        "Inhu": 5,
+        "Kuansing": 5,
+        "Rohil": 5,
+        "Rohul": 3,
+        "Dumai": 2,
+        "Siak": 1,
+        "Polda Riau (Intelkam)": 92
+      }
+    }
+  },
+  "kepmenhut": {
+    "buckets": [
+      {
+        "label": "Berproses",
+        "value": 15
+      },
+      {
+        "label": "Ditolak",
+        "value": 10
+      },
+      {
+        "label": "Campuran",
+        "value": 57
+      }
+    ],
+    "by_status_raw": [
+      {
+        "label": "Campuran (berproses + ditolak)",
+        "value": 57
+      },
+      {
+        "label": "Berproses penuh",
+        "value": 12
+      },
+      {
+        "label": "Ditolak penuh",
+        "value": 10
+      },
+      {
+        "label": "Berproses (data ditolak tidak lengkap di media)",
+        "value": 3
+      }
+    ],
+    "records": [
+      {
+        "nama": "PT Tor Ganda (Kebun Rantau Kasai)",
+        "luas_permohonan_ha": 10616.0,
+        "luas_berproses_ha": 5897.0,
+        "luas_ditolak_ha": 4719.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Bumi Sawit Perkasa",
+        "luas_permohonan_ha": 5330.0,
+        "luas_berproses_ha": 5330.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "PT Agro Sarimas Indonesia",
+        "luas_permohonan_ha": 4661.0,
+        "luas_berproses_ha": 1636.0,
+        "luas_ditolak_ha": 3298.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lebih dari permohonan",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Th Indo Plantation",
+        "luas_permohonan_ha": 4252.0,
+        "luas_berproses_ha": 0.0,
+        "luas_ditolak_ha": 4252.0,
+        "status": "Ditolak penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Berisiko pidana kehutanan / penertiban (Pasal 110A ditolak)"
+      },
+      {
+        "nama": "PT Agro Mitra Rokan",
+        "luas_permohonan_ha": 3605.0,
+        "luas_berproses_ha": 380.0,
+        "luas_ditolak_ha": 3225.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Riau Sawitindo Abadi",
+        "luas_permohonan_ha": 3240.0,
+        "luas_berproses_ha": 2692.0,
+        "luas_ditolak_ha": 549.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lebih dari permohonan",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Gunung Mas Raya",
+        "luas_permohonan_ha": 3149.0,
+        "luas_berproses_ha": 592.0,
+        "luas_ditolak_ha": 2557.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Citra Sardela Abadi",
+        "luas_permohonan_ha": 2439.0,
+        "luas_berproses_ha": 2439.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "PT Subur Arun Makmur (ctk)",
+        "luas_permohonan_ha": 2383.0,
+        "luas_berproses_ha": 2383.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "PT Ciliandra Perkasa",
+        "luas_permohonan_ha": 2285.0,
+        "luas_berproses_ha": 2178.0,
+        "luas_ditolak_ha": 107.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Gandaerah Hendana",
+        "luas_permohonan_ha": 2092.0,
+        "luas_berproses_ha": 485.0,
+        "luas_ditolak_ha": 1607.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Sinar Inti Sawit",
+        "luas_permohonan_ha": 1601.0,
+        "luas_berproses_ha": 0.0,
+        "luas_ditolak_ha": 1601.0,
+        "status": "Ditolak penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Berisiko pidana kehutanan / penertiban (Pasal 110A ditolak)"
+      },
+      {
+        "nama": "PT Inecda",
+        "luas_permohonan_ha": 1516.0,
+        "luas_berproses_ha": 1367.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses (data ditolak tidak lengkap di media)",
+        "kelengkapan": "Kurang dari permohonan",
+        "implikasi": "Verifikasi ke lampiran resmi SK; kemungkinan ada bagian ditolak tidak dilaporkan media"
+      },
+      {
+        "nama": "PT Sinar Widita Pamarta (I)",
+        "luas_permohonan_ha": 1480.0,
+        "luas_berproses_ha": 1007.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses (data ditolak tidak lengkap di media)",
+        "kelengkapan": "Kurang dari permohonan",
+        "implikasi": "Verifikasi ke lampiran resmi SK; kemungkinan ada bagian ditolak tidak dilaporkan media"
+      },
+      {
+        "nama": "PT Gatipura Mulya",
+        "luas_permohonan_ha": 1281.0,
+        "luas_berproses_ha": 1136.0,
+        "luas_ditolak_ha": 145.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Tunggal Perkasa Plantation",
+        "luas_permohonan_ha": 1280.0,
+        "luas_berproses_ha": 706.0,
+        "luas_ditolak_ha": 574.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Surya Agrolika Reksa",
+        "luas_permohonan_ha": 1191.0,
+        "luas_berproses_ha": 959.0,
+        "luas_ditolak_ha": 232.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Simas Sawit Alianta (1)",
+        "luas_permohonan_ha": 961.0,
+        "luas_berproses_ha": 895.0,
+        "luas_ditolak_ha": 66.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Tasma Puja",
+        "luas_permohonan_ha": 949.0,
+        "luas_berproses_ha": 926.0,
+        "luas_ditolak_ha": 23.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Trimas FDI",
+        "luas_permohonan_ha": 927.0,
+        "luas_berproses_ha": 600.0,
+        "luas_ditolak_ha": 327.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Seko Indah (I)",
+        "luas_permohonan_ha": 919.0,
+        "luas_berproses_ha": 899.0,
+        "luas_ditolak_ha": 12.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Kurang dari permohonan",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "Adi, dkk.",
+        "luas_permohonan_ha": 907.0,
+        "luas_berproses_ha": 907.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "PT Sumber Alam Makmur Sentosa",
+        "luas_permohonan_ha": 899.0,
+        "luas_berproses_ha": 653.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses (data ditolak tidak lengkap di media)",
+        "kelengkapan": "Kurang dari permohonan",
+        "implikasi": "Verifikasi ke lampiran resmi SK; kemungkinan ada bagian ditolak tidak dilaporkan media"
+      },
+      {
+        "nama": "PT Gerbang Sawit Indah II",
+        "luas_permohonan_ha": 898.0,
+        "luas_berproses_ha": 867.0,
+        "luas_ditolak_ha": 31.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Supra Matra Abadi",
+        "luas_permohonan_ha": 823.0,
+        "luas_berproses_ha": 0.0,
+        "luas_ditolak_ha": 823.0,
+        "status": "Ditolak penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Berisiko pidana kehutanan / penertiban (Pasal 110A ditolak)"
+      },
+      {
+        "nama": "PT Sumber Sawindo Kencana",
+        "luas_permohonan_ha": 800.0,
+        "luas_berproses_ha": 508.0,
+        "luas_ditolak_ha": 292.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Aditya Palma Nusantara",
+        "luas_permohonan_ha": 795.0,
+        "luas_berproses_ha": 744.0,
+        "luas_ditolak_ha": 51.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Perkebunan Nusantara V (PTPN IV)",
+        "luas_permohonan_ha": 790.0,
+        "luas_berproses_ha": 15.0,
+        "luas_ditolak_ha": 775.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Indrawan Perkasa",
+        "luas_permohonan_ha": 769.0,
+        "luas_berproses_ha": 64.0,
+        "luas_ditolak_ha": 705.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Sugih Indah Lestari",
+        "luas_permohonan_ha": 749.0,
+        "luas_berproses_ha": 675.0,
+        "luas_ditolak_ha": 74.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Safari Riau",
+        "luas_permohonan_ha": 745.0,
+        "luas_berproses_ha": 745.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "PT Ekadaya Sejati Sukses",
+        "luas_permohonan_ha": 735.0,
+        "luas_berproses_ha": 735.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "PT Lindai Jaya Lestari",
+        "luas_permohonan_ha": 634.0,
+        "luas_berproses_ha": 568.0,
+        "luas_ditolak_ha": 66.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Sawit Betuah Lestari",
+        "luas_permohonan_ha": 626.0,
+        "luas_berproses_ha": 494.0,
+        "luas_ditolak_ha": 132.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Tri Bakti Sarimas",
+        "luas_permohonan_ha": 594.0,
+        "luas_berproses_ha": 386.0,
+        "luas_ditolak_ha": 208.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Ramajaya Pramukti",
+        "luas_permohonan_ha": 561.0,
+        "luas_berproses_ha": 0.0,
+        "luas_ditolak_ha": 561.0,
+        "status": "Ditolak penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Berisiko pidana kehutanan / penertiban (Pasal 110A ditolak)"
+      },
+      {
+        "nama": "PT Mekarsari Alam Lestari",
+        "luas_permohonan_ha": 547.0,
+        "luas_berproses_ha": 497.0,
+        "luas_ditolak_ha": 50.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Simas Sawit Alianta (2)",
+        "luas_permohonan_ha": 543.0,
+        "luas_berproses_ha": 124.0,
+        "luas_ditolak_ha": 419.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Peputra Maha Raya",
+        "luas_permohonan_ha": 523.0,
+        "luas_berproses_ha": 0.0,
+        "luas_ditolak_ha": 523.0,
+        "status": "Ditolak penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Berisiko pidana kehutanan / penertiban (Pasal 110A ditolak)"
+      },
+      {
+        "nama": "PT Indogreen Jaya Abadi",
+        "luas_permohonan_ha": 514.0,
+        "luas_berproses_ha": 380.0,
+        "luas_ditolak_ha": 134.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Guna Dodos",
+        "luas_permohonan_ha": 491.0,
+        "luas_berproses_ha": 406.0,
+        "luas_ditolak_ha": 84.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Kurang dari permohonan",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Sinar Widita Pamarta (II)",
+        "luas_permohonan_ha": 491.0,
+        "luas_berproses_ha": 412.0,
+        "luas_ditolak_ha": 78.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Kurang dari permohonan",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Central Warisan Indah Makmur",
+        "luas_permohonan_ha": 479.0,
+        "luas_berproses_ha": 413.0,
+        "luas_ditolak_ha": 66.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Inti Indosawit Subur",
+        "luas_permohonan_ha": 449.0,
+        "luas_berproses_ha": 440.0,
+        "luas_ditolak_ha": 9.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Peputra Supra Jaya",
+        "luas_permohonan_ha": 445.0,
+        "luas_berproses_ha": 253.0,
+        "luas_ditolak_ha": 192.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Seko Indah (II)",
+        "luas_permohonan_ha": 442.0,
+        "luas_berproses_ha": 396.0,
+        "luas_ditolak_ha": 46.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Permata Hijau Indonesia",
+        "luas_permohonan_ha": 433.0,
+        "luas_berproses_ha": 379.0,
+        "luas_ditolak_ha": 54.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "Misgianto dkk",
+        "luas_permohonan_ha": 427.0,
+        "luas_berproses_ha": 220.0,
+        "luas_ditolak_ha": 207.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Surya Agro Sukses Sejahtera",
+        "luas_permohonan_ha": 421.0,
+        "luas_berproses_ha": 421.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "PT Sekarbumi Alam Lestari",
+        "luas_permohonan_ha": 405.0,
+        "luas_berproses_ha": 190.0,
+        "luas_ditolak_ha": 215.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Air Jernih",
+        "luas_permohonan_ha": 397.0,
+        "luas_berproses_ha": 370.0,
+        "luas_ditolak_ha": 27.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Bina Pitri Jaya",
+        "luas_permohonan_ha": 378.0,
+        "luas_berproses_ha": 313.0,
+        "luas_ditolak_ha": 65.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Subur Mandiri Lestari",
+        "luas_permohonan_ha": 375.0,
+        "luas_berproses_ha": 88.0,
+        "luas_ditolak_ha": 287.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Adimulia Agrolestari",
+        "luas_permohonan_ha": 374.0,
+        "luas_berproses_ha": 102.0,
+        "luas_ditolak_ha": 272.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Mitra Unggul Pusaka",
+        "luas_permohonan_ha": 368.0,
+        "luas_berproses_ha": 242.0,
+        "luas_ditolak_ha": 126.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Sawit Asahan Indah",
+        "luas_permohonan_ha": 362.0,
+        "luas_berproses_ha": 358.0,
+        "luas_ditolak_ha": 4.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Gandaerah Hendana (2)",
+        "luas_permohonan_ha": 361.0,
+        "luas_berproses_ha": 111.0,
+        "luas_ditolak_ha": 250.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Sumatera Timur Indonesia",
+        "luas_permohonan_ha": 323.0,
+        "luas_berproses_ha": 309.0,
+        "luas_ditolak_ha": 14.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Muriniwood Indah Industri",
+        "luas_permohonan_ha": 315.0,
+        "luas_berproses_ha": 0.0,
+        "luas_ditolak_ha": 315.0,
+        "status": "Ditolak penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Berisiko pidana kehutanan / penertiban (Pasal 110A ditolak)"
+      },
+      {
+        "nama": "PT Sumber Inti Alam Makmur",
+        "luas_permohonan_ha": 304.0,
+        "luas_berproses_ha": 293.0,
+        "luas_ditolak_ha": 11.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Riau Sawit Indah I",
+        "luas_permohonan_ha": 303.0,
+        "luas_berproses_ha": 303.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "PT Ekadura Indonesia",
+        "luas_permohonan_ha": 232.0,
+        "luas_berproses_ha": 101.0,
+        "luas_ditolak_ha": 131.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Riau Sawit Indah II",
+        "luas_permohonan_ha": 226.0,
+        "luas_berproses_ha": 222.0,
+        "luas_ditolak_ha": 4.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Teluk Mega Abadi",
+        "luas_permohonan_ha": 224.0,
+        "luas_berproses_ha": 203.0,
+        "luas_ditolak_ha": 21.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Wasundari Indah",
+        "luas_permohonan_ha": 223.0,
+        "luas_berproses_ha": 214.0,
+        "luas_ditolak_ha": 9.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "Sutowo Lukman dkk",
+        "luas_permohonan_ha": 212.0,
+        "luas_berproses_ha": 0.0,
+        "luas_ditolak_ha": 212.0,
+        "status": "Ditolak penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Berisiko pidana kehutanan / penertiban (Pasal 110A ditolak)"
+      },
+      {
+        "nama": "PT Sari Lembah Subur",
+        "luas_permohonan_ha": 202.0,
+        "luas_berproses_ha": 183.0,
+        "luas_ditolak_ha": 19.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Bhara Induk",
+        "luas_permohonan_ha": 180.0,
+        "luas_berproses_ha": 175.0,
+        "luas_ditolak_ha": 5.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Graha Permata Hijau",
+        "luas_permohonan_ha": 167.0,
+        "luas_berproses_ha": 139.0,
+        "luas_ditolak_ha": 28.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Tumpuan",
+        "luas_permohonan_ha": 150.0,
+        "luas_berproses_ha": 0.0,
+        "luas_ditolak_ha": 150.0,
+        "status": "Ditolak penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Berisiko pidana kehutanan / penertiban (Pasal 110A ditolak)"
+      },
+      {
+        "nama": "PT Air Kampar",
+        "luas_permohonan_ha": 129.0,
+        "luas_berproses_ha": 128.0,
+        "luas_ditolak_ha": 1.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Surya Dumai Agrindo",
+        "luas_permohonan_ha": 126.0,
+        "luas_berproses_ha": 12.0,
+        "luas_ditolak_ha": 114.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Udaya Lohjinawi I",
+        "luas_permohonan_ha": 110.0,
+        "luas_berproses_ha": 39.0,
+        "luas_ditolak_ha": 71.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Tasma Puja (2)",
+        "luas_permohonan_ha": 94.0,
+        "luas_berproses_ha": 94.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "Sylvia dkk",
+        "luas_permohonan_ha": 86.0,
+        "luas_berproses_ha": 86.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "PT Swakarsa Sawit Raya",
+        "luas_permohonan_ha": 52.0,
+        "luas_berproses_ha": 45.0,
+        "luas_ditolak_ha": 7.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Asia Sawit Makmur Jaya",
+        "luas_permohonan_ha": 50.0,
+        "luas_berproses_ha": 47.0,
+        "luas_ditolak_ha": 3.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Anugerah Agro Sawit Perkasa",
+        "luas_permohonan_ha": 48.0,
+        "luas_berproses_ha": 0.0,
+        "luas_ditolak_ha": 48.0,
+        "status": "Ditolak penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Berisiko pidana kehutanan / penertiban (Pasal 110A ditolak)"
+      },
+      {
+        "nama": "PT Arindo Trisejahtera (1)",
+        "luas_permohonan_ha": 28.0,
+        "luas_berproses_ha": 28.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      },
+      {
+        "nama": "PT Arvena Sepakat",
+        "luas_permohonan_ha": 20.0,
+        "luas_berproses_ha": 0.0,
+        "luas_ditolak_ha": 20.0,
+        "status": "Ditolak penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Berisiko pidana kehutanan / penertiban (Pasal 110A ditolak)"
+      },
+      {
+        "nama": "PT Talang Jerinjing Sawit",
+        "luas_permohonan_ha": 20.0,
+        "luas_berproses_ha": 9.0,
+        "luas_ditolak_ha": 11.0,
+        "status": "Campuran (berproses + ditolak)",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Sebagian bisa diselesaikan administratif; bagian ditolak berisiko penegakan hukum"
+      },
+      {
+        "nama": "PT Usaha Kita Makmur",
+        "luas_permohonan_ha": 19.0,
+        "luas_berproses_ha": 19.0,
+        "luas_ditolak_ha": 0.0,
+        "status": "Berproses penuh",
+        "kelengkapan": "Lengkap",
+        "implikasi": "Wajib denda administratif; proses penyelesaian 110A"
+      }
+    ],
+    "total": 82
+  }
+}

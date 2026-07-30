@@ -474,13 +474,87 @@ body.is-scroll {
 .case-card strong, .obj-card strong { display: block; margin-bottom: 0.15rem; }
 .case-card p, .obj-card p { margin: 0; color: var(--ink-soft); line-height: 1.4; }
 
-.story-view, .data-view {
+.story-view, .data-view, .analisis-view {
   padding: 1.4rem clamp(1rem, 4vw, 3rem) 2.5rem;
   overflow: auto;
   height: calc(100vh - 70px);
   background:
     radial-gradient(900px 420px at 0% 0%, #e7efe4 0%, transparent 55%),
     #eef2eb;
+}
+
+.analisis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.analisis-block {
+  background: var(--glass-strong);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.05rem 1.1rem;
+  box-shadow: var(--shadow);
+  animation: rise 0.5s ease both;
+}
+.analisis-block.wide { grid-column: 1 / -1; }
+.analisis-block h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.25rem;
+  color: var(--brand);
+  letter-spacing: -0.02em;
+}
+.block-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: end;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+.block-note {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+.chart-frame {
+  position: relative;
+  height: 280px;
+}
+.chart-frame.tall { height: 360px; }
+.chart-frame.donut { height: 260px; }
+.flow-frame {
+  min-height: 220px;
+  overflow-x: auto;
+}
+.flow-stat-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.4rem;
+  margin-bottom: 0.7rem;
+}
+.flow-stat {
+  background: rgba(255,255,255,0.72);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.45rem 0.55rem;
+}
+.flow-stat strong {
+  display: block;
+  font-family: var(--display);
+  color: var(--brand);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+.flow-stat span {
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+}
+.table-scroll.compact { max-height: 340px; }
+
+@media (max-width: 900px) {
+  .analisis-grid { grid-template-columns: 1fr; }
+  .chart-frame.tall { height: 300px; }
 }
 .story-hero { max-width: 720px; margin-bottom: 1.3rem; }
 .story-hero p { color: var(--ink-soft); line-height: 1.55; }

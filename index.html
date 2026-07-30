@@ -23,6 +23,7 @@
       </div>
       <nav class="top-nav" aria-label="Navigasi utama">
         <button class="nav-btn is-active" data-view="peta">Peta</button>
+        <button class="nav-btn" data-view="analisis">Analisis</button>
         <button class="nav-btn" data-view="cerita">Cerita</button>
         <button class="nav-btn" data-view="data">Data</button>
       </nav>
@@ -98,6 +99,99 @@
       <div class="story-grid" id="storyGrid"></div>
     </section>
 
+    <section class="analisis-view" id="analisisView" hidden>
+      <article class="story-hero">
+        <p class="eyebrow">Prioritas 2 · dashboard analitik</p>
+        <h1>Komponen risiko, alur aktor, timeline, dan Kepmenhut</h1>
+        <p>Visualisasi interaktif dari data yang sama dengan peta. Klik batang Polres untuk membuka detail di peta.</p>
+      </article>
+
+      <div class="analisis-grid">
+        <section class="analisis-block wide">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">Small-multiples / grouped bar</p>
+              <h2>Komponen skor per Polres</h2>
+            </div>
+            <p class="block-note">Liputan · Aksi · Objek · Status · Adat</p>
+          </div>
+          <div class="chart-frame tall"><canvas id="chartPolres"></canvas></div>
+        </section>
+
+        <section class="analisis-block">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">Alur Agrinas–Satgas</p>
+              <h2>Lapisan objek</h2>
+            </div>
+          </div>
+          <div class="flow-stat-strip" id="agrinasCountStrip"></div>
+          <div class="flow-frame" id="agrinasFlow"></div>
+        </section>
+
+        <section class="analisis-block">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">Jembatan Atlas</p>
+              <h2>Match → konflik</h2>
+            </div>
+          </div>
+          <div class="flow-frame" id="atlasFlow"></div>
+        </section>
+
+        <section class="analisis-block">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">Stacked timeline</p>
+              <h2>Kasus per tahun &amp; jenis</h2>
+            </div>
+          </div>
+          <div class="chart-frame"><canvas id="chartTimeline"></canvas></div>
+        </section>
+
+        <section class="analisis-block">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">Kepmenhut 36/2025</p>
+              <h2><span id="kepmenTotal">–</span> subjek hukum</h2>
+            </div>
+          </div>
+          <div class="chart-frame donut"><canvas id="chartKepmen"></canvas></div>
+        </section>
+
+        <section class="analisis-block wide">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">Tabel filter Kepmenhut</p>
+              <h2>Status permohonan</h2>
+            </div>
+            <div class="chip-row" id="kepmenFilters">
+              <button class="chip is-on" data-kepmen="all">Semua</button>
+              <button class="chip" data-kepmen="Berproses">Berproses</button>
+              <button class="chip" data-kepmen="Ditolak">Ditolak</button>
+              <button class="chip" data-kepmen="Campuran">Campuran</button>
+            </div>
+          </div>
+          <p class="block-note" id="kepmenFilterCount"></p>
+          <div class="table-scroll compact">
+            <table id="kepmenTable">
+              <thead>
+                <tr>
+                  <th>Nama</th>
+                  <th>Status</th>
+                  <th>Permohonan</th>
+                  <th>Berproses</th>
+                  <th>Ditolak</th>
+                  <th>Kelengkapan</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+
     <section class="data-view" id="dataView" hidden>
       <div class="data-header">
         <div>
@@ -120,6 +214,8 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="js/analytics.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

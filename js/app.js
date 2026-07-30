@@ -11,6 +11,7 @@ const DATA = {
   layers: null,
   adm2: null,
   gfw: null,
+  analytics: null,
 };
 
 const state = {
@@ -65,7 +66,7 @@ async function loadJSON(path) {
 }
 
 async function boot() {
-  const [meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, gfw] = await Promise.all([
+  const [meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, gfw, analytics] = await Promise.all([
     loadJSON("data/meta.json"),
     loadJSON("data/kab_kota.json"),
     loadJSON("data/polres.json"),
@@ -76,8 +77,9 @@ async function boot() {
     loadJSON("data/layers.geojson"),
     loadJSON("data/adm2_riau.geojson"),
     loadJSON("data/gfw_konsesi.geojson"),
+    loadJSON("data/analytics.json"),
   ]);
-  Object.assign(DATA, { meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, gfw });
+  Object.assign(DATA, { meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, gfw, analytics });
 
   (meta.layers || []).forEach((l) => {
     state.layerOn[l.id] = !!l.default;
@@ -95,6 +97,7 @@ async function boot() {
   setupNav();
   setupFilters();
   setupDataTables();
+  setupAnalyticsControls?.();
 }
 
 function formatDate(iso) {
@@ -368,6 +371,7 @@ function showPolres(nama) {
     <div class="case-list">${kasus.map(caseCard).join("") || "<p class='lead'>Tidak ada kasus terfilter.</p>"}</div>
   `);
 }
+window.showPolres = showPolres;
 
 function showTitik(p) {
   const latlng = findFeatureLatLng(p.id) || findFeatureLatLng(p.nama);
@@ -520,11 +524,19 @@ function setupNav() {
       const stage = document.getElementById("mapStage") || document.querySelector(".stage");
       const story = document.getElementById("storyView");
       const data = document.getElementById("dataView");
+      const analisis = document.getElementById("analisisView");
       stage.hidden = state.view !== "peta";
       story.hidden = state.view !== "cerita";
       data.hidden = state.view !== "data";
+      if (analisis) analisis.hidden = state.view !== "analisis";
       document.body.classList.toggle("is-scroll", state.view !== "peta");
       if (state.view === "peta") setTimeout(() => state.map?.invalidateSize(), 80);
+      if (state.view === "analisis") {
+        setTimeout(() => {
+          renderAnalytics?.();
+          window.dispatchEvent(new Event("resize"));
+        }, 60);
+      }
     });
   });
   document.getElementById("detailClose").addEventListener("click", () => {

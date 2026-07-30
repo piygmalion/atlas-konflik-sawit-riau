@@ -592,6 +592,169 @@ def export_gfw_overlay():
     return features
 
 
+def bucket_jenis(jenis: str | None, kategori: str | None) -> str:
+    t = f"{jenis or ''} {kategori or ''}".lower()
+    if "situasional" in t or "agrinas" in t or "kso" in t:
+        return "Situasional KSO/Agrinas"
+    if "sengketa" in t or "lahan" in t or "okupasi" in t or "plasma" in t:
+        return "Sengketa lahan"
+    if "ekonomi" in t:
+        return "Ekonomi"
+    if "kekerasan" in t or "bentrok" in t or "demo" in t or "unjuk" in t:
+        return "Aksi / kekerasan"
+    return "Lainnya"
+
+
+def years_from_kasus(tahun) -> list[str]:
+    if tahun is None:
+        return []
+    found = re.findall(r"20\d{2}", str(tahun))
+    return sorted(set(found))
+
+
+def export_analytics(polres: list[dict], objek: list[dict], kasus: list[dict]):
+    from collections import Counter
+
+    # 1) Polres komponen for small-multiples / grouped bars
+    polres_komponen = [
+        {
+            "polres": p.get("polres"),
+            "label": str(p.get("polres") or "").replace("Polres ", ""),
+            "peringkat": p.get("peringkat"),
+            "skor": p.get("skor"),
+            "kategori": p.get("kategori"),
+            "komponen": p.get("komponen") or {},
+        }
+        for p in polres
+    ]
+
+    # 2) Agrinas layer flow (nodes + links)
+    layer_order = [
+        "A. Pengelola",
+        "B. Eks pengelola",
+        "C. Mitra KSO",
+        "D. Eks lahan (via KSO)",
+        "E. Gelombang 1 Satgas",
+        "F. Objek kawasan",
+    ]
+    layer_counts = {k: 0 for k in layer_order}
+    for o in objek:
+        lap = o.get("lapisan") or "Lainnya"
+        if lap not in layer_counts:
+            layer_counts[lap] = 0
+        layer_counts[lap] += 1
+
+    nodes = [{"id": k, "label": k, "value": layer_counts.get(k, 0)} for k in layer_order if layer_counts.get(k, 0)]
+    links = []
+
+    def add_link(src, tgt, value, note=""):
+        if value > 0:
+            links.append({"source": src, "target": tgt, "value": int(value), "note": note})
+
+    a = layer_counts.get("A. Pengelola", 0)
+    b = layer_counts.get("B. Eks pengelola", 0)
+    c = layer_counts.get("C. Mitra KSO", 0)
+    d = layer_counts.get("D. Eks lahan (via KSO)", 0)
+    e = layer_counts.get("E. Gelombang 1 Satgas", 0)
+    f = layer_counts.get("F. Objek kawasan", 0)
+    add_link("A. Pengelola", "C. Mitra KSO", min(a * 8, c) or a, "pengelola → mitra operasional")
+    add_link("B. Eks pengelola", "C. Mitra KSO", min(b * 2, max(c - a, 0)) or min(b, c), "eks pengelola → mitra/KSO")
+    add_link("C. Mitra KSO", "D. Eks lahan (via KSO)", min(c, d), "mitra → eks lahan via KSO")
+    add_link("A. Pengelola", "E. Gelombang 1 Satgas", min(a, e) or (1 if a and e else 0), "jalur satgas")
+    add_link("C. Mitra KSO", "E. Gelombang 1 Satgas", max(e - a, 0), "mitra dalam gelombang 1")
+    add_link("D. Eks lahan (via KSO)", "F. Objek kawasan", min(d, f) or (1 if f else 0), "eks lahan ↔ objek kawasan")
+
+    try:
+        konsesi = json.loads((OUT / "konsesi.json").read_text(encoding="utf-8"))
+    except Exception:
+        konsesi = {"atlas_match": {"records": []}, "kepmenhut_36_2025": {"records": []}}
+
+    atlas_rows = []
+    for r in konsesi.get("atlas_match", {}).get("records", []):
+        status = "cocok" if "cocok" in str(r.get("status") or "").lower() else (r.get("status") or "lain")
+        konflik = (
+            "ada di konflik"
+            if str(r.get("ada_di_konflik_polda") or "").lower() in {"ya", "true", "1"}
+            else "tidak di konflik"
+        )
+        atlas_rows.append(
+            {
+                "atlas_nama": r.get("atlas_nama"),
+                "nama_lokal": r.get("nama_lokal"),
+                "status_match": status,
+                "konflik": konflik,
+                "tahun": r.get("tahun"),
+                "area_ha": r.get("area_ha"),
+            }
+        )
+
+    atlas_flow_links = []
+    match_c = Counter(r["status_match"] for r in atlas_rows)
+    for st, n in match_c.items():
+        atlas_flow_links.append({"source": "Nusantara Atlas", "target": st, "value": n})
+    conf_c = Counter((r["status_match"], r["konflik"]) for r in atlas_rows)
+    for (st, conf), n in conf_c.items():
+        atlas_flow_links.append({"source": st, "target": conf, "value": n})
+
+    kepmen_by_status = {}
+    kepmen_records = []
+    for r in konsesi.get("kepmenhut_36_2025", {}).get("records", []):
+        st = r.get("status") or "Tidak diketahui"
+        kepmen_by_status[st] = kepmen_by_status.get(st, 0) + 1
+        kepmen_records.append(r)
+
+    kepmen_buckets = {"Berproses": 0, "Ditolak": 0, "Campuran": 0, "Lainnya": 0}
+    for st, n in kepmen_by_status.items():
+        s = st.lower()
+        if "campuran" in s:
+            kepmen_buckets["Campuran"] += n
+        elif "ditolak" in s and "berproses" not in s:
+            kepmen_buckets["Ditolak"] += n
+        elif "berproses" in s:
+            kepmen_buckets["Berproses"] += n
+        else:
+            kepmen_buckets["Lainnya"] += n
+
+    years = ["2024", "2025", "2026"]
+    series_keys = ["Situasional KSO/Agrinas", "Sengketa lahan", "Ekonomi", "Aksi / kekerasan", "Lainnya"]
+    timeline = {y: {k: 0 for k in series_keys} for y in years}
+    timeline_polres = {}
+    for k in kasus:
+        ys = years_from_kasus(k.get("tahun")) or ["2026"]
+        bucket = bucket_jenis(k.get("jenis"), k.get("kategori"))
+        pol = str(k.get("polres") or "Lain/Polda").replace("Polres ", "")
+        for y in ys:
+            if y not in timeline:
+                timeline[y] = {kk: 0 for kk in series_keys}
+            timeline[y][bucket] = timeline[y].get(bucket, 0) + 1
+            timeline_polres.setdefault(y, {})
+            timeline_polres[y][pol] = timeline_polres[y].get(pol, 0) + 1
+
+    years = sorted(timeline.keys())
+    payload = {
+        "polres_komponen": polres_komponen,
+        "agrinas_flow": {"nodes": nodes, "links": links, "counts": layer_counts},
+        "atlas_flow": {"links": atlas_flow_links, "records": atlas_rows},
+        "timeline": {
+            "years": years,
+            "categories": series_keys,
+            "by_jenis": timeline,
+            "by_polres": timeline_polres,
+        },
+        "kepmenhut": {
+            "buckets": [{"label": k, "value": v} for k, v in kepmen_buckets.items() if v],
+            "by_status_raw": [
+                {"label": k, "value": v} for k, v in sorted(kepmen_by_status.items(), key=lambda x: -x[1])
+            ],
+            "records": kepmen_records,
+            "total": len(kepmen_records),
+        },
+    }
+    write_json("analytics.json", payload)
+    print(f"    analytics: polres={len(polres_komponen)} timeline_years={years} kepmen={len(kepmen_records)}")
+    return payload
+
+
 def export_perusahaan():
     rows = read_csv("daftar_perusahaan_sawit_riau_gabungan.csv")
     records = [
@@ -687,6 +850,7 @@ def export_meta(counts: dict):
                 {"id": "objek_titik", "label": "Titik objek Agrinas", "default": True},
                 {"id": "gfw_konsesi", "label": "Konsesi GFW (overlay)", "default": False},
             ],
+            "views": ["peta", "analisis", "cerita", "data"],
             "sumber": [
                 "TABEL_KONFLIK_AGRARIA_SAWIT_RIAU",
                 "Master_List_Objek_Agrinas_Satgas_Riau",
@@ -722,6 +886,7 @@ def main():
     export_konsesi_atlas()
     geo = export_spatial_layers(kab_records)
     gfw = export_gfw_overlay()
+    export_analytics(polres, objek, kasus)
     counts = {
         "kab_kota": len(kab_records),
         "polres": len(polres),
