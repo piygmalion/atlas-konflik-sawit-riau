@@ -217,7 +217,7 @@ window.getBlendOsint = () => state.blendOsint;
  * Source of truth: <meta name="atlas-asset-ver"> in index.html (keep ?v= on assets in sync).
  */
 const ASSET_VER =
-  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0db7";
+  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0db8";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${ASSET_VER}`;

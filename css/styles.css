@@ -14,6 +14,7 @@
   --radius: 16px;
   --radius-sm: 10px;
   --radius-pill: 999px;
+  --focus-ring: 0 0 0 3px rgba(22, 53, 40, 0.28);
   --font: "Instrument Sans", system-ui, sans-serif;
   --display: "Newsreader", Georgia, serif;
 }
@@ -36,6 +37,38 @@ body.is-scroll {
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}
+
+/* Keyboard focus — visible ring without penalizing mouse clicks */
+.nav-btn:focus-visible,
+.chip:focus-visible,
+.rank-list button:focus-visible,
+.detail-close:focus-visible,
+.btn-link:focus-visible,
+.text-btn:focus-visible,
+.map-preview__link:focus-visible,
+.rank-ext:focus-visible,
+.search-results button:focus-visible,
+.table-tabs .chip:focus-visible,
+.rail-details > summary:focus-visible,
+.method-note-details > summary:focus-visible,
+.layer-item input:focus-visible,
+.leaflet-control-zoom a:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.nav-btn.is-active:focus-visible {
+  box-shadow: var(--focus-ring), 0 4px 14px rgba(20, 32, 25, 0.08);
+}
+
+.chip.is-on:focus-visible {
+  box-shadow: var(--focus-ring);
+}
+
+.btn-link:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
 }
 
 #app {
@@ -109,9 +142,10 @@ body.is-scroll {
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-.search-wrap input:focus {
+.search-wrap input:focus,
+.search-wrap input:focus-visible {
   border-color: rgba(22, 53, 40, 0.35);
-  box-shadow: 0 0 0 3px rgba(22, 53, 40, 0.08);
+  box-shadow: var(--focus-ring);
 }
 .search-results {
   position: absolute;
