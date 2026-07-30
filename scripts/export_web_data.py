@@ -565,30 +565,84 @@ def export_spatial_layers(kab_records: list[dict]):
 
 
 def export_gfw_overlay():
+    """Export light TopoJSON overlay for GitHub Pages (mapshaper), with GeoJSON fallback."""
+    import shutil
+    import subprocess
+
     src = ROOT / "tmp" / "spatial" / "gfw_oilpalm_riau.geojson"
+    out_topo = OUT / "gfw_konsesi.topojson"
+    out_geo = OUT / "gfw_konsesi.geojson"
     features = []
-    if src.exists():
-        raw = json.loads(src.read_text(encoding="utf-8"))
-        for f in raw.get("features", []):
-            props = f.get("properties") or {}
-            geom = simplify_geometry(f.get("geometry"), tolerance=0.005)
-            features.append(
-                {
-                    "type": "Feature",
-                    "geometry": geom,
-                    "properties": {
-                        "name": props.get("name") or props.get("company"),
-                        "company": props.get("company"),
-                        "group": props.get("group_comp"),
-                        "area_ha": props.get("area_ha"),
-                        "type": props.get("type"),
-                        "hgu": props.get("po_hgu"),
-                        "layer": "gfw_konsesi",
-                    },
-                }
-            )
+
+    if not src.exists():
+        write_json(
+            "gfw_konsesi.topojson",
+            {"type": "Topology", "objects": {"gfw_konsesi": {"type": "GeometryCollection", "geometries": []}}, "arcs": []},
+            compact=True,
+        )
+        if out_geo.exists():
+            out_geo.unlink()
+        print("    gfw polygons: 0 (source missing)")
+        return features
+
+    mapshaper = shutil.which("mapshaper") or shutil.which("npx")
+    if mapshaper:
+        cmd = [
+            mapshaper,
+            *(["-y", "mapshaper"] if Path(mapshaper).name.lower().startswith("npx") else []),
+            str(src),
+            "-filter-fields",
+            "name,company,group_comp,area_ha,type,po_hgu",
+            "-rename-fields",
+            "group=group_comp,hgu=po_hgu",
+            "-each",
+            "layer='gfw_konsesi'",
+            "-simplify",
+            "weighted",
+            "8%",
+            "keep-shapes",
+            "-rename-layers",
+            "gfw_konsesi",
+            "-o",
+            "force",
+            "format=topojson",
+            "quantization=5000",
+            str(out_topo),
+        ]
+        try:
+            subprocess.run(cmd, check=True, capture_output=True, text=True)
+            topo = json.loads(out_topo.read_text(encoding="utf-8"))
+            n = len((topo.get("objects") or {}).get("gfw_konsesi", {}).get("geometries") or [])
+            if out_geo.exists():
+                out_geo.unlink()
+            kb = out_topo.stat().st_size / 1024
+            print(f"    gfw TopoJSON: {n} polygons · {kb:.0f} KB (mapshaper)")
+            return [{"_": i} for i in range(n)]  # count placeholder for meta
+        except (subprocess.CalledProcessError, OSError, json.JSONDecodeError) as exc:
+            print(f"    mapshaper failed ({exc}); falling back to GeoJSON simplify")
+
+    raw = json.loads(src.read_text(encoding="utf-8"))
+    for f in raw.get("features", []):
+        props = f.get("properties") or {}
+        geom = simplify_geometry(f.get("geometry"), tolerance=0.008)
+        features.append(
+            {
+                "type": "Feature",
+                "geometry": geom,
+                "properties": {
+                    "name": props.get("name") or props.get("company"),
+                    "company": props.get("company"),
+                    "group": props.get("group_comp"),
+                    "area_ha": props.get("area_ha"),
+                    "type": props.get("type"),
+                    "hgu": props.get("po_hgu"),
+                    "layer": "gfw_konsesi",
+                },
+            }
+        )
+    # Compact GeoJSON fallback when TopoJSON tooling unavailable
     write_json("gfw_konsesi.geojson", {"type": "FeatureCollection", "features": features}, compact=True)
-    print(f"    gfw polygons: {len(features)} (shapely={HAS_SHAPELY})")
+    print(f"    gfw GeoJSON fallback: {len(features)} (shapely={HAS_SHAPELY})")
     return features
 
 
@@ -1067,7 +1121,7 @@ def export_meta(counts: dict):
                 {"id": "koridor", "label": "Koridor spasial", "default": True},
                 {"id": "densitas_kasus", "label": "Densitas kasus", "default": True},
                 {"id": "objek_titik", "label": "Titik objek Agrinas", "default": True},
-                {"id": "gfw_konsesi", "label": "Konsesi GFW (overlay)", "default": False},
+      {"id": "gfw_konsesi", "label": "Konsesi GFW (TopoJSON)", "default": False},
             ],
             "views": ["peta", "analisis", "cerita", "data"],
             "sumber": [
@@ -1076,7 +1130,7 @@ def export_meta(counts: dict):
                 "Ranking_Potensi_Konflik_Per_Polres",
                 "cluster_kabkota_agrinas",
                 "idn_adm2_simplified (choropleth)",
-                "gfw_oilpalm_riau (overlay)",
+                "gfw_oilpalm_riau (TopoJSON overlay, lazy)",
                 "Tabulasi_Kepmenhut_36_2025",
                 "Tabulasi_Penertiban_Kawasan_Hutan_Sawit_Riau",
                 "tabulasi_konsesi_sawit_gfw_bbox_riau (287)",
@@ -1085,7 +1139,7 @@ def export_meta(counts: dict):
             "update_command": "python website/scripts/export_web_data.py",
             "catatan": (
                 "Choropleth memakai batas ADM2; koridor dari bbox proksi; densitas kasus dipetakan ke centroid kab; "
-                "overlay GFW disederhanakan. Bukan batas legal HGU/IUP."
+                "overlay GFW = TopoJSON ter-simplify (lazy-load). Bukan batas legal HGU/IUP."
             ),
         },
     )

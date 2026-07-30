@@ -46,7 +46,7 @@
     },
     {
       "id": "gfw_konsesi",
-      "label": "Konsesi GFW (overlay)",
+      "label": "Konsesi GFW (TopoJSON)",
       "default": false
     }
   ],
@@ -62,12 +62,12 @@
     "Ranking_Potensi_Konflik_Per_Polres",
     "cluster_kabkota_agrinas",
     "idn_adm2_simplified (choropleth)",
-    "gfw_oilpalm_riau (overlay)",
+    "gfw_oilpalm_riau (TopoJSON overlay, lazy)",
     "Tabulasi_Kepmenhut_36_2025",
     "Tabulasi_Penertiban_Kawasan_Hutan_Sawit_Riau",
     "tabulasi_konsesi_sawit_gfw_bbox_riau (287)",
     "Nusantara Atlas / GFW (cocokan)"
   ],
   "update_command": "python website/scripts/export_web_data.py",
-  "catatan": "Choropleth memakai batas ADM2; koridor dari bbox proksi; densitas kasus dipetakan ke centroid kab; overlay GFW disederhanakan. Bukan batas legal HGU/IUP."
+  "catatan": "Choropleth memakai batas ADM2; koridor dari bbox proksi; densitas kasus dipetakan ke centroid kab; overlay GFW = TopoJSON ter-simplify (lazy-load). Bukan batas legal HGU/IUP."
 }

@@ -68,7 +68,7 @@ async function loadJSON(path) {
 }
 
 async function boot() {
-  const [meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, gfw, analytics, penertiban, gfwFull] =
+  const [meta, kab, polres, objek, kasus, perusahaan, konsesi, layers, adm2, analytics, penertiban, gfwFull] =
     await Promise.all([
       loadJSON("data/meta.json"),
       loadJSON("data/kab_kota.json"),
@@ -79,7 +79,6 @@ async function boot() {
       loadJSON("data/konsesi.json"),
       loadJSON("data/layers.geojson"),
       loadJSON("data/adm2_riau.geojson"),
-      loadJSON("data/gfw_konsesi.geojson"),
       loadJSON("data/analytics.json"),
       loadJSON("data/penertiban.json"),
       loadJSON("data/konsesi_gfw_full.json"),
@@ -94,7 +93,7 @@ async function boot() {
     konsesi,
     layers,
     adm2,
-    gfw,
+    gfw: null,
     analytics,
     penertiban,
     gfwFull,
@@ -152,8 +151,16 @@ function renderLayers() {
     )
     .join("");
   list.querySelectorAll("input").forEach((el) => {
-    el.addEventListener("change", () => {
+    el.addEventListener("change", async () => {
       state.layerOn[el.dataset.layer] = el.checked;
+      if (el.dataset.layer === "gfw_konsesi" && el.checked) {
+        el.disabled = true;
+        try {
+          await ensureGfwLayer();
+        } finally {
+          el.disabled = false;
+        }
+      }
       refreshLayerVisibility();
     });
   });
@@ -235,23 +242,9 @@ function initMap() {
     },
   });
 
-  // GFW overlay
-  L.geoJSON(DATA.gfw, {
-    style: {
-      color: "#5b7c65",
-      weight: 0.6,
-      fillColor: "#6f8f78",
-      fillOpacity: 0.22,
-    },
-    onEachFeature: (f, layer) => {
-      const p = f.properties || {};
-      layer.bindTooltip(
-        `<strong>${escapeHtml(p.name || p.company || "Konsesi")}</strong><br/>${fmtNum(p.area_ha)} ha`
-      );
-      layer.on("click", () => showGfw(p));
-      state.layerGroups.gfw_konsesi.addLayer(layer);
-    },
-  });
+  // GFW overlay is lazy-loaded (TopoJSON) when toggled on
+  state.gfwReady = false;
+  state.gfwLoading = null;
 
   // Point / corridor layers from layers.geojson
   (DATA.layers.features || []).forEach((f) => {
@@ -321,6 +314,56 @@ function refreshLayerVisibility() {
     if (state.map.hasLayer(group)) state.map.removeLayer(group);
     if (state.layerOn[id]) group.addTo(state.map);
   });
+}
+
+async function ensureGfwLayer() {
+  if (state.gfwReady) return;
+  if (state.gfwLoading) return state.gfwLoading;
+
+  state.gfwLoading = (async () => {
+    let geo = null;
+    try {
+      const topo = await loadJSON("data/gfw_konsesi.topojson");
+      const objName = Object.keys(topo.objects || {})[0];
+      if (!objName || typeof topojson?.feature !== "function") {
+        throw new Error("TopoJSON client/object missing");
+      }
+      geo = topojson.feature(topo, topo.objects[objName]);
+    } catch (err) {
+      console.warn("TopoJSON GFW gagal, coba GeoJSON:", err);
+      try {
+        geo = await loadJSON("data/gfw_konsesi.geojson");
+      } catch (err2) {
+        console.error("Overlay GFW tidak tersedia", err2);
+        return;
+      }
+    }
+    DATA.gfw = geo;
+
+    L.geoJSON(geo, {
+      style: {
+        color: "#5b7c65",
+        weight: 0.55,
+        fillColor: "#6f8f78",
+        fillOpacity: 0.2,
+      },
+      onEachFeature: (f, layer) => {
+        const p = f.properties || {};
+        layer.bindTooltip(
+          `<strong>${escapeHtml(p.name || p.company || "Konsesi")}</strong><br/>${fmtNum(p.area_ha)} ha`
+        );
+        layer.on("click", () => showGfw(p));
+        state.layerGroups.gfw_konsesi.addLayer(layer);
+      },
+    });
+    state.gfwReady = true;
+  })();
+
+  try {
+    await state.gfwLoading;
+  } finally {
+    state.gfwLoading = null;
+  }
 }
 
 function openDetail() {
