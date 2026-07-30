@@ -525,15 +525,15 @@ function setupNav() {
       const story = document.getElementById("storyView");
       const data = document.getElementById("dataView");
       const analisis = document.getElementById("analisisView");
-      stage.hidden = state.view !== "peta";
-      story.hidden = state.view !== "cerita";
-      data.hidden = state.view !== "data";
+      if (stage) stage.hidden = state.view !== "peta";
+      if (story) story.hidden = state.view !== "cerita";
+      if (data) data.hidden = state.view !== "data";
       if (analisis) analisis.hidden = state.view !== "analisis";
       document.body.classList.toggle("is-scroll", state.view !== "peta");
       if (state.view === "peta") setTimeout(() => state.map?.invalidateSize(), 80);
       if (state.view === "analisis") {
         setTimeout(() => {
-          renderAnalytics?.();
+          if (typeof window.renderAnalytics === "function") window.renderAnalytics();
           window.dispatchEvent(new Event("resize"));
         }, 60);
       }
