@@ -1194,10 +1194,10 @@ def export_meta(counts: dict):
             "counts": counts,
             "layers": [
                 {"id": "choropleth", "label": "Choropleth kab/kota", "default": True},
-                {"id": "koridor", "label": "Koridor proksi (hull)", "default": False},
-                {"id": "densitas_kasus", "label": "Densitas kasus (centroid)", "default": False},
+                {"id": "koridor", "label": "Koridor proksi", "default": False},
+                {"id": "densitas_kasus", "label": "Densitas kasus", "default": False},
                 {"id": "objek_titik", "label": "Titik objek Agrinas", "default": True},
-                {"id": "gfw_konsesi", "label": "Konsesi GFW (TopoJSON)", "default": False},
+                {"id": "gfw_konsesi", "label": "Konsesi GFW", "default": False},
             ],
             "views": ["peta", "analisis", "cerita", "data"],
             "methodology": {

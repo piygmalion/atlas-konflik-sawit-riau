@@ -20,6 +20,8 @@ const state = {
   view: "peta",
   priority: "all",
   compare: "all",
+  compareLast: "all",
+  layersDirty: false,
   blendOsint: 0.7, // 0 = 100% register, 0.7 = default, 1 = 100% OSINT
   timelineYearMode: "kejadian", // kejadian | disebut
   layerOn: {
@@ -48,7 +50,7 @@ const COMPARE_PRESETS = {
     choroMetric: "register",
   },
   agrinas: {
-    hint: "Sinyal Agrinas: warna kab = skor OSINT + koridor bbox proksi + titik objek.",
+    hint: "Sinyal Agrinas: warna kab = skor OSINT + koridor proksi + titik objek.",
     layers: { choropleth: true, koridor: true, densitas_kasus: false, objek_titik: true, gfw_konsesi: false },
     rank: "agrinas",
     choroMetric: "osint",
@@ -59,6 +61,15 @@ const COMPARE_PRESETS = {
     rank: "atlas",
     choroMetric: null,
   },
+};
+
+/** Label lapisan ramah pembaca; detail teknis di title/tooltip. */
+const LAYER_LABELS = {
+  choropleth: { label: "Choropleth kab/kota", title: "" },
+  koridor: { label: "Koridor proksi", title: "Hull dari titik objek — bukan koridor resmi" },
+  densitas_kasus: { label: "Densitas kasus", title: "Centroid kab/kota sebagai proksi lokasi" },
+  objek_titik: { label: "Titik objek Agrinas", title: "" },
+  gfw_konsesi: { label: "Konsesi GFW", title: "Overlay TopoJSON (dimuat saat diaktifkan)" },
 };
 
 /** Kamus metrik — jangan pakai kata “skor” tanpa konteks di UI. */
@@ -201,7 +212,7 @@ window.blendedPolresSkor = blendedPolresSkor;
 window.getBlendOsint = () => state.blendOsint;
 
 /** Cache-bust for GitHub Pages / local static server so meta+layers refresh with UI. */
-const DATA_VER = "f3d";
+const DATA_VER = "f3e";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${DATA_VER}`;
@@ -375,6 +386,8 @@ async function boot() {
   setupAnalyticsControls?.();
   setupPenertibanControls?.();
   syncTimelineYearModeUI();
+  syncRailDetailsForViewport();
+  window.addEventListener("resize", syncRailDetailsForViewport);
 }
 
 function formatDate(iso) {
@@ -391,35 +404,49 @@ function renderStats() {
   const mapped = cov.total_entri_terpetakan ?? c.entri_terpetakan ?? "–";
   const unmapped = cov.entri_tidak_terpetakan ?? c.entri_tidak_terpetakan ?? "–";
   const prioritas = DATA.polres.records.filter((p) => kategoriFromSkor(blendedPolresSkor(p)) === "PRIORITAS").length;
-  document.getElementById("statsGrid").innerHTML = [
-    ["kasus", "Kasus konflik", c.kasus_konflik],
-    ["map", "Terpetakan Polres", mapped],
-    ["unmap", "Lintas Riau / n/a", unmapped],
-    ["prio", "Polres prioritas*", prioritas],
-  ]
-    .map(([, label, val]) => `<div class="stat"><strong>${val ?? "–"}</strong><span>${label}</span></div>`)
-    .join("");
-
-  const methodEl = document.getElementById("methodNote");
-  if (methodEl) {
-    const disc =
-      DATA.meta?.methodology?.disclaimer ||
-      DATA.polres?.model?.catatan ||
-      "Skor = indeks liputan+objek+register — bukan vonis operasional.";
-    methodEl.textContent = disc;
+  const grid = document.getElementById("statsGrid");
+  if (grid) {
+    grid.className = "stat-strip stat-strip--primary";
+    grid.innerHTML = `
+      <div class="stat"><strong>${c.kasus_konflik ?? "–"}</strong><span>Kasus konflik</span></div>
+      <div class="stat"><strong>${prioritas}</strong><span>Polres prioritas</span></div>
+      <p class="stat-coverage">${escapeHtml(String(mapped))} terpetakan · ${escapeHtml(String(unmapped))} lintas Riau / n/a</p>
+    `;
   }
+
+  const short = "Skor = indeks liputan+objek+register — bukan vonis operasional.";
+  const disc =
+    DATA.meta?.methodology?.disclaimer ||
+    DATA.polres?.model?.catatan ||
+    short;
+  const summary = document.getElementById("methodNoteSummary");
+  const methodEl = document.getElementById("methodNote");
+  if (summary) summary.textContent = short;
+  if (methodEl) methodEl.textContent = disc;
+}
+
+function layerDisplay(metaLayer) {
+  const id = metaLayer?.id || "";
+  const mapped = LAYER_LABELS[id];
+  if (mapped) return mapped;
+  const raw = String(metaLayer?.label || id);
+  return {
+    label: raw.replace(/\s*\([^)]*\)\s*$/, "").trim() || raw,
+    title: raw,
+  };
 }
 
 function renderLayers() {
   const list = document.getElementById("layerList");
   list.innerHTML = (DATA.meta.layers || [])
-    .map(
-      (l) => `
-      <label class="layer-item">
-        <input type="checkbox" data-layer="${l.id}" ${state.layerOn[l.id] ? "checked" : ""} />
-        <span>${l.label}</span>
-      </label>`
-    )
+    .map((l) => {
+      const d = layerDisplay(l);
+      return `
+      <label class="layer-item" ${d.title ? `title="${escapeAttr(d.title)}"` : ""}>
+        <input type="checkbox" data-layer="${escapeAttr(l.id)}" ${state.layerOn[l.id] ? "checked" : ""} />
+        <span>${escapeHtml(d.label)}</span>
+      </label>`;
+    })
     .join("");
   list.querySelectorAll("input").forEach((el) => {
     el.addEventListener("change", async () => {
@@ -433,8 +460,77 @@ function renderLayers() {
         }
       }
       refreshLayerVisibility();
+      onLayersUserChange();
     });
   });
+}
+
+function layersMatchPreset(mode = state.compareLast || state.compare) {
+  const preset = COMPARE_PRESETS[mode]?.layers;
+  if (!preset) return true;
+  return Object.keys(preset).every((k) => !!state.layerOn[k] === !!preset[k]);
+}
+
+function onLayersUserChange() {
+  const base = state.compareLast || state.compare || "all";
+  state.layersDirty = !layersMatchPreset(base);
+  syncCompareModeUI();
+}
+
+function syncCompareModeUI() {
+  const wrap = document.getElementById("compareMode");
+  const reset = document.getElementById("compareReset");
+  const hint = document.getElementById("compareHint");
+  if (!wrap) return;
+  if (state.layersDirty) {
+    wrap.querySelectorAll(".chip[data-compare]").forEach((c) => c.classList.remove("is-on"));
+    if (reset) reset.hidden = false;
+    if (hint) hint.textContent = "Lapisan disesuaikan manual — Reset untuk kembali ke preset.";
+  } else {
+    if (reset) reset.hidden = true;
+    wrap.querySelectorAll(".chip[data-compare]").forEach((c) => {
+      c.classList.toggle("is-on", c.dataset.compare === state.compare);
+    });
+    const preset = COMPARE_PRESETS[state.compare];
+    if (hint && preset) hint.textContent = preset.hint;
+  }
+}
+
+function syncBlendVisibility() {
+  const section = document.getElementById("blendSection");
+  if (!section) return;
+  section.hidden = state.compare !== "all";
+}
+
+function syncRailDetailsForViewport() {
+  const d = document.getElementById("railSecondary");
+  if (!d) return;
+  d.open = !window.matchMedia("(max-width: 980px)").matches;
+}
+
+function syncFilterHint() {
+  const hint = document.getElementById("filterHint");
+  if (!hint) return;
+  if (state.compare === "all") {
+    hint.textContent = `Filter memakai skor yang sedang diurutkan (${blendMetricLabel()}).`;
+  } else if (state.compare === "register") {
+    hint.textContent = "Filter memakai risiko register yang sedang diurutkan.";
+  } else if (state.compare === "agrinas") {
+    hint.textContent = "Filter memakai prioritas objek Agrinas pada daftar.";
+  } else {
+    hint.textContent = "Filter terbatas pada mode ranking Polres / register.";
+  }
+}
+
+function rankTitleText() {
+  const mode = COMPARE_PRESETS[state.compare]?.rank || "polres";
+  if (mode === "atlas") return "Cocokan Atlas";
+  if (mode === "agrinas") return "Objek Agrinas";
+  if (mode === "register") return "Ranking · risiko register";
+  const w = Number(state.blendOsint);
+  if (w <= 0) return "Ranking Polres · 100% Register";
+  if (w >= 1) return "Ranking Polres · 100% OSINT";
+  return `Ranking Polres · blend ${Math.round(w * 100)}/${Math.round((1 - w) * 100)}`;
 }
 
 function renderPolres() {
@@ -447,7 +543,7 @@ function renderRankPanel() {
   const mode = COMPARE_PRESETS[state.compare]?.rank || "polres";
 
   if (mode === "atlas") {
-    if (title) title.textContent = "Cocokan Atlas";
+    if (title) title.textContent = rankTitleText();
     const rows = (DATA.konsesi?.atlas_match?.records || [])
       .filter((r) => String(r.status || "").toLowerCase().includes("cocok"))
       .slice(0, 16);
@@ -455,7 +551,7 @@ function renderRankPanel() {
       .map((r, i) => {
         const link = atlasDeepLink(r.atlas_nama || r.nama_lokal);
         return `<li>
-          <button type="button" data-atlas="${escapeAttr(r.atlas_nama || "")}" data-lokal="${escapeAttr(r.nama_lokal || "")}">
+          <button type="button" data-atlas="${escapeAttr(r.atlas_nama || "")}" data-lokal="${escapeAttr(r.nama_lokal || "")}" title="Buka detail match Atlas" aria-label="Buka detail ${escapeAttr(r.atlas_nama || "match Atlas")}">
             <span class="n pantau">${i + 1}</span>
             <span>
               <strong>${escapeHtml(r.atlas_nama || "–")}</strong><br/>
@@ -473,7 +569,7 @@ function renderRankPanel() {
   }
 
   if (mode === "agrinas") {
-    if (title) title.textContent = "Objek Agrinas";
+    if (title) title.textContent = rankTitleText();
     const rows = [...DATA.objek.records]
       .filter((o) => {
         const p = String(o.prioritas || "").toUpperCase();
@@ -488,7 +584,7 @@ function renderRankPanel() {
     ol.innerHTML = rows
       .map(
         (o, i) => `<li>
-        <button type="button" data-objek="${escapeAttr(o.id || o.nama || "")}">
+        <button type="button" data-objek="${escapeAttr(o.id || o.nama || "")}" title="Buka detail objek" aria-label="Buka detail objek ${escapeAttr(o.nama || o.id || "")}">
           <span class="n ${escapeAttr(o.prioritas || "pantau")}">${i + 1}</span>
           <span>
             <strong>${escapeHtml(truncate(o.nama || o.id, 42))}</strong><br/>
@@ -508,7 +604,7 @@ function renderRankPanel() {
     return;
   }
 
-  if (title) title.textContent = mode === "register" ? "Ranking register" : "Ranking Polres";
+  if (title) title.textContent = rankTitleText();
   let rows = [...DATA.polres.records];
   if (mode === "register") {
     rows.sort(
@@ -528,12 +624,13 @@ function renderRankPanel() {
       const primary = Number(mode === "register" ? p.skor_register || p.skor : blendedPolresSkor(p)) || 0;
       const kat = kategoriFromSkor(primary);
       const rankN = idx + 1;
+      const shortName = p.polres.replace(/^Polres\s+/i, "");
       return `
       <li>
-        <button type="button" data-polres="${escapeAttr(p.polres)}">
+        <button type="button" data-polres="${escapeAttr(p.polres)}" title="Buka detail Polres ${escapeAttr(shortName)}" aria-label="Buka detail Polres ${escapeAttr(shortName)}">
           <span class="n ${escapeAttr(kat)}">${rankN}</span>
           <span>
-            <strong>${escapeHtml(p.polres.replace(/^Polres\s+/i, ""))}</strong><br/>
+            <strong>${escapeHtml(shortName)}</strong><br/>
             <small>OSINT ${fmtNum(p.skor_osint)} · Reg ${fmtNum(p.skor_register)}</small>
           </span>
           <span class="score" title="${mode === "register" ? "Risiko register" : blendMetricLabel()}">${primary.toFixed(0)}</span>
@@ -1219,6 +1316,7 @@ function setupBlendWeight() {
     });
     const hint = document.getElementById("blendHint");
     if (hint) hint.textContent = blendMetricLabel() + " — ranking & choropleth Gabungan ikut berubah.";
+    syncFilterHint();
     renderStats();
     renderRankPanel();
     refreshChoroplethForMode();
@@ -1232,6 +1330,45 @@ function setupBlendWeight() {
     apply(btn.dataset.blend);
   });
   apply(state.blendOsint);
+  syncBlendVisibility();
+}
+
+async function applyCompareMode(mode) {
+  const key = mode || "all";
+  const preset = COMPARE_PRESETS[key] || COMPARE_PRESETS.all;
+  state.compare = key;
+  state.compareLast = key;
+  state.layersDirty = false;
+  Object.assign(state.layerOn, preset.layers);
+  if (preset.layers.gfw_konsesi) {
+    await ensureGfwLayer();
+  }
+  renderLayers();
+  refreshLayerVisibility();
+  refreshChoroplethForMode();
+  renderRankPanel();
+  syncCompareModeUI();
+  syncBlendVisibility();
+  syncFilterHint();
+}
+
+function setupCompareMode() {
+  const wrap = document.getElementById("compareMode");
+  if (!wrap) return;
+  wrap.addEventListener("click", async (e) => {
+    const btn = e.target.closest(".chip[data-compare]");
+    if (!btn) return;
+    await applyCompareMode(btn.dataset.compare || "all");
+  });
+  const reset = document.getElementById("compareReset");
+  if (reset) {
+    reset.addEventListener("click", async () => {
+      await applyCompareMode(state.compareLast || "all");
+    });
+  }
+  syncCompareModeUI();
+  syncBlendVisibility();
+  syncFilterHint();
 }
 
 function syncTimelineYearModeUI() {
@@ -1254,33 +1391,6 @@ window.setTimelineYearMode = (mode) => {
   state.timelineYearMode = mode === "disebut" ? "disebut" : "kejadian";
   syncTimelineYearModeUI();
 };
-
-async function applyCompareMode(mode) {
-  const preset = COMPARE_PRESETS[mode] || COMPARE_PRESETS.all;
-  state.compare = mode;
-  Object.assign(state.layerOn, preset.layers);
-  const hint = document.getElementById("compareHint");
-  if (hint) hint.textContent = preset.hint;
-  if (preset.layers.gfw_konsesi) {
-    await ensureGfwLayer();
-  }
-  renderLayers();
-  refreshLayerVisibility();
-  refreshChoroplethForMode();
-  renderRankPanel();
-}
-
-function setupCompareMode() {
-  const wrap = document.getElementById("compareMode");
-  if (!wrap) return;
-  wrap.addEventListener("click", async (e) => {
-    const btn = e.target.closest(".chip");
-    if (!btn) return;
-    wrap.querySelectorAll(".chip").forEach((c) => c.classList.remove("is-on"));
-    btn.classList.add("is-on");
-    await applyCompareMode(btn.dataset.compare || "all");
-  });
-}
 
 function normalizeName(s) {
   return String(s || "")

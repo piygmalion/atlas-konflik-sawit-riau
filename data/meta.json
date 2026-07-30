@@ -33,12 +33,12 @@
     },
     {
       "id": "koridor",
-      "label": "Koridor proksi (hull)",
+      "label": "Koridor proksi",
       "default": false
     },
     {
       "id": "densitas_kasus",
-      "label": "Densitas kasus (centroid)",
+      "label": "Densitas kasus",
       "default": false
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "id": "gfw_konsesi",
-      "label": "Konsesi GFW (TopoJSON)",
+      "label": "Konsesi GFW",
       "default": false
     }
   ],
