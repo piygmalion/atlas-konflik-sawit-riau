@@ -552,10 +552,15 @@ body.is-scroll {
   background: var(--pantau);
 }
 .badge.PRIORITAS,
-.badge[data-level="SANGAT TINGGI"] { background: var(--prioritas); }
-.badge.WASPADA,
 .badge.TINGGI,
-.badge[data-level="TINGGI"] { background: var(--waspada); }
+.badge[data-level="SANGAT TINGGI"],
+.badge[data-level="TINGGI"] { background: var(--prioritas); }
+.badge.WASPADA,
+.badge.SEDANG,
+.badge[data-level="SEDANG"] { background: var(--waspada); }
+.badge.PANTAU,
+.badge.RENDAH,
+.badge[data-level="RENDAH"] { background: var(--pantau); }
 
 .case-list, .obj-list {
   display: grid;
@@ -773,6 +778,99 @@ th {
   line-height: 32px !important;
 }
 
+/* Map hover preview — replace default Leaflet tooltip chrome */
+.leaflet-tooltip.map-preview {
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--glass-strong);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  font-family: var(--font);
+  max-width: min(280px, 72vw);
+  white-space: normal;
+  line-height: 1.35;
+}
+.leaflet-tooltip.map-preview::before {
+  border-top-color: var(--glass-strong);
+}
+.leaflet-tooltip-top.map-preview::before {
+  border-top-color: var(--glass-strong);
+}
+.map-preview__card {
+  padding: 0.65rem 0.75rem 0.55rem;
+  display: grid;
+  gap: 0.4rem;
+}
+.map-preview__eyebrow {
+  margin: 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+.map-preview__title {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.15;
+  color: var(--brand);
+}
+.map-preview__score {
+  display: grid;
+  gap: 0.15rem;
+}
+.map-preview__score-main {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+.map-preview__score-num {
+  font-family: var(--display);
+  font-size: 1.55rem;
+  font-weight: 650;
+  line-height: 1;
+  color: var(--ink);
+}
+.map-preview__metric {
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+}
+.map-preview__meta {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+.map-preview__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 0.35rem;
+  margin-top: 0.1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+}
+.map-preview__link {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.map-preview__link:hover {
+  color: var(--brand);
+}
+
 @keyframes rise {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
@@ -805,6 +903,11 @@ th {
     bottom: calc(38vh + 1.1rem);
   }
   .map-note { display: none; }
+  .leaflet-tooltip.map-preview {
+    max-width: min(240px, 78vw);
+  }
+  .map-preview__title { font-size: 0.95rem; }
+  .map-preview__score-num { font-size: 1.35rem; }
 }
 
 @media (max-width: 640px) {

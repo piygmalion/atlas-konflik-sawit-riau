@@ -201,13 +201,81 @@ window.blendedPolresSkor = blendedPolresSkor;
 window.getBlendOsint = () => state.blendOsint;
 
 /** Cache-bust for GitHub Pages / local static server so meta+layers refresh with UI. */
-const DATA_VER = "f3a";
+const DATA_VER = "f3b";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${DATA_VER}`;
   const res = await fetch(url, { cache: "no-cache" });
   if (!res.ok) throw new Error(`Gagal memuat ${path}`);
   return res.json();
+}
+
+/** Kartu preview hover peta — satu template untuk semua lapisan. */
+function mapPreviewHtml({
+  eyebrow = "",
+  title = "",
+  skor = null,
+  level = "",
+  metricLabel = "",
+  metaLines = [],
+  polres = "",
+  cta = "Klik untuk detail",
+} = {}) {
+  const hasSkor = skor != null && skor !== "" && !Number.isNaN(Number(skor));
+  const scoreBlock = hasSkor
+    ? `<div class="map-preview__score">
+        <div class="map-preview__score-main">
+          <span class="map-preview__score-num">${escapeHtml(fmtNum(skor))}</span>
+          ${level ? `<span class="badge ${escapeAttr(level)}">${escapeHtml(level)}</span>` : ""}
+        </div>
+        ${metricLabel ? `<div class="map-preview__metric">${escapeHtml(metricLabel)}</div>` : ""}
+      </div>`
+    : level
+      ? `<div class="map-preview__score"><span class="badge ${escapeAttr(level)}">${escapeHtml(level)}</span></div>`
+      : "";
+  const metas = (metaLines || [])
+    .filter(Boolean)
+    .map((line) => `<div class="map-preview__meta">${escapeHtml(line)}</div>`)
+    .join("");
+  const polresBtn = polres
+    ? `<button type="button" class="map-preview__link" data-action="polres" data-polres="${escapeAttr(polres)}">Buka Polres</button>`
+    : "";
+  return `<div class="map-preview__card">
+    ${eyebrow ? `<p class="map-preview__eyebrow">${escapeHtml(eyebrow)}</p>` : ""}
+    <p class="map-preview__title">${escapeHtml(title)}</p>
+    ${scoreBlock}
+    ${metas}
+    <div class="map-preview__footer"><span>${escapeHtml(cta)}</span>${polresBtn}</div>
+  </div>`;
+}
+
+function bindMapPreview(layer, html) {
+  if (layer.getTooltip && layer.getTooltip()) layer.unbindTooltip();
+  layer.bindTooltip(html, {
+    className: "map-preview",
+    direction: "top",
+    opacity: 1,
+    sticky: true,
+    interactive: true,
+  });
+}
+
+function setupMapPreviewActions() {
+  if (setupMapPreviewActions._ready) return;
+  setupMapPreviewActions._ready = true;
+  document.addEventListener(
+    "click",
+    (e) => {
+      const btn = e.target.closest?.("[data-action='polres']");
+      if (!btn || !btn.closest(".leaflet-tooltip.map-preview, .map-preview__card")) return;
+      e.preventDefault();
+      e.stopPropagation();
+      if (typeof L !== "undefined") L.DomEvent.stop(e);
+      const nama = btn.dataset.polres;
+      if (nama) showPolres(nama);
+    },
+    true
+  );
 }
 
 async function boot() {
@@ -261,6 +329,7 @@ async function boot() {
   setupFilters();
   setupCompareMode();
   setupBlendWeight();
+  setupMapPreviewActions();
   setupDataTables();
   setupAnalyticsControls?.();
   setupPenertibanControls?.();
@@ -474,8 +543,19 @@ function initMap() {
       state.choroplethLayers.push({ layer, nama: p.nama });
       const bindChoroTooltip = () => {
         const m = resolveChoroplethMetric(p.nama);
-        layer.bindTooltip(
-          `<strong>${escapeHtml(p.nama || "")}</strong><br/>${escapeHtml(m.label)} ${fmtNum(m.skor)} · ${escapeHtml(m.kategori || choroplethBandLabel(m.skor))}`
+        const level = m.kategori || kategoriFromSkor(m.skor);
+        const polresNama = m.polres?.polres || m.kab?.polres_proksi || "";
+        bindMapPreview(
+          layer,
+          mapPreviewHtml({
+            eyebrow: "Kab/kota",
+            title: p.nama || "",
+            skor: m.skor,
+            level,
+            metricLabel: m.label,
+            metaLines: [polresNama ? String(polresNama) : ""].filter(Boolean),
+            polres: polresNama,
+          })
         );
       };
       bindChoroTooltip();
@@ -517,7 +597,20 @@ function initMap() {
         },
       });
       poly.on("click", () => showKoridor(p));
-      poly.bindTooltip(`${p.nama || "Koridor"} (bbox proksi)`);
+      const geomLabel = String(p.geom_source || "hull").replace(/_/g, " ");
+      bindMapPreview(
+        poly,
+        mapPreviewHtml({
+          eyebrow: "Koridor proksi",
+          title: p.nama || "Koridor",
+          level: p.prioritas || "",
+          metaLines: [
+            `${geomLabel} · ${fmtNum(p.n_titik)} titik`,
+            p.polres_proksi || "",
+          ],
+          polres: p.polres_proksi || "",
+        })
+      );
       state.layerGroups.koridor.addLayer(poly);
       return;
     }
@@ -547,8 +640,23 @@ function initMap() {
         fillColor: "rgba(196,86,32,0.28)",
         fillOpacity: 0.7,
       });
-      marker.bindTooltip(
-        `<strong>${escapeHtml(p.nama || "")}</strong><br/>${n} kasus (proksi centroid)<br/>${escapeHtml(METRIC_LABELS.kab_komposit)} ${fmtNum(skorKab)} · ${escapeHtml(level)}`
+      const kab = findKabByName(p.nama);
+      const polresRec = findPolresForKab(kab);
+      const polresNama = polresRec?.polres || kab?.polres_proksi || p.polres_proksi || "";
+      bindMapPreview(
+        marker,
+        mapPreviewHtml({
+          eyebrow: "Densitas kasus",
+          title: p.nama || "",
+          skor: skorKab,
+          level,
+          metricLabel: "Skor densitas (skor kab)",
+          metaLines: [
+            `${n} kasus · proksi centroid`,
+            polresNama ? polresNama.replace(/^Polres\s+/i, "Polres ") : "",
+          ].filter(Boolean),
+          polres: polresNama,
+        })
       );
       marker.on("click", () => showKabupaten(p.nama));
       state.layerGroups.densitas_kasus.addLayer(marker);
@@ -563,8 +671,15 @@ function initMap() {
       fillColor: colorFor(level),
       fillOpacity: 0.92,
     });
-    marker.bindTooltip(
-      `<strong>${escapeHtml(p.nama || p.id || "")}</strong><br/><span>${escapeHtml(p.tipe || "Objek")}</span>`
+    bindMapPreview(
+      marker,
+      mapPreviewHtml({
+        eyebrow: "Objek Agrinas",
+        title: p.nama || p.id || "Objek",
+        level,
+        metaLines: [p.tipe || "Titik proksi", p.polres_proksi || p.kab_kota || ""].filter(Boolean),
+        polres: p.polres_proksi || "",
+      })
     );
     marker.on("click", () => showTitik(p));
     (state.layerGroups[layerId] || state.layerGroups.objek_titik).addLayer(marker);
@@ -649,8 +764,14 @@ async function ensureGfwLayer() {
       },
       onEachFeature: (f, layer) => {
         const p = f.properties || {};
-        layer.bindTooltip(
-          `<strong>${escapeHtml(p.name || p.company || "Konsesi")}</strong><br/>${fmtNum(p.area_ha)} ha`
+        bindMapPreview(
+          layer,
+          mapPreviewHtml({
+            eyebrow: "Konsesi GFW",
+            title: p.name || p.company || "Konsesi",
+            metaLines: [`${fmtNum(p.area_ha)} ha`, p.group || p.type || ""].filter(Boolean),
+            cta: "Klik untuk detail",
+          })
         );
         layer.on("click", () => showGfw(p));
         state.layerGroups.gfw_konsesi.addLayer(layer);
@@ -715,7 +836,9 @@ function showKabupaten(nama) {
 }
 
 function showPolres(nama) {
-  const p = DATA.polres.records.find((x) => x.polres === nama);
+  const p =
+    DATA.polres.records.find((x) => x.polres === nama) ||
+    DATA.polres.records.find((x) => matchWilayah(x.polres, nama));
   if (!p) return;
   const kab = DATA.kab.records.find((k) => matchWilayah(k.polres_proksi, p.polres));
   if (kab?.lat && kab?.lon) state.map.flyTo([kab.lat, kab.lon], 9, { duration: 0.75 });
