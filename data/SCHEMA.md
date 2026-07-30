@@ -5,12 +5,40 @@ Grain, primary keys, and required vs optional fields after DQ remediation (Juli 
 ## Pipeline
 
 ```
-root CSV/XLSX  →  apply_dq_fixes.py (opsional)  →  export_web_data.py  →  validate_web_data.py  →  website/data/
-                                                                                                      ↓
-                                                                              backend/sync_serving.py → Supabase serving_datasets
+bronze (workspace CSV/XLSX)
+    → apply_dq_fixes.py (opsional)
+    → export_web_data.py  (+ enrich Fase 1–2)
+    → build_entity_matches.py  (Matching & Overlay Engine)
+    → validate_web_data.py
+    → website/data/  (gold blobs)
+    → backend/sync_serving.py → Supabase serving_datasets
+    → (Fase 2+) silver tables  →  (Fase 3) materialize_serving.py → gold
+    → sync_silver.py --warehouse --integration  (dim/fact/bridge/mart)
 ```
 
 Update berkala: lihat `backend/README.md`. Frontend (`js/data-source.js`) bisa baca Supabase atau fallback ke file lokal.
+
+## Source of truth (SoT) vs bronze twin
+
+Export **hanya** memakai kanon di kolom SoT. File twin XLSX = bronze-only (jangan dual-write).
+
+| Konsep | SoT (dipakai export) | Twin / bronze-only |
+|---|---|---|
+| Objek Agrinas | `master_list_objek_agrinas_satgas_riau.csv` | `Master_List_Objek_Agrinas_Satgas_Riau.xlsx` |
+| Ranking Polres | `ranking_potensi_konflik_per_polres.csv` | `Ranking_Potensi_Konflik_Per_Polres.xlsx` |
+| Kepmenhut 36/2025 | `tabulasi_konsesi_sawit_kepmenhut_36_2025_riau_rapi.csv` | XLSX kepmenhut; CSV `…parsial.csv` |
+| Alias perusahaan | `dim_perusahaan_alias.csv` | dibangun ulang oleh DQ dari BPS/GFW/Atlas |
+| Perusahaan gabungan | `daftar_perusahaan_sawit_riau_gabungan.csv` | `Daftar_…xlsx`, `Normalisasi_…xlsx` |
+| Kasus | `master_kasus_sawit_riau.csv` (+ sheet TABEL bila perlu) | `Inventarisasi_…xlsx` (internal) |
+
+### Orphan (bukan defect sync)
+
+Masuk roadmap enrichment; **bukan** kegagalan backend:
+
+- **P0:** alias (sudah SoT), Atlas full CSV, verifikasi/perkiraan sebaran
+- **P1:** kunci desa, rekap izin 2017, Master List Fase2
+- **P2:** baseline rantai Satgas, agregat grup Atlas
+- **SKIP publik:** Template/Rencana perbaikan, inventaris operasional internal
 
 ## Entities
 
@@ -67,7 +95,74 @@ Entri noise (uraian placeholder nihil) **tidak** masuk serving.
 | **Grain** | 1 nama perusahaan kanonik |
 | **PK** | `nama` (unik) |
 | **Wajib** | `no`, `nama`, `sumber` |
-| **Opsional** | `catatan`, `nama_kanonik`, `ada_di_gfw`, `ada_di_atlas` |
+| **Opsional** | `catatan`, `nama_kanonik`, `ada_di_gfw`, `ada_di_atlas`, `ada_izin_2017` |
+
+### perusahaan_alias (`perusahaan_alias.json`)
+
+| | |
+|---|---|
+| **Grain** | 1 baris alias mentah → kanonik |
+| **PK** | `nama_mentah` (unik, case-insensitive) |
+| **Wajib** | `nama_mentah`, `nama_kanonik` |
+| **Opsional** | `sumber`, `confidence` |
+
+Sumber bronze: `dim_perusahaan_alias.csv`.
+
+### kab_kota (`kab_kota.json`) — field verifikasi (Fase 1C)
+
+| Opsional additive | |
+|---|---|
+| `verifikasi_status` | status dari workbook verifikasi sebaran |
+| `kepercayaan_sebaran` | skor/label kepercayaan |
+| `rank_gfw` | peringkat area GFW di kab |
+| `rank_sebaran` | peringkat sebaran peta |
+
+### konsesi atlas_match (`konsesi.json::atlas_match`)
+
+| | |
+|---|---|
+| **Grain** | 1 baris = pasangan match `(atlas, gfw)` |
+| **PK** | `match_id` |
+| **Wajib** | `match_id`, `atlas_nama` |
+| **Opsional** | `gfwid`, `match_confidence`, flags BPS/konflik |
+
+### konsesi atlas_full (`konsesi.json::atlas_full`)
+
+| | |
+|---|---|
+| **Grain** | 1 baris konsesi Nusantara Atlas (registry penuh) |
+| **PK** | `atlas_id` (stabil: `no` atau slug nama+kab) |
+| **Wajib** | `atlas_id`, `nama_perusahaan` |
+| **Opsional** | `grup`, `kabupaten`, `luas_ha`, `luas_gambut_ha`, `hutan_tersisa_ha`, `tipe_konsesi` |
+
+**Jangan** menimpa `atlas_match` — grain berbeda (match pair vs registry).
+
+### desa_lock (`desa_lock.json`)
+
+| | |
+|---|---|
+| **Grain** | 1 kunci desa / titik verifikasi |
+| **PK** | `id` |
+| **Wajib** | `id`, `kabupaten` |
+| **Opsional** | `kecamatan`, `desa`, `lon`, `lat`, `kepercayaan`, metadata Sentinel |
+
+### izin_2017 (`izin_2017.json`)
+
+| | |
+|---|---|
+| **Grain** | 1 baris izin historis (perusahaan × kab, vintage 2017) |
+| **PK** | `record_id` |
+| **Wajib** | `record_id`, `kab_id` atau `kab_kota`, `nama_mentah` |
+| **Opsional** | `nama_kanonik`, atribut kolom sheet asal |
+
+Disclaimer: data vintage 2017 — bukan status izin terkini.
+
+### objek_agrinas — field Fase2 (additive)
+
+| Opsional | |
+|---|---|
+| `fase2_gap` | flag/catatan gap matching Fase 2 |
+| `mitra_eval` | evaluasi mitra KSO bila ada |
 
 Alias mentah → kanonik: `dim_perusahaan_alias.csv`.
 
@@ -79,15 +174,6 @@ Alias mentah → kanonik: `dim_perusahaan_alias.csv`.
 | **PK** | `gfwid` |
 | **Wajib** | `gfwid`, `company` atau `name` |
 | **Sumber-null (bukan gagal DQ)** | `hgu`, `area_hgu_ha`, `legal`, `type` |
-
-### konsesi atlas_match (`konsesi.json::atlas_match`)
-
-| | |
-|---|---|
-| **Grain** | 1 baris = pasangan match `(atlas, gfw)` |
-| **PK** | `match_id` |
-| **Wajib** | `match_id`, `atlas_nama` |
-| **Opsional** | `gfwid`, `match_confidence`, flags BPS/konflik |
 
 ### penertiban SK36 (`penertiban.json::sk36_2025_110a`)
 
@@ -102,10 +188,68 @@ Sumber kepmenhut tabular: **`tabulasi_konsesi_sawit_kepmenhut_36_2025_riau_rapi.
 
 ### layers (`layers.geojson`)
 
-Heterogen per `properties.layer`. Lihat `schema_by_layer` di file. Field koridor (`anggota_kab`, …) **tidak** wajib pada `objek_titik`.
+Heterogen per `properties.layer`. Lihat `schema_by_layer` di file. Field koridor (`anggota_kab`, …) **tidak** wajib pada `objek_titik`. Hanya hotspot georef terverifikasi yang di-inject (bukan REF/centroid placeholder). Layer `hotspot_verifikasi` = titik dari workbook verifikasi sebaran dengan status Terkonfirmasi/Terverifikasi.
 
 ## Sumber-null (dilarang dihitung sebagai gagal DQ)
 
 - Atlas: `ispo`, `nomor_izin`, `luas_izin_ha`, `status_izin`
 - GFW: atribut HGU jika sumber tidak menyediakan
 - Objek: `mitra_pair`
+
+## Integrasi (Matching & Overlay Engine)
+
+Kontrak di atas silver warehouse (`004_integration_schema.sql`). Skrip: `scripts/build_entity_matches.py`.
+
+### Aturan matching
+
+1. Normalisasi nama via `company_normalize.py` (strip PT/CV + alias).
+2. Candidate match: alias + exact norm; wajib cek kab/provinsi / bbox Riau.
+3. **Nama cocok + wilayah beda ⇒ `conflict`/`rejected`, bukan `confirmed`.**
+4. `status=confirmed` hanya jika `geo_ok` bukan `false` (validate hard-fail jika dilanggar).
+5. `match_type`: `gabungan_gfw` | `gfw_only` | `gabungan_only` | `gfw_bbox` | `not_found` | `atlas_gfw`.
+6. `human_verified` default `false` — data algoritmik bukan instrumen penindakan tunggal.
+7. Sumber-null (HGU, ISPO, dll.) tetap tidak dihitung gagal DQ.
+
+### meta_sumber (`silver/meta_sumber.json`)
+
+| | |
+|---|---|
+| **Grain** | 1 baris / sumber blueprint (11) |
+| **PK** | `sumber_id` |
+| **Wajib** | `sumber_id`, `nama`, `akses` (`terbuka`\|`tertutup`), `tipe_data` (`tabular`\|`spasial`), `status` |
+| **Opsional** | `path_sot`, `kredibilitas`, `grain`, `refresh_cadence` |
+
+### bridge_entity_match (`silver/bridge_entity_match.json`)
+
+| | |
+|---|---|
+| **Grain** | 1 pasangan `(left_source, left_id) ↔ (right_source, right_id)` |
+| **PK** | `match_id` |
+| **Wajib** | `match_id`, `left_source`, `left_id`, `right_source`, `right_id`, `status` |
+| **Opsional** | `nama_score`, `geo_ok`, `match_type`, `evidence`, `human_verified` |
+
+### fact_gfw_konsesi / fact_penertiban_sk36
+
+| | fact_gfw | fact_sk36 |
+|---|---|---|
+| **PK** | `gfwid` | `record_id` |
+| **Wajib** | `gfwid` | `record_id`, `nama` |
+| **Geo** | `lon`/`lat`/`in_riau_bbox` | — |
+
+### dossier (`dossier.json` / `mart_dossier_kasus`)
+
+| | |
+|---|---|
+| **Grain** | 1 baris / konsesi Atlas (protokol OSINT langkah 7) |
+| **PK** | `dossier_id` (`DOS-{atlas_id}`) |
+| **Wajib** | `dossier_id`, `nama` |
+| **Kolom ringkas** | `kab`, `luas_loss_ha`, `gambut_ha`, `legal_status`, `konflik`, `tautan_atlas`, `gfwid`, `status_match`, `risiko` |
+
+### perusahaan — field integrasi (additive)
+
+| Opsional | |
+|---|---|
+| `perusahaan_id` | slug stabil `PER-{norm}` |
+| `nama_normalized` | bentuk tampilan tanpa token legal |
+| `provinsi_hint` | default `RIAU` |
+| `kab_list` | daftar kab terkait (array) |

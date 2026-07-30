@@ -11,7 +11,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-HALIM-ab41c888",
+      "nama_normalized": "HALIM",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "2",
@@ -23,7 +28,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-SAHABATJAYA-f004f94a",
+      "nama_normalized": "SAHABAT JAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "3",
@@ -35,7 +45,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-TIGAGARUDASAKTINUSANTARA-35b716ec",
+      "nama_normalized": "TIGA GARUDA SAKTI NUSANTARA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "4",
@@ -47,7 +62,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-KOPERASILMMBPELALAWAN-3c9ed2b0",
+      "nama_normalized": "KOPERASI LMMB PELALAWAN",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "5",
@@ -59,7 +79,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-KOPERASIPUTERAKARYASIAKJAYA-75082b57",
+      "nama_normalized": "KOPERASI PUTERA KARYA SIAK JAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "6",
@@ -71,7 +96,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-KUDELOKMERAHPUTIHPEKANBARU-dc3fa6d1",
+      "nama_normalized": "KUD ELOK MERAH PUTIH PEKANBARU",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "7",
@@ -83,7 +113,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-ADEIPLANTATIONINDUSTRY-5183dcf9",
+      "nama_normalized": "ADEI PLANTATION & INDUSTRY",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "8",
@@ -95,7 +130,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ADIMULIAAGROLESTARI-f3e7de5d",
+      "nama_normalized": "ADIMULIA AGROLESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "9",
@@ -107,7 +147,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ADITYAPALMANUSANTARA-abcdfc20",
+      "nama_normalized": "ADITYA PALMA NUSANTARA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "10",
@@ -119,7 +164,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-AGRINASPALMANUSANTARA-46f24c7a",
+      "nama_normalized": "AGRINAS PALMA NUSANTARA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "11",
@@ -131,7 +181,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-AGRITASARIPRIMA-b8b8f9e9",
+      "nama_normalized": "AGRITA SARI PRIMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "12",
@@ -143,7 +198,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-AGROABADI-2bad6792",
+      "nama_normalized": "AGRO ABADI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "13",
@@ -155,7 +215,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-AGROMITRA-74a76023",
+      "nama_normalized": "AGRO MITRA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "14",
@@ -167,7 +232,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-AGROSARIMASINDONESIA-49c110c1",
+      "nama_normalized": "AGRO SARIMAS INDONESIA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "15",
@@ -179,7 +249,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-AIRJERNIHALIANTAN-2619f3e0",
+      "nama_normalized": "AIR JERNIH ALIANTAN",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "16",
@@ -191,7 +266,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-AIRKAMPAR-318ef52e",
+      "nama_normalized": "AIR KAMPAR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "17",
@@ -203,7 +283,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ALAMSARILESTARI-70cc8ef5",
+      "nama_normalized": "ALAM SARI LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "18",
@@ -215,7 +300,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "perlu_verifikasi",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ANDIKA-3f686360",
+      "nama_normalized": "ANDIKA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "19",
@@ -227,7 +317,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-ANUGRAHAGRONUSANTARA-ba8aa708",
+      "nama_normalized": "ANUGRAH AGRO NUSANTARA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "20",
@@ -239,7 +334,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ARINDOTRISEJAHTERA1-198af6a4",
+      "nama_normalized": "ARINDO TRI SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "21",
@@ -251,7 +351,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ARINDOTRISEJAHTERA2-0240f293",
+      "nama_normalized": "ARINDO TRI SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "22",
@@ -263,7 +368,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ARISTAMAKARYAPERSADA-7dc1f551",
+      "nama_normalized": "ARISTAMA KARYA PERSADA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "23",
@@ -275,7 +385,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ARVENASEPAKAT-4613bdc4",
+      "nama_normalized": "ARVENA SEPAKAT",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "24",
@@ -287,7 +402,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ASIASAWITMAKMURJAYA-e1e1378a",
+      "nama_normalized": "ASIA SAWIT MAKMUR JAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "25",
@@ -299,7 +419,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ASTRAAGROLESTARI-848dafe6",
+      "nama_normalized": "ASTRA AGRO LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "26",
@@ -311,7 +436,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-BANYUBENINGUTAMA1-b38df94a",
+      "nama_normalized": "BANYU BENING UTAMA 1",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "27",
@@ -323,7 +453,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-BARITORIAUJAYA-44c18731",
+      "nama_normalized": "BARITO RIAU JAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "28",
@@ -335,7 +470,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-BERKATSAWITSEJAHTERA-71e2bf06",
+      "nama_normalized": "BERKAT SAWIT SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "29",
@@ -347,7 +487,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-BHUMIREKSANUSASEJATI-46cf2e7f",
+      "nama_normalized": "BHUMIREKSA NUSA SEJATI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "30",
@@ -359,7 +504,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-BINAPITRIJAYA-3c5514c0",
+      "nama_normalized": "BINA PITRI JAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "31",
@@ -371,7 +521,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-BINTANGLANGITABADI-dbfe3df8",
+      "nama_normalized": "BINTANG LANGIT ABADI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "32",
@@ -383,7 +538,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-BINTANGRIAUSEJAHTERA-ef697219",
+      "nama_normalized": "BINTANG RIAU SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "33",
@@ -395,7 +555,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-BINTANGSINERGIINDONESIA-96462be7",
+      "nama_normalized": "BINTANG SINERGI INDONESIA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "34",
@@ -407,7 +572,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-BUANAWIRALESTARIMASNAGAMASESTATE-3d97f96c",
+      "nama_normalized": "BUANA WIRALESTARI MAS NAGA MAS ESTATE",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "35",
@@ -419,7 +589,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-BUDITANIKEMBANGJAYA-373df0cc",
+      "nama_normalized": "BUDI TANI KEMBANG JAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "36",
@@ -431,7 +606,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-BUMIMENTARIKARYA-4d44547b",
+      "nama_normalized": "BUMI MENTARI KARYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "37",
@@ -443,7 +623,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-BUMIPALMALESTARIPERSADA-7bcea08b",
+      "nama_normalized": "BUMI PALMA LESTARI PERSADA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "38",
@@ -455,7 +640,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-BUMISAWITPERKASA-783d8058",
+      "nama_normalized": "BUMI SAWIT PERKASA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "39",
@@ -467,7 +657,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-CAHAYAAMALGEMILANG-d7e08c78",
+      "nama_normalized": "CAHAYA AMAL GEMILANG",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "40",
@@ -479,7 +674,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CAKRAALAMSEJATI-05b5885f",
+      "nama_normalized": "CAKRA ALAM SEJATI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "41",
@@ -491,7 +691,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CENTRALLUBUKSAWIT-d41fb791",
+      "nama_normalized": "CENTRAL LUBUK SAWIT",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "42",
@@ -503,7 +708,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CENTRALWARISANINDAHMAKMUR-109419f2",
+      "nama_normalized": "CENTRAL WARISAN INDAH MAKMUR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "43",
@@ -515,7 +725,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CIBALIUNG-8be56a5a",
+      "nama_normalized": "CIBALIUNG",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "44",
@@ -527,7 +742,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CILIANDRAPERKASA-a50d0866",
+      "nama_normalized": "CILIANDRA PERKASA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "45",
@@ -539,7 +759,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "perlu_verifikasi",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-CINTYA-9e3cbc6b",
+      "nama_normalized": "CINTYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "46",
@@ -551,7 +776,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CIPTADAYASEJATILUHUR-e6e12b02",
+      "nama_normalized": "CIPTA DAYA SEJATI LUHUR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "47",
@@ -563,7 +793,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CITRABUMI-29b129e2",
+      "nama_normalized": "CITRA BUMI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "48",
@@ -575,7 +810,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CITRAMUTIARABUMIRIAU-0ef8268a",
+      "nama_normalized": "CITRA MUTIARA BUMI RIAU",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "49",
@@ -587,7 +827,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CITRAPALMAKENCANA-b92eff78",
+      "nama_normalized": "CITRA PALMA KENCANA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "50",
@@ -599,7 +844,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CITRARIAUSARANA-df70e9a1",
+      "nama_normalized": "CITRA MUTIARA BUMI RIAU",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "51",
@@ -611,7 +861,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CITRASARDELAABADI-56cb124b",
+      "nama_normalized": "CITRA SARDELA ABADI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "52",
@@ -623,7 +878,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-DAMIMASSEJAHTERA-8810baaf",
+      "nama_normalized": "DAMI MAS SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "53",
@@ -635,7 +895,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-DARMALIHAYALESTARI-f7155f2e",
+      "nama_normalized": "DARMALI HAYA LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "54",
@@ -647,7 +912,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-DARMALIJAYALESTARI-e2c45bae",
+      "nama_normalized": "DARMALI HAYA LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "55",
@@ -659,7 +929,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-DARMEXAGRO-ddc43854",
+      "nama_normalized": "DARMEX AGRO",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "56",
@@ -671,7 +946,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-DARMEXAGROJAKARTA-114f9d37",
+      "nama_normalized": "DARMEX AGRO JAKARTA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "57",
@@ -683,7 +963,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-DARMEXPLANTATION-0117aad5",
+      "nama_normalized": "DARMEX PLANTATION",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "58",
@@ -695,7 +980,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-DATINAGUNG-e2b3f6b9",
+      "nama_normalized": "DATIN AGUNG",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "59",
@@ -707,7 +997,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-DIGJAYANATA-ee6c71cc",
+      "nama_normalized": "DIGJAYA NATA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "60",
@@ -719,7 +1014,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-DUTAMAS-6dfa2dae",
+      "nama_normalized": "DUTA MAS",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "61",
@@ -731,7 +1031,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-DUTAPALMANUSANTARA-4232fa5c",
+      "nama_normalized": "ADITYA PALMA NUSANTARA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "62",
@@ -743,7 +1048,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-EGASUTINASAKTI-8843ff00",
+      "nama_normalized": "EGA SUTI NASAKTI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "63",
@@ -755,7 +1065,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-EKASARI-ed589d05",
+      "nama_normalized": "EKA SARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "64",
@@ -767,7 +1082,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-EKADAYASEJATISUKSES-420fbcec",
+      "nama_normalized": "EKADAYA SEJATI SUKSES",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "65",
@@ -779,7 +1099,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-EKADURAINDONESIA-b43c3c00",
+      "nama_normalized": "EKADURA INDONESIA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "66",
@@ -791,7 +1116,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-ELUANMAHKOTA-36aeb26f",
+      "nama_normalized": "ELUAN MAHKOTA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "67",
@@ -803,7 +1133,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-FIRSTRESOURCES-a6f8c6d7",
+      "nama_normalized": "FIRST RESOURCES",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "68",
@@ -815,7 +1150,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-FLORAWAHANATIRTA-7d220a46",
+      "nama_normalized": "FLORA WAHANA TIRTA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "69",
@@ -827,7 +1167,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-GANDABUANINDO-f63609bc",
+      "nama_normalized": "GANDA BUANINDO",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "70",
@@ -839,7 +1184,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-GANDAERAHHENDANA-1b60ff05",
+      "nama_normalized": "GANDAERAH HENDANA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "71",
@@ -851,7 +1201,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-GATIPURAMULYA-a28cf189",
+      "nama_normalized": "GATIPURA MULYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "72",
@@ -863,7 +1218,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-GERBANGSAWITINDAH-8aec4c1b",
+      "nama_normalized": "GERBANG SAWIT INDAH",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "73",
@@ -875,7 +1235,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-GNIPLANTATION-daeb5d22",
+      "nama_normalized": "GNI PLANTATION",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "74",
@@ -887,7 +1252,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-GUNADODOS-be621b1e",
+      "nama_normalized": "GUNA DODOS",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "75",
@@ -899,7 +1269,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-GUNAUSAGRIPRATAMA-a8184d25",
+      "nama_normalized": "GUNA USAGRI PRATAMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "76",
@@ -911,7 +1286,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-GUNUNGMASRAYASUNGAIBANGKO-dfaff75a",
+      "nama_normalized": "GUNUNG MAS RAYA SUNGAI BANGKO",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "77",
@@ -923,7 +1303,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-GUNUNGMASRAYASUNGAIRUMBIA1-f6c1f049",
+      "nama_normalized": "GUNUNG MAS RAYA SUNGAI RUMBIA 1",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "78",
@@ -935,7 +1320,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-HUTAHAEAN-dceb0bbf",
+      "nama_normalized": "HUTAHAEAN",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "79",
@@ -947,7 +1337,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-INDRAWANPERKASA-8b46cbe9",
+      "nama_normalized": "INDRAWAN PERKASA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "80",
@@ -959,7 +1354,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-INDRIPLANT-fbaee0ab",
+      "nama_normalized": "INDRI PLANT",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "81",
@@ -971,7 +1371,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-INECDA-7a31c56f",
+      "nama_normalized": "INECDA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "82",
@@ -983,7 +1388,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-INTIINDOSAWITSUBUR-b7463ac7",
+      "nama_normalized": "INTI INDOSAWIT SUBUR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "83",
@@ -995,7 +1405,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-INTIKAMPARINDOSEJAHTERA-ae329bf5",
+      "nama_normalized": "INTI KAMPARINDO SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "84",
@@ -1007,7 +1422,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-IVOMASTUNGGAL-43ded0fc",
+      "nama_normalized": "IVO MAS TUNGGAL",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "85",
@@ -1019,7 +1439,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-JALURPUSAKASAKTIKUMALA-49fedf3c",
+      "nama_normalized": "JALUR PUSAKA SAKTI KUMALA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "86",
@@ -1031,7 +1456,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-JATIMJAYAPERKASA-24815b41",
+      "nama_normalized": "JATIM JAYA PERKASA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "87",
@@ -1043,7 +1473,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-JOSHANSENTOSA-1d5c0cce",
+      "nama_normalized": "JOSHAN SENTOSA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "88",
@@ -1055,7 +1490,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-KARYATAMABAKTIMULIA-a921fe97",
+      "nama_normalized": "KARYA TAMA BAKTI MULIA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "89",
@@ -1067,7 +1507,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-KARYABADISAMASEJATI-78780836",
+      "nama_normalized": "KARYABADI SAMASEJATI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "90",
@@ -1079,7 +1524,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-CERENTISUBURII-4a765160",
+      "nama_normalized": "CERENTI SUBUR II",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "91",
@@ -1091,7 +1541,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PANTAIRAJA-3eddd81a",
+      "nama_normalized": "PANTAI RAJA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "92",
@@ -1103,7 +1558,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-PERCOBAANSEIPUTIH-d96f87e1",
+      "nama_normalized": "PERCOBAAN SEI PUTIH",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "93",
@@ -1115,7 +1575,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-KENCANAAMALTANI1-2ecc39d2",
+      "nama_normalized": "KENCANA AMAL TANI 1",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "94",
@@ -1127,7 +1592,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-KENCANAAMALTANI2-25962b00",
+      "nama_normalized": "KENCANA AMAL TANI 2",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "95",
@@ -1139,7 +1609,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-KENCANAAMALTANISEBERIDAIII-7de76482",
+      "nama_normalized": "KENCANA AMAL TANI SEBERIDA III",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "96",
@@ -1151,7 +1626,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-KERITANGSAWITSEJAHTERA-c1e65e5e",
+      "nama_normalized": "KERITANG SAWIT SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "97",
@@ -1163,7 +1643,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-KHARISMARIAUSENTOSAPRIMA-18c9474d",
+      "nama_normalized": "KHARISMA RIAU SENTOSA PRIMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "98",
@@ -1175,7 +1660,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-KIMIATIRTAUTAMA-6409839f",
+      "nama_normalized": "KIMIA TIRTA UTAMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "99",
@@ -1187,7 +1677,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-KOSTAPALMIRA-34b3f6f6",
+      "nama_normalized": "KOSTA PALMIRA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "100",
@@ -1199,7 +1694,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-KRISNAKERETAKENCANA-3bbb8ad2",
+      "nama_normalized": "KRISNA KERETA KENCANA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "101",
@@ -1211,7 +1711,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-KRISTOAGRO-a1cf65ed",
+      "nama_normalized": "KRISTO AGRO",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "102",
@@ -1223,7 +1728,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-LAHANTANISAKTI-aead0cac",
+      "nama_normalized": "LAHAN TANI SAKTI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "103",
@@ -1235,7 +1745,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-LEKONINDO-4d911dcf",
+      "nama_normalized": "LEKONINDO",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "104",
@@ -1247,7 +1762,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-LINDAIJAYALESTARIPOPAL-15b47560",
+      "nama_normalized": "LINDAI JAYA LESTARI POPAL",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "105",
@@ -1259,7 +1779,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-MARIHAT-f91c94b9",
+      "nama_normalized": "MARIHAT",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "106",
@@ -1271,7 +1796,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-MARITAMAKMURJAYA-0f9c480c",
+      "nama_normalized": "ASIA SAWIT MAKMUR JAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "107",
@@ -1283,7 +1813,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-MEGANUSAINTISAWIT-122296cc",
+      "nama_normalized": "MEGA NUSA INTI SAWIT",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "108",
@@ -1295,7 +1830,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-MEKARSARIALAMLESTARI-a48e7796",
+      "nama_normalized": "ALAM SARI LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "109",
@@ -1307,7 +1847,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-MERIDANSEJATISURYAPLANTATION-d1fa2849",
+      "nama_normalized": "MERIDAN SEJATI SURYA PLANTATION",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "110",
@@ -1319,7 +1864,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-MESKOMAGROSARIMAS-a8fade94",
+      "nama_normalized": "AGRO SARIMAS INDONESIA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "111",
@@ -1331,7 +1881,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-MITRAUNGGULPUSAKA-7325639a",
+      "nama_normalized": "MITRA UNGGUL PUSAKA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "112",
@@ -1343,7 +1898,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-MULTIGUNAABADILESTARI-43796e51",
+      "nama_normalized": "MULTI GUNA ABADI LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "113",
@@ -1355,7 +1915,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-MULTILESTARISEJAHTERA-546e5428",
+      "nama_normalized": "MULTI LESTARI SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "114",
@@ -1367,7 +1932,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-MURINISAMSAM-e4097687",
+      "nama_normalized": "MURINI SAM SAM",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "115",
@@ -1379,7 +1949,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-MURINIWOODINDAHINDUSTRI-07d034ff",
+      "nama_normalized": "MURINIWOOD INDAH INDUSTRI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "116",
@@ -1391,7 +1966,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-MUSIMMAS-35d59dda",
+      "nama_normalized": "MUSIM MAS",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "117",
@@ -1403,7 +1983,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-MUSTIKAAGROSARI-1e07e56b",
+      "nama_normalized": "MUSTIKA AGRO SARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "118",
@@ -1415,7 +2000,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-OSCARINVESTAMA-faa1be04",
+      "nama_normalized": "OSCAR INVESTAMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "119",
@@ -1427,7 +2017,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PADASAENAMUTAMA-92a69467",
+      "nama_normalized": "PADASA ENAM UTAMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "120",
@@ -1439,7 +2034,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PADASAENAMUTAMAKALIANTA2-8248e187",
+      "nama_normalized": "PADASA ENAM UTAMA KALIANTA 2",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "121",
@@ -1451,7 +2051,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-PADASAKALIANTAUTAMA-1e4a5151",
+      "nama_normalized": "PADASA KALIANTA UTAMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "122",
@@ -1463,7 +2068,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-PADASAUTAMAKALIATASATU-0049290e",
+      "nama_normalized": "PADASA UTAMA KALIATA SATU",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "123",
@@ -1475,7 +2085,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PALMLESTARIMAKMUR-ffa251c2",
+      "nama_normalized": "PALM LESTARI MAKMUR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "124",
@@ -1487,7 +2102,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-PALMASATUPALMA2-9532169c",
+      "nama_normalized": "PALMA SATU PALMA 2",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "125",
@@ -1499,7 +2119,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PANCAAGROLESTARI-e766e6e4",
+      "nama_normalized": "PANCA AGRO LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "126",
@@ -1511,7 +2136,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PANCASURYAAGRINDO-b6f7baad",
+      "nama_normalized": "PANCA SURYA AGRINDO",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "127",
@@ -1523,7 +2153,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PANCASURYAGARDEN-89a61c68",
+      "nama_normalized": "PANCA SURYA GARDEN",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "128",
@@ -1535,7 +2170,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PANCURSAWITMAS-909e4605",
+      "nama_normalized": "PANCUR SAWIT MAS",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "129",
@@ -1547,7 +2187,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PARAWIRAADITAMA-ef3b433e",
+      "nama_normalized": "PARAWIRA ADITAMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "130",
@@ -1559,7 +2204,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PARAWIRAPRIMAKONSIER-060a1bec",
+      "nama_normalized": "PARAWIRA PRIMAKONSIER",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "131",
@@ -1571,7 +2221,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PARAWIRAUTAMA-ed985374",
+      "nama_normalized": "PARAWIRA UTAMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "132",
@@ -1583,7 +2238,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-PASIRMASGIRIRAYA-afa7dc16",
+      "nama_normalized": "PASIRMAS GIRIRAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "133",
@@ -1595,7 +2255,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-PELINTUNG-47e851a4",
+      "nama_normalized": "PELINTUNG",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "134",
@@ -1607,7 +2272,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PERDANAINTISAWITPERKASA-82affcb6",
+      "nama_normalized": "PERDANA INTI SAWIT PERKASA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "135",
@@ -1619,7 +2289,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "perlu_verifikasi",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAV-6f75ee7c",
+      "nama_normalized": "NUSANTARA V",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "136",
@@ -1631,7 +2306,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVAIRMOLEKII-ec12631d",
+      "nama_normalized": "NUSANTARA V AIR MOLEK II",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "137",
@@ -1643,7 +2323,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVSEIGARO-69618ad0",
+      "nama_normalized": "NUSANTARA V SEI GARO",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "138",
@@ -1655,7 +2340,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVTANAHNUSANTARAVTANJUNGMEDAN-91d3407f",
+      "nama_normalized": "NUSANTARA V TANAH NUSANTARA V TANJUNG MEDAN",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "139",
@@ -1667,7 +2357,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVLUBUKDALAM-1f39ae29",
+      "nama_normalized": "NUSANTARA V LUBUK DALAM",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "140",
@@ -1679,7 +2374,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVSEIBUATAN-c191aa2f",
+      "nama_normalized": "NUSANTARA V SEI BUATAN",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "141",
@@ -1691,7 +2391,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVSEIINTAN-8718612f",
+      "nama_normalized": "NUSANTARA V",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "142",
@@ -1703,7 +2408,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVSEIKENCANA-fbd8bcb6",
+      "nama_normalized": "NUSANTARA V SEI KENCANA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "143",
@@ -1715,7 +2425,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVSEILINDAI-9cc70efd",
+      "nama_normalized": "NUSANTARA V SEI LINDAI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "144",
@@ -1727,7 +2442,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVSEIROKAN-ebbd63a8",
+      "nama_normalized": "NUSANTARA V SEI ROKAN",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "145",
@@ -1739,7 +2459,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVSEISIASAM-68a53b7b",
+      "nama_normalized": "NUSANTARA V SEI SIASAM",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "146",
@@ -1751,7 +2476,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-NUSANTARAVSEITAPUNG-f53b064b",
+      "nama_normalized": "NUSANTARA V SEI TAPUNG",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "147",
@@ -1763,7 +2493,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PESAWONRAYA-9ebd39a8",
+      "nama_normalized": "PESAWON RAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "148",
@@ -1775,7 +2510,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PINANGMASINTIRAYA-58fd2092",
+      "nama_normalized": "PINANG MAS INTI RAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "149",
@@ -1787,7 +2527,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PRIATAMARIAU-4faafe87",
+      "nama_normalized": "PRIATAMA RIAU",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "150",
@@ -1799,7 +2544,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PRIMAAGROSAWITINDO-fb33434d",
+      "nama_normalized": "PRIMA AGRO SAWITINDO",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "151",
@@ -1811,7 +2561,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-PULAUTILAN-70cba660",
+      "nama_normalized": "PULAU TILAN",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "152",
@@ -1823,7 +2578,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-PUSAKAMEGAHBUMINUSANTARA-2a122ff0",
+      "nama_normalized": "PUSAKA MEGAH BUMI NUSANTARA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "153",
@@ -1835,7 +2595,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-RAMAJAYAPRAMUKTI-4b34e0e1",
+      "nama_normalized": "RAMAJAYA PRAMUKTI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "154",
@@ -1847,7 +2612,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-RIAUAGRI-eb1579d4",
+      "nama_normalized": "RIAU AGRI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "155",
@@ -1859,7 +2629,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-RIAUANUGRAHSENTOSA-e9dc05a2",
+      "nama_normalized": "RIAU ANUGRAH SENTOSA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "156",
@@ -1871,7 +2646,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-RIAUSAKTI-db9243a2",
+      "nama_normalized": "RIAU SAKTI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "157",
@@ -1883,7 +2663,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-RIAUSAWITINDOABADI-2d9edfc0",
+      "nama_normalized": "RIAU SAWITINDO ABADI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "158",
@@ -1895,7 +2680,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-RIDENJAYA-e213f0b1",
+      "nama_normalized": "RIDEN JAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "159",
@@ -1907,7 +2697,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-RIMBASAWITKUSUMA-218c3f6c",
+      "nama_normalized": "RIMBA SAWIT KUSUMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "160",
@@ -1919,7 +2714,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-RIMBUNSAWITSEJAHTERA-ed55e451",
+      "nama_normalized": "RIMBUN SAWIT SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "161",
@@ -1931,7 +2731,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-RISETNUSANTARA-121a0841",
+      "nama_normalized": "RISET NUSANTARA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "162",
@@ -1943,7 +2748,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-RISMANSCHAMPALM-2f4c77c7",
+      "nama_normalized": "RISMAN SCHAM PALM",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "163",
@@ -1955,7 +2765,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-RUASUTAMAJAYA-7c5597ee",
+      "nama_normalized": "RUAS UTAMA JAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "164",
@@ -1967,7 +2782,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SAFARIRIAU-eca645bb",
+      "nama_normalized": "SAFARI RIAU",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "165",
@@ -1979,7 +2799,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-SAILANANTAUBATUAH-f32f1e9b",
+      "nama_normalized": "SAILAN ANTAU BATUAH",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "166",
@@ -1991,7 +2816,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SALIMIVOMASPRATAMA-d394f2db",
+      "nama_normalized": "SALIM IVOMAS PRATAMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "167",
@@ -2003,7 +2833,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-SALIMIVOMASPRATAMABALAM-0b2c2dc1",
+      "nama_normalized": "SALIM IVOMAS PRATAMA BALAM",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "168",
@@ -2015,7 +2850,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SANDRIASUKSESBERSAMA-6a0a7231",
+      "nama_normalized": "SANDRIA SUKSES BERSAMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "169",
@@ -2027,7 +2867,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SARILEMBAHSUBUR-dab1d22a",
+      "nama_normalized": "SARI LEMBAH SUBUR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "170",
@@ -2039,7 +2884,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-SARINDOAGRO-bbb9d855",
+      "nama_normalized": "SARINDO AGRO",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "171",
@@ -2051,7 +2901,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "perlu_verifikasi",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-SATAHI-629684ca",
+      "nama_normalized": "SATAHI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "172",
@@ -2063,7 +2918,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SATRIAWINDUSERAYA-97dd542b",
+      "nama_normalized": "SATRIA WINDU SERAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "173",
@@ -2075,7 +2935,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SAWITASAHANINDAH-eacd48b7",
+      "nama_normalized": "GERBANG SAWIT INDAH",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "174",
@@ -2087,7 +2952,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SAWITBERTUAHLESTARI-19ce8050",
+      "nama_normalized": "SAWIT BERTUAH LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "175",
@@ -2099,7 +2969,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SAWITINTIRAYA-20025f4f",
+      "nama_normalized": "SAWIT INTI RAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "176",
@@ -2111,7 +2986,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SAWITUNGGULPRIMAPLANTATIONS-6e1f1ebc",
+      "nama_normalized": "SAWIT UNGGUL PRIMA PLANTATIONS",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "177",
@@ -2123,7 +3003,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SEBANGAMULTISAWIT-e21c1a5d",
+      "nama_normalized": "SEBANGA MULTI SAWIT",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "178",
@@ -2135,7 +3020,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SEBERIDASUBUR-80d9bf53",
+      "nama_normalized": "SEBERIDA SUBUR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "179",
@@ -2147,7 +3037,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SEKARBUMIALAMLESTARI-6175e92d",
+      "nama_normalized": "ALAM SARI LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "180",
@@ -2159,7 +3054,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SEKOINDAH-77de388c",
+      "nama_normalized": "SEKO INDAH",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "181",
@@ -2171,7 +3071,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-SERIKATPUTRA-f7eccaa1",
+      "nama_normalized": "SERIKAT PUTRA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "182",
@@ -2183,7 +3088,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SETIAAGRINDOLESTARI-f4c58e4b",
+      "nama_normalized": "SETIA AGRINDO LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "183",
@@ -2195,7 +3105,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SETIAAGRINDOMANDIRI-4d2a59d1",
+      "nama_normalized": "SETIA AGRINDO MANDIRI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "184",
@@ -2207,7 +3122,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SEWANGISEJATILUHUR-892d3ce2",
+      "nama_normalized": "CIPTA DAYA SEJATI LUHUR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "185",
@@ -2219,7 +3139,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SIMASSAWITALIANTAN-26e18943",
+      "nama_normalized": "SIMAS SAWIT ALIANTAN",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "186",
@@ -2231,7 +3156,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-SINARBELILASPERKASA-163ba17e",
+      "nama_normalized": "SINAR BELILAS PERKASA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "187",
@@ -2243,7 +3173,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SINARINTISAWIT-0e79cd1f",
+      "nama_normalized": "SINAR INTI SAWIT",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "188",
@@ -2255,7 +3190,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SINARREKSAKENCANA-0a61559a",
+      "nama_normalized": "SINAR REKSA KENCANA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "189",
@@ -2267,7 +3207,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-SINARRIAU-28c02b03",
+      "nama_normalized": "SINAR RIAU",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "190",
@@ -2279,7 +3224,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SINARSIAKDIANPERMAI-0e57d29b",
+      "nama_normalized": "SINAR SIAK DIAN PERMAI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "191",
@@ -2291,7 +3241,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SINARWIDITAPAMARTA-20bc09df",
+      "nama_normalized": "SINAR WIDITA PAMARTA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "192",
@@ -2303,7 +3258,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SINDORASERAYA-3accff21",
+      "nama_normalized": "SINDORA SERAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "193",
@@ -2315,7 +3275,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-SITAPONGANLESTARI-d3eacd85",
+      "nama_normalized": "SITAPONGAN LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "194",
@@ -2327,7 +3292,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-SMART-52075d88",
+      "nama_normalized": "SMART",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "195",
@@ -2339,7 +3309,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-STEELINDOWAHANAPERKASA-586ac4ba",
+      "nama_normalized": "STEELINDO WAHANA PERKASA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "196",
@@ -2351,7 +3326,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SUBURARUMMAKMUR-0e157c8f",
+      "nama_normalized": "SUBUR ARUM MAKMUR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "197",
@@ -2363,7 +3343,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SUGIHINDAHSEJATI-2e5331e7",
+      "nama_normalized": "SUGIH INDAH SEJATI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "198",
@@ -2375,7 +3360,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SUMATERAMAKMURLESTARI-9acc29f9",
+      "nama_normalized": "SUMATERA MAKMUR LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "199",
@@ -2387,7 +3377,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SUMBERALAM-1f54a6bd",
+      "nama_normalized": "SUMBER ALAM",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "200",
@@ -2399,7 +3394,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SUMBERJAYAINDAHNUSACOY-00c6b2b6",
+      "nama_normalized": "SUMBER JAYA INDAH NUSA COY",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "201",
@@ -2411,7 +3411,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SUMBERSAWITKENCANA-a8bc5fae",
+      "nama_normalized": "SUMBER SAWIT KENCANA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "202",
@@ -2423,7 +3428,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SUMBERSAWITSEJAHTERA-d58ec318",
+      "nama_normalized": "SUMBER SAWIT SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "203",
@@ -2435,7 +3445,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SURYAAGROLIKAREKSA-116c5f35",
+      "nama_normalized": "SURYA AGROLIKA REKSA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "204",
@@ -2447,7 +3462,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SURYABRATASENAPLANTATION-574cbade",
+      "nama_normalized": "MERIDAN SEJATI SURYA PLANTATION",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "205",
@@ -2459,7 +3479,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SURYADUMAIAGRINDO-8b8f2fbb",
+      "nama_normalized": "PANCA SURYA AGRINDO",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "206",
@@ -2471,7 +3496,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SURYAINTISARIRAYA-d4b5a2a5",
+      "nama_normalized": "PINANG MAS INTI RAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "207",
@@ -2483,7 +3513,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SURYAPALMASEJAHTERA-38cf20ad",
+      "nama_normalized": "SURYA PALMA SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "208",
@@ -2495,7 +3530,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-SWAKARSASAWITRAYA-da600871",
+      "nama_normalized": "SWAKARSA SAWIT RAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "209",
@@ -2507,7 +3547,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TANISUBURMAKMUR-d17b12ac",
+      "nama_normalized": "TANI SUBUR MAKMUR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "210",
@@ -2519,7 +3564,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TASMAPUJA-26216a5e",
+      "nama_normalized": "TASMA PUJA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "211",
@@ -2531,7 +3581,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TEGUHKARSAWANALESTARI-d51abf06",
+      "nama_normalized": "TEGUHKARSA WANALESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "212",
@@ -2543,7 +3598,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TERANGINTISERAYA-f0c1bdad",
+      "nama_normalized": "TERANG INTI SERAYA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "213",
@@ -2555,7 +3615,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TESOINDAH-53f088e7",
+      "nama_normalized": "TESO INDAH",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "214",
@@ -2567,7 +3632,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-THINDOPLANTATIONS-44c4b0b8",
+      "nama_normalized": "TH INDO PLANTATIONS",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "215",
@@ -2579,7 +3649,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "perlu_verifikasi",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TORGANDA-5cbf6990",
+      "nama_normalized": "TORGANDA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "216",
@@ -2591,7 +3666,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TORGANDABATANGKUMUI-665aeee1",
+      "nama_normalized": "TORGANDA BATANG KUMU I",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "217",
@@ -2603,7 +3683,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TORGANDAKARYAPERDANA-d7344ebd",
+      "nama_normalized": "TORGANDA KARYA PERDANA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "218",
@@ -2615,7 +3700,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TRIBAKTISARIMAS-e49b632d",
+      "nama_normalized": "TRI BAKTI SARIMAS",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "219",
@@ -2627,7 +3717,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-TRIDAYARUBBER-86c89b6c",
+      "nama_normalized": "TRI DAYA RUBBER",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "220",
@@ -2639,7 +3734,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-TRIHASTAPRIMA-bd5308a4",
+      "nama_normalized": "TRI HASTA PRIMA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "221",
@@ -2651,7 +3751,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TRIOMASFDI-0f6b42d2",
+      "nama_normalized": "TRIOMAS FDI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "222",
@@ -2663,7 +3768,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-TULANGKAHINDOPERMAI-64ff4dae",
+      "nama_normalized": "TULANGKAH INDO PERMAI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "223",
@@ -2675,7 +3785,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TUMPUAN-034345e4",
+      "nama_normalized": "TUMPUAN",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "224",
@@ -2687,7 +3802,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TUNGGALMITRAPLANTATIONS-ddc363a4",
+      "nama_normalized": "TUNGGAL MITRA PLANTATIONS",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "225",
@@ -2699,7 +3819,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TUNGGALPERKASAPLANTATIONS-1bc02a9d",
+      "nama_normalized": "TUNGGAL PERKASA PLANTATIONS",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "226",
@@ -2711,7 +3836,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-TUNGGALYUNUSESTATE-2b313908",
+      "nama_normalized": "TUNGGAL YUNUS ESTATE",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "227",
@@ -2723,7 +3853,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-UDAYALOHJINAWI-5c2d219d",
+      "nama_normalized": "UDAYA LOH JINAWI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "228",
@@ -2735,7 +3870,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021"
+      "catatan": "Hanya muncul di data konflik Polda; tidak terdeteksi di ekstraksi BPS 2021",
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-UJUNGNANTINGGI-b6250b40",
+      "nama_normalized": "UJUNG NANTINGGI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "229",
@@ -2747,7 +3887,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-VIKTORINDOALAMLESTARI-5b630184",
+      "nama_normalized": "VIKTORINDO ALAM LESTARI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "230",
@@ -2759,7 +3904,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-WAHANAMANDIRIINDONESIA-7944af83",
+      "nama_normalized": "WAHANA MANDIRI INDONESIA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "231",
@@ -2771,7 +3921,12 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-WANAJINGGATIMUR-d55dda0d",
+      "nama_normalized": "WANA JINGGA TIMUR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "232",
@@ -2783,7 +3938,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-WANASARINUSANTARA-5b4b03a3",
+      "nama_normalized": "WANASARI NUSANTARA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "233",
@@ -2795,7 +3955,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-WASUNDARIINDAH-a4931e1b",
+      "nama_normalized": "WASUNDARI INDAH",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "234",
@@ -2807,7 +3972,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-WILMAR-878785b6",
+      "nama_normalized": "WILMAR",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "235",
@@ -2819,7 +3989,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": true,
+      "perusahaan_id": "PER-WIRAKARYAPRAMITA-055c9949",
+      "nama_normalized": "WIRA KARYA PRAMITA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "236",
@@ -2831,7 +4006,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-YUNIBERSAUDARASEJAHTERA-c745fe82",
+      "nama_normalized": "YUNI BERSAUDARA SEJAHTERA",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     },
     {
       "no": "237",
@@ -2843,7 +4023,12 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": null
+      "catatan": null,
+      "ada_izin_2017": false,
+      "perusahaan_id": "PER-YUTANISUADIRI-2a6b2dd0",
+      "nama_normalized": "YUTANI SUADIRI",
+      "provinsi_hint": "RIAU",
+      "kab_list": []
     }
   ]
 }

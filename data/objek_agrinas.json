@@ -22,7 +22,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda)"
+      "sumber": "FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda)",
+      "fase2_gap": "Kejagung / Antara / Detik — Duta Palma tipikor | Klaster 7 korporasi + holding",
+      "mitra_eval": null
     },
     {
       "id": "OBJ-002",
@@ -45,7 +47,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda)"
+      "sumber": "FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda)",
+      "fase2_gap": "Katadata / Sawit Indonesia — serah 221.868 ha | Tahap I; breakdown Riau 43.824 ha",
+      "mitra_eval": null
     },
     {
       "id": "OBJ-003",
@@ -68,7 +72,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda)"
+      "sumber": "FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda)",
+      "fase2_gap": "Tabloid Tirai — evaluasi 20 mitra KSO Mei 2026 | Daftar mitra Regional-3",
+      "mitra_eval": null
     },
     {
       "id": "OBJ-004",
@@ -91,7 +97,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "ANTARA — Dirut Agrinas: Riau ~729 ribu ha; sumber lahan Duta Palma/Torganda/Satgas; FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda); agrinaspalma.co.id"
+      "sumber": "ANTARA — Dirut Agrinas: Riau ~729 ribu ha; sumber lahan Duta Palma/Torganda/Satgas; FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda); agrinaspalma.co.id",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-005",
@@ -114,7 +122,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-006",
@@ -137,7 +147,9 @@
       "mitra_pair": "PT Duta Agrindo Abadi",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-007",
@@ -160,7 +172,9 @@
       "mitra_pair": "PT Bernas Mulia Mandiri",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-008",
@@ -183,7 +197,9 @@
       "mitra_pair": "PT Damai Hijau Abadi",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-009",
@@ -206,7 +222,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-010",
@@ -229,7 +247,9 @@
       "mitra_pair": "PT Duta Agrindo Abadi",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-011",
@@ -252,7 +272,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-012",
@@ -275,7 +297,9 @@
       "mitra_pair": "PT Bernas Mulia Mandiri",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-013",
@@ -298,7 +322,9 @@
       "mitra_pair": "PT Berlian Nusantara Perkasa",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-014",
@@ -321,7 +347,9 @@
       "mitra_pair": "PT Jasa Sepakat Mandiri",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-015",
@@ -344,7 +372,9 @@
       "mitra_pair": "CV Karya Talang Tayas",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-016",
@@ -367,7 +397,9 @@
       "mitra_pair": "PT Berlian Nusantara Perkasa",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-017",
@@ -390,7 +422,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-018",
@@ -413,7 +447,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-019",
@@ -436,7 +472,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "Inventaris konflik Polda / normalisasi workspace"
+      "sumber": "Inventaris konflik Polda / normalisasi workspace",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-020",
@@ -459,7 +497,9 @@
       "mitra_pair": "PT Damai Hijau Abadi",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-021",
@@ -482,7 +522,9 @@
       "mitra_pair": "PT Bintang Riau Sejahtera",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-022",
@@ -505,7 +547,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-023",
@@ -528,7 +572,9 @@
       "mitra_pair": "PT Palma S2",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-024",
@@ -551,7 +597,9 @@
       "mitra_pair": "PT Ekadura Indonesia",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-025",
@@ -574,7 +622,9 @@
       "mitra_pair": "PT Toton / Poktan Sumber Makmur Bersama",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-026",
@@ -597,7 +647,9 @@
       "mitra_pair": "PT Panca Agro Lestari",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-027",
@@ -620,7 +672,9 @@
       "mitra_pair": "PT Tugu Palma Sumatera",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-028",
@@ -643,7 +697,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": "Terkonfirmasi terbuka"
     },
     {
       "id": "OBJ-029",
@@ -666,7 +722,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-030",
@@ -689,7 +747,9 @@
       "mitra_pair": "PT Budi Tani Kembang Jaya",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-031",
@@ -712,7 +772,9 @@
       "mitra_pair": "PT Palm Lestari Makmur",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-032",
@@ -735,7 +797,9 @@
       "mitra_pair": "PT Mitra Unggul Perkasa",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-033",
@@ -758,7 +822,9 @@
       "mitra_pair": "PT Citra Sardela Abadi",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-034",
@@ -781,7 +847,9 @@
       "mitra_pair": "PT Bina Pitri Jaya",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-035",
@@ -804,7 +872,9 @@
       "mitra_pair": "PT Hendri Padang",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-036",
@@ -827,7 +897,9 @@
       "mitra_pair": "PT Tunggal Mitra Plantation; PT Oscar Investama; PT Supra Matra Abadi",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-037",
@@ -850,7 +922,9 @@
       "mitra_pair": "PT Victorindo Alam Lestari",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-038",
@@ -873,7 +947,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-039",
@@ -896,7 +972,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-040",
@@ -919,7 +997,9 @@
       "mitra_pair": "PT Sumber Alam Makmur Sentosa",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-041",
@@ -942,7 +1022,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "IndonesiaLeaks / Independen.id; WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "IndonesiaLeaks / Independen.id; WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-042",
@@ -965,7 +1047,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-043",
@@ -988,7 +1072,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-044",
@@ -1011,7 +1097,9 @@
       "mitra_pair": "PT Lahan Tani Sakti",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-045",
@@ -1034,7 +1122,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-046",
@@ -1057,7 +1147,9 @@
       "mitra_pair": "PT Mekarsari Alam Lestari; PT Seberida Subur",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-047",
@@ -1080,7 +1172,9 @@
       "mitra_pair": "PT Kencana Amal Tani; PT Banyu Bening Utama",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-048",
@@ -1103,7 +1197,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-049",
@@ -1126,7 +1222,9 @@
       "mitra_pair": "PT Agro Sarimas Indonesia",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-050",
@@ -1149,7 +1247,9 @@
       "mitra_pair": "PT Cerenti Subur; PT Wana Jingga Timur",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-051",
@@ -1172,7 +1272,9 @@
       "mitra_pair": "PT Salim Ivomas Pratama",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-052",
@@ -1195,7 +1297,9 @@
       "mitra_pair": "PT Eluan Mahkota; PT Aditya Palma Nusantara",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-053",
@@ -1218,7 +1322,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-054",
@@ -1241,7 +1347,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-055",
@@ -1264,7 +1372,9 @@
       "mitra_pair": "PT Murini Samsam",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-056",
@@ -1287,7 +1397,9 @@
       "mitra_pair": "PT Palma Satu",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-057",
@@ -1310,7 +1422,9 @@
       "mitra_pair": "PT Padasa Enam Utama; PT Simas Sawit Aliantan; PT Telangka Indo Permai",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-058",
@@ -1333,7 +1447,9 @@
       "mitra_pair": "PT Riau Jaya Utama",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-059",
@@ -1356,7 +1472,9 @@
       "mitra_pair": "PT Mega Nusa Inti Sawit; PT Bumi Palma Lestari Persada",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-060",
@@ -1379,7 +1497,9 @@
       "mitra_pair": "Poktan Jaya Mandiri (PT Andalas)",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-061",
@@ -1402,7 +1522,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-062",
@@ -1425,7 +1547,9 @@
       "mitra_pair": "PT Teso Indah",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-063",
@@ -1448,7 +1572,9 @@
       "mitra_pair": "PT Berkat Satu",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-064",
@@ -1471,7 +1597,9 @@
       "mitra_pair": "PT Sinar Inti Sawit",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-065",
@@ -1494,7 +1622,9 @@
       "mitra_pair": "PT Perawang Sukses Perkasa Industri",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-066",
@@ -1517,7 +1647,9 @@
       "mitra_pair": "PT Prima Agro Sawitindo",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-067",
@@ -1540,7 +1672,9 @@
       "mitra_pair": "PT Duta Mas Makmur Perkasa; PT Tani Subur Makmur",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-068",
@@ -1563,7 +1697,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-069",
@@ -1586,7 +1722,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-070",
@@ -1609,7 +1747,9 @@
       "mitra_pair": "PT Pasir Mas Giri Raya",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-071",
@@ -1632,7 +1772,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-072",
@@ -1655,7 +1797,9 @@
       "mitra_pair": "PT Indrawan Perkasa",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-073",
@@ -1678,7 +1822,9 @@
       "mitra_pair": "PT Gunung Mas Raya",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-074",
@@ -1701,7 +1847,9 @@
       "mitra_pair": "PT Tri Bakti Sarimas",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-075",
@@ -1724,7 +1872,9 @@
       "mitra_pair": "PT Tunggal Perkasa Plantation",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-076",
@@ -1747,7 +1897,9 @@
       "mitra_pair": "CV Makmur Jaya Sentosa",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-077",
@@ -1770,7 +1922,9 @@
       "mitra_pair": "Poktan Riau Jaya Makmur",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-078",
@@ -1793,7 +1947,9 @@
       "mitra_pair": "PT Muriniwood Indah Industry",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-079",
@@ -1816,7 +1972,9 @@
       "mitra_pair": "PT Cibaliung Tunggal Plantation",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-080",
@@ -1839,7 +1997,9 @@
       "mitra_pair": "Poktan Kepau Jaya Sukses Lestari",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-081",
@@ -1862,7 +2022,9 @@
       "mitra_pair": "Poktan Kampar Jaya Bersama",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Terkonfirmasi terbuka (amandemen KSO)"
     },
     {
       "id": "OBJ-082",
@@ -1885,7 +2047,9 @@
       "mitra_pair": "PT Citra Mutiara Bumi Riau",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-083",
@@ -1908,7 +2072,9 @@
       "mitra_pair": "PT Nusantara Sawit Majuma",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-084",
@@ -1931,7 +2097,9 @@
       "mitra_pair": "Koperasi Konsumen Surya Melati Berkemajuan",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-085",
@@ -1954,7 +2122,9 @@
       "mitra_pair": "CV Aristama Karya Persada",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-086",
@@ -1977,7 +2147,9 @@
       "mitra_pair": "Koperasi Jasa Sang Saka Indonesia",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-087",
@@ -2000,7 +2172,9 @@
       "mitra_pair": "PT Mandala Agro Nusantara",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-088",
@@ -2023,7 +2197,9 @@
       "mitra_pair": "Poktan Parit Nan Tinggi",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Terkonfirmasi terbuka (kasus Cibaliung)"
     },
     {
       "id": "OBJ-089",
@@ -2046,7 +2222,9 @@
       "mitra_pair": "Koperasi Konsumen Merah Putih UMKM Riau Bermarwah",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-090",
@@ -2069,7 +2247,9 @@
       "mitra_pair": "PT Riden Jaya Konstruksi",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-091",
@@ -2092,7 +2272,9 @@
       "mitra_pair": "CV Ginting Sukses Abadi",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-092",
@@ -2115,7 +2297,9 @@
       "mitra_pair": "PT Ujung Tanjung Sejahtera",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-093",
@@ -2138,7 +2322,9 @@
       "mitra_pair": "Koperasi Mitra Karya Perkasa",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-094",
@@ -2161,7 +2347,9 @@
       "mitra_pair": "PT Tiga Raja Mas",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-095",
@@ -2184,7 +2372,9 @@
       "mitra_pair": "PT Anugrah Jaya Riau Arka Gemilang",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-096",
@@ -2207,7 +2397,9 @@
       "mitra_pair": "PT Mandala Agro Nusantara",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-097",
@@ -2230,7 +2422,9 @@
       "mitra_pair": "Koperasi Jaya Karya Indragiri Maju",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-098",
@@ -2253,7 +2447,9 @@
       "mitra_pair": "PT Infrastruktur Global Investama",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-099",
@@ -2276,7 +2472,9 @@
       "mitra_pair": "Poktan Masyarakat Duri XIII",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-100",
@@ -2299,7 +2497,9 @@
       "mitra_pair": "Koperasi Produsen Juang Makmur Bersama",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-101",
@@ -2322,7 +2522,9 @@
       "mitra_pair": "PT Kartika Jaya Barokah",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-102",
@@ -2345,7 +2547,9 @@
       "mitra_pair": "Koperasi Jasa TKBM Siak Mahasakti Karya",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-103",
@@ -2368,7 +2572,9 @@
       "mitra_pair": "CV Gerbang Air",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": "Kejagung / Antara / Detik — Duta Palma tipikor | Klaster 7 korporasi + holding",
+      "mitra_eval": null
     },
     {
       "id": "OBJ-104",
@@ -2391,7 +2597,9 @@
       "mitra_pair": "PT Sumber Artha Reksa",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-105",
@@ -2414,7 +2622,9 @@
       "mitra_pair": "PT Parumartha Permai",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-106",
@@ -2437,7 +2647,9 @@
       "mitra_pair": "PT Prima Agro Sawindo",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-107",
@@ -2460,7 +2672,9 @@
       "mitra_pair": "PT Lahan Palma Sakti",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-108",
@@ -2483,7 +2697,9 @@
       "mitra_pair": "PT Digjaya Nata Persada",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-109",
@@ -2506,7 +2722,9 @@
       "mitra_pair": "PT Kartika Jaya Barokah",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-110",
@@ -2529,7 +2747,9 @@
       "mitra_pair": "PT Palma Agung Bertuah",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-111",
@@ -2552,7 +2772,9 @@
       "mitra_pair": "Koperasi Tani Elok Basamo Rohul",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-112",
@@ -2575,7 +2797,9 @@
       "mitra_pair": "Koperasi Produsen Juang Makmur Bersama",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-113",
@@ -2598,7 +2822,9 @@
       "mitra_pair": "PT Riden Jaya Konstruksi",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-114",
@@ -2621,7 +2847,9 @@
       "mitra_pair": "PT Kartika Jaya Barokah",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-115",
@@ -2644,7 +2872,9 @@
       "mitra_pair": "PT Nabati Jaya Abadi",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-116",
@@ -2667,7 +2897,9 @@
       "mitra_pair": "CV Giza Gemilang Konstruksi",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-117",
@@ -2690,7 +2922,9 @@
       "mitra_pair": "Poktan Bakti Karya Nyata",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-118",
@@ -2713,7 +2947,9 @@
       "mitra_pair": "CV Palma Amanah Permai",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-119",
@@ -2736,7 +2972,9 @@
       "mitra_pair": "Koperasi Produsen Juang Makmur Bersama",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-120",
@@ -2759,7 +2997,9 @@
       "mitra_pair": "Poktan JD Karya Mandiri",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-121",
@@ -2782,7 +3022,9 @@
       "mitra_pair": "Koperasi Produsen Laskar Melayu Riau Bermarwah",
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-122",
@@ -2805,7 +3047,9 @@
       "mitra_pair": "PT Maringgerang Konstruksi Indonesia",
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)"
+      "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-123",
@@ -2828,7 +3072,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-124",
@@ -2851,7 +3097,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-125",
@@ -2874,7 +3122,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": "Indikasi"
     },
     {
       "id": "OBJ-126",
@@ -2897,7 +3147,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-127",
@@ -2920,7 +3172,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-128",
@@ -2943,7 +3197,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-129",
@@ -2966,7 +3222,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-130",
@@ -2989,7 +3247,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-131",
@@ -3012,7 +3272,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-132",
@@ -3035,7 +3297,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-133",
@@ -3058,7 +3322,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-134",
@@ -3081,7 +3347,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-135",
@@ -3104,7 +3372,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-136",
@@ -3127,7 +3397,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-137",
@@ -3150,7 +3422,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)"
+      "sumber": "Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-138",
@@ -3173,7 +3447,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)"
+      "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)",
+      "fase2_gap": null,
+      "mitra_eval": null
     },
     {
       "id": "OBJ-139",
@@ -3196,7 +3472,9 @@
       "mitra_pair": null,
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
-      "sumber": "Normalisasi perusahaan workspace"
+      "sumber": "Normalisasi perusahaan workspace",
+      "fase2_gap": null,
+      "mitra_eval": null
     }
   ]
 }

@@ -691,10 +691,21 @@ def export_spatial_layers(kab_records: list[dict]):
             }
         )
 
+    try:
+        from enrichment_exports import hotspot_verifikasi_features
+
+        hotspots = hotspot_verifikasi_features(ROOT)
+        features.extend(hotspots)
+    except Exception as exc:
+        print(f"    WARN hotspot_verifikasi: {exc}")
+        hotspots = []
+
     geo = {"type": "FeatureCollection", "features": features}
     write_json("layers.geojson", geo, compact=True)
-    print(f"    layers: objek={sum(1 for f in features if f['properties']['layer']=='objek_titik')} "
-          f"koridor={koridor_n} densitas={densitas_n}")
+    print(
+        f"    layers: objek={sum(1 for f in features if f['properties']['layer']=='objek_titik')} "
+        f"koridor={koridor_n} densitas={densitas_n} hotspot_verif={len(hotspots)}"
+    )
     return geo
 
 
@@ -898,6 +909,14 @@ def export_analytics(polres: list[dict], objek: list[dict], kasus: list[dict]):
     for (st, conf), n in conf_c.items():
         atlas_flow_links.append({"source": st, "target": conf, "value": n})
 
+    atlas_full_block = konsesi.get("atlas_full") or {"records": [], "total": 0}
+    try:
+        from enrichment_exports import atlas_full_analytics
+
+        atlas_full_flow = atlas_full_analytics(atlas_full_block)
+    except Exception:
+        atlas_full_flow = {"links": [], "total": atlas_full_block.get("total", 0)}
+
     kepmen_by_status = {}
     kepmen_records = []
     for r in konsesi.get("kepmenhut_36_2025", {}).get("records", []):
@@ -939,7 +958,11 @@ def export_analytics(polres: list[dict], objek: list[dict], kasus: list[dict]):
     payload = {
         "polres_komponen": polres_komponen,
         "agrinas_flow": {"nodes": nodes, "links": links, "counts": layer_counts},
-        "atlas_flow": {"links": atlas_flow_links, "records": atlas_rows},
+        "atlas_flow": {
+            "links": atlas_flow_links,
+            "records": atlas_rows,
+            "atlas_full": atlas_full_flow,
+        },
         "timeline": {
             "default_mode": "kejadian",
             "years": y_k,
@@ -1271,9 +1294,12 @@ def export_perusahaan():
 
 
 def export_konsesi_atlas():
+    from enrichment_exports import build_atlas_full
+
     gfw = read_csv("tabulasi_konsesi_sawit_gfw_match_bps_riau.csv")
     atlas = read_csv("cocokan_atlas_gabungan_gfw.csv")
     kepmen = read_csv("tabulasi_konsesi_sawit_kepmenhut_36_2025_riau_rapi.csv")
+    atlas_full = build_atlas_full(ROOT)
     write_json(
         "konsesi.json",
         {
@@ -1317,6 +1343,7 @@ def export_konsesi_atlas():
                     for r in atlas
                 ],
             },
+            "atlas_full": atlas_full,
             "kepmenhut_36_2025": {
                 "total": len(kepmen),
                 "records": [
@@ -1334,6 +1361,8 @@ def export_konsesi_atlas():
             },
         },
     )
+    print(f"    konsesi atlas_full={atlas_full.get('total', 0)} (atlas_match tetap {len(atlas)})")
+    return atlas_full
 
 
 def dual_grain_catatan(
@@ -1384,6 +1413,7 @@ def export_meta(counts: dict, catatan: str | None = None):
                 {"id": "koridor", "label": "Koridor proksi", "default": False},
                 {"id": "densitas_kasus", "label": "Densitas kasus", "default": False},
                 {"id": "objek_titik", "label": "Titik objek Agrinas", "default": True},
+                {"id": "hotspot_verifikasi", "label": "Hotspot sebaran terverifikasi", "default": False},
                 {"id": "gfw_konsesi", "label": "Konsesi GFW", "default": False},
             ],
             "views": ["peta", "analisis", "cerita", "data"],
@@ -1399,11 +1429,14 @@ def export_meta(counts: dict, catatan: str | None = None):
                 "kalibrasi": "Menunggu rekap LP/SPKT 36 bulan resmi",
                 "dq_note": (
                     "DQ plan applied: noise kasus dropped; tanpa_lp flag; kab_primary pada objek; "
-                    "match_id cocokan; sk36 record_id; company alias."
+                    "match_id cocokan; sk36 record_id; company alias; atlas_full; izin_2017 vintage."
                 ),
                 "dual_grain": (
                     "objek_agrinas = entity registry; objek_titik = proksi spasial campuran; "
                     "objek_mappable = subset registry yang layak diplot. Jangan bandingkan titik vs registry 1:1."
+                ),
+                "izin_2017": (
+                    "Rekap perizinan perkebunan vintage 2017 — bukan status izin terkini."
                 ),
             },
             "sumber": [
@@ -1416,10 +1449,18 @@ def export_meta(counts: dict, catatan: str | None = None):
                 "Tabulasi_Kepmenhut_36_2025",
                 "Tabulasi_Penertiban_Kawasan_Hutan_Sawit_Riau",
                 "tabulasi_konsesi_sawit_gfw_bbox_riau (287)",
-                "Nusantara Atlas / GFW (cocokan)",
+                "Nusantara Atlas / GFW (cocokan + atlas_full)",
+                "dim_perusahaan_alias",
+                "tabulasi_verifikasi_lanjutan_sebaran_riau",
+                "desa_lock / kunci desa",
+                "REKAPITULASI PERIZINAN PERKEBUNAN 2017",
+                "Master_List_Fase2_Agrinas_Satgas_Riau",
+                "Baseline_Publik_Rantai_Satgas_Agrinas",
             ],
             "update_command": (
-                "python website/scripts/apply_dq_fixes.py && python website/scripts/export_web_data.py"
+                "python website/scripts/apply_dq_fixes.py && "
+                "python website/scripts/export_web_data.py && "
+                "python website/scripts/materialize_serving.py"
             ),
             "catatan": catatan
             or dual_grain_catatan(
@@ -1434,11 +1475,25 @@ def export_meta(counts: dict, catatan: str | None = None):
 
 
 def main():
+    from enrichment_exports import (
+        apply_fase2_objek_flags,
+        export_desa_lock,
+        export_izin_2017,
+        export_perusahaan_alias,
+        export_rantai_agrinas,
+        enrich_kab_verifikasi,
+        patch_izin_flags,
+        write_silver_staging,
+    )
+
     print(f"ROOT = {ROOT}")
     print(f"OUT  = {OUT}")
     kab_records = export_kab_kota()
+    enrich_kab_verifikasi(ROOT, kab_records)
     polres = export_polres()
     objek = export_objek()
+    apply_fase2_objek_flags(ROOT, objek)
+    write_json("objek_agrinas.json", {"total": len(objek), "records": objek})
     kasus = export_kasus()
     patch_polres_coverage(kasus, polres)
     attach_kasus_counts(kab_records, kasus)
@@ -1447,12 +1502,30 @@ def main():
     # rewrite kab after shape_name/n_kasus filled
     write_json("kab_kota.json", {"updated": True, "records": kab_records})
     export_perusahaan()
-    export_konsesi_atlas()
+    alias_payload = export_perusahaan_alias(ROOT, OUT)
+    atlas_full = export_konsesi_atlas()
     export_penertiban()
     gfw_full = export_konsesi_gfw_full()
     geo = export_spatial_layers(kab_records)
     gfw = export_gfw_overlay()
     export_analytics(polres, objek, kasus)
+    desa_payload = export_desa_lock(ROOT, OUT)
+    izin_payload = export_izin_2017(ROOT, OUT)
+    patch_izin_flags(OUT / "perusahaan.json", OUT / "kab_kota.json", izin_payload)
+    # reload kab after izin flags
+    kab_records = json.loads((OUT / "kab_kota.json").read_text(encoding="utf-8")).get("records") or kab_records
+    rantai_payload = export_rantai_agrinas(ROOT, OUT)
+    write_silver_staging(
+        OUT,
+        {
+            "dim_perusahaan_alias": alias_payload,
+            "dim_kab_kota": {"total": len(kab_records), "records": kab_records},
+            "desa_lock": desa_payload,
+            "izin_2017": izin_payload,
+            "atlas_full": atlas_full or {"total": 0, "records": []},
+            "rantai_agrinas": rantai_payload,
+        },
+    )
     lintas = sum(
         1
         for r in kasus
@@ -1461,17 +1534,27 @@ def main():
     )
     n_mappable = count_objek_mappable(objek)
     n_titik = count_objek_titik(geo["features"])
+    n_hotspot = sum(
+        1
+        for f in geo["features"]
+        if (f.get("properties") or {}).get("layer") == "hotspot_verifikasi"
+    )
     counts = {
         "kab_kota": len(kab_records),
         "polres": len(polres),
         "objek_agrinas": len(objek),
         "objek_mappable": n_mappable,
         "objek_titik": n_titik,
+        "hotspot_verifikasi": n_hotspot,
         "kasus_konflik": len(kasus),
         "choropleth": len(adm),
         "fitur_spasial": len(geo["features"]),
         "gfw_konsesi": len(gfw),
         "gfw_bbox_full": gfw_full.get("total", 0),
+        "atlas_full": (atlas_full or {}).get("total", 0),
+        "perusahaan_alias": alias_payload.get("total", 0),
+        "desa_lock": desa_payload.get("total", 0),
+        "izin_2017": izin_payload.get("total", 0),
         "entri_terpetakan": len(kasus) - lintas,
         "entri_tidak_terpetakan": lintas,
     }

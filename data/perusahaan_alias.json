@@ -1,0 +1,5840 @@
+{
+  "total": 691,
+  "records": [
+    {
+      "nama_mentah": "CV HALIM GROUP",
+      "nama_kanonik": "HALIM",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "CV SAHABAT JAYA",
+      "nama_kanonik": "SAHABAT JAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "CV SSAHABAT JAYA",
+      "nama_kanonik": "CV SAHABAT JAYA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "CV TIGA GARUDA SAKTI NUSANTARA",
+      "nama_kanonik": "TIGA GARUDA SAKTI NUSANTARA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "KOPERASI LMMB PELALAWAN",
+      "nama_kanonik": "KOPERASI LMMB PELALAWAN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "KOPERASI PUTERA KARYA SIAK JAYA",
+      "nama_kanonik": "KOPERASI PUTERA KARYA SIAK JAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT KOPERASI PUTERA KARYA SIAK JAYA SINAR SIAK DIAN PERMAI",
+      "nama_kanonik": "KOPERASI PUTERA KARYA SIAK JAYA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "KUD ELOK MERAH PUTIH PEKANBARU",
+      "nama_kanonik": "KUD ELOK MERAH PUTIH PEKANBARU",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ADEI PLANTATION & INDUSTRY",
+      "nama_kanonik": "ADEI PLANTATION & INDUSTRY",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ADEI PLANTATION AND INDUSTRY",
+      "nama_kanonik": "PT ADEI PLANTATION & INDUSTRY",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ADIMULIA AGROLESTARI",
+      "nama_kanonik": "ADIMULIA AGROLESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ADIMULYA AGRO LESTARI.PT AGRO ABADI",
+      "nama_kanonik": "PT ADIMULIA AGROLESTARI",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ADITYA PALMA NUSANTARA",
+      "nama_kanonik": "ADITYA PALMA NUSANTARA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT AGRINAS PALMA NUSANTARA",
+      "nama_kanonik": "AGRINAS PALMA NUSANTARA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT AGRITA SARI PRIMA",
+      "nama_kanonik": "AGRITA SARI PRIMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT AGRO ABADI",
+      "nama_kanonik": "AGRO ABADI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT AGRO MITRA",
+      "nama_kanonik": "AGRO MITRA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT AGRO SARIMAS INDONESIA",
+      "nama_kanonik": "AGRO SARIMAS INDONESIA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT AIR JERNIH ALIANTAN",
+      "nama_kanonik": "AIR JERNIH ALIANTAN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT AIR KAMPAR GROUP",
+      "nama_kanonik": "AIR KAMPAR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ALAM SARI LESTARI",
+      "nama_kanonik": "ALAM SARI LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT ANDIKA",
+      "nama_kanonik": "ANDIKA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ANUGRAH AGRO NUSANTARA",
+      "nama_kanonik": "ANUGRAH AGRO NUSANTARA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ARINDO TRISEJAHTERA 1",
+      "nama_kanonik": "ARINDO TRISEJAHTERA 1",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ARINDO TRISEJAHTERA 2",
+      "nama_kanonik": "ARINDO TRISEJAHTERA 2",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ARISTAMA KARYA PERSADA",
+      "nama_kanonik": "ARISTAMA KARYA PERSADA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT ARVENA SEPAKAT",
+      "nama_kanonik": "ARVENA SEPAKAT",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT ASIA SAWIT MAKMUR JAYA",
+      "nama_kanonik": "ASIA SAWIT MAKMUR JAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT ASTRA AGRO LESTARI",
+      "nama_kanonik": "ASTRA AGRO LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BANYU BENING UTAMA KEBUN 1",
+      "nama_kanonik": "BANYU BENING UTAMA 1",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT BARITO RIAU JAYA",
+      "nama_kanonik": "BARITO RIAU JAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BERKAT SAWIT SEJAHTERA",
+      "nama_kanonik": "BERKAT SAWIT SEJAHTERA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BHUMIREKSA NUSA SEJATI",
+      "nama_kanonik": "BHUMIREKSA NUSA SEJATI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BINA PITRI JAYA",
+      "nama_kanonik": "BINA PITRI JAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BINA FITRI JAYA",
+      "nama_kanonik": "PT BINA PITRI JAYA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BINTANG LANGIT ABADI",
+      "nama_kanonik": "BINTANG LANGIT ABADI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BINTANG RIAU SEJAHTERA",
+      "nama_kanonik": "BINTANG RIAU SEJAHTERA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BINTANG SINERGI INDONESIA",
+      "nama_kanonik": "BINTANG SINERGI INDONESIA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BUANA WIRALESTARI MAS NAGA MAS ESTATE",
+      "nama_kanonik": "BUANA WIRALESTARI MAS NAGA MAS ESTATE",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BUDI TANI KEMBANG JAYA",
+      "nama_kanonik": "BUDI TANI KEMBANG JAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BUMI MENTARI KARYA",
+      "nama_kanonik": "BUMI MENTARI KARYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT BUMI PALMA LESTARI PERSADA",
+      "nama_kanonik": "BUMI PALMA LESTARI PERSADA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT BUMI SAWIT PERKASA",
+      "nama_kanonik": "BUMI SAWIT PERKASA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT CAHAYA AMAL GEMILANG",
+      "nama_kanonik": "CAHAYA AMAL GEMILANG",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT CAKRA ALAM SEJATI",
+      "nama_kanonik": "CAKRA ALAM SEJATI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT CENTRAL LUBUK SAWIT",
+      "nama_kanonik": "CENTRAL LUBUK SAWIT",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT CENTRAL WARISAN INDAH MAKMUR",
+      "nama_kanonik": "CENTRAL WARISAN INDAH MAKMUR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT CENTRAL WARISA INDAH MAKMUR",
+      "nama_kanonik": "PT CENTRAL WARISAN INDAH MAKMUR",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT CIBALIUNG",
+      "nama_kanonik": "CIBALIUNG",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT CILIANDRA PERKASA",
+      "nama_kanonik": "CILIANDRA PERKASA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT CINTYA",
+      "nama_kanonik": "CINTYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT CIPTA DAYA SEJATI LUHUR",
+      "nama_kanonik": "CIPTA DAYA SEJATI LUHUR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SCIPTA DAYA SEJATI LUHUR",
+      "nama_kanonik": "PT CIPTA DAYA SEJATI LUHUR",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT CITRA BUMI",
+      "nama_kanonik": "CITRA BUMI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT CITRA MUTIARA BUMI RIAU",
+      "nama_kanonik": "CITRA MUTIARA BUMI RIAU",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT CITRA PALMA KENCANA",
+      "nama_kanonik": "CITRA PALMA KENCANA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT CITRA RIAU SARANA",
+      "nama_kanonik": "CITRA RIAU SARANA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT CITRA SARDELA ABADI",
+      "nama_kanonik": "CITRA SARDELA ABADI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT DAMI MAS SEJAHTERA",
+      "nama_kanonik": "DAMI MAS SEJAHTERA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT DARMALI HAYA LESTARI",
+      "nama_kanonik": "DARMALI HAYA LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT DARMALI JAYA LESTARI",
+      "nama_kanonik": "DARMALI JAYA LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT DARMEX AGRO",
+      "nama_kanonik": "DARMEX AGRO",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT DARMEX AGRO JAKARTA",
+      "nama_kanonik": "DARMEX AGRO JAKARTA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT DARMEX PLANTATION",
+      "nama_kanonik": "DARMEX PLANTATION",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT DATIN AGUNG",
+      "nama_kanonik": "DATIN AGUNG",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT DIGJAYA NATA",
+      "nama_kanonik": "DIGJAYA NATA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT DUTA MAS",
+      "nama_kanonik": "DUTA MAS",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT DUTA PALMA NUSANTARA",
+      "nama_kanonik": "DUTA PALMA NUSANTARA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT EGA SUTI NASAKTI",
+      "nama_kanonik": "EGA SUTI NASAKTI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT EKA SARI",
+      "nama_kanonik": "EKA SARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT EKADAYA SEJATI SUKSES",
+      "nama_kanonik": "EKADAYA SEJATI SUKSES",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT EKADURA INDONESIA",
+      "nama_kanonik": "EKADURA INDONESIA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SEKA DURA INDONESIA",
+      "nama_kanonik": "PT EKADURA INDONESIA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT ELUAN MAHKOTA",
+      "nama_kanonik": "ELUAN MAHKOTA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT FIRST RESOURCES",
+      "nama_kanonik": "FIRST RESOURCES",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT FLORA WAHANA TIRTA",
+      "nama_kanonik": "FLORA WAHANA TIRTA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT GANDA BUANINDO",
+      "nama_kanonik": "GANDA BUANINDO",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT GANDAERAH HENDANA",
+      "nama_kanonik": "GANDAERAH HENDANA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT GATIPURA MULYA",
+      "nama_kanonik": "GATIPURA MULYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT GSATIPURA MULYA",
+      "nama_kanonik": "PT GATIPURA MULYA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT GERBANG SAWIT INDAH",
+      "nama_kanonik": "GERBANG SAWIT INDAH",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT GNI PLANTATION",
+      "nama_kanonik": "GNI PLANTATION",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT GUNA DODOS",
+      "nama_kanonik": "GUNA DODOS",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT GUNA USAGRI PRATAMA",
+      "nama_kanonik": "GUNA USAGRI PRATAMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT GUNUNG MAS RAYA KEBUN SUNGAI BANGKO",
+      "nama_kanonik": "GUNUNG MAS RAYA SUNGAI BANGKO",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT GUNUNG MAS RAYA KEBUN SUNGAI RUMBIA 1",
+      "nama_kanonik": "GUNUNG MAS RAYA SUNGAI RUMBIA 1",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT GUNUNG MAS RAYA KEBUN SUNGAI RUMBIA 2",
+      "nama_kanonik": "PT GUNUNG MAS RAYA KEBUN SUNGAI RUMBIA 1",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT HUTAHAEAN",
+      "nama_kanonik": "HUTAHAEAN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT INDRAWAN PERKASA",
+      "nama_kanonik": "INDRAWAN PERKASA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT INDRI PLANT",
+      "nama_kanonik": "INDRI PLANT",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT INSDRI PLANT",
+      "nama_kanonik": "PT INDRI PLANT",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT INECDA",
+      "nama_kanonik": "INECDA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT INTI INDOSAWIT SUBUR",
+      "nama_kanonik": "INTI INDOSAWIT SUBUR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT INTI KAMPARINDO SEJAHTERA",
+      "nama_kanonik": "INTI KAMPARINDO SEJAHTERA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT IVO MAS TUNGGAL",
+      "nama_kanonik": "IVO MAS TUNGGAL",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT JALUR PUSAKA SAKTI KUMALA",
+      "nama_kanonik": "JALUR PUSAKA SAKTI KUMALA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT JATIM JAYA PERKASA",
+      "nama_kanonik": "JATIM JAYA PERKASA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SJATIM JAYA PERKASA",
+      "nama_kanonik": "PT JATIM JAYA PERKASA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT JOSHAN SENTOSA",
+      "nama_kanonik": "JOSHAN SENTOSA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT KARYA TAMA BAKTI MULIA",
+      "nama_kanonik": "KARYA TAMA BAKTI MULIA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT KARYABADI SAMASEJATI",
+      "nama_kanonik": "KARYABADI SAMASEJATI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT KEBUN CERENTI SUBUR II",
+      "nama_kanonik": "CERENTI SUBUR II",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT KEBUN PANTAI RAJA",
+      "nama_kanonik": "PANTAI RAJA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT KEBUN PERCOBAAN SEI PUTIH",
+      "nama_kanonik": "PERCOBAAN SEI PUTIH",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT KENCANA AMAL TANI 1",
+      "nama_kanonik": "KENCANA AMAL TANI 1",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT KENCANA AMAL TANI 2",
+      "nama_kanonik": "KENCANA AMAL TANI 2",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT KENCANA AMAL TANI SEBERIDA III",
+      "nama_kanonik": "KENCANA AMAL TANI SEBERIDA III",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT KERITANG SAWIT SEJAHTERA",
+      "nama_kanonik": "KERITANG SAWIT SEJAHTERA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT KHARISMA RIAU SENTOSA PRIMA",
+      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT KHARISMA RIAU SENTOSA PRIMA. PT MEGA NUSA INTI SAWIT",
+      "nama_kanonik": "PT KHARISMA RIAU SENTOSA PRIMA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT KIMIA TIRTA UTAMA",
+      "nama_kanonik": "KIMIA TIRTA UTAMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT KOSTA PALMIRA",
+      "nama_kanonik": "KOSTA PALMIRA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT KRISNA KERETA KENCANA",
+      "nama_kanonik": "KRISNA KERETA KENCANA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT KRISTO AGRO",
+      "nama_kanonik": "KRISTO AGRO",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT LAHAN TANI SAKTI",
+      "nama_kanonik": "LAHAN TANI SAKTI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT LEKONINDO",
+      "nama_kanonik": "LEKONINDO",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT LINDAI JAYA LESTARI KEBUN POPAL",
+      "nama_kanonik": "LINDAI JAYA LESTARI POPAL",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT MARIHAT",
+      "nama_kanonik": "MARIHAT",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT MARITA MAKMUR JAYA",
+      "nama_kanonik": "MARITA MAKMUR JAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT MEGA NUSA INTI SAWIT",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT MEKARSARI ALAM LESTARI",
+      "nama_kanonik": "MEKARSARI ALAM LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT MEKASARI ALAM LESTARI",
+      "nama_kanonik": "PT MEKARSARI ALAM LESTARI",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT MERIDAN SEJATI SURYA PLANTATION",
+      "nama_kanonik": "MERIDAN SEJATI SURYA PLANTATION",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT MESKOM AGRO SARIMAS",
+      "nama_kanonik": "MESKOM AGRO SARIMAS",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT MITRA UNGGUL PUSAKA",
+      "nama_kanonik": "MITRA UNGGUL PUSAKA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PT MITRA UNGGUL PUSAKA KST MUSSIM MAS",
+      "nama_kanonik": "PT MITRA UNGGUL PUSAKA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT MULTI GUNA ABADI LESTARI",
+      "nama_kanonik": "MULTI GUNA ABADI LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT MULTI LESTARI SEJAHTERA",
+      "nama_kanonik": "MULTI LESTARI SEJAHTERA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT MURINI SAM SAM",
+      "nama_kanonik": "MURINI SAM SAM",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SMURINI SAM SAM",
+      "nama_kanonik": "PT MURINI SAM SAM",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT MURINIWOOD INDAH INDUSTRI",
+      "nama_kanonik": "MURINIWOOD INDAH INDUSTRI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT MUSIM MAS",
+      "nama_kanonik": "MUSIM MAS",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT MUSTIKA AGRO SARI",
+      "nama_kanonik": "MUSTIKA AGRO SARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT OSCAR INVESTAMA",
+      "nama_kanonik": "OSCAR INVESTAMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PADASA ENAM UTAMA",
+      "nama_kanonik": "PADASA ENAM UTAMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PADASA ENAM UTAMA KALIANTA 2",
+      "nama_kanonik": "PADASA ENAM UTAMA KALIANTA 2",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PADASA KALIANTA UTAMA",
+      "nama_kanonik": "PADASA KALIANTA UTAMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PADASA UTAMA KALIATA SATU",
+      "nama_kanonik": "PADASA UTAMA KALIATA SATU",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PALM LESTARI MAKMUR",
+      "nama_kanonik": "PALM LESTARI MAKMUR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PALMA SATU KEBUN PALMA 2",
+      "nama_kanonik": "PALMA SATU PALMA 2",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PANCA AGRO LESTARI",
+      "nama_kanonik": "PANCA AGRO LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PSANCA AGRO LESTARI",
+      "nama_kanonik": "PT PANCA AGRO LESTARI",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PANCA SURYA AGRINDO",
+      "nama_kanonik": "PANCA SURYA AGRINDO",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PANCA SURYA GARDEN",
+      "nama_kanonik": "PANCA SURYA GARDEN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PANCUR SAWIT MAS",
+      "nama_kanonik": "PANCUR SAWIT MAS",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PARAWIRA ADITAMA",
+      "nama_kanonik": "PARAWIRA ADITAMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PARAWIRA PRIMAKONSIER",
+      "nama_kanonik": "PARAWIRA PRIMAKONSIER",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PARAWIRA UTAMA",
+      "nama_kanonik": "PARAWIRA UTAMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PASIRMAS GIRIRAYA",
+      "nama_kanonik": "PASIRMAS GIRIRAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PELINTUNG",
+      "nama_kanonik": "PELINTUNG",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERDANA INTI SAWIT PERKASA",
+      "nama_kanonik": "PERDANA INTI SAWIT PERKASA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V",
+      "nama_kanonik": "NUSANTARA V",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANATARA V",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V AIR MOLEK II",
+      "nama_kanonik": "NUSANTARA V AIR MOLEK II",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V KEBUN SEI GARO",
+      "nama_kanonik": "NUSANTARA V SEI GARO",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V KEBUN TANAH PERKEBUNAN NUSANTARA V TANJUNG MEDAN",
+      "nama_kanonik": "NUSANTARA V TANAH NUSANTARA V TANJUNG MEDAN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V LUBUK DALAM",
+      "nama_kanonik": "NUSANTARA V LUBUK DALAM",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V SEI BUATAN",
+      "nama_kanonik": "NUSANTARA V SEI BUATAN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERKSEBUNAN NUSANTARA V SEI BUATAN",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V SEI BUATAN",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V SEI INTAN",
+      "nama_kanonik": "NUSANTARA V SEI INTAN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V SEI KENCANA",
+      "nama_kanonik": "NUSANTARA V SEI KENCANA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V SEI LINDAI",
+      "nama_kanonik": "NUSANTARA V SEI LINDAI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PSERKEBUNAN NUSANTARA V SEI LINDAI",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V SEI LINDAI",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V SEI ROKAN",
+      "nama_kanonik": "NUSANTARA V SEI ROKAN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V SEI SIASAM",
+      "nama_kanonik": "NUSANTARA V SEI SIASAM",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PERKEBUNAN NUSANTARA V SEI TAPUNG",
+      "nama_kanonik": "NUSANTARA V SEI TAPUNG",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PESAWON RAYA",
+      "nama_kanonik": "PESAWON RAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PINANG MAS INTI RAYA",
+      "nama_kanonik": "PINANG MAS INTI RAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PRIATAMA RIAU",
+      "nama_kanonik": "PRIATAMA RIAU",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PRIATAMA",
+      "nama_kanonik": "PT PRIATAMA RIAU",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT PRIMA AGRO SAWITINDO",
+      "nama_kanonik": "PRIMA AGRO SAWITINDO",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PULAU TILAN",
+      "nama_kanonik": "PULAU TILAN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PUSAKA MEGAH BUMI NUSANTARA",
+      "nama_kanonik": "PUSAKA MEGAH BUMI NUSANTARA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT RAMAJAYA PRAMUKTI",
+      "nama_kanonik": "RAMAJAYA PRAMUKTI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT RIAU AGRI",
+      "nama_kanonik": "RIAU AGRI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT RIAU ANUGRAH SENTOSA",
+      "nama_kanonik": "RIAU ANUGRAH SENTOSA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT RIAU SAKTI",
+      "nama_kanonik": "RIAU SAKTI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT RIAU SAWITINDO ABADI",
+      "nama_kanonik": "RIAU SAWITINDO ABADI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT RIDEN JAYA",
+      "nama_kanonik": "RIDEN JAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT RIMBA SAWIT KUSUMA",
+      "nama_kanonik": "RIMBA SAWIT KUSUMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT RIMBUN SAWIT SEJAHTERA",
+      "nama_kanonik": "RIMBUN SAWIT SEJAHTERA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT RISET PERKEBUNAN NUSANTARA",
+      "nama_kanonik": "RISET NUSANTARA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT RISMAN SCHAM PALM",
+      "nama_kanonik": "RISMAN SCHAM PALM",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT RUAS UTAMA JAYA",
+      "nama_kanonik": "RUAS UTAMA JAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SAFARI RIAU",
+      "nama_kanonik": "SAFARI RIAU",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SAILAN ANTAU BATUAH",
+      "nama_kanonik": "SAILAN ANTAU BATUAH",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SALIM IVOMAS PRATAMA",
+      "nama_kanonik": "SALIM IVOMAS PRATAMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SALIM IVOMAS PRATAMA TBK KEBUN BALAM",
+      "nama_kanonik": "SALIM IVOMAS PRATAMA BALAM",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SANDRIA SUKSES BERSAMA",
+      "nama_kanonik": "SANDRIA SUKSES BERSAMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SARI LEMBAH SUBUR",
+      "nama_kanonik": "SARI LEMBAH SUBUR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SARINDO AGRO",
+      "nama_kanonik": "SARINDO AGRO",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SATAHI",
+      "nama_kanonik": "SATAHI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SATRIA WINDU SERAYA",
+      "nama_kanonik": "SATRIA WINDU SERAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SAWIT ASAHAN INDAH",
+      "nama_kanonik": "SAWIT ASAHAN INDAH",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SAWIT BERTUAH LESTARI",
+      "nama_kanonik": "SAWIT BERTUAH LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SAWIT INTI RAYA",
+      "nama_kanonik": "SAWIT INTI RAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SAWIT UNGGUL PRIMA PLANTATIONS",
+      "nama_kanonik": "SAWIT UNGGUL PRIMA PLANTATIONS",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SEBANGA MULTI SAWIT",
+      "nama_kanonik": "SEBANGA MULTI SAWIT",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SEBERIDA SUBUR",
+      "nama_kanonik": "SEBERIDA SUBUR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SEKARBUMI ALAM LESTARI",
+      "nama_kanonik": "SEKARBUMI ALAM LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SSEKARBUMI ALAMLESTARI",
+      "nama_kanonik": "PT SEKARBUMI ALAM LESTARI",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SEKO INDAH",
+      "nama_kanonik": "SEKO INDAH",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SSEKO INDAH",
+      "nama_kanonik": "PT SEKO INDAH",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SERIKAT PUTRA",
+      "nama_kanonik": "SERIKAT PUTRA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SETIA AGRINDO LESTARI",
+      "nama_kanonik": "SETIA AGRINDO LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT PSETIA AGRINDO LESTARI",
+      "nama_kanonik": "PT SETIA AGRINDO LESTARI",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SETIA AGRINDO MANDIRI",
+      "nama_kanonik": "SETIA AGRINDO MANDIRI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SEWANGI SEJATI LUHUR",
+      "nama_kanonik": "SEWANGI SEJATI LUHUR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SIMAS SAWIT ALIANTAN",
+      "nama_kanonik": "SIMAS SAWIT ALIANTAN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SINAR BELILAS PERKASA",
+      "nama_kanonik": "SINAR BELILAS PERKASA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SINAR INTI SAWIT",
+      "nama_kanonik": "SINAR INTI SAWIT",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SINAR REKSA KENCANA",
+      "nama_kanonik": "SINAR REKSA KENCANA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SINAR RIAU",
+      "nama_kanonik": "SINAR RIAU",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SINAR SIAK DIAN PERMAI",
+      "nama_kanonik": "SINAR SIAK DIAN PERMAI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SINAR WIDITA PAMARTA",
+      "nama_kanonik": "SINAR WIDITA PAMARTA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SINDORA SERAYA",
+      "nama_kanonik": "SINDORA SERAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SITAPONGAN LESTARI",
+      "nama_kanonik": "SITAPONGAN LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SMART TBK",
+      "nama_kanonik": "SMART",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT STEELINDO WAHANA PERKASA",
+      "nama_kanonik": "STEELINDO WAHANA PERKASA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SUBUR ARUM MAKMUR",
+      "nama_kanonik": "SUBUR ARUM MAKMUR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SUGIH INDAH SEJATI",
+      "nama_kanonik": "SUGIH INDAH SEJATI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SUMATERA MAKMUR LESTARI",
+      "nama_kanonik": "SUMATERA MAKMUR LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SUMBER ALAM",
+      "nama_kanonik": "SUMBER ALAM",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SUMBER JAYA INDAH NUSA COY",
+      "nama_kanonik": "SUMBER JAYA INDAH NUSA COY",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SSUMBER JAYA INDAH COY",
+      "nama_kanonik": "PT SUMBER JAYA INDAH NUSA COY",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SUMBER SAWIT KENCANA",
+      "nama_kanonik": "SUMBER SAWIT KENCANA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SUMBER SAWIT SEJAHTERA",
+      "nama_kanonik": "SUMBER SAWIT SEJAHTERA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SURYA AGROLIKA REKSA",
+      "nama_kanonik": "SURYA AGROLIKA REKSA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SURYA BRATASENA PLANTATION",
+      "nama_kanonik": "SURYA BRATASENA PLANTATION",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SURYA DUMAI AGRINDO",
+      "nama_kanonik": "SURYA DUMAI AGRINDO",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SURYA INTISARI RAYA",
+      "nama_kanonik": "SURYA INTISARI RAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT SURYA PALMA SEJAHTERA",
+      "nama_kanonik": "SURYA PALMA SEJAHTERA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SWAKARSA SAWIT RAYA",
+      "nama_kanonik": "SWAKARSA SAWIT RAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT SWASAKARSA SAWIT RAYA",
+      "nama_kanonik": "PT SWAKARSA SAWIT RAYA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TANI SUBUR MAKMUR",
+      "nama_kanonik": "TANI SUBUR MAKMUR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TASMA PUJA",
+      "nama_kanonik": "TASMA PUJA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TEGUHKARSA WANALESTARI",
+      "nama_kanonik": "TEGUHKARSA WANALESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TERANG INTI SERAYA",
+      "nama_kanonik": "TERANG INTI SERAYA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TESO INDAH",
+      "nama_kanonik": "TESO INDAH",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TESO INDAH ESTATE",
+      "nama_kanonik": "PT TESO INDAH",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TH. INDO PLANTATIONS",
+      "nama_kanonik": "TH INDO PLANTATIONS",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TORGANDA",
+      "nama_kanonik": "TORGANDA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TORUS GANDA",
+      "nama_kanonik": "PT TORGANDA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TORGANDA BATANG KUMU I",
+      "nama_kanonik": "TORGANDA BATANG KUMU I",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TORGANDA BATANG KUMU II",
+      "nama_kanonik": "PT TORGANDA BATANG KUMU I",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TORGANDA KARYA PERDANA",
+      "nama_kanonik": "TORGANDA KARYA PERDANA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TRI BAKTI SARIMAS",
+      "nama_kanonik": "TRI BAKTI SARIMAS",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TRI DAYA RUBBER",
+      "nama_kanonik": "TRI DAYA RUBBER",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TRI HASTA PRIMA",
+      "nama_kanonik": "TRI HASTA PRIMA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TRIOMAS FDI",
+      "nama_kanonik": "TRIOMAS FDI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TULANGKAH INDO PERMAI",
+      "nama_kanonik": "TULANGKAH INDO PERMAI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT TUMPUAN",
+      "nama_kanonik": "TUMPUAN",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TUNGGAL MITRA PLANTATIONS",
+      "nama_kanonik": "TUNGGAL MITRA PLANTATIONS",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TUNSGGAL MITRA PLANTATION",
+      "nama_kanonik": "PT TUNGGAL MITRA PLANTATIONS",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TUNGGAL PERKASA PLANTATIONS",
+      "nama_kanonik": "TUNGGAL PERKASA PLANTATIONS",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TSUNGGAL PERKASA PLANTATIONS",
+      "nama_kanonik": "PT TUNGGAL PERKASA PLANTATIONS",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT TUNGGAL YUNUS ESTATE",
+      "nama_kanonik": "TUNGGAL YUNUS ESTATE",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT UDAYA LOH JINAWI",
+      "nama_kanonik": "UDAYA LOH JINAWI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT UJUNG NANTINGGI",
+      "nama_kanonik": "UJUNG NANTINGGI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT VIKTORINDO ALAM LESTARI",
+      "nama_kanonik": "VIKTORINDO ALAM LESTARI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT WAHANA MANDIRI INDONESIA",
+      "nama_kanonik": "WAHANA MANDIRI INDONESIA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT WANA JINGGA TIMUR",
+      "nama_kanonik": "WANA JINGGA TIMUR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT WANASARI NUSANTARA",
+      "nama_kanonik": "WANASARI NUSANTARA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT WASUNDARI INDAH",
+      "nama_kanonik": "WASUNDARI INDAH",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT WILMAR GROUP",
+      "nama_kanonik": "WILMAR",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT WIRA KARYA PRAMITA",
+      "nama_kanonik": "WIRA KARYA PRAMITA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT YUNI BERSAUDARA SEJAHTERA",
+      "nama_kanonik": "YUNI BERSAUDARA SEJAHTERA",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT YSUNI BERSAUDARA SEJAHTERA",
+      "nama_kanonik": "PT YUNI BERSAUDARA SEJAHTERA",
+      "sumber": "bps_mentah",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT YUTANI SUADIRI",
+      "nama_kanonik": "YUTANI SUADIRI",
+      "sumber": "bps_gabungan",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "ANDALAS WAHANA BERJAYA",
+      "nama_kanonik": "ANDALAS WAHANA BERJAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "BANGUN AGAM PERMAI",
+      "nama_kanonik": "BANGUN AGAM PERMAI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "BPP SEI. PUTIH",
+      "nama_kanonik": "BPP SEI PUTIH",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "CV. NIRMALA",
+      "nama_kanonik": "NIRMALA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "CV. RIAU MERBAU LESTARI",
+      "nama_kanonik": "RIAU MERBAU LESTARI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 1",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 10",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 11",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 12",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 13",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 14",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 2",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 3",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 4",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 5",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 6",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 7",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 8",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KEBUN SWADAYA 9",
+      "nama_kanonik": "SWADAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KT. BUANA LUHUR",
+      "nama_kanonik": "KT BUANA LUHUR",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "KT. MADISON JAYA",
+      "nama_kanonik": "KT MADISON JAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "No name",
+      "nama_kanonik": "NO NAME",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PASAMAN PERMAI",
+      "nama_kanonik": "PASAMAN PERMAI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ABDI BUDI MULYA",
+      "nama_kanonik": "ABDI BUDI MULYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ADEI CRUMB RUBBER",
+      "nama_kanonik": "ADEI CRUMB RUBBER",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ADEI CRUMB RUBBER 1",
+      "nama_kanonik": "ADEI CRUMB RUBBER",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ADEI CRUMB RUBBER 2",
+      "nama_kanonik": "ADEI CRUMB RUBBER",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ADEI CRUMB RUBBER 3",
+      "nama_kanonik": "ADEI CRUMB RUBBER",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. AGRA MASANG PERKASA",
+      "nama_kanonik": "AGRA MASANG PERKASA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. AGRA MASANG PERKASA 1",
+      "nama_kanonik": "AGRA MASANG PERKASA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. AGRO WIRATAMA",
+      "nama_kanonik": "AGRO WIRATAMA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. AGRO WIRATAMA 1",
+      "nama_kanonik": "AGRO WIRATAMA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. AGRORAYA GEMATRANS",
+      "nama_kanonik": "AGRORAYA GEMATRANS",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. AGROWIYANA (I)",
+      "nama_kanonik": "AGROWIYANA I",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. AGROWIYANA (II)",
+      "nama_kanonik": "AGROWIYANA II",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ALAM PERMAI SUMBAR NUSA",
+      "nama_kanonik": "ALAM PERMAI SUMBAR NUSA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ALAM PERMAI SUMBAR NUSA 1",
+      "nama_kanonik": "ALAM PERMAI SUMBAR NUSA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ALAM PERMAI SUMBAR NUSA 2",
+      "nama_kanonik": "ALAM PERMAI SUMBAR NUSA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ALFA GLORY",
+      "nama_kanonik": "ALFA GLORY",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ALFA GLORY 1",
+      "nama_kanonik": "ALFA GLORY",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ALFA GLORY 2",
+      "nama_kanonik": "ALFA GLORY",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ANAM KOTO",
+      "nama_kanonik": "ANAM KOTO",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ANAM KOTO 1",
+      "nama_kanonik": "ANAM KOTO",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ANAM KOTO 2",
+      "nama_kanonik": "ANAM KOTO",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ANAM KOTO 3",
+      "nama_kanonik": "ANAM KOTO",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ANAM KOTO 4",
+      "nama_kanonik": "ANAM KOTO",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ANAM KOTO 5",
+      "nama_kanonik": "ANAM KOTO",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ANEKA INTI PERSADA",
+      "nama_kanonik": "ANEKA INTI PERSADA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ANEKAPURA MULTI KERTA",
+      "nama_kanonik": "ANEKAPURA MULTI KERTA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ARIAN MULTI KAWA",
+      "nama_kanonik": "ARIAN MULTI KAWA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ARIAN MULTI KAWA 1",
+      "nama_kanonik": "ARIAN MULTI KAWA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ARIAN MULTI KAWA 2",
+      "nama_kanonik": "ARIAN MULTI KAWA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ARIAN MULTI KAWA 3",
+      "nama_kanonik": "ARIAN MULTI KAWA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ARINDO TRI SEJAHTERA",
+      "nama_kanonik": "ARINDO TRI SEJAHTERA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ARINDO TRI SEJAHTERA 1",
+      "nama_kanonik": "ARINDO TRI SEJAHTERA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ARINDO TRI SEJAHTERA 2",
+      "nama_kanonik": "ARINDO TRI SEJAHTERA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ARVENA SEPAKAT 1",
+      "nama_kanonik": "ARVENA SEPAKAT",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ARVENA SEPAKAT 2",
+      "nama_kanonik": "ARVENA SEPAKAT",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. AZEK SAKTI",
+      "nama_kanonik": "AZEK SAKTI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BAKRIE NUSANTARA PLANTATION",
+      "nama_kanonik": "BAKRIE NUSANTARA PLANTATION",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BANYU BENING UTAMA",
+      "nama_kanonik": "BANYU BENING UTAMA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BASKARASATRIATAMA RIAU",
+      "nama_kanonik": "BASKARASATRIATAMA RIAU",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BASKARASATRIATAMA RIAU 1",
+      "nama_kanonik": "BASKARASATRIATAMA RIAU",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BASKARASATRIATAMA RIAU 2",
+      "nama_kanonik": "BASKARASATRIATAMA RIAU",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BATU PUTIH",
+      "nama_kanonik": "BATU PUTIH",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BENGKALIS KAMPAR SARANA",
+      "nama_kanonik": "BENGKALIS KAMPAR SARANA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BERTUAH ANEKA YASA",
+      "nama_kanonik": "BERTUAH ANEKA YASA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BINA FITRI JAYA",
+      "nama_kanonik": "BINA FITRI JAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BINA RUPAT SEPANG LESTARI",
+      "nama_kanonik": "BINA RUPAT SEPANG LESTARI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BLANGKOLAM",
+      "nama_kanonik": "BLANGKOLAM",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BLANGKOLAM 1",
+      "nama_kanonik": "BLANGKOLAM",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BLANGKOLAM 2",
+      "nama_kanonik": "BLANGKOLAM",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BUANA WIRA LESTARI",
+      "nama_kanonik": "BUANA WIRA LESTARI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BUANA WIRA LESTARI 1",
+      "nama_kanonik": "BUANA WIRA LESTARI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BUANA WIRA LESTARI 2",
+      "nama_kanonik": "BUANA WIRA LESTARI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BUDI DATA",
+      "nama_kanonik": "BUDI DATA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BUDIDAKSA DWI KUSUMA",
+      "nama_kanonik": "BUDIDAKSA DWI KUSUMA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BUKIT KAUSAR (III)",
+      "nama_kanonik": "BUKIT KAUSAR III",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BUMI PLASMA LESTARI",
+      "nama_kanonik": "BUMI PLASMA LESTARI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BUMI REKSA NUSASEJATI",
+      "nama_kanonik": "BUMI REKSA NUSASEJATI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BUMI REKSA NUSASEJATI 1",
+      "nama_kanonik": "BUMI REKSA NUSASEJATI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. BUMI REKSA NUSASEJATI 2",
+      "nama_kanonik": "BUMI REKSA NUSASEJATI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. CERENTI SUBUR",
+      "nama_kanonik": "CERENTI SUBUR",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. CIPTA JAYA RAYA",
+      "nama_kanonik": "CIPTA JAYA RAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. CISADANE SAWIT RAYA",
+      "nama_kanonik": "CISADANE SAWIT RAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DARMA WUNGU GUNA",
+      "nama_kanonik": "DARMA WUNGU GUNA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DASA ANUGERAH SEJATI",
+      "nama_kanonik": "DASA ANUGERAH SEJATI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DASA ANUGERAH SEJATI 2",
+      "nama_kanonik": "DASA ANUGERAH SEJATI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DAYA LABUHAN INDAH",
+      "nama_kanonik": "DAYA LABUHAN INDAH",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DUET RIJA",
+      "nama_kanonik": "DUET RIJA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DUET RIJA 1",
+      "nama_kanonik": "DUET RIJA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DUET RIJA 2",
+      "nama_kanonik": "DUET RIJA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DUET RIJA 3",
+      "nama_kanonik": "DUET RIJA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DUMAI INDAH PERKASA",
+      "nama_kanonik": "DUMAI INDAH PERKASA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DUTA PALMA NUSANTARA 1",
+      "nama_kanonik": "DUTA PALMA NUSANTARA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DUTA PALMA NUSANTARA 2",
+      "nama_kanonik": "DUTA PALMA NUSANTARA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DUTA SWAKARSA INDAH",
+      "nama_kanonik": "DUTA SWAKARSA INDAH",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DWIMAJAYA UTAMA",
+      "nama_kanonik": "DWIMAJAYA UTAMA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. EGASUTI NASAKTI 1",
+      "nama_kanonik": "EGASUTI NASAKTI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. EGASUTI NASAKTI 2",
+      "nama_kanonik": "EGASUTI NASAKTI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. EGASUTI NASAKTI 3",
+      "nama_kanonik": "EGASUTI NASAKTI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. EKA PENDAWA SAKTI",
+      "nama_kanonik": "EKA PENDAWA SAKTI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. EKADURA INDONESIA 1",
+      "nama_kanonik": "EKADURA INDONESIA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. EKADURA INDONESIA 2",
+      "nama_kanonik": "EKADURA INDONESIA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. FLORA WANAHA TIRTA",
+      "nama_kanonik": "FLORA WANAHA TIRTA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GANDAERAH HENDANA 1",
+      "nama_kanonik": "GANDAERAH HENDANA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GANDAERAH HENDANA 2",
+      "nama_kanonik": "GANDAERAH HENDANA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GELORA SAWITA MAKMUR",
+      "nama_kanonik": "GELORA SAWITA MAKMUR",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GELORA SAWITA MAKMUR 2",
+      "nama_kanonik": "GELORA SAWITA MAKMUR",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GUNTUNG HASRAT M",
+      "nama_kanonik": "GUNTUNG HASRAT M",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GUNTUNG HASRAT M 1",
+      "nama_kanonik": "GUNTUNG HASRAT M",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GUNTUNG HASRAT M 2",
+      "nama_kanonik": "GUNTUNG HASRAT M",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GUNTUNG HASRAT MSKMUR",
+      "nama_kanonik": "GUNTUNG HASRAT MSKMUR",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GUNUNG MAS RAYA",
+      "nama_kanonik": "GUNUNG MAS RAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GUNUNG MAS RAYA 1",
+      "nama_kanonik": "GUNUNG MAS RAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. GUNUNG MAS RAYA 2",
+      "nama_kanonik": "GUNUNG MAS RAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. INDO SEPADAN JAYA",
+      "nama_kanonik": "INDO SEPADAN JAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. INECDA 1",
+      "nama_kanonik": "INECDA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. INECDA 2",
+      "nama_kanonik": "INECDA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. INECDA (HGU)",
+      "nama_kanonik": "INECDA HGU",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. INHUWANA PALMA LESTARI",
+      "nama_kanonik": "INHUWANA PALMA LESTARI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. INTI INDO SAWIT SUBUR 2",
+      "nama_kanonik": "INTI INDO SAWIT SUBUR",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. INTI INDO SAWIT SUBUR 3",
+      "nama_kanonik": "INTI INDO SAWIT SUBUR",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. INTI INDO SAWIT SUBUR 4",
+      "nama_kanonik": "INTI INDO SAWIT SUBUR",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. INTI INDO SAWIT SUBUR 5",
+      "nama_kanonik": "INTI INDO SAWIT SUBUR",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. INTI INDO SAWIT SUBUR 6",
+      "nama_kanonik": "INTI INDO SAWIT SUBUR",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. IVO MAS TUNGGAL 1",
+      "nama_kanonik": "IVO MAS TUNGGAL",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. IVO MAS TUNGGAL 2",
+      "nama_kanonik": "IVO MAS TUNGGAL",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. IVO MAS TUNGGAL 3",
+      "nama_kanonik": "IVO MAS TUNGGAL",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. IVO MAS TUNGGAL 4",
+      "nama_kanonik": "IVO MAS TUNGGAL",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. IVO MAS TUNGGAL 5",
+      "nama_kanonik": "IVO MAS TUNGGAL",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. JOHAN SENTOSA",
+      "nama_kanonik": "JOHAN SENTOSA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KARYA TAMA BAKTI MULIA 1",
+      "nama_kanonik": "KARYA TAMA BAKTI MULIA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KARYA TAMA BAKTI MULIA 2",
+      "nama_kanonik": "KARYA TAMA BAKTI MULIA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KASWARI UNGGUL",
+      "nama_kanonik": "KASWARI UNGGUL",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KASWARI UNGGUL 1",
+      "nama_kanonik": "KASWARI UNGGUL",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KASWARI UNGGUL 3",
+      "nama_kanonik": "KASWARI UNGGUL",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KEBUN PANTAI RAJA 1",
+      "nama_kanonik": "PANTAI RAJA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KEBUN PANTAI RAJA 2",
+      "nama_kanonik": "PANTAI RAJA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KEBUN PANTAI RAJA 3",
+      "nama_kanonik": "PANTAI RAJA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KENCANA AMAL TANI",
+      "nama_kanonik": "KENCANA AMAL TANI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KHARISMA RIAU SENTOSA PRIMA 1",
+      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KHARISMA RIAU SENTOSA PRIMA 2",
+      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KHARISMA RIAU SENTOSA PRIMA 3",
+      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KHARISMA RIAU SENTOSA PRIMA 4",
+      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. KILAU KEMUNING",
+      "nama_kanonik": "KILAU KEMUNING",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. LANGGAM INTI HIBRINDO",
+      "nama_kanonik": "LANGGAM INTI HIBRINDO",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. LANGGAM INTI HIBRINDO 1",
+      "nama_kanonik": "LANGGAM INTI HIBRINDO",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. LANGGAM INTI HIBRINDO 2",
+      "nama_kanonik": "LANGGAM INTI HIBRINDO",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. LANGGAM INTI HIBRINDO 3",
+      "nama_kanonik": "LANGGAM INTI HIBRINDO",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MARITA MAKMUR JAYA 1",
+      "nama_kanonik": "MARITA MAKMUR JAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MARITA MAKMUR JAYA 2",
+      "nama_kanonik": "MARITA MAKMUR JAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MEGA NUSA INTI SAWIT 1",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MEGA NUSA INTI SAWIT 2",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MEGA NUSA INTI SAWIT 3",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MEGA NUSA INTI SAWIT 4",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MENDAHARA AGRO JAYA INDUSTRI  (I)",
+      "nama_kanonik": "MENDAHARA AGRO JAYA INDUSTRI I",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MERIDAN SEJATI SURYA",
+      "nama_kanonik": "MERIDAN SEJATI SURYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MULTI PARAMITRA PERKASA JAYA",
+      "nama_kanonik": "MULTI PARAMITRA PERKASA JAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MURINI SAMSAM 1",
+      "nama_kanonik": "MURINI SAMSAM",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MURINI SAMSAM 2",
+      "nama_kanonik": "MURINI SAMSAM",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MURINI WOOD INDUSTRI",
+      "nama_kanonik": "MURINI WOOD INDUSTRI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. NURINTA BAGANYASA",
+      "nama_kanonik": "NURINTA BAGANYASA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. NUSAESA BINA",
+      "nama_kanonik": "NUSAESA BINA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PADASA ENAM UTAMA 1",
+      "nama_kanonik": "PADASA ENAM UTAMA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PADASA ENAM UTAMA 2",
+      "nama_kanonik": "PADASA ENAM UTAMA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PADASA ENAM UTAMA 3",
+      "nama_kanonik": "PADASA ENAM UTAMA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PALMA SATU",
+      "nama_kanonik": "PALMA SATU",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PANCA SURYA AGRINDO SEJAHTERA",
+      "nama_kanonik": "PANCA SURYA AGRINDO SEJAHTERA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PARAWIRA ABADITAMA",
+      "nama_kanonik": "PARAWIRA ABADITAMA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PEPUTRA SUPRA JAYA",
+      "nama_kanonik": "PEPUTRA SUPRA JAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERDANA INTI SAWIT",
+      "nama_kanonik": "PERDANA INTI SAWIT",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN IV BAGAN SINEMBAH",
+      "nama_kanonik": "IV BAGAN SINEMBAH",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN IV TANJUNG MEDANG",
+      "nama_kanonik": "IV TANJUNG MEDANG",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (NES / PIR AIR MOLEK)",
+      "nama_kanonik": "NUSANTARA V NES PIR AIR MOLEK",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (PIR BAGAN SINEMBAH)",
+      "nama_kanonik": "NUSANTARA V PIR BAGAN SINEMBAH",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (PIR BUATAN)",
+      "nama_kanonik": "NUSANTARA V PIR BUATAN",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (PIR LOKAL BAGAN BATU",
+      "nama_kanonik": "NUSANTARA V PIR LOKAL BAGAN BATU",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (PIR SEI. PAGAR)",
+      "nama_kanonik": "NUSANTARA V PIR SEI PAGAR",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (PIR SEI. SIASAM)",
+      "nama_kanonik": "NUSANTARA V PIR SEI SIASAM",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (PIR SEI. TAPUNG)",
+      "nama_kanonik": "NUSANTARA V PIR SEI TAPUNG",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (PTP III SEI. MERANTI)",
+      "nama_kanonik": "NUSANTARA V PTP III SEI MERANTI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (SEI. GALUH)",
+      "nama_kanonik": "NUSANTARA V SEI GALUH",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (TANDUN, TERANTAM, TAMORA)",
+      "nama_kanonik": "NUSANTARA V TANDUN TERANTAM TAMORA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V AIR MOLEK",
+      "nama_kanonik": "NUSANTARA V AIR MOLEK",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN VI",
+      "nama_kanonik": "VI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN VII",
+      "nama_kanonik": "VII",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERMATA SAWIT PERMAI",
+      "nama_kanonik": "PERMATA SAWIT PERMAI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERTISA",
+      "nama_kanonik": "PERTISA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. POLITANI KATULISTIWA",
+      "nama_kanonik": "POLITANI KATULISTIWA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. RAJA GARUDA MAS SEJATI",
+      "nama_kanonik": "RAJA GARUDA MAS SEJATI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. RANTAU BAIS FAMILI",
+      "nama_kanonik": "RANTAU BAIS FAMILI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. REGUMAS AGRI UTAMA",
+      "nama_kanonik": "REGUMAS AGRI UTAMA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. RIAU SAKTI UNITED PLANT",
+      "nama_kanonik": "RIAU SAKTI UNITED PLANT",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. RIGUNAS AGRI UTAMA",
+      "nama_kanonik": "RIGUNAS AGRI UTAMA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ROKAN ADI MAKMUR",
+      "nama_kanonik": "ROKAN ADI MAKMUR",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ROKAN ADI RAYA",
+      "nama_kanonik": "ROKAN ADI RAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. ROKAN ERA SUBUR",
+      "nama_kanonik": "ROKAN ERA SUBUR",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SABIRA NEGERIUTAMA",
+      "nama_kanonik": "SABIRA NEGERIUTAMA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SAKTI SAWIT JAYA",
+      "nama_kanonik": "SAKTI SAWIT JAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SAKTI SAWIT JAYA 1",
+      "nama_kanonik": "SAKTI SAWIT JAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SAKTI SAWIT JAYA 2",
+      "nama_kanonik": "SAKTI SAWIT JAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SARPINDOGRAHA SAWIT TANI",
+      "nama_kanonik": "SARPINDOGRAHA SAWIT TANI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SARPINDOGRAHA SAWIT TANI 1",
+      "nama_kanonik": "SARPINDOGRAHA SAWIT TANI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SARPINDOGRAHA SAWIT TANI 2",
+      "nama_kanonik": "SARPINDOGRAHA SAWIT TANI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SCORPIO KEBUN TELADAN",
+      "nama_kanonik": "SCORPIO TELADAN",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SCORPIO KEBUN TELADAN 1",
+      "nama_kanonik": "SCORPIO TELADAN",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SCORPIO KEBUN TELADAN 2",
+      "nama_kanonik": "SCORPIO TELADAN",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SELAGO MAKMUR PLANTATION",
+      "nama_kanonik": "SELAGO MAKMUR PLANTATION",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SELAGO MAKMUR PLANTATION 1",
+      "nama_kanonik": "SELAGO MAKMUR PLANTATION",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SELAGO MAKMUR PLANTATION 2",
+      "nama_kanonik": "SELAGO MAKMUR PLANTATION",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SHADU EKA CITRA",
+      "nama_kanonik": "SHADU EKA CITRA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SIAK SERAYA",
+      "nama_kanonik": "SIAK SERAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SIDOMARGA PERKASA",
+      "nama_kanonik": "SIDOMARGA PERKASA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SRI ANUGRAH",
+      "nama_kanonik": "SRI ANUGRAH",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SRI ANUGRAH 1",
+      "nama_kanonik": "SRI ANUGRAH",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SRI ANUGRAH 2",
+      "nama_kanonik": "SRI ANUGRAH",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SRI ANUGRAH 3",
+      "nama_kanonik": "SRI ANUGRAH",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SUMATERA MAKMUR",
+      "nama_kanonik": "SUMATERA MAKMUR",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SUMATERA MAKMUR 1",
+      "nama_kanonik": "SUMATERA MAKMUR",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SUMATERA MAKMUR 2",
+      "nama_kanonik": "SUMATERA MAKMUR",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SUMBER JAYA INDAH NUSA COY 1",
+      "nama_kanonik": "SUMBER JAYA INDAH NUSA COY",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SUMBER JAYA INDAH NUSA COY 2",
+      "nama_kanonik": "SUMBER JAYA INDAH NUSA COY",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SUMTAI JAYA SATRIA",
+      "nama_kanonik": "SUMTAI JAYA SATRIA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SUNGAI PINANG",
+      "nama_kanonik": "SUNGAI PINANG",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SUNGAI PINANG 6",
+      "nama_kanonik": "SUNGAI PINANG",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SUNGAI PINANG 7",
+      "nama_kanonik": "SUNGAI PINANG",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SUNGAI PINANG 8",
+      "nama_kanonik": "SUNGAI PINANG",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA AGROLIKA REKSA 1",
+      "nama_kanonik": "SURYA AGROLIKA REKSA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA AGROLIKA REKSA 2",
+      "nama_kanonik": "SURYA AGROLIKA REKSA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA BUANA BERSAMA",
+      "nama_kanonik": "SURYA BUANA BERSAMA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA DUMAI AGRINDO 1",
+      "nama_kanonik": "SURYA DUMAI AGRINDO",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA DUMAI AGRINDO 2",
+      "nama_kanonik": "SURYA DUMAI AGRINDO",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA INTI SARI RAYA 1",
+      "nama_kanonik": "SURYA INTI SARI RAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA INTI SARI RAYA 2",
+      "nama_kanonik": "SURYA INTI SARI RAYA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA MAKMUR",
+      "nama_kanonik": "SURYA MAKMUR",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TANI SWADAYA PERDANA",
+      "nama_kanonik": "TANI SWADAYA PERDANA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TAPIAN NADENGGAN",
+      "nama_kanonik": "TAPIAN NADENGGAN",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TEKNIK UMUM",
+      "nama_kanonik": "TEKNIK UMUM",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TENAGA PEMB SEJATERA",
+      "nama_kanonik": "TENAGA PEMB SEJATERA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TESSO SEPAKAT",
+      "nama_kanonik": "TESSO SEPAKAT",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TIDAR KERINCI AGUNG (II)",
+      "nama_kanonik": "TIDAR KERINCI AGUNG II",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TOBA INDAH",
+      "nama_kanonik": "TOBA INDAH",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TOBA INDAH 1",
+      "nama_kanonik": "TOBA INDAH",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TOBA INDAH 2",
+      "nama_kanonik": "TOBA INDAH",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TORGANDA 1",
+      "nama_kanonik": "TORGANDA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TORGANDA 2",
+      "nama_kanonik": "TORGANDA",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TORUS GANDA",
+      "nama_kanonik": "TORUS GANDA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TRI MITRA LESTARI",
+      "nama_kanonik": "TRI MITRA LESTARI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TRI MITRA LESTARI 1",
+      "nama_kanonik": "TRI MITRA LESTARI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TRI MITRA LESTARI 2",
+      "nama_kanonik": "TRI MITRA LESTARI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TRIDAYARI MANDIRI UTAMA",
+      "nama_kanonik": "TRIDAYARI MANDIRI UTAMA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TRISETYA USAHA MANDIRI",
+      "nama_kanonik": "TRISETYA USAHA MANDIRI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TRISETYA USAHA MANDIRI 1",
+      "nama_kanonik": "TRISETYA USAHA MANDIRI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TRISETYA USAHA MANDIRI 2",
+      "nama_kanonik": "TRISETYA USAHA MANDIRI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TUNGGAL MITRA PLANTATION",
+      "nama_kanonik": "TUNGGAL MITRA PLANTATION",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TUNGGAL PERKASA",
+      "nama_kanonik": "TUNGGAL PERKASA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. TUNGGAL YUNUS",
+      "nama_kanonik": "TUNGGAL YUNUS",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. UDAYA LOHJINAWI 1",
+      "nama_kanonik": "UDAYA LOHJINAWI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. UDAYA LOHJINAWI 2",
+      "nama_kanonik": "UDAYA LOHJINAWI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. UNI SERAYA",
+      "nama_kanonik": "UNI SERAYA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. UNICO BIMASARI",
+      "nama_kanonik": "UNICO BIMASARI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. UNICO BIMASARI 1",
+      "nama_kanonik": "UNICO BIMASARI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. UNICO BIMASARI 2",
+      "nama_kanonik": "UNICO BIMASARI",
+      "sumber": "gfw_name",
+      "confidence": "low",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. WANA SUBUR SAWIT INDAH",
+      "nama_kanonik": "WANA SUBUR SAWIT INDAH",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. WANANAULI NUSAPERSADA",
+      "nama_kanonik": "WANANAULI NUSAPERSADA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. WARNASARI NUSANTARA",
+      "nama_kanonik": "WARNASARI NUSANTARA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. WIRAKARYA SAKTI",
+      "nama_kanonik": "WIRAKARYA SAKTI",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PUSKOPOLDA RIAU",
+      "nama_kanonik": "PUSKOPOLDA RIAU",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "SUMBAR ANDALAS KENCANA",
+      "nama_kanonik": "SUMBAR ANDALAS KENCANA",
+      "sumber": "gfw",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "Perkebunan Nusantara V (Tandun)",
+      "nama_kanonik": "NUSANTARA V TANDUN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Perkebunan II (Sei Buatan)",
+      "nama_kanonik": "II SEI BUATAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Perkebunan Nusantara V (S Rokan Kiri)",
+      "nama_kanonik": "NUSANTARA V S ROKAN KIRI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Kereta Kuda Kencana",
+      "nama_kanonik": "KERETA KUDA KENCANA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Bumi Orion Sawit",
+      "nama_kanonik": "BUMI ORION SAWIT",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tridaya Mandiri Utama",
+      "nama_kanonik": "TRIDAYA MANDIRI UTAMA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Adei Plantation and Industry",
+      "nama_kanonik": "ADEI PLANTATION AND INDUSTRY",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Hijau Lingkungan Sawit Indah",
+      "nama_kanonik": "HIJAU LINGKUNGAN SAWIT INDAH",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Buana Wiralestari Mas",
+      "nama_kanonik": "BUANA WIRALESTARI MAS",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Mandiri Abadi Sejahtera",
+      "nama_kanonik": "MANDIRI ABADI SEJAHTERA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Th.Indo Plantation",
+      "nama_kanonik": "TH INDO PLANTATION",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Perkebunan Inti Rakyat (PIR) Khusus (Sei. Siasam - Sei. Pendalian)",
+      "nama_kanonik": "INTI RAKYAT PIR KHUSUS SEI SIASAM SEI PENDALIAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Karya Tama Bakti Mulya",
+      "nama_kanonik": "KARYA TAMA BAKTI MULYA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Salim Ivomas Pratama (Sungai Dua And Balam Estate)",
+      "nama_kanonik": "SALIM IVOMAS PRATAMA SUNGAI DUA AND BALAM ESTATE",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Ivo Mas Tunggal (I)",
+      "nama_kanonik": "IVO MAS TUNGGAL I",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Subur Arum Makmur (I)",
+      "nama_kanonik": "SUBUR ARUM MAKMUR I",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sawit Rokan Semesta",
+      "nama_kanonik": "SAWIT ROKAN SEMESTA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Gunung Mas Raya (Sungai Rumbia 1 And 2 Estate)",
+      "nama_kanonik": "GUNUNG MAS RAYA SUNGAI RUMBIA 1 AND 2 ESTATE",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sinar Sawit Sejahtera",
+      "nama_kanonik": "SINAR SAWIT SEJAHTERA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Suntai Jaya Satria",
+      "nama_kanonik": "SUNTAI JAYA SATRIA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Subur Arum Makmur (2)",
+      "nama_kanonik": "SUBUR ARUM MAKMUR 2",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Guntung Idamannusa",
+      "nama_kanonik": "GUNTUNG IDAMANNUSA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Cempaka Agro Lestari",
+      "nama_kanonik": "CEMPAKA AGRO LESTARI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Mega Nusa Inti Sawit (plasma) Kredit Koperasi Primer Anggota (KKPA)",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT PLASMA KREDIT KOPERASI PRIMER ANGGOTA KKPA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Serikat Putra I",
+      "nama_kanonik": "SERIKAT PUTRA I",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Anugrah Niaga Sawindo",
+      "nama_kanonik": "ANUGRAH NIAGA SAWINDO",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Murini Wood Indah Industry",
+      "nama_kanonik": "MURINI WOOD INDAH INDUSTRY",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sindora Seraya (Block I)",
+      "nama_kanonik": "SINDORA SERAYA BLOCK I",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Duta Swakarya Indah",
+      "nama_kanonik": "DUTA SWAKARYA INDAH",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Victorindo Alamlestari",
+      "nama_kanonik": "VICTORINDO ALAMLESTARI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Serikat Putra II",
+      "nama_kanonik": "SERIKAT PUTRA II",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Bakung Agri",
+      "nama_kanonik": "BAKUNG AGRI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Johan Sentosa (II)",
+      "nama_kanonik": "JOHAN SENTOSA II",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Koperasi Sawit Mahato Bersatu",
+      "nama_kanonik": "KOPERASI SAWIT MAHATO BERSATU",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Triomas Forestry Development Indonesia",
+      "nama_kanonik": "TRIOMAS FORESTRY DEVELOPMENT INDONESIA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Buantan Karya Bersama",
+      "nama_kanonik": "BUANTAN KARYA BERSAMA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Multi Anugerah Tata Abadi",
+      "nama_kanonik": "MULTI ANUGERAH TATA ABADI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Berkat Mumpa Bersatu",
+      "nama_kanonik": "BERKAT MUMPA BERSATU",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Anugerah Karya Lestari",
+      "nama_kanonik": "ANUGERAH KARYA LESTARI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Cemerlang Gunung Lintas Lautan",
+      "nama_kanonik": "CEMERLANG GUNUNG LINTAS LAUTAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Meganusa Intisawit (KKPA/Plasma)",
+      "nama_kanonik": "MEGANUSA INTISAWIT KKPA PLASMA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Agro Citra Mulia",
+      "nama_kanonik": "AGRO CITRA MULIA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Dharma Wungu Guna",
+      "nama_kanonik": "DHARMA WUNGU GUNA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Rigunas Agri Utama (Plasma)",
+      "nama_kanonik": "RIGUNAS AGRI UTAMA PLASMA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tri Hasta Palma",
+      "nama_kanonik": "TRI HASTA PALMA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Perkebunan Nusantara V (Block Tanjung Medan)",
+      "nama_kanonik": "NUSANTARA V BLOCK TANJUNG MEDAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Cibaliung Tunggal Plantations",
+      "nama_kanonik": "CIBALIUNG TUNGGAL PLANTATIONS",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Cinandra Perkasa",
+      "nama_kanonik": "CINANDRA PERKASA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Mekarsari Alam Lestari (Addendum)",
+      "nama_kanonik": "MEKARSARI ALAM LESTARI ADDENDUM",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Ramajaya Pramukti I (Bangkinang)",
+      "nama_kanonik": "RAMAJAYA PRAMUKTI I BANGKINANG",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Duma Indah Perkasa (B)",
+      "nama_kanonik": "DUMA INDAH PERKASA B",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Transmigration",
+      "nama_kanonik": "TRANSMIGRATION",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Damara Abadi",
+      "nama_kanonik": "DAMARA ABADI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Rimbun Sawit Sejahtera (formerly PT Pusaka Megah Bumi Nusantara)",
+      "nama_kanonik": "RIMBUN SAWIT SEJAHTERA FORMERLY PUSAKA MEGAH BUMI NUSANTARA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Ramajaya Pramukti (II)",
+      "nama_kanonik": "RAMAJAYA PRAMUKTI II",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Flora Wahana Tata",
+      "nama_kanonik": "FLORA WAHANA TATA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tunggal Mitra Plantation (Manggala-1 Estate)",
+      "nama_kanonik": "TUNGGAL MITRA PLANTATION MANGGALA 1 ESTATE",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Perkebunan Nusantara V (Rimpian)",
+      "nama_kanonik": "NUSANTARA V RIMPIAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tunggal Mitra Plantation (Manggala-2 Estate)",
+      "nama_kanonik": "TUNGGAL MITRA PLANTATION MANGGALA 2 ESTATE",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tunggal Mitra Plantation (Manggala-3 Estate)",
+      "nama_kanonik": "TUNGGAL MITRA PLANTATION MANGGALA 3 ESTATE",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Indomanis Lestari",
+      "nama_kanonik": "INDOMANIS LESTARI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Pertisa Trading Coy Ltd",
+      "nama_kanonik": "PERTISA TRADING COY LTD",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Perdana Intisawit Perkasa Sei Rokan",
+      "nama_kanonik": "PERDANA INTISAWIT PERKASA SEI ROKAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Perkebunan Nusantara II (S. Air Bayas)",
+      "nama_kanonik": "NUSANTARA II S AIR BAYAS",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Lubuk Indah",
+      "nama_kanonik": "LUBUK INDAH",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Gunung Mas Raya (Sungai Bangko Estate)",
+      "nama_kanonik": "GUNUNG MAS RAYA SUNGAI BANGKO ESTATE",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Mega Nusa Inti Sawit (KPPA/Plasma)",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT KPPA PLASMA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Alfa Glory Indah (formerly PT Mustika Agrosari)",
+      "nama_kanonik": "ALFA GLORY INDAH FORMERLY MUSTIKA AGROSARI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Radita",
+      "nama_kanonik": "RADITA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Bumi Daya Plantation",
+      "nama_kanonik": "BUMI DAYA PLANTATION",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Ramajaya Pramukti (III/ S.Tibun)",
+      "nama_kanonik": "RAMAJAYA PRAMUKTI III S TIBUN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Ria Estela",
+      "nama_kanonik": "RIA ESTELA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Transmigration Tebing Tinggi",
+      "nama_kanonik": "TRANSMIGRATION TEBING TINGGI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Toba Indah (Block B)",
+      "nama_kanonik": "TOBA INDAH BLOCK B",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Redang Seko",
+      "nama_kanonik": "REDANG SEKO",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tampak Sakti",
+      "nama_kanonik": "TAMPAK SAKTI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Perkebunan Nusantara V (Block Tanah Putih)",
+      "nama_kanonik": "NUSANTARA V BLOCK TANAH PUTIH",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Surya Keritang Perkasa",
+      "nama_kanonik": "SURYA KERITANG PERKASA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Buruk Bakul",
+      "nama_kanonik": "BURUK BAKUL",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Masuba Citra Mandiri",
+      "nama_kanonik": "MASUBA CITRA MANDIRI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Lahan Tani Sakti (Block ALur Dumai)",
+      "nama_kanonik": "LAHAN TANI SAKTI BLOCK ALUR DUMAI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Bumiraya Investindo (TPSUM I)",
+      "nama_kanonik": "BUMIRAYA INVESTINDO TPSUM I",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tandan Harapan",
+      "nama_kanonik": "TANDAN HARAPAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Ariana Ferra Ishak Udan PT Sinar Reksa Kencana",
+      "nama_kanonik": "ARIANA FERRA ISHAK UDAN SINAR REKSA KENCANA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Hamparan Hijau",
+      "nama_kanonik": "HAMPARAN HIJAU",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Plamboyan",
+      "nama_kanonik": "PLAMBOYAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sarindo Agri Lestari",
+      "nama_kanonik": "SARINDO AGRI LESTARI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Lubuk Muda Raya",
+      "nama_kanonik": "LUBUK MUDA RAYA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Primkopad Korem 013 Wirabima",
+      "nama_kanonik": "PRIMKOPAD KOREM 013 WIRABIMA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Egasuti Nasakti I (Block B)",
+      "nama_kanonik": "EGASUTI NASAKTI I BLOCK B",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Keluarga Harapan",
+      "nama_kanonik": "KELUARGA HARAPAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Agra Cahaya Keumala",
+      "nama_kanonik": "AGRA CAHAYA KEUMALA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Asosiasi Petani Sawit Swadaya Amanah",
+      "nama_kanonik": "ASOSIASI PETANI SAWIT SWADAYA AMANAH",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Alfa Glory Indah",
+      "nama_kanonik": "ALFA GLORY INDAH",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Karya Melayu Sejati",
+      "nama_kanonik": "KARYA MELAYU SEJATI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Egasuti Nasakti (II)",
+      "nama_kanonik": "EGASUTI NASAKTI II",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Atan",
+      "nama_kanonik": "ATAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Berlian Mitra Inti",
+      "nama_kanonik": "BERLIAN MITRA INTI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Perkebunan Nusantara V (Sei Berlian)",
+      "nama_kanonik": "NUSANTARA V SEI BERLIAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Lindai Jaya Lestari",
+      "nama_kanonik": "LINDAI JAYA LESTARI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Perkebunan Nusantara V (Block Sei Intan)",
+      "nama_kanonik": "NUSANTARA V BLOCK SEI INTAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Bungo Tanjung",
+      "nama_kanonik": "BUNGO TANJUNG",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Kampar Palma Utama",
+      "nama_kanonik": "KAMPAR PALMA UTAMA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Lahan Tani Sakti (ALur Dumai Estate)",
+      "nama_kanonik": "LAHAN TANI SAKTI ALUR DUMAI ESTATE",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Langgam Harmoni",
+      "nama_kanonik": "LANGGAM HARMONI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tani Raya Wisesa",
+      "nama_kanonik": "TANI RAYA WISESA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Intan Sejati Andalan",
+      "nama_kanonik": "INTAN SEJATI ANDALAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Pulau Kundur Prakarsa",
+      "nama_kanonik": "PULAU KUNDUR PRAKARSA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sumatera Unggul Makmur",
+      "nama_kanonik": "SUMATERA UNGGUL MAKMUR",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sindora Seraya (Block II)",
+      "nama_kanonik": "SINDORA SERAYA BLOCK II",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tanjung Bunga Selatan",
+      "nama_kanonik": "TANJUNG BUNGA SELATAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Karya Proja Nelayan",
+      "nama_kanonik": "KARYA PROJA NELAYAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Adimulya Agrolestari",
+      "nama_kanonik": "ADIMULYA AGROLESTARI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Rawangkawo Makmur Sejati",
+      "nama_kanonik": "RAWANGKAWO MAKMUR SEJATI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Bhara Induk",
+      "nama_kanonik": "BHARA INDUK",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sumber Alam Makmur Sentosa",
+      "nama_kanonik": "SUMBER ALAM MAKMUR SENTOSA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Damitama Mas Sejahtera",
+      "nama_kanonik": "DAMITAMA MAS SEJAHTERA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tri Perkasa Tunggal Abadi",
+      "nama_kanonik": "TRI PERKASA TUNGGAL ABADI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Maju Jaya",
+      "nama_kanonik": "MAJU JAYA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Salmah Arowana Lestari",
+      "nama_kanonik": "SALMAH AROWANA LESTARI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Tunas Harapan",
+      "nama_kanonik": "TUNAS HARAPAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sindora Seraya (Block III)",
+      "nama_kanonik": "SINDORA SERAYA BLOCK III",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Mungkal Tujuh",
+      "nama_kanonik": "MUNGKAL TUJUH",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Karya Jaya",
+      "nama_kanonik": "KARYA JAYA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "KUD Sepakat",
+      "nama_kanonik": "KUD SEPAKAT",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Cempaka",
+      "nama_kanonik": "CEMPAKA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Andalas",
+      "nama_kanonik": "ANDALAS",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Silva Dena Aquamina",
+      "nama_kanonik": "SILVA DENA AQUAMINA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sinar Agro Raya",
+      "nama_kanonik": "SINAR AGRO RAYA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Bina Makmur",
+      "nama_kanonik": "BINA MAKMUR",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Hj Merry Syam",
+      "nama_kanonik": "HJ MERRY SYAM",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "karya Tani",
+      "nama_kanonik": "KARYA TANI",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sido Mulyo II",
+      "nama_kanonik": "SIDO MULYO II",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sumber Makmur II",
+      "nama_kanonik": "SUMBER MAKMUR II",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Bina Karya",
+      "nama_kanonik": "BINA KARYA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Jadi Mulya",
+      "nama_kanonik": "JADI MULYA",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Sumber Makmur",
+      "nama_kanonik": "SUMBER MAKMUR",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "Rindu Sempadan",
+      "nama_kanonik": "RINDU SEMPADAN",
+      "sumber": "atlas",
+      "confidence": "medium",
+      "match_method": "alias_table",
+      "geo_validated": null,
+      "rejected_reason": null
+    },
+    {
+      "nama_mentah": "PT. CITRA RIAU SARANA",
+      "nama_kanonik": "PT CITRA MUTIARA BUMI RIAU",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DARMALI JAYA LESTARI",
+      "nama_kanonik": "PT DARMALI HAYA LESTARI",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. DUTA PALMA NUSANTARA",
+      "nama_kanonik": "PT ADITYA PALMA NUSANTARA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MARITA MAKMUR JAYA",
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MEKAR SARI ALAM LESTARI",
+      "nama_kanonik": "PT ALAM SARI LESTARI",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. MESKOM AGRO SARIMAS",
+      "nama_kanonik": "PT AGRO SARIMAS INDONESIA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. PERKEBUNAN V (SEI. INTAN)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SAWIT ASAHAN INDAH",
+      "nama_kanonik": "PT GERBANG SAWIT INDAH",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SEKAR BUMI ALAM LESTARI",
+      "nama_kanonik": "PT ALAM SARI LESTARI",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SEWANGI SEJATI LUHUR",
+      "nama_kanonik": "PT CIPTA DAYA SEJATI LUHUR",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA BRATASENA PLANTATION",
+      "nama_kanonik": "PT MERIDAN SEJATI SURYA PLANTATION",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA DUMAI AGRINDO",
+      "nama_kanonik": "PT PANCA SURYA AGRINDO",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    },
+    {
+      "nama_mentah": "PT. SURYA INTI SARI RAYA",
+      "nama_kanonik": "PT PINANG MAS INTI RAYA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high",
+      "match_method": "alias_table",
+      "geo_validated": true
+    }
+  ]
+}

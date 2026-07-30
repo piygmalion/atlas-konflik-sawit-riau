@@ -460,7 +460,233 @@
         "tahun": "2025",
         "area_ha": 2394.0
       }
-    ]
+    ],
+    "atlas_full": {
+      "links": [
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Indragiri Hulu",
+          "value": 76
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Kampar",
+          "value": 69
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Pelalawan",
+          "value": 49
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Rokan Hulu",
+          "value": 44
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Siak",
+          "value": 43
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Indragiri Hilir",
+          "value": 41
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Rokan Hilir",
+          "value": 37
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Kuantan Singingi",
+          "value": 31
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Bengkalis",
+          "value": 31
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Kota Pekanbaru",
+          "value": 8
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Kota Dumai",
+          "value": 4
+        },
+        {
+          "source": "Nusantara Atlas (full)",
+          "target": "Kepulauan Meranti",
+          "value": 3
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Other/unknown",
+          "value": 196
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Fangiono",
+          "value": 34
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Perkebunan Nusantara",
+          "value": 26
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Sinar Mas (GAR)",
+          "value": 19
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Tanoto/Royal Golden Eagle",
+          "value": 18
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Darmex Agro",
+          "value": 15
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Tanpa grup",
+          "value": 15
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Sime Darby",
+          "value": 13
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Panca Eka",
+          "value": 9
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Jardine Matheson (formerly Astra Agro Lestari)",
+          "value": 8
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Salim/IndoAgri",
+          "value": 7
+        },
+        {
+          "source": "Grup Atlas",
+          "target": "Musim Mas",
+          "value": 6
+        }
+      ],
+      "by_kabupaten": [
+        {
+          "label": "Indragiri Hulu",
+          "value": 76
+        },
+        {
+          "label": "Kampar",
+          "value": 69
+        },
+        {
+          "label": "Pelalawan",
+          "value": 49
+        },
+        {
+          "label": "Rokan Hulu",
+          "value": 44
+        },
+        {
+          "label": "Siak",
+          "value": 43
+        },
+        {
+          "label": "Indragiri Hilir",
+          "value": 41
+        },
+        {
+          "label": "Rokan Hilir",
+          "value": 37
+        },
+        {
+          "label": "Kuantan Singingi",
+          "value": 31
+        },
+        {
+          "label": "Bengkalis",
+          "value": 31
+        },
+        {
+          "label": "Kota Pekanbaru",
+          "value": 8
+        },
+        {
+          "label": "Kota Dumai",
+          "value": 4
+        },
+        {
+          "label": "Kepulauan Meranti",
+          "value": 3
+        }
+      ],
+      "by_grup": [
+        {
+          "label": "Other/unknown",
+          "value": 196
+        },
+        {
+          "label": "Fangiono",
+          "value": 34
+        },
+        {
+          "label": "Perkebunan Nusantara",
+          "value": 26
+        },
+        {
+          "label": "Sinar Mas (GAR)",
+          "value": 19
+        },
+        {
+          "label": "Tanoto/Royal Golden Eagle",
+          "value": 18
+        },
+        {
+          "label": "Darmex Agro",
+          "value": 15
+        },
+        {
+          "label": "Tanpa grup",
+          "value": 15
+        },
+        {
+          "label": "Sime Darby",
+          "value": 13
+        },
+        {
+          "label": "Panca Eka",
+          "value": 9
+        },
+        {
+          "label": "Jardine Matheson (formerly Astra Agro Lestari)",
+          "value": 8
+        },
+        {
+          "label": "Salim/IndoAgri",
+          "value": 7
+        },
+        {
+          "label": "Musim Mas",
+          "value": 6
+        }
+      ],
+      "total": 436,
+      "grain": "atlas_full"
+    }
   },
   "timeline": {
     "default_mode": "kejadian",

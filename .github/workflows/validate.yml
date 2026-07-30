@@ -18,5 +18,41 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Validate website/data
+      - name: Install openpyxl (contract helpers)
+        run: pip install openpyxl
+
+      - name: Validate website/data (grain/PK gold)
         run: python scripts/validate_web_data.py
+
+      - name: Contract — silver staging vs gold PKs
+        run: |
+          python - <<'PY'
+          import json, sys
+          from pathlib import Path
+          data = Path("data")
+          silver = data / "silver"
+          errors = []
+          if silver.is_dir():
+              alias_g = json.loads((data/"perusahaan_alias.json").read_text(encoding="utf-8"))
+              alias_s = json.loads((silver/"dim_perusahaan_alias.json").read_text(encoding="utf-8"))
+              if alias_g.get("total") != alias_s.get("total"):
+                  errors.append(f"alias gold={alias_g.get('total')} != silver={alias_s.get('total')}")
+              izin_g = json.loads((data/"izin_2017.json").read_text(encoding="utf-8"))
+              izin_s = json.loads((silver/"izin_2017.json").read_text(encoding="utf-8"))
+              if izin_g.get("total") != izin_s.get("total"):
+                  errors.append(f"izin gold={izin_g.get('total')} != silver={izin_s.get('total')}")
+              desa_g = json.loads((data/"desa_lock.json").read_text(encoding="utf-8"))
+              desa_s = json.loads((silver/"desa_lock.json").read_text(encoding="utf-8"))
+              if desa_g.get("total") != desa_s.get("total"):
+                  errors.append(f"desa gold={desa_g.get('total')} != silver={desa_s.get('total')}")
+              kons = json.loads((data/"konsesi.json").read_text(encoding="utf-8"))
+              af_s = json.loads((silver/"atlas_full.json").read_text(encoding="utf-8"))
+              if (kons.get("atlas_full") or {}).get("total") != af_s.get("total"):
+                  errors.append("atlas_full gold/silver total mismatch")
+          else:
+              print("WARN: no data/silver staging — skip silver contract")
+          if errors:
+              print("FAIL:", *errors, sep="\n  ")
+              sys.exit(1)
+          print("CONTRACT: PASS")
+          PY

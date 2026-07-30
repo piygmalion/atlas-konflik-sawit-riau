@@ -84,6 +84,44 @@ def main() -> int:
     check_unique("konsesi_gfw_full", gfw, "gfwid", errors)
     check_unique("perusahaan", perusahaan, "nama", errors)
 
+    alias = load_records("perusahaan_alias.json")
+    if alias:
+        check_unique("perusahaan_alias", alias, "nama_mentah", errors)
+
+    desa = load_records("desa_lock.json")
+    if desa:
+        check_unique("desa_lock", desa, "id", errors)
+
+    izin = load_records("izin_2017.json")
+    if izin:
+        check_unique("izin_2017", izin, "record_id", errors)
+
+    dossier = load_records("dossier.json")
+    if dossier:
+        check_unique("dossier", dossier, "dossier_id", errors)
+
+    # Integration: bridge_entity_match — confirmed dilarang jika geo_ok=false
+    bem_path = SITE / "silver" / "bridge_entity_match.json"
+    if bem_path.exists():
+        bem = json.loads(bem_path.read_text(encoding="utf-8"))
+        bem_recs = bem.get("records") or []
+        check_unique("bridge_entity_match", bem_recs, "match_id", errors)
+        bad = [
+            r
+            for r in bem_recs
+            if r.get("status") == "confirmed" and r.get("geo_ok") is False
+        ]
+        if bad:
+            errors.append(
+                f"bridge_entity_match: {len(bad)} baris status=confirmed dengan geo_ok=false"
+            )
+        meta_sumber = SITE / "silver" / "meta_sumber.json"
+        if meta_sumber.exists():
+            ms = json.loads(meta_sumber.read_text(encoding="utf-8"))
+            n_ms = len(ms.get("records") or [])
+            if n_ms < 11:
+                errors.append(f"meta_sumber: expected ≥11 sumber blueprint, got {n_ms}")
+
     # Atlas uid from root CSV if present (optional hard check via konsesi kepmenhut names)
     kons_path = SITE / "konsesi.json"
     if kons_path.exists():
@@ -92,6 +130,14 @@ def main() -> int:
         # match_id preferred; else atlas_nama+gfwid composite uniqueness if present
         if atlas and any(r.get("match_id") for r in atlas):
             check_unique("konsesi.atlas_match", atlas, "match_id", errors)
+        atlas_full = (kons.get("atlas_full") or {}).get("records") or []
+        if atlas_full:
+            check_unique("konsesi.atlas_full", atlas_full, "atlas_id", errors)
+            af_total = (kons.get("atlas_full") or {}).get("total")
+            if af_total is not None and int(af_total) != len(atlas_full):
+                errors.append(
+                    f"konsesi.atlas_full.total={af_total} != len(records)={len(atlas_full)}"
+                )
         sk36 = (
             json.loads((SITE / "penertiban.json").read_text(encoding="utf-8"))
             .get("normalized", {})
@@ -126,6 +172,19 @@ def main() -> int:
             "kasus_konflik": len(kasus),
             "gfw_bbox_full": len(gfw),
         }
+        if alias:
+            expected["perusahaan_alias"] = len(alias)
+        if desa:
+            expected["desa_lock"] = len(desa)
+        if izin:
+            expected["izin_2017"] = len(izin)
+        if dossier:
+            expected["dossier"] = len(dossier)
+        if kons_path.exists():
+            kons_meta = json.loads(kons_path.read_text(encoding="utf-8"))
+            af = (kons_meta.get("atlas_full") or {}).get("records") or []
+            if af:
+                expected["atlas_full"] = len(af)
         for k, n in expected.items():
             if k in counts and int(counts[k]) != n:
                 errors.append(f"meta.counts.{k}={counts[k]} != len(records)={n}")
@@ -144,6 +203,17 @@ def main() -> int:
                     f"meta.counts.objek_titik={counts['objek_titik']} != "
                     f"layers objek_titik features={n_titik}"
                 )
+            if "hotspot_verifikasi" in counts:
+                n_hs = sum(
+                    1
+                    for f in (layers.get("features") or [])
+                    if (f.get("properties") or {}).get("layer") == "hotspot_verifikasi"
+                )
+                if int(counts["hotspot_verifikasi"]) != n_hs:
+                    errors.append(
+                        f"meta.counts.hotspot_verifikasi={counts['hotspot_verifikasi']} != "
+                        f"layers hotspot_verifikasi={n_hs}"
+                    )
         if "objek_mappable" in counts:
             n_map = sum(
                 1

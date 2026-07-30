@@ -1,0 +1,639 @@
+{
+  "total_stages": 15,
+  "stages": [
+    {
+      "Tahap": "I",
+      "Tanggal": "10 Mar 2025",
+      "Luas tahap (ha)": 221868.42,
+      "Kumulatif ke Agrinas (ha)": 221868.42,
+      "Cakupan publik": "Eks Duta Palma Group; 9 korporasi / 37 bidang",
+      "Catatan Riau / lain": "Sebagian besar Riau + Kalbar; bagian Riau disebut ~43.825 ha (7 bidang)",
+      "Label": "Terkonfirmasi terbuka"
+    },
+    {
+      "Tahap": "II",
+      "Tanggal": "26 Mar 2025",
+      "Luas tahap (ha)": 216997.75,
+      "Kumulatif ke Agrinas (ha)": 438866.17,
+      "Cakupan publik": "109 perusahaan",
+      "Catatan Riau / lain": "Termasuk areal di Riau (rincian publik terbatas)",
+      "Label": "Terkonfirmasi terbuka"
+    },
+    {
+      "Tahap": "III",
+      "Tanggal": "9 Jul 2025",
+      "Luas tahap (ha)": 394547.29,
+      "Kumulatif ke Agrinas (ha)": 833413.46,
+      "Cakupan publik": "232 perusahaan; Kalteng, Riau, Sumut, Sumsel disebut",
+      "Catatan Riau / lain": "Riau termasuk batch; Torganda disebut dalam rekap terkait",
+      "Label": "Terkonfirmasi terbuka"
+    },
+    {
+      "Tahap": "IV",
+      "Tanggal": "12 Sep 2025",
+      "Luas tahap (ha)": 674178.44,
+      "Kumulatif ke Agrinas (ha)": 1507591.9,
+      "Cakupan publik": "245 perusahaan / korporasi; 15 provinsi",
+      "Catatan Riau / lain": "Kumulatif pejabat: 1.507.591,9 ha",
+      "Label": "Terkonfirmasi terbuka"
+    },
+    {
+      "Tahap": "V",
+      "Tanggal": "24–25 Des 2025",
+      "Luas tahap (ha)": 204575,
+      "Kumulatif ke Agrinas (ha)": 1709200.59,
+      "Cakupan publik": "124 subjek; 6 provinsi",
+      "Catatan Riau / lain": "Kumulatif akhir 2025 ~1,7 juta ha; rekap Jan 2026: 1.709.200,59 ha",
+      "Label": "Terkonfirmasi terbuka"
+    },
+    {
+      "Tahap": "VI (bukan Agrinas)",
+      "Tanggal": "2025–awal 2026",
+      "Luas tahap (ha)": 254780,
+      "Kumulatif ke Agrinas (ha)": "— (ke Kemenhut)",
+      "Cakupan publik": "Kawasan konservasi dikembalikan ke Kemenhut",
+      "Catatan Riau / lain": "Termasuk logika TN/konservasi (mis. TNTN) — bedakan dari kelola Agrinas",
+      "Label": "Terkonfirmasi terbuka"
+    },
+    {
+      "Tahap": "VII",
+      "Tanggal": "13 Mei 2026",
+      "Luas tahap (ha)": 2373171.75,
+      "Kumulatif ke Agrinas (ha)": 4120915.75,
+      "Cakupan publik": "Pencabutan konsesi, PBPH, pelanggaran HTI/sawit, kewajiban plasma",
+      "Catatan Riau / lain": "Total kelolaan Agrinas ~4,12 juta ha",
+      "Label": "Terkonfirmasi terbuka"
+    },
+    {
+      "Tahap": "Rincian komposisi Tahap VII (nasional)",
+      "Tanggal": null,
+      "Luas tahap (ha)": null,
+      "Kumulatif ke Agrinas (ha)": null,
+      "Cakupan publik": null,
+      "Catatan Riau / lain": null,
+      "Label": null
+    },
+    {
+      "Tahap": "Komponen Tahap VII",
+      "Tanggal": "Luas (ha)",
+      "Luas tahap (ha)": "Subjek hukum",
+      "Kumulatif ke Agrinas (ha)": "Sumber",
+      "Cakupan publik": null,
+      "Catatan Riau / lain": null,
+      "Label": null
+    },
+    {
+      "Tahap": "Pencabutan izin konsesi",
+      "Tanggal": 733180.2,
+      "Luas tahap (ha)": 29,
+      "Kumulatif ke Agrinas (ha)": "Detik / IDN Times 13 Mei 2026",
+      "Cakupan publik": null,
+      "Catatan Riau / lain": null,
+      "Label": null
+    },
+    {
+      "Tahap": "Pencabutan PBPH",
+      "Tanggal": 1045219,
+      "Luas tahap (ha)": 22,
+      "Kumulatif ke Agrinas (ha)": "Sama",
+      "Cakupan publik": null,
+      "Catatan Riau / lain": null,
+      "Label": null
+    },
+    {
+      "Tahap": "Pelanggaran sawit & HTI",
+      "Tanggal": 420472.2,
+      "Luas tahap (ha)": 159,
+      "Kumulatif ke Agrinas (ha)": "Sama",
+      "Cakupan publik": null,
+      "Catatan Riau / lain": null,
+      "Label": null
+    },
+    {
+      "Tahap": "Kewajiban plasma",
+      "Tanggal": 192300.32,
+      "Luas tahap (ha)": 106,
+      "Kumulatif ke Agrinas (ha)": "Sama",
+      "Cakupan publik": null,
+      "Catatan Riau / lain": null,
+      "Label": null
+    },
+    {
+      "Tahap": "TOTAL Tahap VII",
+      "Tanggal": 2373171.75,
+      "Luas tahap (ha)": "—",
+      "Kumulatif ke Agrinas (ha)": "Jumlah pejabat",
+      "Cakupan publik": null,
+      "Catatan Riau / lain": null,
+      "Label": null
+    },
+    {
+      "Tahap": "Catatan aritmetika: kumulatif I–III 833.413,46 + IV 674.178,44 = 1.507.591,9 (konsisten). Kumulatif setelah V dan VII mengikuti pernyataan pejabat; situs Agrinas memakai pembulatan ~1,7 juta / ~4,12 juta.",
+      "Tanggal": null,
+      "Luas tahap (ha)": null,
+      "Kumulatif ke Agrinas (ha)": null,
+      "Cakupan publik": null,
+      "Catatan Riau / lain": null,
+      "Label": null
+    }
+  ],
+  "timeline": [
+    {
+      "Tanggal": "21 Jan / Feb 2025",
+      "Peristiwa": "Perpres 5/2025 — Satgas PKH terbentuk",
+      "Skala": "Nasional",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "21 Feb 2025",
+      "Peristiwa": "Transformasi Indra Karya → Agrinas Palma tercatat",
+      "Skala": "Nasional",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "Feb–Mar 2025",
+      "Peristiwa": "Gelombang pertama penertiban korporasi di Riau (27 PT disebut media)",
+      "Skala": "Riau",
+      "Label": "Indikasi",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "10 Mar 2025",
+      "Peristiwa": "Tahap I: eks Duta Palma → Agrinas",
+      "Skala": "Nasional (Riau+Kalbar)",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "26 Mar 2025",
+      "Peristiwa": "Tahap II: ~217 ribu ha / 109 PT",
+      "Skala": "Nasional",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "~Juni 2025",
+      "Peristiwa": "Rekap penguasaan Riau ~331.839 ha (cut-off awal; 141 PT)",
+      "Skala": "Riau",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "Jun–Jul 2025",
+      "Peristiwa": "Operasi / penguasaan TNTN (~81.793 ha) jalur konservasi",
+      "Skala": "Riau",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "9 Jul 2025",
+      "Peristiwa": "Tahap III: 394.547 ha / 232 PT (termasuk Riau)",
+      "Skala": "Nasional",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "12 Sep 2025",
+      "Peristiwa": "Tahap IV: +674.178 ha; kumulatif ~1,51 juta ha",
+      "Skala": "Nasional",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "20 Nov 2025",
+      "Peristiwa": "Aksi massa warga TNTN di Kejati Riau menolak Satgas/Agrinas",
+      "Skala": "Riau",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "24–25 Des 2025",
+      "Peristiwa": "Tahap V: +204.575 ha; kumulatif ~1,7 juta ha",
+      "Skala": "Nasional",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "Jan–Mar 2026",
+      "Peristiwa": "Konflik Rohul: adat Rantau Kasai; bentrok Torganda–Agrinas",
+      "Skala": "Riau",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "13 Mei 2026",
+      "Peristiwa": "Tahap VII: +2,37 juta ha; total kelolaan Agrinas ~4,12 juta ha",
+      "Skala": "Nasional",
+      "Label": "Terkonfirmasi terbuka",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "Tanggal": "Jun–Jul 2026",
+      "Peristiwa": "Dirut Agrinas sebut Riau ~729 ribu ha (RDP Komisi VI)",
+      "Skala": "Riau (klaim)",
+      "Label": "Indikasi",
+      "c4": null,
+      "c5": null,
+      "c6": null
+    }
+  ],
+  "klaim_riau": [
+    {
+      "B. Klaim sebaran kelolaan Agrinas di Riau": "C. Sawit produktif dalam kelolaan terverifikasi",
+      "~729.000 ha": "~729.677–730.000 ha",
+      "Pernyataan Dirut dalam RDP (Fortune/Antara)": "Nasional, dari ~1,7 juta ha yang sudah diverifikasi (Tahap I–V)",
+      "Indikasi": "Terkonfirmasi terbuka (nasional)",
+      "Belum ada daftar objek publik yang menjumlah tepat angka ini": "BUKAN klaim khusus Riau — risiko salah briefing jika digabung dengan B",
+      "c5": null,
+      "c6": null
+    },
+    {
+      "B. Klaim sebaran kelolaan Agrinas di Riau": "D. Bagian Riau eks Duta Palma (serah Agrinas)",
+      "~729.000 ha": "~43.825 ha",
+      "Pernyataan Dirut dalam RDP (Fortune/Antara)": "7 bidang di Kuansing, Rohul, Kampar, Pelalawan (dari total 221.868 ha)",
+      "Indikasi": "Indikasi",
+      "Belum ada daftar objek publik yang menjumlah tepat angka ini": "Subset Tahap I; bukan total Riau",
+      "c5": null,
+      "c6": null
+    },
+    {
+      "B. Klaim sebaran kelolaan Agrinas di Riau": "E. TNTN (Pelalawan)",
+      "~729.000 ha": "~81.793 ha",
+      "Pernyataan Dirut dalam RDP (Fortune/Antara)": "Jalur konservasi / pemulihan TN — bukan budidaya Agrinas",
+      "Indikasi": "Terkonfirmasi terbuka",
+      "Belum ada daftar objek publik yang menjumlah tepat angka ini": "Wajib dipisah dari narasi kelola sawit Agrinas",
+      "c5": null,
+      "c6": null
+    },
+    {
+      "B. Klaim sebaran kelolaan Agrinas di Riau": "Sebaran klaim Dirut (Indikasi — tanpa daftar objek)",
+      "~729.000 ha": null,
+      "Pernyataan Dirut dalam RDP (Fortune/Antara)": null,
+      "Indikasi": null,
+      "Belum ada daftar objek publik yang menjumlah tepat angka ini": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "B. Klaim sebaran kelolaan Agrinas di Riau": "Provinsi disebut",
+      "~729.000 ha": "Luas disebut (ribu ha)",
+      "Pernyataan Dirut dalam RDP (Fortune/Antara)": "Catatan",
+      "Indikasi": null,
+      "Belum ada daftar objek publik yang menjumlah tepat angka ini": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "B. Klaim sebaran kelolaan Agrinas di Riau": "Riau",
+      "~729.000 ha": 729,
+      "Pernyataan Dirut dalam RDP (Fortune/Antara)": "Terbesar menurut Dirut",
+      "Indikasi": null,
+      "Belum ada daftar objek publik yang menjumlah tepat angka ini": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "B. Klaim sebaran kelolaan Agrinas di Riau": "Papua (disebut Papua Selatan pada sebagian liputan)",
+      "~729.000 ha": 494,
+      "Pernyataan Dirut dalam RDP (Fortune/Antara)": null,
+      "Indikasi": null,
+      "Belum ada daftar objek publik yang menjumlah tepat angka ini": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "B. Klaim sebaran kelolaan Agrinas di Riau": "Kalimantan Tengah",
+      "~729.000 ha": 627,
+      "Pernyataan Dirut dalam RDP (Fortune/Antara)": "Disebut Antara",
+      "Indikasi": null,
+      "Belum ada daftar objek publik yang menjumlah tepat angka ini": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "B. Klaim sebaran kelolaan Agrinas di Riau": "Aceh",
+      "~729.000 ha": 173,
+      "Pernyataan Dirut dalam RDP (Fortune/Antara)": null,
+      "Indikasi": null,
+      "Belum ada daftar objek publik yang menjumlah tepat angka ini": null,
+      "c5": null,
+      "c6": null
+    },
+    {
+      "B. Klaim sebaran kelolaan Agrinas di Riau": "Lainnya (sisa total ~4,1 juta)",
+      "~729.000 ha": "—",
+      "Pernyataan Dirut dalam RDP (Fortune/Antara)": "Tidak dirinci publik per Provinsi",
+      "Indikasi": null,
+      "Belum ada daftar objek publik yang menjumlah tepat angka ini": null,
+      "c5": null,
+      "c6": null
+    }
+  ],
+  "atlas_grup": {
+    "total": 39,
+    "records": [
+      {
+        "no": "1",
+        "grup": "Other/unknown",
+        "jumlah_perusahaan": "166",
+        "jumlah_poligon": "211",
+        "total_luas_ha": "748218.47"
+      },
+      {
+        "no": "2",
+        "grup": "Perkebunan Nusantara",
+        "jumlah_perusahaan": "20",
+        "jumlah_poligon": "26",
+        "total_luas_ha": "217183.07"
+      },
+      {
+        "no": "3",
+        "grup": "Fangiono",
+        "jumlah_perusahaan": "17",
+        "jumlah_poligon": "34",
+        "total_luas_ha": "175019.25"
+      },
+      {
+        "no": "4",
+        "grup": "Tanoto/Royal Golden Eagle",
+        "jumlah_perusahaan": "10",
+        "jumlah_poligon": "18",
+        "total_luas_ha": "133304.32"
+      },
+      {
+        "no": "5",
+        "grup": "Sime Darby",
+        "jumlah_perusahaan": "8",
+        "jumlah_poligon": "13",
+        "total_luas_ha": "120332.66"
+      },
+      {
+        "no": "6",
+        "grup": "Sinar Mas (GAR)",
+        "jumlah_perusahaan": "13",
+        "jumlah_poligon": "19",
+        "total_luas_ha": "109965.41"
+      },
+      {
+        "no": "7",
+        "grup": "Darmex Agro",
+        "jumlah_perusahaan": "13",
+        "jumlah_poligon": "15",
+        "total_luas_ha": "97207.5"
+      },
+      {
+        "no": "8",
+        "grup": "KPN Plantations",
+        "jumlah_perusahaan": "3",
+        "jumlah_poligon": "4",
+        "total_luas_ha": "77795.92"
+      },
+      {
+        "no": "9",
+        "grup": "Jardine Matheson (formerly Astra Agro Lestari)",
+        "jumlah_perusahaan": "6",
+        "jumlah_poligon": "8",
+        "total_luas_ha": "71578.94"
+      },
+      {
+        "no": "10",
+        "grup": "Torganda",
+        "jumlah_perusahaan": "2",
+        "jumlah_poligon": "6",
+        "total_luas_ha": "56327.04"
+      },
+      {
+        "no": "11",
+        "grup": "Salim/IndoAgri",
+        "jumlah_perusahaan": "7",
+        "jumlah_poligon": "7",
+        "total_luas_ha": "47567.75"
+      },
+      {
+        "no": "12",
+        "grup": "Musim Mas",
+        "jumlah_perusahaan": "3",
+        "jumlah_poligon": "6",
+        "total_luas_ha": "43486.45"
+      },
+      {
+        "no": "13",
+        "grup": "Kuala Lumpur Kepong (KLK)",
+        "jumlah_perusahaan": "5",
+        "jumlah_poligon": "6",
+        "total_luas_ha": "40911.93"
+      },
+      {
+        "no": "14",
+        "grup": "Gama",
+        "jumlah_perusahaan": "4",
+        "jumlah_poligon": "6",
+        "total_luas_ha": "37509.19"
+      },
+      {
+        "no": "15",
+        "grup": "Panca Eka",
+        "jumlah_perusahaan": "5",
+        "jumlah_poligon": "9",
+        "total_luas_ha": "29173.34"
+      },
+      {
+        "no": "16",
+        "grup": "Tri Bakti Sarimas",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "23308.56"
+      },
+      {
+        "no": "17",
+        "grup": "Padasa Enam Utama",
+        "jumlah_perusahaan": "2",
+        "jumlah_poligon": "4",
+        "total_luas_ha": "22911.17"
+      },
+      {
+        "no": "18",
+        "grup": "Siak Raya",
+        "jumlah_perusahaan": "2",
+        "jumlah_poligon": "2",
+        "total_luas_ha": "22849.22"
+      },
+      {
+        "no": "19",
+        "grup": "Rokan",
+        "jumlah_perusahaan": "2",
+        "jumlah_poligon": "3",
+        "total_luas_ha": "22630.48"
+      },
+      {
+        "no": "20",
+        "grup": "Royal Golden Eagle (RGE)/Asian Agri",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "3",
+        "total_luas_ha": "22595.7"
+      },
+      {
+        "no": "21",
+        "grup": "Dumai Indah",
+        "jumlah_perusahaan": "3",
+        "jumlah_poligon": "3",
+        "total_luas_ha": "19121.8"
+      },
+      {
+        "no": "22",
+        "grup": "Gama AND S&G Biofuel - JV",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "4",
+        "total_luas_ha": "14124.85"
+      },
+      {
+        "no": "23",
+        "grup": "Sarimas",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "2",
+        "total_luas_ha": "14049.98"
+      },
+      {
+        "no": "24",
+        "grup": "Samsung",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "3",
+        "total_luas_ha": "12487.74"
+      },
+      {
+        "no": "25",
+        "grup": "Incasi Raya",
+        "jumlah_perusahaan": "2",
+        "jumlah_poligon": "3",
+        "total_luas_ha": "12390.78"
+      },
+      {
+        "no": "26",
+        "grup": "RP Kelapa Sawit",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "11154.52"
+      },
+      {
+        "no": "27",
+        "grup": "Uniseraya",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "3",
+        "total_luas_ha": "8691.52"
+      },
+      {
+        "no": "28",
+        "grup": "Sabira",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "7116.39"
+      },
+      {
+        "no": "29",
+        "grup": "Pancadaya Perkasa Group",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "6832.39"
+      },
+      {
+        "no": "30",
+        "grup": "Wilmar",
+        "jumlah_perusahaan": "2",
+        "jumlah_poligon": "2",
+        "total_luas_ha": "6730.93"
+      },
+      {
+        "no": "31",
+        "grup": "Danitama Makmur",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "6557.94"
+      },
+      {
+        "no": "32",
+        "grup": "Anglo-Eastern Plantation (Aep)",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "2",
+        "total_luas_ha": "5696.93"
+      },
+      {
+        "no": "33",
+        "grup": "Hutahaean",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "4486.35"
+      },
+      {
+        "no": "34",
+        "grup": "Uniseraya Group",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "4255.04"
+      },
+      {
+        "no": "35",
+        "grup": "Domba Mas",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "3939.35"
+      },
+      {
+        "no": "36",
+        "grup": "Adimulya",
+        "jumlah_perusahaan": "2",
+        "jumlah_poligon": "3",
+        "total_luas_ha": "3517.5"
+      },
+      {
+        "no": "37",
+        "grup": "Southern Acids Berhad",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "2705.26"
+      },
+      {
+        "no": "38",
+        "grup": "Bumiraya Investindo",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "1846.92"
+      },
+      {
+        "no": "39",
+        "grup": "Duta Palma Group",
+        "jumlah_perusahaan": "1",
+        "jumlah_poligon": "1",
+        "total_luas_ha": "1461.19"
+      }
+    ]
+  },
+  "disclaimer": "Baseline publik rantai Satgas→Agrinas — bukan daftar BA resmi."
+}

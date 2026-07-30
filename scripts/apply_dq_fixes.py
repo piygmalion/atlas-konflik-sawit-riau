@@ -181,7 +181,7 @@ def fix_kasus():
 # ─── Fase 2: cocokan + SK36 ──────────────────────────────────────────────────
 
 def fix_cocokan():
-    print("Fase 2a: cocokan Atlas↔GFW")
+    print("Fase 2a: cocokan Atlas<->GFW")
     path = ROOT / "cocokan_atlas_gabungan_gfw.csv"
     rows = load_csv(path)
     if not rows:

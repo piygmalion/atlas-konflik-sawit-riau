@@ -1,0 +1,126 @@
+{
+  "total": 11,
+  "records": [
+    {
+      "sumber_id": "bps_2021",
+      "nama": "Direktori BPS Riau 2021",
+      "akses": "terbuka",
+      "tipe_data": "tabular",
+      "kredibilitas": "tinggi",
+      "grain": "1 baris / perusahaan",
+      "path_sot": "daftar_perusahaan_sawit_riau_gabungan.csv",
+      "refresh_cadence": "tahunan",
+      "status": "active"
+    },
+    {
+      "sumber_id": "disbun_riau",
+      "nama": "Disbun Riau (statistik agregat)",
+      "akses": "terbuka",
+      "tipe_data": "tabular",
+      "kredibilitas": "sedang",
+      "grain": "agregat kab/prov",
+      "path_sot": null,
+      "refresh_cadence": "tahunan",
+      "status": "planned"
+    },
+    {
+      "sumber_id": "gfw_greenpeace",
+      "nama": "GFW / Greenpeace oil palm concessions",
+      "akses": "terbuka",
+      "tipe_data": "spasial",
+      "kredibilitas": "tinggi",
+      "grain": "1 poligon / gfwid",
+      "path_sot": "tabulasi_konsesi_sawit_gfw_bbox_riau.csv",
+      "refresh_cadence": "periodik",
+      "status": "active"
+    },
+    {
+      "sumber_id": "nusantara_atlas",
+      "nama": "Nusantara Atlas",
+      "akses": "terbuka",
+      "tipe_data": "spasial",
+      "kredibilitas": "tinggi",
+      "grain": "1 baris / konsesi Atlas",
+      "path_sot": "tabulasi_konsesi_sawit_nusantara_atlas_riau.csv",
+      "refresh_cadence": "periodik",
+      "status": "active"
+    },
+    {
+      "sumber_id": "fwi_hutan",
+      "nama": "Peta Hutan FWI",
+      "akses": "terbuka",
+      "tipe_data": "spasial",
+      "kredibilitas": "sedang",
+      "grain": "layer tutupan",
+      "path_sot": null,
+      "refresh_cadence": "periodik",
+      "status": "planned"
+    },
+    {
+      "sumber_id": "atr_bpn",
+      "nama": "ATR/BPN Kanwil (IUP tanpa HGU)",
+      "akses": "tertutup",
+      "tipe_data": "tabular",
+      "kredibilitas": "tinggi",
+      "grain": "1 baris / IUP",
+      "path_sot": null,
+      "refresh_cadence": "ad-hoc",
+      "status": "planned"
+    },
+    {
+      "sumber_id": "pemprov_riau",
+      "nama": "Pemprov Riau daftar perusahaan",
+      "akses": "tertutup",
+      "tipe_data": "tabular",
+      "kredibilitas": "tinggi",
+      "grain": "1 baris / perusahaan",
+      "path_sot": null,
+      "refresh_cadence": "ad-hoc",
+      "status": "planned"
+    },
+    {
+      "sumber_id": "kepmenhut_36_2025",
+      "nama": "Kepmenhut 36/2025 subjek 110A/B",
+      "akses": "tertutup",
+      "tipe_data": "tabular",
+      "kredibilitas": "tinggi",
+      "grain": "1 subjek / record_id",
+      "path_sot": "tabulasi_konsesi_sawit_kepmenhut_36_2025_riau_rapi.csv",
+      "refresh_cadence": "ad-hoc",
+      "status": "active"
+    },
+    {
+      "sumber_id": "walhi_investigasi",
+      "nama": "Investigasi spesifik WALHI",
+      "akses": "tertutup",
+      "tipe_data": "spasial",
+      "kredibilitas": "sedang",
+      "grain": "kasus investigasi",
+      "path_sot": null,
+      "refresh_cadence": "ad-hoc",
+      "status": "planned"
+    },
+    {
+      "sumber_id": "polda_konflik",
+      "nama": "Daftar Konflik Polda Riau",
+      "akses": "tertutup",
+      "tipe_data": "tabular",
+      "kredibilitas": "tinggi",
+      "grain": "1 entri / kasus",
+      "path_sot": "master_kasus_sawit_riau.csv",
+      "refresh_cadence": "berkala",
+      "status": "active"
+    },
+    {
+      "sumber_id": "agrinas_satgas",
+      "nama": "Master List Objek Agrinas–Satgas",
+      "akses": "tertutup",
+      "tipe_data": "tabular",
+      "kredibilitas": "tinggi",
+      "grain": "1 objek / OBJ-###",
+      "path_sot": "master_list_objek_agrinas_satgas_riau.csv",
+      "refresh_cadence": "berkala",
+      "status": "active"
+    }
+  ]
+}
