@@ -28,11 +28,15 @@ python website/scripts/validate_web_data.py
 
 # 4) Audit + laporan DQ
 python website/scripts/write_dq_report.py
+
+# 5) Sync ke Supabase (opsional, setelah backend/.env diisi)
+python website/backend/sync_serving.py
 ```
 
 Commit & push perubahan di `website/data/` hanya jika `validate_web_data.py` **PASS**.
 
 CI: GitHub Action **Validate serving data** menjalankan gate yang sama pada setiap push/PR ke `main`.
+CI sync: **Sync serving data to Supabase** (jadwal Senin + saat `data/` berubah) jika secret `SUPABASE_URL` / `SUPABASE_SERVICE_ROLE_KEY` terisi.
 
 Ambang lulus utama:
 
@@ -50,6 +54,16 @@ python -m http.server 8080
 ```
 
 Buka http://127.0.0.1:8080/
+
+### Backend + Supabase
+
+Lihat [backend/README.md](backend/README.md). Ringkas:
+
+1. Jalankan migration SQL di proyek Supabase.
+2. Isi `backend/.env` dari `.env.example`.
+3. `pip install -r backend/requirements.txt && python backend/sync_serving.py`
+4. Isi `js/config.js` (`supabaseUrl` + `supabaseAnonKey`), mode `auto`.
+5. Opsional API: `python backend/run_api.py` → http://127.0.0.1:8787/docs
 
 ## Batasan
 

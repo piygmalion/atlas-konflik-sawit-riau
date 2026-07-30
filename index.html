@@ -9,12 +9,12 @@
   <meta property="og:description" content="Pemetaan spasial konflik sawit Riau — interaktif dan dapat diperbarui." />
   <meta property="og:type" content="website" />
   <!-- Bump atlas-asset-ver AND every ?v= below together on each release. -->
-  <meta name="atlas-asset-ver" content="0dbd" />
+  <meta name="atlas-asset-ver" content="0dbe" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/styles.css?v=0dbd" />
+  <link rel="stylesheet" href="css/styles.css?v=0dbe" />
 </head>
 <body class="is-booting">
   <div id="app">
@@ -348,9 +348,9 @@
         <div>
           <p class="eyebrow">Struktur data</p>
           <h1>Siap di-update berkala</h1>
-          <p>Semua tampilan membaca folder <code>data/</code>. Setelah workbook berubah, jalankan skrip ekspor — frontend tidak perlu diubah.</p>
+          <p>Tampilan membaca <code>data/</code> lokal atau Supabase (lihat <code>js/config.js</code>). Setelah workbook berubah: ekspor → sync.</p>
         </div>
-        <code class="cmd">python scripts/export_web_data.py</code>
+        <code class="cmd">python scripts/export_web_data.py && python backend/sync_serving.py</code>
       </div>
       <div class="table-wrap">
         <div class="table-tabs" id="tableTabs"></div>
@@ -370,9 +370,11 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <script src="js/ui-partials.js?v=0dbd"></script>
-  <script src="js/analytics.js?v=0dbd"></script>
-  <script src="js/penertiban.js?v=0dbd"></script>
-  <script src="js/app.js?v=0dbd"></script>
+  <script src="js/config.js?v=0dbe"></script>
+  <script src="js/data-source.js?v=0dbe"></script>
+  <script src="js/ui-partials.js?v=0dbe"></script>
+  <script src="js/analytics.js?v=0dbe"></script>
+  <script src="js/penertiban.js?v=0dbe"></script>
+  <script src="js/app.js?v=0dbe"></script>
 </body>
 </html>

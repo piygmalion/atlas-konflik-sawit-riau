@@ -11,6 +11,17 @@
     },
     "catatan": "Indeks liputan+objek+register terbuka — bukan vonis operasional. Skor early-warning intel terbuka, bukan vonis operasional. 41 entri tidak terpetakan ke Polres (umumnya 'Lintas Provinsi Riau'). Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi."
   },
+  "coverage": {
+    "total_entri_terpetakan": 83,
+    "entri_tidak_terpetakan": 30,
+    "bucket_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
+    "label_terpetakan": "Entri terpetakan ke Polres",
+    "label_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
+    "n_polres": 12,
+    "prioritas": 4,
+    "waspada": 4,
+    "pantau": 4
+  },
   "records": [
     {
       "peringkat": 1,
@@ -288,16 +299,5 @@
       "alasan": "Sinyal Agrinas terbatas di sumber terbuka",
       "tahun": null
     }
-  ],
-  "coverage": {
-    "n_polres": 12,
-    "prioritas": 4,
-    "waspada": 4,
-    "pantau": 4,
-    "total_entri_terpetakan": 83,
-    "entri_tidak_terpetakan": 30,
-    "bucket_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
-    "label_terpetakan": "Entri terpetakan ke Polres",
-    "label_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres"
-  }
+  ]
 }

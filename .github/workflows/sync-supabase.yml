@@ -1,0 +1,40 @@
+name: Sync serving data to Supabase
+
+# Update berkala: setiap Senin 01:00 UTC ≈ 08:00 WIB
+# Juga bisa dijalankan manual dari tab Actions.
+
+on:
+  schedule:
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "backend/**"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    # Skip jika secret belum diisi (repo tetap hijau)
+    if: ${{ secrets.SUPABASE_URL != '' && secrets.SUPABASE_SERVICE_ROLE_KEY != '' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install backend deps
+        run: pip install -r backend/requirements.txt
+
+      - name: Validate serving data
+        run: python scripts/validate_web_data.py
+
+      - name: Sync to Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python backend/sync_serving.py --trigger github-actions

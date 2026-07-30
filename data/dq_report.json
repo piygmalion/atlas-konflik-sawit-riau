@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-30T21:00:46+07:00",
+  "generated_at": "2026-07-31T00:20:19+07:00",
   "validate_exit_code": 0,
   "validate_pass": true,
   "validate_stdout": "=== validate_web_data ===\ndata: website/data\nkasus=113 objek=139 kab=12 polres=12 gfw=287\nRESULT: PASS (0 warnings)\n",
   "validate_stderr": "",
   "grade_counts": {
     "A": 26,
-    "B": 1
+    "C": 1
   },
   "overview": [
     {
@@ -61,11 +61,11 @@
       "grade": "A",
       "note": "bersih",
       "top_null_fields": [
-        "dq_flags.missing 100.0%",
         "tanpa_lp_alasan 100.0%",
         "hambatan 97.3%",
         "nomor_lp 85.8%",
-        "status 75.2%"
+        "status 75.2%",
+        "upaya 66.4%"
       ]
     },
     {
@@ -175,18 +175,18 @@
     },
     {
       "table": "layers.geojson",
-      "n": 82,
+      "n": 70,
       "status": "ok",
-      "avg_fill_important": 94.2,
+      "avg_fill_important": 93.2,
       "pk_dup_groups": 0,
-      "grade": "B",
-      "note": "baik, null sekunder",
+      "grade": "C",
+      "note": "1 important fields >=20% null",
       "top_null_fields": [
-        "anggota_kab 93.9%",
-        "geom_source 93.9%",
-        "karakter 93.9%",
-        "n_titik 93.9%",
-        "level_risiko 86.6%"
+        "anggota_kab 92.9%",
+        "karakter 92.9%",
+        "level_risiko 84.3%",
+        "n_kasus 84.3%",
+        "skor 84.3%"
       ]
     },
     {
@@ -377,7 +377,7 @@
     }
   ],
   "cross": {
-    "layers_objek_titik": 66,
+    "layers_objek_titik": 54,
     "objek_total": 139,
     "kab_n": 12,
     "polres_n": 12,
@@ -398,9 +398,9 @@
     "objek_mitra_pair_null": 43,
     "perusahaan_norm_dup_groups": 0,
     "perusahaan_norm_dup_rows": 0,
-    "gfw_companies": 175,
+    "gfw_companies": 199,
     "atlas_companies": 289,
-    "company_name_overlap_norm": 111
+    "company_name_overlap_norm": 92
   },
   "baseline_cross": {
     "layers_objek_titik": 20,

@@ -20,19 +20,15 @@
       "tema": "penyerobotan/okupasi; HGU; plasma/PIR; sawit; mediasi",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; kata:TBS; plasma/PIR; HGU; perkebunan; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2025"
       ],
       "tahun_kejadian": [
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-002",
@@ -53,6 +49,9 @@
       "tema": "sawit; unjuk rasa",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -60,14 +59,7 @@
       ],
       "tahun_kejadian": [
         "2024"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-003",
@@ -88,19 +80,15 @@
       "tema": "sawit; Agrinas/KSO; kekerasan",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; Agrinas/KSO; perkebunan",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-004",
@@ -121,19 +109,15 @@
       "tema": "plasma/PIR; hutan/PKH/TNTN",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "plasma/PIR",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-005",
@@ -154,19 +138,15 @@
       "tema": "sawit; mediasi; kekerasan",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-006",
@@ -187,19 +167,15 @@
       "tema": "sawit; klaim waris",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-007",
@@ -220,19 +196,15 @@
       "tema": "sawit",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-008",
@@ -253,19 +225,15 @@
       "tema": "HGU; sawit; unjuk rasa; kekerasan",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; HGU; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-009",
@@ -286,6 +254,9 @@
       "tema": "sawit; unjuk rasa; sertifikat",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
@@ -294,14 +265,7 @@
         "2023",
         "2025",
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-010",
@@ -322,6 +286,9 @@
       "tema": "sawit; unjuk rasa; sertifikat",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -332,14 +299,7 @@
         "2020",
         "2023",
         "2024"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-011",
@@ -360,6 +320,9 @@
       "tema": "sawit; unjuk rasa",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -367,14 +330,7 @@
       ],
       "tahun_kejadian": [
         "2024"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-012",
@@ -395,6 +351,9 @@
       "tema": "sawit; SKT/SKGR",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -403,14 +362,7 @@
       "tahun_kejadian": [
         "2023",
         "2024"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-013",
@@ -431,6 +383,9 @@
       "tema": "sawit; sertifikat",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -439,14 +394,7 @@
       "tahun_kejadian": [
         "2023",
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-014",
@@ -467,6 +415,9 @@
       "tema": "tumpang tindih; sawit; mediasi; sertifikat; SKT/SKGR",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
@@ -475,14 +426,7 @@
         "2022",
         "2023",
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-015",
@@ -503,19 +447,15 @@
       "tema": "penyerobotan/okupasi; HGU; plasma/PIR; sawit; Agrinas/KSO; hutan/PKH/TNTN; mediasi; unjuk rasa",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; plasma/PIR; HGU; Agrinas/KSO; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-016",
@@ -536,19 +476,15 @@
       "tema": "HGU; sawit; mediasi",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; HGU",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-017",
@@ -569,6 +505,9 @@
       "tema": "sawit; pemalsuan dokumen; SKT/SKGR",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -576,14 +515,7 @@
       ],
       "tahun_kejadian": [
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-018",
@@ -604,6 +536,9 @@
       "tema": "sawit",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -611,14 +546,7 @@
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-019",
@@ -639,19 +567,15 @@
       "tema": "plasma/PIR; sawit; mediasi; unjuk rasa; kekerasan; SKT/SKGR",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; kata:TBS; plasma/PIR; perkebunan; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2018"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-020",
@@ -672,20 +596,16 @@
       "tema": "plasma/PIR; sawit; mediasi; unjuk rasa",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2021",
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-021",
@@ -706,19 +626,15 @@
       "tema": "sawit; mediasi",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; perkebunan",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-022",
@@ -739,20 +655,16 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa; kekerasan",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO; perkebunan",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2025",
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-023",
@@ -773,6 +685,9 @@
       "tema": "sawit; unjuk rasa",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -781,14 +696,7 @@
       "tahun_kejadian": [
         "2020",
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-024",
@@ -809,6 +717,9 @@
       "tema": "sawit; mediasi; unjuk rasa",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -817,14 +728,7 @@
       "tahun_kejadian": [
         "2024",
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-025",
@@ -845,6 +749,9 @@
       "tema": "penyerobotan/okupasi; sawit; unjuk rasa; SKT/SKGR",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -852,14 +759,7 @@
       ],
       "tahun_kejadian": [
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-026",
@@ -880,19 +780,15 @@
       "tema": "HGU; sawit; mediasi",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; HGU; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-027",
@@ -913,19 +809,15 @@
       "tema": "plasma/PIR; sawit; mediasi",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-028",
@@ -946,19 +838,15 @@
       "tema": "sawit; mediasi",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-029",
@@ -979,19 +867,15 @@
       "tema": "penyerobotan/okupasi; sawit; unjuk rasa",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2024"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-030",
@@ -1012,19 +896,15 @@
       "tema": "penyerobotan/okupasi; sawit; unjuk rasa",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-031",
@@ -1045,20 +925,16 @@
       "tema": "tumpang tindih; HGU; sawit; sertifikat",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:TBS; HGU; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2023",
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-032",
@@ -1079,19 +955,15 @@
       "tema": "sawit; Agrinas/KSO; mediasi",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-033",
@@ -1112,19 +984,15 @@
       "tema": "tumpang tindih; plasma/PIR; sawit; mediasi",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit; plasma/PIR; perkebunan; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2024"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-034",
@@ -1145,20 +1013,16 @@
       "tema": "sawit; sertifikat; SKT/SKGR",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; perkebunan",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2023",
         "2024"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-035",
@@ -1179,6 +1043,9 @@
       "tema": "sawit; unjuk rasa",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit; kata:kelapa sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -1186,14 +1053,7 @@
       ],
       "tahun_kejadian": [
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "SW-036",
@@ -1214,6 +1074,9 @@
       "tema": "sawit; unjuk rasa; sertifikat",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2024",
         "2025",
@@ -1221,14 +1084,7 @@
       ],
       "tahun_kejadian": [
         "2025"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-037",
@@ -1249,19 +1105,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-038",
@@ -1282,19 +1134,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-039",
@@ -1315,19 +1163,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-040",
@@ -1348,19 +1192,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-041",
@@ -1381,19 +1221,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-042",
@@ -1414,19 +1250,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-043",
@@ -1447,19 +1279,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-044",
@@ -1480,19 +1308,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-045",
@@ -1513,19 +1337,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO; perkebunan",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-046",
@@ -1546,19 +1366,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-047",
@@ -1579,19 +1395,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-048",
@@ -1612,19 +1424,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-049",
@@ -1645,19 +1453,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-051",
@@ -1678,19 +1482,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-052",
@@ -1711,19 +1511,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-053",
@@ -1744,19 +1540,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-054",
@@ -1777,19 +1569,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-055",
@@ -1810,19 +1598,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-056",
@@ -1843,19 +1627,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-058",
@@ -1876,19 +1656,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-059",
@@ -1909,19 +1685,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa; kekerasan",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-060",
@@ -1942,19 +1714,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-061",
@@ -1975,19 +1743,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-062",
@@ -2008,19 +1772,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-063",
@@ -2041,19 +1801,15 @@
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; Agrinas/KSO; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-064",
@@ -2074,19 +1830,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-065",
@@ -2107,19 +1859,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-066",
@@ -2140,19 +1888,15 @@
       "tema": "penyerobotan/okupasi; sawit; Agrinas/KSO; hutan/PKH/TNTN; kekerasan",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; Agrinas/KSO; perkebunan; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-067",
@@ -2173,19 +1917,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-068",
@@ -2206,19 +1946,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-069",
@@ -2239,20 +1975,16 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO; perkebunan",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2025",
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-070",
@@ -2273,19 +2005,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-071",
@@ -2306,19 +2034,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-072",
@@ -2339,19 +2063,15 @@
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-074",
@@ -2372,19 +2092,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-075",
@@ -2405,19 +2121,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-076",
@@ -2438,20 +2150,16 @@
       "tema": "sawit; hutan/PKH/TNTN; kekerasan",
       "tipe_entri": "Kasus operasional",
       "indikator_sawit": "kata:sawit",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2025",
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-078",
@@ -2472,19 +2180,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-079",
@@ -2505,19 +2209,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-080",
@@ -2538,19 +2238,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-081",
@@ -2571,19 +2267,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-082",
@@ -2604,19 +2296,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-083",
@@ -2637,19 +2325,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-084",
@@ -2670,19 +2354,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-085",
@@ -2703,19 +2383,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-087",
@@ -2736,19 +2412,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-088",
@@ -2769,19 +2441,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-089",
@@ -2802,19 +2470,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-090",
@@ -2835,19 +2499,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-094",
@@ -2868,19 +2528,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO; perkebunan",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-096",
@@ -2901,19 +2557,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-098",
@@ -2934,19 +2586,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-100",
@@ -2967,19 +2615,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-101",
@@ -3000,19 +2644,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-102",
@@ -3033,19 +2673,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-103",
@@ -3066,19 +2702,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN; unjuk rasa",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO; kebun",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-105",
@@ -3099,19 +2731,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-106",
@@ -3132,19 +2760,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-107",
@@ -3165,19 +2789,15 @@
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-108",
@@ -3198,19 +2818,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-109",
@@ -3231,19 +2847,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-110",
@@ -3264,19 +2876,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-111",
@@ -3297,19 +2905,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-113",
@@ -3330,19 +2934,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-116",
@@ -3363,19 +2963,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-117",
@@ -3396,19 +2992,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-118",
@@ -3429,19 +3021,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-119",
@@ -3462,19 +3050,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-121",
@@ -3495,19 +3079,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-122",
@@ -3528,19 +3108,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-123",
@@ -3561,19 +3137,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-124",
@@ -3594,19 +3166,15 @@
       "tema": "sawit; Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "kata:sawit; Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-125",
@@ -3627,19 +3195,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-126",
@@ -3660,19 +3224,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-127",
@@ -3693,19 +3253,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "ST-128",
@@ -3726,19 +3282,15 @@
       "tema": "Agrinas/KSO; hutan/PKH/TNTN",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     },
     {
       "id": "AN-129",
@@ -3759,19 +3311,15 @@
       "tema": "Agrinas/KSO; sertifikat",
       "tipe_entri": "Potensi/register",
       "indikator_sawit": "Agrinas/KSO",
+      "tanpa_lp": false,
+      "tanpa_lp_alasan": null,
+      "status_verifikasi": "ok",
       "tahun_disebut": [
         "2026"
       ],
       "tahun_kejadian": [
         "2026"
-      ],
-      "tanpa_lp": false,
-      "tanpa_lp_alasan": null,
-      "dq_flags": {
-        "missing": [],
-        "completeness": 100.0
-      },
-      "status_verifikasi": "ok"
+      ]
     }
   ]
 }

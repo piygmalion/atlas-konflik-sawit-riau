@@ -20,7 +20,7 @@
       "lon": 100.55,
       "lat": 0.88,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
-      "n_kasus": 13,
+      "n_kasus": 12,
       "risiko_register": {
         "skor": 61.2,
         "level": "TINGGI",
@@ -107,7 +107,7 @@
       "lon": 101.55,
       "lat": -0.55,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
-      "n_kasus": 9,
+      "n_kasus": 8,
       "risiko_register": {
         "skor": 64.5,
         "level": "TINGGI",
@@ -136,7 +136,7 @@
       "lon": 102.15,
       "lat": 0.25,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
-      "n_kasus": 7,
+      "n_kasus": 6,
       "risiko_register": {
         "skor": 56.0,
         "level": "TINGGI",
@@ -252,7 +252,7 @@
       "lon": 101.45,
       "lat": 0.53,
       "catatan_peta": "Pendalaman / monitoring",
-      "n_kasus": 11,
+      "n_kasus": 10,
       "risiko_register": {
         "skor": 77.0,
         "level": "SANGAT TINGGI",
@@ -310,7 +310,7 @@
       "lon": 102.05,
       "lat": 0.85,
       "catatan_peta": "Pendalaman / monitoring",
-      "n_kasus": 4,
+      "n_kasus": 3,
       "risiko_register": {
         "skor": 20.0,
         "level": "RENDAH",

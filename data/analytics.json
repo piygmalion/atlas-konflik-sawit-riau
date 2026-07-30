@@ -484,11 +484,11 @@
     ],
     "by_jenis": {
       "2025": {
-        "Situasional KSO/Agrinas": 2,
+        "Situasional KSO/Agrinas": 1,
         "Sengketa lahan": 8,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 6
+        "Lainnya": 7
       },
       "2024": {
         "Situasional KSO/Agrinas": 0,
@@ -498,8 +498,8 @@
         "Lainnya": 4
       },
       "2026": {
-        "Situasional KSO/Agrinas": 94,
-        "Sengketa lahan": 14,
+        "Situasional KSO/Agrinas": 77,
+        "Sengketa lahan": 15,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
         "Lainnya": 0
@@ -571,7 +571,7 @@
         "Polda Riau (Ditreskrimum)": 3,
         "Rohil": 2,
         "Rohul": 2,
-        "Polda Riau (Intelkam)": 92
+        "Polda Riau (Intelkam)": 76
       },
       "2021": {
         "Inhu": 1,
@@ -619,11 +619,11 @@
           "Lainnya": 10
         },
         "2026": {
-          "Situasional KSO/Agrinas": 95,
-          "Sengketa lahan": 23,
+          "Situasional KSO/Agrinas": 77,
+          "Sengketa lahan": 24,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 10
+          "Lainnya": 11
         }
       },
       "by_polres": {
@@ -644,7 +644,7 @@
           "Rohul": 3,
           "Dumai": 2,
           "Siak": 1,
-          "Polda Riau (Intelkam)": 92
+          "Polda Riau (Intelkam)": 76
         }
       }
     },
@@ -662,11 +662,11 @@
       ],
       "by_jenis": {
         "2025": {
-          "Situasional KSO/Agrinas": 2,
+          "Situasional KSO/Agrinas": 1,
           "Sengketa lahan": 8,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 6
+          "Lainnya": 7
         },
         "2024": {
           "Situasional KSO/Agrinas": 0,
@@ -676,8 +676,8 @@
           "Lainnya": 4
         },
         "2026": {
-          "Situasional KSO/Agrinas": 94,
-          "Sengketa lahan": 14,
+          "Situasional KSO/Agrinas": 77,
+          "Sengketa lahan": 15,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
           "Lainnya": 0
@@ -749,7 +749,7 @@
           "Polda Riau (Ditreskrimum)": 3,
           "Rohil": 2,
           "Rohul": 2,
-          "Polda Riau (Intelkam)": 92
+          "Polda Riau (Intelkam)": 76
         },
         "2021": {
           "Inhu": 1,

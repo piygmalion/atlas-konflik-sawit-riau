@@ -6,7 +6,11 @@ Grain, primary keys, and required vs optional fields after DQ remediation (Juli 
 
 ```
 root CSV/XLSX  →  apply_dq_fixes.py (opsional)  →  export_web_data.py  →  validate_web_data.py  →  website/data/
+                                                                                                      ↓
+                                                                              backend/sync_serving.py → Supabase serving_datasets
 ```
+
+Update berkala: lihat `backend/README.md`. Frontend (`js/data-source.js`) bisa baca Supabase atau fallback ke file lokal.
 
 ## Entities
 

@@ -23,7 +23,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "3",
@@ -59,7 +59,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "6",
@@ -83,7 +83,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "8",
@@ -95,7 +95,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "9",
@@ -107,7 +107,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "10",
@@ -131,7 +131,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "12",
@@ -143,7 +143,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "13",
@@ -167,7 +167,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "15",
@@ -179,7 +179,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "16",
@@ -191,7 +191,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "17",
@@ -203,7 +203,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "18",
@@ -227,7 +227,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "20",
@@ -239,7 +239,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "21",
@@ -251,7 +251,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "22",
@@ -275,7 +275,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "24",
@@ -287,7 +287,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "25",
@@ -299,7 +299,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "26",
@@ -311,7 +311,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "27",
@@ -335,7 +335,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "29",
@@ -347,7 +347,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "30",
@@ -359,7 +359,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "31",
@@ -371,7 +371,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "32",
@@ -383,7 +383,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "33",
@@ -407,7 +407,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "35",
@@ -419,7 +419,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "36",
@@ -431,7 +431,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "37",
@@ -443,7 +443,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "38",
@@ -455,7 +455,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "39",
@@ -467,7 +467,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "40",
@@ -479,7 +479,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "41",
@@ -491,7 +491,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "42",
@@ -503,7 +503,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "43",
@@ -527,7 +527,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "45",
@@ -551,7 +551,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "47",
@@ -587,7 +587,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "50",
@@ -599,7 +599,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "51",
@@ -611,7 +611,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "52",
@@ -623,7 +623,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "53",
@@ -635,7 +635,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "54",
@@ -647,7 +647,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "55",
@@ -659,7 +659,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "56",
@@ -671,7 +671,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "57",
@@ -683,7 +683,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "58",
@@ -731,7 +731,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "62",
@@ -743,7 +743,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "63",
@@ -767,7 +767,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "65",
@@ -779,7 +779,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "66",
@@ -791,7 +791,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "67",
@@ -803,7 +803,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "68",
@@ -815,7 +815,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "69",
@@ -827,7 +827,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "70",
@@ -839,7 +839,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "71",
@@ -851,7 +851,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "72",
@@ -863,7 +863,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "73",
@@ -875,7 +875,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "74",
@@ -887,7 +887,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "75",
@@ -899,7 +899,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "76",
@@ -911,7 +911,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "77",
@@ -923,7 +923,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "78",
@@ -935,7 +935,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "79",
@@ -947,7 +947,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "80",
@@ -959,7 +959,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "81",
@@ -971,7 +971,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "82",
@@ -983,7 +983,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "83",
@@ -995,7 +995,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "84",
@@ -1007,7 +1007,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "85",
@@ -1019,7 +1019,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "86",
@@ -1031,7 +1031,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "87",
@@ -1043,7 +1043,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "88",
@@ -1067,7 +1067,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "90",
@@ -1079,7 +1079,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "91",
@@ -1091,7 +1091,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "92",
@@ -1103,7 +1103,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "93",
@@ -1115,7 +1115,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "94",
@@ -1127,7 +1127,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "95",
@@ -1139,7 +1139,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "96",
@@ -1151,7 +1151,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "97",
@@ -1163,7 +1163,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "98",
@@ -1175,7 +1175,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "99",
@@ -1187,7 +1187,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "100",
@@ -1199,7 +1199,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "101",
@@ -1211,7 +1211,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "102",
@@ -1223,7 +1223,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "103",
@@ -1235,7 +1235,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "104",
@@ -1247,7 +1247,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "105",
@@ -1259,7 +1259,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "106",
@@ -1271,7 +1271,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "107",
@@ -1283,7 +1283,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "108",
@@ -1295,7 +1295,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "109",
@@ -1307,7 +1307,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "110",
@@ -1319,7 +1319,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "111",
@@ -1331,7 +1331,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "112",
@@ -1343,7 +1343,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "113",
@@ -1355,7 +1355,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "114",
@@ -1367,7 +1367,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "115",
@@ -1379,7 +1379,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "116",
@@ -1391,7 +1391,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "117",
@@ -1403,7 +1403,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "118",
@@ -1415,7 +1415,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "119",
@@ -1427,7 +1427,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "120",
@@ -1439,7 +1439,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "121",
@@ -1451,7 +1451,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "122",
@@ -1463,7 +1463,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "123",
@@ -1475,7 +1475,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "124",
@@ -1487,7 +1487,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "125",
@@ -1499,7 +1499,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "126",
@@ -1511,7 +1511,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "127",
@@ -1523,7 +1523,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "128",
@@ -1535,7 +1535,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "129",
@@ -1547,7 +1547,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "130",
@@ -1559,7 +1559,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "131",
@@ -1571,7 +1571,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "132",
@@ -1583,7 +1583,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "133",
@@ -1607,7 +1607,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "135",
@@ -1619,7 +1619,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "perlu_verifikasi",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "136",
@@ -1631,7 +1631,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "137",
@@ -1643,7 +1643,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "138",
@@ -1655,7 +1655,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "139",
@@ -1667,7 +1667,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "140",
@@ -1679,7 +1679,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "141",
@@ -1691,7 +1691,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "142",
@@ -1703,7 +1703,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "143",
@@ -1715,7 +1715,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "144",
@@ -1727,7 +1727,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "145",
@@ -1739,7 +1739,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "146",
@@ -1751,7 +1751,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "147",
@@ -1763,7 +1763,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "148",
@@ -1775,7 +1775,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "149",
@@ -1787,7 +1787,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "150",
@@ -1799,7 +1799,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "151",
@@ -1823,7 +1823,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "153",
@@ -1835,7 +1835,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "154",
@@ -1847,7 +1847,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "155",
@@ -1859,7 +1859,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "156",
@@ -1883,7 +1883,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "158",
@@ -1907,7 +1907,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "160",
@@ -1919,7 +1919,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "161",
@@ -1931,7 +1931,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "162",
@@ -1943,7 +1943,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "163",
@@ -1967,7 +1967,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "165",
@@ -1991,7 +1991,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "167",
@@ -2003,7 +2003,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "168",
@@ -2015,7 +2015,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "169",
@@ -2027,7 +2027,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "170",
@@ -2063,7 +2063,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "173",
@@ -2075,7 +2075,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "174",
@@ -2087,7 +2087,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "175",
@@ -2099,7 +2099,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "176",
@@ -2111,7 +2111,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "177",
@@ -2123,7 +2123,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "178",
@@ -2135,7 +2135,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "179",
@@ -2147,7 +2147,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "180",
@@ -2159,7 +2159,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "181",
@@ -2171,7 +2171,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "182",
@@ -2183,7 +2183,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "183",
@@ -2195,7 +2195,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "184",
@@ -2207,7 +2207,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "185",
@@ -2219,7 +2219,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "186",
@@ -2243,7 +2243,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "188",
@@ -2255,7 +2255,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "189",
@@ -2279,7 +2279,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "191",
@@ -2291,7 +2291,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "192",
@@ -2303,7 +2303,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "193",
@@ -2315,7 +2315,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "194",
@@ -2327,7 +2327,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "195",
@@ -2339,7 +2339,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "196",
@@ -2351,7 +2351,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "197",
@@ -2363,7 +2363,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "198",
@@ -2375,7 +2375,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "199",
@@ -2399,7 +2399,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "201",
@@ -2411,7 +2411,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "202",
@@ -2423,7 +2423,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "203",
@@ -2435,7 +2435,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "204",
@@ -2447,7 +2447,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "205",
@@ -2459,7 +2459,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "206",
@@ -2471,7 +2471,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "207",
@@ -2483,7 +2483,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "208",
@@ -2495,7 +2495,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "209",
@@ -2507,7 +2507,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "210",
@@ -2519,7 +2519,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "211",
@@ -2531,7 +2531,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "212",
@@ -2543,7 +2543,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "213",
@@ -2555,7 +2555,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "214",
@@ -2567,7 +2567,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "215",
@@ -2579,7 +2579,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "perlu_verifikasi",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "216",
@@ -2591,7 +2591,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "217",
@@ -2603,7 +2603,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "218",
@@ -2615,7 +2615,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "219",
@@ -2639,7 +2639,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "221",
@@ -2651,7 +2651,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "222",
@@ -2663,7 +2663,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "223",
@@ -2675,7 +2675,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "224",
@@ -2687,7 +2687,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "225",
@@ -2699,7 +2699,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "226",
@@ -2711,7 +2711,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "227",
@@ -2723,7 +2723,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "228",
@@ -2747,7 +2747,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "230",
@@ -2759,7 +2759,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "231",
@@ -2771,7 +2771,7 @@
       "ada_di_gfw": "Ya",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "232",
@@ -2783,7 +2783,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "233",
@@ -2795,7 +2795,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "234",
@@ -2807,7 +2807,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "235",
@@ -2819,7 +2819,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "236",
@@ -2831,7 +2831,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Tidak",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     },
     {
       "no": "237",
@@ -2843,7 +2843,7 @@
       "ada_di_gfw": "Tidak",
       "ada_di_atlas": "Ya",
       "status_nama": "ok",
-      "catatan": ""
+      "catatan": null
     }
   ]
 }

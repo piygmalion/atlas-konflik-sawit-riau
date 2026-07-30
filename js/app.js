@@ -220,6 +220,10 @@ const ASSET_VER =
   document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0dbd";
 
 async function loadJSON(path) {
+  if (window.AtlasData?.loadJSON) {
+    const result = await window.AtlasData.loadJSON(path, ASSET_VER);
+    return result.data;
+  }
   const url = path.includes("?") ? path : `${path}?v=${ASSET_VER}`;
   const res = await fetch(url, { cache: "no-cache" });
   if (!res.ok) throw new Error(`Gagal memuat ${path}`);

@@ -7,3 +7,8 @@ Thumbs.db
 scripts/__pycache__/
 **/__pycache__/
 *.pyc
+backend/.env
+backend/.venv/
+backend/venv/
+.env
+.env.local
