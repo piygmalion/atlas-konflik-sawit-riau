@@ -19,7 +19,7 @@
     "objek_agrinas": 139,
     "kasus_konflik": 129,
     "choropleth": 12,
-    "fitur_spasial": 48,
+    "fitur_spasial": 36,
     "gfw_konsesi": 287,
     "gfw_bbox_full": 287
   },
@@ -31,13 +31,13 @@
     },
     {
       "id": "koridor",
-      "label": "Koridor spasial",
-      "default": true
+      "label": "Koridor proksi (bbox)",
+      "default": false
     },
     {
       "id": "densitas_kasus",
-      "label": "Densitas kasus",
-      "default": true
+      "label": "Densitas kasus (centroid)",
+      "default": false
     },
     {
       "id": "objek_titik",
@@ -69,5 +69,5 @@
     "Nusantara Atlas / GFW (cocokan)"
   ],
   "update_command": "python website/scripts/export_web_data.py",
-  "catatan": "Choropleth memakai batas ADM2; koridor dari bbox proksi; densitas kasus dipetakan ke centroid kab; overlay GFW = TopoJSON ter-simplify (lazy-load). Bukan batas legal HGU/IUP."
+  "catatan": "Choropleth memakai batas ADM2; koridor dari bbox proksi (default off); densitas kasus ke centroid kab (default off); titik REF/centroid tidak diekspor ke objek_titik; overlay GFW lazy-load. Bukan batas legal HGU/IUP."
 }

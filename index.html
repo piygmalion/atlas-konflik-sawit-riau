@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/styles.css?v=f1a" />
+  <link rel="stylesheet" href="css/styles.css?v=f2a" />
 </head>
 <body>
   <div id="app">
@@ -54,7 +54,7 @@
               <button class="chip" data-compare="agrinas">Sinyal Agrinas</button>
               <button class="chip" data-compare="atlas">Deforestasi Atlas</button>
             </div>
-            <p class="rail-hint" id="compareHint">Lapisan &amp; ranking menyesuaikan lensa analisis.</p>
+            <p class="rail-hint" id="compareHint">Gabungan hemat: choropleth + titik Agrinas. Aktifkan koridor/densitas dari lapisan bila perlu.</p>
           </section>
 
           <section class="rail-section">
@@ -111,14 +111,14 @@
     </section>
 
     <section class="analisis-view" id="analisisView" hidden>
-      <article class="story-hero">
-        <p class="eyebrow">Prioritas 2–3 · dashboard analitik</p>
+      <article class="story-hero analisis-hero">
+        <p class="eyebrow">Dashboard analitik</p>
         <h1>Risiko, penertiban KH, dan jembatan Atlas</h1>
-        <p>Visualisasi interaktif dari data yang sama dengan peta. Mode bandingkan di tab Peta memisahkan register konflik, sinyal Agrinas, dan deforestasi Atlas.</p>
+        <p>Chart memakai data yang sama dengan peta. Mode bandingkan di tab Peta memisahkan register, Agrinas, dan Atlas.</p>
       </article>
 
       <div class="analisis-grid">
-        <section class="analisis-block wide">
+        <section class="analisis-block wide analisis-priority">
           <div class="block-head">
             <div>
               <p class="eyebrow">Chart Polres</p>
@@ -143,6 +143,10 @@
               <button class="chip" data-mode="polres">Per Polres</button>
             </div>
           </div>
+          <p class="chart-callout" id="timelineBiasNote">
+            Sumbu menghitung <strong>tahun yang disebut di entri kasus</strong>, bukan tanggal kejadian bersih.
+            Spike 2026 bisa mencerminkan bias pengumpulan / liputan baru, bukan ledakan konflik mentah.
+          </p>
           <div class="chart-frame tall"><canvas id="chartTimeline"></canvas></div>
         </section>
 
@@ -185,9 +189,9 @@
             </div>
           </div>
           <div class="howto">
-            <div><strong>1</strong><span>Skor Polres = early-warning, bukan vonis</span></div>
+            <div><strong>1</strong><span>Skor Polres = early-warning blend, bukan vonis</span></div>
             <div><strong>2</strong><span>Klik batang Polres untuk buka peta</span></div>
-            <div><strong>3</strong><span>Timeline menghitung tahun yang disebut di entri kasus</span></div>
+            <div><strong>3</strong><span>Timeline = tahun disebut di entri (bukan kejadian bersih)</span></div>
           </div>
         </section>
 
@@ -305,8 +309,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <script src="js/analytics.js?v=f1a"></script>
-  <script src="js/penertiban.js?v=f1a"></script>
-  <script src="js/app.js?v=f1a"></script>
+  <script src="js/analytics.js?v=f2a"></script>
+  <script src="js/penertiban.js?v=f2a"></script>
+  <script src="js/app.js?v=f2a"></script>
 </body>
 </html>

@@ -473,12 +473,17 @@ def match_wilayah_py(a, b) -> bool:
 def export_spatial_layers(kab_records: list[dict]):
     features = []
 
-    # Titik objek Agrinas
+    # Titik objek Agrinas — skip centroid REF (noise visual / ID duplikat historis)
     path = ROOT / "proksi_peta_titik_agrinas.geojson"
     if path.exists():
         raw = json.loads(path.read_text(encoding="utf-8"))
         for f in raw.get("features", []):
             props = {k: clean(v) for k, v in (f.get("properties") or {}).items()}
+            prioritas = str(props.get("prioritas") or "").upper()
+            tipe = str(props.get("tipe") or "").lower()
+            nama = str(props.get("nama") or "").lower()
+            if "REF" in prioritas or "centroid" in tipe or "centroid" in nama:
+                continue
             features.append(
                 {
                     "type": "Feature",
@@ -535,11 +540,12 @@ def export_spatial_layers(kab_records: list[dict]):
                 "properties": {
                     "id": k.get("id"),
                     "nama": k.get("nama"),
-                    "tipe": "koridor",
+                    "tipe": "koridor_bbox_proksi",
                     "anggota_kab": k.get("anggota_kab"),
                     "polres_proksi": k.get("polres_proksi"),
                     "karakter": k.get("karakter"),
                     "prioritas": k.get("prioritas_peta"),
+                    "catatan": "Bounding box analitis — bukan koridor geografis resmi.",
                     "layer": "koridor",
                 },
             }
@@ -1132,10 +1138,10 @@ def export_meta(counts: dict):
             "counts": counts,
             "layers": [
                 {"id": "choropleth", "label": "Choropleth kab/kota", "default": True},
-                {"id": "koridor", "label": "Koridor spasial", "default": True},
-                {"id": "densitas_kasus", "label": "Densitas kasus", "default": True},
+                {"id": "koridor", "label": "Koridor proksi (bbox)", "default": False},
+                {"id": "densitas_kasus", "label": "Densitas kasus (centroid)", "default": False},
                 {"id": "objek_titik", "label": "Titik objek Agrinas", "default": True},
-      {"id": "gfw_konsesi", "label": "Konsesi GFW (TopoJSON)", "default": False},
+                {"id": "gfw_konsesi", "label": "Konsesi GFW (TopoJSON)", "default": False},
             ],
             "views": ["peta", "analisis", "cerita", "data"],
             "sumber": [

@@ -241,7 +241,7 @@ function renderTimelineByJenis(canvas) {
         stack: "kasus",
       })),
     },
-    options: stackedTimelineOptions("Jumlah kasus (tahun disebut pada entri)"),
+    options: stackedTimelineOptions("Jumlah kasus (tahun disebut pada entri — bukan kejadian bersih)"),
   });
 }
 
@@ -288,7 +288,7 @@ function renderTimelineByPolres(canvas) {
         stack: "polres",
       })),
     },
-    options: stackedTimelineOptions("Jumlah kasus per Polres / unit (tahun disebut)"),
+    options: stackedTimelineOptions("Jumlah kasus per Polres / unit (tahun disebut — bukan kejadian bersih)"),
   });
 }
 

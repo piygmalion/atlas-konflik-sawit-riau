@@ -22,8 +22,8 @@ const state = {
   compare: "all",
   layerOn: {
     choropleth: true,
-    koridor: true,
-    densitas_kasus: true,
+    koridor: false,
+    densitas_kasus: false,
     objek_titik: true,
     gfw_konsesi: false,
   },
@@ -34,19 +34,19 @@ const state = {
 
 const COMPARE_PRESETS = {
   all: {
-    hint: "Gabungan: warna kab = skor Polres blend (70% OSINT + 30% register).",
-    layers: { choropleth: true, koridor: true, densitas_kasus: true, objek_titik: true, gfw_konsesi: false },
+    hint: "Gabungan hemat: choropleth + titik Agrinas. Aktifkan koridor/densitas dari lapisan bila perlu.",
+    layers: { choropleth: true, koridor: false, densitas_kasus: false, objek_titik: true, gfw_konsesi: false },
     rank: "polres",
     choroMetric: "polres_blend",
   },
   register: {
-    hint: "Register konflik: warna kab = risiko register. Ranking menurut skor register.",
+    hint: "Register konflik: warna kab = risiko register + densitas kasus (centroid).",
     layers: { choropleth: true, koridor: false, densitas_kasus: true, objek_titik: false, gfw_konsesi: false },
     rank: "register",
     choroMetric: "register",
   },
   agrinas: {
-    hint: "Sinyal Agrinas: warna kab = skor OSINT Agrinas–KSO. Ranking objek / densitas.",
+    hint: "Sinyal Agrinas: warna kab = skor OSINT + koridor bbox proksi + titik objek.",
     layers: { choropleth: true, koridor: true, densitas_kasus: false, objek_titik: true, gfw_konsesi: false },
     rank: "agrinas",
     choroMetric: "osint",
@@ -179,8 +179,12 @@ function resolveChoroplethMetric(nama) {
   };
 }
 
+/** Cache-bust for GitHub Pages / local static server so meta+layers refresh with UI. */
+const DATA_VER = "f2a";
+
 async function loadJSON(path) {
-  const res = await fetch(path);
+  const url = path.includes("?") ? path : `${path}?v=${DATA_VER}`;
+  const res = await fetch(url, { cache: "no-cache" });
   if (!res.ok) throw new Error(`Gagal memuat ${path}`);
   return res.json();
 }
@@ -474,13 +478,23 @@ function initMap() {
         },
       });
       poly.on("click", () => showKoridor(p));
-      poly.bindTooltip(p.nama || "Koridor");
+      poly.bindTooltip(`${p.nama || "Koridor"} (bbox proksi)`);
       state.layerGroups.koridor.addLayer(poly);
       return;
     }
 
     if (f.geometry?.type !== "Point") return;
     const [x, y] = f.geometry.coordinates;
+
+    // Defense: jangan render centroid REF meski masih ada di data lama
+    if (
+      layerId === "objek_titik" &&
+      (String(p.prioritas || "").toUpperCase().includes("REF") ||
+        /centroid/i.test(String(p.tipe || "")) ||
+        /centroid/i.test(String(p.nama || "")))
+    ) {
+      return;
+    }
 
     if (layerId === "densitas_kasus") {
       const n = Number(p.n_kasus) || 1;
@@ -710,13 +724,14 @@ function showTitik(p) {
 
 function showKoridor(p) {
   setDetail(`
-    <p class="eyebrow">Koridor spasial</p>
+    <p class="eyebrow">Koridor proksi (bbox)</p>
     <h1>${escapeHtml(p.nama || "Koridor")}</h1>
-    <p class="lead">${escapeHtml(p.karakter || "Agregat kab/kota dengan sinyal Agrinas–Satgas yang saling terkait.")}</p>
+    <p class="lead">${escapeHtml(p.karakter || "Zona bounding box analitis — bukan koridor geografis resmi.")}</p>
     <div class="meta-grid">
       <div class="meta-item"><label>Anggota kab</label>${escapeHtml(p.anggota_kab || "–")}</div>
       <div class="meta-item"><label>Polres</label>${escapeHtml(p.polres_proksi || "–")}</div>
       <div class="meta-item"><label>Prioritas peta</label><span class="badge ${escapeAttr(p.prioritas || "")}">${escapeHtml(p.prioritas || "–")}</span></div>
+      <div class="meta-item"><label>Catatan</label>${escapeHtml(p.catatan || "Bounding box dari agregat kab/hotspot, bukan poligon legal.")}</div>
     </div>
   `);
 }
