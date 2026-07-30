@@ -217,7 +217,7 @@ window.getBlendOsint = () => state.blendOsint;
  * Source of truth: <meta name="atlas-asset-ver"> in index.html (keep ?v= on assets in sync).
  */
 const ASSET_VER =
-  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0dbc";
+  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0dbd";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${ASSET_VER}`;
@@ -360,7 +360,7 @@ function setupMapPreviewActions() {
   document.addEventListener(
     "click",
     (e) => {
-      const btn = e.target.closest?.("[data-action='polres']");
+      const btn = e.target.closest?.("[data-action='polres'], [data-action='perusahaan']");
       if (
         !btn ||
         !btn.closest(".leaflet-popup.map-preview-popup, .leaflet-tooltip.map-preview, .map-preview__card")
@@ -370,8 +370,15 @@ function setupMapPreviewActions() {
       e.preventDefault();
       e.stopPropagation();
       if (typeof L !== "undefined") L.DomEvent.stop(e);
-      const nama = btn.dataset.polres;
-      if (nama) showPolres(nama);
+      if (btn.dataset.action === "polres") {
+        const nama = btn.dataset.polres;
+        if (nama) showPolres(nama);
+        return;
+      }
+      if (btn.dataset.action === "perusahaan") {
+        const nama = btn.dataset.perusahaan;
+        if (nama) showPerusahaan(nama);
+      }
     },
     true
   );
@@ -867,13 +874,19 @@ function initMap() {
       (polresRaw &&
         DATA.polres?.records?.find((x) => matchWilayah(x.polres, polresRaw))?.polres) ||
       polresRaw;
+    const company = resolveTitikPerusahaan(p);
     bindMapPreview(
       marker,
       mapPreviewHtml({
         eyebrow: "Objek Agrinas",
         title: p.nama || p.id || "Objek",
-        level,
-        metaLines: [p.tipe || "Titik proksi", polresNama || p.kab_kota || ""].filter(Boolean),
+        level: company ? "" : level,
+        company,
+        metaLines: [
+          p.tipe || "Titik proksi",
+          polresNama || p.kab_kota || "",
+          company && level ? `Prioritas ${level}` : "",
+        ].filter(Boolean),
         polres: polresNama,
       })
     );
@@ -1188,6 +1201,7 @@ function showTitik(p) {
     (o) => o.id === p.id || (o.nama || "").toLowerCase() === String(p.nama || "").toLowerCase()
   );
   const prioritas = p.prioritas || objek?.prioritas || "–";
+  const company = resolveTitikPerusahaan(p, objek);
   setDetail(
     AtlasUI.detailShell({
       eyebrow: "Titik objek / proksi",
@@ -1198,6 +1212,12 @@ function showTitik(p) {
         { label: "Kab primer", value: objek?.kab_primary || p.kab_kota || "–" },
         { label: "Tipe", value: p.tipe || objek?.lapisan || "–" },
         {
+          label: "Perusahaan",
+          html: company
+            ? `<button type="button" class="text-btn" data-action="perusahaan-detail" data-perusahaan="${escapeAttr(company)}">${escapeHtml(company)}</button>`
+            : escapeHtml("–"),
+        },
+        {
           label: "Prioritas",
           html: AtlasUI.badge(prioritas, p.prioritas || objek?.prioritas || ""),
         },
@@ -1206,9 +1226,101 @@ function showTitik(p) {
         { label: "Kredibilitas", value: objek?.status_kredibilitas || "–" },
         { label: "Sumber", value: p.sumber || objek?.sumber || "–" },
       ],
+      bodyHtml: company
+        ? `<p class="detail-actions"><button type="button" class="btn-link" data-action="perusahaan-detail" data-perusahaan="${escapeAttr(company)}">Buka profil perusahaan</button></p>`
+        : "",
+    })
+  );
+  document.getElementById("detailContent")?.querySelectorAll("[data-action='perusahaan-detail']").forEach((btn) => {
+    btn.addEventListener("click", () => showPerusahaan(btn.dataset.perusahaan));
+  });
+}
+
+function resolveTitikPerusahaan(p, objek) {
+  const direct = cleanText(p?.perusahaan || "");
+  if (direct) {
+    return findPerusahaan(direct)?.nama || direct;
+  }
+  const nama = cleanText(objek?.nama || p?.nama || "");
+  if (/\bPT\b/i.test(nama)) {
+    return findPerusahaan(nama)?.nama || nama;
+  }
+  return "";
+}
+
+function findPerusahaan(name) {
+  const rows = DATA.perusahaan?.records || [];
+  if (!name) return null;
+  const n = String(name).toLowerCase();
+  return (
+    rows.find((r) => (r.nama || "").toLowerCase() === n) ||
+    rows.find((r) => (r.nama_kanonik || "").toLowerCase() === n) ||
+    rows.find((r) => (r.nama || "").toLowerCase().includes(n) || n.includes((r.nama || "").toLowerCase())) ||
+    rows.find(
+      (r) =>
+        (r.nama_kanonik || "").toLowerCase().includes(n) ||
+        n.includes((r.nama_kanonik || "").toLowerCase())
+    ) ||
+    null
+  );
+}
+
+function showPerusahaan(nama) {
+  const row = findPerusahaan(nama);
+  const title = row?.nama || nama || "Perusahaan";
+  const atlas = findAtlasMatch(title) || findAtlasMatch(row?.nama_kanonik);
+  const gfw = findGfwRecord(title) || findGfwRecord(row?.nama_kanonik);
+  const link = atlasDeepLink(atlas?.atlas_nama || title, gfw);
+  const relatedObjek = (DATA.objek?.records || [])
+    .filter((o) => {
+      const blob = `${o.nama || ""} ${o.klaster || ""} ${o.kaitan_agrinas || ""}`.toLowerCase();
+      const key = String(title).toLowerCase().replace(/^\s*pt\.?\s+/i, "");
+      return blob.includes(key) || (row?.nama_kanonik && blob.includes(String(row.nama_kanonik).toLowerCase()));
+    })
+    .slice(0, 6);
+  const relatedKasus = (DATA.kasus?.records || [])
+    .filter((k) => String(k.perusahaan || "").toLowerCase().includes(String(title).replace(/^\s*pt\.?\s+/i, "").toLowerCase().slice(0, 12)))
+    .slice(0, 6);
+
+  if (gfw?.lat && gfw?.lon) {
+    state.map?.flyTo([Number(gfw.lat), Number(gfw.lon)], 10, { duration: 0.7 });
+  }
+
+  setDetail(
+    AtlasUI.detailShell({
+      eyebrow: "Profil perusahaan",
+      title,
+      lead: row?.catatan || "Profil dari register perusahaan workspace — jembatan ke Atlas/GFW/konflik, bukan sertifikat HGU tunggal.",
+      meta: [
+        { label: "Nama kanonik", value: row?.nama_kanonik || "–" },
+        { label: "Status nama", value: row?.status_nama || "–" },
+        { label: "Di GFW", value: row?.ada_di_gfw || (gfw ? "Ya (proksi)" : "–") },
+        { label: "Di Atlas", value: row?.ada_di_atlas || (atlas ? "Ya (match)" : "–") },
+        { label: "Di BPS", value: row?.ada_di_bps || "–" },
+        { label: "Di konflik Polda", value: row?.ada_di_konflik_polda || "–" },
+        { label: "Match Atlas", value: atlas?.atlas_nama || "Belum tercocokkan" },
+        { label: "Luas GFW (ha)", value: fmtNum(gfw?.area_ha) },
+        { label: "Sumber", value: row?.sumber || "–" },
+      ],
+      bodyHtml: `
+    ${AtlasUI.detailActions([
+      { href: link.href, label: link.label || "Buka Nusantara Atlas" },
+      Number.isFinite(Number(gfw?.lat)) && Number.isFinite(Number(gfw?.lon))
+        ? {
+            href: `https://www.openstreetmap.org/?mlat=${Number(gfw.lat)}&mlon=${Number(gfw.lon)}#map=12/${Number(gfw.lat)}/${Number(gfw.lon)}`,
+            label: "Lokasi proksi",
+            ghost: true,
+          }
+        : null,
+    ].filter(Boolean))}
+    ${AtlasUI.sectionLabel("Objek terkait")}
+    ${AtlasUI.listBlock("obj-list", relatedObjek.map(objCard).join(""), "Belum ada objek Agrinas terhubung langsung.")}
+    ${AtlasUI.sectionLabel("Kasus terkait")}
+    ${AtlasUI.listBlock("case-list", relatedKasus.map(caseCard).join(""), "Belum ada kasus dengan nama perusahaan ini.")}`,
     })
   );
 }
+window.showPerusahaan = showPerusahaan;
 
 function showKoridor(p) {
   setDetail(

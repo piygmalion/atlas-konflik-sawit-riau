@@ -41,6 +41,8 @@ root CSV/XLSX  →  apply_dq_fixes.py (opsional)  →  export_web_data.py  →  
 
 **Policy titik vs objek (bukan gap 1:1):** `objek_agrinas` (≈139) ≠ layer `objek_titik` (≈54 di serving). Titik serving = **proksi spasial plottable**: hotspot OSINT + expand DQ centroid-kab untuk objek `mappable=ya` prioritas Tinggi/Kritis. Placeholder **REF/centroid kab** tetap boleh ada di sumber `proksi_peta_titik_agrinas.geojson` tetapi **tidak** di-inject ke `layers.geojson`. Objek `MULTI` / Mitra KSO agregat **tidak** dipaksa-plot. Metrik benar: coverage mappable (≈34/139), bukan membandingkan titik vs registry 1:1.
 
+Field `perusahaan` pada `objek_titik` (opsional tapi disarankan) = nama perusahaan terkait untuk preview peta / profil detail. Diisi lewat `scripts/enrich_titik_perusahaan.py` (mapping hotspot + fuzzy match `perusahaan.json`) dan diteruskan export/DQ.
+
 ### kasus (`kasus.json` / `master_kasus_sawit_riau.csv`)
 
 | | |

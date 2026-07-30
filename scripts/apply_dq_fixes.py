@@ -626,6 +626,7 @@ def expand_spatial_points(objek_records: list[dict]):
                     "kab_kota": kab,
                     "tipe": "Objek Agrinas (proksi kab)",
                     "prioritas": "P1" if prio == "kritis" else "P2",
+                    "perusahaan": r.get("nama") if re.search(r"\bPT\b", str(r.get("nama") or ""), re.I) else None,
                     "catatan": "Centroid kab proksi dari DQ Fase 3 — bukan koordinat resmi",
                     "polres_proksi": r.get("polres_primary"),
                     "sumber": "DQ expand dari master_list mappable",
@@ -671,7 +672,7 @@ def expand_spatial_points(objek_records: list[dict]):
             seen_ids[fid] = n + 1
         layers["features"] = all_feats
         layers["schema_by_layer"] = {
-            "objek_titik": ["id", "nama", "kab_kota", "prioritas", "polres_proksi", "layer"],
+            "objek_titik": ["id", "nama", "perusahaan", "kab_kota", "prioritas", "polres_proksi", "layer"],
             "koridor": ["id", "nama", "anggota_kab", "geom_source", "layer"],
             "densitas_kasus": ["id", "nama", "n_kasus", "level_risiko", "layer"],
         }

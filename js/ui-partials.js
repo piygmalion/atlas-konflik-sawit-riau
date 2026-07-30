@@ -140,6 +140,11 @@
   </article>`;
   }
 
+  function shortCompanyLabel(name) {
+    let t = String(name || "").replace(/^\s*PT\.?\s+/i, "").trim();
+    return truncate(t, 28);
+  }
+
   function mapPreviewHtml({
     eyebrow = "",
     title = "",
@@ -148,19 +153,27 @@
     metricLabel = "",
     metaLines = [],
     polres = "",
+    company = "",
+    companyLabel = "",
     cta = "Klik untuk detail",
   } = {}) {
     const hasSkor = skor != null && skor !== "" && !Number.isNaN(Number(skor));
+    const companyBtn = company
+      ? `<button type="button" class="map-preview__company" data-action="perusahaan" data-perusahaan="${escapeAttr(company)}" title="Buka profil ${escapeAttr(company)}">${escapeHtml(
+          companyLabel || shortCompanyLabel(company)
+        )}</button>`
+      : "";
+    const levelBadge = !companyBtn && level ? badge(level, level) : "";
     const scoreBlock = hasSkor
       ? `<div class="map-preview__score">
         <div class="map-preview__score-main">
           <span class="map-preview__score-num">${escapeHtml(fmtNum(skor))}</span>
-          ${level ? badge(level, level) : ""}
+          ${companyBtn || levelBadge}
         </div>
         ${metricLabel ? `<div class="map-preview__metric">${escapeHtml(metricLabel)}</div>` : ""}
       </div>`
-      : level
-        ? `<div class="map-preview__score">${badge(level, level)}</div>`
+      : companyBtn || levelBadge
+        ? `<div class="map-preview__score">${companyBtn || levelBadge}</div>`
         : "";
     const metas = (metaLines || [])
       .filter(Boolean)

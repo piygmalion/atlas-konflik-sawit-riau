@@ -607,6 +607,7 @@ def export_spatial_layers(kab_records: list[dict]):
                         "kab_kota": props.get("kab_kota"),
                         "tipe": props.get("tipe") or "objek",
                         "prioritas": props.get("prioritas"),
+                        "perusahaan": props.get("perusahaan"),
                         "catatan": props.get("catatan"),
                         "polres_proksi": props.get("polres_proksi"),
                         "sumber": props.get("sumber"),
