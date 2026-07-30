@@ -217,7 +217,7 @@ window.getBlendOsint = () => state.blendOsint;
  * Source of truth: <meta name="atlas-asset-ver"> in index.html (keep ?v= on assets in sync).
  */
 const ASSET_VER =
-  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0dbb";
+  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0dbc";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${ASSET_VER}`;
@@ -305,43 +305,7 @@ async function loadBootPayload() {
 }
 
 /** Kartu preview hover peta — satu template untuk semua lapisan. */
-function mapPreviewHtml({
-  eyebrow = "",
-  title = "",
-  skor = null,
-  level = "",
-  metricLabel = "",
-  metaLines = [],
-  polres = "",
-  cta = "Klik untuk detail",
-} = {}) {
-  const hasSkor = skor != null && skor !== "" && !Number.isNaN(Number(skor));
-  const scoreBlock = hasSkor
-    ? `<div class="map-preview__score">
-        <div class="map-preview__score-main">
-          <span class="map-preview__score-num">${escapeHtml(fmtNum(skor))}</span>
-          ${level ? `<span class="badge ${escapeAttr(level)}">${escapeHtml(level)}</span>` : ""}
-        </div>
-        ${metricLabel ? `<div class="map-preview__metric">${escapeHtml(metricLabel)}</div>` : ""}
-      </div>`
-    : level
-      ? `<div class="map-preview__score"><span class="badge ${escapeAttr(level)}">${escapeHtml(level)}</span></div>`
-      : "";
-  const metas = (metaLines || [])
-    .filter(Boolean)
-    .map((line) => `<div class="map-preview__meta">${escapeHtml(line)}</div>`)
-    .join("");
-  const polresBtn = polres
-    ? `<button type="button" class="map-preview__link" data-action="polres" data-polres="${escapeAttr(polres)}">Buka Polres</button>`
-    : "";
-  return `<div class="map-preview__card">
-    ${eyebrow ? `<p class="map-preview__eyebrow">${escapeHtml(eyebrow)}</p>` : ""}
-    <p class="map-preview__title">${escapeHtml(title)}</p>
-    ${scoreBlock}
-    ${metas}
-    <div class="map-preview__footer"><span>${escapeHtml(cta)}</span>${polresBtn}</div>
-  </div>`;
-}
+const mapPreviewHtml = (...args) => AtlasUI.mapPreviewHtml(...args);
 
 function bindMapPreview(layer, html) {
   // Popup (bukan tooltip sticky) — kartu bisa di-hover & CTA diklik tanpa ikut kursor
@@ -1132,27 +1096,43 @@ function showKabupaten(nama) {
   const polres = findPolresForKab(kab);
   const active = resolveChoroplethMetric(kab.kab_kota);
 
-  setDetail(`
-    <p class="eyebrow">Kabupaten / Kota</p>
-    <h1>${escapeHtml(kab.kab_kota)}</h1>
-    <p class="lead">${escapeHtml(kab.catatan_peta || "Metrik peta mengikuti mode bandingkan; angka di bawah adalah kamus lengkap.")}</p>
-    <div class="meta-grid">
-      <div class="meta-item"><label>Metrik aktif (mode)</label><strong>${escapeHtml(active.label)} ${fmtNum(active.skor)}</strong> <span class="badge ${escapeAttr(active.kategori || "")}">${escapeHtml(active.kategori || choroplethBandLabel(active.skor))}</span></div>
-      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.kab_komposit)}</label><strong>${fmtNum(kab.skor_komposit)}</strong></div>
-      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.polres_blend)}</label><strong>${fmtNum(polres?.skor)}</strong> <span class="badge ${escapeAttr(polres?.kategori || "")}">${escapeHtml(polres?.kategori || "–")}</span></div>
-      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.osint)} / ${escapeHtml(METRIC_LABELS.register)}</label>${fmtNum(polres?.skor_osint)} / ${fmtNum(risk.skor ?? polres?.skor_register)}</div>
-      <div class="meta-item"><label>Jumlah kasus (proksi)</label><strong>${fmtNum(kab.n_kasus)}</strong></div>
-      <div class="meta-item"><label>Polres proksi</label>${escapeHtml(kab.polres_proksi || "–")}</div>
-      <div class="meta-item"><label>Objek sinyal utama</label>${escapeHtml(kab.objek_sinyal_utama || "–")}</div>
-      <div class="meta-item"><label>Hotspot kecamatan</label>${escapeHtml(kab.hotspot_kecamatan || "–")}</div>
-      <div class="meta-item"><label>Sawit di KH (ha)</label>${fmtNum(kab.klhk_korp_kh_2022_ha)}</div>
-    </div>
+  setDetail(
+    AtlasUI.detailShell({
+      eyebrow: "Kabupaten / Kota",
+      title: kab.kab_kota,
+      lead: kab.catatan_peta || "Metrik peta mengikuti mode bandingkan; angka di bawah adalah kamus lengkap.",
+      meta: [
+        {
+          label: "Metrik aktif (mode)",
+          html: `<strong>${escapeHtml(active.label)} ${fmtNum(active.skor)}</strong>`,
+          badgeText: active.kategori || choroplethBandLabel(active.skor),
+          badgeClass: active.kategori || "",
+        },
+        { label: METRIC_LABELS.kab_komposit, value: fmtNum(kab.skor_komposit), strong: true },
+        {
+          label: METRIC_LABELS.polres_blend,
+          html: `<strong>${fmtNum(polres?.skor)}</strong>`,
+          badgeText: polres?.kategori || "–",
+          badgeClass: polres?.kategori || "",
+        },
+        {
+          label: `${METRIC_LABELS.osint} / ${METRIC_LABELS.register}`,
+          html: `${fmtNum(polres?.skor_osint)} / ${fmtNum(risk.skor ?? polres?.skor_register)}`,
+        },
+        { label: "Jumlah kasus (proksi)", value: fmtNum(kab.n_kasus), strong: true },
+        { label: "Polres proksi", value: kab.polres_proksi || "–" },
+        { label: "Objek sinyal utama", value: kab.objek_sinyal_utama || "–" },
+        { label: "Hotspot kecamatan", value: kab.hotspot_kecamatan || "–" },
+        { label: "Sawit di KH (ha)", value: fmtNum(kab.klhk_korp_kh_2022_ha) },
+      ],
+      bodyHtml: `
     ${risk.driver_utama ? `<p><strong>Driver register:</strong> ${escapeHtml(risk.driver_utama)}</p>` : ""}
-    <h2 class="section-label">Kasus terkait</h2>
-    <div class="case-list">${kasus.map(caseCard).join("") || "<p class='lead'>Belum ada kasus terpetakan.</p>"}</div>
-    <h2 class="section-label">Objek Agrinas</h2>
-    <div class="obj-list">${objek.map(objCard).join("") || "<p class='lead'>Tidak ada objek dengan kab/kota eksplisit.</p>"}</div>
-  `);
+    ${AtlasUI.sectionLabel("Kasus terkait")}
+    ${AtlasUI.listBlock("case-list", kasus.map(caseCard).join(""), "Belum ada kasus terpetakan.")}
+    ${AtlasUI.sectionLabel("Objek Agrinas")}
+    ${AtlasUI.listBlock("obj-list", objek.map(objCard).join(""), "Tidak ada objek dengan kab/kota eksplisit.")}`,
+    })
+  );
 }
 
 function showPolres(nama) {
@@ -1163,23 +1143,41 @@ function showPolres(nama) {
   const kab = DATA.kab.records.find((k) => matchWilayah(k.polres_proksi, p.polres));
   if (kab?.lat && kab?.lon) state.map.flyTo([kab.lat, kab.lon], 9, { duration: 0.75 });
   const kasus = DATA.kasus.records.filter((k) => matchWilayah(k.polres, p.polres)).slice(0, 10);
-  setDetail(`
-    <p class="eyebrow">Early-warning Polres</p>
-    <h1>${escapeHtml(p.polres)}</h1>
-    <p class="lead">${escapeHtml(p.alasan || "")}</p>
-    <div class="meta-grid">
-      <div class="meta-item"><label>Peringkat model</label><strong>#${p.peringkat}</strong></div>
-      <div class="meta-item"><label>${escapeHtml(blendMetricLabel())}</label><strong>${fmtNum(blendedPolresSkor(p))}</strong> <span class="badge ${escapeAttr(kategoriFromSkor(blendedPolresSkor(p)))}">${escapeHtml(kategoriFromSkor(blendedPolresSkor(p)))}</span></div>
-      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.osint)}</label><strong>${fmtNum(p.skor_osint)}</strong></div>
-      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.register)}</label><strong>${fmtNum(p.skor_register)}</strong> <span class="badge ${escapeAttr(kategoriFromSkor(p.skor_register))}">${escapeHtml(kategoriFromSkor(p.skor_register))}</span></div>
-      <div class="meta-item"><label>Aksi massa · Kekerasan</label>${fmtNum(p.n_aksi_massa)} · ${fmtNum(p.n_kekerasan)}</div>
-      <div class="meta-item"><label>Objek Agrinas/KSO</label>${fmtNum(p.n_agrinas)}</div>
-      <div class="meta-item"><label>Entri 2024+</label>${fmtNum(p.n_recent)}</div>
-    </div>
+  const blendKat = kategoriFromSkor(blendedPolresSkor(p));
+  const regKat = kategoriFromSkor(p.skor_register);
+  setDetail(
+    AtlasUI.detailShell({
+      eyebrow: "Early-warning Polres",
+      title: p.polres,
+      lead: p.alasan || "",
+      meta: [
+        { label: "Peringkat model", html: `<strong>#${escapeHtml(p.peringkat)}</strong>` },
+        {
+          label: blendMetricLabel(),
+          html: `<strong>${fmtNum(blendedPolresSkor(p))}</strong>`,
+          badgeText: blendKat,
+          badgeClass: blendKat,
+        },
+        { label: METRIC_LABELS.osint, value: fmtNum(p.skor_osint), strong: true },
+        {
+          label: METRIC_LABELS.register,
+          html: `<strong>${fmtNum(p.skor_register)}</strong>`,
+          badgeText: regKat,
+          badgeClass: regKat,
+        },
+        {
+          label: "Aksi massa · Kekerasan",
+          html: `${fmtNum(p.n_aksi_massa)} · ${fmtNum(p.n_kekerasan)}`,
+        },
+        { label: "Objek Agrinas/KSO", value: fmtNum(p.n_agrinas) },
+        { label: "Entri 2024+", value: fmtNum(p.n_recent) },
+      ],
+      bodyHtml: `
     <p class="muted small">${escapeHtml(DATA.polres?.model?.catatan || "Indeks liputan+objek+register — bukan vonis operasional.")}</p>
-    <h2 class="section-label">Kasus di wilayah Polres</h2>
-    <div class="case-list">${kasus.map(caseCard).join("") || "<p class='lead'>Tidak ada kasus terfilter.</p>"}</div>
-  `);
+    ${AtlasUI.sectionLabel("Kasus di wilayah Polres")}
+    ${AtlasUI.listBlock("case-list", kasus.map(caseCard).join(""), "Tidak ada kasus terfilter.")}`,
+    })
+  );
 }
 window.showPolres = showPolres;
 
@@ -1189,36 +1187,50 @@ function showTitik(p) {
   const objek = DATA.objek.records.find(
     (o) => o.id === p.id || (o.nama || "").toLowerCase() === String(p.nama || "").toLowerCase()
   );
-  setDetail(`
-    <p class="eyebrow">Titik objek / proksi</p>
-    <h1>${escapeHtml(p.nama || objek?.nama || "Objek")}</h1>
-    <p class="lead">${escapeHtml(p.catatan || objek?.kaitan_agrinas || "Titik proksi analisis, bukan poligon legal.")}</p>
-    <div class="meta-grid">
-      <div class="meta-item"><label>Kab/Kota</label>${escapeHtml(p.kab_kota || objek?.kab_kota || "–")}</div>
-      <div class="meta-item"><label>Kab primer</label>${escapeHtml(objek?.kab_primary || p.kab_kota || "–")}</div>
-      <div class="meta-item"><label>Tipe</label>${escapeHtml(p.tipe || objek?.lapisan || "–")}</div>
-      <div class="meta-item"><label>Prioritas</label><span class="badge ${escapeAttr(p.prioritas || objek?.prioritas || "")}">${escapeHtml(p.prioritas || objek?.prioritas || "–")}</span></div>
-      <div class="meta-item"><label>Polres</label>${escapeHtml(p.polres_proksi || objek?.polres_primary || "–")}</div>
-      <div class="meta-item"><label>Mappable</label>${escapeHtml(objek?.mappable || "–")}</div>
-      <div class="meta-item"><label>Kredibilitas</label>${escapeHtml(objek?.status_kredibilitas || "–")}</div>
-      <div class="meta-item"><label>Sumber</label>${escapeHtml(p.sumber || objek?.sumber || "–")}</div>
-    </div>
-  `);
+  const prioritas = p.prioritas || objek?.prioritas || "–";
+  setDetail(
+    AtlasUI.detailShell({
+      eyebrow: "Titik objek / proksi",
+      title: p.nama || objek?.nama || "Objek",
+      lead: p.catatan || objek?.kaitan_agrinas || "Titik proksi analisis, bukan poligon legal.",
+      meta: [
+        { label: "Kab/Kota", value: p.kab_kota || objek?.kab_kota || "–" },
+        { label: "Kab primer", value: objek?.kab_primary || p.kab_kota || "–" },
+        { label: "Tipe", value: p.tipe || objek?.lapisan || "–" },
+        {
+          label: "Prioritas",
+          html: AtlasUI.badge(prioritas, p.prioritas || objek?.prioritas || ""),
+        },
+        { label: "Polres", value: p.polres_proksi || objek?.polres_primary || "–" },
+        { label: "Mappable", value: objek?.mappable || "–" },
+        { label: "Kredibilitas", value: objek?.status_kredibilitas || "–" },
+        { label: "Sumber", value: p.sumber || objek?.sumber || "–" },
+      ],
+    })
+  );
 }
 
 function showKoridor(p) {
-  setDetail(`
-    <p class="eyebrow">Koridor proksi (hull/bbox)</p>
-    <h1>${escapeHtml(p.nama || "Koridor")}</h1>
-    <p class="lead">${escapeHtml(p.karakter || "Hull/envelope dari titik objek — bukan koridor geografis resmi.")}</p>
-    <div class="meta-grid">
-      <div class="meta-item"><label>Anggota kab</label>${escapeHtml(p.anggota_kab || "–")}</div>
-      <div class="meta-item"><label>Polres</label>${escapeHtml(p.polres_proksi || "–")}</div>
-      <div class="meta-item"><label>Geometri</label>${escapeHtml(p.geom_source || "proksi")} · ${fmtNum(p.n_titik)} titik</div>
-      <div class="meta-item"><label>Prioritas peta</label><span class="badge ${escapeAttr(p.prioritas || "")}">${escapeHtml(p.prioritas || "–")}</span></div>
-      <div class="meta-item"><label>Catatan</label>${escapeHtml(p.catatan || "Tetap proksi OSINT.")}</div>
-    </div>
-  `);
+  setDetail(
+    AtlasUI.detailShell({
+      eyebrow: "Koridor proksi (hull/bbox)",
+      title: p.nama || "Koridor",
+      lead: p.karakter || "Hull/envelope dari titik objek — bukan koridor geografis resmi.",
+      meta: [
+        { label: "Anggota kab", value: p.anggota_kab || "–" },
+        { label: "Polres", value: p.polres_proksi || "–" },
+        {
+          label: "Geometri",
+          html: `${escapeHtml(p.geom_source || "proksi")} · ${fmtNum(p.n_titik)} titik`,
+        },
+        {
+          label: "Prioritas peta",
+          html: AtlasUI.badge(p.prioritas || "–", p.prioritas || ""),
+        },
+        { label: "Catatan", value: p.catatan || "Tetap proksi OSINT." },
+      ],
+    })
+  );
 }
 
 async function showGfw(p) {
@@ -1226,28 +1238,32 @@ async function showGfw(p) {
   const atlas = findAtlasMatch(p.name || p.company);
   const gfw = findGfwRecord(p.name || p.company) || p;
   const link = atlasDeepLink(atlas?.atlas_nama || p.name || p.company, gfw);
-  setDetail(`
-    <p class="eyebrow">Overlay konsesi GFW</p>
-    <h1>${escapeHtml(p.name || p.company || "Konsesi")}</h1>
-    <p class="lead">Poligon industri tersederhanakan dari dataset GFW Riau — bukan sertifikat HGU tunggal.</p>
-    <div class="meta-grid">
-      <div class="meta-item"><label>Perusahaan</label>${escapeHtml(p.company || "–")}</div>
-      <div class="meta-item"><label>Grup</label>${escapeHtml(p.group || "–")}</div>
-      <div class="meta-item"><label>Luas (ha)</label>${fmtNum(p.area_ha)}</div>
-      <div class="meta-item"><label>Tipe / HGU</label>${escapeHtml([p.type, p.hgu].filter(Boolean).join(" · ") || "–")}</div>
-      <div class="meta-item"><label>Match Atlas</label>${escapeHtml(atlas?.atlas_nama || "Belum tercocokkan")}</div>
-      <div class="meta-item"><label>Nama lokal</label>${escapeHtml(atlas?.nama_lokal || "–")}</div>
-    </div>
-    <p class="detail-actions">
-      <a class="btn-link" href="${escapeAttr(link.href)}" target="_blank" rel="noopener">${escapeHtml(link.label)}</a>
-      ${
-        Number.isFinite(Number(gfw.lat)) && Number.isFinite(Number(gfw.lon))
-          ? `<a class="btn-link ghost" href="https://www.openstreetmap.org/?mlat=${Number(gfw.lat)}&mlon=${Number(gfw.lon)}#map=12/${Number(gfw.lat)}/${Number(gfw.lon)}" target="_blank" rel="noopener">Lokasi proksi</a>`
-          : ""
-      }
-    </p>
-    <p class="muted small">Cari nama konsesi di bilah pencarian Nusantara Atlas untuk bukti satelit/deforestasi.</p>
-  `);
+  const osm =
+    Number.isFinite(Number(gfw.lat)) && Number.isFinite(Number(gfw.lon))
+      ? {
+          href: `https://www.openstreetmap.org/?mlat=${Number(gfw.lat)}&mlon=${Number(gfw.lon)}#map=12/${Number(gfw.lat)}/${Number(gfw.lon)}`,
+          label: "Lokasi proksi",
+          ghost: true,
+        }
+      : null;
+  setDetail(
+    AtlasUI.detailShell({
+      eyebrow: "Overlay konsesi GFW",
+      title: p.name || p.company || "Konsesi",
+      lead: "Poligon industri tersederhanakan dari dataset GFW Riau — bukan sertifikat HGU tunggal.",
+      meta: [
+        { label: "Perusahaan", value: p.company || "–" },
+        { label: "Grup", value: p.group || "–" },
+        { label: "Luas (ha)", value: fmtNum(p.area_ha) },
+        { label: "Tipe / HGU", value: [p.type, p.hgu].filter(Boolean).join(" · ") || "–" },
+        { label: "Match Atlas", value: atlas?.atlas_nama || "Belum tercocokkan" },
+        { label: "Nama lokal", value: atlas?.nama_lokal || "–" },
+      ],
+      bodyHtml: `
+    ${AtlasUI.detailActions([{ href: link.href, label: link.label }, osm].filter(Boolean))}
+    <p class="muted small">Cari nama konsesi di bilah pencarian Nusantara Atlas untuk bukti satelit/deforestasi.</p>`,
+    })
+  );
 }
 
 async function showAtlasMatch(atlasNama, namaLokal) {
@@ -1258,24 +1274,24 @@ async function showAtlasMatch(atlasNama, namaLokal) {
     state.map?.flyTo([Number(gfw.lat), Number(gfw.lon)], 10, { duration: 0.7 });
   }
   const link = atlasDeepLink(row?.atlas_nama || atlasNama, gfw);
-  setDetail(`
-    <p class="eyebrow">Mode Deforestasi Atlas</p>
-    <h1>${escapeHtml(row?.atlas_nama || atlasNama || "Konsesi")}</h1>
-    <p class="lead">Jembatan nama antara Nusantara Atlas dan register lokal workspace.</p>
-    <div class="meta-grid">
-      <div class="meta-item"><label>Match ID</label>${escapeHtml(row?.match_id || "–")}</div>
-      <div class="meta-item"><label>Nama lokal</label>${escapeHtml(row?.nama_lokal || namaLokal || "–")}</div>
-      <div class="meta-item"><label>Status match</label>${escapeHtml(row?.status || "–")}</div>
-      <div class="meta-item"><label>Confidence</label>${escapeHtml(row?.match_confidence || "–")}</div>
-      <div class="meta-item"><label>Tipe / tahun</label>${escapeHtml([row?.tipe, row?.tahun].filter(Boolean).join(" · ") || "–")}</div>
-      <div class="meta-item"><label>Area (ha)</label>${fmtNum(row?.area_ha || gfw?.area_ha)}</div>
-      <div class="meta-item"><label>Di BPS</label>${escapeHtml(row?.ada_di_bps || "–")}</div>
-      <div class="meta-item"><label>Di konflik Polda</label>${escapeHtml(row?.ada_di_konflik_polda || "–")}</div>
-    </div>
-    <p class="detail-actions">
-      <a class="btn-link" href="${escapeAttr(link.href)}" target="_blank" rel="noopener">${escapeHtml(link.label)}</a>
-    </p>
-  `);
+  setDetail(
+    AtlasUI.detailShell({
+      eyebrow: "Mode Deforestasi Atlas",
+      title: row?.atlas_nama || atlasNama || "Konsesi",
+      lead: "Jembatan nama antara Nusantara Atlas dan register lokal workspace.",
+      meta: [
+        { label: "Match ID", value: row?.match_id || "–" },
+        { label: "Nama lokal", value: row?.nama_lokal || namaLokal || "–" },
+        { label: "Status match", value: row?.status || "–" },
+        { label: "Confidence", value: row?.match_confidence || "–" },
+        { label: "Tipe / tahun", value: [row?.tipe, row?.tahun].filter(Boolean).join(" · ") || "–" },
+        { label: "Area (ha)", value: fmtNum(row?.area_ha || gfw?.area_ha) },
+        { label: "Di BPS", value: row?.ada_di_bps || "–" },
+        { label: "Di konflik Polda", value: row?.ada_di_konflik_polda || "–" },
+      ],
+      bodyHtml: AtlasUI.detailActions([{ href: link.href, label: link.label }]),
+    })
+  );
 }
 window.showAtlasMatch = showAtlasMatch;
 window.showKabupaten = showKabupaten;
@@ -1289,23 +1305,20 @@ function caseCard(k) {
   const ref = formatCaseRef(k);
   const showId = k.id && cleanText(k.id) !== title;
 
-  const chips = [
-    k.tipe_entri ? `<span class="case-chip">${escapeHtml(String(k.tipe_entri).startsWith("Kasus") ? "Operasional" : "Potensi")}</span>` : "",
-    years ? `<span class="case-chip">${escapeHtml(years)}</span>` : "",
-    company ? `<span class="case-chip">${escapeHtml(company)}</span>` : "",
-    tema ? `<span class="case-chip case-chip--soft">${escapeHtml(truncate(tema, 32))}</span>` : "",
-    k.polres ? `<span class="case-chip case-chip--soft">${escapeHtml(shortPolresLabel(k.polres))}</span>` : "",
-  ].filter(Boolean);
-
-  return `<article class="case-card">
-    <header class="case-card__head">
-      <strong class="case-card__title">${escapeHtml(truncate(title, 78))}</strong>
-      ${showId ? `<span class="case-card__id">${escapeHtml(k.id)}</span>` : ""}
-    </header>
-    ${body ? `<p class="case-card__body">${escapeHtml(truncate(body, 140))}</p>` : ""}
-    ${chips.length ? `<div class="case-card__chips">${chips.join("")}</div>` : ""}
-    ${ref ? `<p class="case-card__ref" title="${escapeAttr(cleanText(k.nomor_lp || k.status || ""))}">${escapeHtml(ref)}</p>` : ""}
-  </article>`;
+  return AtlasUI.caseCardHtml({
+    title,
+    id: showId ? k.id : "",
+    body,
+    chipsHtml: AtlasUI.chipsRow([
+      k.tipe_entri ? AtlasUI.chip(String(k.tipe_entri).startsWith("Kasus") ? "Operasional" : "Potensi") : "",
+      years ? AtlasUI.chip(years) : "",
+      company ? AtlasUI.chip(company) : "",
+      tema ? AtlasUI.chip(truncate(tema, 32), { soft: true }) : "",
+      k.polres ? AtlasUI.chip(shortPolresLabel(k.polres), { soft: true }) : "",
+    ]),
+    ref,
+    refTitle: cleanText(k.nomor_lp || k.status || ""),
+  });
 }
 
 function objCard(o) {
@@ -1314,10 +1327,10 @@ function objCard(o) {
   const meta = [o.lapisan, kabLabel, o.prioritas, o.mappable === "ya" ? "mappable" : null, o.status_kredibilitas]
     .map(cleanText)
     .filter(Boolean);
-  return `<article class="obj-card">
-    <strong class="obj-card__title">${escapeHtml(truncate(title, 72))}</strong>
-    ${meta.length ? `<div class="case-card__chips">${meta.map((m) => `<span class="case-chip case-chip--soft">${escapeHtml(m)}</span>`).join("")}</div>` : ""}
-  </article>`;
+  return AtlasUI.objCardHtml({
+    title,
+    chipsHtml: AtlasUI.chipsRow(meta.map((m) => AtlasUI.chip(m, { soft: true }))),
+  });
 }
 
 function cleanText(s) {
@@ -1792,27 +1805,6 @@ function setupDataTables() {
   });
 }
 
-function fmtNum(v) {
-  if (v === null || v === undefined || v === "") return "–";
-  const n = Number(v);
-  if (Number.isNaN(n)) return String(v);
-  return Number.isInteger(n) ? String(n) : n.toFixed(1);
-}
-function truncate(s, n) {
-  const t = String(s || "");
-  return t.length > n ? t.slice(0, n - 1) + "…" : t;
-}
-function escapeHtml(s) {
-  return String(s ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-function escapeAttr(s) {
-  return escapeHtml(s).replace(/'/g, "&#39;");
-}
-
 boot().catch((err) => {
   console.error(err);
   setBooting(false);
@@ -1820,11 +1812,12 @@ boot().catch((err) => {
   showStatusBanner("Data inti gagal dimuat. Chrome tetap tampil; perbaiki file data lalu muat ulang.");
   const content = document.getElementById("detailContent");
   if (content) {
-    content.innerHTML = `
-    <p class="eyebrow">Error</p>
-    <h1>Data belum tersedia</h1>
-    <p class="lead">${escapeHtml(err.message)}</p>
-    <code class="cmd">python website/scripts/export_web_data.py</code>`;
+    content.innerHTML = AtlasUI.detailShell({
+      eyebrow: "Error",
+      title: "Data belum tersedia",
+      lead: err.message,
+      bodyHtml: `<code class="cmd">python website/scripts/export_web_data.py</code>`,
+    });
   }
   openDetail();
 });
