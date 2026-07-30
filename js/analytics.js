@@ -1,9 +1,14 @@
-/* Priority-2 analytics views — Chart.js + SVG flow */
+/* Analytics charts — Polres + timeline kasus (enhanced) */
 
 const charts = {
   polres: null,
   timeline: null,
   kepmen: null,
+};
+
+const chartState = {
+  polresMode: "skor",
+  timelineMode: "jenis",
 };
 
 const P2_COLORS = {
@@ -13,7 +18,19 @@ const P2_COLORS = {
   pantau: "#2f6a4c",
   soft: "#7a9a4a",
   ink: "#5a675f",
-  series: ["#c45620", "#d09218", "#2f6a4c", "#5b7c65", "#8aa090"],
+  series: ["#c45620", "#d09218", "#2f6a4c", "#5b7c65", "#8aa090", "#4a6b58", "#b dig"],
+};
+
+P2_COLORS.series = ["#c45620", "#d09218", "#2f6a4c", "#5b7c65", "#8aa090", "#6a8f7a", "#a0673a", "#3d5c4a", "#c4891a", "#4f7a62", "#8b5a3c", "#5a7a5a"];
+
+const POLRES_ALIAS = {
+  rohul: "Rokan Hulu",
+  rohil: "Rokan Hilir",
+  inhu: "Indragiri Hulu",
+  inhil: "Indragiri Hilir",
+  kuansing: "Kuantan Singingi",
+  "kepulauan meranti": "Kepulauan Meranti",
+  meranti: "Kepulauan Meranti",
 };
 
 function destroyChart(key) {
@@ -23,27 +40,101 @@ function destroyChart(key) {
   }
 }
 
+function kategoriColor(kat) {
+  const t = String(kat || "").toUpperCase();
+  if (t.includes("PRIORITAS")) return P2_COLORS.accent;
+  if (t.includes("WASPADA")) return P2_COLORS.waspada;
+  return P2_COLORS.pantau;
+}
+
+function normalizePolresLabel(name) {
+  let s = String(name || "").replace(/^Polres\s+/i, "").trim();
+  const key = s.toLowerCase();
+  return POLRES_ALIAS[key] || s;
+}
+
 function renderAnalytics() {
   if (!DATA.analytics) return;
-  renderPolresKomponenChart();
+  renderPolresChart();
   renderAgrinasFlow();
   renderAtlasFlow();
   renderTimelineChart();
   renderKepmenDonut();
   renderKepmenTable("all");
-  // Chart.js needs a layout pass after the view becomes visible
   requestAnimationFrame(() => {
     Object.values(charts).forEach((c) => c?.resize?.());
-    window.dispatchEvent(new Event("resize"));
   });
 }
 
-function renderPolresKomponenChart() {
+function renderPolresChart() {
   const canvas = document.getElementById("chartPolres");
   if (!canvas || !window.Chart) return;
   destroyChart("polres");
-  const rows = DATA.analytics.polres_komponen || [];
-  const labels = rows.map((r) => r.label);
+  const rows = [...(DATA.analytics.polres_komponen || [])].sort(
+    (a, b) => (a.peringkat || 99) - (b.peringkat || 99)
+  );
+  if (chartState.polresMode === "komponen") {
+    renderPolresKomponen(canvas, rows);
+  } else {
+    renderPolresSkor(canvas, rows);
+  }
+}
+
+function renderPolresSkor(canvas, rows) {
+  charts.polres = new Chart(canvas, {
+    type: "bar",
+    data: {
+      labels: rows.map((r) => r.label),
+      datasets: [
+        {
+          label: "Skor komposit",
+          data: rows.map((r) => Number(r.skor) || 0),
+          backgroundColor: rows.map((r) => kategoriColor(r.kategori)),
+          borderWidth: 0,
+          borderRadius: 6,
+          barPercentage: 0.7,
+        },
+      ],
+    },
+    options: {
+      indexAxis: "y",
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            afterBody(items) {
+              const row = rows[items[0]?.dataIndex];
+              if (!row) return "";
+              const k = row.komponen || {};
+              return [
+                `${row.kategori}`,
+                `Liputan ${fmtNum(k.liputan)} · Aksi ${fmtNum(k.aksi)} · Objek ${fmtNum(k.objek)}`,
+                `Status ${fmtNum(k.status)} · Adat ${fmtNum(k.adat)}`,
+              ];
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          max: 100,
+          grid: { color: "rgba(20,32,25,0.06)" },
+          title: { display: true, text: "Skor 0–100" },
+        },
+        y: { grid: { display: false }, ticks: { font: { size: 11 } } },
+      },
+      onClick: (_evt, elements) => {
+        if (!elements.length) return;
+        openPolresFromChart(rows[elements[0].index]);
+      },
+    },
+  });
+}
+
+function renderPolresKomponen(canvas, rows) {
   const keys = ["liputan", "aksi", "objek", "status", "adat"];
   const keyLabel = {
     liputan: "Liputan",
@@ -55,7 +146,7 @@ function renderPolresKomponenChart() {
   charts.polres = new Chart(canvas, {
     type: "bar",
     data: {
-      labels,
+      labels: rows.map((r) => r.label),
       datasets: keys.map((k, i) => ({
         label: keyLabel[k],
         data: rows.map((r) => Number((r.komponen || {})[k]) || 0),
@@ -78,8 +169,7 @@ function renderPolresKomponenChart() {
         tooltip: {
           callbacks: {
             afterBody(items) {
-              const idx = items[0]?.dataIndex;
-              const row = rows[idx];
+              const row = rows[items[0]?.dataIndex];
               if (!row) return "";
               return `Skor ${Number(row.skor).toFixed(1)} · ${row.kategori}`;
             },
@@ -100,20 +190,30 @@ function renderPolresKomponenChart() {
       },
       onClick: (_evt, elements) => {
         if (!elements.length) return;
-        const row = rows[elements[0].index];
-        if (row?.polres && typeof window.showPolres === "function") {
-          document.querySelector('.nav-btn[data-view="peta"]')?.click();
-          setTimeout(() => window.showPolres(row.polres), 120);
-        }
+        openPolresFromChart(rows[elements[0].index]);
       },
     },
   });
+}
+
+function openPolresFromChart(row) {
+  if (!row?.polres || typeof window.showPolres !== "function") return;
+  document.querySelector('.nav-btn[data-view="peta"]')?.click();
+  setTimeout(() => window.showPolres(row.polres), 140);
 }
 
 function renderTimelineChart() {
   const canvas = document.getElementById("chartTimeline");
   if (!canvas || !window.Chart) return;
   destroyChart("timeline");
+  if (chartState.timelineMode === "polres") {
+    renderTimelineByPolres(canvas);
+  } else {
+    renderTimelineByJenis(canvas);
+  }
+}
+
+function renderTimelineByJenis(canvas) {
   const tl = DATA.analytics.timeline || {};
   const years = tl.years || [];
   const cats = tl.categories || [];
@@ -130,26 +230,77 @@ function renderTimelineChart() {
         stack: "kasus",
       })),
     },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          position: "bottom",
-          labels: { boxWidth: 10, font: { family: "Instrument Sans", size: 11 } },
-        },
-      },
-      scales: {
-        x: { stacked: true, grid: { display: false } },
-        y: {
-          stacked: true,
-          beginAtZero: true,
-          grid: { color: "rgba(20,32,25,0.06)" },
-          title: { display: true, text: "Jumlah kasus (tahun disebut)" },
-        },
+    options: stackedTimelineOptions("Jumlah kasus (tahun disebut pada entri)"),
+  });
+}
+
+function renderTimelineByPolres(canvas) {
+  const tl = DATA.analytics.timeline || {};
+  const years = tl.years || [];
+  const byPolres = tl.by_polres || {};
+
+  // Aggregate aliases into canonical labels; keep Polda separate
+  const totals = {};
+  years.forEach((y) => {
+    Object.entries(byPolres[y] || {}).forEach(([raw, n]) => {
+      const label = normalizePolresLabel(raw);
+      totals[label] = (totals[label] || 0) + Number(n || 0);
+    });
+  });
+
+  // Prefer ranking order for known Polres; then others by volume
+  const ranked = (DATA.analytics.polres_komponen || []).map((p) => p.label);
+  const ordered = [
+    ...ranked.filter((l) => totals[l]),
+    ...Object.keys(totals)
+      .filter((l) => !ranked.includes(l))
+      .sort((a, b) => totals[b] - totals[a]),
+  ].slice(0, 12);
+
+  charts.timeline = new Chart(canvas, {
+    type: "bar",
+    data: {
+      labels: years,
+      datasets: ordered.map((label, i) => ({
+        label,
+        data: years.map((y) => {
+          const bag = byPolres[y] || {};
+          let sum = 0;
+          Object.entries(bag).forEach(([raw, n]) => {
+            if (normalizePolresLabel(raw) === label) sum += Number(n || 0);
+          });
+          return sum;
+        }),
+        backgroundColor: P2_COLORS.series[i % P2_COLORS.series.length],
+        borderWidth: 0,
+        borderRadius: 3,
+        stack: "polres",
+      })),
+    },
+    options: stackedTimelineOptions("Jumlah kasus per Polres / unit (tahun disebut)"),
+  });
+}
+
+function stackedTimelineOptions(yTitle) {
+  return {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: "bottom",
+        labels: { boxWidth: 10, font: { family: "Instrument Sans", size: 11 } },
       },
     },
-  });
+    scales: {
+      x: { stacked: true, grid: { display: false } },
+      y: {
+        stacked: true,
+        beginAtZero: true,
+        grid: { color: "rgba(20,32,25,0.06)" },
+        title: { display: true, text: yTitle },
+      },
+    },
+  };
 }
 
 function renderKepmenDonut() {
@@ -191,14 +342,17 @@ function renderKepmenDonut() {
         const label = buckets[elements[0].index]?.label || "all";
         renderKepmenTable(label);
         document.querySelectorAll("#kepmenFilters .chip").forEach((c) => {
-          c.classList.toggle("is-on", c.dataset.kepmen === label || (label === "all" && c.dataset.kepmen === "all"));
+          c.classList.toggle("is-on", c.dataset.kepmen === label);
         });
       },
     },
   });
-
   const totalEl = document.getElementById("kepmenTotal");
-  if (totalEl) totalEl.textContent = String(DATA.analytics.kepmenhut?.total ?? buckets.reduce((s, b) => s + b.value, 0));
+  if (totalEl) {
+    totalEl.textContent = String(
+      DATA.analytics.kepmenhut?.total ?? buckets.reduce((s, b) => s + b.value, 0)
+    );
+  }
 }
 
 function renderKepmenTable(filterLabel) {
@@ -245,7 +399,6 @@ function renderFlowSvg(containerId, links, titleNodes) {
       nodeSet.push(l.target);
     }
   });
-  // Prefer provided order
   const ordered = (titleNodes || []).filter((n) => seen.has(n));
   const rest = nodeSet.filter((n) => !ordered.includes(n));
   const nodes = [...ordered, ...rest];
@@ -259,7 +412,6 @@ function renderFlowSvg(containerId, links, titleNodes) {
   const leftX = 20;
   const rightX = width - 20;
   const midX = width / 2;
-  // Assign columns by heuristic: sources left, intermediates mid, sinks right
   const sources = new Set(links.map((l) => l.source));
   const targets = new Set(links.map((l) => l.target));
   const colOf = (n) => {
@@ -275,8 +427,7 @@ function renderFlowSvg(containerId, links, titleNodes) {
   cols.forEach((col, ci) => {
     const x = ci === 0 ? leftX + 110 : ci === 1 ? midX : rightX - 110;
     col.forEach((n, i) => {
-      const y = ((i + 1) / (col.length + 1)) * height;
-      pos[n] = { x, y };
+      pos[n] = { x, y: ((i + 1) / (col.length + 1)) * height };
     });
   });
 
@@ -319,35 +470,61 @@ function renderAgrinasFlow() {
       .map(([k, v]) => `<div class="flow-stat"><strong>${v}</strong><span>${escapeHtml(k)}</span></div>`)
       .join("");
   }
-  renderFlowSvg(
-    "agrinasFlow",
-    flow.links || [],
-    [
-      "A. Pengelola",
-      "B. Eks pengelola",
-      "C. Mitra KSO",
-      "D. Eks lahan (via KSO)",
-      "E. Gelombang 1 Satgas",
-      "F. Objek kawasan",
-    ]
-  );
+  renderFlowSvg("agrinasFlow", flow.links || [], [
+    "A. Pengelola",
+    "B. Eks pengelola",
+    "C. Mitra KSO",
+    "D. Eks lahan (via KSO)",
+    "E. Gelombang 1 Satgas",
+    "F. Objek kawasan",
+  ]);
 }
 
 function renderAtlasFlow() {
   const flow = DATA.analytics.atlas_flow || {};
-  renderFlowSvg("atlasFlow", flow.links || [], ["Nusantara Atlas", "cocok", "ada di konflik", "tidak di konflik"]);
+  renderFlowSvg("atlasFlow", flow.links || [], [
+    "Nusantara Atlas",
+    "cocok",
+    "ada di konflik",
+    "tidak di konflik",
+  ]);
 }
 
 function setupAnalyticsControls() {
-  const filters = document.getElementById("kepmenFilters");
-  if (!filters) return;
-  filters.addEventListener("click", (e) => {
-    const btn = e.target.closest(".chip");
-    if (!btn) return;
-    filters.querySelectorAll(".chip").forEach((c) => c.classList.remove("is-on"));
-    btn.classList.add("is-on");
-    renderKepmenTable(btn.dataset.kepmen || "all");
-  });
+  const kepmen = document.getElementById("kepmenFilters");
+  if (kepmen) {
+    kepmen.addEventListener("click", (e) => {
+      const btn = e.target.closest(".chip");
+      if (!btn) return;
+      kepmen.querySelectorAll(".chip").forEach((c) => c.classList.remove("is-on"));
+      btn.classList.add("is-on");
+      renderKepmenTable(btn.dataset.kepmen || "all");
+    });
+  }
+
+  const polresMode = document.getElementById("polresChartMode");
+  if (polresMode) {
+    polresMode.addEventListener("click", (e) => {
+      const btn = e.target.closest(".chip");
+      if (!btn) return;
+      polresMode.querySelectorAll(".chip").forEach((c) => c.classList.remove("is-on"));
+      btn.classList.add("is-on");
+      chartState.polresMode = btn.dataset.mode || "skor";
+      renderPolresChart();
+    });
+  }
+
+  const timelineMode = document.getElementById("timelineChartMode");
+  if (timelineMode) {
+    timelineMode.addEventListener("click", (e) => {
+      const btn = e.target.closest(".chip");
+      if (!btn) return;
+      timelineMode.querySelectorAll(".chip").forEach((c) => c.classList.remove("is-on"));
+      btn.classList.add("is-on");
+      chartState.timelineMode = btn.dataset.mode || "jenis";
+      renderTimelineChart();
+    });
+  }
 }
 
 window.renderAnalytics = renderAnalytics;

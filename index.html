@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/styles.css?v=p2c" />
+  <link rel="stylesheet" href="css/styles.css?v=charts2" />
 </head>
 <body>
   <div id="app">
@@ -110,12 +110,29 @@
         <section class="analisis-block wide">
           <div class="block-head">
             <div>
-              <p class="eyebrow">Small-multiples / grouped bar</p>
-              <h2>Komponen skor per Polres</h2>
+              <p class="eyebrow">Chart Polres</p>
+              <h2>Skor &amp; komponen early-warning</h2>
             </div>
-            <p class="block-note">Liputan · Aksi · Objek · Status · Adat</p>
+            <div class="chip-row" id="polresChartMode">
+              <button class="chip is-on" data-mode="skor">Skor komposit</button>
+              <button class="chip" data-mode="komponen">5 komponen</button>
+            </div>
           </div>
           <div class="chart-frame tall"><canvas id="chartPolres"></canvas></div>
+        </section>
+
+        <section class="analisis-block wide">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">Timeline kasus</p>
+              <h2>Sebaran 2024–2026</h2>
+            </div>
+            <div class="chip-row" id="timelineChartMode">
+              <button class="chip is-on" data-mode="jenis">Per jenis</button>
+              <button class="chip" data-mode="polres">Per Polres</button>
+            </div>
+          </div>
+          <div class="chart-frame tall"><canvas id="chartTimeline"></canvas></div>
         </section>
 
         <section class="analisis-block">
@@ -142,21 +159,25 @@
         <section class="analisis-block">
           <div class="block-head">
             <div>
-              <p class="eyebrow">Stacked timeline</p>
-              <h2>Kasus per tahun &amp; jenis</h2>
-            </div>
-          </div>
-          <div class="chart-frame"><canvas id="chartTimeline"></canvas></div>
-        </section>
-
-        <section class="analisis-block">
-          <div class="block-head">
-            <div>
               <p class="eyebrow">Kepmenhut 36/2025</p>
               <h2><span id="kepmenTotal">–</span> subjek hukum</h2>
             </div>
           </div>
           <div class="chart-frame donut"><canvas id="chartKepmen"></canvas></div>
+        </section>
+
+        <section class="analisis-block">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">Ringkas</p>
+              <h2>Cara baca chart</h2>
+            </div>
+          </div>
+          <div class="howto">
+            <div><strong>1</strong><span>Skor Polres = early-warning, bukan vonis</span></div>
+            <div><strong>2</strong><span>Klik batang Polres untuk buka peta</span></div>
+            <div><strong>3</strong><span>Timeline menghitung tahun yang disebut di entri kasus</span></div>
+          </div>
         </section>
 
         <section class="analisis-block wide">
@@ -215,7 +236,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <script src="js/analytics.js?v=p3a"></script>
-  <script src="js/app.js?v=p3a"></script>
+  <script src="js/analytics.js?v=charts2"></script>
+  <script src="js/app.js?v=charts2"></script>
 </body>
 </html>
