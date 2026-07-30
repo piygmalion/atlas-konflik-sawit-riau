@@ -131,23 +131,24 @@ function renderGelombangTable(kabFilter) {
       const gfw = findGfwRecord(r.perusahaan);
       const link = atlasDeepLink(atlas?.atlas_nama || r.perusahaan, gfw);
       return `<tr>
-        <td>${escapeHtml(r.no ?? "")}</td>
-        <td>
+        <td data-label="#">${escapeHtml(r.no ?? "")}</td>
+        <td data-label="Perusahaan">
           <strong>${escapeHtml(r.perusahaan || "")}</strong>
           <div class="row-actions">
             <button type="button" class="text-btn" data-kab="${escapeAttr(r.kabupaten || "")}">Peta kab</button>
             <a class="text-btn" href="${escapeAttr(link.href)}" target="_blank" rel="noopener" title="${escapeAttr(link.title)}">Atlas</a>
           </div>
         </td>
-        <td>${escapeHtml(r.kabupaten || "")}</td>
-        <td>${escapeHtml(r.afiliasi || "–")}</td>
-        <td>${escapeHtml(r.catatan || "–")}</td>
+        <td data-label="Kabupaten">${escapeHtml(r.kabupaten || "")}</td>
+        <td data-label="Afiliasi">${escapeHtml(r.afiliasi || "–")}</td>
+        <td data-label="Catatan">${escapeHtml(r.catatan || "–")}</td>
       </tr>`;
     })
     .join("");
   tbody.querySelectorAll("button[data-kab]").forEach((btn) => {
     btn.addEventListener("click", () => openKabFromPenertiban(btn.dataset.kab));
   });
+  requestAnimationFrame(() => window.syncTablePaneScrollHints?.(document.getElementById("analisisView") || document));
 }
 
 function renderTessoCards() {

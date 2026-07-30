@@ -9,12 +9,12 @@
   <meta property="og:description" content="Pemetaan spasial konflik sawit Riau — interaktif dan dapat diperbarui." />
   <meta property="og:type" content="website" />
   <!-- Bump atlas-asset-ver AND every ?v= below together on each release. -->
-  <meta name="atlas-asset-ver" content="0dba" />
+  <meta name="atlas-asset-ver" content="0dbb" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/styles.css?v=0dba" />
+  <link rel="stylesheet" href="css/styles.css?v=0dbb" />
 </head>
 <body class="is-booting">
   <div id="app">
@@ -268,19 +268,22 @@
             <div class="chip-row" id="gelombangKabFilters"></div>
           </div>
           <p class="block-note" id="gelombangFilterCount"></p>
-          <div class="table-scroll compact">
-            <table id="gelombangTable">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Perusahaan</th>
-                  <th>Kabupaten</th>
-                  <th>Afiliasi</th>
-                  <th>Catatan</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
+          <div class="table-pane">
+            <p class="table-scroll-hint" hidden>Geser horizontal untuk kolom lain →</p>
+            <div class="table-scroll compact">
+              <table id="gelombangTable">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Perusahaan</th>
+                    <th>Kabupaten</th>
+                    <th>Afiliasi</th>
+                    <th>Catatan</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
           </div>
         </section>
 
@@ -318,20 +321,23 @@
             </div>
           </div>
           <p class="block-note" id="kepmenFilterCount"></p>
-          <div class="table-scroll compact">
-            <table id="kepmenTable">
-              <thead>
-                <tr>
-                  <th>Nama</th>
-                  <th>Status</th>
-                  <th>Permohonan</th>
-                  <th>Berproses</th>
-                  <th>Ditolak</th>
-                  <th>Kelengkapan</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
+          <div class="table-pane">
+            <p class="table-scroll-hint" hidden>Geser horizontal untuk kolom lain →</p>
+            <div class="table-scroll compact">
+              <table id="kepmenTable">
+                <thead>
+                  <tr>
+                    <th>Nama</th>
+                    <th>Status</th>
+                    <th>Permohonan</th>
+                    <th>Berproses</th>
+                    <th>Ditolak</th>
+                    <th>Kelengkapan</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
           </div>
         </section>
       </div>
@@ -348,11 +354,14 @@
       </div>
       <div class="table-wrap">
         <div class="table-tabs" id="tableTabs"></div>
-        <div class="table-scroll">
-          <table id="dataTable">
-            <thead></thead>
-            <tbody></tbody>
-          </table>
+        <div class="table-pane">
+          <p class="table-scroll-hint" hidden>Geser horizontal untuk kolom lain →</p>
+          <div class="table-scroll">
+            <table id="dataTable">
+              <thead></thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
@@ -361,8 +370,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <script src="js/analytics.js?v=0dba"></script>
-  <script src="js/penertiban.js?v=0dba"></script>
-  <script src="js/app.js?v=0dba"></script>
+  <script src="js/analytics.js?v=0dbb"></script>
+  <script src="js/penertiban.js?v=0dbb"></script>
+  <script src="js/app.js?v=0dbb"></script>
 </body>
 </html>

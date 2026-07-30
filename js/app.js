@@ -217,7 +217,7 @@ window.getBlendOsint = () => state.blendOsint;
  * Source of truth: <meta name="atlas-asset-ver"> in index.html (keep ?v= on assets in sync).
  */
 const ASSET_VER =
-  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0dba";
+  document.querySelector('meta[name="atlas-asset-ver"]')?.getAttribute("content") || "0dbb";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${ASSET_VER}`;
@@ -1468,6 +1468,9 @@ function setupNav() {
       document.body.classList.toggle("is-map-view", state.view === "peta");
       if (state.view === "peta") setTimeout(() => state.map?.invalidateSize(), 80);
       syncMobileStartCta();
+      if (state.view === "data") {
+        requestAnimationFrame(() => syncTablePaneScrollHints(document.getElementById("dataView") || document));
+      }
       if (state.view === "analisis") {
         setTimeout(() => {
           if (typeof window.renderAnalytics === "function") window.renderAnalytics();
@@ -1475,6 +1478,7 @@ function setupNav() {
             window.setupPenertibanControls?.();
             window.renderPenertibanModule();
           }
+          syncTablePaneScrollHints(document.getElementById("analisisView") || document);
         }, 120);
       }
     });
@@ -1708,6 +1712,21 @@ function setupSearch() {
   });
 }
 
+function syncTablePaneScrollHints(root = document) {
+  root.querySelectorAll(".table-pane").forEach((pane) => {
+    const scroller = pane.querySelector(".table-scroll");
+    const hint = pane.querySelector(".table-scroll-hint");
+    if (!scroller) return;
+    // Card stack at ≤640px does not need a horizontal hint
+    const stackMode = window.matchMedia("(max-width: 640px)").matches;
+    const overflow = !stackMode && scroller.scrollWidth > scroller.clientWidth + 4;
+    pane.classList.toggle("is-scrollable", overflow);
+    if (hint) hint.hidden = !overflow;
+  });
+}
+
+window.syncTablePaneScrollHints = syncTablePaneScrollHints;
+
 function setupDataTables() {
   const tabs = [
     { id: "kasus", label: "Kasus konflik", rows: () => DATA.kasus.records, cols: ["id", "tipe_entri", "kab_kota", "polres", "tahun", "nomor_lp", "perusahaan", "status", "uraian"] },
@@ -1759,14 +1778,18 @@ function setupDataTables() {
             .map((c) => {
               let v = r[c];
               if (c === "uraian" || c === "alasan" || c === "kaitan_agrinas") v = truncate(v, 120);
-              return `<td>${escapeHtml(v ?? "")}</td>`;
+              return `<td data-label="${escapeAttr(c)}">${escapeHtml(v ?? "")}</td>`;
             })
             .join("")}</tr>`
       )
       .join("");
+    requestAnimationFrame(() => syncTablePaneScrollHints(document.getElementById("dataView") || document));
   };
   paintTabs();
   paintTable();
+  window.addEventListener("resize", () => {
+    if (state.view === "data" || state.view === "analisis") syncTablePaneScrollHints();
+  });
 }
 
 function fmtNum(v) {

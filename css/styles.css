@@ -1039,7 +1039,32 @@ body.is-scroll {
   padding: 0.85rem;
   box-shadow: var(--shadow);
 }
-.table-scroll { overflow: auto; max-height: 62vh; }
+.table-pane { position: relative; }
+.table-scroll-hint {
+  margin: 0 0 0.4rem;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.01em;
+}
+.table-scroll-hint[hidden] { display: none !important; }
+.table-scroll {
+  overflow: auto;
+  max-height: 62vh;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+}
+.table-pane.is-scrollable .table-scroll {
+  border-color: rgba(20, 32, 25, 0.08);
+  background:
+    linear-gradient(to right, #eef2eb 30%, transparent) 0 0 / 1.1rem 100% local,
+    linear-gradient(to left, #eef2eb 30%, transparent) 100% 0 / 1.1rem 100% local,
+    linear-gradient(to right, rgba(20, 32, 25, 0.12), transparent 70%) 0 0 / 0.7rem 100% local,
+    linear-gradient(to left, rgba(20, 32, 25, 0.12), transparent 70%) 100% 0 / 0.7rem 100% local;
+  background-repeat: no-repeat;
+  background-attachment: local, local, scroll, scroll;
+}
 table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
 th, td {
   text-align: left;
@@ -1055,6 +1080,102 @@ th {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink-soft);
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .analisis-view .chip-row .chip,
+  .data-view .table-tabs .chip,
+  .analisis-view #kepmenFilters .chip,
+  .analisis-view #gelombangKabFilters .chip {
+    min-height: 40px;
+    padding: 0.45rem 0.85rem;
+  }
+  .analisis-view .text-btn,
+  .data-view .text-btn {
+    min-height: 40px;
+    padding: 0.4rem 0.7rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  .table-scroll table {
+    min-width: 36rem;
+  }
+  .table-scroll.compact table {
+    min-width: 32rem;
+  }
+  /* Keep identity column visible while panning */
+  .table-scroll th:first-child,
+  .table-scroll td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: #f3f7f1;
+    box-shadow: 1px 0 0 rgba(20, 32, 25, 0.08);
+  }
+  .table-scroll th:first-child {
+    top: 0;
+    z-index: 3;
+    background: #e8efe6;
+  }
+  .table-scroll td:first-child {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 640px) {
+  .story-view, .data-view, .analisis-view {
+    padding: 1rem 0.75rem 2rem;
+  }
+  .table-scroll-hint { font-size: 0.78rem; }
+  /* Card stack: no silent horizontal clipping */
+  .table-scroll table {
+    min-width: 0;
+    width: 100%;
+  }
+  .table-scroll thead { display: none; }
+  .table-scroll tbody tr {
+    display: block;
+    margin: 0 0 0.65rem;
+    padding: 0.55rem 0.65rem;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+  }
+  .table-scroll tbody tr:last-child { margin-bottom: 0; }
+  .table-scroll th:first-child,
+  .table-scroll td:first-child {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    font-weight: inherit;
+  }
+  .table-scroll td {
+    display: grid;
+    grid-template-columns: minmax(5.5rem, 36%) 1fr;
+    gap: 0.35rem 0.55rem;
+    border-bottom: 1px solid rgba(20, 32, 25, 0.06);
+    padding: 0.4rem 0;
+  }
+  .table-scroll td:last-child { border-bottom: 0; }
+  .table-scroll td::before {
+    content: attr(data-label);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    line-height: 1.35;
+  }
+  .table-scroll td:not([data-label])::before,
+  .table-scroll td[data-label=""]::before {
+    content: "Kolom";
+  }
+  .table-pane.is-scrollable .table-scroll {
+    background: transparent;
+    border-color: transparent;
+  }
+  .table-pane.is-scrollable .table-scroll-hint { display: none !important; }
 }
 
 .leaflet-container {

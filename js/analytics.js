@@ -422,17 +422,18 @@ function renderKepmenTable(filterLabel) {
     .slice(0, 80)
     .map(
       (r) => `<tr>
-        <td>${escapeHtml(r.nama || "")}</td>
-        <td>${escapeHtml(r.status || "")}</td>
-        <td>${fmtNum(r.luas_permohonan_ha)}</td>
-        <td>${fmtNum(r.luas_berproses_ha)}</td>
-        <td>${fmtNum(r.luas_ditolak_ha)}</td>
-        <td>${escapeHtml(r.kelengkapan || "")}</td>
+        <td data-label="Nama">${escapeHtml(r.nama || "")}</td>
+        <td data-label="Status">${escapeHtml(r.status || "")}</td>
+        <td data-label="Permohonan">${fmtNum(r.luas_permohonan_ha)}</td>
+        <td data-label="Berproses">${fmtNum(r.luas_berproses_ha)}</td>
+        <td data-label="Ditolak">${fmtNum(r.luas_ditolak_ha)}</td>
+        <td data-label="Kelengkapan">${escapeHtml(r.kelengkapan || "")}</td>
       </tr>`
     )
     .join("");
   const countEl = document.getElementById("kepmenFilterCount");
   if (countEl) countEl.textContent = `${filtered.length} subjek`;
+  requestAnimationFrame(() => window.syncTablePaneScrollHints?.(document.getElementById("analisisView") || document));
 }
 
 function renderFlowSvg(containerId, links, titleNodes) {
