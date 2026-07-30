@@ -396,7 +396,13 @@ body.is-scroll {
 .rank-list .n.PRIORITAS { background: var(--prioritas); }
 .rank-list .n.WASPADA { background: var(--waspada); }
 .rank-list .score { font-weight: 700; color: var(--brand); font-size: 0.9rem; }
-.rank-list small { color: var(--ink-soft); }
+.map-legend .legend-metric {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+}
+.rank-list small { color: var(--ink-soft); font-size: 0.72rem; }
 
 .map-legend {
   position: absolute;

@@ -184,6 +184,19 @@ def geom_centroid_lonlat(geom: dict):
     return sum(x for x, _ in coords) / len(coords), sum(y for _, y in coords) / len(coords)
 
 
+def densitas_level_from_skor(skor) -> str:
+    """Derive densitas label from skor_komposit (0–100), not risiko_register.level."""
+    try:
+        s = float(skor or 0)
+    except (TypeError, ValueError):
+        s = 0.0
+    if s >= 70:
+        return "TINGGI"
+    if s >= 40:
+        return "SEDANG"
+    return "RENDAH"
+
+
 def in_riau_bbox(lon: float | None, lat: float | None) -> bool:
     if lon is None or lat is None:
         return False
@@ -551,7 +564,8 @@ def export_spatial_layers(kab_records: list[dict]):
                     "n_kasus": n,
                     "weight": n,
                     "skor": rec.get("skor_komposit"),
-                    "level_risiko": (rec.get("risiko_register") or {}).get("level"),
+                    "level_risiko": densitas_level_from_skor(rec.get("skor_komposit")),
+                    "skor_register": (rec.get("risiko_register") or {}).get("skor"),
                     "layer": "densitas_kasus",
                 },
             }

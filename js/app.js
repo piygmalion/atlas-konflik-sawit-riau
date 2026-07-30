@@ -34,25 +34,37 @@ const state = {
 
 const COMPARE_PRESETS = {
   all: {
-    hint: "Gabungan: choropleth, koridor, densitas kasus, dan titik Agrinas.",
+    hint: "Gabungan: warna kab = skor Polres blend (70% OSINT + 30% register).",
     layers: { choropleth: true, koridor: true, densitas_kasus: true, objek_titik: true, gfw_konsesi: false },
     rank: "polres",
+    choroMetric: "polres_blend",
   },
   register: {
-    hint: "Register konflik: choropleth + densitas kasus. Ranking menurut skor register / kasus.",
+    hint: "Register konflik: warna kab = risiko register. Ranking menurut skor register.",
     layers: { choropleth: true, koridor: false, densitas_kasus: true, objek_titik: false, gfw_konsesi: false },
     rank: "register",
+    choroMetric: "register",
   },
   agrinas: {
-    hint: "Sinyal Agrinas: koridor + titik objek. Ranking objek / densitas Agrinas–KSO.",
+    hint: "Sinyal Agrinas: warna kab = skor OSINT Agrinas–KSO. Ranking objek / densitas.",
     layers: { choropleth: true, koridor: true, densitas_kasus: false, objek_titik: true, gfw_konsesi: false },
     rank: "agrinas",
+    choroMetric: "osint",
   },
   atlas: {
     hint: "Deforestasi Atlas: overlay GFW + cocokan nama. Deep-link ke Nusantara Atlas.",
     layers: { choropleth: false, koridor: false, densitas_kasus: false, objek_titik: false, gfw_konsesi: true },
     rank: "atlas",
+    choroMetric: null,
   },
+};
+
+/** Kamus metrik — jangan pakai kata “skor” tanpa konteks di UI. */
+const METRIC_LABELS = {
+  polres_blend: "Skor Polres (blend)",
+  register: "Risiko register",
+  osint: "Skor OSINT Agrinas",
+  kab_komposit: "Skor kab (komposit peta)",
 };
 
 const ALIAS = {
@@ -77,7 +89,7 @@ const colorFor = (level) => {
   return "#2f6a4c";
 };
 
-/** Choropleth fill for kab skor 0–100 (not 1–5). Bands match PRIORITAS/WASPADA/PANTAU. */
+/** Choropleth fill for skor 0–100. Bands match PRIORITAS/WASPADA/PANTAU. */
 const CHORO_BREAKS = { high: 70, mid: 40 };
 
 const choroplethColor = (skor) => {
@@ -90,9 +102,82 @@ const choroplethColor = (skor) => {
 const choroplethBandLabel = (skor) => {
   const s = Number(skor) || 0;
   if (s >= CHORO_BREAKS.high) return `tinggi (≥${CHORO_BREAKS.high})`;
-  if (s >= CHORO_BREAKS.mid) return `sedang (≥${CHORO_BREAKS.mid})`;
+  if (s >= CHORO_BREAKS.mid) return `sedang (${CHORO_BREAKS.mid}–${CHORO_BREAKS.high - 1})`;
   return `rendah (<${CHORO_BREAKS.mid})`;
 };
+
+const kategoriFromSkor = (skor) => {
+  const s = Number(skor) || 0;
+  if (s >= CHORO_BREAKS.high) return "PRIORITAS";
+  if (s >= CHORO_BREAKS.mid) return "WASPADA";
+  return "PANTAU";
+};
+
+const densitasLevelFromSkor = (skor) => {
+  const s = Number(skor) || 0;
+  if (s >= CHORO_BREAKS.high) return "TINGGI";
+  if (s >= CHORO_BREAKS.mid) return "SEDANG";
+  return "RENDAH";
+};
+
+function findKabByName(nama) {
+  const key = String(nama || "").toLowerCase();
+  return (
+    DATA.kab?.records?.find((k) => (k.kab_kota || "").toLowerCase() === key) ||
+    DATA.kab?.records?.find((k) => matchWilayah(k.kab_kota, nama)) ||
+    null
+  );
+}
+
+function findPolresForKab(kab) {
+  if (!kab) return null;
+  return (
+    DATA.polres?.records?.find((p) => matchWilayah(p.polres, kab.polres_proksi)) ||
+    DATA.polres?.records?.find((p) => matchWilayah(kab.polres_proksi, p.polres)) ||
+    null
+  );
+}
+
+/** Metrik choropleth mengikuti mode bandingkan — satu sumber kebenaran per view. */
+function resolveChoroplethMetric(nama) {
+  const kab = findKabByName(nama);
+  const polres = findPolresForKab(kab);
+  const risk = kab?.risiko_register || {};
+  const metricKey = COMPARE_PRESETS[state.compare]?.choroMetric || "polres_blend";
+
+  if (metricKey === "register") {
+    const skor = Number(risk.skor ?? polres?.skor_register) || 0;
+    return {
+      skor,
+      metricKey,
+      label: METRIC_LABELS.register,
+      kategori: risk.level || kategoriFromSkor(skor),
+      kab,
+      polres,
+    };
+  }
+  if (metricKey === "osint") {
+    const skor = Number(polres?.skor_osint) || Number(kab?.sinyal_agrinas) * 20 || 0;
+    return {
+      skor,
+      metricKey,
+      label: METRIC_LABELS.osint,
+      kategori: kategoriFromSkor(skor),
+      kab,
+      polres,
+    };
+  }
+  // Gabungan default: skor Polres blend terproyeksi ke kab
+  const skor = Number(polres?.skor) || Number(kab?.skor_komposit) || 0;
+  return {
+    skor,
+    metricKey: "polres_blend",
+    label: METRIC_LABELS.polres_blend,
+    kategori: polres?.kategori || kategoriFromSkor(skor),
+    kab,
+    polres,
+  };
+}
 
 async function loadJSON(path) {
   const res = await fetch(path);
@@ -280,25 +365,28 @@ function renderRankPanel() {
         (Number(b.skor_register) || Number(b.n_recent) || 0) - (Number(a.skor_register) || Number(a.n_recent) || 0)
     );
   }
-  rows = rows.filter((p) => state.priority === "all" || p.kategori === state.priority);
+  rows = rows.filter((p) => {
+    if (state.priority === "all") return true;
+    const primary = mode === "register" ? Number(p.skor_register) || 0 : Number(p.skor) || 0;
+    return kategoriFromSkor(primary) === state.priority || p.kategori === state.priority;
+  });
   ol.innerHTML = rows
-    .map(
-      (p) => `
+    .map((p, idx) => {
+      const primary = Number(mode === "register" ? p.skor_register || p.skor : p.skor) || 0;
+      const kat = mode === "register" ? kategoriFromSkor(primary) : p.kategori;
+      const rankN = mode === "register" ? idx + 1 : p.peringkat;
+      return `
       <li>
         <button type="button" data-polres="${escapeAttr(p.polres)}">
-          <span class="n ${p.kategori}">${p.peringkat}</span>
+          <span class="n ${escapeAttr(kat)}">${rankN}</span>
           <span>
             <strong>${escapeHtml(p.polres.replace(/^Polres\s+/i, ""))}</strong><br/>
-            <small>${
-              mode === "register"
-                ? `Register ${fmtNum(p.skor_register)} · ${fmtNum(p.n_recent)} entri`
-                : escapeHtml(p.kategori)
-            }</small>
+            <small>OSINT ${fmtNum(p.skor_osint)} · Reg ${fmtNum(p.skor_register)}</small>
           </span>
-          <span class="score">${Number(mode === "register" ? p.skor_register || p.skor : p.skor).toFixed(0)}</span>
+          <span class="score" title="${mode === "register" ? "Risiko register" : "Skor Polres (blend)"}">${primary.toFixed(0)}</span>
         </button>
-      </li>`
-    )
+      </li>`;
+    })
     .join("");
   ol.querySelectorAll("button[data-polres]").forEach((btn) => {
     btn.addEventListener("click", () => showPolres(btn.dataset.polres));
@@ -326,35 +414,45 @@ function initMap() {
     gfw_konsesi: L.layerGroup(),
   };
 
-  // Choropleth ADM2
+  // Choropleth ADM2 — warna mengikuti mode bandingkan (refreshChoroplethForMode)
+  state.choroplethLayers = [];
   L.geoJSON(DATA.adm2, {
     style: (f) => {
-      const p = f.properties || {};
+      const m = resolveChoroplethMetric((f.properties || {}).nama);
       return {
         color: "#163528",
         weight: 1.1,
-        fillColor: choroplethColor(p.skor),
+        fillColor: choroplethColor(m.skor),
         fillOpacity: 0.55,
       };
     },
     onEachFeature: (f, layer) => {
       const p = f.properties || {};
-      layer.bindTooltip(
-        `<strong>${escapeHtml(p.nama || "")}</strong><br/>Skor ${fmtNum(p.skor)} · ${escapeHtml(p.kategori || choroplethBandLabel(p.skor))}`
-      );
+      state.choroplethLayers.push({ layer, nama: p.nama });
+      const bindChoroTooltip = () => {
+        const m = resolveChoroplethMetric(p.nama);
+        layer.bindTooltip(
+          `<strong>${escapeHtml(p.nama || "")}</strong><br/>${escapeHtml(m.label)} ${fmtNum(m.skor)} · ${escapeHtml(m.kategori || choroplethBandLabel(m.skor))}`
+        );
+      };
+      bindChoroTooltip();
       layer.on({
         mouseover: (e) => e.target.setStyle({ weight: 2.2, fillOpacity: 0.72 }),
-        mouseout: (e) =>
+        mouseout: (e) => {
+          const m = resolveChoroplethMetric(p.nama);
           e.target.setStyle({
             weight: 1.1,
             fillOpacity: 0.55,
-            fillColor: choroplethColor(p.skor),
-          }),
+            fillColor: choroplethColor(m.skor),
+          });
+        },
         click: () => showKabupaten(p.nama),
       });
+      layer._bindChoroTooltip = bindChoroTooltip;
       state.layerGroups.choropleth.addLayer(layer);
     },
   });
+  updateMapLegend();
 
   // GFW overlay is lazy-loaded (TopoJSON) when toggled on
   state.gfwReady = false;
@@ -386,15 +484,19 @@ function initMap() {
 
     if (layerId === "densitas_kasus") {
       const n = Number(p.n_kasus) || 1;
+      const skorKab = Number(p.skor) || 0;
+      const level = densitasLevelFromSkor(skorKab);
       const radius = Math.max(10, Math.min(42, 8 + Math.sqrt(n) * 6));
       const marker = L.circleMarker([y, x], {
         radius,
-        color: "rgba(196,86,32,0.85)",
+        color: choroplethColor(skorKab),
         weight: 1.5,
         fillColor: "rgba(196,86,32,0.28)",
         fillOpacity: 0.7,
       });
-      marker.bindTooltip(`<strong>${escapeHtml(p.nama || "")}</strong><br/>${n} kasus (proksi)`);
+      marker.bindTooltip(
+        `<strong>${escapeHtml(p.nama || "")}</strong><br/>${n} kasus (proksi centroid)<br/>${escapeHtml(METRIC_LABELS.kab_komposit)} ${fmtNum(skorKab)} · ${escapeHtml(level)}`
+      );
       marker.on("click", () => showKabupaten(p.nama));
       state.layerGroups.densitas_kasus.addLayer(marker);
       return;
@@ -428,6 +530,37 @@ function refreshLayerVisibility() {
     if (state.map.hasLayer(group)) state.map.removeLayer(group);
     if (state.layerOn[id]) group.addTo(state.map);
   });
+}
+
+function updateMapLegend() {
+  const el = document.getElementById("mapLegend");
+  if (!el) return;
+  const metricKey = COMPARE_PRESETS[state.compare]?.choroMetric;
+  const metricName = metricKey ? METRIC_LABELS[metricKey] : "Skor kab";
+  el.innerHTML = `
+    <strong>Legenda</strong>
+    <div class="legend-metric">${escapeHtml(metricName)}</div>
+    <div><span class="swatch choro high"></span> Tinggi (≥${CHORO_BREAKS.high})</div>
+    <div><span class="swatch choro mid"></span> Sedang (${CHORO_BREAKS.mid}–${CHORO_BREAKS.high - 1})</div>
+    <div><span class="swatch choro low"></span> Rendah (&lt;${CHORO_BREAKS.mid})</div>
+    <div><span class="swatch densitas"></span> Densitas kasus</div>
+    <div><span class="swatch koridor"></span> Koridor proksi (bbox)</div>
+    <div><span class="swatch gfw"></span> Konsesi GFW</div>
+  `;
+}
+
+function refreshChoroplethForMode() {
+  (state.choroplethLayers || []).forEach(({ layer, nama }) => {
+    const m = resolveChoroplethMetric(nama);
+    layer.setStyle({
+      color: "#163528",
+      weight: 1.1,
+      fillColor: choroplethColor(m.skor),
+      fillOpacity: 0.55,
+    });
+    if (typeof layer._bindChoroTooltip === "function") layer._bindChoroTooltip();
+  });
+  updateMapLegend();
 }
 
 async function ensureGfwLayer() {
@@ -502,22 +635,25 @@ function showKabupaten(nama) {
     .slice(0, 8);
   const objek = DATA.objek.records.filter((o) => matchWilayah(o.kab_kota, kab.kab_kota)).slice(0, 8);
   const risk = kab.risiko_register || {};
+  const polres = findPolresForKab(kab);
+  const active = resolveChoroplethMetric(kab.kab_kota);
 
   setDetail(`
     <p class="eyebrow">Kabupaten / Kota</p>
     <h1>${escapeHtml(kab.kab_kota)}</h1>
-    <p class="lead">${escapeHtml(kab.catatan_peta || "Choropleth skor komposit + densitas kasus proksi.")}</p>
+    <p class="lead">${escapeHtml(kab.catatan_peta || "Metrik peta mengikuti mode bandingkan; angka di bawah adalah kamus lengkap.")}</p>
     <div class="meta-grid">
-      <div class="meta-item"><label>Kategori peta</label><span class="badge ${escapeAttr(kab.kategori_peta || "")}">${escapeHtml(kab.kategori_peta || "–")}</span></div>
-      <div class="meta-item"><label>Skor komposit</label><strong>${fmtNum(kab.skor_komposit)}</strong></div>
+      <div class="meta-item"><label>Metrik aktif (mode)</label><strong>${escapeHtml(active.label)} ${fmtNum(active.skor)}</strong> <span class="badge ${escapeAttr(active.kategori || "")}">${escapeHtml(active.kategori || choroplethBandLabel(active.skor))}</span></div>
+      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.kab_komposit)}</label><strong>${fmtNum(kab.skor_komposit)}</strong></div>
+      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.polres_blend)}</label><strong>${fmtNum(polres?.skor)}</strong> <span class="badge ${escapeAttr(polres?.kategori || "")}">${escapeHtml(polres?.kategori || "–")}</span></div>
+      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.osint)} / ${escapeHtml(METRIC_LABELS.register)}</label>${fmtNum(polres?.skor_osint)} / ${fmtNum(risk.skor ?? polres?.skor_register)}</div>
       <div class="meta-item"><label>Jumlah kasus (proksi)</label><strong>${fmtNum(kab.n_kasus)}</strong></div>
-      <div class="meta-item"><label>Risiko register</label><span class="badge" data-level="${escapeAttr(risk.level || "")}">${escapeHtml(risk.level || "–")} · ${fmtNum(risk.skor)}</span></div>
       <div class="meta-item"><label>Polres proksi</label>${escapeHtml(kab.polres_proksi || "–")}</div>
       <div class="meta-item"><label>Objek sinyal utama</label>${escapeHtml(kab.objek_sinyal_utama || "–")}</div>
       <div class="meta-item"><label>Hotspot kecamatan</label>${escapeHtml(kab.hotspot_kecamatan || "–")}</div>
       <div class="meta-item"><label>Sawit di KH (ha)</label>${fmtNum(kab.klhk_korp_kh_2022_ha)}</div>
     </div>
-    ${risk.driver_utama ? `<p><strong>Driver utama:</strong> ${escapeHtml(risk.driver_utama)}</p>` : ""}
+    ${risk.driver_utama ? `<p><strong>Driver register:</strong> ${escapeHtml(risk.driver_utama)}</p>` : ""}
     <h2 class="section-label">Kasus terkait</h2>
     <div class="case-list">${kasus.map(caseCard).join("") || "<p class='lead'>Belum ada kasus terpetakan.</p>"}</div>
     <h2 class="section-label">Objek Agrinas</h2>
@@ -537,12 +673,14 @@ function showPolres(nama) {
     <p class="lead">${escapeHtml(p.alasan || "")}</p>
     <div class="meta-grid">
       <div class="meta-item"><label>Peringkat</label><strong>#${p.peringkat}</strong></div>
-      <div class="meta-item"><label>Skor</label><strong>${fmtNum(p.skor)}</strong> <span class="badge ${escapeAttr(p.kategori)}">${escapeHtml(p.kategori)}</span></div>
-      <div class="meta-item"><label>OSINT / Register</label>${fmtNum(p.skor_osint)} / ${fmtNum(p.skor_register)}</div>
+      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.polres_blend)}</label><strong>${fmtNum(p.skor)}</strong> <span class="badge ${escapeAttr(p.kategori)}">${escapeHtml(p.kategori)}</span></div>
+      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.osint)}</label><strong>${fmtNum(p.skor_osint)}</strong></div>
+      <div class="meta-item"><label>${escapeHtml(METRIC_LABELS.register)}</label><strong>${fmtNum(p.skor_register)}</strong> <span class="badge ${escapeAttr(kategoriFromSkor(p.skor_register))}">${escapeHtml(kategoriFromSkor(p.skor_register))}</span></div>
       <div class="meta-item"><label>Aksi massa · Kekerasan</label>${fmtNum(p.n_aksi_massa)} · ${fmtNum(p.n_kekerasan)}</div>
       <div class="meta-item"><label>Objek Agrinas/KSO</label>${fmtNum(p.n_agrinas)}</div>
       <div class="meta-item"><label>Entri 2024+</label>${fmtNum(p.n_recent)}</div>
     </div>
+    <p class="muted small">Blend = 70% OSINT Agrinas + 30% register. Bukan vonis operasional.</p>
     <h2 class="section-label">Kasus di wilayah Polres</h2>
     <div class="case-list">${kasus.map(caseCard).join("") || "<p class='lead'>Tidak ada kasus terfilter.</p>"}</div>
   `);
@@ -783,6 +921,7 @@ async function applyCompareMode(mode) {
   }
   renderLayers();
   refreshLayerVisibility();
+  refreshChoroplethForMode();
   renderRankPanel();
 }
 
