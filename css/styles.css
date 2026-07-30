@@ -246,6 +246,98 @@ body.is-scroll {
 .layer-item input { accent-color: var(--brand); }
 
 .chip-row { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.rail-hint {
+  margin: 0.45rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
+}
+.rank-ext {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.8rem 0 0.35rem;
+}
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  background: var(--brand);
+  color: #f4f7f2;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.btn-link.ghost {
+  background: transparent;
+  color: var(--brand);
+  border: 1px solid var(--line);
+}
+.muted { color: var(--ink-soft); }
+.muted.small, .small { font-size: 0.78rem; line-height: 1.4; }
+.row-actions {
+  display: flex;
+  gap: 0.45rem;
+  margin-top: 0.2rem;
+}
+.text-btn {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.mini-card-grid {
+  display: grid;
+  gap: 0.55rem;
+}
+.mini-card {
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem;
+}
+.mini-card h3 {
+  margin: 0.1rem 0 0.25rem;
+  font-size: 0.95rem;
+  color: var(--brand);
+  font-family: var(--display);
+}
+.mini-card p { margin: 0; font-size: 0.8rem; line-height: 1.35; color: var(--ink-soft); }
+.timeline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+  max-height: 420px;
+  overflow: auto;
+}
+.timeline-list li {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 0.55rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--line);
+}
+.timeline-list time {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.timeline-list strong { display: block; color: var(--brand); font-size: 0.9rem; }
+.timeline-list span { font-size: 0.72rem; color: var(--ink-soft); }
+.timeline-list p { margin: 0.2rem 0 0; font-size: 0.8rem; color: var(--ink-soft); line-height: 1.35; }
 .chip {
   border: 1px solid var(--line);
   background: rgba(255,255,255,0.8);

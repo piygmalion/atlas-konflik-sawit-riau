@@ -19,6 +19,7 @@ const DATA = {
 const state = {
   view: "peta",
   priority: "all",
+  compare: "all",
   layerOn: {
     choropleth: true,
     koridor: true,
@@ -29,6 +30,29 @@ const state = {
   map: null,
   layerGroups: {},
   selected: null,
+};
+
+const COMPARE_PRESETS = {
+  all: {
+    hint: "Gabungan: choropleth, koridor, densitas kasus, dan titik Agrinas.",
+    layers: { choropleth: true, koridor: true, densitas_kasus: true, objek_titik: true, gfw_konsesi: false },
+    rank: "polres",
+  },
+  register: {
+    hint: "Register konflik: choropleth + densitas kasus. Ranking menurut skor register / kasus.",
+    layers: { choropleth: true, koridor: false, densitas_kasus: true, objek_titik: false, gfw_konsesi: false },
+    rank: "register",
+  },
+  agrinas: {
+    hint: "Sinyal Agrinas: koridor + titik objek. Ranking objek / densitas Agrinas–KSO.",
+    layers: { choropleth: true, koridor: true, densitas_kasus: false, objek_titik: true, gfw_konsesi: false },
+    rank: "agrinas",
+  },
+  atlas: {
+    hint: "Deforestasi Atlas: overlay GFW + cocokan nama. Deep-link ke Nusantara Atlas.",
+    layers: { choropleth: false, koridor: false, densitas_kasus: false, objek_titik: false, gfw_konsesi: true },
+    rank: "atlas",
+  },
 };
 
 const ALIAS = {
@@ -108,14 +132,16 @@ async function boot() {
 
   renderStats();
   renderLayers();
-  renderPolres();
+  renderRankPanel();
   initMap();
   renderStory();
   setupSearch();
   setupNav();
   setupFilters();
+  setupCompareMode();
   setupDataTables();
   setupAnalyticsControls?.();
+  setupPenertibanControls?.();
 }
 
 function formatDate(iso) {
@@ -167,10 +193,85 @@ function renderLayers() {
 }
 
 function renderPolres() {
+  renderRankPanel();
+}
+
+function renderRankPanel() {
   const ol = document.getElementById("polresList");
-  const rows = DATA.polres.records.filter(
-    (p) => state.priority === "all" || p.kategori === state.priority
-  );
+  const title = document.getElementById("rankTitle");
+  const mode = COMPARE_PRESETS[state.compare]?.rank || "polres";
+
+  if (mode === "atlas") {
+    if (title) title.textContent = "Cocokan Atlas";
+    const rows = (DATA.konsesi?.atlas_match?.records || [])
+      .filter((r) => String(r.status || "").toLowerCase().includes("cocok"))
+      .slice(0, 16);
+    ol.innerHTML = rows
+      .map((r, i) => {
+        const link = atlasDeepLink(r.atlas_nama || r.nama_lokal);
+        return `<li>
+          <button type="button" data-atlas="${escapeAttr(r.atlas_nama || "")}" data-lokal="${escapeAttr(r.nama_lokal || "")}">
+            <span class="n pantau">${i + 1}</span>
+            <span>
+              <strong>${escapeHtml(r.atlas_nama || "–")}</strong><br/>
+              <small>${escapeHtml(r.nama_lokal || r.tipe || "")}</small>
+            </span>
+            <span class="score"><a class="rank-ext" href="${escapeAttr(link.href)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">↗</a></span>
+          </button>
+        </li>`;
+      })
+      .join("");
+    ol.querySelectorAll("button[data-atlas]").forEach((btn) => {
+      btn.addEventListener("click", () => showAtlasMatch(btn.dataset.atlas, btn.dataset.lokal));
+    });
+    return;
+  }
+
+  if (mode === "agrinas") {
+    if (title) title.textContent = "Objek Agrinas";
+    const rows = [...DATA.objek.records]
+      .filter((o) => {
+        const p = String(o.prioritas || "").toUpperCase();
+        return state.priority === "all" || p.includes(state.priority) || (state.priority === "PRIORITAS" && p.includes("KRITIS"));
+      })
+      .sort((a, b) => {
+        const wa = String(a.prioritas || "").toLowerCase().includes("kritis") ? 0 : 1;
+        const wb = String(b.prioritas || "").toLowerCase().includes("kritis") ? 0 : 1;
+        return wa - wb;
+      })
+      .slice(0, 16);
+    ol.innerHTML = rows
+      .map(
+        (o, i) => `<li>
+        <button type="button" data-objek="${escapeAttr(o.id || o.nama || "")}">
+          <span class="n ${escapeAttr(o.prioritas || "pantau")}">${i + 1}</span>
+          <span>
+            <strong>${escapeHtml(truncate(o.nama || o.id, 42))}</strong><br/>
+            <small>${escapeHtml([o.lapisan, o.kab_kota].filter(Boolean).join(" · "))}</small>
+          </span>
+          <span class="score">${escapeHtml(o.prioritas || "–")}</span>
+        </button>
+      </li>`
+      )
+      .join("");
+    ol.querySelectorAll("button[data-objek]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const o = DATA.objek.records.find((x) => x.id === btn.dataset.objek || x.nama === btn.dataset.objek);
+        if (o) showTitik({ ...o, nama: o.nama, id: o.id });
+      });
+    });
+    return;
+  }
+
+  if (title) title.textContent = mode === "register" ? "Ranking register" : "Ranking Polres";
+  let rows = [...DATA.polres.records];
+  if (mode === "register") {
+    rows.sort(
+      (a, b) =>
+        (Number(b.skor_register) || Number(b.n_recent) || 0) - (Number(a.skor_register) || Number(a.n_recent) || 0)
+    );
+  }
+  rows = rows.filter((p) => state.priority === "all" || p.kategori === state.priority);
   ol.innerHTML = rows
     .map(
       (p) => `
@@ -179,14 +280,18 @@ function renderPolres() {
           <span class="n ${p.kategori}">${p.peringkat}</span>
           <span>
             <strong>${escapeHtml(p.polres.replace(/^Polres\s+/i, ""))}</strong><br/>
-            <small>${escapeHtml(p.kategori)}</small>
+            <small>${
+              mode === "register"
+                ? `Register ${fmtNum(p.skor_register)} · ${fmtNum(p.n_recent)} entri`
+                : escapeHtml(p.kategori)
+            }</small>
           </span>
-          <span class="score">${Number(p.skor).toFixed(0)}</span>
+          <span class="score">${Number(mode === "register" ? p.skor_register || p.skor : p.skor).toFixed(0)}</span>
         </button>
       </li>`
     )
     .join("");
-  ol.querySelectorAll("button").forEach((btn) => {
+  ol.querySelectorAll("button[data-polres]").forEach((btn) => {
     btn.addEventListener("click", () => showPolres(btn.dataset.polres));
   });
 }
@@ -470,6 +575,9 @@ function showKoridor(p) {
 }
 
 function showGfw(p) {
+  const atlas = findAtlasMatch(p.name || p.company);
+  const gfw = findGfwRecord(p.name || p.company) || p;
+  const link = atlasDeepLink(atlas?.atlas_nama || p.name || p.company, gfw);
   setDetail(`
     <p class="eyebrow">Overlay konsesi GFW</p>
     <h1>${escapeHtml(p.name || p.company || "Konsesi")}</h1>
@@ -479,9 +587,47 @@ function showGfw(p) {
       <div class="meta-item"><label>Grup</label>${escapeHtml(p.group || "–")}</div>
       <div class="meta-item"><label>Luas (ha)</label>${fmtNum(p.area_ha)}</div>
       <div class="meta-item"><label>Tipe / HGU</label>${escapeHtml([p.type, p.hgu].filter(Boolean).join(" · ") || "–")}</div>
+      <div class="meta-item"><label>Match Atlas</label>${escapeHtml(atlas?.atlas_nama || "Belum tercocokkan")}</div>
+      <div class="meta-item"><label>Nama lokal</label>${escapeHtml(atlas?.nama_lokal || "–")}</div>
     </div>
+    <p class="detail-actions">
+      <a class="btn-link" href="${escapeAttr(link.href)}" target="_blank" rel="noopener">${escapeHtml(link.label)}</a>
+      ${
+        Number.isFinite(Number(gfw.lat)) && Number.isFinite(Number(gfw.lon))
+          ? `<a class="btn-link ghost" href="https://www.openstreetmap.org/?mlat=${Number(gfw.lat)}&mlon=${Number(gfw.lon)}#map=12/${Number(gfw.lat)}/${Number(gfw.lon)}" target="_blank" rel="noopener">Lokasi proksi</a>`
+          : ""
+      }
+    </p>
+    <p class="muted small">Cari nama konsesi di bilah pencarian Nusantara Atlas untuk bukti satelit/deforestasi.</p>
   `);
 }
+
+function showAtlasMatch(atlasNama, namaLokal) {
+  const row = findAtlasMatch(atlasNama) || findAtlasMatch(namaLokal);
+  const gfw = findGfwRecord(namaLokal || atlasNama) || findGfwRecord(atlasNama);
+  if (gfw?.lat && gfw?.lon) {
+    state.map?.flyTo([Number(gfw.lat), Number(gfw.lon)], 10, { duration: 0.7 });
+  }
+  const link = atlasDeepLink(row?.atlas_nama || atlasNama, gfw);
+  setDetail(`
+    <p class="eyebrow">Mode Deforestasi Atlas</p>
+    <h1>${escapeHtml(row?.atlas_nama || atlasNama || "Konsesi")}</h1>
+    <p class="lead">Jembatan nama antara Nusantara Atlas dan register lokal workspace.</p>
+    <div class="meta-grid">
+      <div class="meta-item"><label>Nama lokal</label>${escapeHtml(row?.nama_lokal || namaLokal || "–")}</div>
+      <div class="meta-item"><label>Status match</label>${escapeHtml(row?.status || "–")}</div>
+      <div class="meta-item"><label>Tipe / tahun</label>${escapeHtml([row?.tipe, row?.tahun].filter(Boolean).join(" · ") || "–")}</div>
+      <div class="meta-item"><label>Area (ha)</label>${fmtNum(row?.area_ha || gfw?.area_ha)}</div>
+      <div class="meta-item"><label>Di BPS</label>${escapeHtml(row?.ada_di_bps || "–")}</div>
+      <div class="meta-item"><label>Di konflik Polda</label>${escapeHtml(row?.ada_di_konflik_polda || "–")}</div>
+    </div>
+    <p class="detail-actions">
+      <a class="btn-link" href="${escapeAttr(link.href)}" target="_blank" rel="noopener">${escapeHtml(link.label)}</a>
+    </p>
+  `);
+}
+window.showAtlasMatch = showAtlasMatch;
+window.showKabupaten = showKabupaten;
 
 function caseCard(k) {
   return `<article class="case-card">
@@ -541,9 +687,6 @@ function renderStory() {
   const atlasHits = (DATA.konsesi.atlas_match.records || []).filter((r) =>
     String(r.status || "").toLowerCase().includes("cocok")
   ).length;
-  const kritis = DATA.objek.records.filter((o) =>
-    String(o.prioritas || "").toLowerCase().includes("kritis")
-  ).length;
   document.getElementById("storyGrid").innerHTML = [
     {
       t: "Koridor panas",
@@ -551,19 +694,19 @@ function renderStory() {
       p: "Tiga Polres teratas early-warning menggabungkan densitas objek Agrinas/KSO, liputan konflik baru, dan aksi massa.",
     },
     {
-      t: "Spasial P1",
-      h: `${DATA.meta.counts.choropleth || 12} poligon kab · ${DATA.meta.counts.gfw_konsesi || 0} konsesi`,
-      p: "Choropleth skor, koridor bbox, densitas kasus proksi, dan overlay GFW tersederhanakan kini menjadi lapisan utama peta.",
+      t: "Penertiban KH",
+      h: `${DATA.penertiban?.normalized?.gelombang1_27_pt?.total || 27} PT gelombang 1`,
+      p: "Modul penertiban memuat sebaran korporasi di KH, operasi TN Tesso Nilo, dan daftar target Satgas PKH per kabupaten.",
     },
     {
-      t: "Objek prioritas",
-      h: `${kritis || "Beberapa"} objek kritis`,
-      p: "Master list Agrinas–Satgas memisahkan pengelola, mitra KSO, eks lahan, dan kawasan (termasuk sinyal TNTN).",
+      t: "Mode bandingkan",
+      h: "Register · Agrinas · Atlas",
+      p: "Di peta, pilih lensa untuk menonjolkan densitas kasus, sinyal Agrinas–KSO, atau overlay deforestasi/konsesi Atlas–GFW.",
     },
     {
       t: "Jembatan ke Atlas",
       h: `${atlasHits || DATA.konsesi.atlas_match.total} nama tercocokkan`,
-      p: "Lapisan konsesi Nusantara Atlas dipakai sebagai bukti satelit; workspace ini memegang aktor dan konflik.",
+      p: "Setiap cocokan punya deep-link ke Nusantara Atlas sebagai bukti satelit; workspace ini memegang aktor dan konflik.",
     },
   ]
     .map(
@@ -596,6 +739,10 @@ function setupNav() {
       if (state.view === "analisis") {
         setTimeout(() => {
           if (typeof window.renderAnalytics === "function") window.renderAnalytics();
+          if (typeof window.renderPenertibanModule === "function") {
+            window.setupPenertibanControls?.();
+            window.renderPenertibanModule();
+          }
         }, 120);
       }
     });
@@ -612,9 +759,103 @@ function setupFilters() {
     document.querySelectorAll("#priorityFilters .chip").forEach((c) => c.classList.remove("is-on"));
     btn.classList.add("is-on");
     state.priority = btn.dataset.priority;
-    renderPolres();
+    renderRankPanel();
   });
 }
+
+async function applyCompareMode(mode) {
+  const preset = COMPARE_PRESETS[mode] || COMPARE_PRESETS.all;
+  state.compare = mode;
+  Object.assign(state.layerOn, preset.layers);
+  const hint = document.getElementById("compareHint");
+  if (hint) hint.textContent = preset.hint;
+  if (preset.layers.gfw_konsesi) {
+    await ensureGfwLayer();
+  }
+  renderLayers();
+  refreshLayerVisibility();
+  renderRankPanel();
+}
+
+function setupCompareMode() {
+  const wrap = document.getElementById("compareMode");
+  if (!wrap) return;
+  wrap.addEventListener("click", async (e) => {
+    const btn = e.target.closest(".chip");
+    if (!btn) return;
+    wrap.querySelectorAll(".chip").forEach((c) => c.classList.remove("is-on"));
+    btn.classList.add("is-on");
+    await applyCompareMode(btn.dataset.compare || "all");
+  });
+}
+
+function normalizeName(s) {
+  return String(s || "")
+    .toLowerCase()
+    .replace(/\b(pt\.?|cv\.?|ud\.?|tbk\.?)\b/g, " ")
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function nameScore(a, b) {
+  const A = normalizeName(a);
+  const B = normalizeName(b);
+  if (!A || !B) return 0;
+  if (A === B) return 100;
+  if (A.includes(B) || B.includes(A)) return 80;
+  const ta = new Set(A.split(" ").filter((t) => t.length > 2));
+  const tb = new Set(B.split(" ").filter((t) => t.length > 2));
+  if (!ta.size || !tb.size) return 0;
+  let hit = 0;
+  ta.forEach((t) => {
+    if (tb.has(t)) hit += 1;
+  });
+  return (hit / Math.max(ta.size, tb.size)) * 60;
+}
+
+function findAtlasMatch(name) {
+  const rows = DATA.konsesi?.atlas_match?.records || [];
+  let best = null;
+  let score = 0;
+  rows.forEach((r) => {
+    const s = Math.max(nameScore(name, r.atlas_nama), nameScore(name, r.nama_lokal));
+    if (s > score) {
+      score = s;
+      best = r;
+    }
+  });
+  return score >= 40 ? best : null;
+}
+
+function findGfwRecord(name) {
+  const rows = DATA.gfwFull?.records || [];
+  let best = null;
+  let score = 0;
+  rows.forEach((r) => {
+    const s = Math.max(nameScore(name, r.company), nameScore(name, r.name));
+    if (s > score) {
+      score = s;
+      best = r;
+    }
+  });
+  return score >= 40 ? best : null;
+}
+
+function atlasDeepLink(name, gfw) {
+  const label = String(name || gfw?.company || gfw?.name || "konsesi").trim();
+  // Nusantara Atlas state IDs are opaque; open the map and guide search by name.
+  const href = "https://map.nusantara-atlas.org/";
+  return {
+    href,
+    label: `Buka Nusantara Atlas · ${label}`,
+    title: `Cari “${label}” di Nusantara Atlas`,
+  };
+}
+
+window.findAtlasMatch = findAtlasMatch;
+window.findGfwRecord = findGfwRecord;
+window.atlasDeepLink = atlasDeepLink;
 
 function setupSearch() {
   const input = document.getElementById("searchInput");

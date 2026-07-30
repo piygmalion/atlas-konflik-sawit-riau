@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/styles.css?v=gfw1" />
+  <link rel="stylesheet" href="css/styles.css?v=p3b" />
 </head>
 <body>
   <div id="app">
@@ -47,6 +47,17 @@
           </section>
 
           <section class="rail-section">
+            <h2>Mode bandingkan</h2>
+            <div class="chip-row" id="compareMode">
+              <button class="chip is-on" data-compare="all">Gabungan</button>
+              <button class="chip" data-compare="register">Register konflik</button>
+              <button class="chip" data-compare="agrinas">Sinyal Agrinas</button>
+              <button class="chip" data-compare="atlas">Deforestasi Atlas</button>
+            </div>
+            <p class="rail-hint" id="compareHint">Lapisan &amp; ranking menyesuaikan lensa analisis.</p>
+          </section>
+
+          <section class="rail-section">
             <h2>Filter</h2>
             <div class="chip-row" id="priorityFilters">
               <button class="chip is-on" data-priority="all">Semua</button>
@@ -57,7 +68,7 @@
           </section>
 
           <section class="rail-section grow">
-            <h2>Ranking Polres</h2>
+            <h2 id="rankTitle">Ranking Polres</h2>
             <ol class="rank-list" id="polresList"></ol>
           </section>
         </aside>
@@ -101,9 +112,9 @@
 
     <section class="analisis-view" id="analisisView" hidden>
       <article class="story-hero">
-        <p class="eyebrow">Prioritas 2 · dashboard analitik</p>
-        <h1>Komponen risiko, alur aktor, timeline, dan Kepmenhut</h1>
-        <p>Visualisasi interaktif dari data yang sama dengan peta. Klik batang Polres untuk membuka detail di peta.</p>
+        <p class="eyebrow">Prioritas 2–3 · dashboard analitik</p>
+        <h1>Risiko, penertiban KH, dan jembatan Atlas</h1>
+        <p>Visualisasi interaktif dari data yang sama dengan peta. Mode bandingkan di tab Peta memisahkan register konflik, sinyal Agrinas, dan deforestasi Atlas.</p>
       </article>
 
       <div class="analisis-grid">
@@ -183,6 +194,63 @@
         <section class="analisis-block wide">
           <div class="block-head">
             <div>
+              <p class="eyebrow">Prioritas 3 · Penertiban KH</p>
+              <h2>Korporasi di kawasan hutan &amp; gelombang Satgas</h2>
+            </div>
+          </div>
+          <div class="flow-stat-strip" id="penertibanStats"></div>
+          <div class="chart-frame tall"><canvas id="chartPenertibanKab"></canvas></div>
+          <p class="block-note">Klik batang kabupaten untuk membuka detail di peta.</p>
+        </section>
+
+        <section class="analisis-block wide">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">27 PT gelombang 1</p>
+              <h2>Target Satgas PKH Riau</h2>
+            </div>
+            <div class="chip-row" id="gelombangKabFilters"></div>
+          </div>
+          <p class="block-note" id="gelombangFilterCount"></p>
+          <div class="table-scroll compact">
+            <table id="gelombangTable">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Perusahaan</th>
+                  <th>Kabupaten</th>
+                  <th>Afiliasi</th>
+                  <th>Catatan</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="analisis-block">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">TN Tesso Nilo</p>
+              <h2>Operasi &amp; indikator</h2>
+            </div>
+          </div>
+          <div class="mini-card-grid" id="tessoCards"></div>
+        </section>
+
+        <section class="analisis-block">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">Kronologi</p>
+              <h2>Jalur penertiban</h2>
+            </div>
+          </div>
+          <ol class="timeline-list" id="kronologiPenertiban"></ol>
+        </section>
+
+        <section class="analisis-block wide">
+          <div class="block-head">
+            <div>
               <p class="eyebrow">Tabel filter Kepmenhut</p>
               <h2>Status permohonan</h2>
             </div>
@@ -237,7 +305,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <script src="js/analytics.js?v=gfw1"></script>
-  <script src="js/app.js?v=gfw1"></script>
+  <script src="js/analytics.js?v=p3b"></script>
+  <script src="js/penertiban.js?v=p3b"></script>
+  <script src="js/app.js?v=p3b"></script>
 </body>
 </html>
