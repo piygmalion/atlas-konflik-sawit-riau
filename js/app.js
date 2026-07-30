@@ -534,8 +534,7 @@ function setupNav() {
       if (state.view === "analisis") {
         setTimeout(() => {
           if (typeof window.renderAnalytics === "function") window.renderAnalytics();
-          window.dispatchEvent(new Event("resize"));
-        }, 60);
+        }, 120);
       }
     });
   });

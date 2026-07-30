@@ -31,6 +31,11 @@ function renderAnalytics() {
   renderTimelineChart();
   renderKepmenDonut();
   renderKepmenTable("all");
+  // Chart.js needs a layout pass after the view becomes visible
+  requestAnimationFrame(() => {
+    Object.values(charts).forEach((c) => c?.resize?.());
+    window.dispatchEvent(new Event("resize"));
+  });
 }
 
 function renderPolresKomponenChart() {
