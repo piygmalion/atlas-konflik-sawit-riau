@@ -201,7 +201,7 @@ window.blendedPolresSkor = blendedPolresSkor;
 window.getBlendOsint = () => state.blendOsint;
 
 /** Cache-bust for GitHub Pages / local static server so meta+layers refresh with UI. */
-const DATA_VER = "f3c";
+const DATA_VER = "f3d";
 
 async function loadJSON(path) {
   const url = path.includes("?") ? path : `${path}?v=${DATA_VER}`;
@@ -1001,18 +1001,93 @@ window.showAtlasMatch = showAtlasMatch;
 window.showKabupaten = showKabupaten;
 
 function caseCard(k) {
+  const title = cleanText(k.jenis || k.kategori || k.tipe_entri || k.id || "Kasus");
+  const body = cleanText(k.uraian || k.lokasi || "");
+  const years = formatCaseYears(k);
+  const company = firstCompanyName(k.perusahaan);
+  const tema = cleanText(String(k.tema || "").split(";")[0] || "");
+  const ref = formatCaseRef(k);
+  const showId = k.id && cleanText(k.id) !== title;
+
+  const chips = [
+    years ? `<span class="case-chip">${escapeHtml(years)}</span>` : "",
+    company ? `<span class="case-chip">${escapeHtml(company)}</span>` : "",
+    tema ? `<span class="case-chip case-chip--soft">${escapeHtml(truncate(tema, 32))}</span>` : "",
+    k.polres ? `<span class="case-chip case-chip--soft">${escapeHtml(shortPolresLabel(k.polres))}</span>` : "",
+  ].filter(Boolean);
+
   return `<article class="case-card">
-    <strong>${escapeHtml(k.jenis || k.kategori || k.id || "Kasus")}</strong>
-    <p>${escapeHtml(truncate(k.uraian || k.lokasi || "", 160))}</p>
-    <p style="margin-top:.35rem"><small>${escapeHtml([k.tahun, k.perusahaan, k.status].filter(Boolean).join(" · "))}</small></p>
+    <header class="case-card__head">
+      <strong class="case-card__title">${escapeHtml(truncate(title, 78))}</strong>
+      ${showId ? `<span class="case-card__id">${escapeHtml(k.id)}</span>` : ""}
+    </header>
+    ${body ? `<p class="case-card__body">${escapeHtml(truncate(body, 140))}</p>` : ""}
+    ${chips.length ? `<div class="case-card__chips">${chips.join("")}</div>` : ""}
+    ${ref ? `<p class="case-card__ref" title="${escapeAttr(cleanText(k.nomor_lp || k.status || ""))}">${escapeHtml(ref)}</p>` : ""}
   </article>`;
 }
 
 function objCard(o) {
+  const title = cleanText(o.nama || o.id || "Objek");
+  const meta = [o.lapisan, o.prioritas, o.status_kredibilitas].map(cleanText).filter(Boolean);
   return `<article class="obj-card">
-    <strong>${escapeHtml(o.nama || o.id)}</strong>
-    <p>${escapeHtml([o.lapisan, o.prioritas, o.status_kredibilitas].filter(Boolean).join(" · "))}</p>
+    <strong class="obj-card__title">${escapeHtml(truncate(title, 72))}</strong>
+    ${meta.length ? `<div class="case-card__chips">${meta.map((m) => `<span class="case-chip case-chip--soft">${escapeHtml(m)}</span>`).join("")}</div>` : ""}
   </article>`;
+}
+
+function cleanText(s) {
+  return String(s || "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function formatCaseYears(k) {
+  const fromArr = Array.isArray(k.tahun_kejadian) && k.tahun_kejadian.length ? k.tahun_kejadian : null;
+  const raw = fromArr || String(k.tahun || "").split(/[,;/]+/);
+  const years = [...new Set(raw.map((y) => cleanText(y)).filter((y) => /^\d{4}$/.test(y)))];
+  return years.join(", ");
+}
+
+function firstCompanyName(perusahaan) {
+  if (!perusahaan) return "";
+  const parts = String(perusahaan)
+    .split(/[;|]/)
+    .map((p) => cleanText(p))
+    .filter(Boolean);
+  const extracted = [];
+  parts.forEach((p) => {
+    const matches = p.match(/\b(?:PT\.?|CV\.?)\s+[A-Za-z][A-Za-z0-9.&-]*(?:\s+[A-Za-z][A-Za-z0-9.&-]*){0,4}/gi) || [];
+    matches.forEach((m) => {
+      const cleaned = cleanText(m)
+        .replace(/\bPT\.?\s+PT\.?\s+/i, "PT. ")
+        .replace(/\s+/g, " ");
+      // Buang ekor lokasi/kecamatan yang nyangkut
+      const core = cleaned.split(/\s+(?:Kec\.?|Kab\.?|Desa|Kel\.?|Di|Pada|Masyarakat)\b/i)[0];
+      if (core && core.length >= 5) extracted.push(core);
+    });
+  });
+  if (!extracted.length) return "";
+  extracted.sort((a, b) => a.length - b.length);
+  return truncate(extracted[0], 40);
+}
+
+function formatCaseRef(k) {
+  const lp = cleanText(k.nomor_lp || "");
+  if (lp) {
+    // Ambil nomor LP inti, buang baris tanggal/uraian tambahan
+    const core = lp.split(/(?=TGL\b)|(?=TTG\b)/i)[0].replace(/\s+/g, " ").trim();
+    return truncate(core, 56);
+  }
+  const status = cleanText(k.status || "");
+  if (!status) return "";
+  // Jangan dump status panjang yang mengulang perusahaan
+  if (status.length > 72 || /PT\.?\s/i.test(status)) return truncate(status.split(/TGL\b|TTG\b/i)[0], 48);
+  return truncate(status, 48);
+}
+
+function shortPolresLabel(nama) {
+  return cleanText(nama).replace(/^Polres\s+/i, "Polres ");
 }
 
 function findFeatureLatLng(idOrName) {
