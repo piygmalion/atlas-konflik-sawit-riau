@@ -516,7 +516,8 @@ function syncBlendVisibility() {
 function syncRailDetailsForViewport() {
   const d = document.getElementById("railSecondary");
   if (!d) return;
-  d.open = !window.matchMedia("(max-width: 980px)").matches;
+  // Keep collapsed by default; force-close on narrow viewports to free map space.
+  if (window.matchMedia("(max-width: 980px)").matches) d.open = false;
 }
 
 function syncFilterHint() {
