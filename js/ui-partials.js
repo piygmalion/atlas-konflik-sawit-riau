@@ -182,12 +182,15 @@
     const polresBtn = polres
       ? `<button type="button" class="map-preview__link" data-action="polres" data-polres="${escapeAttr(polres)}">Buka Polres</button>`
       : "";
+    const ctaBtn = cta
+      ? `<button type="button" class="map-preview__cta" data-action="map-detail">${escapeHtml(cta)}</button>`
+      : "";
     return `<div class="map-preview__card">
     ${eyebrow ? `<p class="map-preview__eyebrow">${escapeHtml(eyebrow)}</p>` : ""}
     <p class="map-preview__title">${escapeHtml(title)}</p>
     ${scoreBlock}
     ${metas}
-    <div class="map-preview__footer"><span>${escapeHtml(cta)}</span>${polresBtn}</div>
+    <div class="map-preview__footer">${ctaBtn}${polresBtn}</div>
   </div>`;
   }
 

@@ -35,6 +35,7 @@ const state = {
   map: null,
   layerGroups: {},
   selected: null,
+  activePreviewLayer: null,
 };
 
 const COMPARE_PRESETS = {
@@ -316,10 +317,12 @@ async function loadBootPayload() {
 /** Kartu preview hover peta — satu template untuk semua lapisan. */
 const mapPreviewHtml = (...args) => AtlasUI.mapPreviewHtml(...args);
 
-function bindMapPreview(layer, html) {
+function bindMapPreview(layer, html, onDetail) {
   // Popup (bukan tooltip sticky) — kartu bisa di-hover & CTA diklik tanpa ikut kursor
   if (layer.getPopup && layer.getPopup()) layer.unbindPopup();
   if (layer.getTooltip && layer.getTooltip()) layer.unbindTooltip();
+
+  layer._atlasMapDetail = typeof onDetail === "function" ? onDetail : null;
 
   layer.bindPopup(html, {
     className: "map-preview-popup",
@@ -347,13 +350,17 @@ function bindMapPreview(layer, html) {
     }, 320);
   };
 
-  layer.off("mouseover.mapPreview mouseout.mapPreview popupopen.mapPreview");
+  layer.off("mouseover.mapPreview mouseout.mapPreview popupopen.mapPreview popupclose.mapPreview");
   layer.on("mouseover.mapPreview", () => {
     clearClose();
     layer.openPopup();
   });
   layer.on("mouseout.mapPreview", scheduleClose);
+  layer.on("popupclose.mapPreview", () => {
+    if (state.activePreviewLayer === layer) state.activePreviewLayer = null;
+  });
   layer.on("popupopen.mapPreview", (e) => {
+    state.activePreviewLayer = layer;
     const el = e.popup?.getElement?.();
     if (!el) return;
     L.DomEvent.disableClickPropagation(el);
@@ -369,7 +376,9 @@ function setupMapPreviewActions() {
   document.addEventListener(
     "click",
     (e) => {
-      const btn = e.target.closest?.("[data-action='polres'], [data-action='perusahaan']");
+      const btn = e.target.closest?.(
+        "[data-action='polres'], [data-action='perusahaan'], [data-action='map-detail']"
+      );
       if (
         !btn ||
         !btn.closest(".leaflet-popup.map-preview-popup, .leaflet-tooltip.map-preview, .map-preview__card")
@@ -379,6 +388,19 @@ function setupMapPreviewActions() {
       e.preventDefault();
       e.stopPropagation();
       if (typeof L !== "undefined") L.DomEvent.stop(e);
+      if (btn.dataset.action === "map-detail") {
+        const layer = state.activePreviewLayer;
+        const fn = layer?._atlasMapDetail;
+        if (typeof fn === "function") {
+          try {
+            layer.closePopup();
+          } catch (_) {
+            /* ignore */
+          }
+          fn();
+        }
+        return;
+      }
       if (btn.dataset.action === "polres") {
         const nama = btn.dataset.polres;
         if (nama) showPolres(nama);
@@ -767,7 +789,8 @@ function initMap() {
             metricLabel: m.label,
             metaLines: [polresNama ? String(polresNama) : ""].filter(Boolean),
             polres: polresNama,
-          })
+          }),
+          () => showKabupaten(p.nama)
         );
       };
       bindChoroTooltip();
@@ -821,7 +844,8 @@ function initMap() {
             p.polres_proksi || "",
           ],
           polres: p.polres_proksi || "",
-        })
+        }),
+        () => showKoridor(p)
       );
       state.layerGroups.koridor.addLayer(poly);
       return;
@@ -868,7 +892,8 @@ function initMap() {
             polresNama ? polresNama.replace(/^Polres\s+/i, "Polres ") : "",
           ].filter(Boolean),
           polres: polresNama,
-        })
+        }),
+        () => showKabupaten(p.nama)
       );
       marker.on("click", () => showKabupaten(p.nama));
       state.layerGroups.densitas_kasus.addLayer(marker);
@@ -902,7 +927,8 @@ function initMap() {
           company && level ? `Prioritas ${level}` : "",
         ].filter(Boolean),
         polres: polresNama,
-      })
+      }),
+      () => showTitik(p)
     );
     marker.on("click", () => showTitik(p));
     (state.layerGroups[layerId] || state.layerGroups.objek_titik).addLayer(marker);
@@ -1016,7 +1042,8 @@ async function ensureGfwLayer() {
             title: p.name || p.company || "Konsesi",
             metaLines: [`${fmtNum(p.area_ha)} ha`, p.group || p.type || ""].filter(Boolean),
             cta: "Klik untuk detail",
-          })
+          }),
+          () => showGfw(p)
         );
         layer.on("click", () => showGfw(p));
         state.layerGroups.gfw_konsesi.addLayer(layer);
