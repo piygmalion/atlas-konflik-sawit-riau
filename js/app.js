@@ -317,14 +317,46 @@ async function loadBootPayload() {
 /** Kartu preview hover peta — satu template untuk semua lapisan. */
 const mapPreviewHtml = (...args) => AtlasUI.mapPreviewHtml(...args);
 
+/** Registry callback detail per popup CTA — tidak bergantung pada layer aktif. */
+const PREVIEW_DETAIL = new Map();
+let previewDetailSeq = 0;
+
+function stampPreviewDetailId(html, detailId) {
+  const id = escapeAttr(detailId);
+  return String(html).replace(
+    /data-action=(["'])map-detail\1/g,
+    `data-action="map-detail" data-detail-id="${id}"`
+  );
+}
+
+function runPreviewDetail(detailId, layer) {
+  const fn =
+    (detailId && PREVIEW_DETAIL.get(detailId)) ||
+    layer?._atlasMapDetail ||
+    state.activePreviewLayer?._atlasMapDetail;
+  if (typeof fn !== "function") return false;
+  const host = layer || state.activePreviewLayer;
+  try {
+    host?.closePopup?.();
+  } catch (_) {
+    /* ignore */
+  }
+  fn();
+  return true;
+}
+
 function bindMapPreview(layer, html, onDetail) {
   // Popup (bukan tooltip sticky) — kartu bisa di-hover & CTA diklik tanpa ikut kursor
   if (layer.getPopup && layer.getPopup()) layer.unbindPopup();
   if (layer.getTooltip && layer.getTooltip()) layer.unbindTooltip();
 
+  if (layer._atlasMapDetailId) PREVIEW_DETAIL.delete(layer._atlasMapDetailId);
+  const detailId = `pd-${++previewDetailSeq}`;
+  layer._atlasMapDetailId = detailId;
   layer._atlasMapDetail = typeof onDetail === "function" ? onDetail : null;
+  if (layer._atlasMapDetail) PREVIEW_DETAIL.set(detailId, layer._atlasMapDetail);
 
-  layer.bindPopup(html, {
+  layer.bindPopup(stampPreviewDetailId(html, detailId), {
     className: "map-preview-popup",
     closeButton: false,
     autoPan: false,
@@ -376,7 +408,9 @@ function setupMapPreviewActions() {
   document.addEventListener(
     "click",
     (e) => {
-      const btn = e.target.closest?.(
+      const raw = e.target;
+      const el = raw instanceof Element ? raw : raw?.parentElement;
+      const btn = el?.closest?.(
         "[data-action='polres'], [data-action='perusahaan'], [data-action='map-detail']"
       );
       if (
@@ -389,16 +423,7 @@ function setupMapPreviewActions() {
       e.stopPropagation();
       if (typeof L !== "undefined") L.DomEvent.stop(e);
       if (btn.dataset.action === "map-detail") {
-        const layer = state.activePreviewLayer;
-        const fn = layer?._atlasMapDetail;
-        if (typeof fn === "function") {
-          try {
-            layer.closePopup();
-          } catch (_) {
-            /* ignore */
-          }
-          fn();
-        }
+        runPreviewDetail(btn.dataset.detailId, state.activePreviewLayer);
         return;
       }
       if (btn.dataset.action === "polres") {
@@ -822,6 +847,18 @@ function initMap() {
     const layerId = p.layer || "objek_titik";
 
     if (layerId === "koridor" && (f.geometry?.type === "Polygon" || f.geometry?.type === "MultiPolygon")) {
+      const geomLabel = String(p.geom_source || "hull").replace(/_/g, " ");
+      const preview = mapPreviewHtml({
+        eyebrow: "Koridor proksi",
+        title: p.nama || "Koridor",
+        level: p.prioritas || "",
+        metaLines: [
+          `${geomLabel} · ${fmtNum(p.n_titik)} titik`,
+          p.polres_proksi || "",
+        ],
+        polres: p.polres_proksi || "",
+      });
+      const openKoridor = () => showKoridor(p);
       const poly = L.geoJSON(f, {
         style: {
           color: "#163528",
@@ -830,23 +867,11 @@ function initMap() {
           fillOpacity: 0.08,
           dashArray: "5 4",
         },
+        onEachFeature: (_feat, layer) => {
+          bindMapPreview(layer, preview, openKoridor);
+          layer.on("click", openKoridor);
+        },
       });
-      poly.on("click", () => showKoridor(p));
-      const geomLabel = String(p.geom_source || "hull").replace(/_/g, " ");
-      bindMapPreview(
-        poly,
-        mapPreviewHtml({
-          eyebrow: "Koridor proksi",
-          title: p.nama || "Koridor",
-          level: p.prioritas || "",
-          metaLines: [
-            `${geomLabel} · ${fmtNum(p.n_titik)} titik`,
-            p.polres_proksi || "",
-          ],
-          polres: p.polres_proksi || "",
-        }),
-        () => showKoridor(p)
-      );
       state.layerGroups.koridor.addLayer(poly);
       return;
     }

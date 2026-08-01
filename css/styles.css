@@ -1225,6 +1225,7 @@ th {
   display: grid;
   gap: 0.4rem;
   pointer-events: auto;
+  cursor: pointer;
 }
 .map-preview__eyebrow {
   margin: 0;

@@ -185,7 +185,9 @@
     const ctaBtn = cta
       ? `<button type="button" class="map-preview__cta" data-action="map-detail">${escapeHtml(cta)}</button>`
       : "";
-    return `<div class="map-preview__card">
+    // Kartu ikut data-action=map-detail agar klik judul/meta juga membuka panel
+    // (tombol polres/perusahaan lebih spesifik lewat closest).
+    return `<div class="map-preview__card" data-action="map-detail" role="button" tabindex="0" title="${escapeAttr(cta || "Buka detail")}">
     ${eyebrow ? `<p class="map-preview__eyebrow">${escapeHtml(eyebrow)}</p>` : ""}
     <p class="map-preview__title">${escapeHtml(title)}</p>
     ${scoreBlock}
