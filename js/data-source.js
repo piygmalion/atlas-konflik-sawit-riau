@@ -20,6 +20,7 @@
     "data/izin_2017.json": "izin_2017",
     "data/rantai_agrinas.json": "rantai_agrinas",
     "data/dossier.json": "dossier",
+    "data/entity_matches.json": "entity_matches",
     "data/layers.geojson": "layers",
     "data/adm2_riau.geojson": "adm2",
     "data/gfw_konsesi.topojson": "gfw_konsesi",

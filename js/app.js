@@ -30,6 +30,7 @@ const state = {
     koridor: false,
     densitas_kasus: false,
     objek_titik: true,
+    hotspot_verifikasi: false,
     gfw_konsesi: false,
   },
   map: null,
@@ -41,25 +42,53 @@ const state = {
 const COMPARE_PRESETS = {
   all: {
     hint: "Gabungan hemat: choropleth + titik Agrinas. Aktifkan koridor/densitas dari lapisan bila perlu.",
-    layers: { choropleth: true, koridor: false, densitas_kasus: false, objek_titik: true, gfw_konsesi: false },
+    layers: {
+      choropleth: true,
+      koridor: false,
+      densitas_kasus: false,
+      objek_titik: true,
+      hotspot_verifikasi: false,
+      gfw_konsesi: false,
+    },
     rank: "polres",
     choroMetric: "polres_blend",
   },
   register: {
     hint: "Register konflik: warna kab = risiko register + densitas kasus (centroid).",
-    layers: { choropleth: true, koridor: false, densitas_kasus: true, objek_titik: false, gfw_konsesi: false },
+    layers: {
+      choropleth: true,
+      koridor: false,
+      densitas_kasus: true,
+      objek_titik: false,
+      hotspot_verifikasi: false,
+      gfw_konsesi: false,
+    },
     rank: "register",
     choroMetric: "register",
   },
   agrinas: {
     hint: "Sinyal Agrinas: warna kab = skor OSINT + koridor proksi + titik objek.",
-    layers: { choropleth: true, koridor: true, densitas_kasus: false, objek_titik: true, gfw_konsesi: false },
+    layers: {
+      choropleth: true,
+      koridor: true,
+      densitas_kasus: false,
+      objek_titik: true,
+      hotspot_verifikasi: false,
+      gfw_konsesi: false,
+    },
     rank: "agrinas",
     choroMetric: "osint",
   },
   atlas: {
-    hint: "Deforestasi Atlas: overlay GFW + cocokan nama. Deep-link ke Nusantara Atlas.",
-    layers: { choropleth: false, koridor: false, densitas_kasus: false, objek_titik: false, gfw_konsesi: true },
+    hint: "Deforestasi Atlas: overlay GFW + ranking dossier Matching Engine.",
+    layers: {
+      choropleth: false,
+      koridor: false,
+      densitas_kasus: false,
+      objek_titik: false,
+      hotspot_verifikasi: false,
+      gfw_konsesi: true,
+    },
     rank: "atlas",
     choroMetric: null,
   },
@@ -71,6 +100,10 @@ const LAYER_LABELS = {
   koridor: { label: "Koridor proksi", title: "Hull dari titik objek — bukan koridor resmi" },
   densitas_kasus: { label: "Densitas kasus", title: "Centroid kab/kota sebagai proksi lokasi" },
   objek_titik: { label: "Titik objek Agrinas", title: "" },
+  hotspot_verifikasi: {
+    label: "Hotspot sebaran terverifikasi",
+    title: "Hotspot georef dengan status terkonfirmasi/terverifikasi",
+  },
   gfw_konsesi: { label: "Konsesi GFW", title: "Overlay TopoJSON (dimuat saat diaktifkan)" },
 };
 
@@ -238,17 +271,88 @@ const BOOT_MANIFEST = [
   { key: "objek", path: "data/objek_agrinas.json", critical: true },
   { key: "kasus", path: "data/kasus.json", critical: true },
   { key: "perusahaan", path: "data/perusahaan.json", critical: false, fallback: { records: [] } },
-  { key: "perusahaan_alias", path: "data/perusahaan_alias.json", critical: false, fallback: { records: [] } },
   { key: "konsesi", path: "data/konsesi.json", critical: false, fallback: { atlas_match: { records: [], total: 0 }, atlas_full: { records: [], total: 0 } } },
-  { key: "desa_lock", path: "data/desa_lock.json", critical: false, fallback: { records: [] } },
-  { key: "izin_2017", path: "data/izin_2017.json", critical: false, fallback: { records: [] } },
-  { key: "rantai_agrinas", path: "data/rantai_agrinas.json", critical: false, fallback: { stages: [] } },
   { key: "dossier", path: "data/dossier.json", critical: false, fallback: { records: [] } },
+  { key: "entity_matches", path: "data/entity_matches.json", critical: false, fallback: { records: [] } },
   { key: "layers", path: "data/layers.geojson", critical: true },
   { key: "adm2", path: "data/adm2_riau.geojson", critical: true },
   { key: "analytics", path: "data/analytics.json", critical: false, fallback: { timeline: { default_mode: "kejadian" } } },
   { key: "penertiban", path: "data/penertiban.json", critical: false, fallback: { normalized: {} } },
 ];
+// Lazy (Fase C): desa_lock, izin_2017, rantai_agrinas, perusahaan_alias — ensureLazyDatasets()
+
+const LAZY_DATASETS = [
+  { key: "perusahaan_alias", path: "data/perusahaan_alias.json", fallback: { records: [] } },
+  { key: "desa_lock", path: "data/desa_lock.json", fallback: { records: [] } },
+  { key: "izin_2017", path: "data/izin_2017.json", fallback: { records: [] } },
+  { key: "rantai_agrinas", path: "data/rantai_agrinas.json", fallback: { stages: [] } },
+];
+
+async function ensureLazyDatasets() {
+  if (state.lazyReady?.all) return;
+  const jobs = LAZY_DATASETS.map(async (item) => {
+    if (state.lazyReady?.[item.key]) return;
+    try {
+      const data = await loadJSON(item.path);
+      DATA[item.key] = data;
+    } catch (err) {
+      console.warn("Lazy load gagal", item.path, err);
+      DATA[item.key] = item.fallback;
+    }
+    state.lazyReady = { ...(state.lazyReady || {}), [item.key]: true };
+  });
+  await Promise.all(jobs);
+  state.lazyReady = { ...(state.lazyReady || {}), all: true };
+  renderEnrichmentPanels();
+}
+
+function renderEnrichmentPanels() {
+  const izinEl = document.getElementById("izinKabSummary");
+  if (izinEl) {
+    const rows = DATA.izin_2017?.records || [];
+    const byKab = {};
+    rows.forEach((r) => {
+      const k = r.kab_kota || "–";
+      byKab[k] = (byKab[k] || 0) + 1;
+    });
+    const top = Object.entries(byKab)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 12);
+    izinEl.innerHTML = top.length
+      ? `<ul class="enrich-list">${top
+          .map(([k, n]) => `<li><strong>${escapeHtml(k)}</strong><span>${n} izin</span></li>`)
+          .join("")}</ul>`
+      : `<p class="muted small">Data izin 2017 belum dimuat.</p>`;
+  }
+  const desaEl = document.getElementById("desaLockSummary");
+  if (desaEl) {
+    const rows = DATA.desa_lock?.records || [];
+    desaEl.innerHTML = rows.length
+      ? `<ul class="enrich-list">${rows
+          .map(
+            (r) =>
+              `<li><strong>${escapeHtml(r.desa || r.desa_utama || r.id || "–")}</strong><span>${escapeHtml(
+                [r.kecamatan, r.kabupaten, r.kepercayaan].filter(Boolean).join(" · ")
+              )}</span></li>`
+          )
+          .join("")}</ul>`
+      : `<p class="muted small">Kunci desa belum dimuat.</p>`;
+  }
+  const rantaiEl = document.getElementById("rantaiStagesSummary");
+  if (rantaiEl) {
+    const stages = DATA.rantai_agrinas?.stages || DATA.rantai_agrinas?.records || [];
+    rantaiEl.innerHTML = stages.length
+      ? `<ol class="enrich-list numbered">${stages
+          .slice(0, 15)
+          .map((s) => {
+            if (typeof s === "string") return `<li>${escapeHtml(s)}</li>`;
+            const label = `Tahap ${s.Tahap || s.stage || "?"} · ${s.Tanggal || ""} — ${s.Label || s.Cakupan_publik || s["Cakupan publik"] || ""}`;
+            return `<li>${escapeHtml(label)}</li>`;
+          })
+          .join("")}</ol>`
+      : `<p class="muted small">Rantai Agrinas belum dimuat.</p>`;
+  }
+}
 
 function setBooting(on) {
   document.body.classList.toggle("is-booting", on);
@@ -451,18 +555,20 @@ async function boot() {
     objek: loaded.objek,
     kasus: loaded.kasus,
     perusahaan: loaded.perusahaan,
-    perusahaan_alias: loaded.perusahaan_alias,
+    perusahaan_alias: { records: [] },
     konsesi: loaded.konsesi,
-    desa_lock: loaded.desa_lock,
-    izin_2017: loaded.izin_2017,
-    rantai_agrinas: loaded.rantai_agrinas,
+    desa_lock: { records: [] },
+    izin_2017: { records: [] },
+    rantai_agrinas: { stages: [] },
     dossier: loaded.dossier,
+    entity_matches: loaded.entity_matches,
     layers: loaded.layers,
     adm2: loaded.adm2,
     gfw: null,
     analytics: loaded.analytics,
     penertiban: loaded.penertiban,
     gfwFull: null,
+    lazyReady: {},
   });
 
   (DATA.meta.layers || []).forEach((l) => {
@@ -494,6 +600,8 @@ async function boot() {
   window.addEventListener("resize", syncRailDetailsForViewport);
   syncMobileStartCta();
   setBooting(false);
+  // Prefetch enrichment datasets (alias/izin/desa/rantai) after first paint
+  ensureLazyDatasets().catch((err) => console.warn(err));
 }
 
 function formatDate(iso) {
@@ -642,7 +750,7 @@ function syncFilterHint() {
 
 function rankTitleText() {
   const mode = COMPARE_PRESETS[state.compare]?.rank || "polres";
-  if (mode === "atlas") return "Cocokan Atlas";
+  if (mode === "atlas") return "Dossier Matching Engine";
   if (mode === "agrinas") return "Objek Agrinas";
   if (mode === "register") return "Ranking · risiko register";
   const w = Number(state.blendOsint);
@@ -662,27 +770,41 @@ function renderRankPanel() {
 
   if (mode === "atlas") {
     if (title) title.textContent = rankTitleText();
-    const rows = (DATA.konsesi?.atlas_match?.records || [])
-      .filter((r) => String(r.status || "").toLowerCase().includes("cocok"))
-      .slice(0, 16);
+    const riskRank = { tinggi: 0, sedang: 1, rendah: 2 };
+    const rows = [...(DATA.dossier?.records || [])]
+      .filter((r) => {
+        const st = String(r.match_status || "").toLowerCase();
+        const risk = String(r.risiko || "").toLowerCase();
+        if (state.priority === "TINGGI") return risk === "tinggi" || st === "confirmed";
+        if (state.priority === "SEDANG") return risk === "sedang";
+        return st === "confirmed" || risk === "sedang" || risk === "tinggi";
+      })
+      .sort((a, b) => {
+        const ra = riskRank[String(a.risiko || "").toLowerCase()] ?? 9;
+        const rb = riskRank[String(b.risiko || "").toLowerCase()] ?? 9;
+        if (ra !== rb) return ra - rb;
+        return (Number(b.luas_loss_ha) || 0) - (Number(a.luas_loss_ha) || 0);
+      })
+      .slice(0, 20);
     ol.innerHTML =
       rows
         .map((r, i) => {
-          const link = atlasDeepLink(r.atlas_nama || r.nama_lokal);
+          const link = atlasDeepLink(r.nama, null, r.tautan_atlas);
+          const badge = r.risiko || r.match_status || "–";
           return `<li>
-          <button type="button" data-atlas="${escapeAttr(r.atlas_nama || "")}" data-lokal="${escapeAttr(r.nama_lokal || "")}" title="Buka detail match Atlas" aria-label="Buka detail ${escapeAttr(r.atlas_nama || "match Atlas")}">
-            <span class="n pantau">${i + 1}</span>
+          <button type="button" data-dossier="${escapeAttr(r.dossier_id || "")}" title="Buka dossier" aria-label="Buka dossier ${escapeAttr(r.nama || "")}">
+            <span class="n ${escapeAttr(String(r.risiko || "pantau"))}">${i + 1}</span>
             <span>
-              <strong>${escapeHtml(r.atlas_nama || "–")}</strong><br/>
-              <small>${escapeHtml(r.nama_lokal || r.tipe || "")}</small>
+              <strong>${escapeHtml(r.nama || "–")}</strong><br/>
+              <small>${escapeHtml(r.kab || "")} · ${escapeHtml(r.match_status || "")}</small>
             </span>
-            <span class="score"><a class="rank-ext" href="${escapeAttr(link.href)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">↗</a></span>
+            <span class="score" title="Risiko / loss ha">${escapeHtml(String(badge))}</span>
           </button>
         </li>`;
         })
-        .join("") || emptyRankHtml("Tidak ada cocokan Atlas untuk ditampilkan.");
-    ol.querySelectorAll("button[data-atlas]").forEach((btn) => {
-      btn.addEventListener("click", () => showAtlasMatch(btn.dataset.atlas, btn.dataset.lokal));
+        .join("") || emptyRankHtml("Tidak ada dossier terfilter untuk ditampilkan.");
+    ol.querySelectorAll("button[data-dossier]").forEach((btn) => {
+      btn.addEventListener("click", () => showDossier(btn.dataset.dossier));
     });
     return;
   }
@@ -782,6 +904,7 @@ function initMap() {
     koridor: L.layerGroup(),
     densitas_kasus: L.layerGroup(),
     objek_titik: L.layerGroup(),
+    hotspot_verifikasi: L.layerGroup(),
     gfw_konsesi: L.layerGroup(),
   };
 
@@ -925,6 +1048,28 @@ function initMap() {
       return;
     }
 
+    if (layerId === "hotspot_verifikasi") {
+      const marker = L.circleMarker([y, x], {
+        radius: 6,
+        color: "#fff",
+        weight: 1.4,
+        fillColor: "#8a4b2a",
+        fillOpacity: 0.9,
+      });
+      bindMapPreview(
+        marker,
+        mapPreviewHtml({
+          eyebrow: "Hotspot terverifikasi",
+          title: p.nama || p.id || "Hotspot",
+          metaLines: [p.status || "", p.kab_kota || "", p.kecamatan || ""].filter(Boolean),
+        }),
+        () => showHotspot(p)
+      );
+      marker.on("click", () => showHotspot(p));
+      state.layerGroups.hotspot_verifikasi.addLayer(marker);
+      return;
+    }
+
     const level = p.prioritas || p.level_risiko || p.kategori || "PANTAU";
     const marker = L.circleMarker([y, x], {
       radius: 7,
@@ -965,7 +1110,14 @@ function initMap() {
 
 function refreshLayerVisibility() {
   // draw order: gfw under choropleth under points
-  const order = ["gfw_konsesi", "choropleth", "koridor", "densitas_kasus", "objek_titik"];
+  const order = [
+    "gfw_konsesi",
+    "choropleth",
+    "koridor",
+    "densitas_kasus",
+    "hotspot_verifikasi",
+    "objek_titik",
+  ];
   order.forEach((id) => {
     const group = state.layerGroups[id];
     if (!group) return;
@@ -986,6 +1138,7 @@ function updateMapLegend() {
     <div><span class="swatch choro mid"></span> Sedang (${CHORO_BREAKS.mid}–${CHORO_BREAKS.high - 1})</div>
     <div><span class="swatch choro low"></span> Rendah (&lt;${CHORO_BREAKS.mid})</div>
     <div><span class="swatch densitas"></span> Densitas kasus</div>
+    <div><span class="swatch hotspot"></span> Hotspot terverifikasi</div>
     <div><span class="swatch koridor"></span> Koridor proksi (hull)</div>
     <div><span class="swatch gfw"></span> Konsesi GFW</div>
   `;
@@ -1150,6 +1303,30 @@ function setupMobileChrome() {
   window.syncMobileStartCta = syncMobileStartCta;
 }
 
+function showHotspot(p) {
+  setDetail(
+    AtlasUI.detailShell({
+      eyebrow: "Hotspot sebaran terverifikasi",
+      title: p.nama || p.id || "Hotspot",
+      lead: "Titik georef dengan status terkonfirmasi/terverifikasi — bukan poligon legal.",
+      meta: [
+        { label: "ID", value: p.id || "–" },
+        { label: "Kab/Kota", value: p.kab_kota || "–" },
+        { label: "Kecamatan", value: p.kecamatan || "–" },
+        { label: "Status", value: p.status || "–" },
+        { label: "Piksel", value: p.pixels || "–" },
+        { label: "Cocokan OSINT", value: p.osint || "–" },
+      ],
+      bodyHtml: p.kab_kota
+        ? `<p class="detail-actions"><button type="button" class="btn-link" data-action="kab-from-hotspot" data-kab="${escapeAttr(p.kab_kota)}">Buka kab/kota</button></p>`
+        : "",
+    })
+  );
+  document.getElementById("detailContent")?.querySelectorAll("[data-action='kab-from-hotspot']").forEach((btn) => {
+    btn.addEventListener("click", () => showKabupaten(btn.dataset.kab));
+  });
+}
+
 function showKabupaten(nama) {
   const kab =
     DATA.kab.records.find((k) => (k.kab_kota || "").toLowerCase() === String(nama || "").toLowerCase()) ||
@@ -1203,6 +1380,10 @@ function showKabupaten(nama) {
         { label: "Objek sinyal utama", value: kab.objek_sinyal_utama || "–" },
         { label: "Hotspot kecamatan", value: kab.hotspot_kecamatan || "–" },
         { label: "Sawit di KH (ha)", value: fmtNum(kab.klhk_korp_kh_2022_ha) },
+        { label: "Verifikasi sebaran", value: kab.verifikasi_status || "–" },
+        { label: "Kepercayaan sebaran", value: kab.kepercayaan_sebaran || "–" },
+        { label: "Rank GFW / sebaran", value: [kab.rank_gfw, kab.rank_sebaran].filter((v) => v != null && v !== "").join(" · ") || "–" },
+        { label: "N izin 2017", value: fmtNum(kab.n_izin_2017) },
       ],
       bodyHtml: `
     ${risk.driver_utama ? `<p><strong>Driver register:</strong> ${escapeHtml(risk.driver_utama)}</p>` : ""}
@@ -1318,7 +1499,7 @@ function findPerusahaan(name) {
   const rows = DATA.perusahaan?.records || [];
   if (!name) return null;
   const n = String(name).toLowerCase();
-  return (
+  let hit =
     rows.find((r) => (r.nama || "").toLowerCase() === n) ||
     rows.find((r) => (r.nama_kanonik || "").toLowerCase() === n) ||
     rows.find((r) => (r.nama || "").toLowerCase().includes(n) || n.includes((r.nama || "").toLowerCase())) ||
@@ -1327,8 +1508,22 @@ function findPerusahaan(name) {
         (r.nama_kanonik || "").toLowerCase().includes(n) ||
         n.includes((r.nama_kanonik || "").toLowerCase())
     ) ||
-    null
+    null;
+  if (hit) return hit;
+  const aliases = DATA.perusahaan_alias?.records || [];
+  const aliasHit = aliases.find(
+    (a) =>
+      String(a.nama_mentah || "").toLowerCase() === n ||
+      String(a.nama_mentah || "").toLowerCase().includes(n)
   );
+  if (aliasHit?.nama_kanonik) {
+    const canon = String(aliasHit.nama_kanonik).toLowerCase();
+    hit =
+      rows.find((r) => (r.nama_kanonik || "").toLowerCase() === canon) ||
+      rows.find((r) => (r.nama || "").toLowerCase() === canon) ||
+      null;
+  }
+  return hit;
 }
 
 function showPerusahaan(nama) {
@@ -1336,7 +1531,16 @@ function showPerusahaan(nama) {
   const title = row?.nama || nama || "Perusahaan";
   const atlas = findAtlasMatch(title) || findAtlasMatch(row?.nama_kanonik);
   const gfw = findGfwRecord(title) || findGfwRecord(row?.nama_kanonik);
-  const link = atlasDeepLink(atlas?.atlas_nama || title, gfw);
+  const dossier = findDossier({
+    gfwid: gfw?.gfwid,
+    nama: row?.nama_kanonik || title,
+  });
+  const matches = findEntityMatches({
+    gfwid: gfw?.gfwid,
+    nama: row?.nama_kanonik || title,
+    leftId: row?.perusahaan_id,
+  });
+  const link = atlasDeepLink(dossier?.nama || atlas?.atlas_nama || title, gfw, dossier?.tautan_atlas);
   const relatedObjek = (DATA.objek?.records || [])
     .filter((o) => {
       const blob = `${o.nama || ""} ${o.klaster || ""} ${o.kaitan_agrinas || ""}`.toLowerCase();
@@ -1359,12 +1563,23 @@ function showPerusahaan(nama) {
       lead: row?.catatan || "Profil dari register perusahaan workspace — jembatan ke Atlas/GFW/konflik, bukan sertifikat HGU tunggal.",
       meta: [
         { label: "Nama kanonik", value: row?.nama_kanonik || "–" },
+        { label: "Perusahaan ID", value: row?.perusahaan_id || "–" },
         { label: "Status nama", value: row?.status_nama || "–" },
         { label: "Di GFW", value: row?.ada_di_gfw || (gfw ? "Ya (proksi)" : "–") },
-        { label: "Di Atlas", value: row?.ada_di_atlas || (atlas ? "Ya (match)" : "–") },
+        { label: "Di Atlas", value: row?.ada_di_atlas || (atlas || dossier ? "Ya (match)" : "–") },
         { label: "Di BPS", value: row?.ada_di_bps || "–" },
         { label: "Di konflik Polda", value: row?.ada_di_konflik_polda || "–" },
-        { label: "Match Atlas", value: atlas?.atlas_nama || "Belum tercocokkan" },
+        { label: "Ada izin 2017", value: row?.ada_izin_2017 || "–" },
+        {
+          label: "Kab list",
+          value: Array.isArray(row?.kab_list)
+            ? row.kab_list.filter(Boolean).join(", ") || "–"
+            : row?.kab_list || "–",
+        },
+        { label: "Status match", value: dossier?.match_status || "–" },
+        { label: "Tipe match", value: dossier?.status_match || "–" },
+        { label: "Risiko dossier", value: dossier?.risiko || "–" },
+        { label: "Human verified", value: dossier?.human_verified ? "Ya" : "Belum" },
         { label: "Luas GFW (ha)", value: fmtNum(gfw?.area_ha) },
         { label: "Sumber", value: row?.sumber || "–" },
       ],
@@ -1379,12 +1594,35 @@ function showPerusahaan(nama) {
           }
         : null,
     ].filter(Boolean))}
+    ${
+      dossier
+        ? `<p class="detail-actions"><button type="button" class="btn-link" data-action="open-dossier" data-dossier="${escapeAttr(dossier.dossier_id)}">Buka dossier lengkap</button></p>`
+        : ""
+    }
+    ${dossierMetaBlock(dossier)}
+    ${AtlasUI.sectionLabel("Entity matches")}
+    ${AtlasUI.listBlock(
+      "case-list",
+      matches
+        .map(
+          (m) => `<article class="case-card">
+      <header class="case-card__head"><strong class="case-card__title">${escapeHtml(m.match_id || "")}</strong>
+      <span class="case-card__id">${escapeHtml(m.status || "")}</span></header>
+      <p class="case-card__body">${escapeHtml(m.match_type || "")} · score ${escapeHtml(fmtNum(m.nama_score))}</p>
+    </article>`
+        )
+        .join(""),
+      "Belum ada baris entity_matches untuk nama ini."
+    )}
     ${AtlasUI.sectionLabel("Objek terkait")}
     ${AtlasUI.listBlock("obj-list", relatedObjek.map(objCard).join(""), "Belum ada objek Agrinas terhubung langsung.")}
     ${AtlasUI.sectionLabel("Kasus terkait")}
     ${AtlasUI.listBlock("case-list", relatedKasus.map(caseCard).join(""), "Belum ada kasus dengan nama perusahaan ini.")}`,
     })
   );
+  document.getElementById("detailContent")?.querySelectorAll("[data-action='open-dossier']").forEach((btn) => {
+    btn.addEventListener("click", () => showDossier(btn.dataset.dossier));
+  });
 }
 window.showPerusahaan = showPerusahaan;
 
@@ -1415,7 +1653,15 @@ async function showGfw(p) {
   await ensureGfwFull();
   const atlas = findAtlasMatch(p.name || p.company);
   const gfw = findGfwRecord(p.name || p.company) || p;
-  const link = atlasDeepLink(atlas?.atlas_nama || p.name || p.company, gfw);
+  const dossier = findDossier({
+    gfwid: gfw.gfwid || p.gfwid,
+    nama: gfw.nama_kanonik || p.company || p.name,
+  });
+  const link = atlasDeepLink(
+    dossier?.nama || atlas?.atlas_nama || p.name || p.company,
+    gfw,
+    dossier?.tautan_atlas
+  );
   const osm =
     Number.isFinite(Number(gfw.lat)) && Number.isFinite(Number(gfw.lon))
       ? {
@@ -1424,6 +1670,7 @@ async function showGfw(p) {
           ghost: true,
         }
       : null;
+  const company = gfw.nama_kanonik || p.company || dossier?.nama_kanonik || "";
   setDetail(
     AtlasUI.detailShell({
       eyebrow: "Overlay konsesi GFW",
@@ -1431,17 +1678,38 @@ async function showGfw(p) {
       lead: "Poligon industri tersederhanakan dari dataset GFW Riau — bukan sertifikat HGU tunggal.",
       meta: [
         { label: "Perusahaan", value: p.company || "–" },
+        { label: "Nama kanonik", value: gfw.nama_kanonik || "–" },
         { label: "Grup", value: p.group || "–" },
         { label: "Luas (ha)", value: fmtNum(p.area_ha) },
         { label: "Tipe / HGU", value: [p.type, p.hgu].filter(Boolean).join(" · ") || "–" },
-        { label: "Match Atlas", value: atlas?.atlas_nama || "Belum tercocokkan" },
-        { label: "Nama lokal", value: atlas?.nama_lokal || "–" },
+        { label: "Match Atlas (legacy)", value: atlas?.atlas_nama || "–" },
+        { label: "Status match", value: dossier?.match_status || "Belum di dossier" },
+        { label: "Tipe match", value: dossier?.status_match || "–" },
+        { label: "Risiko dossier", value: dossier?.risiko || "–" },
       ],
       bodyHtml: `
     ${AtlasUI.detailActions([{ href: link.href, label: link.label }, osm].filter(Boolean))}
+    ${
+      dossier
+        ? `<p class="detail-actions"><button type="button" class="btn-link" data-action="open-dossier" data-dossier="${escapeAttr(dossier.dossier_id)}">Buka dossier lengkap</button></p>`
+        : ""
+    }
+    ${
+      company
+        ? `<p class="detail-actions"><button type="button" class="btn-link" data-action="perusahaan-detail" data-perusahaan="${escapeAttr(company)}">Buka profil perusahaan</button></p>`
+        : ""
+    }
+    ${dossierMetaBlock(dossier)}
     <p class="muted small">Cari nama konsesi di bilah pencarian Nusantara Atlas untuk bukti satelit/deforestasi.</p>`,
     })
   );
+  const root = document.getElementById("detailContent");
+  root?.querySelectorAll("[data-action='open-dossier']").forEach((btn) => {
+    btn.addEventListener("click", () => showDossier(btn.dataset.dossier));
+  });
+  root?.querySelectorAll("[data-action='perusahaan-detail']").forEach((btn) => {
+    btn.addEventListener("click", () => showPerusahaan(btn.dataset.perusahaan));
+  });
 }
 
 async function showAtlasMatch(atlasNama, namaLokal) {
@@ -1663,6 +1931,7 @@ function setupNav() {
         requestAnimationFrame(() => syncTablePaneScrollHints(document.getElementById("dataView") || document));
       }
       if (state.view === "analisis") {
+        ensureLazyDatasets().catch((err) => console.warn(err));
         setTimeout(() => {
           if (typeof window.renderAnalytics === "function") window.renderAnalytics();
           if (typeof window.renderPenertibanModule === "function") {
@@ -1820,7 +2089,11 @@ function findGfwRecord(name) {
   let best = null;
   let score = 0;
   rows.forEach((r) => {
-    const s = Math.max(nameScore(name, r.company), nameScore(name, r.name));
+    const s = Math.max(
+      nameScore(name, r.company),
+      nameScore(name, r.name),
+      nameScore(name, r.nama_kanonik)
+    );
     if (s > score) {
       score = s;
       best = r;
@@ -1829,19 +2102,159 @@ function findGfwRecord(name) {
   return score >= 40 ? best : null;
 }
 
-function atlasDeepLink(name, gfw) {
+function findDossier({ gfwid, nama, atlasId, dossierId } = {}) {
+  const rows = DATA.dossier?.records || [];
+  if (!rows.length) return null;
+  if (dossierId) {
+    const hit = rows.find((r) => r.dossier_id === dossierId);
+    if (hit) return hit;
+  }
+  if (gfwid) {
+    const hit = rows.find((r) => r.gfwid && String(r.gfwid) === String(gfwid));
+    if (hit) return hit;
+  }
+  if (atlasId) {
+    const hit = rows.find(
+      (r) =>
+        r.tautan_atlas === atlasId ||
+        String(r.dossier_id || "").endsWith(atlasId) ||
+        String(r.dossier_id || "") === `DOS-${atlasId}`
+    );
+    if (hit) return hit;
+  }
+  if (nama) {
+    let best = null;
+    let score = 0;
+    rows.forEach((r) => {
+      const s = Math.max(nameScore(nama, r.nama), nameScore(nama, r.nama_kanonik));
+      if (s > score) {
+        score = s;
+        best = r;
+      }
+    });
+    return score >= 40 ? best : null;
+  }
+  return null;
+}
+
+function findEntityMatches({ gfwid, nama, atlasId, leftId, rightId } = {}) {
+  const rows = DATA.entity_matches?.records || [];
+  if (!rows.length) return [];
+  const keys = [gfwid, atlasId, leftId, rightId].filter(Boolean).map(String);
+  const nameKey = normalizeName(nama);
+  return rows
+    .filter((m) => {
+      if (keys.some((k) => k === String(m.left_id) || k === String(m.right_id))) return true;
+      if (!nameKey) return false;
+      const ev = m.evidence || {};
+      const blob = normalizeName(
+        `${ev.nama_left || ""} ${ev.nama_right || ""} ${m.left_id || ""} ${m.right_id || ""}`
+      );
+      return blob.includes(nameKey) || nameKey.includes(blob.slice(0, 12));
+    })
+    .slice(0, 8);
+}
+
+function dossierMetaBlock(d) {
+  if (!d) return "";
+  return `
+    ${AtlasUI.sectionLabel("Dossier Matching Engine")}
+    <div class="meta-grid">
+      ${AtlasUI.metaItem({ label: "Dossier ID", value: d.dossier_id || "–" })}
+      ${AtlasUI.metaItem({ label: "Status match", value: d.match_status || "–" })}
+      ${AtlasUI.metaItem({ label: "Tipe match", value: d.status_match || "–" })}
+      ${AtlasUI.metaItem({ label: "Risiko", value: d.risiko || "–" })}
+      ${AtlasUI.metaItem({ label: "Legal status", value: d.legal_status || "–" })}
+      ${AtlasUI.metaItem({ label: "Loss (ha)", value: fmtNum(d.luas_loss_ha) })}
+      ${AtlasUI.metaItem({ label: "Gambut (ha)", value: fmtNum(d.gambut_ha) })}
+      ${AtlasUI.metaItem({ label: "Konflik", value: d.konflik || "–" })}
+      ${AtlasUI.metaItem({ label: "Human verified", value: d.human_verified ? "Ya" : "Belum" })}
+      ${AtlasUI.metaItem({ label: "GFW ID", value: d.gfwid || "–" })}
+    </div>`;
+}
+
+function showDossier(dossierIdOrRow) {
+  const d =
+    typeof dossierIdOrRow === "object" && dossierIdOrRow
+      ? dossierIdOrRow
+      : findDossier({ dossierId: dossierIdOrRow });
+  if (!d) return;
+  const matches = findEntityMatches({
+    gfwid: d.gfwid,
+    atlasId: d.tautan_atlas,
+    nama: d.nama_kanonik || d.nama,
+  });
+  const link = atlasDeepLink(d.nama, null, d.tautan_atlas);
+  const company = d.nama_kanonik || d.nama;
+  setDetail(
+    AtlasUI.detailShell({
+      eyebrow: "Dossier konsesi (Matching Engine)",
+      title: d.nama || "Dossier",
+      lead: "Satu baris OSINT per konsesi Atlas — status match terpisah dari tipe match.",
+      meta: [
+        { label: "Nama kanonik", value: d.nama_kanonik || "–" },
+        { label: "Kab/Kota", value: d.kab || "–" },
+        { label: "Status match", value: d.match_status || "–" },
+        { label: "Tipe match", value: d.status_match || "–" },
+        { label: "Risiko", value: d.risiko || "–" },
+        { label: "Legal status", value: d.legal_status || "–" },
+        { label: "Loss (ha)", value: fmtNum(d.luas_loss_ha) },
+        { label: "Gambut (ha)", value: fmtNum(d.gambut_ha) },
+        { label: "Luas Atlas (ha)", value: fmtNum(d.luas_ha) },
+        { label: "Area GFW (ha)", value: fmtNum(d.area_gfw_ha) },
+        { label: "Human verified", value: d.human_verified ? "Ya" : "Belum" },
+        { label: "Atlas UID", value: d.tautan_atlas || "–" },
+      ],
+      bodyHtml: `
+    ${AtlasUI.detailActions([
+      { href: link.href, label: link.label },
+      company
+        ? null
+        : null,
+    ].filter(Boolean))}
+    ${
+      company
+        ? `<p class="detail-actions"><button type="button" class="btn-link" data-action="perusahaan-detail" data-perusahaan="${escapeAttr(company)}">Buka profil perusahaan</button></p>`
+        : ""
+    }
+    ${AtlasUI.sectionLabel("Entity matches terkait")}
+    ${AtlasUI.listBlock(
+      "case-list",
+      matches
+        .map(
+          (m) => `<article class="case-card">
+      <header class="case-card__head"><strong class="case-card__title">${escapeHtml(m.match_id || "")}</strong>
+      <span class="case-card__id">${escapeHtml(m.status || "")}</span></header>
+      <p class="case-card__body">${escapeHtml(m.match_type || "")} · ${escapeHtml(m.left_source || "")}↔${escapeHtml(m.right_source || "")} · geo_ok=${escapeHtml(String(m.geo_ok))}</p>
+    </article>`
+        )
+        .join(""),
+      "Tidak ada baris entity_matches terkait."
+    )}`,
+    })
+  );
+  document.getElementById("detailContent")?.querySelectorAll("[data-action='perusahaan-detail']").forEach((btn) => {
+    btn.addEventListener("click", () => showPerusahaan(btn.dataset.perusahaan));
+  });
+}
+
+function atlasDeepLink(name, gfw, atlasUid) {
   const label = String(name || gfw?.company || gfw?.name || "konsesi").trim();
   // Nusantara Atlas state IDs are opaque; open the map and guide search by name.
   const href = "https://map.nusantara-atlas.org/";
+  const uidNote = atlasUid ? ` (UID ${atlasUid})` : "";
   return {
     href,
     label: `Buka Nusantara Atlas · ${label}`,
-    title: `Cari “${label}” di Nusantara Atlas`,
+    title: `Cari “${label}” di Nusantara Atlas${uidNote}`,
   };
 }
 
 window.findAtlasMatch = findAtlasMatch;
 window.findGfwRecord = findGfwRecord;
+window.findDossier = findDossier;
+window.findEntityMatches = findEntityMatches;
+window.showDossier = showDossier;
 window.atlasDeepLink = atlasDeepLink;
 
 function setupSearch() {
@@ -1874,6 +2287,15 @@ function setupSearch() {
         if ((o.nama || "").toLowerCase().includes(q))
           hits.push({ type: "objek", label: o.nama, sub: o.kab_kota || o.lapisan, ref: o.id });
       });
+      (DATA.dossier?.records || []).slice(0, 200).forEach((d) => {
+        if ((d.nama || "").toLowerCase().includes(q) || (d.nama_kanonik || "").toLowerCase().includes(q))
+          hits.push({
+            type: "dossier",
+            label: d.nama,
+            sub: `${d.kab || ""} · ${d.match_status || ""}`,
+            ref: d.dossier_id,
+          });
+      });
       if (!hits.length) {
         box.innerHTML = `<p class="search-empty" role="status">Tidak ada hasil untuk “${escapeHtml(input.value.trim())}”. Coba nama kab/kota, Polres, atau objek.</p>`;
         box.hidden = false;
@@ -1897,6 +2319,7 @@ function setupSearch() {
             const o = DATA.objek.records.find((x) => x.id === b.dataset.ref);
             showTitik({ ...o, nama: o?.nama, id: o?.id });
           }
+          if (b.dataset.type === "dossier") showDossier(b.dataset.ref);
         });
       });
     }, 160);
@@ -1925,7 +2348,41 @@ function setupDataTables() {
     { id: "polres", label: "Ranking Polres", rows: () => DATA.polres.records, cols: ["peringkat", "polres", "skor", "kategori", "n_agrinas", "n_aksi_massa", "alasan"] },
     { id: "kab", label: "Kab/Kota", rows: () => DATA.kab.records, cols: ["kab_kota", "kategori_peta", "skor_komposit", "n_kasus", "polres_proksi", "objek_sinyal_utama"] },
     { id: "atlas", label: "Cocokan Atlas", rows: () => DATA.konsesi?.atlas_match?.records || [], cols: ["match_id", "atlas_nama", "tahun", "tipe", "status", "match_confidence", "nama_lokal", "area_ha"] },
-  {
+    {
+      id: "dossier",
+      label: "Dossier 436",
+      rows: () => DATA.dossier?.records || [],
+      cols: [
+        "dossier_id",
+        "nama",
+        "nama_kanonik",
+        "kab",
+        "match_status",
+        "status_match",
+        "risiko",
+        "luas_loss_ha",
+        "gfwid",
+        "human_verified",
+      ],
+    },
+    {
+      id: "entity_matches",
+      label: "Entity matches",
+      rows: () => DATA.entity_matches?.records || [],
+      cols: [
+        "match_id",
+        "status",
+        "match_type",
+        "left_source",
+        "left_id",
+        "right_source",
+        "right_id",
+        "nama_score",
+        "geo_ok",
+        "human_verified",
+      ],
+    },
+    {
       id: "gfwfull",
       label: "GFW bbox 287",
       rows: () => DATA.gfwFull?.records || [],

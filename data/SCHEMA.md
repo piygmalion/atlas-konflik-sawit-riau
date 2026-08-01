@@ -172,8 +172,43 @@ Alias mentah → kanonik: `dim_perusahaan_alias.csv`.
 |---|---|
 | **Grain** | 1 poligon |
 | **PK** | `gfwid` |
-| **Wajib** | `gfwid`, `company` atau `name` |
+| **Wajib** | `gfwid`, `company` atau `name`, `nama_kanonik` |
 | **Sumber-null (bukan gagal DQ)** | `hgu`, `area_hgu_ha`, `legal`, `type` |
+
+`nama_kanonik` diisi export (alias) dan di-sync ulang oleh `build_entity_matches.py` dari `fact_gfw_konsesi`.
+
+### entity_matches (`entity_matches.json`) — serving UI
+
+| | |
+|---|---|
+| **Grain** | 1 baris resolusi entitas (subset `bridge_entity_match`) |
+| **PK** | `match_id` |
+| **Wajib** | `match_id`, `status`, `match_type` |
+| **Opsional** | `left_*`, `right_*`, `nama_score`, `geo_ok`, `human_verified`, `evidence` |
+
+Silver penuh tetap di `data/silver/bridge_entity_match.json`. Gold UI = subset field di atas.
+
+### dossier (`dossier.json`)
+
+| | |
+|---|---|
+| **Grain** | 1 baris / konsesi Atlas |
+| **PK** | `dossier_id` |
+| **Wajib** | `dossier_id`, `nama` |
+| **Label UI** | `match_status` = confirmed/warning/rejected; `status_match` = tipe match (`gabungan_gfw`, `gfw_only`, …) |
+| **Opsional** | `risiko`, `legal_status`, `luas_loss_ha`, `gambut_ha`, `gfwid`, `tautan_atlas`, `human_verified` |
+
+### Frontend boot vs lazy
+
+| Boot (app start) | Lazy (setelah paint / tab Analisis) |
+|---|---|
+| meta, kab, polres, objek, kasus, layers, adm2 | `perusahaan_alias`, `desa_lock`, `izin_2017`, `rantai_agrinas` |
+| perusahaan, konsesi, dossier, entity_matches, analytics, penertiban | |
+
+Serving-only (tidak di-boot UI): `dq_report`.
+
+Lapisan peta: `choropleth`, `koridor`, `densitas_kasus`, `objek_titik`, `hotspot_verifikasi`, `gfw_konsesi`.  
+`meta.counts.fitur_spasial` harus = `len(layers.features)`; `hotspot_verifikasi` wajib di `meta.layers` bila ada fitur.
 
 ### penertiban SK36 (`penertiban.json::sk36_2025_110a`)
 

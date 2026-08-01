@@ -1,7 +1,7 @@
 {
   "brand": "Atlas Konflik Sawit Riau",
   "subtitle": "Pemetaan spasial konflik, objek Agrinas–Satgas, dan celahan perizinan",
-  "updated_at": "2026-07-31T00:20:19+07:00",
+  "updated_at": "2026-08-02T02:47:41+07:00",
   "bbox_riau": [
     100.0,
     -1.2,
@@ -21,12 +21,19 @@
     "objek_titik": 54,
     "kasus_konflik": 113,
     "choropleth": 12,
-    "fitur_spasial": 70,
+    "fitur_spasial": 85,
     "gfw_konsesi": 287,
     "gfw_bbox_full": 287,
     "entri_terpetakan": 83,
     "entri_tidak_terpetakan": 30,
-    "dossier": 436
+    "dossier": 436,
+    "hotspot_verifikasi": 15,
+    "perusahaan": 237,
+    "perusahaan_alias": 691,
+    "desa_lock": 4,
+    "izin_2017": 388,
+    "entity_matches": 450,
+    "atlas_full": 436
   },
   "layers": [
     {
@@ -48,6 +55,11 @@
       "id": "objek_titik",
       "label": "Titik objek Agrinas",
       "default": true
+    },
+    {
+      "id": "hotspot_verifikasi",
+      "label": "Hotspot sebaran terverifikasi",
+      "default": false
     },
     {
       "id": "gfw_konsesi",

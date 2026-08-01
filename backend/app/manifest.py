@@ -20,6 +20,7 @@ SERVING_MANIFEST: dict[str, str] = {
     "izin_2017": "izin_2017.json",
     "rantai_agrinas": "rantai_agrinas.json",
     "dossier": "dossier.json",
+    "entity_matches": "entity_matches.json",
     "layers": "layers.geojson",
     "adm2": "adm2_riau.geojson",
     "gfw_konsesi": "gfw_konsesi.topojson",

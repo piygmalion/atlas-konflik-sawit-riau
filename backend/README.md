@@ -101,7 +101,9 @@ Workflow `.github/workflows/sync-supabase.yml`:
 
 ## Dataset yang di-sync
 
-`meta`, `kab_kota`, `polres`, `objek_agrinas`, `kasus`, `perusahaan`, `perusahaan_alias`, `konsesi`, `konsesi_gfw_full`, `analytics`, `penertiban`, `dq_report`, `desa_lock`, `izin_2017`, `rantai_agrinas`, `dossier`, `layers`, `adm2`, `gfw_konsesi`.
+`meta`, `kab_kota`, `polres`, `objek_agrinas`, `kasus`, `perusahaan`, `perusahaan_alias`, `konsesi`, `konsesi_gfw_full`, `analytics`, `penertiban`, `dq_report`, `desa_lock`, `izin_2017`, `rantai_agrinas`, `dossier`, `entity_matches`, `layers`, `adm2`, `gfw_konsesi`.
+
+Frontend boot memuat `dossier` + `entity_matches`; `desa_lock` / `izin_2017` / `rantai_agrinas` / `perusahaan_alias` di-lazy-load saat Analisis.
 
 Silver (Fase 2+): `python sync_silver.py` lalu `python sync_silver.py --warehouse` setelah migration `002`/`003`.  
 Integrasi (Matching Engine): `python sync_silver.py --warehouse --integration` setelah migration `004`.

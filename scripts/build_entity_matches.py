@@ -697,12 +697,49 @@ def main() -> int:
     _dump(DATA / "perusahaan.json", per_enriched)
     _dump(DATA / "perusahaan_alias.json", alias_enriched)
 
+    # Sync nama_kanonik back onto gold GFW table (UI Data tab)
+    gfw_out = dict(gfw)
+    gfw_recs = []
+    by_id = {r["gfwid"]: r for r in fact_gfw["records"]}
+    for r in gfw.get("records") or []:
+        row = dict(r)
+        fg = by_id.get(row.get("gfwid"))
+        if fg:
+            row["nama_kanonik"] = fg.get("nama_kanonik") or row.get("nama_kanonik")
+        elif not row.get("nama_kanonik"):
+            raw = row.get("company") or row.get("name") or ""
+            row["nama_kanonik"] = resolve_canonical(raw, alias_map) or norm_company_display(raw)
+        gfw_recs.append(row)
+    gfw_out["records"] = gfw_recs
+    gfw_out["total"] = len(gfw_recs)
+    _dump(DATA / "konsesi_gfw_full.json", gfw_out)
+
+    # Serving-facing subset of bridge_entity_match
+    entity_ui = []
+    for m in matches:
+        entity_ui.append(
+            {
+                "match_id": m.get("match_id"),
+                "left_source": m.get("left_source"),
+                "left_id": m.get("left_id"),
+                "right_source": m.get("right_source"),
+                "right_id": m.get("right_id"),
+                "status": m.get("status"),
+                "match_type": m.get("match_type"),
+                "nama_score": m.get("nama_score"),
+                "geo_ok": m.get("geo_ok"),
+                "human_verified": m.get("human_verified"),
+                "evidence": m.get("evidence"),
+            }
+        )
+
     _dump(SILVER / "meta_sumber.json", {"total": len(META_SUMBER), "records": META_SUMBER})
     _dump(SILVER / "fact_gfw_konsesi.json", fact_gfw)
     _dump(SILVER / "fact_penertiban_sk36.json", fact_sk36)
     _dump(SILVER / "bridge_entity_match.json", {"total": len(matches), "records": matches})
     _dump(SILVER / "mart_dossier_kasus.json", dossier)
     _dump(DATA / "dossier.json", dossier)
+    _dump(DATA / "entity_matches.json", {"total": len(entity_ui), "records": entity_ui})
 
     # Status histogram
     hist: dict[str, int] = {}
@@ -711,6 +748,17 @@ def main() -> int:
     mtype: dict[str, int] = {}
     for m in matches:
         mtype[m.get("match_type") or "?"] = mtype.get(m.get("match_type") or "?", 0) + 1
+    # Keep meta.counts in sync for integration artifacts
+    meta_path = DATA / "meta.json"
+    if meta_path.exists():
+        meta = _load_json(meta_path) or {}
+        counts = dict(meta.get("counts") or {})
+        counts["dossier"] = dossier["total"]
+        counts["entity_matches"] = len(entity_ui)
+        counts["gfw_bbox_full"] = len(gfw_recs)
+        meta["counts"] = counts
+        _dump(meta_path, meta)
+
     print(f"matches={len(matches)} status={hist} types={mtype}")
     print(f"dossier={dossier['total']} gfw_facts={fact_gfw['total']} sk36={fact_sk36['total']}")
     print("RESULT: OK")

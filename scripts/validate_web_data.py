@@ -172,6 +172,8 @@ def main() -> int:
             "kasus_konflik": len(kasus),
             "gfw_bbox_full": len(gfw),
         }
+        if perusahaan:
+            expected["perusahaan"] = len(perusahaan)
         if alias:
             expected["perusahaan_alias"] = len(alias)
         if desa:
@@ -180,40 +182,59 @@ def main() -> int:
             expected["izin_2017"] = len(izin)
         if dossier:
             expected["dossier"] = len(dossier)
+        entity_matches = load_records("entity_matches.json")
+        if entity_matches:
+            expected["entity_matches"] = len(entity_matches)
         if kons_path.exists():
             kons_meta = json.loads(kons_path.read_text(encoding="utf-8"))
             af = (kons_meta.get("atlas_full") or {}).get("records") or []
             if af:
                 expected["atlas_full"] = len(af)
         for k, n in expected.items():
-            if k in counts and int(counts[k]) != n:
+            if k not in counts:
+                errors.append(f"meta.counts missing {k} (expected {n})")
+            elif int(counts[k]) != n:
                 errors.append(f"meta.counts.{k}={counts[k]} != len(records)={n}")
 
-        # Dual-grain: objek_titik must match layers.geojson point features
+        # Dual-grain + spasial: objek_titik / hotspot / fitur_spasial vs layers.geojson
         layers_path = SITE / "layers.geojson"
-        if layers_path.exists() and "objek_titik" in counts:
+        if layers_path.exists():
             layers = json.loads(layers_path.read_text(encoding="utf-8"))
+            feats = layers.get("features") or []
+            n_feat = len(feats)
+            if "fitur_spasial" not in counts:
+                errors.append(f"meta.counts missing fitur_spasial (expected {n_feat})")
+            elif int(counts["fitur_spasial"]) != n_feat:
+                errors.append(
+                    f"meta.counts.fitur_spasial={counts['fitur_spasial']} != "
+                    f"layers features={n_feat}"
+                )
             n_titik = sum(
-                1
-                for f in (layers.get("features") or [])
-                if (f.get("properties") or {}).get("layer") == "objek_titik"
+                1 for f in feats if (f.get("properties") or {}).get("layer") == "objek_titik"
             )
-            if int(counts["objek_titik"]) != n_titik:
+            if "objek_titik" not in counts:
+                errors.append(f"meta.counts missing objek_titik (expected {n_titik})")
+            elif int(counts["objek_titik"]) != n_titik:
                 errors.append(
                     f"meta.counts.objek_titik={counts['objek_titik']} != "
                     f"layers objek_titik features={n_titik}"
                 )
-            if "hotspot_verifikasi" in counts:
-                n_hs = sum(
-                    1
-                    for f in (layers.get("features") or [])
-                    if (f.get("properties") or {}).get("layer") == "hotspot_verifikasi"
-                )
-                if int(counts["hotspot_verifikasi"]) != n_hs:
+            n_hs = sum(
+                1
+                for f in feats
+                if (f.get("properties") or {}).get("layer") == "hotspot_verifikasi"
+            )
+            if n_hs:
+                if "hotspot_verifikasi" not in counts:
+                    errors.append(f"meta.counts missing hotspot_verifikasi (expected {n_hs})")
+                elif int(counts["hotspot_verifikasi"]) != n_hs:
                     errors.append(
                         f"meta.counts.hotspot_verifikasi={counts['hotspot_verifikasi']} != "
                         f"layers hotspot_verifikasi={n_hs}"
                     )
+            layer_ids = {l.get("id") for l in (meta.get("layers") or []) if isinstance(l, dict)}
+            if n_hs and "hotspot_verifikasi" not in layer_ids:
+                errors.append("meta.layers missing hotspot_verifikasi toggle (layers has features)")
         if "objek_mappable" in counts:
             n_map = sum(
                 1

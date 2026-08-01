@@ -1232,6 +1232,18 @@ def export_konsesi_gfw_full():
             if lon is not None and lat is not None:
                 centroids[key] = {"lon": lon, "lat": lat}
 
+    alias_map = {}
+    try:
+        from company_normalize import load_alias_table, resolve_canonical, norm_company_display
+
+        alias_path = ROOT / "dim_perusahaan_alias.csv"
+        if alias_path.exists():
+            alias_map = load_alias_table(alias_path)
+    except Exception as exc:
+        print(f"    WARN alias for GFW nama_kanonik: {exc}")
+        resolve_canonical = None  # type: ignore
+        norm_company_display = lambda x: (x or "").strip()  # type: ignore
+
     records = []
     for r in rows:
         name = r.get("name") or r.get("company")
@@ -1239,11 +1251,17 @@ def export_konsesi_gfw_full():
         key = (str(name or "").strip().upper(), str(company or "").strip().upper())
         key2 = (str(company or "").strip().upper(), str(company or "").strip().upper())
         xy = centroids.get(key) or centroids.get(key2)
+        raw_name = company or name or ""
+        if alias_map and resolve_canonical:
+            nama_kanonik = resolve_canonical(raw_name, alias_map) or norm_company_display(raw_name)
+        else:
+            nama_kanonik = (raw_name or "").strip() or None
         records.append(
             {
                 "no": parse_numeric(r.get("no")),
                 "company": company,
                 "name": name,
+                "nama_kanonik": nama_kanonik,
                 "group": r.get("group_comp"),
                 "type": r.get("type"),
                 "legal": r.get("po_legalst"),
@@ -1552,6 +1570,9 @@ def main():
         "gfw_konsesi": len(gfw),
         "gfw_bbox_full": gfw_full.get("total", 0),
         "atlas_full": (atlas_full or {}).get("total", 0),
+        "perusahaan": len(
+            (json.loads((OUT / "perusahaan.json").read_text(encoding="utf-8")).get("records") or [])
+        ),
         "perusahaan_alias": alias_payload.get("total", 0),
         "desa_lock": desa_payload.get("total", 0),
         "izin_2017": izin_payload.get("total", 0),

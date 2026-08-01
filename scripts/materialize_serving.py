@@ -85,6 +85,35 @@ def materialize_from_silver() -> int:
         print("  materialize dossier.json <- silver/mart_dossier_kasus.json")
         n += 1
 
+    bem_silver = SILVER / "bridge_entity_match.json"
+    if bem_silver.exists() and not (DATA / "entity_matches.json").exists():
+        bem = json.loads(bem_silver.read_text(encoding="utf-8"))
+        entity = [
+            {
+                k: r.get(k)
+                for k in (
+                    "match_id",
+                    "left_source",
+                    "left_id",
+                    "right_source",
+                    "right_id",
+                    "status",
+                    "match_type",
+                    "nama_score",
+                    "geo_ok",
+                    "human_verified",
+                    "evidence",
+                )
+            }
+            for r in (bem.get("records") or [])
+        ]
+        (DATA / "entity_matches.json").write_text(
+            json.dumps({"total": len(entity), "records": entity}, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        print("  materialize entity_matches.json <- silver/bridge_entity_match.json")
+        n += 1
+
     print(f"materialize done ({n} artifacts)")
     # Contract gate
     sys.path.insert(0, str(HERE.parent))
