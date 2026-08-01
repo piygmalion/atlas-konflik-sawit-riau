@@ -254,6 +254,19 @@ Kontrak di atas silver warehouse (`004_integration_schema.sql`). Skrip: `scripts
 | **Wajib** | `sumber_id`, `nama`, `akses` (`terbuka`\|`tertutup`), `tipe_data` (`tabular`\|`spasial`), `status` |
 | **Opsional** | `path_sot`, `kredibilitas`, `grain`, `refresh_cadence` |
 
+### ingest_run (Supabase `004`, belum di-materialize gold)
+
+| | |
+|---|---|
+| **Grain** | 1 baris / eksekusi ingest per `sumber_id` |
+| **PK** | `run_id` (uuid) |
+| **FK** | `sumber_id` → `meta_sumber` |
+| **Kolom** | `started_at`, `finished_at`, `checksum`, `row_count`, `status` (`running`\|`success`\|`partial`\|`failed`), `notes`, `payload` |
+
+**Alur operasional (saat ini):** skrip lokal `build_entity_matches.py` / `export_web_data.py` **belum** menulis `ingest_run`. Tabel ada di warehouse agar sync/observabilitas bisa ditambahkan tanpa migrasi baru. Pola yang disarankan: setelah materialize sukses per sumber, insert baris `status=success` + `row_count` + `checksum` file SoT; frontend tidak membaca tabel ini (opsional admin/PostgREST saja).
+
+`human_verified` pada dossier / entity_matches ditampilkan read-only di UI (Ya/Belum); editor review manusia belum ada — field sudah siap tanpa migrasi tambahan.
+
 ### bridge_entity_match (`silver/bridge_entity_match.json`)
 
 | | |
