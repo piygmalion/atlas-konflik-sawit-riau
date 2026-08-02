@@ -1000,8 +1000,137 @@ body.is-scroll {
   .analisis-grid { grid-template-columns: 1fr; }
   .chart-frame.tall { height: 300px; }
 }
-.story-hero { max-width: 720px; margin-bottom: 1.3rem; }
-.story-hero p { color: var(--ink-soft); line-height: 1.55; }
+.story-hero { max-width: 760px; margin-bottom: 1.5rem; }
+.story-hero__lead { color: var(--ink-soft); line-height: 1.55; margin: 0 0 0.55rem; }
+.story-hero__pulse-line {
+  margin: 0 0 0.85rem;
+  font-size: 0.88rem;
+  color: var(--brand);
+  line-height: 1.45;
+  max-width: 62ch;
+}
+.story-pulse {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 1.75rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+.story-pulse__item {
+  min-width: 5.5rem;
+  animation: rise 0.5s ease both;
+}
+.story-pulse__item strong {
+  display: block;
+  font-family: var(--display);
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+  font-weight: 650;
+  color: var(--brand);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.story-pulse__item span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.story-beats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 820px;
+}
+.story-beat {
+  display: grid;
+  grid-template-columns: minmax(7rem, 10rem) 1fr;
+  gap: 1rem 1.5rem;
+  padding: 1.35rem 0;
+  border-top: 1px solid var(--line);
+  animation: storyBeatIn 0.55s ease both;
+}
+.story-beat:last-of-type { border-bottom: 1px solid var(--line); }
+.story-beat__metric {
+  font-family: var(--display);
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  font-weight: 650;
+  color: var(--brand);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  align-self: start;
+}
+.story-beat__metric small {
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--font);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.story-beat__body { min-width: 0; }
+.story-beat__body .eyebrow {
+  margin: 0 0 0.2rem;
+}
+.story-beat__body h2 {
+  font-family: var(--display);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 650;
+  color: var(--brand);
+  margin: 0 0 0.4rem;
+  line-height: 1.25;
+}
+.story-beat__body p {
+  margin: 0 0 0.65rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  font-size: 0.94rem;
+  max-width: 58ch;
+}
+.story-beat__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+.story-beat__cta:hover { color: var(--brand); }
+.story-cta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem 1.25rem;
+  margin-top: 1.5rem;
+  padding-top: 0.25rem;
+  max-width: 820px;
+}
+@keyframes storyBeatIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 700px) {
+  .story-beat {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding: 1.15rem 0;
+  }
+  .story-beat__metric {
+    font-size: clamp(1.55rem, 7vw, 2rem);
+  }
+  .story-pulse { gap: 1rem 1.35rem; }
+}
 .analisis-hero {
   max-width: 820px;
   margin-bottom: 0.85rem;
@@ -1033,26 +1162,6 @@ body.is-scroll {
   margin-bottom: 0.65rem;
 }
 .stat-strip .stat span { font-size: 0.68rem; }
-.story-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 0.9rem;
-}
-.story-card {
-  background: var(--glass-strong);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1rem 1.05rem;
-  box-shadow: var(--shadow);
-  animation: rise 0.55s ease both;
-}
-.story-card h3 {
-  font-family: var(--display);
-  margin: 0.25rem 0 0.4rem;
-  color: var(--brand);
-}
-.story-card p { margin: 0; color: var(--ink-soft); line-height: 1.45; }
-
 .data-header {
   display: flex;
   justify-content: space-between;

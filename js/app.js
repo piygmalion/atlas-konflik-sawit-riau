@@ -1896,81 +1896,253 @@ function matchWilayah(a, b) {
   return A.some((x) => B.some((y) => x.includes(y) || y.includes(x)));
 }
 
-function renderStory() {
-  const top = DATA.polres.records.slice(0, 3);
-  const atlasHits = (DATA.konsesi?.atlas_match?.records || []).filter((r) =>
-    String(r.status || "").toLowerCase().includes("cocok")
+function storyPolresShort(name) {
+  return String(name || "").replace(/^Polres\s+/i, "").trim() || name || "–";
+}
+
+function buildStoryPulse() {
+  const kasus = DATA.kasus?.records || [];
+  const nKasus = DATA.meta?.counts?.kasus_konflik ?? kasus.length;
+  const nOps = kasus.filter((k) => String(k.tipe_entri || "").toLowerCase().startsWith("kasus")).length;
+  const nObj = DATA.meta?.counts?.objek_agrinas ?? (DATA.objek?.records || []).length;
+  const nMap = DATA.meta?.counts?.objek_mappable ?? 0;
+  const prioritas = (DATA.polres?.records || []).filter(
+    (p) => kategoriFromSkor(blendedPolresSkor(p)) === "PRIORITAS"
   ).length;
-  document.getElementById("storyGrid").innerHTML = [
+  return [
+    { value: fmtNum(nKasus), label: "Kasus register" },
+    { value: fmtNum(nOps), label: "Operasional (LP)" },
+    { value: `${fmtNum(nMap)}/${fmtNum(nObj)}`, label: "Objek mappable" },
+    { value: fmtNum(prioritas), label: "Polres prioritas" },
+  ];
+}
+
+function buildStoryBeats() {
+  const kasus = DATA.kasus?.records || [];
+  const nKasus = DATA.meta?.counts?.kasus_konflik ?? kasus.length;
+  const nOps = kasus.filter((k) => String(k.tipe_entri || "").toLowerCase().startsWith("kasus")).length;
+  const nPotensi = Math.max(0, nKasus - nOps);
+  const bias = DATA.meta?.methodology?.coverage_bias;
+  const topPolres = [...(DATA.polres?.records || [])]
+    .sort((a, b) => blendedPolresSkor(b) - blendedPolresSkor(a))
+    .slice(0, 3);
+  const topNames = topPolres.map((p) => storyPolresShort(p.polres)).join(", ");
+  const topLead = topPolres[0];
+  const topSkor = topLead ? Math.round(blendedPolresSkor(topLead)) : "–";
+
+  const objek = DATA.objek?.records || [];
+  const nObj = DATA.meta?.counts?.objek_agrinas ?? objek.length;
+  const nMap = DATA.meta?.counts?.objek_mappable ?? objek.filter((o) =>
+    String(o.mappable || "").toLowerCase() === "ya"
+  ).length;
+  const nMulti = objek.filter((o) => String(o.kab_primary || "").toUpperCase() === "MULTI").length;
+  const mapPct = nObj ? Math.round((100 * nMap) / nObj) : 0;
+
+  const g1 =
+    DATA.penertiban?.normalized?.gelombang1_27_pt?.total ??
+    DATA.penertiban?.normalized?.gelombang1_27_pt?.records?.length ??
+    0;
+  const sk36 =
+    DATA.penertiban?.normalized?.sk36_2025_110a?.total ??
+    DATA.penertiban?.normalized?.sk36_2025_110a?.records?.length ??
+    DATA.konsesi?.kepmenhut_36_2025?.total ??
+    0;
+
+  const atlasRecs = DATA.konsesi?.atlas_match?.records || [];
+  const atlasHits =
+    atlasRecs.filter((r) => String(r.status || "").toLowerCase().includes("cocok")).length ||
+    DATA.konsesi?.atlas_match?.total ||
+    atlasRecs.length;
+  const mq = DATA.meta?.methodology?.match_quality;
+  const mqRate = mq?.rate_serving;
+
+  const biasNote = bias?.bias_flag
+    ? " Liputan Extended LP bisa bias ke Polres yang lebih lengkap—skor ranking tidak dikalibrasi dari Extended mentah."
+    : "";
+
+  return [
     {
-      t: "Koridor panas",
-      h: top.map((p) => p.polres.replace(/^Polres\s+/i, "")).join(", "),
-      p: "Tiga Polres teratas early-warning menggabungkan densitas objek Agrinas/KSO, liputan konflik baru, dan aksi massa.",
+      id: "register",
+      eyebrow: "Pulsa register",
+      title: `${nOps} operasional · ${nPotensi} potensi/register`,
+      metric: String(nKasus),
+      metricLabel: "entri serving",
+      body:
+        `Register gold memuat ${nKasus} entri: ${nOps} bertipe kasus operasional (LP) dan ${nPotensi} potensi/register.` +
+        biasNote,
+      ctaLabel: "Buka peta · densitas kasus",
+      cta: { view: "peta", compare: "register" },
     },
     {
-      t: "Penertiban KH",
-      h: `${DATA.penertiban?.normalized?.gelombang1_27_pt?.total || 27} PT gelombang 1`,
-      p: "Modul penertiban memuat sebaran korporasi di KH, operasi TN Tesso Nilo, dan daftar target Satgas PKH per kabupaten.",
+      id: "koridor",
+      eyebrow: "Koridor panas",
+      title: topNames || "Belum ada ranking Polres",
+      metric: String(topSkor),
+      metricLabel: topLead ? `skor · ${storyPolresShort(topLead.polres)}` : "skor",
+      body: topLead
+        ? `Tiga Polres teratas early-warning: ${topNames}. Pemimpin peringkat (${storyPolresShort(topLead.polres)}) skor ${topSkor} (${kategoriFromSkor(blendedPolresSkor(topLead))}) — indeks liputan+objek+register, bukan vonis operasional.`
+        : "Data ranking Polres belum tersedia.",
+      ctaLabel: topLead ? `Detail ${storyPolresShort(topLead.polres)}` : "Buka peta",
+      cta: { view: "peta", compare: "all", polres: topLead?.polres },
     },
     {
-      t: "Mode bandingkan",
-      h: "Register · Agrinas · Atlas",
-      p: "Di peta, pilih lensa untuk menonjolkan densitas kasus, sinyal Agrinas–KSO, atau overlay deforestasi/konsesi Atlas–GFW.",
+      id: "objek",
+      eyebrow: "Jejak objek Agrinas",
+      title: `${mapPct}% layak diplot dari ${nObj} objek`,
+      metric: `${nMap}/${nObj}`,
+      metricLabel: "mappable",
+      body: `${nMulti} objek masih MULTI (tanpa kab tunggal). Titik peta adalah proksi spasial—bukan poligon legal HGU/IUP.`,
+      ctaLabel: "Buka peta · sinyal Agrinas",
+      cta: { view: "peta", compare: "agrinas" },
     },
     {
-      t: "Jembatan ke Atlas",
-      h: `${atlasHits || DATA.konsesi?.atlas_match?.total || 0} nama tercocokkan`,
-      p: "Setiap cocokan punya deep-link ke Nusantara Atlas sebagai bukti satelit; workspace ini memegang aktor dan konflik.",
+      id: "penertiban",
+      eyebrow: "Penertiban KH",
+      title: `${g1 || "–"} PT gelombang 1`,
+      metric: String(sk36 || "–"),
+      metricLabel: "record SK36",
+      body: `Modul penertiban memuat ${g1 || "–"} PT gelombang 1 Satgas PKH dan ${sk36 || "–"} baris Kepmenhut 36/2025 (110A). Sebaran korporasi KH dan operasi TN Tesso Nilo ada di tab Analisis.`,
+      ctaLabel: "Buka Analisis · penertiban",
+      cta: { view: "analisis" },
     },
-  ]
+    {
+      id: "match",
+      eyebrow: "Jembatan ke Atlas",
+      title: `${atlasHits} nama tercocokkan Atlas↔GFW`,
+      metric: mqRate != null ? `${mqRate}%` : String(atlasHits),
+      metricLabel: mqRate != null ? "match quality" : "cocokan",
+      body:
+        mqRate != null
+          ? `Serving match quality ${mqRate}% confirmed∧geo_ok (target ≥${mq?.target_pct ?? 75}%). Setiap cocokan punya deep-link ke Nusantara Atlas; dossier Matching Engine memegang aktor dan konflik.`
+          : "Cocokan Atlas–GFW tersedia di peta mode Atlas dan tabel dossier.",
+      ctaLabel: "Buka peta · overlay Atlas/GFW",
+      cta: { view: "peta", compare: "atlas" },
+    },
+  ];
+}
+
+function renderStoryPulse(items) {
+  const el = document.getElementById("storyPulse");
+  if (!el) return;
+  el.innerHTML = items
     .map(
-      (s, i) => `
-      <article class="story-card" style="animation-delay:${i * 0.08}s">
-        <p class="eyebrow">${s.t}</p>
-        <h3>${escapeHtml(s.h)}</h3>
-        <p>${escapeHtml(s.p)}</p>
-      </article>`
+      (it, i) => `
+      <div class="story-pulse__item" style="animation-delay:${i * 0.06}s">
+        <strong>${escapeHtml(String(it.value))}</strong>
+        <span>${escapeHtml(it.label)}</span>
+      </div>`
     )
     .join("");
+}
+
+function renderStory() {
+  const pulse = buildStoryPulse();
+  const beats = buildStoryBeats();
+  const nKasus = pulse[0]?.value ?? "–";
+  const nOps = pulse[1]?.value ?? "–";
+  const heroPulse = document.getElementById("storyHeroPulse");
+  if (heroPulse) {
+    heroPulse.textContent = `Register serving: ${nKasus} kasus · ${nOps} operasional.`;
+  }
+  renderStoryPulse(pulse);
+
+  const root = document.getElementById("storyBeats");
+  if (!root) return;
+  root.innerHTML = beats
+    .map(
+      (b, i) => `
+    <section class="story-beat" style="animation-delay:${0.05 + i * 0.07}s" data-beat="${escapeAttr(b.id)}">
+      <div class="story-beat__metric" aria-hidden="true">
+        ${escapeHtml(b.metric)}
+        <small>${escapeHtml(b.metricLabel || "")}</small>
+      </div>
+      <div class="story-beat__body">
+        <p class="eyebrow">${escapeHtml(b.eyebrow)}</p>
+        <h2>${escapeHtml(b.title)}</h2>
+        <p>${escapeHtml(b.body)}</p>
+        <button type="button" class="story-beat__cta"
+          data-story-nav="${escapeAttr(b.cta?.view || "peta")}"
+          ${b.cta?.compare ? `data-compare="${escapeAttr(b.cta.compare)}"` : ""}
+          ${b.cta?.polres ? `data-polres="${escapeAttr(b.cta.polres)}"` : ""}>
+          ${escapeHtml(b.ctaLabel || "Jelajahi")} →
+        </button>
+      </div>
+    </section>`
+    )
+    .join("");
+}
+
+async function handleStoryNav(el) {
+  if (!el) return;
+  const view = el.dataset.storyNav || "peta";
+  const compare = el.dataset.compare;
+  const polres = el.dataset.polres;
+  await activateView(view);
+  if (view === "peta" && compare) {
+    await applyCompareMode(compare);
+  }
+  if (view === "peta" && polres) {
+    setTimeout(() => showPolres(polres), 280);
+  }
+}
+
+function setupStoryNav() {
+  const story = document.getElementById("storyView");
+  if (!story || story.dataset.storyNavBound) return;
+  story.dataset.storyNavBound = "1";
+  story.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-story-nav]");
+    if (!btn || !story.contains(btn)) return;
+    e.preventDefault();
+    handleStoryNav(btn);
+  });
+}
+
+async function activateView(view) {
+  const next = view || "peta";
+  state.view = next;
+  document.querySelectorAll(".nav-btn").forEach((b) => {
+    b.classList.toggle("is-active", b.dataset.view === next);
+  });
+  const stage = document.getElementById("mapStage") || document.querySelector(".stage");
+  const story = document.getElementById("storyView");
+  const data = document.getElementById("dataView");
+  const analisis = document.getElementById("analisisView");
+  if (stage) stage.hidden = next !== "peta";
+  if (story) story.hidden = next !== "cerita";
+  if (data) data.hidden = next !== "data";
+  if (analisis) analisis.hidden = next !== "analisis";
+  document.body.classList.toggle("is-scroll", next !== "peta");
+  document.body.classList.toggle("is-map-view", next === "peta");
+  if (next === "peta") setTimeout(() => state.map?.invalidateSize(), 80);
+  syncMobileStartCta();
+  if (next === "cerita") renderStory();
+  if (next === "data") {
+    requestAnimationFrame(() => syncTablePaneScrollHints(document.getElementById("dataView") || document));
+  }
+  if (next === "analisis") {
+    ensureLazyDatasets().catch((err) => console.warn(err));
+    setTimeout(() => {
+      if (typeof window.renderAnalytics === "function") window.renderAnalytics();
+      if (typeof window.renderPenertibanModule === "function") {
+        window.setupPenertibanControls?.();
+        window.renderPenertibanModule();
+      }
+      syncTablePaneScrollHints(document.getElementById("analisisView") || document);
+    }, 120);
+  }
 }
 
 function setupNav() {
   document.querySelectorAll(".nav-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      document.querySelectorAll(".nav-btn").forEach((b) => b.classList.remove("is-active"));
-      btn.classList.add("is-active");
-      state.view = btn.dataset.view;
-      const stage = document.getElementById("mapStage") || document.querySelector(".stage");
-      const story = document.getElementById("storyView");
-      const data = document.getElementById("dataView");
-      const analisis = document.getElementById("analisisView");
-      if (stage) stage.hidden = state.view !== "peta";
-      if (story) story.hidden = state.view !== "cerita";
-      if (data) data.hidden = state.view !== "data";
-      if (analisis) analisis.hidden = state.view !== "analisis";
-      document.body.classList.toggle("is-scroll", state.view !== "peta");
-      document.body.classList.toggle("is-map-view", state.view === "peta");
-      if (state.view === "peta") setTimeout(() => state.map?.invalidateSize(), 80);
-      syncMobileStartCta();
-      if (state.view === "data") {
-        requestAnimationFrame(() => syncTablePaneScrollHints(document.getElementById("dataView") || document));
-      }
-      if (state.view === "analisis") {
-        ensureLazyDatasets().catch((err) => console.warn(err));
-        setTimeout(() => {
-          if (typeof window.renderAnalytics === "function") window.renderAnalytics();
-          if (typeof window.renderPenertibanModule === "function") {
-            window.setupPenertibanControls?.();
-            window.renderPenertibanModule();
-          }
-          syncTablePaneScrollHints(document.getElementById("analisisView") || document);
-        }, 120);
-      }
+      activateView(btn.dataset.view);
     });
   });
   document.getElementById("detailClose").addEventListener("click", () => {
     closeDetail();
   });
+  setupStoryNav();
 }
 
 function setupFilters() {
