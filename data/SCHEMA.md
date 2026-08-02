@@ -29,7 +29,12 @@ Export **hanya** memakai kanon di kolom SoT. File twin XLSX = bronze-only (janga
 | Kepmenhut 36/2025 | `tabulasi_konsesi_sawit_kepmenhut_36_2025_riau_rapi.csv` | XLSX kepmenhut; CSV `…parsial.csv` |
 | Alias perusahaan | `dim_perusahaan_alias.csv` | dibangun ulang oleh DQ dari BPS/GFW/Atlas |
 | Perusahaan gabungan | `daftar_perusahaan_sawit_riau_gabungan.csv` | `Daftar_…xlsx`, `Normalisasi_…xlsx` |
-| Kasus | `master_kasus_sawit_riau.csv` (+ sheet TABEL bila perlu) | `Inventarisasi_…xlsx` (internal) |
+| Kasus | `master_kasus_sawit_riau_gold.csv` (fallback: CSV ringkas) | `Inventarisasi_…xlsx`, sheet TABEL |
+| Objek enriched | `master_list_objek_agrinas_enriched.csv` + `geo_objek_override.csv` | satgas XLSX / CSV base |
+| Sumber planned | `stubs/*.csv` (kontrak kosong) | — |
+
+Twin legacy: `archive/Normalisasi_Perusahaan_Sawit_Riau.xlsx` (v1). Alias SoT = `dim_perusahaan_alias.csv`.  
+Lihat juga `archive/README.md` dan `stubs/README.md`.
 
 ### Orphan (bukan defect sync)
 
@@ -258,12 +263,15 @@ Kontrak di atas silver warehouse (`004_integration_schema.sql`). Skrip: `scripts
 
 | | |
 |---|---|
-| **Grain** | 1 baris / sumber blueprint (11) |
+| **Grain** | 1 baris / sumber blueprint (≥11) |
 | **PK** | `sumber_id` |
 | **Wajib** | `sumber_id`, `nama`, `akses` (`terbuka`\|`tertutup`), `tipe_data` (`tabular`\|`spasial`), `status` |
-| **Opsional** | `path_sot`, `kredibilitas`, `grain`, `refresh_cadence` |
+| **Opsional** | `path_sot`, `kredibilitas`, `grain`, `refresh_cadence`, `notes` |
 
-### ingest_run (Supabase `004`, belum di-materialize gold)
+Sumber `planned` wajib punya `path_sot` stub di `stubs/` (atau keputusan `orphan` eksplisit).  
+Ringkas di `meta.methodology.sumber_catalog`.
+
+### ingest_run (`silver/ingest_run.json` + Supabase `004`)
 
 | | |
 |---|---|
@@ -272,7 +280,9 @@ Kontrak di atas silver warehouse (`004_integration_schema.sql`). Skrip: `scripts
 | **FK** | `sumber_id` → `meta_sumber` |
 | **Kolom** | `started_at`, `finished_at`, `checksum`, `row_count`, `status` (`running`\|`success`\|`partial`\|`failed`), `notes`, `payload` |
 
-**Alur operasional (saat ini):** skrip lokal `build_entity_matches.py` / `export_web_data.py` **belum** menulis `ingest_run`. Tabel ada di warehouse agar sync/observabilitas bisa ditambahkan tanpa migrasi baru. Pola yang disarankan: setelah materialize sukses per sumber, insert baris `status=success` + `row_count` + `checksum` file SoT; frontend tidak membaca tabel ini (opsional admin/PostgREST saja).
+**Alur:** `write_ingest_runs.py` dipanggil dari `build_entity_matches.py` → tulis `silver/ingest_run.json`.  
+Sync: `python backend/sync_silver.py --integration` (upsert ke `public.ingest_run`).  
+Stub planned → `status=partial`; SoT aktif terisi → `success`. Frontend tidak membaca tabel ini.
 
 `human_verified` pada dossier / entity_matches ditampilkan read-only di UI (Ya/Belum); editor review manusia belum ada — field sudah siap tanpa migrasi tambahan.
 

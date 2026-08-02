@@ -50,9 +50,10 @@ META_SUMBER = [
         "tipe_data": "tabular",
         "kredibilitas": "sedang",
         "grain": "agregat kab/prov",
-        "path_sot": None,
+        "path_sot": "stubs/disbun_riau_agregat.csv",
         "refresh_cadence": "tahunan",
         "status": "planned",
+        "notes": "Stub terbuka — ganti isi saat statistik Disbun tersedia",
     },
     {
         "sumber_id": "gfw_greenpeace",
@@ -83,9 +84,10 @@ META_SUMBER = [
         "tipe_data": "spasial",
         "kredibilitas": "sedang",
         "grain": "layer tutupan",
-        "path_sot": None,
+        "path_sot": "stubs/fwi_hutan_layer.csv",
         "refresh_cadence": "periodik",
         "status": "planned",
+        "notes": "Stub terbuka — path layer/geopackage menyusul",
     },
     {
         "sumber_id": "atr_bpn",
@@ -94,9 +96,10 @@ META_SUMBER = [
         "tipe_data": "tabular",
         "kredibilitas": "tinggi",
         "grain": "1 baris / IUP",
-        "path_sot": None,
+        "path_sot": "stubs/atr_bpn_iup.csv",
         "refresh_cadence": "ad-hoc",
         "status": "planned",
+        "notes": "Stub tertutup — butuh akses Kanwil",
     },
     {
         "sumber_id": "pemprov_riau",
@@ -105,9 +108,10 @@ META_SUMBER = [
         "tipe_data": "tabular",
         "kredibilitas": "tinggi",
         "grain": "1 baris / perusahaan",
-        "path_sot": None,
+        "path_sot": "stubs/pemprov_riau_perusahaan.csv",
         "refresh_cadence": "ad-hoc",
         "status": "planned",
+        "notes": "Stub tertutup — butuh daftar resmi Pemprov",
     },
     {
         "sumber_id": "kepmenhut_36_2025",
@@ -127,9 +131,22 @@ META_SUMBER = [
         "tipe_data": "spasial",
         "kredibilitas": "sedang",
         "grain": "kasus investigasi",
-        "path_sot": None,
+        "path_sot": "stubs/walhi_investigasi.csv",
         "refresh_cadence": "ad-hoc",
         "status": "planned",
+        "notes": "Stub tertutup — investigasi kasus-by-kasus",
+    },
+    {
+        "sumber_id": "objek_enriched",
+        "nama": "Objek Agrinas enriched + geo override",
+        "akses": "tertutup",
+        "tipe_data": "tabular",
+        "kredibilitas": "tinggi",
+        "grain": "1 objek / OBJ-###",
+        "path_sot": "master_list_objek_agrinas_enriched.csv",
+        "refresh_cadence": "berkala",
+        "status": "active",
+        "notes": "SoT preferensi export objek (override MULTI)",
     },
     {
         "sumber_id": "polda_konflik",
@@ -815,6 +832,14 @@ def main() -> int:
     _dump(DATA / "dossier.json", dossier)
     _dump(DATA / "entity_matches.json", {"total": len(entity_ui), "records": entity_ui})
 
+    try:
+        from write_ingest_runs import build_ingest_runs
+
+        ingest_payload = build_ingest_runs(META_SUMBER)
+    except Exception as exc:
+        print(f"WARN: write_ingest_runs: {exc}")
+        ingest_payload = None
+
     # Status histogram
     hist: dict[str, int] = {}
     for m in matches:
@@ -833,6 +858,32 @@ def main() -> int:
         meta["counts"] = counts
         methodology = dict(meta.get("methodology") or {})
         methodology["match_quality"] = match_quality
+        planned = [s for s in META_SUMBER if s.get("status") == "planned"]
+        active = [s for s in META_SUMBER if s.get("status") == "active"]
+        methodology["sumber_catalog"] = {
+            "n_active": len(active),
+            "n_planned": len(planned),
+            "planned_ids": [s.get("sumber_id") for s in planned],
+            "stubs_dir": "stubs/",
+            "note": (
+                "Sumber planned punya path_sot stub di stubs/; "
+                "jangan dihitung sebagai data operasional sampai status=active."
+            ),
+        }
+        if ingest_payload:
+            methodology["ingest_run"] = {
+                "generated_at": ingest_payload.get("generated_at"),
+                "n": ingest_payload.get("total"),
+                "success": sum(
+                    1 for r in ingest_payload.get("records") or [] if r.get("status") == "success"
+                ),
+                "partial": sum(
+                    1 for r in ingest_payload.get("records") or [] if r.get("status") == "partial"
+                ),
+                "failed": sum(
+                    1 for r in ingest_payload.get("records") or [] if r.get("status") == "failed"
+                ),
+            }
         meta["methodology"] = methodology
         _dump(meta_path, meta)
 

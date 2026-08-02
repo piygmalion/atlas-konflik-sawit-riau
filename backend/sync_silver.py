@@ -386,6 +386,35 @@ def sync_integration(client, data_dir: Path) -> dict:
         ]
         stats["mart_dossier_kasus"] = upsert_rows(client, "mart_dossier_kasus", rows, "dossier_id")
 
+    ingest = _load(data_dir, "ingest_run")
+    if ingest:
+        rows = [
+            {
+                "run_id": r["run_id"],
+                "sumber_id": r.get("sumber_id"),
+                "started_at": r.get("started_at"),
+                "finished_at": r.get("finished_at"),
+                "checksum": r.get("checksum"),
+                "row_count": r.get("row_count"),
+                "status": r.get("status") or "partial",
+                "notes": r.get("notes"),
+                "payload": r.get("payload") or {},
+            }
+            for r in (ingest.get("records") or [])
+            if r.get("run_id") and r.get("sumber_id")
+        ]
+        # insert (bukan upsert): tiap materialize = run baru
+        n = 0
+        for i in range(0, len(rows), 200):
+            chunk = rows[i : i + 200]
+            try:
+                client.table("ingest_run").upsert(chunk, on_conflict="run_id").execute()
+            except APIError as exc:
+                _reraise_if_schema_missing(exc)
+                raise
+            n += len(chunk)
+        stats["ingest_run"] = n
+
     return stats
 
 

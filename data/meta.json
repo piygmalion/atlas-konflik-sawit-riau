@@ -119,6 +119,26 @@
       "target_pct": 75.0,
       "pass": true,
       "note": "Metrik C7 = confirmed∧geo_ok / serving matches (not_found atlas_full tetap di silver/bridge, tidak dihitung di denominator UI)."
+    },
+    "sumber_catalog": {
+      "n_active": 7,
+      "n_planned": 5,
+      "planned_ids": [
+        "disbun_riau",
+        "fwi_hutan",
+        "atr_bpn",
+        "pemprov_riau",
+        "walhi_investigasi"
+      ],
+      "stubs_dir": "stubs/",
+      "note": "Sumber planned punya path_sot stub di stubs/; jangan dihitung sebagai data operasional sampai status=active."
+    },
+    "ingest_run": {
+      "generated_at": "2026-08-02T10:38:52+07:00",
+      "n": 12,
+      "success": 7,
+      "partial": 5,
+      "failed": 0
     }
   },
   "sumber": [

@@ -105,7 +105,7 @@ Workflow `.github/workflows/sync-supabase.yml`:
 
 Frontend boot memuat `dossier` + `entity_matches`; `desa_lock` / `izin_2017` / `rantai_agrinas` / `perusahaan_alias` di-lazy-load saat Analisis.
 
-`ingest_run` (migration `004`) = log eksekusi per `meta_sumber`. Belum diisi oleh skrip lokal; lihat kontrak di `data/SCHEMA.md` (Integrasi → ingest_run).
+`ingest_run` (migration `004`) = log eksekusi per `meta_sumber`. Diisi lokal oleh `scripts/write_ingest_runs.py` (dipanggil dari `build_entity_matches.py`) → `data/silver/ingest_run.json`, lalu `python sync_silver.py --integration`. Lihat `data/SCHEMA.md`.
 
 Silver (Fase 2+): `python sync_silver.py` lalu `python sync_silver.py --warehouse` setelah migration `002`/`003`.  
 Integrasi (Matching Engine): `python sync_silver.py --warehouse --integration` setelah migration `004`.

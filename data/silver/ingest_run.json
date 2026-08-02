@@ -1,0 +1,198 @@
+{
+  "generated_at": "2026-08-02T10:38:52+07:00",
+  "total": 12,
+  "records": [
+    {
+      "run_id": "1b6f805a-7559-4d54-b31e-67f699798013",
+      "sumber_id": "bps_2021",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "d98fe8696137",
+      "row_count": 237,
+      "status": "success",
+      "notes": "SoT OK (daftar_perusahaan_sawit_riau_gabungan.csv)",
+      "payload": {
+        "path_sot": "daftar_perusahaan_sawit_riau_gabungan.csv",
+        "sumber_status": "active",
+        "is_stub": false,
+        "akses": "terbuka"
+      }
+    },
+    {
+      "run_id": "7fd71381-4102-4470-84c4-3e51a7c9e265",
+      "sumber_id": "disbun_riau",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "d5435a809718",
+      "row_count": 0,
+      "status": "partial",
+      "notes": "Stub placeholder — menunggu SoT sungguhan (stubs/disbun_riau_agregat.csv)",
+      "payload": {
+        "path_sot": "stubs/disbun_riau_agregat.csv",
+        "sumber_status": "planned",
+        "is_stub": true,
+        "akses": "terbuka"
+      }
+    },
+    {
+      "run_id": "a43cded7-c883-4044-b09e-98508a32b172",
+      "sumber_id": "gfw_greenpeace",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "7a43d2694420",
+      "row_count": 287,
+      "status": "success",
+      "notes": "SoT OK (tabulasi_konsesi_sawit_gfw_bbox_riau.csv)",
+      "payload": {
+        "path_sot": "tabulasi_konsesi_sawit_gfw_bbox_riau.csv",
+        "sumber_status": "active",
+        "is_stub": false,
+        "akses": "terbuka"
+      }
+    },
+    {
+      "run_id": "babfed67-7e54-4e15-ba10-71a2be422f1d",
+      "sumber_id": "nusantara_atlas",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "07f71211e8bf",
+      "row_count": 436,
+      "status": "success",
+      "notes": "SoT OK (tabulasi_konsesi_sawit_nusantara_atlas_riau.csv)",
+      "payload": {
+        "path_sot": "tabulasi_konsesi_sawit_nusantara_atlas_riau.csv",
+        "sumber_status": "active",
+        "is_stub": false,
+        "akses": "terbuka"
+      }
+    },
+    {
+      "run_id": "b7153017-29a2-43b3-af5a-4c095fd78614",
+      "sumber_id": "fwi_hutan",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "2458e294f137",
+      "row_count": 0,
+      "status": "partial",
+      "notes": "Stub placeholder — menunggu SoT sungguhan (stubs/fwi_hutan_layer.csv)",
+      "payload": {
+        "path_sot": "stubs/fwi_hutan_layer.csv",
+        "sumber_status": "planned",
+        "is_stub": true,
+        "akses": "terbuka"
+      }
+    },
+    {
+      "run_id": "e979a236-81e2-401f-a385-7c9879866c8c",
+      "sumber_id": "atr_bpn",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "ed36d6ffa4d4",
+      "row_count": 0,
+      "status": "partial",
+      "notes": "Stub placeholder — menunggu SoT sungguhan (stubs/atr_bpn_iup.csv)",
+      "payload": {
+        "path_sot": "stubs/atr_bpn_iup.csv",
+        "sumber_status": "planned",
+        "is_stub": true,
+        "akses": "tertutup"
+      }
+    },
+    {
+      "run_id": "f3c792cf-d2b7-4725-89d5-ebd731ed23b8",
+      "sumber_id": "pemprov_riau",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "c5202e9137a3",
+      "row_count": 0,
+      "status": "partial",
+      "notes": "Stub placeholder — menunggu SoT sungguhan (stubs/pemprov_riau_perusahaan.csv)",
+      "payload": {
+        "path_sot": "stubs/pemprov_riau_perusahaan.csv",
+        "sumber_status": "planned",
+        "is_stub": true,
+        "akses": "tertutup"
+      }
+    },
+    {
+      "run_id": "d6ebf9be-330b-427c-a23a-f35f3f02f220",
+      "sumber_id": "kepmenhut_36_2025",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "b49634dcd630",
+      "row_count": 82,
+      "status": "success",
+      "notes": "SoT OK (tabulasi_konsesi_sawit_kepmenhut_36_2025_riau_rapi.csv)",
+      "payload": {
+        "path_sot": "tabulasi_konsesi_sawit_kepmenhut_36_2025_riau_rapi.csv",
+        "sumber_status": "active",
+        "is_stub": false,
+        "akses": "tertutup"
+      }
+    },
+    {
+      "run_id": "c0ffefdb-a13c-406e-a3f2-b8882a6066db",
+      "sumber_id": "walhi_investigasi",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "791e0fe054b6",
+      "row_count": 0,
+      "status": "partial",
+      "notes": "Stub placeholder — menunggu SoT sungguhan (stubs/walhi_investigasi.csv)",
+      "payload": {
+        "path_sot": "stubs/walhi_investigasi.csv",
+        "sumber_status": "planned",
+        "is_stub": true,
+        "akses": "tertutup"
+      }
+    },
+    {
+      "run_id": "e2d90fee-4751-498a-b541-0e37f7a82ccb",
+      "sumber_id": "objek_enriched",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "e81fd105d740",
+      "row_count": 139,
+      "status": "success",
+      "notes": "SoT OK (master_list_objek_agrinas_enriched.csv)",
+      "payload": {
+        "path_sot": "master_list_objek_agrinas_enriched.csv",
+        "sumber_status": "active",
+        "is_stub": false,
+        "akses": "tertutup"
+      }
+    },
+    {
+      "run_id": "ca53fa62-7776-4d06-b667-08c00293a616",
+      "sumber_id": "polda_konflik",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "59efa5cf61a1",
+      "row_count": 270,
+      "status": "success",
+      "notes": "SoT OK (master_kasus_sawit_riau_gold.csv)",
+      "payload": {
+        "path_sot": "master_kasus_sawit_riau_gold.csv",
+        "sumber_status": "active",
+        "is_stub": false,
+        "akses": "tertutup"
+      }
+    },
+    {
+      "run_id": "402fab0c-f93b-435b-a15b-3c0b468f7192",
+      "sumber_id": "agrinas_satgas",
+      "started_at": "2026-08-02T10:38:52+07:00",
+      "finished_at": "2026-08-02T10:38:52+07:00",
+      "checksum": "8d04affcc3ff",
+      "row_count": 139,
+      "status": "success",
+      "notes": "SoT OK (master_list_objek_agrinas_satgas_riau.csv)",
+      "payload": {
+        "path_sot": "master_list_objek_agrinas_satgas_riau.csv",
+        "sumber_status": "active",
+        "is_stub": false,
+        "akses": "tertutup"
+      }
+    }
+  ]
+}

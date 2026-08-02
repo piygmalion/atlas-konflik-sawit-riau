@@ -1,5 +1,5 @@
 {
-  "total": 11,
+  "total": 12,
   "records": [
     {
       "sumber_id": "bps_2021",
@@ -19,9 +19,10 @@
       "tipe_data": "tabular",
       "kredibilitas": "sedang",
       "grain": "agregat kab/prov",
-      "path_sot": null,
+      "path_sot": "stubs/disbun_riau_agregat.csv",
       "refresh_cadence": "tahunan",
-      "status": "planned"
+      "status": "planned",
+      "notes": "Stub terbuka — ganti isi saat statistik Disbun tersedia"
     },
     {
       "sumber_id": "gfw_greenpeace",
@@ -52,9 +53,10 @@
       "tipe_data": "spasial",
       "kredibilitas": "sedang",
       "grain": "layer tutupan",
-      "path_sot": null,
+      "path_sot": "stubs/fwi_hutan_layer.csv",
       "refresh_cadence": "periodik",
-      "status": "planned"
+      "status": "planned",
+      "notes": "Stub terbuka — path layer/geopackage menyusul"
     },
     {
       "sumber_id": "atr_bpn",
@@ -63,9 +65,10 @@
       "tipe_data": "tabular",
       "kredibilitas": "tinggi",
       "grain": "1 baris / IUP",
-      "path_sot": null,
+      "path_sot": "stubs/atr_bpn_iup.csv",
       "refresh_cadence": "ad-hoc",
-      "status": "planned"
+      "status": "planned",
+      "notes": "Stub tertutup — butuh akses Kanwil"
     },
     {
       "sumber_id": "pemprov_riau",
@@ -74,9 +77,10 @@
       "tipe_data": "tabular",
       "kredibilitas": "tinggi",
       "grain": "1 baris / perusahaan",
-      "path_sot": null,
+      "path_sot": "stubs/pemprov_riau_perusahaan.csv",
       "refresh_cadence": "ad-hoc",
-      "status": "planned"
+      "status": "planned",
+      "notes": "Stub tertutup — butuh daftar resmi Pemprov"
     },
     {
       "sumber_id": "kepmenhut_36_2025",
@@ -96,9 +100,22 @@
       "tipe_data": "spasial",
       "kredibilitas": "sedang",
       "grain": "kasus investigasi",
-      "path_sot": null,
+      "path_sot": "stubs/walhi_investigasi.csv",
       "refresh_cadence": "ad-hoc",
-      "status": "planned"
+      "status": "planned",
+      "notes": "Stub tertutup — investigasi kasus-by-kasus"
+    },
+    {
+      "sumber_id": "objek_enriched",
+      "nama": "Objek Agrinas enriched + geo override",
+      "akses": "tertutup",
+      "tipe_data": "tabular",
+      "kredibilitas": "tinggi",
+      "grain": "1 objek / OBJ-###",
+      "path_sot": "master_list_objek_agrinas_enriched.csv",
+      "refresh_cadence": "berkala",
+      "status": "active",
+      "notes": "SoT preferensi export objek (override MULTI)"
     },
     {
       "sumber_id": "polda_konflik",

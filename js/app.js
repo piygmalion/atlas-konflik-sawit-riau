@@ -646,16 +646,22 @@ function renderStats() {
     mq && mq.rate_serving != null
       ? ` Match quality serving ${mq.rate_serving}% confirmed∧geo_ok (target ≥${mq.target_pct ?? 75}%).`
       : "";
+  const sc = DATA.meta?.methodology?.sumber_catalog;
+  const scShort =
+    sc && sc.n_planned != null
+      ? ` Sumber planned ${sc.n_planned} (stub di stubs/).`
+      : "";
   const disc =
     DATA.meta?.methodology?.disclaimer ||
     DATA.polres?.model?.catatan ||
     short;
   const summary = document.getElementById("methodNoteSummary");
   const methodEl = document.getElementById("methodNote");
-  if (summary) summary.textContent = short + biasShort + mqShort;
+  if (summary) summary.textContent = short + biasShort + mqShort + scShort;
   if (methodEl) {
     const mqNote = mq?.note ? ` ${mq.note}` : "";
-    methodEl.textContent = disc + mqNote;
+    const scNote = sc?.note ? ` ${sc.note}` : "";
+    methodEl.textContent = disc + mqNote + scNote;
   }
 
   // Seed kepmen heading before Analisis tab mounts charts

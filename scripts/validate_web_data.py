@@ -118,9 +118,28 @@ def main() -> int:
         meta_sumber = SITE / "silver" / "meta_sumber.json"
         if meta_sumber.exists():
             ms = json.loads(meta_sumber.read_text(encoding="utf-8"))
-            n_ms = len(ms.get("records") or [])
+            ms_recs = ms.get("records") or []
+            n_ms = len(ms_recs)
             if n_ms < 11:
                 errors.append(f"meta_sumber: expected ≥11 sumber blueprint, got {n_ms}")
+            planned_null = [
+                r.get("sumber_id")
+                for r in ms_recs
+                if r.get("status") == "planned" and not (r.get("path_sot") or "").strip()
+            ]
+            if planned_null:
+                errors.append(
+                    "meta_sumber planned tanpa path_sot: " + ", ".join(planned_null)
+                )
+            ingest_path = SITE / "silver" / "ingest_run.json"
+            if not ingest_path.exists():
+                warnings.append("silver/ingest_run.json missing (jalankan build_entity_matches)")
+            else:
+                ing = json.loads(ingest_path.read_text(encoding="utf-8"))
+                if len(ing.get("records") or []) < n_ms:
+                    warnings.append(
+                        f"ingest_run rows={len(ing.get('records') or [])} < meta_sumber={n_ms}"
+                    )
 
     # Atlas uid from root CSV if present (optional hard check via konsesi kepmenhut names)
     kons_path = SITE / "konsesi.json"
