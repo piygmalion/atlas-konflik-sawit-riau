@@ -1,6 +1,6 @@
 {
   "total": 436,
-  "generated_at": "2026-07-30T19:20:00.567039+00:00",
+  "generated_at": "2026-08-02T02:45:43.060974+00:00",
   "grain": "1 baris / konsesi Atlas (protokol OSINT langkah 7)",
   "fields": [
     "nama",
@@ -46,12 +46,12 @@
       "tautan_atlas": "dcc87c22-743b-4613-95c8-a930f7ae9a6f",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 51640.58,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-151df8e8-5f4f-475b-bbcd-09511133385b",
@@ -293,12 +293,12 @@
       "tautan_atlas": "08abf335-f134-4637-92a5-8cf62d6b5b53",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 20370.75,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-ed710349-8eeb-4d7b-b742-c7963178c4c0",
@@ -331,12 +331,12 @@
       "tautan_atlas": "98b70ac0-c5a1-40be-86a7-cabb55135d43",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 19131.44,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-b1f9ee4f-e9a0-4a26-a050-6ed5e3b8ca35",
@@ -445,12 +445,12 @@
       "tautan_atlas": "6e4e8f7e-05ac-4506-9c2d-504948f5f5f5",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 17174.14,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-5a5a932f-1fe8-4ff2-9595-3e7d5657c3f7",
@@ -559,12 +559,12 @@
       "tautan_atlas": "f41ef0e8-1fec-43bd-951b-47fc50f1f83f",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 14857.9,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-454a4411-cb6b-4476-b9a2-511ea5e9a6d9",
@@ -1167,12 +1167,12 @@
       "tautan_atlas": "ed21141b-cd27-41c9-b4cf-f373b6687b84",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 9687.67,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-4221eb3f-1c7a-4fec-8276-a1a1ad76429e",
@@ -1186,12 +1186,12 @@
       "tautan_atlas": "4221eb3f-1c7a-4fec-8276-a1a1ad76429e",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 9629.57,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-f6c80340-56cb-4dfe-8020-80ffc7971036",
@@ -1319,12 +1319,12 @@
       "tautan_atlas": "98c3c75b-d930-4fbf-b806-44c30c6dd7dc",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 9259.21,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-c057f765-83eb-4aa8-b859-4ec589481f77",
@@ -1775,12 +1775,12 @@
       "tautan_atlas": "de3554b1-468a-486e-9f8b-07743ba2e1a8",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 7803.66,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-121245ca-2d0f-48a7-a1d8-af1dca81d918",
@@ -2117,12 +2117,12 @@
       "tautan_atlas": "69888577-732d-48df-a8f6-5846667edc9a",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 6917.38,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-579fdc85-8356-4a73-b9e0-9dacd470313e",
@@ -2516,12 +2516,12 @@
       "tautan_atlas": "d3b30af8-4dce-48ec-ac19-3ffecefd5327",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 6176.7,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-ba88f917-20a3-4399-a029-d17738c0b046",
@@ -3238,12 +3238,12 @@
       "tautan_atlas": "82af7368-d43a-460a-8632-31afadada0f4",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 4858.07,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-d576273e-63e8-44b8-bdab-f8e60b0e4906",
@@ -3314,12 +3314,12 @@
       "tautan_atlas": "23a1d0dc-ee75-42d1-a1f2-0220052c3cdf",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 4789.47,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-7c60a731-0234-46df-84b2-dabc8bcffe64",
@@ -3428,12 +3428,12 @@
       "tautan_atlas": "afc96e83-9a0f-4a53-a832-84abf159e0fc",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 4625.14,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-58b3b78c-1f57-4d0e-af8c-29e6bec2c897",
@@ -3637,12 +3637,12 @@
       "tautan_atlas": "74bc4c46-eac7-4328-9287-7a8c31544568",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 4191.24,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-b3b0bbc0-a191-4179-b81c-ecb281ed2ddc",
@@ -3998,12 +3998,12 @@
       "tautan_atlas": "87f059ca-3c75-431d-a2d0-df31c5cebf73",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 3673.1,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-ae59de75-1f6e-4fb2-acdf-d9d0c0341a6f",
@@ -4207,12 +4207,12 @@
       "tautan_atlas": "c3ddd662-05f5-4379-90c7-42a5853035d9",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 3250.69,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-b54e6980-c3b9-4c2e-9c9d-00cc2e094e6f",
@@ -4302,12 +4302,12 @@
       "tautan_atlas": "3ea7c4d2-ae6e-405c-a000-b7686ca1af1a",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 3179.85,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-8a42c462-47eb-4cf4-8535-be67801abfa6",
@@ -4473,12 +4473,12 @@
       "tautan_atlas": "14830fad-eb8f-481e-a38c-c7cc47768c21",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 2824.47,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-a158655b-de97-48be-9ad2-623d3cc63c15",
@@ -4545,16 +4545,16 @@
       "luas_loss_ha": 250.62878356932055,
       "gambut_ha": null,
       "legal_status": "sk36:dimohon",
-      "konflik": null,
+      "konflik": "SW-EXT-075",
       "tautan_atlas": "dc01363f-78bc-4198-8da1-22fe0e8d9aed",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "tinggi",
       "human_verified": false,
       "luas_ha": 2693.02,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-b956661a-082d-4679-97db-1fb90bd9164d",
@@ -4644,12 +4644,12 @@
       "tautan_atlas": "ef66f25b-0c90-40b7-9e1c-b5635ea5d985",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 2579.9,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-db29b65f-895d-411b-a56e-2ff5abba2045",
@@ -4834,12 +4834,12 @@
       "tautan_atlas": "7d392f49-388d-4ad2-a67f-90e2b7bf46f9",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 2438.59,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-863582f1-79bc-41f9-af32-13734ddc498f",
@@ -4853,12 +4853,12 @@
       "tautan_atlas": "863582f1-79bc-41f9-af32-13734ddc498f",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 2402.25,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-175726c1-e219-426e-8d0b-565abf309c11",
@@ -5024,12 +5024,12 @@
       "tautan_atlas": "41a8dd6b-3774-4a22-881a-397410258685",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 2170.87,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-64e3674f-bf3e-450d-a4b2-03b08ed34f79",
@@ -5442,12 +5442,12 @@
       "tautan_atlas": "6bff12ab-d011-40a8-9137-3d7a67b63bba",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 1776.86,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-730d65d2-6a50-405b-8bdc-f6c46f211a69",
@@ -5727,12 +5727,12 @@
       "tautan_atlas": "f8f37698-89a6-41b6-aaba-535ed01cd9e2",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 1461.19,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-54d2e1dd-900d-4e6b-b9a7-847a9ec6203d",
@@ -5784,12 +5784,12 @@
       "tautan_atlas": "4ae15719-d7bc-4938-a93c-04b56cfc64d5",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 1445.73,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-d78faf9a-c746-472d-bd4d-ab9ccb48091d",
@@ -6069,12 +6069,12 @@
       "tautan_atlas": "4793c44c-4c6a-43f8-b0c2-3ed68efc6d44",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 1150.72,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-b85a5600-aa37-4008-9e86-633becda1187",
@@ -6183,12 +6183,12 @@
       "tautan_atlas": "d61e63a5-fbab-44d7-a4c7-8b8a816a8f52",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 1057.12,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-7f15cdc0-9055-4602-84d1-d7af0085bd72",
@@ -6221,12 +6221,12 @@
       "tautan_atlas": "37d32ed8-4b73-427c-8dd6-42ff5da0db2d",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 1010.56,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-e7a101b5-e923-4794-b9fc-9a625e75490c",
@@ -6259,12 +6259,12 @@
       "tautan_atlas": "ef86677f-5e56-465c-9e20-89570811d00e",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 1001.92,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-e583f0de-8c0c-4975-92af-3c331863ffdc",
@@ -6278,12 +6278,12 @@
       "tautan_atlas": "e583f0de-8c0c-4975-92af-3c331863ffdc",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 981.35,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-3dfd0fd9-5bf5-4f6f-8149-fadb32138b5e",
@@ -6354,12 +6354,12 @@
       "tautan_atlas": "b0c2b248-cae1-4693-a0fc-d3fbfce7e6b4",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 962.79,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-a4e46949-7569-405c-afca-800dbe1219df",
@@ -6373,12 +6373,12 @@
       "tautan_atlas": "a4e46949-7569-405c-afca-800dbe1219df",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 949.25,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-0acdc11c-544c-49b4-834a-2a298c7c9585",
@@ -6430,12 +6430,12 @@
       "tautan_atlas": "e2c4dea8-cccc-47cb-92db-8db57c113460",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 867.11,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-7c0a7ac5-fcb2-4105-8f38-2f54207a66c1",
@@ -6487,12 +6487,12 @@
       "tautan_atlas": "422dce9b-562a-4a6d-b2de-0d344eb5b9ab",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 846.81,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-23c5767a-05fc-43eb-8875-6864b5957002",
@@ -6601,12 +6601,12 @@
       "tautan_atlas": "fdc820d4-398f-4750-bc8a-c62907a8793b",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 701.78,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-26902791-eea4-4728-b8ab-2f7a7329f210",
@@ -6639,12 +6639,12 @@
       "tautan_atlas": "0d9ebb11-99fb-48cc-b652-1424d428808f",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 696.45,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-668c7df6-8123-4787-b756-b6de0d2aedb3",
@@ -7057,12 +7057,12 @@
       "tautan_atlas": "3a006022-f082-4325-b2ff-bc469fb9f3e3",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 338.11,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-5c1a8eec-33a3-454e-b74b-390e54ba0932",
@@ -7114,12 +7114,12 @@
       "tautan_atlas": "d7a9834d-747d-43d2-a7ed-6b9994d582c3",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 315.89,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-c30fb5fd-08ef-4021-886c-97945bce2452",
@@ -7171,12 +7171,12 @@
       "tautan_atlas": "70e8d80f-9196-4d6f-8489-ec930718c67d",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 292.0,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-4d52da40-4675-442b-ae6b-4c8195dfcc2b",
@@ -7266,12 +7266,12 @@
       "tautan_atlas": "e06710ac-b35a-42a2-ad1c-f85858bc9ad3",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 226.09,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-429e13c5-13fb-4b38-9d2c-6e59e15e15bc",
@@ -7304,12 +7304,12 @@
       "tautan_atlas": "95ee55b1-7b7d-423e-ad71-15512e7e9347",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 201.06,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-b55b4489-81bd-43b7-9004-9bf8fdcc589f",
@@ -7323,12 +7323,12 @@
       "tautan_atlas": "b55b4489-81bd-43b7-9004-9bf8fdcc589f",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 200.1,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-3fdf53d1-b871-4c98-a58f-ccf9ae58e6b6",
@@ -7513,12 +7513,12 @@
       "tautan_atlas": "14a8f383-f34a-49e5-8932-b9eab9884385",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 161.27,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-1e1df88f-67a7-472d-838c-3193650e25f5",
@@ -7570,12 +7570,12 @@
       "tautan_atlas": "5e23b927-21f6-423b-99a1-6dc73ed90e27",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 149.88,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-2d001ceb-a477-4cc6-bbc9-0a1748817421",
@@ -7741,12 +7741,12 @@
       "tautan_atlas": "069fd580-f1f4-4728-9abb-9caf3a3f4126",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 104.03,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-9254d74b-6574-4e8a-89ad-e2a19b30d8c0",
@@ -7798,12 +7798,12 @@
       "tautan_atlas": "3b734479-b0a6-40ac-a5fb-16dbcf7c4a77",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 100.97,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-461b43ad-c720-49b2-9a09-a0d11097dfb8",
@@ -7988,12 +7988,12 @@
       "tautan_atlas": "42249562-156b-4208-8828-bd5a93373208",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 47.64,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-3f209718-d3de-41f6-afa1-323795581dc5",
@@ -8026,12 +8026,12 @@
       "tautan_atlas": "4c386099-8c7e-4a34-b5f5-c9c3188f5690",
       "gfwid": null,
       "status_match": "gabungan_only",
-      "risiko": "sedang",
+      "risiko": "rendah",
       "human_verified": false,
       "luas_ha": 44.48,
       "area_gfw_ha": null,
-      "match_status": "warning",
-      "geo_ok": null
+      "match_status": "confirmed",
+      "geo_ok": true
     },
     {
       "dossier_id": "DOS-a4bb0772-6a97-4288-ba4a-52c816ea4d7e",

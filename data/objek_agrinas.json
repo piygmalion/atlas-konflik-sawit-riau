@@ -25,7 +25,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda)",
-      "fase2_gap": "Kejagung / Antara / Detik — Duta Palma tipikor | Klaster 7 korporasi + holding",
+      "fase2_gap": null,
       "mitra_eval": null
     },
     {
@@ -52,7 +52,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda)",
-      "fase2_gap": "Katadata / Sawit Indonesia — serah 221.868 ha | Tahap I; breakdown Riau 43.824 ha",
+      "fase2_gap": null,
       "mitra_eval": null
     },
     {
@@ -79,7 +79,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda)",
-      "fase2_gap": "Tabloid Tirai — evaluasi 20 mitra KSO Mei 2026 | Daftar mitra Regional-3",
+      "fase2_gap": null,
       "mitra_eval": null
     },
     {
@@ -106,7 +106,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Ya",
       "sumber": "ANTARA — Dirut Agrinas: Riau ~729 ribu ha; sumber lahan Duta Palma/Torganda/Satgas; FokusRiau 18 Jun 2026 — struktur CRO Agrinas Riau (eks Duta Palma / PKH / Torganda); agrinaspalma.co.id",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · BUMN_pengelola · Pengelola hasil penguasaan Satgas via Kemenkeu–Danantara",
       "mitra_eval": null
     },
     {
@@ -133,7 +133,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Eks_pemegang_serah · Objek penyerahan Tahap I ke Agrinas",
       "mitra_eval": null
     },
     {
@@ -187,7 +187,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Eks_pemegang_serah · Klaster Duta Palma; terdakwa tipikor+TPPU",
       "mitra_eval": null
     },
     {
@@ -214,7 +214,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Indikasi · Terdampak_PKH · Disebut dalam gelombang awal Satgas / afiliasi Duta Palma (indikasi)",
       "mitra_eval": null
     },
     {
@@ -241,7 +241,7 @@
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
       "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Eks_pemegang_serah · Diambil alih Satgas; dikelola Agrinas; sengketa plasma/ulayat",
       "mitra_eval": null
     },
     {
@@ -322,7 +322,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Eks_pemegang_serah · Klaster Duta Palma; terdakwa tipikor+TPPU",
       "mitra_eval": null
     },
     {
@@ -376,7 +376,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Eks_pemegang_serah · Anak usaha Duta Palma; terdakwa tipikor+TPPU",
       "mitra_eval": null
     },
     {
@@ -403,7 +403,7 @@
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Eks_pemegang_serah · Klaster Duta Palma; terdakwa tipikor+TPPU",
       "mitra_eval": null
     },
     {
@@ -430,7 +430,7 @@
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media); Tabulasi penertiban workspace — 27 PT gelombang 1 Satgas PKH (Feb–Mar 2025) || WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Eks_pemegang_serah · Klaster Duta Palma; terdakwa tipikor+TPPU",
       "mitra_eval": null
     },
     {
@@ -457,7 +457,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Eks_pemegang_serah · Lahan sitaan dikelola Agrinas; sengketa 2026",
       "mitra_eval": null
     },
     {
@@ -484,7 +484,7 @@
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
       "sumber": "Laporan OSINT Agrinas Kapolda + liputan terbuka (Pulitzer/Jaring/Independen/media)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Eks_pemegang_serah · Diambil alih; dikelola Agrinas / mitra KSO; bentrok Mar 2026",
       "mitra_eval": null
     },
     {
@@ -511,7 +511,7 @@
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
       "sumber": "Inventaris konflik Polda / normalisasi workspace",
-      "fase2_gap": null,
+      "fase2_gap": "Indikasi workspace · Terdampak_PKH · Entri workspace terkait klaster Torganda",
       "mitra_eval": null
     },
     {
@@ -754,7 +754,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "TabloidTirai — undangan evaluasi mitra KSO 20–22 Mei 2026 (001/3CRO/APN/V/2026)",
-      "fase2_gap": null,
+      "fase2_gap": "Indikasi · Mitra_KSO · Pasangan evaluasi KSO dengan NSM",
       "mitra_eval": "Terkonfirmasi terbuka"
     },
     {
@@ -1699,7 +1699,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Mitra_KSO · Mitra KSO Agrinas; evaluasi Mei 2026 bersama CV Sianipar Putra Mandiri",
       "mitra_eval": null
     },
     {
@@ -2185,7 +2185,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Indikasi · Mitra_KSO · Diganti/dievaluasi; Koptan dilanjutkan",
       "mitra_eval": "Terkonfirmasi terbuka (amandemen KSO)"
     },
     {
@@ -2374,7 +2374,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Indikasi · Mitra_KSO · Evaluasi KSO Mei 2026 bersama Poktan Parit Nan Tinggi",
       "mitra_eval": "Terkonfirmasi terbuka (kasus Cibaliung)"
     },
     {
@@ -2779,7 +2779,7 @@
       "ada_di_bps": "Tidak",
       "ada_di_konflik_polda": "Tidak",
       "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": "Kejagung / Antara / Detik — Duta Palma tipikor | Klaster 7 korporasi + holding",
+      "fase2_gap": null,
       "mitra_eval": null
     },
     {
@@ -2914,7 +2914,7 @@
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
       "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Terkonfirmasi terbuka · Eks_lahan_KSO · Plang Satgas Mar 2025 → Agrinas → KSO Poktan Parit Nan Tinggi",
       "mitra_eval": null
     },
     {
@@ -2968,7 +2968,7 @@
       "ada_di_bps": "Ya",
       "ada_di_konflik_polda": "Ya",
       "sumber": "WartarakyatOnline — daftar 38 mitra amandemen KSO Des 2025 (surat 053/P.KSO/APN/XII/2025)",
-      "fase2_gap": null,
+      "fase2_gap": "Indikasi workspace · Terdampak_PKH · Konflik Sakai–SIS / KSO Agrinas (indikasi workspace)",
       "mitra_eval": null
     },
     {

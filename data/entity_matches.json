@@ -1,5 +1,5 @@
 {
-  "total": 450,
+  "total": 308,
   "records": [
     {
       "match_id": "bem-f8127fd2f35cf992",
@@ -2270,25 +2270,6 @@
       }
     },
     {
-      "match_id": "bem-55389064a8528283",
-      "left_source": "atlas",
-      "left_id": "UNISERAYA__nogfw",
-      "right_source": "none",
-      "right_id": "nogfw:UNISERAYA",
-      "status": "rejected",
-      "match_type": "atlas_gfw",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Uniseraya",
-        "gfwid": null,
-        "in_gabungan": false,
-        "source_status": "cocok_gabungan_dan_gfw_match",
-        "source": "atlas_match"
-      }
-    },
-    {
       "match_id": "bem-4644bc8789c2bc42",
       "left_source": "atlas",
       "left_id": "UNISERAYA__78d9fab4-06c7-49c3-8116-2ff259d5f3cd__PANTAIRAJA__1",
@@ -2593,25 +2574,6 @@
       }
     },
     {
-      "match_id": "bem-4e8e52e09eaddff4",
-      "left_source": "atlas",
-      "left_id": "KARYATAMABAKTIMULYA__nogfw",
-      "right_source": "none",
-      "right_id": "nogfw:KARYATAMABAKTIMULYA",
-      "status": "rejected",
-      "match_type": "atlas_gfw",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Karya Tama Bakti Mulya",
-        "gfwid": null,
-        "in_gabungan": false,
-        "source_status": "cocok_gabungan_dan_gfw_match",
-        "source": "atlas_match"
-      }
-    },
-    {
       "match_id": "bem-31b203d8890793e7",
       "left_source": "atlas",
       "left_id": "KARYATAMABAKTIMULYA__40e69dec-e864-4a8e-8b88-d4f88d750cb2__KARYATAMABAKTIMULIA__18",
@@ -2748,31 +2710,16 @@
       "left_id": "dcc87c22-743b-4613-95c8-a930f7ae9a6f",
       "right_source": "bps",
       "right_id": "PER-THINDOPLANTATIONS-44c4b0b8",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Th Indo Plantations",
         "kabupaten": "Indragiri Hilir",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-400954a56a79ef72",
-      "left_source": "atlas",
-      "left_id": "151df8e8-5f4f-475b-bbcd-09511133385b",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perkebunan Nusantara V (Tandun)",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -2790,22 +2737,6 @@
         "atlas_nama": "Musim Mas",
         "kabupaten": "Pelalawan",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-6ae47a7139b98a4b",
-      "left_source": "atlas",
-      "left_id": "b5edc628-6434-4409-885e-9f5341f68869",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perkebunan II (Sei Buatan)",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -2945,52 +2876,21 @@
       }
     },
     {
-      "match_id": "bem-8b2f819768de09ed",
-      "left_source": "atlas",
-      "left_id": "4c1c4cb8-c277-4394-896e-58d2cfc01be0",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perkebunan Nusantara V (S Rokan Kiri)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-a1e40367cd26c5c6",
       "left_source": "atlas",
       "left_id": "08abf335-f134-4637-92a5-8cf62d6b5b53",
       "right_source": "bps",
       "right_id": "PER-SETIAAGRINDOLESTARI-f4c58e4b",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Setia Agrindo Lestari",
         "kabupaten": "Indragiri Hilir",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-2cc24761e978bffd",
-      "left_source": "atlas",
-      "left_id": "ed710349-8eeb-4d7b-b742-c7963178c4c0",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Kereta Kuda Kencana",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -2999,15 +2899,16 @@
       "left_id": "98b70ac0-c5a1-40be-86a7-cabb55135d43",
       "right_source": "bps",
       "right_id": "PER-NUSANTARAVSEIGARO-69618ad0",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Perkebunan Nusantara V Sei Garo",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3062,22 +2963,6 @@
       }
     },
     {
-      "match_id": "bem-6f4cb7d9bb2a73d6",
-      "left_source": "atlas",
-      "left_id": "4ebbdd81-18a5-43a0-b62b-2fc322dac1c5",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Bumi Orion Sawit",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-cc1c16c1c9a18a84",
       "left_source": "atlas",
       "left_id": "ab539313-e630-4e27-8481-bd0d1844224f",
@@ -3100,31 +2985,16 @@
       "left_id": "6e4e8f7e-05ac-4506-9c2d-504948f5f5f5",
       "right_source": "bps",
       "right_id": "PER-WANASARINUSANTARA-5b4b03a3",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Wanasari Nusantara",
         "kabupaten": "Kuantan Singingi",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-8e9a4f53441b09d4",
-      "left_source": "atlas",
-      "left_id": "5a5a932f-1fe8-4ff2-9595-3e7d5657c3f7",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tridaya Mandiri Utama",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3201,31 +3071,16 @@
       "left_id": "f41ef0e8-1fec-43bd-951b-47fc50f1f83f",
       "right_source": "bps",
       "right_id": "PER-NUSANTARAVSEITAPUNG-f53b064b",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Perkebunan Nusantara V (Sei Tapung)",
         "kabupaten": "Rokan Hulu",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-3b3adb24de916c3d",
-      "left_source": "atlas",
-      "left_id": "454a4411-cb6b-4476-b9a2-511ea5e9a6d9",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Adei Plantation and Industry",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3331,38 +3186,6 @@
       }
     },
     {
-      "match_id": "bem-3c4d128f6478e965",
-      "left_source": "atlas",
-      "left_id": "13ed25eb-965c-4ea9-bb0d-fc02aeb8a378",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Hijau Lingkungan Sawit Indah",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-f01142f38e2939d3",
-      "left_source": "atlas",
-      "left_id": "c1e6ff67-b274-4016-9d35-f4aa451b7567",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Buana Wiralestari Mas",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-e2f96b1d0f822646",
       "left_source": "atlas",
       "left_id": "be9d4de8-37c2-4bed-81af-59c463b15109",
@@ -3377,70 +3200,6 @@
         "atlas_nama": "Peputra Supra Jaya",
         "kabupaten": "Pelalawan",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-01778e20d566d7ae",
-      "left_source": "atlas",
-      "left_id": "fc1b9f08-de2a-4eca-9bd7-15783cfa91a8",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Mandiri Abadi Sejahtera",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-64b20490dd175f73",
-      "left_source": "atlas",
-      "left_id": "fc58981d-654f-4a4a-9596-aadfbda5ab39",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Th.Indo Plantation",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-5985460cd6ade07e",
-      "left_source": "atlas",
-      "left_id": "5e8c90c5-6c61-4b24-8e94-d086c65775b6",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perkebunan Inti Rakyat (PIR) Khusus (Sei. Siasam - Sei. Pendalian)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-3432022dd11d9bbd",
-      "left_source": "atlas",
-      "left_id": "8c0e5ff5-8820-4a15-9315-26e98b1f55a4",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Salim Ivomas Pratama (Sungai Dua And Balam Estate)",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -3495,22 +3254,6 @@
       }
     },
     {
-      "match_id": "bem-df760744b2c424ab",
-      "left_source": "atlas",
-      "left_id": "363d339b-53e7-4d2f-b3c9-67b6442a7e64",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Ivo Mas Tunggal (I)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-7f38bb01f4f4a80e",
       "left_source": "atlas",
       "left_id": "0aef1e1f-9797-42d8-b122-a81ef511c258",
@@ -3525,22 +3268,6 @@
         "atlas_nama": "Rokan Era Subur",
         "kabupaten": "Rokan Hulu",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-44d4a2b03ed06c7c",
-      "left_source": "atlas",
-      "left_id": "82406603-1534-4a49-bac3-e825a537a906",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Subur Arum Makmur (I)",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -3578,22 +3305,6 @@
       }
     },
     {
-      "match_id": "bem-dc967f04592ca657",
-      "left_source": "atlas",
-      "left_id": "72f81bfe-58a1-4514-ac39-72951958d7df",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sawit Rokan Semesta",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-37c8503f7ac74b18",
       "left_source": "atlas",
       "left_id": "24f2cb6b-c9d6-47b0-8345-1b1f4b319bd4",
@@ -3608,22 +3319,6 @@
         "atlas_nama": "Aneka Inti Persada",
         "kabupaten": "Siak",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-3e997e61059ed479",
-      "left_source": "atlas",
-      "left_id": "2525c650-9fe1-4aaa-a504-0a8c75237cb4",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Gunung Mas Raya (Sungai Rumbia 1 And 2 Estate)",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -3649,15 +3344,16 @@
       "left_id": "ed21141b-cd27-41c9-b4cf-f373b6687b84",
       "right_source": "bps",
       "right_id": "PER-KRISNAKERETAKENCANA-3bbb8ad2",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Krisna Kereta Kencana",
         "kabupaten": "Indragiri Hilir",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3666,15 +3362,16 @@
       "left_id": "4221eb3f-1c7a-4fec-8276-a1a1ad76429e",
       "right_source": "bps",
       "right_id": "PER-AGRITASARIPRIMA-b8b8f9e9",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Agrita Sari Prima",
         "kabupaten": "Pelalawan",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3692,22 +3389,6 @@
         "atlas_nama": "Rokan Adi Raya",
         "kabupaten": "Rokan Hulu",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-ab5a7761d595f210",
-      "left_source": "atlas",
-      "left_id": "fa73c1a5-5931-4f4a-a3a6-f77d76dd6676",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sinar Sawit Sejahtera",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -3745,22 +3426,6 @@
       }
     },
     {
-      "match_id": "bem-9592a16d826a18be",
-      "left_source": "atlas",
-      "left_id": "cd23a3c3-5066-4b50-98c1-cad72565b080",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Suntai Jaya Satria",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-644b75c82c2f0d00",
       "left_source": "atlas",
       "left_id": "bb8548e6-6ad6-449c-8a70-ba0e9ec374da",
@@ -3783,31 +3448,16 @@
       "left_id": "98c3c75b-d930-4fbf-b806-44c30c6dd7dc",
       "right_source": "bps",
       "right_id": "PER-PERDANAINTISAWITPERKASA-82affcb6",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Perdana Intisawit Perkasa",
         "kabupaten": "Rokan Hulu",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-54ba9654c16bdc2b",
-      "left_source": "atlas",
-      "left_id": "c057f765-83eb-4aa8-b859-4ec589481f77",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Subur Arum Makmur (2)",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3947,38 +3597,6 @@
       }
     },
     {
-      "match_id": "bem-9f21eb2eee625df2",
-      "left_source": "atlas",
-      "left_id": "c7cdead6-b2ba-4cd2-95af-66630529bc2e",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Guntung Idamannusa",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-becaeefb4b19f991",
-      "left_source": "atlas",
-      "left_id": "783aae46-84b9-4a0b-94cf-7d79e00fc7b0",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Cempaka Agro Lestari",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-dbb3847da9f3c917",
       "left_source": "atlas",
       "left_id": "797fcf7f-f819-42df-b062-a69ebff7e556",
@@ -4013,22 +3631,6 @@
       }
     },
     {
-      "match_id": "bem-b7a622c7b1edf4cd",
-      "left_source": "atlas",
-      "left_id": "923dcbb5-2a0d-4972-9f42-0265f02df4e1",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Mega Nusa Inti Sawit (plasma) Kredit Koperasi Primer Anggota (KKPA)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-48e1e12841b4b0ca",
       "left_source": "atlas",
       "left_id": "76c10cce-f3ef-430d-8252-afbb0ba0ec88",
@@ -4043,38 +3645,6 @@
         "atlas_nama": "Arian Multi Kawa",
         "kabupaten": "Indragiri Hulu",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-73c12875574093a4",
-      "left_source": "atlas",
-      "left_id": "9df0273c-c205-42a1-86cb-bf7293a59a23",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Serikat Putra I",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-d09a842d7e2e7037",
-      "left_source": "atlas",
-      "left_id": "e87c689d-f538-4d15-a14b-c4446c7466a2",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Anugrah Niaga Sawindo",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -4112,22 +3682,6 @@
       }
     },
     {
-      "match_id": "bem-58465f125ff7bf63",
-      "left_source": "atlas",
-      "left_id": "859a6667-3d0f-4104-b6a0-8939f91a036a",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Murini Wood Indah Industry",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-1ff4de7d0809e6f8",
       "left_source": "atlas",
       "left_id": "121245ca-2d0f-48a7-a1d8-af1dca81d918",
@@ -4142,22 +3696,6 @@
         "atlas_nama": "Sawit Asahan Indah",
         "kabupaten": "Rokan Hulu",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-df311ec4725ab3b0",
-      "left_source": "atlas",
-      "left_id": "483b0cb1-8c49-4f7e-b857-43bb9b2adc64",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sindora Seraya (Block I)",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -4192,22 +3730,6 @@
         "atlas_nama": "Surya Dumai Agrindo",
         "kabupaten": "Rokan Hilir",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-f1206ad81df34a8e",
-      "left_source": "atlas",
-      "left_id": "ade7cbf7-054e-4896-a4f6-57c986fce8ec",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Duta Swakarya Indah",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -4279,22 +3801,6 @@
       }
     },
     {
-      "match_id": "bem-66abfa4208cf5724",
-      "left_source": "atlas",
-      "left_id": "c3161c3e-82f4-415d-98e6-5d72f1fd1ded",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Victorindo Alamlestari",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-7f346689a552bf84",
       "left_source": "atlas",
       "left_id": "0dd6760a-cc00-43f6-9cc8-cd5406b388ed",
@@ -4309,22 +3815,6 @@
         "atlas_nama": "Teguhkarsa Wanalestari",
         "kabupaten": "Bengkalis",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-1d271fc8d0a49609",
-      "left_source": "atlas",
-      "left_id": "6714bbd1-646f-4c57-ae92-3ba436ecdd4b",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Serikat Putra II",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -4362,22 +3852,6 @@
       }
     },
     {
-      "match_id": "bem-1ce0251a80df18d5",
-      "left_source": "atlas",
-      "left_id": "579fdc85-8356-4a73-b9e0-9dacd470313e",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Bakung Agri",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-9772623ffaec3bb2",
       "left_source": "atlas",
       "left_id": "caf23091-809f-41c1-ae08-b9817a33c77f",
@@ -4409,38 +3883,6 @@
         "atlas_nama": "Pusaka Megah Bumi Nusantara",
         "kabupaten": "Pelalawan",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-46da3335054f8bc9",
-      "left_source": "atlas",
-      "left_id": "eaf229fc-ad58-44f1-83cb-cb3ecd1da35e",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Johan Sentosa (II)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-934a3fa87bcd37e7",
-      "left_source": "atlas",
-      "left_id": "b4ceae14-8993-4b97-a857-b887547d58a0",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Koperasi Sawit Mahato Bersatu",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -4546,22 +3988,6 @@
       }
     },
     {
-      "match_id": "bem-b670bcc3033b52d8",
-      "left_source": "atlas",
-      "left_id": "58fe2e3e-bff6-48af-95b2-bf1a94cfbc33",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Triomas Forestry Development Indonesia",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-82aa05536eb0c4a7",
       "left_source": "atlas",
       "left_id": "9387e4b9-d22e-450e-9db0-4c8d72f30e42",
@@ -4579,22 +4005,6 @@
       }
     },
     {
-      "match_id": "bem-13c95140327a4e8d",
-      "left_source": "atlas",
-      "left_id": "459a810e-b926-4818-a5ec-767c981720e3",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Buantan Karya Bersama",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-26e1ccb47247531a",
       "left_source": "atlas",
       "left_id": "35c31304-6c47-44d6-bd7d-8a12a63a2df1",
@@ -4609,22 +4019,6 @@
         "atlas_nama": "Sumber Jaya Indah Nusa Coy",
         "kabupaten": "Rokan Hulu",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-4f06d81cfab4b07f",
-      "left_source": "atlas",
-      "left_id": "ba88f917-20a3-4399-a029-d17738c0b046",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Multi Anugerah Tata Abadi",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -4662,22 +4056,6 @@
       }
     },
     {
-      "match_id": "bem-13cc1c10027843d8",
-      "left_source": "atlas",
-      "left_id": "944529b8-3873-43c7-9dd2-d63cdbb92ae2",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Berkat Mumpa Bersatu",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-c876aed872b59b78",
       "left_source": "atlas",
       "left_id": "b05b735c-c54a-4f48-a2c4-c1c1e870b7ba",
@@ -4712,22 +4090,6 @@
       }
     },
     {
-      "match_id": "bem-195c44b5e4434958",
-      "left_source": "atlas",
-      "left_id": "5934c778-8039-4d5d-8830-603d709898a1",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Anugerah Karya Lestari",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-c2b5d01747d4c3a3",
       "left_source": "atlas",
       "left_id": "c8e60556-939d-4147-baef-018471bd8ea2",
@@ -4745,54 +4107,6 @@
       }
     },
     {
-      "match_id": "bem-205ef34a590883d8",
-      "left_source": "atlas",
-      "left_id": "75d7360b-1e18-4b50-b7f6-bea5a10576c9",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Cemerlang Gunung Lintas Lautan",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-0d2c28adef27d713",
-      "left_source": "atlas",
-      "left_id": "9c91a941-9274-44da-9c65-7aa65c99cf0f",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Meganusa Intisawit (KKPA/Plasma)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-688a42d85d7cacb5",
-      "left_source": "atlas",
-      "left_id": "10b59ae5-829b-42af-9698-6194eb2057b3",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Kebun Swadaya 6",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-777b5a117ca80143",
       "left_source": "atlas",
       "left_id": "14d7426a-5d70-47b5-9427-0271c6d9a0a3",
@@ -4807,38 +4121,6 @@
         "atlas_nama": "Tunggal Yunus",
         "kabupaten": "Kampar",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-6cb089a78745dead",
-      "left_source": "atlas",
-      "left_id": "0fe01a94-5852-4304-aaab-25ed088a0cd7",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Agro Citra Mulia",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-cda82aca19eeb49d",
-      "left_source": "atlas",
-      "left_id": "815040c4-5121-4388-80df-3f488aa995d2",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Dharma Wungu Guna",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -4876,22 +4158,6 @@
       }
     },
     {
-      "match_id": "bem-bcda1d95b0791e07",
-      "left_source": "atlas",
-      "left_id": "8aee0f61-4a53-48bb-8cba-856e2342a357",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Rigunas Agri Utama (Plasma)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-6a1d6a0c68a3b805",
       "left_source": "atlas",
       "left_id": "89f811c8-387f-4998-b4a7-30d285237eb6",
@@ -4906,38 +4172,6 @@
         "atlas_nama": "Meganusa Intisawit",
         "kabupaten": "Indragiri Hulu",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-58c0bb7aab6da44e",
-      "left_source": "atlas",
-      "left_id": "d2d598d6-ff08-4954-9c1b-32338cfa95a2",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tri Hasta Palma",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-4a2614c4332131da",
-      "left_source": "atlas",
-      "left_id": "bf7eee5f-b9d2-4766-8131-aec17076795d",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perkebunan Nusantara V (Block Tanjung Medan)",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -4992,36 +4226,21 @@
       }
     },
     {
-      "match_id": "bem-4c23c18da5d0f19d",
-      "left_source": "atlas",
-      "left_id": "673974d3-db21-4ece-bbbb-39018d5485de",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Cibaliung Tunggal Plantations",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-f4a71d93f1097c55",
       "left_source": "atlas",
       "left_id": "82af7368-d43a-460a-8632-31afadada0f4",
       "right_source": "bps",
       "right_id": "PER-AGROABADI-2bad6792",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Agro Abadi",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5042,36 +4261,21 @@
       }
     },
     {
-      "match_id": "bem-fe39bfd8805c7ad4",
-      "left_source": "atlas",
-      "left_id": "50432496-5189-4062-a7a2-5ac83cad907d",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Cinandra Perkasa",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-5dac14d0ebdd59a1",
       "left_source": "atlas",
       "left_id": "23a1d0dc-ee75-42d1-a1f2-0220052c3cdf",
       "right_source": "bps",
       "right_id": "PER-BARITORIAUJAYA-44c18731",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Barito Riau Jaya",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5092,36 +4296,21 @@
       }
     },
     {
-      "match_id": "bem-47b86d1cf91674ee",
-      "left_source": "atlas",
-      "left_id": "89b9f191-2639-4a5e-8136-741832348df1",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Mekarsari Alam Lestari (Addendum)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-c316d251f385cc10",
       "left_source": "atlas",
       "left_id": "afc96e83-9a0f-4a53-a832-84abf159e0fc",
       "right_source": "bps",
       "right_id": "PER-TESOINDAH-53f088e7",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Teso Indah",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5210,100 +4399,21 @@
       }
     },
     {
-      "match_id": "bem-f40e5c11d900f8c8",
-      "left_source": "atlas",
-      "left_id": "b43de1b5-06ab-49f2-a24d-3b62e283090a",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Ramajaya Pramukti I (Bangkinang)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-b5ec5ba503d1c6f1",
-      "left_source": "atlas",
-      "left_id": "05a22853-8e47-4e93-8f23-61780bb7c237",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Duma Indah Perkasa (B)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-a91739595cb07b32",
       "left_source": "atlas",
       "left_id": "74bc4c46-eac7-4328-9287-7a8c31544568",
       "right_source": "bps",
       "right_id": "PER-BINTANGRIAUSEJAHTERA-ef697219",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Bintang Riau Sejahtera",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-dbfe1f2d3a9d141b",
-      "left_source": "atlas",
-      "left_id": "8ace9f61-b3f3-4230-a19a-139469a1bcdb",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Transmigration",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-554dc118ba71316e",
-      "left_source": "atlas",
-      "left_id": "54e52987-5425-43f2-ac1e-4f1fbc2290d3",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Damara Abadi",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-ec886eaf53cb894c",
-      "left_source": "atlas",
-      "left_id": "25d73d01-99cc-4639-b595-389168633767",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Rimbun Sawit Sejahtera (formerly PT Pusaka Megah Bumi Nusantara)",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5358,38 +4468,6 @@
       }
     },
     {
-      "match_id": "bem-b8f4bfbc18b24b1c",
-      "left_source": "atlas",
-      "left_id": "49a8c6a8-f046-4317-a3ee-4038a297cd0e",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Ramajaya Pramukti (II)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-bde62d4fc2f4296f",
-      "left_source": "atlas",
-      "left_id": "e713c1db-ad5f-43d6-b8b0-bd0c5efd1ded",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Flora Wahana Tata",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-51e05183b0696a34",
       "left_source": "atlas",
       "left_id": "8f576590-97b0-436b-ac16-954bb6b121ce",
@@ -5407,70 +4485,6 @@
       }
     },
     {
-      "match_id": "bem-5f3f108893f62956",
-      "left_source": "atlas",
-      "left_id": "314920f5-1e03-46d9-88ce-e1eccbd0903e",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tunggal Mitra Plantation (Manggala-1 Estate)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-db929447fe789bf0",
-      "left_source": "atlas",
-      "left_id": "940edc87-c69f-4922-9952-7f78f617dc50",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perkebunan Nusantara V (Rimpian)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-25ba0c49c551d1d0",
-      "left_source": "atlas",
-      "left_id": "d2220941-c2a2-43e0-8826-2b2270fea9c9",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tunggal Mitra Plantation (Manggala-2 Estate)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-f09f6055a0b1f9df",
-      "left_source": "atlas",
-      "left_id": "ae59de75-1f6e-4fb2-acdf-d9d0c0341a6f",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tunggal Mitra Plantation (Manggala-3 Estate)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-7435b173a0eb4759",
       "left_source": "atlas",
       "left_id": "302b7886-fdd9-4fc2-a042-2c2b1b3b7cf2",
@@ -5485,54 +4499,6 @@
         "atlas_nama": "Cipta Daya Sejati Luhur",
         "kabupaten": "Pelalawan",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-fd5725a066a9b9f4",
-      "left_source": "atlas",
-      "left_id": "c757e168-7222-41c9-87d2-18e4df65398a",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Indomanis Lestari",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-963c106c56178462",
-      "left_source": "atlas",
-      "left_id": "cfee0970-fe29-479f-aaf0-b3a88a14f04e",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Pertisa Trading Coy Ltd",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-e1d8c8169185738f",
-      "left_source": "atlas",
-      "left_id": "ccb7b178-8bdd-40f5-8375-8425af2057a9",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perdana Intisawit Perkasa Sei Rokan",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -5609,15 +4575,16 @@
       "left_id": "3ea7c4d2-ae6e-405c-a000-b7686ca1af1a",
       "right_source": "bps",
       "right_id": "PER-TANISUBURMAKMUR-d17b12ac",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Tani Subur Makmur",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5635,22 +4602,6 @@
         "atlas_nama": "Surya Agrolika Reksa",
         "kabupaten": "Kuantan Singingi",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-cc8e29ade4c145ee",
-      "left_source": "atlas",
-      "left_id": "0e184e42-20bc-4730-9b4d-11a33c5a0318",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perkebunan Nusantara II (S. Air Bayas)",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -5688,22 +4639,6 @@
       }
     },
     {
-      "match_id": "bem-ed42a367af706ea1",
-      "left_source": "atlas",
-      "left_id": "3c095b28-6848-472e-a523-54d6aca1529e",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Lubuk Indah",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-fd7ca16fb474d77b",
       "left_source": "atlas",
       "left_id": "8b984b67-31ed-4d19-8a18-f449ba5e3e47",
@@ -5726,63 +4661,16 @@
       "left_id": "14830fad-eb8f-481e-a38c-c7cc47768c21",
       "right_source": "bps",
       "right_id": "PER-NUSANTARAVSEIBUATAN-c191aa2f",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Perkebunan Nusantara V (Sei Buatan)",
         "kabupaten": "Siak",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-b820b0756bc8433c",
-      "left_source": "atlas",
-      "left_id": "a158655b-de97-48be-9ad2-623d3cc63c15",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Gunung Mas Raya (Sungai Bangko Estate)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-2bef75f76791d1be",
-      "left_source": "atlas",
-      "left_id": "d298109e-af75-4358-a839-c090567a81dc",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Mega Nusa Inti Sawit (KPPA/Plasma)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-04f2695572361e9d",
-      "left_source": "atlas",
-      "left_id": "8c70b9eb-8689-4011-ba3b-face0d4dc454",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Alfa Glory Indah (formerly PT Mustika Agrosari)",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5791,15 +4679,16 @@
       "left_id": "dc01363f-78bc-4198-8da1-22fe0e8d9aed",
       "right_source": "bps",
       "right_id": "PER-RIAUSAWITINDOABADI-2d9edfc0",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Riau Sawitindo Abadi",
         "kabupaten": "Indragiri Hilir",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5820,100 +4709,21 @@
       }
     },
     {
-      "match_id": "bem-bbb3e9249359c912",
-      "left_source": "atlas",
-      "left_id": "a72b42cc-7497-436d-94b5-ebea7259de17",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Radita",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-db5f8e2a77ce26fe",
-      "left_source": "atlas",
-      "left_id": "cbc8613c-3827-4f69-8d80-6dbef7573ce0",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Bumi Daya Plantation",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-19a3a4fd12809060",
       "left_source": "atlas",
       "left_id": "ef66f25b-0c90-40b7-9e1c-b5635ea5d985",
       "right_source": "bps",
       "right_id": "PER-OSCARINVESTAMA-faa1be04",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Oscar Investama",
         "kabupaten": "Indragiri Hilir",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-63aefcd35c981825",
-      "left_source": "atlas",
-      "left_id": "db29b65f-895d-411b-a56e-2ff5abba2045",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Ramajaya Pramukti (III/ S.Tibun)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-4a4f48f00329f362",
-      "left_source": "atlas",
-      "left_id": "4df16808-87c1-45c2-9c63-094bcbd85e1f",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Ria Estela",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-b38fc5793d861e75",
-      "left_source": "atlas",
-      "left_id": "2dce5712-5ac0-461e-99ed-3575e1cd5a05",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Transmigration Tebing Tinggi",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5922,15 +4732,16 @@
       "left_id": "7d392f49-388d-4ad2-a67f-90e2b7bf46f9",
       "right_source": "bps",
       "right_id": "PER-CITRASARDELAABADI-56cb124b",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Citra Sardela Abadi",
         "kabupaten": "Rokan Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5951,22 +4762,6 @@
       }
     },
     {
-      "match_id": "bem-02f7b175897db57f",
-      "left_source": "atlas",
-      "left_id": "e5a41d43-2ffc-442b-95fb-8f7eda61993b",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Redang Seko",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-53fbdfee7330925b",
       "left_source": "atlas",
       "left_id": "2d723bff-d833-44f1-bd36-2d11a1d71341",
@@ -5981,22 +4776,6 @@
         "atlas_nama": "Perkebunan Nusantara V (Air Molek)",
         "kabupaten": "Indragiri Hulu",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-6dd304a87c4cbdda",
-      "left_source": "atlas",
-      "left_id": "64e3674f-bf3e-450d-a4b2-03b08ed34f79",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tampak Sakti",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -6034,22 +4813,6 @@
       }
     },
     {
-      "match_id": "bem-69a88815683428ca",
-      "left_source": "atlas",
-      "left_id": "96768937-42e1-4b54-a085-1000131bcb42",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perkebunan Nusantara V (Block Tanah Putih)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-9490db16e52fd50b",
       "left_source": "atlas",
       "left_id": "0d6a4436-9188-49ee-bfd0-001bbeef3dbf",
@@ -6084,38 +4847,6 @@
       }
     },
     {
-      "match_id": "bem-12b1ac5768e10ee2",
-      "left_source": "atlas",
-      "left_id": "be78e167-648f-46bb-a345-79346844039d",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Surya Keritang Perkasa",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-a2a300d104e31480",
-      "left_source": "atlas",
-      "left_id": "71ba6b4e-bd08-4add-974d-0da6a1bd008f",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Buruk Bakul",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-6bd0bba7e60d24b7",
       "left_source": "atlas",
       "left_id": "d45b80ab-18c2-4eb3-8be8-f977055e3197",
@@ -6130,54 +4861,6 @@
         "atlas_nama": "Ciliandra Perkasa",
         "kabupaten": "Kampar",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-b206528ec17c0f93",
-      "left_source": "atlas",
-      "left_id": "fcf21141-a30d-4498-9a6f-938025d991af",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Masuba Citra Mandiri",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-67521e1a54e49b10",
-      "left_source": "atlas",
-      "left_id": "2a4e93aa-04e2-4d9e-92b3-8e7cc7b0e806",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Lahan Tani Sakti (Block ALur Dumai)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-7bd5e432a55769de",
-      "left_source": "atlas",
-      "left_id": "e5c92f03-843f-4883-8720-b6245d2016a0",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Bumiraya Investindo (TPSUM I)",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -6198,52 +4881,21 @@
       }
     },
     {
-      "match_id": "bem-cc95d794fefaa4dc",
-      "left_source": "atlas",
-      "left_id": "65d9483b-9e67-4e81-ad73-57e72e98b1ef",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tandan Harapan",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-388acd5842c4dfed",
       "left_source": "atlas",
       "left_id": "6bff12ab-d011-40a8-9137-3d7a67b63bba",
       "right_source": "bps",
       "right_id": "PER-STEELINDOWAHANAPERKASA-586ac4ba",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Steelindo Wahana Perkasa",
         "kabupaten": "Pelalawan",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-f2471f8fac17addc",
-      "left_source": "atlas",
-      "left_id": "b577604a-c2b8-4467-80f6-4d4f3f7758e4",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Ariana Ferra Ishak Udan PT Sinar Reksa Kencana",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6264,36 +4916,21 @@
       }
     },
     {
-      "match_id": "bem-e979bf032e998c44",
-      "left_source": "atlas",
-      "left_id": "13270f58-cb38-4ad7-9adb-77627024bb66",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Hamparan Hijau",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-3c39b5b9f5074540",
       "left_source": "atlas",
       "left_id": "f8f37698-89a6-41b6-aaba-535ed01cd9e2",
       "right_source": "bps",
       "right_id": "PER-SEBERIDASUBUR-80d9bf53",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Seberida Subur",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6319,15 +4956,16 @@
       "left_id": "4ae15719-d7bc-4938-a93c-04b56cfc64d5",
       "right_source": "bps",
       "right_id": "PER-PANCAAGROLESTARI-e766e6e4",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Panca Agro Lestari",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6345,86 +4983,6 @@
         "atlas_nama": "Murini Samsam",
         "kabupaten": "Bengkalis",
         "source": "atlas_full_name_join"
-      }
-    },
-    {
-      "match_id": "bem-498b001c871addde",
-      "left_source": "atlas",
-      "left_id": "c5d65415-8842-4f10-a989-eb70b75f0776",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Plamboyan",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-f4ba2a2612762d21",
-      "left_source": "atlas",
-      "left_id": "d210f543-90c2-45e5-af90-8fda61cd3159",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Kebun Swadaya 13",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-0415341ffeb4e0c8",
-      "left_source": "atlas",
-      "left_id": "f6b8f155-9c07-4740-b3e2-9df25ba0a2c3",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sarindo Agri Lestari",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-e5da121d3104b0ef",
-      "left_source": "atlas",
-      "left_id": "17bb17da-261e-46bd-925e-547e8c8914a5",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Lubuk Muda Raya",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-03ea918cdc01ee17",
-      "left_source": "atlas",
-      "left_id": "e0160640-98b9-4c11-9f9c-7f0eeb38a5f7",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Primkopad Korem 013 Wirabima",
-        "source": "atlas_full_unmatched"
       }
     },
     {
@@ -6479,38 +5037,6 @@
       }
     },
     {
-      "match_id": "bem-4edab488be103631",
-      "left_source": "atlas",
-      "left_id": "e7182175-1031-4a0e-8d86-7bb7a98727a4",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Egasuti Nasakti I (Block B)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-4232ffa4123dec24",
-      "left_source": "atlas",
-      "left_id": "b85a5600-aa37-4008-9e86-633becda1187",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Keluarga Harapan",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-5c34da2386ccd1fd",
       "left_source": "atlas",
       "left_id": "cecedc06-9b65-4e8e-a692-a693f7ddf030",
@@ -6528,52 +5054,21 @@
       }
     },
     {
-      "match_id": "bem-d261665f2f08ee67",
-      "left_source": "atlas",
-      "left_id": "44e7a9e7-92ce-4808-9c6a-f79f1a319185",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Agra Cahaya Keumala",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-911b067e32758871",
-      "left_source": "atlas",
-      "left_id": "b098e15c-a45d-4e80-a786-5a1b9c5e3976",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Asosiasi Petani Sawit Swadaya Amanah",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-71c4817b707bae46",
       "left_source": "atlas",
       "left_id": "d61e63a5-fbab-44d7-a4c7-8b8a816a8f52",
       "right_source": "bps",
       "right_id": "PER-SINARREKSAKENCANA-0a61559a",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sinar Reksa Kencana",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6582,15 +5077,16 @@
       "left_id": "37d32ed8-4b73-427c-8dd6-42ff5da0db2d",
       "right_source": "bps",
       "right_id": "PER-SEKOINDAH-77de388c",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Seko Indah",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6599,31 +5095,16 @@
       "left_id": "ef86677f-5e56-465c-9e20-89570811d00e",
       "right_source": "bps",
       "right_id": "PER-SINARSIAKDIANPERMAI-0e57d29b",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sinar Siak Dian Permai",
         "kabupaten": "Siak",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-812cdc17a6a8cba2",
-      "left_source": "atlas",
-      "left_id": "e30eba81-ab88-4bc2-994c-bdbe89c68c65",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Alfa Glory Indah",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6632,47 +5113,16 @@
       "left_id": "b0c2b248-cae1-4693-a0fc-d3fbfce7e6b4",
       "right_source": "bps",
       "right_id": "PER-WASUNDARIINDAH-a4931e1b",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Wasundari Indah",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-bfc3f12a52167b05",
-      "left_source": "atlas",
-      "left_id": "0acdc11c-544c-49b4-834a-2a298c7c9585",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Karya Melayu Sejati",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-7782b9981dde5f47",
-      "left_source": "atlas",
-      "left_id": "b439562d-a227-47c1-8bfe-cf4217b5800a",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Egasuti Nasakti (II)",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6681,47 +5131,16 @@
       "left_id": "e2c4dea8-cccc-47cb-92db-8db57c113460",
       "right_source": "bps",
       "right_id": "PER-SAWITUNGGULPRIMAPLANTATIONS-6e1f1ebc",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sawit Unggul Prima Plantations",
         "kabupaten": "Kota Pekanbaru",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-d9eb652f9c33c4ec",
-      "left_source": "atlas",
-      "left_id": "7c0a7ac5-fcb2-4105-8f38-2f54207a66c1",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Kebun Swadaya 14",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-662e3d09895153ae",
-      "left_source": "atlas",
-      "left_id": "0e8974bd-36bb-4133-bc61-199cb06e9008",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Atan",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6730,63 +5149,16 @@
       "left_id": "422dce9b-562a-4a6d-b2de-0d344eb5b9ab",
       "right_source": "bps",
       "right_id": "PER-SINARINTISAWIT-0e79cd1f",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sinar Inti Sawit",
         "kabupaten": "Bengkalis",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-a2e0e1565e3f303f",
-      "left_source": "atlas",
-      "left_id": "d8482949-70c8-48be-a408-2d1726281afc",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "KEBUN SWADAYA 2",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-c47baadc003c2efa",
-      "left_source": "atlas",
-      "left_id": "d29aada3-e374-4523-9e51-211193061a0d",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Berlian Mitra Inti",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-cedf6a993fb39374",
-      "left_source": "atlas",
-      "left_id": "8d56d16a-9ce2-4836-9f89-b119488d3bda",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perkebunan Nusantara V (Sei Berlian)",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6795,15 +5167,16 @@
       "left_id": "fdc820d4-398f-4750-bc8a-c62907a8793b",
       "right_source": "bps",
       "right_id": "PER-KOSTAPALMIRA-34b3f6f6",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Kosta Palmira",
         "kabupaten": "Pelalawan",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6812,47 +5185,16 @@
       "left_id": "0d9ebb11-99fb-48cc-b652-1424d428808f",
       "right_source": "bps",
       "right_id": "PER-EKADAYASEJATISUKSES-420fbcec",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Ekadaya Sejati Sukses",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-540575ba86d58d20",
-      "left_source": "atlas",
-      "left_id": "668c7df6-8123-4787-b756-b6de0d2aedb3",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Lindai Jaya Lestari",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-444887936e3a6050",
-      "left_source": "atlas",
-      "left_id": "7cdc7beb-f4e7-46e5-a375-61a2db1fb1cb",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Perkebunan Nusantara V (Block Sei Intan)",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6890,70 +5232,6 @@
       }
     },
     {
-      "match_id": "bem-bb80bd96c4308e73",
-      "left_source": "atlas",
-      "left_id": "1cb6ead6-ea48-4e93-b3fa-174ebe1e10ea",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Bungo Tanjung",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-93c093eefad75469",
-      "left_source": "atlas",
-      "left_id": "a960c98d-4bd2-4941-b48b-99ea79006613",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Kampar Palma Utama",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-d232430929b2dddf",
-      "left_source": "atlas",
-      "left_id": "3ebea2c8-eaeb-4f33-a9a1-98997afd912d",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Lahan Tani Sakti (ALur Dumai Estate)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-e30918cab9814939",
-      "left_source": "atlas",
-      "left_id": "6f6bf844-ac5c-4a8c-b5f1-cb9a56b753b0",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Langgam Harmoni",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-e0d6c99f0e99ac6d",
       "left_source": "atlas",
       "left_id": "5b447f20-382c-4709-b912-c50e76fbb76a",
@@ -6971,116 +5249,21 @@
       }
     },
     {
-      "match_id": "bem-d65a5e2f66131153",
-      "left_source": "atlas",
-      "left_id": "3595132c-58dd-4fbc-beac-53b88f61768f",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tani Raya Wisesa",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-7637a5bdc922ae47",
-      "left_source": "atlas",
-      "left_id": "3cc25124-3181-4f39-9c8b-2518d4c58ac5",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Intan Sejati Andalan",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-5224d4196f4c6a50",
-      "left_source": "atlas",
-      "left_id": "13c74d35-f9e7-45be-97c6-65104b28347c",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Pulau Kundur Prakarsa",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-868a7f9dd049e75d",
-      "left_source": "atlas",
-      "left_id": "5c1a8eec-33a3-454e-b74b-390e54ba0932",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sumatera Unggul Makmur",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-aaf418c1b2dde643",
-      "left_source": "atlas",
-      "left_id": "034c6f30-47c3-4e71-a59d-f73d55b3ad77",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sindora Seraya (Block II)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-dc181fcfc76d6c97",
       "left_source": "atlas",
       "left_id": "d7a9834d-747d-43d2-a7ed-6b9994d582c3",
       "right_source": "bps",
       "right_id": "PER-JALURPUSAKASAKTIKUMALA-49fedf3c",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Jalur Pusaka Sakti Kumala",
         "kabupaten": "Pelalawan",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-daf11c7e14873bfc",
-      "left_source": "atlas",
-      "left_id": "c30fb5fd-08ef-4021-886c-97945bce2452",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tanjung Bunga Selatan",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7089,31 +5272,16 @@
       "left_id": "70e8d80f-9196-4d6f-8489-ec930718c67d",
       "right_source": "bps",
       "right_id": "PER-BUDITANIKEMBANGJAYA-373df0cc",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Budi Tani Kembang Jaya",
         "kabupaten": "Kota Pekanbaru",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-2943d454f50c9d1c",
-      "left_source": "atlas",
-      "left_id": "c1227213-5174-4ec2-8283-b77beb2dd589",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Karya Proja Nelayan",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7122,15 +5290,16 @@
       "left_id": "e06710ac-b35a-42a2-ad1c-f85858bc9ad3",
       "right_source": "bps",
       "right_id": "PER-YUTANISUADIRI-2a6b2dd0",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Yutani Suadiri",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7139,15 +5308,16 @@
       "left_id": "95ee55b1-7b7d-423e-ad71-15512e7e9347",
       "right_source": "bps",
       "right_id": "PER-SANDRIASUKSESBERSAMA-6a0a7231",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sandria Sukses Bersama",
         "kabupaten": "Kuantan Singingi",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7156,95 +5326,16 @@
       "left_id": "b55b4489-81bd-43b7-9004-9bf8fdcc589f",
       "right_source": "bps",
       "right_id": "PER-SATRIAWINDUSERAYA-97dd542b",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Satria Windu Seraya",
         "kabupaten": "Kota Pekanbaru",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-2bf2210200b6e827",
-      "left_source": "atlas",
-      "left_id": "1f703e29-d76c-43db-9acf-35ede15afc4d",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Adimulya Agrolestari",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-a85bc27bf18471e9",
-      "left_source": "atlas",
-      "left_id": "fa80df41-4ce8-4910-8a16-3176e6a32832",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Rawangkawo Makmur Sejati",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-234ecb591c1acafe",
-      "left_source": "atlas",
-      "left_id": "1c5bb8b9-c2f0-4c9b-9ef2-7f89195eecc1",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Bhara Induk",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-fc18e4140dff02cc",
-      "left_source": "atlas",
-      "left_id": "ba75c3b3-7b63-47be-b9a4-31ee70d6576f",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sumber Alam Makmur Sentosa",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-acf91fd6c73e8573",
-      "left_source": "atlas",
-      "left_id": "a4e99d47-90ee-47cc-a887-86af62de455c",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Damitama Mas Sejahtera",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7253,79 +5344,16 @@
       "left_id": "5e23b927-21f6-423b-99a1-6dc73ed90e27",
       "right_source": "bps",
       "right_id": "PER-SITAPONGANLESTARI-d3eacd85",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sitapongan Lestari",
         "kabupaten": "Rokan Hulu",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-38d3a2dd673ae35c",
-      "left_source": "atlas",
-      "left_id": "2d001ceb-a477-4cc6-bbc9-0a1748817421",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tri Perkasa Tunggal Abadi",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-1a1180fd81537b9c",
-      "left_source": "atlas",
-      "left_id": "891f598a-9ccf-4c08-96c6-0a306ab7fde1",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Maju Jaya",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-7732d4d222c91d2d",
-      "left_source": "atlas",
-      "left_id": "32c9ca65-a2cb-4f87-9c07-d7885a822373",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Salmah Arowana Lestari",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-0d5e877439ec39ba",
-      "left_source": "atlas",
-      "left_id": "1c9ab944-625b-4b4c-9cd2-51abcff7b951",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Tunas Harapan",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7380,292 +5408,21 @@
       }
     },
     {
-      "match_id": "bem-755f1bcccf2276dc",
-      "left_source": "atlas",
-      "left_id": "b731ccd7-ff65-4e16-8f34-2575ec8a2ab0",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sindora Seraya (Block III)",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
       "match_id": "bem-90a637100a975d32",
       "left_source": "atlas",
       "left_id": "3b734479-b0a6-40ac-a5fb-16dbcf7c4a77",
       "right_source": "bps",
       "right_id": "PER-GUNAUSAGRIPRATAMA-a8184d25",
-      "status": "warning",
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "nama_score": 0.85,
-      "geo_ok": null,
+      "geo_ok": true,
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Guna Usagri Pratama",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
-      }
-    },
-    {
-      "match_id": "bem-363631c4ad310e30",
-      "left_source": "atlas",
-      "left_id": "461b43ad-c720-49b2-9a09-a0d11097dfb8",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Mungkal Tujuh",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-cf42899e8d19c17a",
-      "left_source": "atlas",
-      "left_id": "e0a19678-9e55-4fea-82c8-39e683e13141",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Karya Jaya",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-79cb7f2cf47d26bc",
-      "left_source": "atlas",
-      "left_id": "0d7abde5-0301-463e-98fc-d5febc68d092",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "KUD Sepakat",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-fb6e275b06cfe52f",
-      "left_source": "atlas",
-      "left_id": "df8946f7-d186-43aa-9eb0-a23d1fb1e259",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Cempaka",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-a22c3bca12f6eede",
-      "left_source": "atlas",
-      "left_id": "a2962fbc-5646-4120-b133-4fec734661b7",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Andalas",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-7d213917b1333a92",
-      "left_source": "atlas",
-      "left_id": "e41df4ab-ff63-45f6-b150-d0a8acc5b233",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Silva Dena Aquamina",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-da904a9434e3e34d",
-      "left_source": "atlas",
-      "left_id": "78209597-6e24-4b18-ac93-d74ef29d2953",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sinar Agro Raya",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-9527f9cfbc1ce10c",
-      "left_source": "atlas",
-      "left_id": "514d1603-ee05-44c4-bf6c-4cdd9fc06994",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Bina Makmur",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-c4a8168114b20e05",
-      "left_source": "atlas",
-      "left_id": "3f209718-d3de-41f6-afa1-323795581dc5",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Hj Merry Syam",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-2dc29d06dbd174ba",
-      "left_source": "atlas",
-      "left_id": "a4bb0772-6a97-4288-ba4a-52c816ea4d7e",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "karya Tani",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-d7719f7eddeb99fb",
-      "left_source": "atlas",
-      "left_id": "59446117-5b53-4062-9475-f687e1942b12",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sido Mulyo II",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-b1e1087679795a66",
-      "left_source": "atlas",
-      "left_id": "d9320148-1de9-4b55-9146-b81d1a759944",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sumber Makmur II",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-135bb48232022869",
-      "left_source": "atlas",
-      "left_id": "39d550df-77c6-4428-b92e-5b610e14f68e",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Bina Karya",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-f36bb9f57bb6c6c1",
-      "left_source": "atlas",
-      "left_id": "bc42dbfd-976e-4af4-8372-d9224c314640",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Jadi Mulya",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-c531c34edc9a222e",
-      "left_source": "atlas",
-      "left_id": "5e7942ef-1345-4c5a-aca0-ac46b3d7ce75",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Sumber Makmur",
-        "source": "atlas_full_unmatched"
-      }
-    },
-    {
-      "match_id": "bem-f6a0d9ddfe4bc43a",
-      "left_source": "atlas",
-      "left_id": "fb0acae2-55aa-4fa2-8362-6bc132ff8236",
-      "right_source": "none",
-      "right_id": "not_found",
-      "status": "rejected",
-      "match_type": "not_found",
-      "nama_score": 0.0,
-      "geo_ok": null,
-      "human_verified": false,
-      "evidence": {
-        "atlas_nama": "Rindu Sempadan",
-        "source": "atlas_full_unmatched"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {

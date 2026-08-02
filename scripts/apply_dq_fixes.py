@@ -187,12 +187,29 @@ def fix_cocokan():
     if not rows:
         print("    skip: CSV missing")
         return []
+    # Join atlas_uid from atlas_full SoT when empty
+    atlas_uid_by_norm = {}
+    atlas_csv = ROOT / "tabulasi_konsesi_sawit_nusantara_atlas_riau.csv"
+    if atlas_csv.exists():
+        for ar in load_csv(atlas_csv):
+            uid = (ar.get("uid") or ar.get("atlas_id") or ar.get("id") or "").strip()
+            if not uid:
+                continue
+            for key in (ar.get("nama_perusahaan"), ar.get("nama_kanonik"), ar.get("company")):
+                nk = norm_company(key or "")
+                if nk and nk not in atlas_uid_by_norm:
+                    atlas_uid_by_norm[nk] = uid
     out = []
+    filled_uid = 0
     for i, r in enumerate(rows, 1):
         rec = dict(r)
         atlas = (rec.get("atlas_nama") or rec.get("atlas_name") or "").strip()
         gfwid = (rec.get("gfwid") or "").strip()
         uid = (rec.get("atlas_uid") or rec.get("uid") or "").strip()
+        if not uid:
+            uid = atlas_uid_by_norm.get(norm_company(atlas)) or ""
+            if uid:
+                filled_uid += 1
         # stable match_id
         base = uid or norm_company(atlas) or f"row{i}"
         gpart = gfwid or "nogfw"
@@ -255,7 +272,10 @@ def fix_cocokan():
         }
         # kepmenhut: prefer rapi only (already)
         write_json(kons_path, kons)
-    print(f"    cocokan rows={len(out)} unique_match_id={len({r['match_id'] for r in out})}")
+    print(
+        f"    cocokan rows={len(out)} unique_match_id={len({r['match_id'] for r in out})} "
+        f"atlas_uid_filled={filled_uid}"
+    )
     return out
 
 

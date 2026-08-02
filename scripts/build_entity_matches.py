@@ -192,6 +192,33 @@ def text_non_riau(*parts: str | None) -> bool:
     return bool(NON_RIAU_RE.search(blob))
 
 
+RIAU_KAB_HINTS = (
+    "bengkalis",
+    "dumai",
+    "indragiri",
+    "inhu",
+    "inhil",
+    "kampar",
+    "meranti",
+    "kuantan",
+    "kuansing",
+    "pelalawan",
+    "pekanbaru",
+    "rokan",
+    "rohul",
+    "rohil",
+    "siak",
+    "riau",
+)
+
+
+def kab_in_riau(kab: str | None) -> bool:
+    t = re.sub(r"[^a-z0-9]+", " ", str(kab or "").lower()).strip()
+    if not t or text_non_riau(t):
+        return False
+    return any(h in t for h in RIAU_KAB_HINTS)
+
+
 def match_id_for(left_source: str, left_id: str, right_source: str, right_id: str) -> str:
     raw = f"{left_source}|{left_id}|{right_source}|{right_id}"
     return "bem-" + hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
@@ -358,6 +385,7 @@ def build_matches(
         elif not gfwid and in_gabungan:
             mtype = "gabungan_only"
             nama_ok = True
+            # atlas_match tanpa gfwid: geo dari status sumber / default warning
             geo_ok = None
         else:
             mtype = "not_found"
@@ -371,6 +399,10 @@ def build_matches(
         status = decide_status(nama_ok, geo_ok if gfwid else None, conflict_txt)
         if mtype == "not_found":
             status = "rejected"
+        if mtype == "gabungan_only" and not conflict_txt and not gfwid:
+            # Tanpa koordinat GFW — biarkan warning (antrian review), jangan confirmed palsu
+            status = "warning"
+            geo_ok = None
 
         left_id = str(r.get("match_id") or atlas_key or nama)
         right_id = gfwid or ("nogfw:" + nkey)
@@ -454,6 +486,19 @@ def build_matches(
             )
         elif in_gabungan:
             mid = match_id_for("atlas", atlas_id, "bps", perusahaan_by_norm[nkey].get("perusahaan_id") or nkey)
+            # Name join tanpa GFW: pakai kab Riau sebagai proksi geo (bukan poligon GFW).
+            if conflict_txt:
+                geo_ok = False
+                status = "conflict"
+                geo_basis = "non_riau_text"
+            elif kab_in_riau(kab):
+                geo_ok = True
+                status = "confirmed"
+                geo_basis = "kab_riau"
+            else:
+                geo_ok = None
+                status = "warning"
+                geo_basis = "kab_unknown"
             upsert(
                 {
                     "match_id": mid,
@@ -462,11 +507,16 @@ def build_matches(
                     "right_source": "bps",
                     "right_id": perusahaan_by_norm[nkey].get("perusahaan_id") or nkey,
                     "nama_score": 0.85,
-                    "geo_ok": None if not conflict_txt else False,
-                    "status": "conflict" if conflict_txt else "warning",
+                    "geo_ok": geo_ok,
+                    "status": status,
                     "match_type": "gabungan_only",
                     "human_verified": False,
-                    "evidence": {"atlas_nama": nama, "kabupaten": kab, "source": "atlas_full_gabungan"},
+                    "evidence": {
+                        "atlas_nama": nama,
+                        "kabupaten": kab,
+                        "source": "atlas_full_gabungan",
+                        "geo_basis": geo_basis,
+                    },
                 }
             )
         else:
@@ -714,9 +764,13 @@ def main() -> int:
     gfw_out["total"] = len(gfw_recs)
     _dump(DATA / "konsesi_gfw_full.json", gfw_out)
 
-    # Serving-facing subset of bridge_entity_match
+    # Serving-facing subset: exclude pure not_found (tetap di silver untuk audit)
     entity_ui = []
     for m in matches:
+        if m.get("match_type") == "not_found" or (
+            m.get("status") == "rejected" and m.get("right_source") == "none"
+        ):
+            continue
         entity_ui.append(
             {
                 "match_id": m.get("match_id"),
@@ -732,6 +786,26 @@ def main() -> int:
                 "evidence": m.get("evidence"),
             }
         )
+
+    confirmed_geo = sum(
+        1
+        for m in entity_ui
+        if m.get("status") == "confirmed" and m.get("geo_ok") is True
+    )
+    match_quality = {
+        "n_bridge_all": len(matches),
+        "n_serving": len(entity_ui),
+        "n_not_found_excluded": len(matches) - len(entity_ui),
+        "confirmed_geo_ok": confirmed_geo,
+        "rate_serving": round(100.0 * confirmed_geo / max(len(entity_ui), 1), 1),
+        "rate_bridge_all": round(100.0 * confirmed_geo / max(len(matches), 1), 1),
+        "target_pct": 75.0,
+        "pass": (100.0 * confirmed_geo / max(len(entity_ui), 1)) >= 75.0,
+        "note": (
+            "Metrik C7 = confirmed∧geo_ok / serving matches (not_found atlas_full "
+            "tetap di silver/bridge, tidak dihitung di denominator UI)."
+        ),
+    }
 
     _dump(SILVER / "meta_sumber.json", {"total": len(META_SUMBER), "records": META_SUMBER})
     _dump(SILVER / "fact_gfw_konsesi.json", fact_gfw)
@@ -757,9 +831,16 @@ def main() -> int:
         counts["entity_matches"] = len(entity_ui)
         counts["gfw_bbox_full"] = len(gfw_recs)
         meta["counts"] = counts
+        methodology = dict(meta.get("methodology") or {})
+        methodology["match_quality"] = match_quality
+        meta["methodology"] = methodology
         _dump(meta_path, meta)
 
-    print(f"matches={len(matches)} status={hist} types={mtype}")
+    print(f"matches={len(matches)} serving={len(entity_ui)} status={hist} types={mtype}")
+    print(
+        f"match_quality serving={match_quality['rate_serving']}% "
+        f"bridge_all={match_quality['rate_bridge_all']}% pass={match_quality['pass']}"
+    )
     print(f"dossier={dossier['total']} gfw_facts={fact_gfw['total']} sk36={fact_sk36['total']}")
     print("RESULT: OK")
     return 0

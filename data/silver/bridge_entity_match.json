@@ -2749,14 +2749,15 @@
       "right_source": "bps",
       "right_id": "PER-THINDOPLANTATIONS-44c4b0b8",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Th Indo Plantations",
         "kabupaten": "Indragiri Hilir",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -2967,14 +2968,15 @@
       "right_source": "bps",
       "right_id": "PER-SETIAAGRINDOLESTARI-f4c58e4b",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Setia Agrindo Lestari",
         "kabupaten": "Indragiri Hilir",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3000,14 +3002,15 @@
       "right_source": "bps",
       "right_id": "PER-NUSANTARAVSEIGARO-69618ad0",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Perkebunan Nusantara V Sei Garo",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3101,14 +3104,15 @@
       "right_source": "bps",
       "right_id": "PER-WANASARINUSANTARA-5b4b03a3",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Wanasari Nusantara",
         "kabupaten": "Kuantan Singingi",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3202,14 +3206,15 @@
       "right_source": "bps",
       "right_id": "PER-NUSANTARAVSEITAPUNG-f53b064b",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Perkebunan Nusantara V (Sei Tapung)",
         "kabupaten": "Rokan Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3650,14 +3655,15 @@
       "right_source": "bps",
       "right_id": "PER-KRISNAKERETAKENCANA-3bbb8ad2",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Krisna Kereta Kencana",
         "kabupaten": "Indragiri Hilir",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3667,14 +3673,15 @@
       "right_source": "bps",
       "right_id": "PER-AGRITASARIPRIMA-b8b8f9e9",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Agrita Sari Prima",
         "kabupaten": "Pelalawan",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -3784,14 +3791,15 @@
       "right_source": "bps",
       "right_id": "PER-PERDANAINTISAWITPERKASA-82affcb6",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Perdana Intisawit Perkasa",
         "kabupaten": "Rokan Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5014,14 +5022,15 @@
       "right_source": "bps",
       "right_id": "PER-AGROABADI-2bad6792",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Agro Abadi",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5064,14 +5073,15 @@
       "right_source": "bps",
       "right_id": "PER-BARITORIAUJAYA-44c18731",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Barito Riau Jaya",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5114,14 +5124,15 @@
       "right_source": "bps",
       "right_id": "PER-TESOINDAH-53f088e7",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Teso Indah",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5248,14 +5259,15 @@
       "right_source": "bps",
       "right_id": "PER-BINTANGRIAUSEJAHTERA-ef697219",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Bintang Riau Sejahtera",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5610,14 +5622,15 @@
       "right_source": "bps",
       "right_id": "PER-TANISUBURMAKMUR-d17b12ac",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Tani Subur Makmur",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5727,14 +5740,15 @@
       "right_source": "bps",
       "right_id": "PER-NUSANTARAVSEIBUATAN-c191aa2f",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Perkebunan Nusantara V (Sei Buatan)",
         "kabupaten": "Siak",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5792,14 +5806,15 @@
       "right_source": "bps",
       "right_id": "PER-RIAUSAWITINDOABADI-2d9edfc0",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Riau Sawitindo Abadi",
         "kabupaten": "Indragiri Hilir",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5858,14 +5873,15 @@
       "right_source": "bps",
       "right_id": "PER-OSCARINVESTAMA-faa1be04",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Oscar Investama",
         "kabupaten": "Indragiri Hilir",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -5923,14 +5939,15 @@
       "right_source": "bps",
       "right_id": "PER-CITRASARDELAABADI-56cb124b",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Citra Sardela Abadi",
         "kabupaten": "Rokan Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6220,14 +6237,15 @@
       "right_source": "bps",
       "right_id": "PER-STEELINDOWAHANAPERKASA-586ac4ba",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Steelindo Wahana Perkasa",
         "kabupaten": "Pelalawan",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6286,14 +6304,15 @@
       "right_source": "bps",
       "right_id": "PER-SEBERIDASUBUR-80d9bf53",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Seberida Subur",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6320,14 +6339,15 @@
       "right_source": "bps",
       "right_id": "PER-PANCAAGROLESTARI-e766e6e4",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Panca Agro Lestari",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6566,14 +6586,15 @@
       "right_source": "bps",
       "right_id": "PER-SINARREKSAKENCANA-0a61559a",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sinar Reksa Kencana",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6583,14 +6604,15 @@
       "right_source": "bps",
       "right_id": "PER-SEKOINDAH-77de388c",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Seko Indah",
         "kabupaten": "Indragiri Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6600,14 +6622,15 @@
       "right_source": "bps",
       "right_id": "PER-SINARSIAKDIANPERMAI-0e57d29b",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sinar Siak Dian Permai",
         "kabupaten": "Siak",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6633,14 +6656,15 @@
       "right_source": "bps",
       "right_id": "PER-WASUNDARIINDAH-a4931e1b",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Wasundari Indah",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6682,14 +6706,15 @@
       "right_source": "bps",
       "right_id": "PER-SAWITUNGGULPRIMAPLANTATIONS-6e1f1ebc",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sawit Unggul Prima Plantations",
         "kabupaten": "Kota Pekanbaru",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6731,14 +6756,15 @@
       "right_source": "bps",
       "right_id": "PER-SINARINTISAWIT-0e79cd1f",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sinar Inti Sawit",
         "kabupaten": "Bengkalis",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6796,14 +6822,15 @@
       "right_source": "bps",
       "right_id": "PER-KOSTAPALMIRA-34b3f6f6",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Kosta Palmira",
         "kabupaten": "Pelalawan",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -6813,14 +6840,15 @@
       "right_source": "bps",
       "right_id": "PER-EKADAYASEJATISUKSES-420fbcec",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Ekadaya Sejati Sukses",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7057,14 +7085,15 @@
       "right_source": "bps",
       "right_id": "PER-JALURPUSAKASAKTIKUMALA-49fedf3c",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Jalur Pusaka Sakti Kumala",
         "kabupaten": "Pelalawan",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7090,14 +7119,15 @@
       "right_source": "bps",
       "right_id": "PER-BUDITANIKEMBANGJAYA-373df0cc",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Budi Tani Kembang Jaya",
         "kabupaten": "Kota Pekanbaru",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7123,14 +7153,15 @@
       "right_source": "bps",
       "right_id": "PER-YUTANISUADIRI-2a6b2dd0",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Yutani Suadiri",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7140,14 +7171,15 @@
       "right_source": "bps",
       "right_id": "PER-SANDRIASUKSESBERSAMA-6a0a7231",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sandria Sukses Bersama",
         "kabupaten": "Kuantan Singingi",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7157,14 +7189,15 @@
       "right_source": "bps",
       "right_id": "PER-SATRIAWINDUSERAYA-97dd542b",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Satria Windu Seraya",
         "kabupaten": "Kota Pekanbaru",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7254,14 +7287,15 @@
       "right_source": "bps",
       "right_id": "PER-SITAPONGANLESTARI-d3eacd85",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Sitapongan Lestari",
         "kabupaten": "Rokan Hulu",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {
@@ -7402,14 +7436,15 @@
       "right_source": "bps",
       "right_id": "PER-GUNAUSAGRIPRATAMA-a8184d25",
       "nama_score": 0.85,
-      "geo_ok": null,
-      "status": "warning",
+      "geo_ok": true,
+      "status": "confirmed",
       "match_type": "gabungan_only",
       "human_verified": false,
       "evidence": {
         "atlas_nama": "Guna Usagri Pratama",
         "kabupaten": "Kampar",
-        "source": "atlas_full_gabungan"
+        "source": "atlas_full_gabungan",
+        "geo_basis": "kab_riau"
       }
     },
     {

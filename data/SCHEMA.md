@@ -129,7 +129,7 @@ Sumber bronze: `dim_perusahaan_alias.csv`.
 | **Grain** | 1 baris = pasangan match `(atlas, gfw)` |
 | **PK** | `match_id` |
 | **Wajib** | `match_id`, `atlas_nama` |
-| **Opsional** | `gfwid`, `match_confidence`, flags BPS/konflik |
+| **Opsional** | `atlas_uid` (diisi dari `atlas_full.uid`/`atlas_id` bila kosong), `gfwid`, `match_confidence`, flags BPS/konflik |
 
 ### konsesi atlas_full (`konsesi.json::atlas_full`)
 
@@ -149,7 +149,9 @@ Sumber bronze: `dim_perusahaan_alias.csv`.
 | **Grain** | 1 kunci desa / titik verifikasi |
 | **PK** | `id` |
 | **Wajib** | `id`, `kabupaten` |
-| **Opsional** | `kecamatan`, `desa`, `lon`, `lat`, `kepercayaan`, metadata Sentinel |
+| **Opsional** | `tipe` (`kunci_final` \| `hotspot_georef`), `kecamatan`, `desa`, `lon`, `lat`, `kepercayaan`, metadata Sentinel |
+
+`kunci_final` = 4 titik V02/V11/V12/V20. `hotspot_georef` = proksi dari sheet verifikasi sebaran (bukan kunci desa final).
 
 ### izin_2017 (`izin_2017.json`)
 
@@ -191,7 +193,9 @@ Alias mentah → kanonik: `dim_perusahaan_alias.csv`.
 | **Wajib** | `match_id`, `status`, `match_type` |
 | **Opsional** | `left_*`, `right_*`, `nama_score`, `geo_ok`, `human_verified`, `evidence` |
 
-Silver penuh tetap di `data/silver/bridge_entity_match.json`. Gold UI = subset field di atas.
+Silver penuh tetap di `data/silver/bridge_entity_match.json` (termasuk `not_found`).  
+Gold UI **mengecualikan** `match_type=not_found`.  
+**C7:** `meta.methodology.match_quality.rate_serving` = `confirmed ∧ geo_ok` / n serving; target ≥75%.
 
 ### dossier (`dossier.json`)
 

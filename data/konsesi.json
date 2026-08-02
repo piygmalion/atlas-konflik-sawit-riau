@@ -1522,7 +1522,7 @@
       {
         "match_id": "UNISERAYA__nogfw",
         "atlas_nama": "Uniseraya",
-        "atlas_uid": null,
+        "atlas_uid": "4614d58e-39d9-48c4-8586-2d2e7c9a026a",
         "gfwid": null,
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1538,7 +1538,7 @@
       {
         "match_id": "UNISERAYA__78d9fab4-06c7-49c3-8116-2ff259d5f3cd__PANTAIRAJA__1",
         "atlas_nama": "Uniseraya",
-        "atlas_uid": null,
+        "atlas_uid": "4614d58e-39d9-48c4-8586-2d2e7c9a026a",
         "gfwid": "78d9fab4-06c7-49c3-8116-2ff259d5f3cd",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1554,7 +1554,7 @@
       {
         "match_id": "UNISERAYA__ecaedcaf-ac88-40cd-9c37-42693437ca96__PANTAIRAJA__2",
         "atlas_nama": "Uniseraya",
-        "atlas_uid": null,
+        "atlas_uid": "4614d58e-39d9-48c4-8586-2d2e7c9a026a",
         "gfwid": "ecaedcaf-ac88-40cd-9c37-42693437ca96",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1570,7 +1570,7 @@
       {
         "match_id": "UNISERAYA__27b75c4b-c677-4ae2-af17-9fa2aadbba1a__PANTAIRAJA__3",
         "atlas_nama": "Uniseraya",
-        "atlas_uid": null,
+        "atlas_uid": "4614d58e-39d9-48c4-8586-2d2e7c9a026a",
         "gfwid": "27b75c4b-c677-4ae2-af17-9fa2aadbba1a",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1586,7 +1586,7 @@
       {
         "match_id": "UNISERAYA__78d9fab4-06c7-49c3-8116-2ff259d5f3cd__PANTAIRAJA__4",
         "atlas_nama": "Uniseraya",
-        "atlas_uid": null,
+        "atlas_uid": "4614d58e-39d9-48c4-8586-2d2e7c9a026a",
         "gfwid": "78d9fab4-06c7-49c3-8116-2ff259d5f3cd",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1602,7 +1602,7 @@
       {
         "match_id": "UNISERAYA__ecaedcaf-ac88-40cd-9c37-42693437ca96__PANTAIRAJA__5",
         "atlas_nama": "Uniseraya",
-        "atlas_uid": null,
+        "atlas_uid": "4614d58e-39d9-48c4-8586-2d2e7c9a026a",
         "gfwid": "ecaedcaf-ac88-40cd-9c37-42693437ca96",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1618,7 +1618,7 @@
       {
         "match_id": "UNISERAYA__27b75c4b-c677-4ae2-af17-9fa2aadbba1a__PANTAIRAJA__6",
         "atlas_nama": "Uniseraya",
-        "atlas_uid": null,
+        "atlas_uid": "4614d58e-39d9-48c4-8586-2d2e7c9a026a",
         "gfwid": "27b75c4b-c677-4ae2-af17-9fa2aadbba1a",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1634,7 +1634,7 @@
       {
         "match_id": "ALAMSARILESTARI__nogfw",
         "atlas_nama": "Alam Sari Lestari",
-        "atlas_uid": null,
+        "atlas_uid": "6b8e3c20-27a1-438b-9dc7-a013a9965afa",
         "gfwid": null,
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1650,7 +1650,7 @@
       {
         "match_id": "ALAMSARILESTARI__1719da04-0381-4162-ade4-2874a28472cb__ALAMSARILESTARI__8",
         "atlas_nama": "Alam Sari Lestari",
-        "atlas_uid": null,
+        "atlas_uid": "6b8e3c20-27a1-438b-9dc7-a013a9965afa",
         "gfwid": "1719da04-0381-4162-ade4-2874a28472cb",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1666,7 +1666,7 @@
       {
         "match_id": "ALAMSARILESTARI__f6c8af2e-6194-46e6-ad9f-2d004dfec900__MEKARSARIALAMLESTARI__9",
         "atlas_nama": "Alam Sari Lestari",
-        "atlas_uid": null,
+        "atlas_uid": "6b8e3c20-27a1-438b-9dc7-a013a9965afa",
         "gfwid": "f6c8af2e-6194-46e6-ad9f-2d004dfec900",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1682,7 +1682,7 @@
       {
         "match_id": "ALAMSARILESTARI__cf57f768-ad6b-4692-918e-08451b89d4cd",
         "atlas_nama": "Alam Sari Lestari",
-        "atlas_uid": null,
+        "atlas_uid": "6b8e3c20-27a1-438b-9dc7-a013a9965afa",
         "gfwid": "cf57f768-ad6b-4692-918e-08451b89d4cd",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1698,7 +1698,7 @@
       {
         "match_id": "ALAMSARILESTARI__1719da04-0381-4162-ade4-2874a28472cb__ALAMSARILESTARI__11",
         "atlas_nama": "Alam Sari Lestari",
-        "atlas_uid": null,
+        "atlas_uid": "6b8e3c20-27a1-438b-9dc7-a013a9965afa",
         "gfwid": "1719da04-0381-4162-ade4-2874a28472cb",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1714,7 +1714,7 @@
       {
         "match_id": "ALAMSARILESTARI__f6c8af2e-6194-46e6-ad9f-2d004dfec900__MEKARSARIALAMLESTARI__12",
         "atlas_nama": "Alam Sari Lestari",
-        "atlas_uid": null,
+        "atlas_uid": "6b8e3c20-27a1-438b-9dc7-a013a9965afa",
         "gfwid": "f6c8af2e-6194-46e6-ad9f-2d004dfec900",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1730,7 +1730,7 @@
       {
         "match_id": "WANASUBURSAWITINDAH__c278d410-8069-4171-a0b1-bc56eb92cc1e__WANASUBURSAWITINDAH__13",
         "atlas_nama": "Wana Subur Sawit Indah",
-        "atlas_uid": null,
+        "atlas_uid": "ec589346-ee80-4f07-9660-561d4d0e160d",
         "gfwid": "c278d410-8069-4171-a0b1-bc56eb92cc1e",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1746,7 +1746,7 @@
       {
         "match_id": "WANASUBURSAWITINDAH__c278d410-8069-4171-a0b1-bc56eb92cc1e__WANASUBURSAWITINDAH__14",
         "atlas_nama": "Wana Subur Sawit Indah",
-        "atlas_uid": null,
+        "atlas_uid": "ec589346-ee80-4f07-9660-561d4d0e160d",
         "gfwid": "c278d410-8069-4171-a0b1-bc56eb92cc1e",
         "tahun": "2023-2025",
         "tipe": "hutan+gambut",
@@ -1762,7 +1762,7 @@
       {
         "match_id": "SUMBERSAWITSEJAHTERA__nogfw",
         "atlas_nama": "Sumber Sawit Sejahtera",
-        "atlas_uid": null,
+        "atlas_uid": "5e6f2d52-05c6-4b1a-9167-dfeb9c3cc3a5",
         "gfwid": null,
         "tahun": "2023-2024",
         "tipe": "gambut",
@@ -1778,7 +1778,7 @@
       {
         "match_id": "TANISWADAYAPERDANA__74d1cfec-c819-47de-a1a5-fac62778cc74",
         "atlas_nama": "Tani Swadaya Perdana",
-        "atlas_uid": null,
+        "atlas_uid": "83d40b29-b12b-4f86-a09a-0849b1ea9ec4",
         "gfwid": "74d1cfec-c819-47de-a1a5-fac62778cc74",
         "tahun": "2023",
         "tipe": "gambut",
@@ -1794,7 +1794,7 @@
       {
         "match_id": "KARYATAMABAKTIMULYA__nogfw",
         "atlas_nama": "Karya Tama Bakti Mulya",
-        "atlas_uid": null,
+        "atlas_uid": "35aa5283-87bc-4d09-8f04-53e4b3f54c7b",
         "gfwid": null,
         "tahun": "2023",
         "tipe": "hutan",
@@ -1810,7 +1810,7 @@
       {
         "match_id": "KARYATAMABAKTIMULYA__40e69dec-e864-4a8e-8b88-d4f88d750cb2__KARYATAMABAKTIMULIA__18",
         "atlas_nama": "Karya Tama Bakti Mulya",
-        "atlas_uid": null,
+        "atlas_uid": "35aa5283-87bc-4d09-8f04-53e4b3f54c7b",
         "gfwid": "40e69dec-e864-4a8e-8b88-d4f88d750cb2",
         "tahun": "2023",
         "tipe": "hutan",
@@ -1826,7 +1826,7 @@
       {
         "match_id": "KARYATAMABAKTIMULYA__141a92c6-9e62-41f0-8892-d2fa9a2bf633__KARYATAMABAKTIMULIA__19",
         "atlas_nama": "Karya Tama Bakti Mulya",
-        "atlas_uid": null,
+        "atlas_uid": "35aa5283-87bc-4d09-8f04-53e4b3f54c7b",
         "gfwid": "141a92c6-9e62-41f0-8892-d2fa9a2bf633",
         "tahun": "2023",
         "tipe": "hutan",
@@ -1842,7 +1842,7 @@
       {
         "match_id": "KARYATAMABAKTIMULYA__40e69dec-e864-4a8e-8b88-d4f88d750cb2__KARYATAMABAKTIMULIA__20",
         "atlas_nama": "Karya Tama Bakti Mulya",
-        "atlas_uid": null,
+        "atlas_uid": "35aa5283-87bc-4d09-8f04-53e4b3f54c7b",
         "gfwid": "40e69dec-e864-4a8e-8b88-d4f88d750cb2",
         "tahun": "2023",
         "tipe": "hutan",
@@ -1858,7 +1858,7 @@
       {
         "match_id": "KARYATAMABAKTIMULYA__141a92c6-9e62-41f0-8892-d2fa9a2bf633__KARYATAMABAKTIMULIA__21",
         "atlas_nama": "Karya Tama Bakti Mulya",
-        "atlas_uid": null,
+        "atlas_uid": "35aa5283-87bc-4d09-8f04-53e4b3f54c7b",
         "gfwid": "141a92c6-9e62-41f0-8892-d2fa9a2bf633",
         "tahun": "2023",
         "tipe": "hutan",
@@ -1874,7 +1874,7 @@
       {
         "match_id": "TOBAINDAHBLOCKB__7a8d91a6-f563-451c-8aac-2a923c8c3164",
         "atlas_nama": "Toba Indah (Block B)",
-        "atlas_uid": null,
+        "atlas_uid": "e75d640a-732d-4433-b2b5-66ab166db318",
         "gfwid": "7a8d91a6-f563-451c-8aac-2a923c8c3164",
         "tahun": "2025",
         "tipe": "gambut",
@@ -1890,7 +1890,7 @@
       {
         "match_id": "TOBAINDAHBLOCKB__055bb4f4-e2c9-4254-bf58-52cc202ac3cc",
         "atlas_nama": "Toba Indah (Block B)",
-        "atlas_uid": null,
+        "atlas_uid": "e75d640a-732d-4433-b2b5-66ab166db318",
         "gfwid": "055bb4f4-e2c9-4254-bf58-52cc202ac3cc",
         "tahun": "2025",
         "tipe": "gambut",

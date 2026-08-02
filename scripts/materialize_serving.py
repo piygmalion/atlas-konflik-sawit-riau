@@ -115,11 +115,18 @@ def materialize_from_silver() -> int:
         n += 1
 
     print(f"materialize done ({n} artifacts)")
-    # Contract gate
+    # Contract gate + refresh dq_report so it never lags meta/export
     sys.path.insert(0, str(HERE.parent))
     from validate_web_data import main as validate_main
 
-    return validate_main()
+    rc = validate_main()
+    try:
+        from write_dq_report import main as dq_report_main
+
+        dq_report_main()
+    except Exception as exc:
+        print(f"WARN: write_dq_report skipped: {exc}")
+    return rc
 
 
 def main() -> int:

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T09:31:21+07:00",
+  "generated_at": "2026-08-02T09:45:42+07:00",
   "validate_exit_code": 0,
   "validate_pass": true,
   "validate_stdout": "=== validate_web_data ===\ndata: website/data\nkasus=270 objek=139 kab=12 polres=12 gfw=287\nRESULT: PASS (0 warnings)\n",
@@ -46,7 +46,7 @@
       "grade": "A",
       "note": "bersih",
       "top_null_fields": [
-        "fase2_gap 97.1%",
+        "fase2_gap 87.1%",
         "mitra_eval 87.1%",
         "kab_list 74.8%",
         "mitra_pair 30.9%",
@@ -105,7 +105,6 @@
       "grade": "A",
       "note": "bersih",
       "top_null_fields": [
-        "atlas_uid 100.0%",
         "ada_di_konflik_polda 83.3%",
         "ada_di_bps 45.8%",
         "area_ha 16.7%",
@@ -363,11 +362,11 @@
       "grade": "A",
       "note": "bersih",
       "top_null_fields": [
-        "atlas_uid 100.0%",
         "ada_di_konflik_polda 83.3%",
         "po_hgu 79.2%",
         "nama_bps_match 62.5%",
-        "po_legalst 54.2%"
+        "po_legalst 54.2%",
+        "type 54.2%"
       ]
     },
     {

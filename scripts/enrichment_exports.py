@@ -482,28 +482,39 @@ def export_izin_2017(root: Path, out: Path) -> dict:
 
 def export_desa_lock(root: Path, out: Path) -> dict:
     records = []
+    seen: set[str] = set()
     summary = root / "tmp" / "spatial" / "desa_lock" / "summary_kunci_desa_final.json"
     xlsx = root / "tabulasi_kunci_desa_V02_V11_V12_V20.xlsx"
+    verif = root / "tabulasi_verifikasi_lanjutan_sebaran_riau.xlsx"
+
+    def _add(rec: dict) -> None:
+        rid = str(rec.get("id") or "").strip()
+        if not rid or rid in seen:
+            return
+        seen.add(rid)
+        records.append(rec)
+
     if summary.exists():
         raw = json.loads(summary.read_text(encoding="utf-8"))
         for r in raw:
-            records.append(
+            _add(
                 {
                     "id": r.get("id"),
-                    "kabupaten": r.get("kab"),
-                    "kecamatan": r.get("kec"),
-                    "desa": r.get("desa"),
-                    "desa_utama": r.get("desa_utama"),
+                    "tipe": "kunci_final",
+                    "kabupaten": r.get("kab") or r.get("kab_resolved"),
+                    "kecamatan": r.get("kec") or r.get("kecamatan_kunci") or r.get("kec_prior"),
+                    "desa": r.get("desa") or r.get("desa_kunci"),
+                    "desa_utama": r.get("desa_utama") or r.get("desa_pip"),
                     "lon": r.get("lon"),
                     "lat": r.get("lat"),
                     "dist_km": r.get("dist_km"),
-                    "kepercayaan": r.get("conf"),
+                    "kepercayaan": r.get("conf") or r.get("kepercayaan"),
                     "tetangga": r.get("tetangga"),
                     "metode": r.get("metode"),
-                    "sent_scene": r.get("sent_scene"),
-                    "sent_date": r.get("sent_date"),
-                    "cloud_pct": r.get("cloud"),
-                    "sent_vis": r.get("sent_vis"),
+                    "sent_scene": r.get("sent_scene") or r.get("sentinel_scene"),
+                    "sent_date": r.get("sent_date") or r.get("sentinel_date"),
+                    "cloud_pct": r.get("cloud") or r.get("sentinel_cloud"),
+                    "sent_vis": r.get("sent_vis") or r.get("sentinel_interpretasi"),
                     "bukti": r.get("bukti"),
                 }
             )
@@ -519,9 +530,10 @@ def export_desa_lock(root: Path, out: Path) -> dict:
                 rid = d.get("ID")
                 if not rid:
                     continue
-                records.append(
+                _add(
                     {
                         "id": rid,
+                        "tipe": "kunci_final",
                         "kabupaten": d.get("Kabupaten"),
                         "kecamatan": d.get("Kecamatan"),
                         "desa": d.get("Desa kunci"),
@@ -539,11 +551,55 @@ def export_desa_lock(root: Path, out: Path) -> dict:
                         "bukti": None,
                     }
                 )
+
+    # Expand with georeferenced hotspots (proksi, bukan kunci desa final)
+    if verif.exists():
+        wb = openpyxl.load_workbook(verif, read_only=True, data_only=True)
+        sheet = "02_Hotspot Georef"
+        if sheet in wb.sheetnames:
+            rows = list(wb[sheet].iter_rows(values_only=True))
+            if rows:
+                headers = [str(h).strip() if h else f"c{i}" for i, h in enumerate(rows[0])]
+                for row in rows[1:]:
+                    d = {
+                        headers[i]: _clean(row[i] if i < len(row) else None)
+                        for i in range(len(headers))
+                    }
+                    rid = d.get("ID")
+                    lon = _to_float(d.get("Lon"))
+                    lat = _to_float(d.get("Lat"))
+                    if not rid or lon is None or lat is None:
+                        continue
+                    _add(
+                        {
+                            "id": rid,
+                            "tipe": "hotspot_georef",
+                            "kabupaten": d.get("Kabupaten (PIP)") or d.get("Kab OSM"),
+                            "kecamatan": d.get("Kecamatan Nominatim"),
+                            "desa": d.get("Display Nominatim") or d.get("Kecamatan Nominatim"),
+                            "desa_utama": d.get("Kecamatan Nominatim"),
+                            "lon": lon,
+                            "lat": lat,
+                            "dist_km": None,
+                            "kepercayaan": "Proksi hotspot georef (bukan kunci desa final)",
+                            "tetangga": None,
+                            "metode": d.get("Metode assign"),
+                            "sent_scene": None,
+                            "sent_date": None,
+                            "cloud_pct": None,
+                            "sent_vis": None,
+                            "bukti": d.get("Cocokan OSINT"),
+                        }
+                    )
+        wb.close()
+
     payload = {"total": len(records), "records": records}
     (out / "desa_lock.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print(f"  wrote desa_lock.json ({len(records)} records)")
+    n_final = sum(1 for r in records if r.get("tipe") == "kunci_final")
+    n_hs = sum(1 for r in records if r.get("tipe") == "hotspot_georef")
+    print(f"  wrote desa_lock.json ({len(records)} records; kunci_final={n_final} hotspot_georef={n_hs})")
     return payload
 
 
@@ -562,28 +618,37 @@ def apply_fase2_objek_flags(root: Path, objek: list[dict]) -> int:
     if not path.exists():
         return 0
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
-    gap_notes: dict[str, str] = {}
+    inti_notes: dict[str, str] = {}
     mitra_notes: dict[str, str] = {}
 
-    if "07_Gap_Matching_Sumber" in wb.sheetnames:
-        ws = wb["07_Gap_Matching_Sumber"]
+    if "02_Master_List_Inti" in wb.sheetnames:
+        ws = wb["02_Master_List_Inti"]
         rows = list(ws.iter_rows(values_only=True))
-        # Find header row containing 'Gap' or 'Sumber'
-        header_i = 0
+        header_i = 3 if len(rows) > 4 else 0
         for i, row in enumerate(rows[:8]):
             blob = " ".join(str(c or "") for c in row).lower()
-            if "gap" in blob or "sumber" in blob or "entitas" in blob:
+            if "entitas" in blob or ("nama" in blob and "kab" in blob):
                 header_i = i
                 break
         headers = [str(h).strip() if h else f"c{i}" for i, h in enumerate(rows[header_i])]
         for row in rows[header_i + 1 :]:
             d = {headers[i]: _clean(row[i] if i < len(row) else None) for i in range(len(headers))}
-            vals = [v for v in d.values() if v]
-            if len(vals) < 2:
+            nama = (
+                d.get("Entitas / objek")
+                or d.get("Nama")
+                or d.get("Nama entitas")
+                or next((v for k, v in d.items() if v and "entitas" in k.lower()), None)
+            )
+            if not nama:
                 continue
-            nama = vals[0]
-            note = " | ".join(str(v) for v in vals[1:4])
-            gap_notes[_norm_co(nama)] = note
+            parts = [
+                d.get("Label"),
+                d.get("Kelas"),
+                d.get("Kaitan Agrinas/Satgas") or d.get("Kaitan Agrinas"),
+            ]
+            note = " · ".join(str(p) for p in parts if p)
+            if note:
+                inti_notes[_norm_co(nama)] = note
 
     if "03_Mitra_KSO_Evaluasi" in wb.sheetnames:
         ws = wb["03_Mitra_KSO_Evaluasi"]
@@ -591,7 +656,7 @@ def apply_fase2_objek_flags(root: Path, objek: list[dict]) -> int:
         header_i = 3 if len(rows) > 4 else 0
         for i, row in enumerate(rows[:6]):
             blob = " ".join(str(c or "") for c in row).lower()
-            if "mitra" in blob and ("utama" in blob or "tanggal" in blob):
+            if "mitra" in blob and ("utama" in blob or "tanggal" in blob or "kab" in blob):
                 header_i = i
                 break
         headers = [str(h).strip() if h else f"c{i}" for i, h in enumerate(rows[header_i])]
@@ -602,54 +667,41 @@ def apply_fase2_objek_flags(root: Path, objek: list[dict]) -> int:
             )
             if not mitra:
                 continue
-            label = d.get("Label") or d.get("Kab (indikasi)") or "evaluasi"
+            label = d.get("Label") or d.get("Kab (indikasi)") or d.get("Status") or "evaluasi KSO"
             mitra_notes[_norm_co(mitra)] = str(label)
 
-    if "02_Master_List_Inti" in wb.sheetnames:
-        ws = wb["02_Master_List_Inti"]
-        rows = list(ws.iter_rows(values_only=True))
-        header_i = 3 if len(rows) > 4 else 0
-        for i, row in enumerate(rows[:6]):
-            blob = " ".join(str(c or "") for c in row).lower()
-            if "nama" in blob or "entitas" in blob:
-                header_i = i
-                break
-        headers = [str(h).strip() if h else f"c{i}" for i, h in enumerate(rows[header_i])]
-        for row in rows[header_i + 1 :]:
-            d = {headers[i]: _clean(row[i] if i < len(row) else None) for i in range(len(headers))}
-            nama = d.get("Nama") or d.get("Nama entitas") or next(
-                (v for k, v in d.items() if v and "nama" in k.lower()), None
-            )
-            label = d.get("Label") or d.get("Kelas") or d.get("Status")
-            if nama and label:
-                gap_notes.setdefault(_norm_co(nama), str(label))
-
     wb.close()
-    n = 0
+
+    def _fuzzy(notes: dict[str, str], on: str) -> str | None:
+        if on in notes:
+            return notes[on]
+        best = None
+        best_len = 0
+        for k, v in notes.items():
+            if not k or not on:
+                continue
+            if k in on or on in k:
+                if len(k) > best_len:
+                    best = v
+                    best_len = len(k)
+        return best
+
+    n_gap = 0
+    n_mitra = 0
     for o in objek:
         on = _norm_co(o.get("nama"))
         if not on:
             continue
-        gap = gap_notes.get(on)
-        mitra = mitra_notes.get(on)
-        if not gap:
-            for k, v in gap_notes.items():
-                if k and on and (k in on or on in k):
-                    gap = v
-                    break
-        if not mitra:
-            for k, v in mitra_notes.items():
-                if k and on and (k in on or on in k):
-                    mitra = v
-                    break
+        gap = _fuzzy(inti_notes, on)
+        mitra = _fuzzy(mitra_notes, on)
         if gap:
             o["fase2_gap"] = gap
-            n += 1
+            n_gap += 1
         if mitra:
             o["mitra_eval"] = mitra
-            n += 1
-    print(f"    objek fase2 flags applied touches={n}")
-    return n
+            n_mitra += 1
+    print(f"    objek fase2 flags gap={n_gap} mitra_eval={n_mitra} (inti={len(inti_notes)})")
+    return n_gap + n_mitra
 
 
 def patch_izin_flags(perusahaan_path: Path, kab_path: Path, izin: dict) -> None:

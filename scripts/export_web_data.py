@@ -1478,6 +1478,33 @@ def export_perusahaan():
     write_json("perusahaan.json", {"total": len(records), "records": records})
 
 
+def _fill_atlas_uid_from_full(atlas_rows: list[dict], atlas_full: dict) -> int:
+    """Join cocokan.atlas_nama → atlas_full.uid/atlas_id when atlas_uid empty."""
+    full_recs = (atlas_full or {}).get("records") or []
+    by_norm: dict[str, dict] = {}
+    for r in full_recs:
+        for key in (
+            norm_name(r.get("nama_perusahaan")),
+            norm_name(r.get("nama_kanonik")),
+        ):
+            if key and key not in by_norm:
+                by_norm[key] = r
+    filled = 0
+    for r in atlas_rows:
+        if clean(r.get("atlas_uid")):
+            continue
+        hit = by_norm.get(norm_name(r.get("atlas_nama"))) or by_norm.get(
+            norm_name(r.get("nama_kanonik"))
+        )
+        if not hit:
+            continue
+        uid = clean(hit.get("uid")) or clean(hit.get("atlas_id"))
+        if uid:
+            r["atlas_uid"] = uid
+            filled += 1
+    return filled
+
+
 def export_konsesi_atlas():
     from enrichment_exports import build_atlas_full
 
@@ -1485,6 +1512,16 @@ def export_konsesi_atlas():
     atlas = read_csv("cocokan_atlas_gabungan_gfw.csv")
     kepmen = read_csv("tabulasi_konsesi_sawit_kepmenhut_36_2025_riau_rapi.csv")
     atlas_full = build_atlas_full(ROOT)
+    n_uid = _fill_atlas_uid_from_full(atlas, atlas_full)
+    if n_uid:
+        # Persist SoT so apply_dq_fixes / re-exports keep atlas_uid
+        path = ROOT / "cocokan_atlas_gabungan_gfw.csv"
+        if path.exists() and atlas:
+            with path.open("w", encoding="utf-8", newline="") as f:
+                w = csv.DictWriter(f, fieldnames=list(atlas[0].keys()))
+                w.writeheader()
+                w.writerows(atlas)
+        print(f"    atlas_match atlas_uid filled from atlas_full: {n_uid}/{len(atlas)}")
     write_json(
         "konsesi.json",
         {

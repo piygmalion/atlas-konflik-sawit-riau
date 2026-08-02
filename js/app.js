@@ -327,12 +327,18 @@ function renderEnrichmentPanels() {
   const desaEl = document.getElementById("desaLockSummary");
   if (desaEl) {
     const rows = DATA.desa_lock?.records || [];
-    desaEl.innerHTML = rows.length
-      ? `<ul class="enrich-list">${rows
+    const kunci = rows.filter((r) => (r.tipe || "kunci_final") === "kunci_final");
+    const hotspot = rows.filter((r) => r.tipe === "hotspot_georef");
+    const show = [...kunci, ...hotspot].slice(0, 16);
+    desaEl.innerHTML = show.length
+      ? `<p class="muted small">${kunci.length} kunci final · ${hotspot.length} hotspot georef</p>
+        <ul class="enrich-list">${show
           .map(
             (r) =>
               `<li><strong>${escapeHtml(r.desa || r.desa_utama || r.id || "–")}</strong><span>${escapeHtml(
-                [r.kecamatan, r.kabupaten, r.kepercayaan].filter(Boolean).join(" · ")
+                [r.tipe === "hotspot_georef" ? "hotspot" : "kunci", r.kecamatan, r.kabupaten]
+                  .filter(Boolean)
+                  .join(" · ")
               )}</span></li>`
           )
           .join("")}</ul>`
@@ -635,14 +641,22 @@ function renderStats() {
     bias?.bias_flag
       ? " Liputan Extended LP bisa bias ke Polres yang lebih lengkap — skor ranking tidak dikalibrasi dari Extended mentah."
       : "";
+  const mq = DATA.meta?.methodology?.match_quality;
+  const mqShort =
+    mq && mq.rate_serving != null
+      ? ` Match quality serving ${mq.rate_serving}% confirmed∧geo_ok (target ≥${mq.target_pct ?? 75}%).`
+      : "";
   const disc =
     DATA.meta?.methodology?.disclaimer ||
     DATA.polres?.model?.catatan ||
     short;
   const summary = document.getElementById("methodNoteSummary");
   const methodEl = document.getElementById("methodNote");
-  if (summary) summary.textContent = short + biasShort;
-  if (methodEl) methodEl.textContent = disc;
+  if (summary) summary.textContent = short + biasShort + mqShort;
+  if (methodEl) {
+    const mqNote = mq?.note ? ` ${mq.note}` : "";
+    methodEl.textContent = disc + mqNote;
+  }
 
   // Seed kepmen heading before Analisis tab mounts charts
   const kepmenTotal = document.getElementById("kepmenTotal");

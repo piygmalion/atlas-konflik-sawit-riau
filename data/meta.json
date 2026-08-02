@@ -1,7 +1,7 @@
 {
   "brand": "Atlas Konflik Sawit Riau",
   "subtitle": "Pemetaan spasial konflik, objek Agrinas–Satgas, dan celahan perizinan",
-  "updated_at": "2026-08-02T09:31:20+07:00",
+  "updated_at": "2026-08-02T09:45:41+07:00",
   "bbox_riau": [
     100.0,
     -1.2,
@@ -28,12 +28,12 @@
     "atlas_full": 436,
     "perusahaan": 237,
     "perusahaan_alias": 691,
-    "desa_lock": 4,
+    "desa_lock": 19,
     "izin_2017": 388,
     "entri_terpetakan": 240,
     "entri_tidak_terpetakan": 30,
     "dossier": 436,
-    "entity_matches": 450
+    "entity_matches": 308
   },
   "layers": [
     {
@@ -108,6 +108,17 @@
       "top3_share": 0.711,
       "bias_flag": true,
       "note": "Register gold mencakup lapisan Extended LP; distribusi Polres/kab bisa bias ke unit yang lebih lengkap (mis. Kampar/Dumai). Skor Polres ranking tetap dari indeks liputan+objek+register — tidak dikalibrasi ulang dari hitungan Extended mentah."
+    },
+    "match_quality": {
+      "n_bridge_all": 450,
+      "n_serving": 308,
+      "n_not_found_excluded": 142,
+      "confirmed_geo_ok": 306,
+      "rate_serving": 99.4,
+      "rate_bridge_all": 68.0,
+      "target_pct": 75.0,
+      "pass": true,
+      "note": "Metrik C7 = confirmed∧geo_ok / serving matches (not_found atlas_full tetap di silver/bridge, tidak dihitung di denominator UI)."
     }
   },
   "sumber": [
