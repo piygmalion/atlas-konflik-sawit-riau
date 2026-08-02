@@ -9,6 +9,7 @@
       "no": 1.0,
       "company": "ANDALAS WAHANA BERJAYA",
       "name": "ANDALAS WAHANA BERJAYA",
+      "nama_kanonik": "ANDALAS WAHANA BERJAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -19,13 +20,13 @@
       "gfwid": "79f7587e-e14a-40a5-9fff-8c851a6e84e4",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.55480890785287,
-      "lat": -1.1016068887051986,
-      "nama_kanonik": "ANDALAS WAHANA BERJAYA"
+      "lat": -1.1016068887051986
     },
     {
       "no": 2.0,
       "company": "BANGUN AGAM PERMAI",
       "name": "BANGUN AGAM PERMAI",
+      "nama_kanonik": "BANGUN AGAM PERMAI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -36,13 +37,13 @@
       "gfwid": "e8d220ac-5271-488e-9a0e-31a604a231d4",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.0416853756661,
-      "lat": -0.1007661602935679,
-      "nama_kanonik": "BANGUN AGAM PERMAI"
+      "lat": -0.1007661602935679
     },
     {
       "no": 3.0,
       "company": "BPP SEI. PUTIH",
       "name": "BPP SEI. PUTIH",
+      "nama_kanonik": "PT KEBUN PERCOBAAN SEI PUTIH",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -53,13 +54,13 @@
       "gfwid": "481da9a5-e410-4e26-bd07-fe607788424c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.71378052942565,
-      "lat": 0.4758564520805893,
-      "nama_kanonik": "PT KEBUN PERCOBAAN SEI PUTIH"
+      "lat": 0.4758564520805893
     },
     {
       "no": 4.0,
       "company": "CV. NIRMALA",
       "name": "CV. NIRMALA",
+      "nama_kanonik": "NIRMALA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -70,13 +71,13 @@
       "gfwid": "64018bba-84ec-4432-9110-0c015f6ce763",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.78725314738747,
-      "lat": -0.44752870123826927,
-      "nama_kanonik": "NIRMALA"
+      "lat": -0.44752870123826927
     },
     {
       "no": 5.0,
       "company": "CV. RIAU MERBAU LESTARI",
       "name": "CV. RIAU MERBAU LESTARI",
+      "nama_kanonik": "RIAU MERBAU LESTARI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -87,13 +88,13 @@
       "gfwid": "7a808aff-5bcd-445d-ab96-f4901300eb4e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.50046812159442,
-      "lat": -0.5580997303063322,
-      "nama_kanonik": "RIAU MERBAU LESTARI"
+      "lat": -0.5580997303063322
     },
     {
       "no": 6.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 1",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -104,13 +105,13 @@
       "gfwid": "e72aaa0f-461c-4711-889e-54948b8ae379",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.19119878215868,
-      "lat": -0.41116157043650053,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.41116157043650053
     },
     {
       "no": 7.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 10",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -121,13 +122,13 @@
       "gfwid": "41a0a1b6-f049-4f96-9050-74da91629934",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.02473922161444,
-      "lat": -0.6710963389747633,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.6710963389747633
     },
     {
       "no": 8.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 11",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -138,13 +139,13 @@
       "gfwid": "bfa91553-9045-4c5a-9448-12578920ca58",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.90658994484386,
-      "lat": -0.694390480044612,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.694390480044612
     },
     {
       "no": 9.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 12",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -155,13 +156,13 @@
       "gfwid": "f2849147-5992-4eaa-9c83-058f828f91aa",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.25232937033553,
-      "lat": -0.600561999425011,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.600561999425011
     },
     {
       "no": 10.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 13",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -172,13 +173,13 @@
       "gfwid": "20e3fc9b-225b-4ecf-bb4b-ae815c9119af",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.07699668604606,
-      "lat": -0.3636988881658103,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.3636988881658103
     },
     {
       "no": 11.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 14",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -189,13 +190,13 @@
       "gfwid": "90b55c39-13d8-4b74-84dc-bc060b3e47f3",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.40680107595843,
-      "lat": -0.4545267295926696,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.4545267295926696
     },
     {
       "no": 12.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 2",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -206,13 +207,13 @@
       "gfwid": "5645c720-3b92-4310-8581-da69c2bd1426",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.14973876888271,
-      "lat": -0.4174989054407308,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.4174989054407308
     },
     {
       "no": 13.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 3",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -223,13 +224,13 @@
       "gfwid": "2c8c0f2a-2466-47f2-9c5f-45b10d6132f8",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.89754499679663,
-      "lat": -0.4444204305332624,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.4444204305332624
     },
     {
       "no": 14.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 4",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -240,13 +241,13 @@
       "gfwid": "7303e78c-7eaa-416e-b92a-f7fbd8e6acf1",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.07938143363695,
-      "lat": -0.49707712471470594,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.49707712471470594
     },
     {
       "no": 15.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 5",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -257,13 +258,13 @@
       "gfwid": "5d81ffd7-8617-4fd2-afe7-c777f37b433b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.21215695872152,
-      "lat": -0.6711330288039575,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.6711330288039575
     },
     {
       "no": 16.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 6",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -274,13 +275,13 @@
       "gfwid": "2d2cd362-5f4c-4bb5-be51-a71cef011640",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.59924647008133,
-      "lat": -0.736173076948779,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.736173076948779
     },
     {
       "no": 17.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 7",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -291,13 +292,13 @@
       "gfwid": "55044d39-3db9-4505-945e-4cd44edc6c89",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.45239439945234,
-      "lat": -0.5221045817088265,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.5221045817088265
     },
     {
       "no": 18.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 8",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -308,13 +309,13 @@
       "gfwid": "da364984-48cf-4d86-ae6d-6cd2d807d2ec",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.43615924553073,
-      "lat": -0.577419888627222,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.577419888627222
     },
     {
       "no": 19.0,
       "company": "KEBUN SWADAYA",
       "name": "KEBUN SWADAYA 9",
+      "nama_kanonik": "SWADAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -325,13 +326,13 @@
       "gfwid": "f8c0e1f0-1f2f-459c-9bc6-2f16686f221b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.44179686592258,
-      "lat": -0.604192836507411,
-      "nama_kanonik": "SWADAYA"
+      "lat": -0.604192836507411
     },
     {
       "no": 20.0,
       "company": "KT. BUANA LUHUR",
       "name": "KT. BUANA LUHUR",
+      "nama_kanonik": "KT BUANA LUHUR",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -342,13 +343,13 @@
       "gfwid": "e735328a-3354-4487-93da-e53528f22441",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.47485449983604,
-      "lat": 1.4415325002571449,
-      "nama_kanonik": "KT BUANA LUHUR"
+      "lat": 1.4415325002571449
     },
     {
       "no": 21.0,
       "company": "KT. MADISON JAYA",
       "name": "KT. MADISON JAYA",
+      "nama_kanonik": "KT MADISON JAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -359,13 +360,13 @@
       "gfwid": "ade7c868-c089-4d4f-9195-c6a8dfc3ea9f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.47485449977727,
-      "lat": 1.4190490001191307,
-      "nama_kanonik": "KT MADISON JAYA"
+      "lat": 1.4190490001191307
     },
     {
       "no": 22.0,
       "company": "No name",
       "name": "No name",
+      "nama_kanonik": "NO NAME",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -376,13 +377,13 @@
       "gfwid": "ce7762bd-c460-4552-91c1-1f8e9e626b4c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.57870250159478,
-      "lat": 1.7688775432984585,
-      "nama_kanonik": "NO NAME"
+      "lat": 1.7688775432984585
     },
     {
       "no": 23.0,
       "company": "No name",
       "name": "No name",
+      "nama_kanonik": "NO NAME",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -393,13 +394,13 @@
       "gfwid": "c989965d-9587-4e76-bb9b-49a6dd8777b7",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.57870250159478,
-      "lat": 1.7688775432984585,
-      "nama_kanonik": "NO NAME"
+      "lat": 1.7688775432984585
     },
     {
       "no": 24.0,
       "company": "PASAMAN PERMAI",
       "name": "PASAMAN PERMAI",
+      "nama_kanonik": "PASAMAN PERMAI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -410,13 +411,13 @@
       "gfwid": "2f7394fa-a145-4e0c-8df5-3efbd950a803",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 99.97936051157488,
-      "lat": -0.11257501539035594,
-      "nama_kanonik": "PASAMAN PERMAI"
+      "lat": -0.11257501539035594
     },
     {
       "no": 25.0,
       "company": "PT. ABDI BUDI MULYA",
       "name": "PT. ABDI BUDI MULYA",
+      "nama_kanonik": "ABDI BUDI MULYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -427,13 +428,13 @@
       "gfwid": "d342c7e3-e291-41d8-a864-9462026c6987",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.2894435493375,
-      "lat": 2.0667287525385323,
-      "nama_kanonik": "ABDI BUDI MULYA"
+      "lat": 2.0667287525385323
     },
     {
       "no": 26.0,
       "company": "PT. ADEI CRUMB RUBBER",
       "name": "PT. ADEI CRUMB RUBBER 1",
+      "nama_kanonik": "ADEI CRUMB RUBBER",
       "group": "No group",
       "type": "Pencadangan",
       "legal": "Pencadangan",
@@ -444,13 +445,13 @@
       "gfwid": "e90b27e6-0737-49e6-ad42-697f4fdc4a31",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.50290302796908,
-      "lat": 1.1655652921477713,
-      "nama_kanonik": "ADEI CRUMB RUBBER"
+      "lat": 1.1655652921477713
     },
     {
       "no": 27.0,
       "company": "PT. ADEI CRUMB RUBBER",
       "name": "PT. ADEI CRUMB RUBBER 2",
+      "nama_kanonik": "ADEI CRUMB RUBBER",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 1.491,00 Ha",
@@ -461,13 +462,13 @@
       "gfwid": "2734344c-b390-4c52-8a6e-77925f466fe3",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.31900797802389,
-      "lat": 1.128213005473606,
-      "nama_kanonik": "ADEI CRUMB RUBBER"
+      "lat": 1.128213005473606
     },
     {
       "no": 28.0,
       "company": "PT. ADEI CRUMB RUBBER",
       "name": "PT. ADEI CRUMB RUBBER 3",
+      "nama_kanonik": "ADEI CRUMB RUBBER",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 12.860,00 Ha",
@@ -478,13 +479,13 @@
       "gfwid": "152f8bfc-e2b2-40f7-b679-0ea16fdba21d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.02234033361181,
-      "lat": 0.3689256032571886,
-      "nama_kanonik": "ADEI CRUMB RUBBER"
+      "lat": 0.3689256032571886
     },
     {
       "no": 29.0,
       "company": "PT. ADITYA PALMA NUSANTARA",
       "name": "PT. ADITYA PALMA NUSANTARA",
+      "nama_kanonik": "ADITYA PALMA NUSANTARA",
       "group": "Duta Palma Group",
       "type": null,
       "legal": null,
@@ -495,13 +496,13 @@
       "gfwid": "006b8581-e321-4f1d-8ee2-0e4763869a82",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.68367514195873,
-      "lat": 1.0651280287248694,
-      "nama_kanonik": "ADITYA PALMA NUSANTARA"
+      "lat": 1.0651280287248694
     },
     {
       "no": 30.0,
       "company": "PT. AGRA MASANG PERKASA",
       "name": "PT. AGRA MASANG PERKASA 1",
+      "nama_kanonik": "AGRA MASANG PERKASA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -512,13 +513,13 @@
       "gfwid": "cf99cb30-39bd-4ad7-96ce-0f1e96af2ffa",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 99.99547269042853,
-      "lat": -0.15719226191691837,
-      "nama_kanonik": "AGRA MASANG PERKASA"
+      "lat": -0.15719226191691837
     },
     {
       "no": 31.0,
       "company": "PT. AGRO WIRATAMA",
       "name": "PT. AGRO WIRATAMA 1",
+      "nama_kanonik": "AGRO WIRATAMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -529,13 +530,13 @@
       "gfwid": "a679ed95-54b0-4e34-bf8d-1c664b51dec6",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.01956135085634,
-      "lat": -0.823046884763734,
-      "nama_kanonik": "AGRO WIRATAMA"
+      "lat": -0.823046884763734
     },
     {
       "no": 32.0,
       "company": "PT. AGRORAYA GEMATRANS",
       "name": "PT. AGRORAYA GEMATRANS",
+      "nama_kanonik": "AGRORAYA GEMATRANS",
       "group": "Sambu Group",
       "type": null,
       "legal": null,
@@ -546,13 +547,13 @@
       "gfwid": "f0876e3b-0870-4a7f-9dcd-ffe78989dff5",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.76870140016167,
-      "lat": -0.7659741121919368,
-      "nama_kanonik": "AGRORAYA GEMATRANS"
+      "lat": -0.7659741121919368
     },
     {
       "no": 33.0,
       "company": "PT. AGROWIYANA (I)",
       "name": "PT. AGROWIYANA (I)",
+      "nama_kanonik": "AGROWIYANA I",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -563,13 +564,13 @@
       "gfwid": "d63e3d42-ac47-4942-8d27-09e7090d9801",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.10236922125202,
-      "lat": -1.0687307599393345,
-      "nama_kanonik": "AGROWIYANA I"
+      "lat": -1.0687307599393345
     },
     {
       "no": 34.0,
       "company": "PT. AGROWIYANA (II)",
       "name": "PT. AGROWIYANA (II)",
+      "nama_kanonik": "AGROWIYANA II",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -580,13 +581,13 @@
       "gfwid": "69800a74-2fb6-4d1f-af2c-fe26fd032ac7",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.15139662925237,
-      "lat": -1.044356454664442,
-      "nama_kanonik": "AGROWIYANA II"
+      "lat": -1.044356454664442
     },
     {
       "no": 35.0,
       "company": "PT. ALAM PERMAI SUMBAR NUSA",
       "name": "PT. ALAM PERMAI SUMBAR NUSA 1",
+      "nama_kanonik": "ALAM PERMAI SUMBAR NUSA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -597,13 +598,13 @@
       "gfwid": "c794b320-bd01-4450-8bc3-de8e2e78fe6e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.31986979053411,
-      "lat": -0.773662915291878,
-      "nama_kanonik": "ALAM PERMAI SUMBAR NUSA"
+      "lat": -0.773662915291878
     },
     {
       "no": 36.0,
       "company": "PT. ALAM PERMAI SUMBAR NUSA",
       "name": "PT. ALAM PERMAI SUMBAR NUSA 2",
+      "nama_kanonik": "ALAM PERMAI SUMBAR NUSA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -614,13 +615,13 @@
       "gfwid": "83a00732-e004-41a4-95f4-7b807e55100d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.76109154008054,
-      "lat": -0.8464817967692371,
-      "nama_kanonik": "ALAM PERMAI SUMBAR NUSA"
+      "lat": -0.8464817967692371
     },
     {
       "no": 37.0,
       "company": "PT. ALAM SARI LESTARI",
       "name": "PT. ALAM SARI LESTARI",
+      "nama_kanonik": "ALAM SARI LESTARI",
       "group": "No group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -631,13 +632,13 @@
       "gfwid": "1719da04-0381-4162-ade4-2874a28472cb",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.53226337930025,
-      "lat": -0.4755789902252553,
-      "nama_kanonik": "ALAM SARI LESTARI"
+      "lat": -0.4755789902252553
     },
     {
       "no": 38.0,
       "company": "PT. ALFA GLORY",
       "name": "PT. ALFA GLORY 1",
+      "nama_kanonik": "ALFA GLORY",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -648,13 +649,13 @@
       "gfwid": "a097728e-037d-4d2f-9864-7d2e90b6c76d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.28395846531063,
-      "lat": -0.06573644706523848,
-      "nama_kanonik": "ALFA GLORY"
+      "lat": -0.06573644706523848
     },
     {
       "no": 39.0,
       "company": "PT. ALFA GLORY",
       "name": "PT. ALFA GLORY 2",
+      "nama_kanonik": "ALFA GLORY",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 2.094,88  Ha",
@@ -665,13 +666,13 @@
       "gfwid": "3adb1f45-ae09-4cb4-8e14-287d41693097",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.36655102845268,
-      "lat": -0.2917473633170383,
-      "nama_kanonik": "ALFA GLORY"
+      "lat": -0.2917473633170383
     },
     {
       "no": 40.0,
       "company": "PT. ANAM KOTO",
       "name": "PT. ANAM KOTO 1",
+      "nama_kanonik": "ANAM KOTO",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -682,13 +683,13 @@
       "gfwid": "888e0f0b-a8cd-4211-b2e4-2af79fb8e78c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.3583841554784,
-      "lat": -0.7599917223808046,
-      "nama_kanonik": "ANAM KOTO"
+      "lat": -0.7599917223808046
     },
     {
       "no": 41.0,
       "company": "PT. ANAM KOTO",
       "name": "PT. ANAM KOTO 2",
+      "nama_kanonik": "ANAM KOTO",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -699,13 +700,13 @@
       "gfwid": "aac888d6-2975-4aa7-8179-91b7539c04c8",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.29713796159189,
-      "lat": -0.7612169445854932,
-      "nama_kanonik": "ANAM KOTO"
+      "lat": -0.7612169445854932
     },
     {
       "no": 42.0,
       "company": "PT. ANAM KOTO",
       "name": "PT. ANAM KOTO 3",
+      "nama_kanonik": "ANAM KOTO",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -716,13 +717,13 @@
       "gfwid": "f0379fe7-8a8b-4790-be22-62be9ff48df4",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.32336919685336,
-      "lat": -0.7860550457200465,
-      "nama_kanonik": "ANAM KOTO"
+      "lat": -0.7860550457200465
     },
     {
       "no": 43.0,
       "company": "PT. ANAM KOTO",
       "name": "PT. ANAM KOTO 4",
+      "nama_kanonik": "ANAM KOTO",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -733,13 +734,13 @@
       "gfwid": "b2ac5a67-990b-4e47-81f1-3f9f661b6402",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.30060455499846,
-      "lat": -0.7697166106802645,
-      "nama_kanonik": "ANAM KOTO"
+      "lat": -0.7697166106802645
     },
     {
       "no": 44.0,
       "company": "PT. ANAM KOTO",
       "name": "PT. ANAM KOTO 5",
+      "nama_kanonik": "ANAM KOTO",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -750,13 +751,13 @@
       "gfwid": "d9b7f6cf-0633-48da-b571-fd4bad873c4b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.32709775645283,
-      "lat": -0.789704381877074,
-      "nama_kanonik": "ANAM KOTO"
+      "lat": -0.789704381877074
     },
     {
       "no": 45.0,
       "company": "PT. ANEKA INTI PERSADA",
       "name": "PT. ANEKA INTI PERSADA",
+      "nama_kanonik": "ANEKA INTI PERSADA",
       "group": "Sime Darby",
       "type": "HGU",
       "legal": "HGU : 11.134 Ha",
@@ -767,13 +768,13 @@
       "gfwid": "8c5a04f3-62f6-4004-b417-dd09d5307165",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.6547570463007,
-      "lat": 0.5858596954863857,
-      "nama_kanonik": "ANEKA INTI PERSADA"
+      "lat": 0.5858596954863857
     },
     {
       "no": 46.0,
       "company": "PT. ANEKAPURA MULTI KERTA",
       "name": "PT. ANEKAPURA MULTI KERTA",
+      "nama_kanonik": "ANEKAPURA MULTI KERTA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -784,13 +785,13 @@
       "gfwid": "1ea31755-491d-4ba0-b7f8-8c594e997d32",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.01449677260575,
-      "lat": -1.0761532345500022,
-      "nama_kanonik": "ANEKAPURA MULTI KERTA"
+      "lat": -1.0761532345500022
     },
     {
       "no": 47.0,
       "company": "PT. ARIAN MULTI KAWA",
       "name": "PT. ARIAN MULTI KAWA 1",
+      "nama_kanonik": "ARIAN MULTI KAWA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -801,13 +802,13 @@
       "gfwid": "7d08482b-3ec0-4ff0-8501-874610f56f0b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.84531776847622,
-      "lat": -0.6313170341980193,
-      "nama_kanonik": "ARIAN MULTI KAWA"
+      "lat": -0.6313170341980193
     },
     {
       "no": 48.0,
       "company": "PT. ARIAN MULTI KAWA",
       "name": "PT. ARIAN MULTI KAWA 2",
+      "nama_kanonik": "ARIAN MULTI KAWA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -818,13 +819,13 @@
       "gfwid": "8aa4213b-3504-4657-869d-995e8169f962",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.61863199456516,
-      "lat": -0.8248982836438435,
-      "nama_kanonik": "ARIAN MULTI KAWA"
+      "lat": -0.8248982836438435
     },
     {
       "no": 49.0,
       "company": "PT. ARIAN MULTI KAWA",
       "name": "PT. ARIAN MULTI KAWA 3",
+      "nama_kanonik": "ARIAN MULTI KAWA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -835,13 +836,13 @@
       "gfwid": "f5a4747f-61e7-4608-9298-f6d491ad8219",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.24495197314198,
-      "lat": -0.561848248129983,
-      "nama_kanonik": "ARIAN MULTI KAWA"
+      "lat": -0.561848248129983
     },
     {
       "no": 50.0,
       "company": "PT. ARINDO TRI SEJAHTERA",
       "name": "PT. ARINDO TRI SEJAHTERA 1",
+      "nama_kanonik": "ARINDO TRI SEJAHTERA",
       "group": "Surya Dumai Group",
       "type": "HGU",
       "legal": "HGU : 3.471,41 Ha",
@@ -852,13 +853,13 @@
       "gfwid": "e60e31c5-b40f-4644-92b1-5c6e971de798",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.86662682780427,
-      "lat": 0.6029214708358632,
-      "nama_kanonik": "ARINDO TRI SEJAHTERA"
+      "lat": 0.6029214708358632
     },
     {
       "no": 51.0,
       "company": "PT. ARINDO TRI SEJAHTERA",
       "name": "PT. ARINDO TRI SEJAHTERA 2",
+      "nama_kanonik": "ARINDO TRI SEJAHTERA",
       "group": "Surya Dumai Group",
       "type": "HGU",
       "legal": "HGU",
@@ -869,13 +870,13 @@
       "gfwid": "9e5c0d05-cff7-4894-9353-4cb312ef7f28",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.84909264999621,
-      "lat": 0.7254007959826171,
-      "nama_kanonik": "ARINDO TRI SEJAHTERA"
+      "lat": 0.7254007959826171
     },
     {
       "no": 52.0,
       "company": "PT. ARVENA SEPAKAT",
       "name": "PT. ARVENA SEPAKAT 1",
+      "nama_kanonik": "ARVENA SEPAKAT",
       "group": "Incasi Raya",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -886,13 +887,13 @@
       "gfwid": "00f68618-ea38-4005-b4ac-f47064f092ab",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.30310276157589,
-      "lat": -0.7232044248501753,
-      "nama_kanonik": "ARVENA SEPAKAT"
+      "lat": -0.7232044248501753
     },
     {
       "no": 53.0,
       "company": "PT. ARVENA SEPAKAT",
       "name": "PT. ARVENA SEPAKAT 2",
+      "nama_kanonik": "ARVENA SEPAKAT",
       "group": "Incasi Raya",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -903,13 +904,13 @@
       "gfwid": "16c3445c-55ab-44e7-ae39-f3e2f60ea00a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.28950899963495,
-      "lat": -0.6894963331670126,
-      "nama_kanonik": "ARVENA SEPAKAT"
+      "lat": -0.6894963331670126
     },
     {
       "no": 54.0,
       "company": "PT. AZEK SAKTI",
       "name": "PT. AZEK SAKTI",
+      "nama_kanonik": "AZEK SAKTI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -920,13 +921,13 @@
       "gfwid": "8e07cdd0-5218-4b3e-a1fe-de987223bffd",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.28886356113185,
-      "lat": 0.9845854646516184,
-      "nama_kanonik": "AZEK SAKTI"
+      "lat": 0.9845854646516184
     },
     {
       "no": 55.0,
       "company": "PT. BAKRIE NUSANTARA PLANTATION",
       "name": "PT. BAKRIE NUSANTARA PLANTATION",
+      "nama_kanonik": "BAKRIE NUSANTARA PLANTATION",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -937,13 +938,13 @@
       "gfwid": "9ca5a85b-a828-48d8-92a0-01004a2e320b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.04252411457288,
-      "lat": -0.10098091806681896,
-      "nama_kanonik": "BAKRIE NUSANTARA PLANTATION"
+      "lat": -0.10098091806681896
     },
     {
       "no": 56.0,
       "company": "PT. BANYU BENING UTAMA",
       "name": "PT. BANYU BENING UTAMA",
+      "nama_kanonik": "PT BANYU BENING UTAMA KEBUN 1",
       "group": "Duta Palma Group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -954,13 +955,13 @@
       "gfwid": "e28ad3a5-bb53-443e-bf96-0bf7994d362e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.56504371343354,
-      "lat": -0.5549163122020759,
-      "nama_kanonik": "PT BANYU BENING UTAMA KEBUN 1"
+      "lat": -0.5549163122020759
     },
     {
       "no": 57.0,
       "company": "PT. BASKARASATRIATAMA RIAU",
       "name": "PT. BASKARASATRIATAMA RIAU 1",
+      "nama_kanonik": "BASKARASATRIATAMA RIAU",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -971,13 +972,13 @@
       "gfwid": "dab53990-2c2a-44e9-93eb-0e521817b1b5",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.95339334087241,
-      "lat": 0.3924692807928429,
-      "nama_kanonik": "BASKARASATRIATAMA RIAU"
+      "lat": 0.3924692807928429
     },
     {
       "no": 58.0,
       "company": "PT. BASKARASATRIATAMA RIAU",
       "name": "PT. BASKARASATRIATAMA RIAU 2",
+      "nama_kanonik": "BASKARASATRIATAMA RIAU",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -988,13 +989,13 @@
       "gfwid": "ae1c0cbb-ae3e-4c0a-a7d0-0ea31eddf79f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.71753485561993,
-      "lat": 0.28302107256325254,
-      "nama_kanonik": "BASKARASATRIATAMA RIAU"
+      "lat": 0.28302107256325254
     },
     {
       "no": 59.0,
       "company": "PT. BATU PUTIH",
       "name": "PT. BATU PUTIH",
+      "nama_kanonik": "BATU PUTIH",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1005,13 +1006,13 @@
       "gfwid": "17fd7750-ab86-4833-a139-ec86c8afb25d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.0346062140553,
-      "lat": 1.592674595194656,
-      "nama_kanonik": "BATU PUTIH"
+      "lat": 1.592674595194656
     },
     {
       "no": 60.0,
       "company": "PT. BENGKALIS KAMPAR SARANA",
       "name": "PT. BENGKALIS KAMPAR SARANA",
+      "nama_kanonik": "BENGKALIS KAMPAR SARANA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1022,13 +1023,13 @@
       "gfwid": "a3c51401-eabe-4d9e-b44a-6ae52f9c5d52",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.39044465273157,
-      "lat": -0.535682585064855,
-      "nama_kanonik": "BENGKALIS KAMPAR SARANA"
+      "lat": -0.535682585064855
     },
     {
       "no": 61.0,
       "company": "PT. BERTUAH ANEKA YASA",
       "name": "PT. BERTUAH ANEKA YASA",
+      "nama_kanonik": "BERTUAH ANEKA YASA",
       "group": "Duta Palma Group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -1039,13 +1040,13 @@
       "gfwid": "2f902c67-f791-49a8-94ff-adca92974ede",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.58769381365433,
-      "lat": -0.44177634454920506,
-      "nama_kanonik": "BERTUAH ANEKA YASA"
+      "lat": -0.44177634454920506
     },
     {
       "no": 62.0,
       "company": "PT. BINA FITRI JAYA",
       "name": "PT. BINA FITRI JAYA",
+      "nama_kanonik": "BINA FITRI JAYA",
       "group": "No group",
       "type": "Panitia B",
       "legal": "Panitia B",
@@ -1056,13 +1057,13 @@
       "gfwid": "afdb8a79-2015-428a-bb43-37d4a4d0966e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.2699312173636,
-      "lat": 0.7974040430109837,
-      "nama_kanonik": "BINA FITRI JAYA"
+      "lat": 0.7974040430109837
     },
     {
       "no": 63.0,
       "company": "PT. BINA RUPAT SEPANG LESTARI",
       "name": "PT. BINA RUPAT SEPANG LESTARI",
+      "nama_kanonik": "BINA RUPAT SEPANG LESTARI",
       "group": "No group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -1073,13 +1074,13 @@
       "gfwid": "f3111340-0f2e-41f5-9e7f-dc7ea5bccd6d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.61996977613236,
-      "lat": 2.053554534719009,
-      "nama_kanonik": "BINA RUPAT SEPANG LESTARI"
+      "lat": 2.053554534719009
     },
     {
       "no": 64.0,
       "company": "PT. BLANGKOLAM",
       "name": "PT. BLANGKOLAM 1",
+      "nama_kanonik": "BLANGKOLAM",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 3.952,00 Ha",
@@ -1090,13 +1091,13 @@
       "gfwid": "360aa1e2-9568-49b0-8535-ea95a8a9c96d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.36679357145462,
-      "lat": -0.06884994911334386,
-      "nama_kanonik": "BLANGKOLAM"
+      "lat": -0.06884994911334386
     },
     {
       "no": 65.0,
       "company": "PT. BLANGKOLAM",
       "name": "PT. BLANGKOLAM 2",
+      "nama_kanonik": "BLANGKOLAM",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1107,13 +1108,13 @@
       "gfwid": "a54af62a-2554-4608-836b-ff370dcfcc43",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.43847823609812,
-      "lat": -0.19608520108591296,
-      "nama_kanonik": "BLANGKOLAM"
+      "lat": -0.19608520108591296
     },
     {
       "no": 66.0,
       "company": "PT. BUANA WIRA LESTARI",
       "name": "PT. BUANA WIRA LESTARI 1",
+      "nama_kanonik": "BUANA WIRA LESTARI",
       "group": "Sinar Mas",
       "type": "HGU",
       "legal": "HGU : 3.016,00 Ha",
@@ -1124,13 +1125,13 @@
       "gfwid": "0c5d9909-1ec2-4582-88ed-4c7b84a37429",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.07657795370223,
-      "lat": 0.7684881172808599,
-      "nama_kanonik": "BUANA WIRA LESTARI"
+      "lat": 0.7684881172808599
     },
     {
       "no": 67.0,
       "company": "PT. BUANA WIRA LESTARI",
       "name": "PT. BUANA WIRA LESTARI 2",
+      "nama_kanonik": "BUANA WIRA LESTARI",
       "group": "Sinar Mas",
       "type": "HGU",
       "legal": "HGU : 7.193,81 Ha",
@@ -1141,13 +1142,13 @@
       "gfwid": "44576e89-6265-4dd9-9f8e-508bc00d737a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.091470877345,
-      "lat": 0.8445846361597397,
-      "nama_kanonik": "BUANA WIRA LESTARI"
+      "lat": 0.8445846361597397
     },
     {
       "no": 68.0,
       "company": "PT. BUDI DATA",
       "name": "PT. BUDI DATA",
+      "nama_kanonik": "BUDI DATA",
       "group": "No group",
       "type": "(Tidak Ada Data)",
       "legal": "(Tidak Ada Data)",
@@ -1158,13 +1159,13 @@
       "gfwid": "1b51a83c-2135-47f9-a681-5b2e7015c086",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.50138172695388,
-      "lat": 0.6438963995194323,
-      "nama_kanonik": "BUDI DATA"
+      "lat": 0.6438963995194323
     },
     {
       "no": 69.0,
       "company": "PT. BUDIDAKSA DWI KUSUMA",
       "name": "PT. BUDIDAKSA DWI KUSUMA",
+      "nama_kanonik": "BUDIDAKSA DWI KUSUMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1175,13 +1176,13 @@
       "gfwid": "17187f80-b0d7-4834-84fe-a4ea7968dc4c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.77114623184718,
-      "lat": 1.6118040631072816,
-      "nama_kanonik": "BUDIDAKSA DWI KUSUMA"
+      "lat": 1.6118040631072816
     },
     {
       "no": 70.0,
       "company": "PT. BUKIT KAUSAR (III)",
       "name": "PT. BUKIT KAUSAR (III)",
+      "nama_kanonik": "BUKIT KAUSAR III",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1192,13 +1193,13 @@
       "gfwid": "57d652df-2566-443f-baf6-9d60cd85bbb9",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.94009847131862,
-      "lat": -1.176642866003531,
-      "nama_kanonik": "BUKIT KAUSAR III"
+      "lat": -1.176642866003531
     },
     {
       "no": 71.0,
       "company": "PT. BUMI PLASMA LESTARI",
       "name": "PT. BUMI PLASMA LESTARI",
+      "nama_kanonik": "PT BUMI PALMA LESTARI PERSADA",
       "group": "Sinar Mas",
       "type": null,
       "legal": null,
@@ -1209,13 +1210,13 @@
       "gfwid": "7dff5f45-4e75-40ee-824f-f105f9260256",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.9723118061335,
-      "lat": -0.6298736082022875,
-      "nama_kanonik": "PT BUMI PALMA LESTARI PERSADA"
+      "lat": -0.6298736082022875
     },
     {
       "no": 72.0,
       "company": "PT. BUMI REKSA NUSASEJATI",
       "name": "PT. BUMI REKSA NUSASEJATI 1",
+      "nama_kanonik": "BUMI REKSA NUSASEJATI",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 1.176,20 Ha",
@@ -1226,13 +1227,13 @@
       "gfwid": "5ca6765d-3f43-4e43-8bae-c56cdddaef43",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.51019634617776,
-      "lat": 0.10227508139987347,
-      "nama_kanonik": "BUMI REKSA NUSASEJATI"
+      "lat": 0.10227508139987347
     },
     {
       "no": 73.0,
       "company": "PT. BUMI REKSA NUSASEJATI",
       "name": "PT. BUMI REKSA NUSASEJATI 2",
+      "nama_kanonik": "BUMI REKSA NUSASEJATI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1243,13 +1244,13 @@
       "gfwid": "6883b76e-ac48-4014-bd31-0ee3b343d7cc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.09005103389025,
-      "lat": 0.20277545830434326,
-      "nama_kanonik": "BUMI REKSA NUSASEJATI"
+      "lat": 0.20277545830434326
     },
     {
       "no": 74.0,
       "company": "PT. CERENTI SUBUR",
       "name": "PT. CERENTI SUBUR",
+      "nama_kanonik": "PT KEBUN CERENTI SUBUR II",
       "group": "Duta Palma Group",
       "type": "HGU",
       "legal": "HGU : 8.929,00 Ha",
@@ -1260,13 +1261,13 @@
       "gfwid": "58832733-d23b-4b46-b54b-4f8bcdff82c1",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.75037664713939,
-      "lat": -0.5668185326580781,
-      "nama_kanonik": "PT KEBUN CERENTI SUBUR II"
+      "lat": -0.5668185326580781
     },
     {
       "no": 75.0,
       "company": "PT. CILIANDRA PERKASA",
       "name": "PT. CILIANDRA PERKASA",
+      "nama_kanonik": "CILIANDRA PERKASA",
       "group": "Surya Dumai Group",
       "type": null,
       "legal": null,
@@ -1277,13 +1278,13 @@
       "gfwid": "35201d08-ca16-4047-bd8a-a6b39f3422dc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.08840068719356,
-      "lat": 0.1703565682833632,
-      "nama_kanonik": "CILIANDRA PERKASA"
+      "lat": 0.1703565682833632
     },
     {
       "no": 76.0,
       "company": "PT. CIPTA DAYA SEJATI LUHUR",
       "name": "PT. CIPTA DAYA SEJATI LUHUR",
+      "nama_kanonik": "CIPTA DAYA SEJATI LUHUR",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 3.671,00 Ha",
@@ -1294,13 +1295,13 @@
       "gfwid": "7f31a2fc-d6d7-44b5-949e-56c72ab57d63",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.69794028199956,
-      "lat": 0.4003996427954354,
-      "nama_kanonik": "CIPTA DAYA SEJATI LUHUR"
+      "lat": 0.4003996427954354
     },
     {
       "no": 77.0,
       "company": "PT. CIPTA JAYA RAYA",
       "name": "PT. CIPTA JAYA RAYA",
+      "nama_kanonik": "CIPTA JAYA RAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1311,13 +1312,13 @@
       "gfwid": "998bf204-1cd4-4531-b978-570447691e87",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.09592913958937,
-      "lat": 2.154977996794174,
-      "nama_kanonik": "CIPTA JAYA RAYA"
+      "lat": 2.154977996794174
     },
     {
       "no": 78.0,
       "company": "PT. CISADANE SAWIT RAYA",
       "name": "PT. CISADANE SAWIT RAYA",
+      "nama_kanonik": "PT SAWIT INTI RAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1328,13 +1329,13 @@
       "gfwid": "4ca07d36-cbc0-4570-b5de-399d8744217f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.15858153957475,
-      "lat": 2.269996804120895,
-      "nama_kanonik": "PT SAWIT INTI RAYA"
+      "lat": 2.269996804120895
     },
     {
       "no": 79.0,
       "company": "PT. CITRA RIAU SARANA",
       "name": "PT. CITRA RIAU SARANA",
+      "nama_kanonik": "PT CITRA MUTIARA BUMI RIAU",
       "group": "Wilmar",
       "type": null,
       "legal": null,
@@ -1345,13 +1346,13 @@
       "gfwid": "fca1ac63-c0ea-4a7a-8ce6-59636c17bf18",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.54511573969714,
-      "lat": -0.3125962031160286,
-      "nama_kanonik": "PT CITRA MUTIARA BUMI RIAU"
+      "lat": -0.3125962031160286
     },
     {
       "no": 80.0,
       "company": "PT. DARMA WUNGU GUNA",
       "name": "PT. DARMA WUNGU GUNA",
+      "nama_kanonik": "DARMA WUNGU GUNA",
       "group": "Wilmar",
       "type": "Aspek PGT",
       "legal": "Aspek PGT",
@@ -1362,13 +1363,13 @@
       "gfwid": "791ac86c-5935-42b1-bfb0-3e0349309cf8",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.23976251367019,
-      "lat": 1.4343500895589376,
-      "nama_kanonik": "DARMA WUNGU GUNA"
+      "lat": 1.4343500895589376
     },
     {
       "no": 81.0,
       "company": "PT. DARMALI JAYA LESTARI",
       "name": "PT. DARMALI JAYA LESTARI",
+      "nama_kanonik": "PT DARMALI HAYA LESTARI",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 2.090,79 Ha",
@@ -1379,13 +1380,13 @@
       "gfwid": "68b922a9-a958-4e58-a1ac-4ac00c82014f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.08881903734952,
-      "lat": 1.283163784281063,
-      "nama_kanonik": "PT DARMALI HAYA LESTARI"
+      "lat": 1.283163784281063
     },
     {
       "no": 82.0,
       "company": "PT. DASA ANUGERAH SEJATI",
       "name": "PT. DASA ANUGERAH SEJATI 2",
+      "nama_kanonik": "DASA ANUGERAH SEJATI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1396,13 +1397,13 @@
       "gfwid": "dcc836bf-0d15-406e-8416-f900814e651f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.00032372258819,
-      "lat": -1.1757507270565069,
-      "nama_kanonik": "DASA ANUGERAH SEJATI"
+      "lat": -1.1757507270565069
     },
     {
       "no": 83.0,
       "company": "PT. DAYA LABUHAN INDAH",
       "name": "PT. DAYA LABUHAN INDAH",
+      "nama_kanonik": "DAYA LABUHAN INDAH",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1413,13 +1414,13 @@
       "gfwid": "557bcb2b-dfff-47a3-b8ae-647df1f3b926",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.12724934926388,
-      "lat": 2.212918391992892,
-      "nama_kanonik": "DAYA LABUHAN INDAH"
+      "lat": 2.212918391992892
     },
     {
       "no": 84.0,
       "company": "PT. DUET RIJA",
       "name": "PT. DUET RIJA 1",
+      "nama_kanonik": "DUET RIJA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1430,13 +1431,13 @@
       "gfwid": "ce600516-a2f9-4898-b23e-a97854462241",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.38226734664606,
-      "lat": -0.010591408315075814,
-      "nama_kanonik": "DUET RIJA"
+      "lat": -0.010591408315075814
     },
     {
       "no": 85.0,
       "company": "PT. DUET RIJA",
       "name": "PT. DUET RIJA 2",
+      "nama_kanonik": "DUET RIJA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1447,13 +1448,13 @@
       "gfwid": "844b142b-0273-4470-8f6d-fcca51ef49e6",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.3480039857397,
-      "lat": -0.025400918049678253,
-      "nama_kanonik": "DUET RIJA"
+      "lat": -0.025400918049678253
     },
     {
       "no": 86.0,
       "company": "PT. DUET RIJA",
       "name": "PT. DUET RIJA 3",
+      "nama_kanonik": "DUET RIJA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1464,13 +1465,13 @@
       "gfwid": "922e62c4-c98a-4b69-8888-4f004987f69c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.34600442859823,
-      "lat": -0.10000491495526444,
-      "nama_kanonik": "DUET RIJA"
+      "lat": -0.10000491495526444
     },
     {
       "no": 87.0,
       "company": "PT. DUMAI INDAH PERKASA",
       "name": "PT. DUMAI INDAH PERKASA",
+      "nama_kanonik": "DUMAI INDAH PERKASA",
       "group": "Dumai Indah Group",
       "type": null,
       "legal": null,
@@ -1481,13 +1482,13 @@
       "gfwid": "94b937a1-e2ec-4443-a8c9-7afbdc8097aa",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.19328941431367,
-      "lat": 0.6092205223177564,
-      "nama_kanonik": "DUMAI INDAH PERKASA"
+      "lat": 0.6092205223177564
     },
     {
       "no": 88.0,
       "company": "PT. DUTA PALMA NUSANTARA",
       "name": "PT. DUTA PALMA NUSANTARA 1",
+      "nama_kanonik": "PT ADITYA PALMA NUSANTARA",
       "group": "Duta Palma Group",
       "type": "HGU",
       "legal": "HGU :  2.797,00 Ha",
@@ -1498,13 +1499,13 @@
       "gfwid": "00f1c5a8-07a7-4479-9e88-1e21516a1165",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.64531721130197,
-      "lat": -0.5431439844616056,
-      "nama_kanonik": "PT ADITYA PALMA NUSANTARA"
+      "lat": -0.5431439844616056
     },
     {
       "no": 89.0,
       "company": "PT. DUTA PALMA NUSANTARA",
       "name": "PT. DUTA PALMA NUSANTARA 2",
+      "nama_kanonik": "PT ADITYA PALMA NUSANTARA",
       "group": "Duta Palma Group",
       "type": "HGU",
       "legal": "HGU : 11.260,00 Ha",
@@ -1515,13 +1516,13 @@
       "gfwid": "e782707e-67f4-4304-af1d-6b2c73aa781a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.63056450706736,
-      "lat": -0.5986985976558291,
-      "nama_kanonik": "PT ADITYA PALMA NUSANTARA"
+      "lat": -0.5986985976558291
     },
     {
       "no": 90.0,
       "company": "PT. DUTA SWAKARSA INDAH",
       "name": "PT. DUTA SWAKARSA INDAH",
+      "nama_kanonik": "DUTA SWAKARSA INDAH",
       "group": "Surya Dumai Group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -1532,13 +1533,13 @@
       "gfwid": "d8cad464-6278-47c5-9073-70170f661fc9",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.93956493339064,
-      "lat": 0.7212889971345122,
-      "nama_kanonik": "DUTA SWAKARSA INDAH"
+      "lat": 0.7212889971345122
     },
     {
       "no": 91.0,
       "company": "PT. DWIMAJAYA UTAMA",
       "name": "PT. DWIMAJAYA UTAMA",
+      "nama_kanonik": "DWIMAJAYA UTAMA",
       "group": "No group",
       "type": "Pencadangan",
       "legal": "Pencadangan",
@@ -1549,13 +1550,13 @@
       "gfwid": "d7d9dfda-59e6-486b-af5b-fbce5ff32902",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.05206108855387,
-      "lat": 1.3554622032162418,
-      "nama_kanonik": "DWIMAJAYA UTAMA"
+      "lat": 1.3554622032162418
     },
     {
       "no": 92.0,
       "company": "PT. EGASUTI NASAKTI",
       "name": "PT. EGASUTI NASAKTI 1",
+      "nama_kanonik": "EGA SUTI NASAKTI",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU :  1.724,25 Ha",
@@ -1566,13 +1567,13 @@
       "gfwid": "f967a2f1-1fb8-4ef4-a00f-0f087fe1a7d5",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.08765302033808,
-      "lat": 0.5906816788111391,
-      "nama_kanonik": "EGA SUTI NASAKTI"
+      "lat": 0.5906816788111391
     },
     {
       "no": 93.0,
       "company": "PT. EGASUTI NASAKTI",
       "name": "PT. EGASUTI NASAKTI 2",
+      "nama_kanonik": "EGA SUTI NASAKTI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1583,13 +1584,13 @@
       "gfwid": "c4b4db11-a313-491c-84fe-2170470613ed",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.02132258431995,
-      "lat": 0.6818834995505041,
-      "nama_kanonik": "EGA SUTI NASAKTI"
+      "lat": 0.6818834995505041
     },
     {
       "no": 94.0,
       "company": "PT. EGASUTI NASAKTI",
       "name": "PT. EGASUTI NASAKTI 3",
+      "nama_kanonik": "EGA SUTI NASAKTI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1600,13 +1601,13 @@
       "gfwid": "e9c969de-623a-4611-8966-adf8d7182898",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.02372894518615,
-      "lat": 0.5812011217181688,
-      "nama_kanonik": "EGA SUTI NASAKTI"
+      "lat": 0.5812011217181688
     },
     {
       "no": 95.0,
       "company": "PT. EKA PENDAWA SAKTI",
       "name": "PT. EKA PENDAWA SAKTI",
+      "nama_kanonik": "EKA PENDAWA SAKTI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1617,13 +1618,13 @@
       "gfwid": "1b3db9a0-000a-4fa2-9892-6aafb9924240",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 99.94604165100365,
-      "lat": 1.4709636683279115,
-      "nama_kanonik": "EKA PENDAWA SAKTI"
+      "lat": 1.4709636683279115
     },
     {
       "no": 96.0,
       "company": "PT. EKADURA INDONESIA",
       "name": "PT. EKADURA INDONESIA 1",
+      "nama_kanonik": "EKADURA INDONESIA",
       "group": "Astra International",
       "type": null,
       "legal": null,
@@ -1634,13 +1635,13 @@
       "gfwid": "9b8050f6-2133-46af-b80f-e568456360dc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.573687101808,
-      "lat": 0.8924075065771716,
-      "nama_kanonik": "EKADURA INDONESIA"
+      "lat": 0.8924075065771716
     },
     {
       "no": 97.0,
       "company": "PT. EKADURA INDONESIA",
       "name": "PT. EKADURA INDONESIA 2",
+      "nama_kanonik": "EKADURA INDONESIA",
       "group": "Astra International",
       "type": "HGU",
       "legal": "HGU : 1.001,68",
@@ -1651,13 +1652,13 @@
       "gfwid": "7a528c58-c2a6-4f76-8b96-9c2cb7a5efef",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.75861554509834,
-      "lat": 0.9206742926450152,
-      "nama_kanonik": "EKADURA INDONESIA"
+      "lat": 0.9206742926450152
     },
     {
       "no": 98.0,
       "company": "PT. ELUAN MAHKOTA",
       "name": "PT. ELUAN MAHKOTA",
+      "nama_kanonik": "ELUAN MAHKOTA",
       "group": "Duta Palma Group",
       "type": "HGU",
       "legal": "HGU : 7.000,00 Ha",
@@ -1668,13 +1669,13 @@
       "gfwid": "7d8b20df-6f48-40a6-962b-edbbb88fc68f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.54828617224189,
-      "lat": 1.0137855623042717,
-      "nama_kanonik": "ELUAN MAHKOTA"
+      "lat": 1.0137855623042717
     },
     {
       "no": 99.0,
       "company": "PT. FLORA WANAHA TIRTA",
       "name": "PT. FLORA WANAHA TIRTA",
+      "nama_kanonik": "PT FLORA WAHANA TIRTA",
       "group": "Domba Mas Group",
       "type": "HGU",
       "legal": "HGU : 3.208,00 Ha",
@@ -1685,13 +1686,13 @@
       "gfwid": "af868f53-11d8-45aa-81b2-caf3337df1de",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.25850371691425,
-      "lat": 0.11814147954423568,
-      "nama_kanonik": "PT FLORA WAHANA TIRTA"
+      "lat": 0.11814147954423568
     },
     {
       "no": 100.0,
       "company": "PT. GANDA BUANINDO",
       "name": "PT. GANDA BUANINDO",
+      "nama_kanonik": "GANDA BUANINDO",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 2.552,84 Ha",
@@ -1702,13 +1703,13 @@
       "gfwid": "9a1d9f23-2b79-4c88-a934-8d77a4fae0f5",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.2496557447641,
-      "lat": 0.0063251167291279355,
-      "nama_kanonik": "GANDA BUANINDO"
+      "lat": 0.0063251167291279355
     },
     {
       "no": 101.0,
       "company": "PT. GANDAERAH HENDANA",
       "name": "PT. GANDAERAH HENDANA 1",
+      "nama_kanonik": "GANDAERAH HENDANA",
       "group": "Barito Pacific",
       "type": null,
       "legal": null,
@@ -1719,13 +1720,13 @@
       "gfwid": "3b11a589-2b41-4def-8542-2cb56b94793d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.25370662108314,
-      "lat": -0.17759496813846126,
-      "nama_kanonik": "GANDAERAH HENDANA"
+      "lat": -0.17759496813846126
     },
     {
       "no": 102.0,
       "company": "PT. GANDAERAH HENDANA",
       "name": "PT. GANDAERAH HENDANA 2",
+      "nama_kanonik": "GANDAERAH HENDANA",
       "group": "Barito Pacific",
       "type": "HGU",
       "legal": "HGU : 7.888,00 Ha",
@@ -1736,13 +1737,13 @@
       "gfwid": "bcc21e85-283f-4621-8e8d-9e7124edb5ff",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.36281027648418,
-      "lat": -0.10025979248040859,
-      "nama_kanonik": "GANDAERAH HENDANA"
+      "lat": -0.10025979248040859
     },
     {
       "no": 103.0,
       "company": "PT. GELORA SAWITA MAKMUR",
       "name": "PT. GELORA SAWITA MAKMUR 2",
+      "nama_kanonik": "GELORA SAWITA MAKMUR",
       "group": "Danitama Makmur",
       "type": null,
       "legal": null,
@@ -1753,13 +1754,13 @@
       "gfwid": "7933e12f-2f7a-4062-8524-394d35717717",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.95068963671056,
-      "lat": 0.8291605914801201,
-      "nama_kanonik": "GELORA SAWITA MAKMUR"
+      "lat": 0.8291605914801201
     },
     {
       "no": 104.0,
       "company": "PT. GUNTUNG HASRAT M",
       "name": "PT. GUNTUNG HASRAT M 1",
+      "nama_kanonik": "GUNTUNG HASRAT M",
       "group": "Sambu Group",
       "type": null,
       "legal": null,
@@ -1770,13 +1771,13 @@
       "gfwid": "d812eb06-c1e3-4ed7-8fc0-b4967c94459a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.23874591277084,
-      "lat": 0.3473300859489627,
-      "nama_kanonik": "GUNTUNG HASRAT M"
+      "lat": 0.3473300859489627
     },
     {
       "no": 105.0,
       "company": "PT. GUNTUNG HASRAT M",
       "name": "PT. GUNTUNG HASRAT M 2",
+      "nama_kanonik": "GUNTUNG HASRAT M",
       "group": "Sambu Group",
       "type": null,
       "legal": null,
@@ -1787,13 +1788,13 @@
       "gfwid": "f3a3f2bb-15b7-4e0a-b4bf-dd00e14390b1",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.37837820296131,
-      "lat": 0.4119076231850099,
-      "nama_kanonik": "GUNTUNG HASRAT M"
+      "lat": 0.4119076231850099
     },
     {
       "no": 106.0,
       "company": "PT. GUNTUNG HASRAT MSKMUR",
       "name": "PT. GUNTUNG HASRAT MSKMUR",
+      "nama_kanonik": "GUNTUNG HASRAT MSKMUR",
       "group": "Sambu Group",
       "type": null,
       "legal": null,
@@ -1804,13 +1805,13 @@
       "gfwid": "fab603e5-3ade-4379-a952-dcd3a8f8c68b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.36068791660718,
-      "lat": 0.21477233523263448,
-      "nama_kanonik": "GUNTUNG HASRAT MSKMUR"
+      "lat": 0.21477233523263448
     },
     {
       "no": 107.0,
       "company": "PT. GUNUNG MAS RAYA",
       "name": "PT. GUNUNG MAS RAYA 1",
+      "nama_kanonik": "PT GUNUNG MAS RAYA KEBUN SUNGAI BANGKO",
       "group": "Salim Group",
       "type": "HGU",
       "legal": "HGU : 2.825,77 Ha",
@@ -1821,13 +1822,13 @@
       "gfwid": "af1cd032-7758-44fa-8046-48ca6ac7edb4",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.6399480575111,
-      "lat": 1.799233660706563,
-      "nama_kanonik": "PT GUNUNG MAS RAYA KEBUN SUNGAI BANGKO"
+      "lat": 1.799233660706563
     },
     {
       "no": 108.0,
       "company": "PT. GUNUNG MAS RAYA",
       "name": "PT. GUNUNG MAS RAYA 2",
+      "nama_kanonik": "PT GUNUNG MAS RAYA KEBUN SUNGAI BANGKO",
       "group": "Salim Group",
       "type": null,
       "legal": null,
@@ -1838,13 +1839,13 @@
       "gfwid": "4ae32b36-61aa-4ec9-af09-d74deba4347f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.67998412528794,
-      "lat": 1.6146192164399351,
-      "nama_kanonik": "PT GUNUNG MAS RAYA KEBUN SUNGAI BANGKO"
+      "lat": 1.6146192164399351
     },
     {
       "no": 109.0,
       "company": "PT. HUTAHAEAN",
       "name": "PT. HUTAHAEAN",
+      "nama_kanonik": "HUTAHAEAN",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 4.563,75 Ha",
@@ -1855,13 +1856,13 @@
       "gfwid": "7aaa2606-da01-4478-8137-19918528f18c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.30256378655,
-      "lat": 1.1453086934589791,
-      "nama_kanonik": "HUTAHAEAN"
+      "lat": 1.1453086934589791
     },
     {
       "no": 110.0,
       "company": "PT. INDO SEPADAN JAYA",
       "name": "PT. INDO SEPADAN JAYA",
+      "nama_kanonik": "INDO SEPADAN JAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1872,13 +1873,13 @@
       "gfwid": "24009a21-711e-4d71-8ca6-32cf24e241fe",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.06918805063691,
-      "lat": 2.130154588515579,
-      "nama_kanonik": "INDO SEPADAN JAYA"
+      "lat": 2.130154588515579
     },
     {
       "no": 111.0,
       "company": "PT. INDRI PLANT",
       "name": "PT. INDRI PLANT",
+      "nama_kanonik": "INDRI PLANT",
       "group": "Salim Group",
       "type": null,
       "legal": null,
@@ -1889,13 +1890,13 @@
       "gfwid": "6fbc2f63-78c4-48b5-a7e0-7443ea5df4ab",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.94013156078485,
-      "lat": -0.6250356816034812,
-      "nama_kanonik": "INDRI PLANT"
+      "lat": -0.6250356816034812
     },
     {
       "no": 112.0,
       "company": "PT. INECDA",
       "name": "PT. INECDA 1",
+      "nama_kanonik": "INECDA",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU :  9.848,00 Ha",
@@ -1906,13 +1907,13 @@
       "gfwid": "5acf1c04-8883-475f-88f0-384fe9e6a0b1",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.94268760818085,
-      "lat": -0.658658239518655,
-      "nama_kanonik": "INECDA"
+      "lat": -0.658658239518655
     },
     {
       "no": 113.0,
       "company": "PT. INECDA",
       "name": "PT. INECDA 2",
+      "nama_kanonik": "INECDA",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU :  9.848,00 Ha",
@@ -1923,13 +1924,13 @@
       "gfwid": "81e4a572-7ca0-4e8f-abcc-61f80fe982e6",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.33788609721655,
-      "lat": -0.49267277568716594,
-      "nama_kanonik": "INECDA"
+      "lat": -0.49267277568716594
     },
     {
       "no": 114.0,
       "company": "PT. INECDA (HGU)",
       "name": "PT. INECDA (HGU)",
+      "nama_kanonik": "PT INECDA",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU :  9.848,00 Ha",
@@ -1940,13 +1941,13 @@
       "gfwid": "959bbc34-db58-49b6-b4cb-bc2d4e41cae5",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.31226467833574,
-      "lat": -0.4748108316855502,
-      "nama_kanonik": "PT INECDA"
+      "lat": -0.4748108316855502
     },
     {
       "no": 115.0,
       "company": "PT. INHUWANA PALMA LESTARI",
       "name": "PT. INHUWANA PALMA LESTARI",
+      "nama_kanonik": "PT BUMI PALMA LESTARI PERSADA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -1957,13 +1958,13 @@
       "gfwid": "fae80fbd-f7ec-4914-b0e0-5c96080c5cb6",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.5806782483433,
-      "lat": -0.6941562456194095,
-      "nama_kanonik": "PT BUMI PALMA LESTARI PERSADA"
+      "lat": -0.6941562456194095
     },
     {
       "no": 116.0,
       "company": "PT. INTI INDO SAWIT SUBUR",
       "name": "PT. INTI INDO SAWIT SUBUR 2",
+      "nama_kanonik": "INTI INDOSAWIT SUBUR",
       "group": "RGE Group",
       "type": null,
       "legal": null,
@@ -1974,13 +1975,13 @@
       "gfwid": "774d1f5e-b0c5-4073-a1f4-95668ce2db0d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.94640823067975,
-      "lat": 0.6182114122469643,
-      "nama_kanonik": "INTI INDOSAWIT SUBUR"
+      "lat": 0.6182114122469643
     },
     {
       "no": 117.0,
       "company": "PT. INTI INDO SAWIT SUBUR",
       "name": "PT. INTI INDO SAWIT SUBUR 3",
+      "nama_kanonik": "INTI INDOSAWIT SUBUR",
       "group": "RGE Group",
       "type": null,
       "legal": null,
@@ -1991,13 +1992,13 @@
       "gfwid": "ea9c3f40-7cf6-4c22-9bd3-710622382080",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.86292039375883,
-      "lat": 0.5772494706719477,
-      "nama_kanonik": "INTI INDOSAWIT SUBUR"
+      "lat": 0.5772494706719477
     },
     {
       "no": 118.0,
       "company": "PT. INTI INDO SAWIT SUBUR",
       "name": "PT. INTI INDO SAWIT SUBUR 4",
+      "nama_kanonik": "INTI INDOSAWIT SUBUR",
       "group": "RGE Group",
       "type": null,
       "legal": null,
@@ -2008,13 +2009,13 @@
       "gfwid": "0989669f-84db-4ad2-aaa4-7f458f9c538c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.86113900027377,
-      "lat": 0.5815193336654261,
-      "nama_kanonik": "INTI INDOSAWIT SUBUR"
+      "lat": 0.5815193336654261
     },
     {
       "no": 119.0,
       "company": "PT. INTI INDO SAWIT SUBUR",
       "name": "PT. INTI INDO SAWIT SUBUR 5",
+      "nama_kanonik": "INTI INDOSAWIT SUBUR",
       "group": "RGE Group",
       "type": null,
       "legal": null,
@@ -2025,13 +2026,13 @@
       "gfwid": "2690b247-4122-46d4-8b26-dde344512d6f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.11586301083385,
-      "lat": -0.21096504754430576,
-      "nama_kanonik": "INTI INDOSAWIT SUBUR"
+      "lat": -0.21096504754430576
     },
     {
       "no": 120.0,
       "company": "PT. INTI INDO SAWIT SUBUR",
       "name": "PT. INTI INDO SAWIT SUBUR 6",
+      "nama_kanonik": "INTI INDOSAWIT SUBUR",
       "group": "RGE Group",
       "type": "HGU",
       "legal": "HGU : 6.727,64 Ha",
@@ -2042,13 +2043,13 @@
       "gfwid": "48b3c692-04b1-4038-855e-8fbd4b229091",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.07316871877282,
-      "lat": -0.2764756858748273,
-      "nama_kanonik": "INTI INDOSAWIT SUBUR"
+      "lat": -0.2764756858748273
     },
     {
       "no": 121.0,
       "company": "PT. INTI KAMPARINDO SEJAHTERA",
       "name": "PT. INTI KAMPARINDO SEJAHTERA",
+      "nama_kanonik": "INTI KAMPARINDO SEJAHTERA",
       "group": "Dumai Indah Group",
       "type": "HGU",
       "legal": "HGU : 9.554,00 Ha",
@@ -2059,13 +2060,13 @@
       "gfwid": "43fa9a90-b507-4970-ad65-f16c45f328cb",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.90175010637587,
-      "lat": 0.7809823228950382,
-      "nama_kanonik": "INTI KAMPARINDO SEJAHTERA"
+      "lat": 0.7809823228950382
     },
     {
       "no": 122.0,
       "company": "PT. IVO MAS TUNGGAL",
       "name": "PT. IVO MAS TUNGGAL 1",
+      "nama_kanonik": "IVO MAS TUNGGAL",
       "group": "Sinar Mas",
       "type": "HGU",
       "legal": "HGU : 11.621,20 Ha",
@@ -2076,13 +2077,13 @@
       "gfwid": "d364cfb9-ae23-423a-be5a-85fc864b9867",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.30606101337197,
-      "lat": 0.9380387347076437,
-      "nama_kanonik": "IVO MAS TUNGGAL"
+      "lat": 0.9380387347076437
     },
     {
       "no": 123.0,
       "company": "PT. IVO MAS TUNGGAL",
       "name": "PT. IVO MAS TUNGGAL 2",
+      "nama_kanonik": "IVO MAS TUNGGAL",
       "group": "Sinar Mas",
       "type": "HGU",
       "legal": "HGU : 9.688,00 Ha",
@@ -2093,13 +2094,13 @@
       "gfwid": "a0ca18fb-20fa-45c0-8821-0f818976d926",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.5808625502935,
-      "lat": 1.7522035606462338,
-      "nama_kanonik": "IVO MAS TUNGGAL"
+      "lat": 1.7522035606462338
     },
     {
       "no": 124.0,
       "company": "PT. IVO MAS TUNGGAL",
       "name": "PT. IVO MAS TUNGGAL 3",
+      "nama_kanonik": "IVO MAS TUNGGAL",
       "group": "Sinar Mas",
       "type": "HGU",
       "legal": "HGU : 13.432,09 Ha",
@@ -2110,13 +2111,13 @@
       "gfwid": "e1362c82-c616-4b23-a580-23d4a29ef39e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.20548084456118,
-      "lat": 0.9063835771695664,
-      "nama_kanonik": "IVO MAS TUNGGAL"
+      "lat": 0.9063835771695664
     },
     {
       "no": 125.0,
       "company": "PT. IVO MAS TUNGGAL",
       "name": "PT. IVO MAS TUNGGAL 4",
+      "nama_kanonik": "IVO MAS TUNGGAL",
       "group": "Sinar Mas",
       "type": "HGU",
       "legal": "HGU : 11.621,00 Ha",
@@ -2127,13 +2128,13 @@
       "gfwid": "ccad77ec-2bea-4faf-8c6a-597158ed2712",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.59119574933956,
-      "lat": 1.642952720588431,
-      "nama_kanonik": "IVO MAS TUNGGAL"
+      "lat": 1.642952720588431
     },
     {
       "no": 126.0,
       "company": "PT. IVO MAS TUNGGAL",
       "name": "PT. IVO MAS TUNGGAL 5",
+      "nama_kanonik": "IVO MAS TUNGGAL",
       "group": "Sinar Mas",
       "type": null,
       "legal": null,
@@ -2144,13 +2145,13 @@
       "gfwid": "09df90cf-c11b-4bf8-93d5-64e65d73b2ae",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.62701049634818,
-      "lat": 1.7426233475735493,
-      "nama_kanonik": "IVO MAS TUNGGAL"
+      "lat": 1.7426233475735493
     },
     {
       "no": 127.0,
       "company": "PT. JATIM JAYA PERKASA",
       "name": "PT. JATIM JAYA PERKASA",
+      "nama_kanonik": "JATIM JAYA PERKASA",
       "group": "Wilmar",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -2161,13 +2162,13 @@
       "gfwid": "f33ebec8-5a77-4837-a267-156813fe76c6",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.75503924141157,
-      "lat": 1.9800684851830492,
-      "nama_kanonik": "JATIM JAYA PERKASA"
+      "lat": 1.9800684851830492
     },
     {
       "no": 128.0,
       "company": "PT. JOHAN SENTOSA",
       "name": "PT. JOHAN SENTOSA",
+      "nama_kanonik": "JOHAN SENTOSA",
       "group": "Duta Palma Group",
       "type": "HGU",
       "legal": "HGU : 5.764,00 Ha",
@@ -2178,13 +2179,13 @@
       "gfwid": "9c4f971c-5045-4329-bbb1-50fdc5574cea",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.92550551747617,
-      "lat": 0.42793186631429103,
-      "nama_kanonik": "JOHAN SENTOSA"
+      "lat": 0.42793186631429103
     },
     {
       "no": 129.0,
       "company": "PT. KARYA TAMA BAKTI MULIA",
       "name": "PT. KARYA TAMA BAKTI MULIA 1",
+      "nama_kanonik": "KARYA TAMA BAKTI MULIA",
       "group": "Surya Dumai Group",
       "type": "HGU",
       "legal": "HGU : 2.263,00 Ha",
@@ -2195,13 +2196,13 @@
       "gfwid": "40e69dec-e864-4a8e-8b88-d4f88d750cb2",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.46072950806028,
-      "lat": 0.4612063046848923,
-      "nama_kanonik": "KARYA TAMA BAKTI MULIA"
+      "lat": 0.4612063046848923
     },
     {
       "no": 130.0,
       "company": "PT. KARYA TAMA BAKTI MULIA",
       "name": "PT. KARYA TAMA BAKTI MULIA 2",
+      "nama_kanonik": "KARYA TAMA BAKTI MULIA",
       "group": "Surya Dumai Group",
       "type": null,
       "legal": null,
@@ -2212,13 +2213,13 @@
       "gfwid": "141a92c6-9e62-41f0-8892-d2fa9a2bf633",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.99929720563529,
-      "lat": 1.0642668680347365,
-      "nama_kanonik": "KARYA TAMA BAKTI MULIA"
+      "lat": 1.0642668680347365
     },
     {
       "no": 131.0,
       "company": "PT. KARYABADI SAMASEJATI",
       "name": "PT. KARYABADI SAMASEJATI",
+      "nama_kanonik": "KARYABADI SAMASEJATI",
       "group": "No group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -2229,13 +2230,13 @@
       "gfwid": "efdc345a-d49c-48e4-af60-ab4b8bb0e9b3",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.53381878282062,
-      "lat": 1.4721907363901914,
-      "nama_kanonik": "KARYABADI SAMASEJATI"
+      "lat": 1.4721907363901914
     },
     {
       "no": 132.0,
       "company": "PT. KASWARI UNGGUL",
       "name": "PT. KASWARI UNGGUL 1",
+      "nama_kanonik": "KASWARI UNGGUL",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2246,13 +2247,13 @@
       "gfwid": "3ea8be96-7c99-4bfa-a5e2-2c24f222ef98",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.68709507461737,
-      "lat": -1.1795408702612948,
-      "nama_kanonik": "KASWARI UNGGUL"
+      "lat": -1.1795408702612948
     },
     {
       "no": 133.0,
       "company": "PT. KASWARI UNGGUL",
       "name": "PT. KASWARI UNGGUL 3",
+      "nama_kanonik": "KASWARI UNGGUL",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2263,13 +2264,13 @@
       "gfwid": "1e819740-bdd9-44df-a4d9-c3cc61316951",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.85785245961354,
-      "lat": -1.1993127244349588,
-      "nama_kanonik": "KASWARI UNGGUL"
+      "lat": -1.1993127244349588
     },
     {
       "no": 134.0,
       "company": "PT. KEBUN PANTAI RAJA",
       "name": "PT. KEBUN PANTAI RAJA 1",
+      "nama_kanonik": "PANTAI RAJA",
       "group": "Uniseraya Group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -2280,13 +2281,13 @@
       "gfwid": "78d9fab4-06c7-49c3-8116-2ff259d5f3cd",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.22540114111939,
-      "lat": -0.08161352979779138,
-      "nama_kanonik": "PANTAI RAJA"
+      "lat": -0.08161352979779138
     },
     {
       "no": 135.0,
       "company": "PT. KEBUN PANTAI RAJA",
       "name": "PT. KEBUN PANTAI RAJA 2",
+      "nama_kanonik": "PANTAI RAJA",
       "group": "Uniseraya Group",
       "type": "HGU",
       "legal": "HGU : 2.319,16 Ha",
@@ -2297,13 +2298,13 @@
       "gfwid": "ecaedcaf-ac88-40cd-9c37-42693437ca96",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.28070730519075,
-      "lat": 0.21237299847537955,
-      "nama_kanonik": "PANTAI RAJA"
+      "lat": 0.21237299847537955
     },
     {
       "no": 136.0,
       "company": "PT. KEBUN PANTAI RAJA",
       "name": "PT. KEBUN PANTAI RAJA 3",
+      "nama_kanonik": "PANTAI RAJA",
       "group": "Uniseraya Group",
       "type": null,
       "legal": null,
@@ -2314,13 +2315,13 @@
       "gfwid": "27b75c4b-c677-4ae2-af17-9fa2aadbba1a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.31267897457087,
-      "lat": 0.01281017098717256,
-      "nama_kanonik": "PANTAI RAJA"
+      "lat": 0.01281017098717256
     },
     {
       "no": 137.0,
       "company": "PT. KENCANA AMAL TANI",
       "name": "PT. KENCANA AMAL TANI",
+      "nama_kanonik": "PT KENCANA AMAL TANI 1",
       "group": "Duta Palma Group",
       "type": "HGU",
       "legal": "HGU : 5.384,00 Ha",
@@ -2331,13 +2332,13 @@
       "gfwid": "c2bdd3b8-3114-419a-9453-969cfbca3fdc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.4966281917066,
-      "lat": -0.6288379866033701,
-      "nama_kanonik": "PT KENCANA AMAL TANI 1"
+      "lat": -0.6288379866033701
     },
     {
       "no": 138.0,
       "company": "PT. KHARISMA RIAU SENTOSA PRIMA",
       "name": "PT. KHARISMA RIAU SENTOSA PRIMA 1",
+      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2348,13 +2349,13 @@
       "gfwid": "3e6d7ce8-cdfb-42c8-9167-7c0f6f6e36d6",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.21390142581276,
-      "lat": -0.43251561497584856,
-      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA"
+      "lat": -0.43251561497584856
     },
     {
       "no": 139.0,
       "company": "PT. KHARISMA RIAU SENTOSA PRIMA",
       "name": "PT. KHARISMA RIAU SENTOSA PRIMA 2",
+      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2365,13 +2366,13 @@
       "gfwid": "11c5ba3a-d432-44fe-9f1f-b38c3b55d48b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.28536547151182,
-      "lat": -0.41725574725257714,
-      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA"
+      "lat": -0.41725574725257714
     },
     {
       "no": 140.0,
       "company": "PT. KHARISMA RIAU SENTOSA PRIMA",
       "name": "PT. KHARISMA RIAU SENTOSA PRIMA 3",
+      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2382,13 +2383,13 @@
       "gfwid": "1a17e50c-2ee0-4a13-b34e-aaeea4756988",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.23145250372401,
-      "lat": -0.5038001011034865,
-      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA"
+      "lat": -0.5038001011034865
     },
     {
       "no": 141.0,
       "company": "PT. KHARISMA RIAU SENTOSA PRIMA",
       "name": "PT. KHARISMA RIAU SENTOSA PRIMA 4",
+      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2399,13 +2400,13 @@
       "gfwid": "1bef8494-cc75-40cb-81fd-8f932c13dc74",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.16446462079715,
-      "lat": -0.4716126330386729,
-      "nama_kanonik": "KHARISMA RIAU SENTOSA PRIMA"
+      "lat": -0.4716126330386729
     },
     {
       "no": 142.0,
       "company": "PT. KILAU KEMUNING",
       "name": "PT. KILAU KEMUNING",
+      "nama_kanonik": "KILAU KEMUNING",
       "group": "No group",
       "type": "Pelepasan Kawasan",
       "legal": "Pelepasan Kawasan",
@@ -2416,13 +2417,13 @@
       "gfwid": "ae4cc4ed-0802-4fdb-b907-8916cf77c74a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.56855317755372,
-      "lat": 2.0589051920160313,
-      "nama_kanonik": "KILAU KEMUNING"
+      "lat": 2.0589051920160313
     },
     {
       "no": 143.0,
       "company": "PT. KIMIA TIRTA UTAMA",
       "name": "PT. KIMIA TIRTA UTAMA",
+      "nama_kanonik": "KIMIA TIRTA UTAMA",
       "group": "Astra International",
       "type": "HGU",
       "legal": "HGU : 7.461,00",
@@ -2433,13 +2434,13 @@
       "gfwid": "7b822721-4b86-4d14-bff3-8e5327e8b445",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.7478381375247,
-      "lat": 0.6918128382596359,
-      "nama_kanonik": "KIMIA TIRTA UTAMA"
+      "lat": 0.6918128382596359
     },
     {
       "no": 144.0,
       "company": "PT. LAHAN TANI SAKTI",
       "name": "PT. LAHAN TANI SAKTI",
+      "nama_kanonik": "LAHAN TANI SAKTI",
       "group": "Sime Darby",
       "type": "HGU",
       "legal": "HGU : 3.759,01 Ha",
@@ -2450,13 +2451,13 @@
       "gfwid": "9365970c-28fc-4901-8d39-0f6817230191",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.48515046222391,
-      "lat": 1.5600343595247228,
-      "nama_kanonik": "LAHAN TANI SAKTI"
+      "lat": 1.5600343595247228
     },
     {
       "no": 145.0,
       "company": "PT. LANGGAM INTI HIBRINDO",
       "name": "PT. LANGGAM INTI HIBRINDO 1",
+      "nama_kanonik": "LANGGAM INTI HIBRINDO",
       "group": "Klau River Enterprise Sdn Bhd",
       "type": "HGU",
       "legal": "HGU : 9.024,44 Ha",
@@ -2467,13 +2468,13 @@
       "gfwid": "7fe74b05-8f3a-4b48-9dfb-ccc0e7b28563",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.00320531576898,
-      "lat": 0.44852880137970375,
-      "nama_kanonik": "LANGGAM INTI HIBRINDO"
+      "lat": 0.44852880137970375
     },
     {
       "no": 146.0,
       "company": "PT. LANGGAM INTI HIBRINDO",
       "name": "PT. LANGGAM INTI HIBRINDO 2",
+      "nama_kanonik": "LANGGAM INTI HIBRINDO",
       "group": "Klau River Enterprise Sdn Bhd",
       "type": null,
       "legal": null,
@@ -2484,13 +2485,13 @@
       "gfwid": "49b205dd-5ff8-480e-9d0c-56cb966e188d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.88692888650957,
-      "lat": 0.1382427311965409,
-      "nama_kanonik": "LANGGAM INTI HIBRINDO"
+      "lat": 0.1382427311965409
     },
     {
       "no": 147.0,
       "company": "PT. LANGGAM INTI HIBRINDO",
       "name": "PT. LANGGAM INTI HIBRINDO 3",
+      "nama_kanonik": "LANGGAM INTI HIBRINDO",
       "group": "Klau River Enterprise Sdn Bhd",
       "type": null,
       "legal": null,
@@ -2501,13 +2502,13 @@
       "gfwid": "63b63b42-f896-4252-ac02-425a806e7151",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.85392312325605,
-      "lat": 0.26602262806383287,
-      "nama_kanonik": "LANGGAM INTI HIBRINDO"
+      "lat": 0.26602262806383287
     },
     {
       "no": 148.0,
       "company": "PT. MARITA MAKMUR JAYA",
       "name": "PT. MARITA MAKMUR JAYA 1",
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
       "group": "No group",
       "type": "Pencadangan",
       "legal": "Pencadangan",
@@ -2518,13 +2519,13 @@
       "gfwid": "3aeb702e-0c2b-4930-b202-9d46da605b37",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.42422477226924,
-      "lat": 1.9903560118139383,
-      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA"
+      "lat": 1.9903560118139383
     },
     {
       "no": 149.0,
       "company": "PT. MARITA MAKMUR JAYA",
       "name": "PT. MARITA MAKMUR JAYA 2",
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
       "group": "No group",
       "type": "Pencadangan",
       "legal": "Pencadangan",
@@ -2535,13 +2536,13 @@
       "gfwid": "d9954700-cf8e-4133-b223-0eb4ec0df03f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.69364320551666,
-      "lat": 1.9962661800006392,
-      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA"
+      "lat": 1.9962661800006392
     },
     {
       "no": 150.0,
       "company": "PT. MEGA NUSA INTI SAWIT",
       "name": "PT. MEGA NUSA INTI SAWIT 1",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT",
       "group": "Sinar Mas",
       "type": null,
       "legal": null,
@@ -2552,13 +2553,13 @@
       "gfwid": "abb8f913-4604-477a-9cfd-816f4476e55c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.33219515949412,
-      "lat": -0.5570022937374146,
-      "nama_kanonik": "MEGA NUSA INTI SAWIT"
+      "lat": -0.5570022937374146
     },
     {
       "no": 151.0,
       "company": "PT. MEGA NUSA INTI SAWIT",
       "name": "PT. MEGA NUSA INTI SAWIT 2",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT",
       "group": "Sinar Mas",
       "type": null,
       "legal": null,
@@ -2569,13 +2570,13 @@
       "gfwid": "80551eed-afba-42db-846e-c009094173a8",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.3049561772147,
-      "lat": -0.6147230502255905,
-      "nama_kanonik": "MEGA NUSA INTI SAWIT"
+      "lat": -0.6147230502255905
     },
     {
       "no": 152.0,
       "company": "PT. MEGA NUSA INTI SAWIT",
       "name": "PT. MEGA NUSA INTI SAWIT 3",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT",
       "group": "Sinar Mas",
       "type": null,
       "legal": null,
@@ -2586,13 +2587,13 @@
       "gfwid": "dceda0a9-caf2-4f59-bdd0-3cbcbcfb0b4f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.24676917170817,
-      "lat": -0.7257543375765267,
-      "nama_kanonik": "MEGA NUSA INTI SAWIT"
+      "lat": -0.7257543375765267
     },
     {
       "no": 153.0,
       "company": "PT. MEGA NUSA INTI SAWIT",
       "name": "PT. MEGA NUSA INTI SAWIT 4",
+      "nama_kanonik": "MEGA NUSA INTI SAWIT",
       "group": "Sinar Mas",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -2603,13 +2604,13 @@
       "gfwid": "979b3c4c-b7d6-47b1-acef-740ee17a03e5",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.25609433337274,
-      "lat": -0.7595723334003969,
-      "nama_kanonik": "MEGA NUSA INTI SAWIT"
+      "lat": -0.7595723334003969
     },
     {
       "no": 154.0,
       "company": "PT. MEKAR SARI ALAM LESTARI",
       "name": "PT. MEKAR SARI ALAM LESTARI",
+      "nama_kanonik": "PT ALAM SARI LESTARI",
       "group": "Duta Palma Group",
       "type": "HGU",
       "legal": "HGU : 4.257,05",
@@ -2620,13 +2621,13 @@
       "gfwid": "f6c8af2e-6194-46e6-ad9f-2d004dfec900",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.330544383132,
-      "lat": 0.09948767963995409,
-      "nama_kanonik": "PT ALAM SARI LESTARI"
+      "lat": 0.09948767963995409
     },
     {
       "no": 155.0,
       "company": "PT. MENDAHARA AGRO JAYA INDUSTRI  (I)",
       "name": "PT. MENDAHARA AGRO JAYA INDUSTRI  (I)",
+      "nama_kanonik": "MENDAHARA AGRO JAYA INDUSTRI I",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2637,13 +2638,13 @@
       "gfwid": "aacae4ef-1874-4f27-8f73-dbcfa2be3a52",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.64393519930115,
-      "lat": -1.091619108699637,
-      "nama_kanonik": "MENDAHARA AGRO JAYA INDUSTRI I"
+      "lat": -1.091619108699637
     },
     {
       "no": 156.0,
       "company": "PT. MERIDAN SEJATI SURYA",
       "name": "PT. MERIDAN SEJATI SURYA",
+      "nama_kanonik": "PT MERIDAN SEJATI SURYA PLANTATION",
       "group": "Surya Dumai Group",
       "type": "HGU",
       "legal": null,
@@ -2654,13 +2655,13 @@
       "gfwid": "f404de58-201f-411c-b67c-d9521e415520",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.75101874333316,
-      "lat": 0.5134219469185155,
-      "nama_kanonik": "PT MERIDAN SEJATI SURYA PLANTATION"
+      "lat": 0.5134219469185155
     },
     {
       "no": 157.0,
       "company": "PT. MESKOM AGRO SARIMAS",
       "name": "PT. MESKOM AGRO SARIMAS",
+      "nama_kanonik": "PT AGRO SARIMAS INDONESIA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2671,13 +2672,13 @@
       "gfwid": "c2fb38c3-f447-4e30-8b5c-b64b40b8057c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.09255645795949,
-      "lat": 1.5543182353207625,
-      "nama_kanonik": "PT AGRO SARIMAS INDONESIA"
+      "lat": 1.5543182353207625
     },
     {
       "no": 158.0,
       "company": "PT. MITRA UNGGUL PUSAKA",
       "name": "PT. MITRA UNGGUL PUSAKA",
+      "nama_kanonik": "MITRA UNGGUL PUSAKA",
       "group": "RGE Group",
       "type": "HGU",
       "legal": "HGU : 14.150,00 Ha",
@@ -2688,13 +2689,13 @@
       "gfwid": "794accec-c75e-4e69-87c1-52e3a9b79f93",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.72263749238766,
-      "lat": 0.16703744873076584,
-      "nama_kanonik": "MITRA UNGGUL PUSAKA"
+      "lat": 0.16703744873076584
     },
     {
       "no": 159.0,
       "company": "PT. MULTI PARAMITRA PERKASA JAYA",
       "name": "PT. MULTI PARAMITRA PERKASA JAYA",
+      "nama_kanonik": "PT JATIM JAYA PERKASA",
       "group": "Surya Dumai Group",
       "type": null,
       "legal": null,
@@ -2705,13 +2706,13 @@
       "gfwid": "5d0e72c2-f0b3-4706-ac6b-18f6922bfa57",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.56501598098028,
-      "lat": 0.49292711541618395,
-      "nama_kanonik": "PT JATIM JAYA PERKASA"
+      "lat": 0.49292711541618395
     },
     {
       "no": 160.0,
       "company": "PT. MURINI SAMSAM",
       "name": "PT. MURINI SAMSAM 1",
+      "nama_kanonik": "MURINI SAM SAM",
       "group": "Wilmar",
       "type": null,
       "legal": null,
@@ -2722,13 +2723,13 @@
       "gfwid": "88acd431-3bfc-48de-9c54-19643fbd0957",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.19920288536784,
-      "lat": 1.0319273510174407,
-      "nama_kanonik": "MURINI SAM SAM"
+      "lat": 1.0319273510174407
     },
     {
       "no": 161.0,
       "company": "PT. MURINI SAMSAM",
       "name": "PT. MURINI SAMSAM 2",
+      "nama_kanonik": "MURINI SAM SAM",
       "group": "Wilmar",
       "type": "HGU",
       "legal": "HGU : 967,00 Ha",
@@ -2739,13 +2740,13 @@
       "gfwid": "1562d899-badd-4f3a-9abc-c51ce8b5a117",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.25185100251727,
-      "lat": 1.0742379069788872,
-      "nama_kanonik": "MURINI SAM SAM"
+      "lat": 1.0742379069788872
     },
     {
       "no": 162.0,
       "company": "PT. MURINI WOOD INDUSTRI",
       "name": "PT. MURINI WOOD INDUSTRI",
+      "nama_kanonik": "MURINI WOOD INDUSTRI",
       "group": "Surya Dumai Group",
       "type": "HGU",
       "legal": "HGU : 7.886,00 Ha",
@@ -2756,13 +2757,13 @@
       "gfwid": "1885aff0-2feb-41ed-80a2-2af66a0e1e86",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.29849655762743,
-      "lat": 1.3664374982177965,
-      "nama_kanonik": "MURINI WOOD INDUSTRI"
+      "lat": 1.3664374982177965
     },
     {
       "no": 163.0,
       "company": "PT. MUSIM MAS",
       "name": "PT. MUSIM MAS",
+      "nama_kanonik": "MUSIM MAS",
       "group": "Musim Mas",
       "type": "HGU",
       "legal": "HGU : 9.700,00 Ha",
@@ -2773,13 +2774,13 @@
       "gfwid": "f3578a2a-b12f-47c8-9d74-985e8a40c348",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.0366341453596,
-      "lat": -0.008776377007635623,
-      "nama_kanonik": "MUSIM MAS"
+      "lat": -0.008776377007635623
     },
     {
       "no": 164.0,
       "company": "PT. NURINTA BAGANYASA",
       "name": "PT. NURINTA BAGANYASA",
+      "nama_kanonik": "NURINTA BAGANYASA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2790,13 +2791,13 @@
       "gfwid": "54d9290a-14e7-480d-9cd9-d6a40fc748d8",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.34616797731918,
-      "lat": 1.8121548671589864,
-      "nama_kanonik": "NURINTA BAGANYASA"
+      "lat": 1.8121548671589864
     },
     {
       "no": 165.0,
       "company": "PT. NUSAESA BINA",
       "name": "PT. NUSAESA BINA",
+      "nama_kanonik": "NUSAESA BINA",
       "group": "No group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -2807,13 +2808,13 @@
       "gfwid": "c1477721-1334-48be-8a77-61e677bf1fff",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.1159058753153,
-      "lat": -0.1552812704130212,
-      "nama_kanonik": "NUSAESA BINA"
+      "lat": -0.1552812704130212
     },
     {
       "no": 166.0,
       "company": "PT. PADASA ENAM UTAMA",
       "name": "PT. PADASA ENAM UTAMA 1",
+      "nama_kanonik": "PADASA ENAM UTAMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2824,13 +2825,13 @@
       "gfwid": "57571935-d1da-4ca9-a817-e4fc74486db0",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.82529484750694,
-      "lat": 0.5244862582949936,
-      "nama_kanonik": "PADASA ENAM UTAMA"
+      "lat": 0.5244862582949936
     },
     {
       "no": 167.0,
       "company": "PT. PADASA ENAM UTAMA",
       "name": "PT. PADASA ENAM UTAMA 2",
+      "nama_kanonik": "PADASA ENAM UTAMA",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 6.876,00 Ha",
@@ -2841,13 +2842,13 @@
       "gfwid": "b4ed2215-da97-4495-9926-f01e4e7faccc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.59990416753557,
-      "lat": 0.40413526689254453,
-      "nama_kanonik": "PADASA ENAM UTAMA"
+      "lat": 0.40413526689254453
     },
     {
       "no": 168.0,
       "company": "PT. PADASA ENAM UTAMA",
       "name": "PT. PADASA ENAM UTAMA 3",
+      "nama_kanonik": "PADASA ENAM UTAMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2858,13 +2859,13 @@
       "gfwid": "49529ea8-733c-446b-96a0-82863fb77d66",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.90199253974968,
-      "lat": 0.5264976062359747,
-      "nama_kanonik": "PADASA ENAM UTAMA"
+      "lat": 0.5264976062359747
     },
     {
       "no": 169.0,
       "company": "PT. PALMA SATU",
       "name": "PT. PALMA SATU",
+      "nama_kanonik": "PT PALMA SATU KEBUN PALMA 2",
       "group": "Duta Palma Group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -2875,13 +2876,13 @@
       "gfwid": "fd898450-ba9f-41c1-b1bc-4799db296ffc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.61656142440579,
-      "lat": -0.5654844239853043,
-      "nama_kanonik": "PT PALMA SATU KEBUN PALMA 2"
+      "lat": -0.5654844239853043
     },
     {
       "no": 170.0,
       "company": "PT. PANCA SURYA AGRINDO SEJAHTERA",
       "name": "PT. PANCA SURYA AGRINDO SEJAHTERA",
+      "nama_kanonik": "PT PANCA SURYA AGRINDO",
       "group": "Surya Dumai Group",
       "type": null,
       "legal": null,
@@ -2892,13 +2893,13 @@
       "gfwid": "14ca432a-b655-41d1-bbd1-2c66a7eefd83",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.22324568805506,
-      "lat": 0.2852408903172035,
-      "nama_kanonik": "PT PANCA SURYA AGRINDO"
+      "lat": 0.2852408903172035
     },
     {
       "no": 171.0,
       "company": "PT. PARAWIRA ABADITAMA",
       "name": "PT. PARAWIRA ABADITAMA",
+      "nama_kanonik": "PARAWIRA ABADITAMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2909,13 +2910,13 @@
       "gfwid": "c6a6e44c-348c-45a6-84f5-fd27ce6857c4",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.87549628788841,
-      "lat": 0.13675241473831493,
-      "nama_kanonik": "PARAWIRA ABADITAMA"
+      "lat": 0.13675241473831493
     },
     {
       "no": 172.0,
       "company": "PT. PARAWIRA PRIMAKONSIER",
       "name": "PT. PARAWIRA PRIMAKONSIER",
+      "nama_kanonik": "PARAWIRA PRIMAKONSIER",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2926,13 +2927,13 @@
       "gfwid": "1adb9f9a-e498-4f97-9e1b-6511da053799",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.87180867005542,
-      "lat": 0.12421007102105588,
-      "nama_kanonik": "PARAWIRA PRIMAKONSIER"
+      "lat": 0.12421007102105588
     },
     {
       "no": 173.0,
       "company": "PT. PARAWIRA UTAMA",
       "name": "PT. PARAWIRA UTAMA",
+      "nama_kanonik": "PARAWIRA UTAMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -2943,13 +2944,13 @@
       "gfwid": "11b4a8b1-b41e-4603-b51d-b8fcc67fd4be",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.88002609602431,
-      "lat": 0.12870746021842464,
-      "nama_kanonik": "PARAWIRA UTAMA"
+      "lat": 0.12870746021842464
     },
     {
       "no": 174.0,
       "company": "PT. PEPUTRA SUPRA JAYA",
       "name": "PT. PEPUTRA SUPRA JAYA",
+      "nama_kanonik": "PEPUTRA SUPRA JAYA",
       "group": "Siak Raya Group",
       "type": "Pencadangan",
       "legal": "Pencadangan",
@@ -2960,13 +2961,13 @@
       "gfwid": "2237d4f1-09b0-4f96-8fe3-f2d0b37da818",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.78990097040031,
-      "lat": 0.12256971225779642,
-      "nama_kanonik": "PEPUTRA SUPRA JAYA"
+      "lat": 0.12256971225779642
     },
     {
       "no": 175.0,
       "company": "PT. PERDANA INTI SAWIT",
       "name": "PT. PERDANA INTI SAWIT",
+      "nama_kanonik": "PT MEGA NUSA INTI SAWIT",
       "group": "Surya Dumai Group",
       "type": "HGU",
       "legal": "HGU : 2.827,00 Ha",
@@ -2977,13 +2978,13 @@
       "gfwid": "e973efdd-79f7-4a5e-85ce-7fb62aa5ff04",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.53899162391002,
-      "lat": 1.1313313397199531,
-      "nama_kanonik": "PT MEGA NUSA INTI SAWIT"
+      "lat": 1.1313313397199531
     },
     {
       "no": 176.0,
       "company": "PT. PERKEBUNAN IV BAGAN SINEMBAH",
       "name": "PT. PERKEBUNAN IV BAGAN SINEMBAH",
+      "nama_kanonik": "IV BAGAN SINEMBAH",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU",
@@ -2994,13 +2995,13 @@
       "gfwid": "777aa345-12e5-4243-839a-9266f874ec0c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.45903729945682,
-      "lat": 1.6909290723182426,
-      "nama_kanonik": "IV BAGAN SINEMBAH"
+      "lat": 1.6909290723182426
     },
     {
       "no": 177.0,
       "company": "PT. PERKEBUNAN IV TANJUNG MEDANG",
       "name": "PT. PERKEBUNAN IV TANJUNG MEDANG",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V KEBUN TANAH PERKEBUNAN NUSANTARA V TANJUNG MEDAN",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3011,13 +3012,13 @@
       "gfwid": "1b345bc6-075d-460b-ba57-498f49a873d5",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.52811957340268,
-      "lat": 1.5496941893245635,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V KEBUN TANAH PERKEBUNAN NUSANTARA V TANJUNG MEDAN"
+      "lat": 1.5496941893245635
     },
     {
       "no": 178.0,
       "company": "PT. PERKEBUNAN V",
       "name": "PT. PERKEBUNAN V",
+      "nama_kanonik": "NUSANTARA V",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3028,13 +3029,13 @@
       "gfwid": "2f102439-3d89-4b73-b94f-ab7d621264c6",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.29117485073424,
-      "lat": -0.4878587266854788,
-      "nama_kanonik": "NUSANTARA V"
+      "lat": -0.4878587266854788
     },
     {
       "no": 179.0,
       "company": "PT. PERKEBUNAN V (NES / PIR AIR MOLEK)",
       "name": "PT. PERKEBUNAN V (NES / PIR AIR MOLEK)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3045,13 +3046,13 @@
       "gfwid": "5c5d6a3d-d1db-445d-95ed-3c75f385f6c9",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.42534580489229,
-      "lat": -0.4081565801123826,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": -0.4081565801123826
     },
     {
       "no": 180.0,
       "company": "PT. PERKEBUNAN V (NES / PIR AIR MOLEK)",
       "name": "PT. PERKEBUNAN V (NES / PIR AIR MOLEK)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3062,13 +3063,13 @@
       "gfwid": "1e94a8cf-f853-4151-bc82-465419fc00fa",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.42534580489229,
-      "lat": -0.4081565801123826,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": -0.4081565801123826
     },
     {
       "no": 181.0,
       "company": "PT. PERKEBUNAN V (NES / PIR AIR MOLEK)",
       "name": "PT. PERKEBUNAN V (NES / PIR AIR MOLEK)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3079,13 +3080,13 @@
       "gfwid": "a93e63c9-6cb6-457f-bbeb-bbb187ced27b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.42534580489229,
-      "lat": -0.4081565801123826,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": -0.4081565801123826
     },
     {
       "no": 182.0,
       "company": "PT. PERKEBUNAN V (PIR BAGAN SINEMBAH)",
       "name": "PT. PERKEBUNAN V (PIR BAGAN SINEMBAH)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3096,13 +3097,13 @@
       "gfwid": "6dab41f1-baad-4dc8-81b4-77aa1f247262",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.52833347319174,
-      "lat": 1.6876418276123946,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 1.6876418276123946
     },
     {
       "no": 183.0,
       "company": "PT. PERKEBUNAN V (PIR BUATAN)",
       "name": "PT. PERKEBUNAN V (PIR BUATAN)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 7.168,00 Ha",
@@ -3113,13 +3114,13 @@
       "gfwid": "36de79e9-788e-45d6-8e7c-295a302f6e9d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.91774347142177,
-      "lat": 0.5679532750656553,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 0.5679532750656553
     },
     {
       "no": 184.0,
       "company": "PT. PERKEBUNAN V (PIR BUATAN)",
       "name": "PT. PERKEBUNAN V (PIR BUATAN)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 7.168,00 Ha",
@@ -3130,13 +3131,13 @@
       "gfwid": "ca44c78f-355e-4708-9cde-1d0ea5624996",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.91774347142177,
-      "lat": 0.5679532750656553,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 0.5679532750656553
     },
     {
       "no": 185.0,
       "company": "PT. PERKEBUNAN V (PIR LOKAL BAGAN BATU",
       "name": "PT. PERKEBUNAN V (PIR LOKAL BAGAN BATU",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3147,13 +3148,13 @@
       "gfwid": "26a24612-17ac-4781-9782-13e2d9236841",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.47416877168371,
-      "lat": 1.7406523693529854,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 1.7406523693529854
     },
     {
       "no": 186.0,
       "company": "PT. PERKEBUNAN V (PIR SEI. PAGAR)",
       "name": "PT. PERKEBUNAN V (PIR SEI. PAGAR)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 20.000 Ha",
@@ -3164,13 +3165,13 @@
       "gfwid": "11196bdf-a592-44ee-8efa-0fcf7b29c6a7",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.319859671644,
-      "lat": 0.2819007679847542,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 0.2819007679847542
     },
     {
       "no": 187.0,
       "company": "PT. PERKEBUNAN V (PIR SEI. SIASAM)",
       "name": "PT. PERKEBUNAN V (PIR SEI. SIASAM)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU :  2.551,00 Ha",
@@ -3181,13 +3182,13 @@
       "gfwid": "f1893f13-7f2b-4a2a-b6b6-f625be77587b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.50109286059163,
-      "lat": 0.5331014184345967,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 0.5331014184345967
     },
     {
       "no": 188.0,
       "company": "PT. PERKEBUNAN V (PIR SEI. TAPUNG)",
       "name": "PT. PERKEBUNAN V (PIR SEI. TAPUNG)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU :  3.602,00 Ha",
@@ -3198,13 +3199,13 @@
       "gfwid": "6292af6a-4062-44d7-b546-3984f1e2fe04",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.61055076960663,
-      "lat": 0.5774457854391838,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 0.5774457854391838
     },
     {
       "no": 189.0,
       "company": "PT. PERKEBUNAN V (PTP III SEI. MERANTI)",
       "name": "PT. PERKEBUNAN V (PTP III SEI. MERANTI)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3215,13 +3216,13 @@
       "gfwid": "ddda765a-47ba-48b0-ad61-fed8f6ce34c9",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.45249101901118,
-      "lat": 1.6481513243987531,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 1.6481513243987531
     },
     {
       "no": 190.0,
       "company": "PT. PERKEBUNAN V (SEI. GALUH)",
       "name": "PT. PERKEBUNAN V (SEI. GALUH)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 20.000 Ha",
@@ -3232,13 +3233,13 @@
       "gfwid": "16fa05dc-bbe8-4fd4-8bea-e6f01ad63ce4",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.16738699801095,
-      "lat": 0.5091048743819923,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 0.5091048743819923
     },
     {
       "no": 191.0,
       "company": "PT. PERKEBUNAN V (SEI. INTAN)",
       "name": "PT. PERKEBUNAN V (SEI. INTAN)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 15.000,00 Ha",
@@ -3249,13 +3250,13 @@
       "gfwid": "fbc540be-6f11-476d-b7fa-c619645383bc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.64261492307578,
-      "lat": 0.721174907940427,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 0.721174907940427
     },
     {
       "no": 192.0,
       "company": "PT. PERKEBUNAN V (TANDUN, TERANTAM, TAMORA)",
       "name": "PT. PERKEBUNAN V (TANDUN, TERANTAM, TAMORA)",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU :  14.537,09 Ha",
@@ -3266,13 +3267,13 @@
       "gfwid": "6b6a380a-137c-41bb-9652-ca6a5150d066",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.74595103088649,
-      "lat": 0.6532049210998634,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": 0.6532049210998634
     },
     {
       "no": 193.0,
       "company": "PT. PERKEBUNAN V AIR MOLEK",
       "name": "PT. PERKEBUNAN V AIR MOLEK",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3283,13 +3284,13 @@
       "gfwid": "f49b1ca2-f9e8-4c44-b68e-fd93eba57915",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.11858886979843,
-      "lat": -0.3614932448078275,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": -0.3614932448078275
     },
     {
       "no": 194.0,
       "company": "PT. PERKEBUNAN V AIR MOLEK",
       "name": "PT. PERKEBUNAN V AIR MOLEK",
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3300,13 +3301,13 @@
       "gfwid": "055c58d0-14c3-42d4-a71f-8be3016ad476",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.11858886979843,
-      "lat": -0.3614932448078275,
-      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V"
+      "lat": -0.3614932448078275
     },
     {
       "no": 195.0,
       "company": "PT. PERKEBUNAN VI",
       "name": "PT. PERKEBUNAN VI",
+      "nama_kanonik": "VI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3317,13 +3318,13 @@
       "gfwid": "566543cd-ed7f-4c16-827a-66b3366b1e0a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.17011151041879,
-      "lat": 2.3005011903851695,
-      "nama_kanonik": "VI"
+      "lat": 2.3005011903851695
     },
     {
       "no": 196.0,
       "company": "PT. PERKEBUNAN VII",
       "name": "PT. PERKEBUNAN VII",
+      "nama_kanonik": "VII",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3334,13 +3335,13 @@
       "gfwid": "f3dd2e62-da84-42cb-a1a7-ae5cd3b1a809",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.05208687907823,
-      "lat": 0.9725606019986534,
-      "nama_kanonik": "VII"
+      "lat": 0.9725606019986534
     },
     {
       "no": 197.0,
       "company": "PT. PERMATA SAWIT PERMAI",
       "name": "PT. PERMATA SAWIT PERMAI",
+      "nama_kanonik": "PERMATA SAWIT PERMAI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3351,13 +3352,13 @@
       "gfwid": "cf3121c8-f11e-495c-a75a-a099b6fdf36a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.3688166031452,
-      "lat": -0.673994265010427,
-      "nama_kanonik": "PERMATA SAWIT PERMAI"
+      "lat": -0.673994265010427
     },
     {
       "no": 198.0,
       "company": "PT. PERTISA",
       "name": "PT. PERTISA",
+      "nama_kanonik": "PERTISA",
       "group": "Surya Dumai Group",
       "type": "HGU",
       "legal": "HGU : 3.520,00 Ha",
@@ -3368,13 +3369,13 @@
       "gfwid": "d14a8b56-8fd2-4f0b-948a-feab1fc9b965",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.0565343221908,
-      "lat": 0.19061117645436157,
-      "nama_kanonik": "PERTISA"
+      "lat": 0.19061117645436157
     },
     {
       "no": 199.0,
       "company": "PT. POLITANI KATULISTIWA",
       "name": "PT. POLITANI KATULISTIWA",
+      "nama_kanonik": "POLITANI KATULISTIWA",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 1.500,00 Ha",
@@ -3385,13 +3386,13 @@
       "gfwid": "a246adf0-83b3-450f-bf5f-5462940171d6",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.89148604601232,
-      "lat": -0.5783344434318684,
-      "nama_kanonik": "POLITANI KATULISTIWA"
+      "lat": -0.5783344434318684
     },
     {
       "no": 200.0,
       "company": "PT. PRIATAMA RIAU",
       "name": "PT. PRIATAMA RIAU",
+      "nama_kanonik": "PRIATAMA RIAU",
       "group": "Surya Dumai Group",
       "type": "Aspek PGT",
       "legal": "Aspek PGT",
@@ -3402,13 +3403,13 @@
       "gfwid": "2947b287-5aca-4be0-871f-1330df8e0a5f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.71127962715471,
-      "lat": 0.7164515169661336,
-      "nama_kanonik": "PRIATAMA RIAU"
+      "lat": 0.7164515169661336
     },
     {
       "no": 201.0,
       "company": "PT. PUSAKA MEGAH BUMI NUSANTARA",
       "name": "PT. PUSAKA MEGAH BUMI NUSANTARA",
+      "nama_kanonik": "PUSAKA MEGAH BUMI NUSANTARA",
       "group": "RGE Group",
       "type": "HGU",
       "legal": "HGU : 5.027,70 Ha",
@@ -3419,13 +3420,13 @@
       "gfwid": "5ec3f6e5-d66d-42ec-ad2a-5d3f02a2ef2e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.76737988368322,
-      "lat": 0.35208855973461733,
-      "nama_kanonik": "PUSAKA MEGAH BUMI NUSANTARA"
+      "lat": 0.35208855973461733
     },
     {
       "no": 202.0,
       "company": "PT. RAJA GARUDA MAS SEJATI",
       "name": "PT. RAJA GARUDA MAS SEJATI",
+      "nama_kanonik": "RAJA GARUDA MAS SEJATI",
       "group": "RGE Group",
       "type": "HGU",
       "legal": "HGU : 12.270,50 Ha",
@@ -3436,13 +3437,13 @@
       "gfwid": "2a96972d-5f30-47cd-b044-a84d7f9654a5",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.66681521734634,
-      "lat": 0.3371543063166741,
-      "nama_kanonik": "RAJA GARUDA MAS SEJATI"
+      "lat": 0.3371543063166741
     },
     {
       "no": 203.0,
       "company": "PT. RAMAJAYA PRAMUKTI",
       "name": "PT. RAMAJAYA PRAMUKTI",
+      "nama_kanonik": "RAMAJAYA PRAMUKTI",
       "group": "Sinar Mas",
       "type": "HGU",
       "legal": "HGU : 2.196,00 Ha",
@@ -3453,13 +3454,13 @@
       "gfwid": "4f8f689b-f4cb-4cb0-8ca6-0286bd329b86",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.08448282326879,
-      "lat": 0.49284673995010614,
-      "nama_kanonik": "RAMAJAYA PRAMUKTI"
+      "lat": 0.49284673995010614
     },
     {
       "no": 204.0,
       "company": "PT. RANTAU BAIS FAMILI",
       "name": "PT. RANTAU BAIS FAMILI",
+      "nama_kanonik": "RANTAU BAIS FAMILI",
       "group": "No group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -3470,13 +3471,13 @@
       "gfwid": "a75992d2-67f5-40e1-b07c-7c00846c67bf",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.16185580354633,
-      "lat": 1.511329707771383,
-      "nama_kanonik": "RANTAU BAIS FAMILI"
+      "lat": 1.511329707771383
     },
     {
       "no": 205.0,
       "company": "PT. REGUMAS AGRI UTAMA",
       "name": "PT. REGUMAS AGRI UTAMA",
+      "nama_kanonik": "REGUMAS AGRI UTAMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3487,13 +3488,13 @@
       "gfwid": "7b576451-191b-41e9-849d-b517518c26a6",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.01766115147424,
-      "lat": -0.5968720444626647,
-      "nama_kanonik": "REGUMAS AGRI UTAMA"
+      "lat": -0.5968720444626647
     },
     {
       "no": 206.0,
       "company": "PT. RIAU SAKTI UNITED PLANT",
       "name": "PT. RIAU SAKTI UNITED PLANT",
+      "nama_kanonik": "PT RIAU SAKTI",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 8.000,00 Ha",
@@ -3504,13 +3505,13 @@
       "gfwid": "9ea6a7f2-7908-4d72-ac84-863320ea9abf",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.49096971673211,
-      "lat": 0.35537660087494094,
-      "nama_kanonik": "PT RIAU SAKTI"
+      "lat": 0.35537660087494094
     },
     {
       "no": 207.0,
       "company": "PT. RIGUNAS AGRI UTAMA",
       "name": "PT. RIGUNAS AGRI UTAMA",
+      "nama_kanonik": "RIGUNAS AGRI UTAMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3521,13 +3522,13 @@
       "gfwid": "2153162e-17b4-4dd9-ad71-29789282e995",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.39006346347512,
-      "lat": -1.3035699049934935,
-      "nama_kanonik": "RIGUNAS AGRI UTAMA"
+      "lat": -1.3035699049934935
     },
     {
       "no": 208.0,
       "company": "PT. ROKAN ADI MAKMUR",
       "name": "PT. ROKAN ADI MAKMUR",
+      "nama_kanonik": "ROKAN ADI MAKMUR",
       "group": "Rokan Group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -3538,13 +3539,13 @@
       "gfwid": "9bc05484-7bf9-4e40-9518-f3cb3567e9ed",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.78211124464605,
-      "lat": 1.0283716001339056,
-      "nama_kanonik": "ROKAN ADI MAKMUR"
+      "lat": 1.0283716001339056
     },
     {
       "no": 209.0,
       "company": "PT. ROKAN ADI RAYA",
       "name": "PT. ROKAN ADI RAYA",
+      "nama_kanonik": "ROKAN ADI RAYA",
       "group": "No group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -3555,13 +3556,13 @@
       "gfwid": "28efb675-1b97-4746-bc0e-65e711ac9434",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.87357424359637,
-      "lat": 1.131789944616345,
-      "nama_kanonik": "ROKAN ADI RAYA"
+      "lat": 1.131789944616345
     },
     {
       "no": 210.0,
       "company": "PT. ROKAN ERA SUBUR",
       "name": "PT. ROKAN ERA SUBUR",
+      "nama_kanonik": "ROKAN ERA SUBUR",
       "group": "Rokan Group",
       "type": "HGU",
       "legal": "HGU : 12.737,00 Ha",
@@ -3572,13 +3573,13 @@
       "gfwid": "c796ff7e-fb4a-47f9-8a9f-5b69ecd3538b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.83228053810332,
-      "lat": 1.0742655691809926,
-      "nama_kanonik": "ROKAN ERA SUBUR"
+      "lat": 1.0742655691809926
     },
     {
       "no": 211.0,
       "company": "PT. SABIRA NEGERIUTAMA",
       "name": "PT. SABIRA NEGERIUTAMA",
+      "nama_kanonik": "SABIRA NEGERIUTAMA",
       "group": "Sabira Group",
       "type": null,
       "legal": null,
@@ -3589,13 +3590,13 @@
       "gfwid": "6918941b-3f6b-47e0-841a-004301264342",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.35199785179579,
-      "lat": 0.23746524438411423,
-      "nama_kanonik": "SABIRA NEGERIUTAMA"
+      "lat": 0.23746524438411423
     },
     {
       "no": 212.0,
       "company": "PT. SAFARI RIAU",
       "name": "PT. SAFARI RIAU",
+      "nama_kanonik": "SAFARI RIAU",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3606,13 +3607,13 @@
       "gfwid": "5afbe474-d286-4675-b2ff-bc5d632dd8f9",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.89701744758534,
-      "lat": 0.18696373662733276,
-      "nama_kanonik": "SAFARI RIAU"
+      "lat": 0.18696373662733276
     },
     {
       "no": 213.0,
       "company": "PT. SAKTI SAWIT JAYA",
       "name": "PT. SAKTI SAWIT JAYA 1",
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
       "group": "No group",
       "type": "Pencadangan",
       "legal": "Pencadangan",
@@ -3623,13 +3624,13 @@
       "gfwid": "0c8e0857-dbc0-494c-bd62-308eb2455ae2",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.90603416473924,
-      "lat": 0.5620989893153254,
-      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA"
+      "lat": 0.5620989893153254
     },
     {
       "no": 214.0,
       "company": "PT. SAKTI SAWIT JAYA",
       "name": "PT. SAKTI SAWIT JAYA 2",
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
       "group": "No group",
       "type": "Pencadangan",
       "legal": "Pencadangan",
@@ -3640,13 +3641,13 @@
       "gfwid": "2444efe9-9db4-4b34-8f22-07eb49e104f0",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.48730956897401,
-      "lat": 0.3884592108173694,
-      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA"
+      "lat": 0.3884592108173694
     },
     {
       "no": 215.0,
       "company": "PT. SARI LEMBAH SUBUR",
       "name": "PT. SARI LEMBAH SUBUR",
+      "nama_kanonik": "SARI LEMBAH SUBUR",
       "group": "Astra International",
       "type": "HGU",
       "legal": "HGU :  3.875,00 Ha",
@@ -3657,13 +3658,13 @@
       "gfwid": "c04d28fb-0386-456b-8e4d-c01742de3cd9",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.24260726321788,
-      "lat": -0.06311037319291365,
-      "nama_kanonik": "SARI LEMBAH SUBUR"
+      "lat": -0.06311037319291365
     },
     {
       "no": 216.0,
       "company": "PT. SARPINDOGRAHA SAWIT TANI",
       "name": "PT. SARPINDOGRAHA SAWIT TANI 1",
+      "nama_kanonik": "SARPINDOGRAHA SAWIT TANI",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 3.174,76 Ha",
@@ -3674,13 +3675,13 @@
       "gfwid": "c9f0ca7e-5c7c-4373-b62f-035784b4df1f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.42920621412969,
-      "lat": 1.8441291360143637,
-      "nama_kanonik": "SARPINDOGRAHA SAWIT TANI"
+      "lat": 1.8441291360143637
     },
     {
       "no": 217.0,
       "company": "PT. SARPINDOGRAHA SAWIT TANI",
       "name": "PT. SARPINDOGRAHA SAWIT TANI 2",
+      "nama_kanonik": "SARPINDOGRAHA SAWIT TANI",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 1.345,79 Ha",
@@ -3691,13 +3692,13 @@
       "gfwid": "d3cc88af-2655-4089-9dde-1ae52f1201bd",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.51598557942741,
-      "lat": 1.748345695947095,
-      "nama_kanonik": "SARPINDOGRAHA SAWIT TANI"
+      "lat": 1.748345695947095
     },
     {
       "no": 218.0,
       "company": "PT. SAWIT ASAHAN INDAH",
       "name": "PT. SAWIT ASAHAN INDAH",
+      "nama_kanonik": "PT GERBANG SAWIT INDAH",
       "group": "Astra International",
       "type": "HGU",
       "legal": "HGU : 800,00 Ha",
@@ -3708,13 +3709,13 @@
       "gfwid": "fcdc63ba-5d33-41f8-bc97-715c779721bc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.49549913222023,
-      "lat": 0.7569593589440989,
-      "nama_kanonik": "PT GERBANG SAWIT INDAH"
+      "lat": 0.7569593589440989
     },
     {
       "no": 219.0,
       "company": "PT. SCORPIO KEBUN TELADAN",
       "name": "PT. SCORPIO KEBUN TELADAN 1",
+      "nama_kanonik": "SCORPIO TELADAN",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3725,13 +3726,13 @@
       "gfwid": "8606617d-8b1a-4876-a4f8-412d38efe784",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.43249052374279,
-      "lat": -0.8569110954558287,
-      "nama_kanonik": "SCORPIO TELADAN"
+      "lat": -0.8569110954558287
     },
     {
       "no": 220.0,
       "company": "PT. SCORPIO KEBUN TELADAN",
       "name": "PT. SCORPIO KEBUN TELADAN 2",
+      "nama_kanonik": "SCORPIO TELADAN",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3742,13 +3743,13 @@
       "gfwid": "f0013ae7-b285-4572-9d53-36f1511c8712",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.57924702079083,
-      "lat": -0.8871359026794794,
-      "nama_kanonik": "SCORPIO TELADAN"
+      "lat": -0.8871359026794794
     },
     {
       "no": 221.0,
       "company": "PT. SEKAR BUMI ALAM LESTARI",
       "name": "PT. SEKAR BUMI ALAM LESTARI",
+      "nama_kanonik": "PT ALAM SARI LESTARI",
       "group": "KLK",
       "type": "HGU",
       "legal": "HGU : 6.200,00 Ha",
@@ -3759,13 +3760,13 @@
       "gfwid": "cf57f768-ad6b-4692-918e-08451b89d4cd",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.19800003026569,
-      "lat": 0.756612560260361,
-      "nama_kanonik": "PT ALAM SARI LESTARI"
+      "lat": 0.756612560260361
     },
     {
       "no": 222.0,
       "company": "PT. SELAGO MAKMUR PLANTATION",
       "name": "PT. SELAGO MAKMUR PLANTATION 1",
+      "nama_kanonik": "SELAGO MAKMUR PLANTATION",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3776,13 +3777,13 @@
       "gfwid": "f6d881c5-c8f6-441d-aad1-f37aa7cb04a7",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.60919470810806,
-      "lat": -0.9412907762546366,
-      "nama_kanonik": "SELAGO MAKMUR PLANTATION"
+      "lat": -0.9412907762546366
     },
     {
       "no": 223.0,
       "company": "PT. SELAGO MAKMUR PLANTATION",
       "name": "PT. SELAGO MAKMUR PLANTATION 2",
+      "nama_kanonik": "SELAGO MAKMUR PLANTATION",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3793,13 +3794,13 @@
       "gfwid": "c3512fdd-3d62-436e-9e64-e10d881fb08b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.59064973426545,
-      "lat": -1.2188637903832797,
-      "nama_kanonik": "SELAGO MAKMUR PLANTATION"
+      "lat": -1.2188637903832797
     },
     {
       "no": 224.0,
       "company": "PT. SERIKAT PUTRA",
       "name": "PT. SERIKAT PUTRA",
+      "nama_kanonik": "SERIKAT PUTRA",
       "group": "Salim Group",
       "type": "HGU",
       "legal": "HGU : 12.474,10 Ha",
@@ -3810,13 +3811,13 @@
       "gfwid": "e7731a12-584a-405c-ad14-4d4fd4d00edc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.15619407875735,
-      "lat": 0.12898298930462018,
-      "nama_kanonik": "SERIKAT PUTRA"
+      "lat": 0.12898298930462018
     },
     {
       "no": 225.0,
       "company": "PT. SEWANGI SEJATI LUHUR",
       "name": "PT. SEWANGI SEJATI LUHUR",
+      "nama_kanonik": "PT CIPTA DAYA SEJATI LUHUR",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 6.700,00 Ha",
@@ -3827,13 +3828,13 @@
       "gfwid": "f26a7b24-9c31-4777-bada-9d29d76deb0a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.94317089482169,
-      "lat": 0.7248811805866671,
-      "nama_kanonik": "PT CIPTA DAYA SEJATI LUHUR"
+      "lat": 0.7248811805866671
     },
     {
       "no": 226.0,
       "company": "PT. SHADU EKA CITRA",
       "name": "PT. SHADU EKA CITRA",
+      "nama_kanonik": "SHADU EKA CITRA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3844,13 +3845,13 @@
       "gfwid": "cbe97f7a-1a32-4ef4-a436-0d22a484db52",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.00331567990594,
-      "lat": -0.24330490570058175,
-      "nama_kanonik": "SHADU EKA CITRA"
+      "lat": -0.24330490570058175
     },
     {
       "no": 227.0,
       "company": "PT. SIAK SERAYA",
       "name": "PT. SIAK SERAYA",
+      "nama_kanonik": "SIAK SERAYA",
       "group": "Siak Raya Group",
       "type": null,
       "legal": null,
@@ -3861,13 +3862,13 @@
       "gfwid": "65128a2b-8937-4d86-908b-9aaa74518b1e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.96650809990544,
-      "lat": 1.6729857299671982,
-      "nama_kanonik": "SIAK SERAYA"
+      "lat": 1.6729857299671982
     },
     {
       "no": 228.0,
       "company": "PT. SIDOMARGA PERKASA",
       "name": "PT. SIDOMARGA PERKASA",
+      "nama_kanonik": "SIDOMARGA PERKASA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -3878,13 +3879,13 @@
       "gfwid": "c4da54cf-2139-4ee9-8ff9-b3872babf4f7",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.58332567838674,
-      "lat": 0.24627257933227603,
-      "nama_kanonik": "SIDOMARGA PERKASA"
+      "lat": 0.24627257933227603
     },
     {
       "no": 229.0,
       "company": "PT. SINDORA SERAYA",
       "name": "PT. SINDORA SERAYA",
+      "nama_kanonik": "SINDORA SERAYA",
       "group": "No group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -3895,13 +3896,13 @@
       "gfwid": "404488d1-a04d-4441-8caa-afc414040d53",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.96045440211252,
-      "lat": 1.9710873219082174,
-      "nama_kanonik": "SINDORA SERAYA"
+      "lat": 1.9710873219082174
     },
     {
       "no": 230.0,
       "company": "PT. SRI ANUGRAH",
       "name": "PT. SRI ANUGRAH 1",
+      "nama_kanonik": "SRI ANUGRAH",
       "group": "Duta Palma Group",
       "type": null,
       "legal": null,
@@ -3912,13 +3913,13 @@
       "gfwid": "211160eb-fb38-471b-98a5-1f95c1d85bec",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.4235811181883,
-      "lat": -0.6519605462753698,
-      "nama_kanonik": "SRI ANUGRAH"
+      "lat": -0.6519605462753698
     },
     {
       "no": 231.0,
       "company": "PT. SRI ANUGRAH",
       "name": "PT. SRI ANUGRAH 2",
+      "nama_kanonik": "SRI ANUGRAH",
       "group": "Duta Palma Group",
       "type": null,
       "legal": null,
@@ -3929,13 +3930,13 @@
       "gfwid": "626f2808-5267-42ff-80b7-3a5eb4a6c18a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.47578625642095,
-      "lat": -0.7071261254089448,
-      "nama_kanonik": "SRI ANUGRAH"
+      "lat": -0.7071261254089448
     },
     {
       "no": 232.0,
       "company": "PT. SRI ANUGRAH",
       "name": "PT. SRI ANUGRAH 3",
+      "nama_kanonik": "SRI ANUGRAH",
       "group": "Duta Palma Group",
       "type": null,
       "legal": null,
@@ -3946,13 +3947,13 @@
       "gfwid": "a1f66445-ac8b-4e90-8ab8-ac64f8bbf389",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.50498930971933,
-      "lat": -0.7517741843072921,
-      "nama_kanonik": "SRI ANUGRAH"
+      "lat": -0.7517741843072921
     },
     {
       "no": 233.0,
       "company": "PT. SUBUR ARUM MAKMUR",
       "name": "PT. SUBUR ARUM MAKMUR",
+      "nama_kanonik": "SUBUR ARUM MAKMUR",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 7.767,00 Ha",
@@ -3963,13 +3964,13 @@
       "gfwid": "acc02df1-c92d-47fb-8191-cdfb6ec15413",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.83311739994454,
-      "lat": 0.8396512466149159,
-      "nama_kanonik": "SUBUR ARUM MAKMUR"
+      "lat": 0.8396512466149159
     },
     {
       "no": 234.0,
       "company": "PT. SUMATERA MAKMUR",
       "name": "PT. SUMATERA MAKMUR 1",
+      "nama_kanonik": "PT SUMATERA MAKMUR LESTARI",
       "group": "Incasi Raya",
       "type": null,
       "legal": null,
@@ -3980,13 +3981,13 @@
       "gfwid": "42e259df-e446-4f65-8dc6-6b2ee785454d",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.34429351943716,
-      "lat": -0.6283608269418014,
-      "nama_kanonik": "PT SUMATERA MAKMUR LESTARI"
+      "lat": -0.6283608269418014
     },
     {
       "no": 235.0,
       "company": "PT. SUMATERA MAKMUR",
       "name": "PT. SUMATERA MAKMUR 2",
+      "nama_kanonik": "PT SUMATERA MAKMUR LESTARI",
       "group": "Incasi Raya",
       "type": null,
       "legal": null,
@@ -3997,13 +3998,13 @@
       "gfwid": "b23e9958-76d9-4504-8b66-fc9be31d1cec",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.44327835418075,
-      "lat": -0.6999116867166253,
-      "nama_kanonik": "PT SUMATERA MAKMUR LESTARI"
+      "lat": -0.6999116867166253
     },
     {
       "no": 236.0,
       "company": "PT. SUMBER JAYA INDAH NUSA COY",
       "name": "PT. SUMBER JAYA INDAH NUSA COY 1",
+      "nama_kanonik": "SUMBER JAYA INDAH NUSA COY",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 11.316,80 Ha",
@@ -4014,13 +4015,13 @@
       "gfwid": "aa62c4ca-b577-49bc-8a05-ab0f28c183da",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.64361091723737,
-      "lat": 1.1756375056595232,
-      "nama_kanonik": "SUMBER JAYA INDAH NUSA COY"
+      "lat": 1.1756375056595232
     },
     {
       "no": 237.0,
       "company": "PT. SUMBER JAYA INDAH NUSA COY",
       "name": "PT. SUMBER JAYA INDAH NUSA COY 2",
+      "nama_kanonik": "SUMBER JAYA INDAH NUSA COY",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4031,13 +4032,13 @@
       "gfwid": "ab1aebd2-11a4-498b-bf7b-7ee084711caf",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.73474228602672,
-      "lat": 0.8690961809552973,
-      "nama_kanonik": "SUMBER JAYA INDAH NUSA COY"
+      "lat": 0.8690961809552973
     },
     {
       "no": 238.0,
       "company": "PT. SUMTAI JAYA SATRIA",
       "name": "PT. SUMTAI JAYA SATRIA",
+      "nama_kanonik": "SUMTAI JAYA SATRIA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4048,13 +4049,13 @@
       "gfwid": "0571503c-b83a-459e-9d76-76f457ec0de7",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.2277275504651,
-      "lat": -0.019923877154992577,
-      "nama_kanonik": "SUMTAI JAYA SATRIA"
+      "lat": -0.019923877154992577
     },
     {
       "no": 239.0,
       "company": "PT. SUNGAI PINANG",
       "name": "PT. SUNGAI PINANG 6",
+      "nama_kanonik": "SUNGAI PINANG",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4065,13 +4066,13 @@
       "gfwid": "0f8ab440-fcb1-4fa1-8b99-1e5679034799",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.14901211313217,
-      "lat": 1.932902071970682,
-      "nama_kanonik": "SUNGAI PINANG"
+      "lat": 1.932902071970682
     },
     {
       "no": 240.0,
       "company": "PT. SUNGAI PINANG",
       "name": "PT. SUNGAI PINANG 7",
+      "nama_kanonik": "SUNGAI PINANG",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4082,13 +4083,13 @@
       "gfwid": "c6386227-584a-46ba-8461-d079ff88cf4c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.17669165052868,
-      "lat": 1.8783955763833633,
-      "nama_kanonik": "SUNGAI PINANG"
+      "lat": 1.8783955763833633
     },
     {
       "no": 241.0,
       "company": "PT. SUNGAI PINANG",
       "name": "PT. SUNGAI PINANG 8",
+      "nama_kanonik": "SUNGAI PINANG",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4099,13 +4100,13 @@
       "gfwid": "63fd11be-a9ca-4100-96ad-2ba9f5904f64",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.13786145541054,
-      "lat": 1.8562807982354628,
-      "nama_kanonik": "SUNGAI PINANG"
+      "lat": 1.8562807982354628
     },
     {
       "no": 242.0,
       "company": "PT. SURYA AGROLIKA REKSA",
       "name": "PT. SURYA AGROLIKA REKSA 1",
+      "nama_kanonik": "SURYA AGROLIKA REKSA",
       "group": "Adimulya Group",
       "type": "HGU",
       "legal": "HGU : 1.724,00 Ha",
@@ -4116,13 +4117,13 @@
       "gfwid": "a6d6a3d3-a1be-40b0-97b4-cbebeed0a818",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.37387544494777,
-      "lat": -0.21245514477401872,
-      "nama_kanonik": "SURYA AGROLIKA REKSA"
+      "lat": -0.21245514477401872
     },
     {
       "no": 243.0,
       "company": "PT. SURYA AGROLIKA REKSA",
       "name": "PT. SURYA AGROLIKA REKSA 2",
+      "nama_kanonik": "SURYA AGROLIKA REKSA",
       "group": "Adimulya Group",
       "type": "HGU",
       "legal": "HGU : 1.724,00 Ha",
@@ -4133,13 +4134,13 @@
       "gfwid": "b1ad2462-b169-41f5-86a6-47c3495482fe",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.39477582845767,
-      "lat": -0.15551419182775394,
-      "nama_kanonik": "SURYA AGROLIKA REKSA"
+      "lat": -0.15551419182775394
     },
     {
       "no": 244.0,
       "company": "PT. SURYA BRATASENA PLANTATION",
       "name": "PT. SURYA BRATASENA PLANTATION",
+      "nama_kanonik": "PT MERIDAN SEJATI SURYA PLANTATION",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 32000 Ha",
@@ -4150,13 +4151,13 @@
       "gfwid": "b7f000c9-42b6-47ff-80cb-5a932b5f15fe",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.96449456546377,
-      "lat": 0.17593642331093798,
-      "nama_kanonik": "PT MERIDAN SEJATI SURYA PLANTATION"
+      "lat": 0.17593642331093798
     },
     {
       "no": 245.0,
       "company": "PT. SURYA BUANA BERSAMA",
       "name": "PT. SURYA BUANA BERSAMA",
+      "nama_kanonik": "SURYA BUANA BERSAMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4167,13 +4168,13 @@
       "gfwid": "03081080-2af8-4645-a7b0-62fde39aa840",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.60351197240718,
-      "lat": -0.3296530410843254,
-      "nama_kanonik": "SURYA BUANA BERSAMA"
+      "lat": -0.3296530410843254
     },
     {
       "no": 246.0,
       "company": "PT. SURYA DUMAI AGRINDO",
       "name": "PT. SURYA DUMAI AGRINDO 1",
+      "nama_kanonik": "PT PANCA SURYA AGRINDO",
       "group": "Surya Dumai Group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -4184,13 +4185,13 @@
       "gfwid": "34505822-5b4f-42a5-b0b9-07b380f33c60",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.26389395683498,
-      "lat": 1.634637830060562,
-      "nama_kanonik": "PT PANCA SURYA AGRINDO"
+      "lat": 1.634637830060562
     },
     {
       "no": 247.0,
       "company": "PT. SURYA DUMAI AGRINDO",
       "name": "PT. SURYA DUMAI AGRINDO 2",
+      "nama_kanonik": "PT PANCA SURYA AGRINDO",
       "group": "Surya Dumai Group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -4201,13 +4202,13 @@
       "gfwid": "cf63c7b7-559d-4f04-be1c-d9b09b776160",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.65004404552565,
-      "lat": 1.636172490636882,
-      "nama_kanonik": "PT PANCA SURYA AGRINDO"
+      "lat": 1.636172490636882
     },
     {
       "no": 248.0,
       "company": "PT. SURYA INTI SARI RAYA",
       "name": "PT. SURYA INTI SARI RAYA 1",
+      "nama_kanonik": "PT PINANG MAS INTI RAYA",
       "group": "Surya Dumai Group",
       "type": "HGU",
       "legal": "HGU :  1.430,25 Ha",
@@ -4218,13 +4219,13 @@
       "gfwid": "b4f8755c-adb3-46d2-8c15-24f529942017",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.55703654122263,
-      "lat": 0.6204813439890241,
-      "nama_kanonik": "PT PINANG MAS INTI RAYA"
+      "lat": 0.6204813439890241
     },
     {
       "no": 249.0,
       "company": "PT. SURYA INTI SARI RAYA",
       "name": "PT. SURYA INTI SARI RAYA 2",
+      "nama_kanonik": "PT PINANG MAS INTI RAYA",
       "group": "Surya Dumai Group",
       "type": null,
       "legal": null,
@@ -4235,13 +4236,13 @@
       "gfwid": "9f38f0bd-142c-44ee-9319-162e96ff3a83",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.69954040686935,
-      "lat": 0.8525038162110306,
-      "nama_kanonik": "PT PINANG MAS INTI RAYA"
+      "lat": 0.8525038162110306
     },
     {
       "no": 250.0,
       "company": "PT. SURYA MAKMUR",
       "name": "PT. SURYA MAKMUR",
+      "nama_kanonik": "SURYA MAKMUR",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4252,13 +4253,13 @@
       "gfwid": "cdfe70d8-f6e5-4ced-a225-d297a353d88c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.1082421641945,
-      "lat": 2.223496447711107,
-      "nama_kanonik": "SURYA MAKMUR"
+      "lat": 2.223496447711107
     },
     {
       "no": 251.0,
       "company": "PT. TANI SWADAYA PERDANA",
       "name": "PT. TANI SWADAYA PERDANA",
+      "nama_kanonik": "TANI SWADAYA PERDANA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4269,13 +4270,13 @@
       "gfwid": "74d1cfec-c819-47de-a1a5-fac62778cc74",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.71182194695332,
-      "lat": 0.8037176733826692,
-      "nama_kanonik": "TANI SWADAYA PERDANA"
+      "lat": 0.8037176733826692
     },
     {
       "no": 252.0,
       "company": "PT. TAPIAN NADENGGAN",
       "name": "PT. TAPIAN NADENGGAN",
+      "nama_kanonik": "TAPIAN NADENGGAN",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4286,13 +4287,13 @@
       "gfwid": "04443c7f-e4de-472b-8319-5e9aefc9c15c",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 99.95702293304088,
-      "lat": 1.6412294914486454,
-      "nama_kanonik": "TAPIAN NADENGGAN"
+      "lat": 1.6412294914486454
     },
     {
       "no": 253.0,
       "company": "PT. TASMA PUJA",
       "name": "PT. TASMA PUJA",
+      "nama_kanonik": "TASMA PUJA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4303,13 +4304,13 @@
       "gfwid": "ac2a4d5a-fa17-4bf2-9d44-6e8846e235c8",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.19462854642228,
-      "lat": 0.2860927618356851,
-      "nama_kanonik": "TASMA PUJA"
+      "lat": 0.2860927618356851
     },
     {
       "no": 254.0,
       "company": "PT. TEGUH KARSAWANA LESTARI",
       "name": "PT. TEGUH KARSAWANA LESTARI",
+      "nama_kanonik": "TEGUHKARSA WANALESTARI",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 7.094,00 Ha",
@@ -4320,13 +4321,13 @@
       "gfwid": "14a21aa1-20a1-4db0-b9f1-5ef3a45a3753",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.992476523464,
-      "lat": 0.9526323970441749,
-      "nama_kanonik": "TEGUHKARSA WANALESTARI"
+      "lat": 0.9526323970441749
     },
     {
       "no": 255.0,
       "company": "PT. TEKNIK UMUM",
       "name": "PT. TEKNIK UMUM",
+      "nama_kanonik": "TEKNIK UMUM",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 553,00 Ha",
@@ -4337,13 +4338,13 @@
       "gfwid": "512caebd-2449-4d91-ba8d-992f6d8f6bd7",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.66641142648999,
-      "lat": 0.5206217082561152,
-      "nama_kanonik": "TEKNIK UMUM"
+      "lat": 0.5206217082561152
     },
     {
       "no": 256.0,
       "company": "PT. TENAGA PEMB SEJATERA",
       "name": "PT. TENAGA PEMB SEJATERA",
+      "nama_kanonik": "TENAGA PEMB SEJATERA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4354,13 +4355,13 @@
       "gfwid": "f07f0ed8-d417-435c-b56d-d6433c72d655",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.09489834061412,
-      "lat": -0.17363522950522836,
-      "nama_kanonik": "TENAGA PEMB SEJATERA"
+      "lat": -0.17363522950522836
     },
     {
       "no": 257.0,
       "company": "PT. TESSO SEPAKAT",
       "name": "PT. TESSO SEPAKAT",
+      "nama_kanonik": "TESSO SEPAKAT",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4371,13 +4372,13 @@
       "gfwid": "075dbe01-c0e5-4c87-b361-7d1a0fa6d996",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.60401951424369,
-      "lat": -0.26708826292783094,
-      "nama_kanonik": "TESSO SEPAKAT"
+      "lat": -0.26708826292783094
     },
     {
       "no": 258.0,
       "company": "PT. TIDAR KERINCI AGUNG (II)",
       "name": "PT. TIDAR KERINCI AGUNG (II)",
+      "nama_kanonik": "TIDAR KERINCI AGUNG II",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4388,13 +4389,13 @@
       "gfwid": "ddaef102-373d-4c1e-8bb1-0907a375b1ca",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.2746986199783,
-      "lat": -1.0636267626894327,
-      "nama_kanonik": "TIDAR KERINCI AGUNG II"
+      "lat": -1.0636267626894327
     },
     {
       "no": 259.0,
       "company": "PT. TOBA INDAH",
       "name": "PT. TOBA INDAH 1",
+      "nama_kanonik": "TOBA INDAH",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4405,13 +4406,13 @@
       "gfwid": "7a8d91a6-f563-451c-8aac-2a923c8c3164",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.90894880200223,
-      "lat": 1.506255301319097,
-      "nama_kanonik": "TOBA INDAH"
+      "lat": 1.506255301319097
     },
     {
       "no": 260.0,
       "company": "PT. TOBA INDAH",
       "name": "PT. TOBA INDAH 2",
+      "nama_kanonik": "TOBA INDAH",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4422,13 +4423,13 @@
       "gfwid": "055bb4f4-e2c9-4254-bf58-52cc202ac3cc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.97918060347112,
-      "lat": 1.4345050464376188,
-      "nama_kanonik": "TOBA INDAH"
+      "lat": 1.4345050464376188
     },
     {
       "no": 261.0,
       "company": "PT. TORGANDA",
       "name": "PT. TORGANDA 1",
+      "nama_kanonik": "TORGANDA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4439,13 +4440,13 @@
       "gfwid": "32c6c56f-aa38-4ba4-a130-dd0b9a447894",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.25236733124909,
-      "lat": 1.6016525271828235,
-      "nama_kanonik": "TORGANDA"
+      "lat": 1.6016525271828235
     },
     {
       "no": 262.0,
       "company": "PT. TORGANDA",
       "name": "PT. TORGANDA 2",
+      "nama_kanonik": "TORGANDA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4456,13 +4457,13 @@
       "gfwid": "84a94acc-d4de-424d-b6ed-cb29da874758",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.32157656698926,
-      "lat": 1.2808054714456443,
-      "nama_kanonik": "TORGANDA"
+      "lat": 1.2808054714456443
     },
     {
       "no": 263.0,
       "company": "PT. TORUS GANDA",
       "name": "PT. TORUS GANDA",
+      "nama_kanonik": "TORUS GANDA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4473,13 +4474,13 @@
       "gfwid": "73e36719-7e27-43b4-9675-2b94f0f33168",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.4378435458918,
-      "lat": 1.1911469358151034,
-      "nama_kanonik": "TORUS GANDA"
+      "lat": 1.1911469358151034
     },
     {
       "no": 264.0,
       "company": "PT. TRI BAKTI SARIMAS",
       "name": "PT. TRI BAKTI SARIMAS",
+      "nama_kanonik": "TRI BAKTI SARIMAS",
       "group": "No group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -4490,13 +4491,13 @@
       "gfwid": "6b346344-d4b8-4932-9248-d481bc15e1f2",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.65951570720526,
-      "lat": -0.7835420833487059,
-      "nama_kanonik": "TRI BAKTI SARIMAS"
+      "lat": -0.7835420833487059
     },
     {
       "no": 265.0,
       "company": "PT. TRI MITRA LESTARI",
       "name": "PT. TRI MITRA LESTARI 1",
+      "nama_kanonik": "TRI MITRA LESTARI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4507,13 +4508,13 @@
       "gfwid": "059f791c-576d-43bd-bdd2-3a48ff02d6b7",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.14677545847368,
-      "lat": -1.1488413342175448,
-      "nama_kanonik": "TRI MITRA LESTARI"
+      "lat": -1.1488413342175448
     },
     {
       "no": 266.0,
       "company": "PT. TRI MITRA LESTARI",
       "name": "PT. TRI MITRA LESTARI 2",
+      "nama_kanonik": "TRI MITRA LESTARI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4524,13 +4525,13 @@
       "gfwid": "7a603698-5a2e-4d1c-99a1-6cf49a3c8d0b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.17621509662389,
-      "lat": -1.081840806689302,
-      "nama_kanonik": "TRI MITRA LESTARI"
+      "lat": -1.081840806689302
     },
     {
       "no": 267.0,
       "company": "PT. TRIBAKTI SARI MAS",
       "name": "PT. TRIBAKTI SARI MAS",
+      "nama_kanonik": "TRI BAKTI SARIMAS",
       "group": "Sarimas Group",
       "type": "HGU",
       "legal": "HGU",
@@ -4541,13 +4542,13 @@
       "gfwid": "c982afa3-e641-4fae-a3f3-740eb6b1f986",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.78152379017148,
-      "lat": -0.8597204077180379,
-      "nama_kanonik": "TRI BAKTI SARIMAS"
+      "lat": -0.8597204077180379
     },
     {
       "no": 268.0,
       "company": "PT. TRIDAYARI MANDIRI UTAMA",
       "name": "PT. TRIDAYARI MANDIRI UTAMA",
+      "nama_kanonik": "TRIDAYARI MANDIRI UTAMA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4558,13 +4559,13 @@
       "gfwid": "94f645d1-f1da-47b1-8c51-15add6d25983",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.50315975867757,
-      "lat": 2.142551491756017,
-      "nama_kanonik": "TRIDAYARI MANDIRI UTAMA"
+      "lat": 2.142551491756017
     },
     {
       "no": 269.0,
       "company": "PT. TRIOMAS FDI",
       "name": "PT. TRIOMAS FDI",
+      "nama_kanonik": "TRIOMAS FDI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4575,13 +4576,13 @@
       "gfwid": "01011470-0a3f-4af2-8e7b-60b816e2e420",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.40709400332561,
-      "lat": 0.7777007906754403,
-      "nama_kanonik": "TRIOMAS FDI"
+      "lat": 0.7777007906754403
     },
     {
       "no": 270.0,
       "company": "PT. TRISETYA USAHA MANDIRI",
       "name": "PT. TRISETYA USAHA MANDIRI 1",
+      "nama_kanonik": "TRISETYA USAHA MANDIRI",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 4.037,100 Ha",
@@ -4592,13 +4593,13 @@
       "gfwid": "05edc29f-f300-4114-92c0-18d2ece5aedc",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.1935821730051,
-      "lat": 0.9447796450006557,
-      "nama_kanonik": "TRISETYA USAHA MANDIRI"
+      "lat": 0.9447796450006557
     },
     {
       "no": 271.0,
       "company": "PT. TRISETYA USAHA MANDIRI",
       "name": "PT. TRISETYA USAHA MANDIRI 2",
+      "nama_kanonik": "TRISETYA USAHA MANDIRI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4609,13 +4610,13 @@
       "gfwid": "7517f2d9-c667-4190-888e-21daee6ebf06",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.20209817801936,
-      "lat": 0.5738693215375271,
-      "nama_kanonik": "TRISETYA USAHA MANDIRI"
+      "lat": 0.5738693215375271
     },
     {
       "no": 272.0,
       "company": "PT. TUMPUAN",
       "name": "PT. TUMPUAN",
+      "nama_kanonik": "TUMPUAN",
       "group": "No group",
       "type": "HGU",
       "legal": "HGU : 8.000,00 Ha",
@@ -4626,13 +4627,13 @@
       "gfwid": "7b8734d3-0756-4bd5-8e3c-48fdbc12742e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.10225698219114,
-      "lat": 1.3494417345276875,
-      "nama_kanonik": "TUMPUAN"
+      "lat": 1.3494417345276875
     },
     {
       "no": 273.0,
       "company": "PT. TUNGGAL MITRA PLANTATION",
       "name": "PT. TUNGGAL MITRA PLANTATION",
+      "nama_kanonik": "PT TUNGGAL MITRA PLANTATIONS",
       "group": "Sime Darby",
       "type": "HGU",
       "legal": "HGU : 13.836,00 Ha",
@@ -4643,13 +4644,13 @@
       "gfwid": "8de1236f-2317-48cc-a1d9-2dbff88e1443",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.71565973110766,
-      "lat": 1.5109327294148291,
-      "nama_kanonik": "PT TUNGGAL MITRA PLANTATIONS"
+      "lat": 1.5109327294148291
     },
     {
       "no": 274.0,
       "company": "PT. TUNGGAL PERKASA",
       "name": "PT. TUNGGAL PERKASA",
+      "nama_kanonik": "PT TUNGGAL PERKASA PLANTATIONS",
       "group": "Astra International",
       "type": "HGU",
       "legal": "HGU : 1.064,00 Ha",
@@ -4660,13 +4661,13 @@
       "gfwid": "a9a8c267-730e-4e6a-94e6-a9b99c846cf9",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.21433313423286,
-      "lat": -0.3090173894920695,
-      "nama_kanonik": "PT TUNGGAL PERKASA PLANTATIONS"
+      "lat": -0.3090173894920695
     },
     {
       "no": 275.0,
       "company": "PT. TUNGGAL YUNUS",
       "name": "PT. TUNGGAL YUNUS",
+      "nama_kanonik": "PT TUNGGAL YUNUS ESTATE",
       "group": "RGE Group",
       "type": "HGU",
       "legal": "HGU : 4.124,00 Ha",
@@ -4677,13 +4678,13 @@
       "gfwid": "4d05f887-3651-4afc-938a-af507059c512",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.96488829857104,
-      "lat": 0.679420030554924,
-      "nama_kanonik": "PT TUNGGAL YUNUS ESTATE"
+      "lat": 0.679420030554924
     },
     {
       "no": 276.0,
       "company": "PT. UDAYA LOHJINAWI",
       "name": "PT. UDAYA LOHJINAWI 1",
+      "nama_kanonik": "UDAYA LOH JINAWI",
       "group": "RP KELAPA SAWIT Sdn Bhd",
       "type": "HGU",
       "legal": "HGU : 1.205,32",
@@ -4694,13 +4695,13 @@
       "gfwid": "92a3fb4d-83b5-41c5-943a-473ad39c0880",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.38023849792211,
-      "lat": -0.5035001610767256,
-      "nama_kanonik": "UDAYA LOH JINAWI"
+      "lat": -0.5035001610767256
     },
     {
       "no": 277.0,
       "company": "PT. UDAYA LOHJINAWI",
       "name": "PT. UDAYA LOHJINAWI 2",
+      "nama_kanonik": "UDAYA LOH JINAWI",
       "group": "RP KELAPA SAWIT Sdn Bhd",
       "type": null,
       "legal": null,
@@ -4711,13 +4712,13 @@
       "gfwid": "eabe1fac-7508-4753-a92d-fcbbd56eb23a",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.44253776401501,
-      "lat": -0.5563515285594027,
-      "nama_kanonik": "UDAYA LOH JINAWI"
+      "lat": -0.5563515285594027
     },
     {
       "no": 278.0,
       "company": "PT. UNI SERAYA",
       "name": "PT. UNI SERAYA",
+      "nama_kanonik": "UNI SERAYA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4728,13 +4729,13 @@
       "gfwid": "c79c3352-33bb-4ac5-a63c-7c7f02f1428f",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.62565316377281,
-      "lat": 0.7225793201704217,
-      "nama_kanonik": "UNI SERAYA"
+      "lat": 0.7225793201704217
     },
     {
       "no": 279.0,
       "company": "PT. UNICO BIMASARI",
       "name": "PT. UNICO BIMASARI 1",
+      "nama_kanonik": "UNICO BIMASARI",
       "group": "No group",
       "type": "Izin Lokasi",
       "legal": "Izin Lokasi",
@@ -4745,13 +4746,13 @@
       "gfwid": "f0d47260-aabe-4940-89cc-16ad959b914e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.19758280962363,
-      "lat": 0.9892452433240803,
-      "nama_kanonik": "UNICO BIMASARI"
+      "lat": 0.9892452433240803
     },
     {
       "no": 280.0,
       "company": "PT. UNICO BIMASARI",
       "name": "PT. UNICO BIMASARI 2",
+      "nama_kanonik": "UNICO BIMASARI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4762,13 +4763,13 @@
       "gfwid": "60ecf5e5-da41-4065-882d-d0b72dc4bced",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.321398298875,
-      "lat": 1.0222979925932802,
-      "nama_kanonik": "UNICO BIMASARI"
+      "lat": 1.0222979925932802
     },
     {
       "no": 281.0,
       "company": "PT. WANA JINGGA TIMUR",
       "name": "PT. WANA JINGGA TIMUR",
+      "nama_kanonik": "WANA JINGGA TIMUR",
       "group": "Duta Palma Group",
       "type": "HGU",
       "legal": "HGU : 4.196,00 Ha",
@@ -4779,13 +4780,13 @@
       "gfwid": "ef5a25f0-946f-4304-9ac4-c2dce830b23b",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.83752629276985,
-      "lat": -0.419066618062714,
-      "nama_kanonik": "WANA JINGGA TIMUR"
+      "lat": -0.419066618062714
     },
     {
       "no": 282.0,
       "company": "PT. WANA SUBUR SAWIT INDAH",
       "name": "PT. WANA SUBUR SAWIT INDAH",
+      "nama_kanonik": "PT GERBANG SAWIT INDAH",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4796,13 +4797,13 @@
       "gfwid": "c278d410-8069-4171-a0b1-bc56eb92cc1e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.832500233159,
-      "lat": 0.7867231555270451,
-      "nama_kanonik": "PT GERBANG SAWIT INDAH"
+      "lat": 0.7867231555270451
     },
     {
       "no": 283.0,
       "company": "PT. WANANAULI NUSAPERSADA",
       "name": "PT. WANANAULI NUSAPERSADA",
+      "nama_kanonik": "WANANAULI NUSAPERSADA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4813,13 +4814,13 @@
       "gfwid": "e58871eb-de1e-4dbf-87d8-e847874edcfb",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 100.2738413263061,
-      "lat": 2.327332508216769,
-      "nama_kanonik": "WANANAULI NUSAPERSADA"
+      "lat": 2.327332508216769
     },
     {
       "no": 284.0,
       "company": "PT. WARNASARI NUSANTARA",
       "name": "PT. WARNASARI NUSANTARA",
+      "nama_kanonik": "WARNASARI NUSANTARA",
       "group": "RGE Group",
       "type": null,
       "legal": null,
@@ -4830,13 +4831,13 @@
       "gfwid": "c7703804-2eea-44a8-81c0-068a59a960ca",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.45833085624663,
-      "lat": -0.3714821974282595,
-      "nama_kanonik": "WARNASARI NUSANTARA"
+      "lat": -0.3714821974282595
     },
     {
       "no": 285.0,
       "company": "PT. WIRAKARYA SAKTI",
       "name": "PT. WIRAKARYA SAKTI",
+      "nama_kanonik": "WIRAKARYA SAKTI",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4847,13 +4848,13 @@
       "gfwid": "f0fa0403-aa9e-414e-b1c6-bad5c1ee2fa6",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 103.09691191292994,
-      "lat": -1.004957495562263,
-      "nama_kanonik": "WIRAKARYA SAKTI"
+      "lat": -1.004957495562263
     },
     {
       "no": 286.0,
       "company": "PUSKOPOLDA RIAU",
       "name": "PUSKOPOLDA RIAU",
+      "nama_kanonik": "PUSKOPOLDA RIAU",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4864,13 +4865,13 @@
       "gfwid": "b8a7be04-427a-490a-9f87-a93472825c64",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 102.82812472435238,
-      "lat": 0.36224163471023757,
-      "nama_kanonik": "PUSKOPOLDA RIAU"
+      "lat": 0.36224163471023757
     },
     {
       "no": 287.0,
       "company": "SUMBAR ANDALAS KENCANA",
       "name": "SUMBAR ANDALAS KENCANA",
+      "nama_kanonik": "SUMBAR ANDALAS KENCANA",
       "group": "No group",
       "type": null,
       "legal": null,
@@ -4881,8 +4882,7 @@
       "gfwid": "75255645-c4f6-43ba-9142-485e9a4d082e",
       "catatan": "Intersect bbox Riau approx; bisa mencakup tepi Sumut/Jambi/Sumbar",
       "lon": 101.76696914434899,
-      "lat": -1.0276728567951134,
-      "nama_kanonik": "SUMBAR ANDALAS KENCANA"
+      "lat": -1.0276728567951134
     }
   ]
 }

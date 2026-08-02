@@ -69,24 +69,29 @@ Masuk roadmap enrichment; **bukan** kegagalan backend:
 | **Wajib** | `id`, `nama`, `prioritas`, `kab_primary`, `mappable` |
 | **Opsional** | `mitra_pair` (**sumber-null / non-wajib**), `luas_disebut`, `kab_list`, `polres_primary` |
 
-`kab_primary` = satu kab kanonik atau `MULTI`. Agregat choropleth sebaiknya memakai `kab_primary`, bukan string `kab_kota` bebas.
+`kab_primary` = satu kab kanonik atau `MULTI`. Agregat choropleth sebaiknya memakai `kab_primary`, bukan string `kab_kota` bebas.  
+Export prefer `master_list_objek_agrinas_enriched.csv` + `geo_objek_override.csv`: `kab_primary_resolved` menimpa `MULTI` bila ada; objek prioritas Tinggi/Kritis dengan `geo_confidence` medium/high dapat dipromosikan `mappable=ya` (proksi centroid-kab).
 
 **Policy titik vs objek (bukan gap 1:1):** `objek_agrinas` (≈139) ≠ layer `objek_titik` (≈54 di serving). Titik serving = **proksi spasial plottable**: hotspot OSINT + expand DQ centroid-kab untuk objek `mappable=ya` prioritas Tinggi/Kritis. Placeholder **REF/centroid kab** tetap boleh ada di sumber `proksi_peta_titik_agrinas.geojson` tetapi **tidak** di-inject ke `layers.geojson`. Objek `MULTI` / Mitra KSO agregat **tidak** dipaksa-plot. Metrik benar: coverage mappable (≈34/139), bukan membandingkan titik vs registry 1:1.
 
 Field `perusahaan` pada `objek_titik` (opsional tapi disarankan) = nama perusahaan terkait untuk preview peta / profil detail. Diisi lewat `scripts/enrich_titik_perusahaan.py` (mapping hotspot + fuzzy match `perusahaan.json`) dan diteruskan export/DQ.
 
-### kasus (`kasus.json` / `master_kasus_sawit_riau.csv`)
+### kasus (`kasus.json` / `master_kasus_sawit_riau_gold.csv`)
 
 | | |
 |---|---|
+| **SoT kanonik** | `master_kasus_sawit_riau_gold.csv` (master + Extended LP) |
+| **Fallback** | `master_kasus_sawit_riau.csv` (subset ringkas / legacy DQ) |
 | **Grain** | 1 baris / entri register |
-| **PK** | `id` (`SW-###`) |
+| **PK** | `id` (`SW-###` atau `SW-EXT-###`) |
 | **Wajib (semua)** | `id`, `tipe_entri`, `polres` atau `kab_kota` |
 | **Wajib jika `tipe_entri=Kasus operasional`** | `nomor_lp` **atau** `tanpa_lp=true`, plus `status` |
-| **Opsional** | `hambatan`, `jenis`, `upaya` (diisi default DQ jika operasional) |
+| **Opsional** | `hambatan`, `jenis`, `upaya`, `sumber_lapisan`, `kelas_bukti` |
 
 `tipe_entri` hanya: `Kasus operasional` | `Potensi/register`.  
-Entri noise (uraian placeholder nihil) **tidak** masuk serving.
+Entri noise (uraian placeholder nihil) **tidak** masuk serving.  
+Serving memakai `polres_kanonik` / `kab_kota_kanonik` bila ada.  
+**C5:** lapisan Extended dapat bias liputan Polres; skor ranking Polres **tidak** dihitung ulang dari hitungan Extended — lihat `meta.methodology.coverage_bias`.
 
 ### perusahaan (`perusahaan.json`)
 

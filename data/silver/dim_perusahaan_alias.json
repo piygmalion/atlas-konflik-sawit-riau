@@ -1629,9 +1629,9 @@
     },
     {
       "nama_mentah": "BPP SEI. PUTIH",
-      "nama_kanonik": "BPP SEI PUTIH",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT KEBUN PERCOBAAN SEI PUTIH",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "CV. NIRMALA",
@@ -1676,22 +1676,22 @@
       "confidence": "low"
     },
     {
-      "nama_mentah": "KEBUN SWADAYA 13",
-      "nama_kanonik": "SWADAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_mentah": "Kebun Swadaya 13",
+      "nama_kanonik": "SWADAYA 13",
+      "sumber": "atlas",
+      "confidence": "medium"
     },
     {
-      "nama_mentah": "KEBUN SWADAYA 14",
-      "nama_kanonik": "SWADAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_mentah": "Kebun Swadaya 14",
+      "nama_kanonik": "SWADAYA 14",
+      "sumber": "atlas",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "KEBUN SWADAYA 2",
-      "nama_kanonik": "SWADAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "SWADAYA 2",
+      "sumber": "atlas",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "KEBUN SWADAYA 3",
@@ -1712,10 +1712,10 @@
       "confidence": "low"
     },
     {
-      "nama_mentah": "KEBUN SWADAYA 6",
-      "nama_kanonik": "SWADAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_mentah": "Kebun Swadaya 6",
+      "nama_kanonik": "SWADAYA 6",
+      "sumber": "atlas",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "KEBUN SWADAYA 7",
@@ -1983,9 +1983,9 @@
     },
     {
       "nama_mentah": "PT. BANYU BENING UTAMA",
-      "nama_kanonik": "BANYU BENING UTAMA",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT BANYU BENING UTAMA KEBUN 1",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. BASKARASATRIATAMA RIAU",
@@ -2091,9 +2091,9 @@
     },
     {
       "nama_mentah": "PT. BUMI PLASMA LESTARI",
-      "nama_kanonik": "BUMI PLASMA LESTARI",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT BUMI PALMA LESTARI PERSADA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. BUMI REKSA NUSASEJATI",
@@ -2115,9 +2115,9 @@
     },
     {
       "nama_mentah": "PT. CERENTI SUBUR",
-      "nama_kanonik": "CERENTI SUBUR",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT KEBUN CERENTI SUBUR II",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. CIPTA JAYA RAYA",
@@ -2127,9 +2127,9 @@
     },
     {
       "nama_mentah": "PT. CISADANE SAWIT RAYA",
-      "nama_kanonik": "CISADANE SAWIT RAYA",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT SAWIT INTI RAYA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. DARMA WUNGU GUNA",
@@ -2187,15 +2187,15 @@
     },
     {
       "nama_mentah": "PT. DUTA PALMA NUSANTARA 1",
-      "nama_kanonik": "DUTA PALMA NUSANTARA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT ADITYA PALMA NUSANTARA",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. DUTA PALMA NUSANTARA 2",
-      "nama_kanonik": "DUTA PALMA NUSANTARA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT ADITYA PALMA NUSANTARA",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. DUTA SWAKARSA INDAH",
@@ -2247,9 +2247,9 @@
     },
     {
       "nama_mentah": "PT. FLORA WANAHA TIRTA",
-      "nama_kanonik": "FLORA WANAHA TIRTA",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT FLORA WAHANA TIRTA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. GANDAERAH HENDANA 1",
@@ -2301,21 +2301,21 @@
     },
     {
       "nama_mentah": "PT. GUNUNG MAS RAYA",
-      "nama_kanonik": "GUNUNG MAS RAYA",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT GUNUNG MAS RAYA KEBUN SUNGAI BANGKO",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. GUNUNG MAS RAYA 1",
-      "nama_kanonik": "GUNUNG MAS RAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT GUNUNG MAS RAYA KEBUN SUNGAI BANGKO",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. GUNUNG MAS RAYA 2",
-      "nama_kanonik": "GUNUNG MAS RAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT GUNUNG MAS RAYA KEBUN SUNGAI BANGKO",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. INDO SEPADAN JAYA",
@@ -2337,15 +2337,15 @@
     },
     {
       "nama_mentah": "PT. INECDA (HGU)",
-      "nama_kanonik": "INECDA HGU",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT INECDA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. INHUWANA PALMA LESTARI",
-      "nama_kanonik": "INHUWANA PALMA LESTARI",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT BUMI PALMA LESTARI PERSADA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. INTI INDO SAWIT SUBUR 2",
@@ -2463,9 +2463,9 @@
     },
     {
       "nama_mentah": "PT. KENCANA AMAL TANI",
-      "nama_kanonik": "KENCANA AMAL TANI",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT KENCANA AMAL TANI 1",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. KHARISMA RIAU SENTOSA PRIMA 1",
@@ -2523,15 +2523,15 @@
     },
     {
       "nama_mentah": "PT. MARITA MAKMUR JAYA 1",
-      "nama_kanonik": "MARITA MAKMUR JAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. MARITA MAKMUR JAYA 2",
-      "nama_kanonik": "MARITA MAKMUR JAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. MEGA NUSA INTI SAWIT 1",
@@ -2565,15 +2565,15 @@
     },
     {
       "nama_mentah": "PT. MERIDAN SEJATI SURYA",
-      "nama_kanonik": "MERIDAN SEJATI SURYA",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT MERIDAN SEJATI SURYA PLANTATION",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. MULTI PARAMITRA PERKASA JAYA",
-      "nama_kanonik": "MULTI PARAMITRA PERKASA JAYA",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT JATIM JAYA PERKASA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. MURINI SAMSAM 1",
@@ -2625,15 +2625,15 @@
     },
     {
       "nama_mentah": "PT. PALMA SATU",
-      "nama_kanonik": "PALMA SATU",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PALMA SATU KEBUN PALMA 2",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PANCA SURYA AGRINDO SEJAHTERA",
-      "nama_kanonik": "PANCA SURYA AGRINDO SEJAHTERA",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PANCA SURYA AGRINDO",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PARAWIRA ABADITAMA",
@@ -2649,9 +2649,9 @@
     },
     {
       "nama_mentah": "PT. PERDANA INTI SAWIT",
-      "nama_kanonik": "PERDANA INTI SAWIT",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT MEGA NUSA INTI SAWIT",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN IV BAGAN SINEMBAH",
@@ -2661,75 +2661,75 @@
     },
     {
       "nama_mentah": "PT. PERKEBUNAN IV TANJUNG MEDANG",
-      "nama_kanonik": "IV TANJUNG MEDANG",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V KEBUN TANAH PERKEBUNAN NUSANTARA V TANJUNG MEDAN",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V (NES / PIR AIR MOLEK)",
-      "nama_kanonik": "NUSANTARA V NES PIR AIR MOLEK",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V (PIR BAGAN SINEMBAH)",
-      "nama_kanonik": "NUSANTARA V PIR BAGAN SINEMBAH",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V (PIR BUATAN)",
-      "nama_kanonik": "NUSANTARA V PIR BUATAN",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V (PIR LOKAL BAGAN BATU",
-      "nama_kanonik": "NUSANTARA V PIR LOKAL BAGAN BATU",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V (PIR SEI. PAGAR)",
-      "nama_kanonik": "NUSANTARA V PIR SEI PAGAR",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V (PIR SEI. SIASAM)",
-      "nama_kanonik": "NUSANTARA V PIR SEI SIASAM",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V (PIR SEI. TAPUNG)",
-      "nama_kanonik": "NUSANTARA V PIR SEI TAPUNG",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V (PTP III SEI. MERANTI)",
-      "nama_kanonik": "NUSANTARA V PTP III SEI MERANTI",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V (SEI. GALUH)",
-      "nama_kanonik": "NUSANTARA V SEI GALUH",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V (TANDUN, TERANTAM, TAMORA)",
-      "nama_kanonik": "NUSANTARA V TANDUN TERANTAM TAMORA",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN V AIR MOLEK",
-      "nama_kanonik": "NUSANTARA V AIR MOLEK",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT PERKEBUNAN NUSANTARA V",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. PERKEBUNAN VI",
@@ -2781,9 +2781,9 @@
     },
     {
       "nama_mentah": "PT. RIAU SAKTI UNITED PLANT",
-      "nama_kanonik": "RIAU SAKTI UNITED PLANT",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT RIAU SAKTI",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. RIGUNAS AGRI UTAMA",
@@ -2817,21 +2817,21 @@
     },
     {
       "nama_mentah": "PT. SAKTI SAWIT JAYA",
-      "nama_kanonik": "SAKTI SAWIT JAYA",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. SAKTI SAWIT JAYA 1",
-      "nama_kanonik": "SAKTI SAWIT JAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. SAKTI SAWIT JAYA 2",
-      "nama_kanonik": "SAKTI SAWIT JAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT ASIA SAWIT MAKMUR JAYA",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. SARPINDOGRAHA SAWIT TANI",
@@ -2931,21 +2931,21 @@
     },
     {
       "nama_mentah": "PT. SUMATERA MAKMUR",
-      "nama_kanonik": "SUMATERA MAKMUR",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT SUMATERA MAKMUR LESTARI",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. SUMATERA MAKMUR 1",
-      "nama_kanonik": "SUMATERA MAKMUR",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT SUMATERA MAKMUR LESTARI",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. SUMATERA MAKMUR 2",
-      "nama_kanonik": "SUMATERA MAKMUR",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT SUMATERA MAKMUR LESTARI",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. SUMBER JAYA INDAH NUSA COY 1",
@@ -3009,27 +3009,27 @@
     },
     {
       "nama_mentah": "PT. SURYA DUMAI AGRINDO 1",
-      "nama_kanonik": "SURYA DUMAI AGRINDO",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT PANCA SURYA AGRINDO",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. SURYA DUMAI AGRINDO 2",
-      "nama_kanonik": "SURYA DUMAI AGRINDO",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT PANCA SURYA AGRINDO",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. SURYA INTI SARI RAYA 1",
-      "nama_kanonik": "SURYA INTI SARI RAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT PINANG MAS INTI RAYA",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. SURYA INTI SARI RAYA 2",
-      "nama_kanonik": "SURYA INTI SARI RAYA",
-      "sumber": "gfw_name",
-      "confidence": "low"
+      "nama_kanonik": "PT PINANG MAS INTI RAYA",
+      "sumber": "gfw_bps_match",
+      "confidence": "medium"
     },
     {
       "nama_mentah": "PT. SURYA MAKMUR",
@@ -3153,21 +3153,21 @@
     },
     {
       "nama_mentah": "PT. TUNGGAL MITRA PLANTATION",
-      "nama_kanonik": "TUNGGAL MITRA PLANTATION",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT TUNGGAL MITRA PLANTATIONS",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. TUNGGAL PERKASA",
-      "nama_kanonik": "TUNGGAL PERKASA",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT TUNGGAL PERKASA PLANTATIONS",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. TUNGGAL YUNUS",
-      "nama_kanonik": "TUNGGAL YUNUS",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT TUNGGAL YUNUS ESTATE",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. UDAYA LOHJINAWI 1",
@@ -3207,9 +3207,9 @@
     },
     {
       "nama_mentah": "PT. WANA SUBUR SAWIT INDAH",
-      "nama_kanonik": "WANA SUBUR SAWIT INDAH",
-      "sumber": "gfw",
-      "confidence": "medium"
+      "nama_kanonik": "PT GERBANG SAWIT INDAH",
+      "sumber": "gfw_bps_match",
+      "confidence": "high"
     },
     {
       "nama_mentah": "PT. WANANAULI NUSAPERSADA",

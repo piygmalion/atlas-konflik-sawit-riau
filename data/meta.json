@@ -1,7 +1,7 @@
 {
   "brand": "Atlas Konflik Sawit Riau",
   "subtitle": "Pemetaan spasial konflik, objek Agrinas–Satgas, dan celahan perizinan",
-  "updated_at": "2026-08-02T02:47:41+07:00",
+  "updated_at": "2026-08-02T09:31:20+07:00",
   "bbox_riau": [
     100.0,
     -1.2,
@@ -17,23 +17,23 @@
     "kab_kota": 12,
     "polres": 12,
     "objek_agrinas": 139,
-    "objek_mappable": 34,
-    "objek_titik": 54,
-    "kasus_konflik": 113,
+    "objek_mappable": 78,
+    "objek_titik": 98,
+    "hotspot_verifikasi": 15,
+    "kasus_konflik": 270,
     "choropleth": 12,
-    "fitur_spasial": 85,
+    "fitur_spasial": 130,
     "gfw_konsesi": 287,
     "gfw_bbox_full": 287,
-    "entri_terpetakan": 83,
-    "entri_tidak_terpetakan": 30,
-    "dossier": 436,
-    "hotspot_verifikasi": 15,
+    "atlas_full": 436,
     "perusahaan": 237,
     "perusahaan_alias": 691,
     "desa_lock": 4,
     "izin_2017": 388,
-    "entity_matches": 450,
-    "atlas_full": 436
+    "entri_terpetakan": 240,
+    "entri_tidak_terpetakan": 30,
+    "dossier": 436,
+    "entity_matches": 450
   },
   "layers": [
     {
@@ -75,15 +75,46 @@
   ],
   "methodology": {
     "skor_type": "indeks_liputan_objek_register",
-    "disclaimer": "Indeks liputan+objek+register terbuka — bukan vonis operasional. Setelah DQ: 83/30 entri terpetakan/tidak. Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi.",
+    "disclaimer": "Indeks liputan+objek+register terbuka — bukan vonis operasional. Setelah DQ: 240/30 entri terpetakan/tidak. Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi. Register gold mencakup lapisan Extended LP; distribusi Polres/kab bisa bias ke unit yang lebih lengkap (mis. Kampar/Dumai). Skor Polres ranking tetap dari indeks liputan+objek+register — tidak dikalibrasi ulang dari hitungan Extended mentah.",
     "blend_default": "70% OSINT + 30% register",
     "kalibrasi": "Menunggu rekap LP/SPKT 36 bulan resmi",
-    "dq_note": "DQ plan applied: noise kasus dropped; tanpa_lp flag; kab_primary pada objek; match_id cocokan; sk36 record_id; company alias.",
+    "dq_note": "DQ plan applied: noise kasus dropped; tanpa_lp flag; kab_primary pada objek; match_id cocokan; sk36 record_id; company alias; atlas_full; izin_2017 vintage; kasus SoT = master_kasus_sawit_riau_gold.csv; objek geo dari enriched+override.",
     "dual_grain": "objek_agrinas = entity registry; objek_titik = proksi spasial campuran; objek_mappable = subset registry yang layak diplot. Jangan bandingkan titik vs registry 1:1.",
-    "integration": "Matching & Overlay Engine (build_entity_matches): geo-gated entity match; confirmed dilarang jika geo_ok=false; dossier OSINT 1-baris per Atlas."
+    "izin_2017": "Rekap perizinan perkebunan vintage 2017 — bukan status izin terkini.",
+    "kasus_grain": "Serving kasus = register gold (master + Extended LP). CSV ringkas master_kasus_sawit_riau.csv adalah subset/legacy fallback.",
+    "coverage_bias": {
+      "n_kasus": 270,
+      "sumber_lapisan": {
+        "master": 113,
+        "extended": 152,
+        "master+extended": 5
+      },
+      "n_extended_like": 157,
+      "n_master_like": 118,
+      "top_polres": [
+        {
+          "polres": "Polda Riau (Intelkam)",
+          "n": 76
+        },
+        {
+          "polres": "Polres Kampar",
+          "n": 70
+        },
+        {
+          "polres": "Polres Dumai",
+          "n": 46
+        }
+      ],
+      "top3_share": 0.711,
+      "bias_flag": true,
+      "note": "Register gold mencakup lapisan Extended LP; distribusi Polres/kab bisa bias ke unit yang lebih lengkap (mis. Kampar/Dumai). Skor Polres ranking tetap dari indeks liputan+objek+register — tidak dikalibrasi ulang dari hitungan Extended mentah."
+    }
   },
   "sumber": [
+    "master_kasus_sawit_riau_gold.csv",
     "TABEL_KONFLIK_AGRARIA_SAWIT_RIAU",
+    "master_list_objek_agrinas_enriched.csv",
+    "geo_objek_override.csv",
     "Master_List_Objek_Agrinas_Satgas_Riau",
     "Ranking_Potensi_Konflik_Per_Polres",
     "cluster_kabkota_agrinas",
@@ -92,8 +123,14 @@
     "Tabulasi_Kepmenhut_36_2025",
     "Tabulasi_Penertiban_Kawasan_Hutan_Sawit_Riau",
     "tabulasi_konsesi_sawit_gfw_bbox_riau (287)",
-    "Nusantara Atlas / GFW (cocokan)"
+    "Nusantara Atlas / GFW (cocokan + atlas_full)",
+    "dim_perusahaan_alias",
+    "tabulasi_verifikasi_lanjutan_sebaran_riau",
+    "desa_lock / kunci desa",
+    "REKAPITULASI PERIZINAN PERKEBUNAN 2017",
+    "Master_List_Fase2_Agrinas_Satgas_Riau",
+    "Baseline_Publik_Rantai_Satgas_Agrinas"
   ],
-  "update_command": "python website/scripts/apply_dq_fixes.py && python website/scripts/export_web_data.py && python website/scripts/build_entity_matches.py",
-  "catatan": "Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); coverage 83/30 setelah DQ; skor = indeks liputan+objek+register. Bukan batas legal HGU/IUP. objek_titik (54) ≠ objek_agrinas (139): dual grain — titik = proksi spasial (bukan 1:1 dengan registry). Metrik benar: objek_mappable (34/139)."
+  "update_command": "python website/scripts/export_web_data.py && python website/scripts/materialize_serving.py",
+  "catatan": "Choropleth ADM2; koridor = hull titik objek (default off); densitas centroid (default off); coverage 240/30 setelah DQ; skor = indeks liputan+objek+register. Bukan batas legal HGU/IUP. objek_titik (98) ≠ objek_agrinas (139): dual grain — titik = proksi spasial (bukan 1:1 dengan registry). Metrik benar: objek_mappable (78/139)."
 }

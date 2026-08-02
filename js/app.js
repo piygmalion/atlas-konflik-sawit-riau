@@ -630,13 +630,18 @@ function renderStats() {
   }
 
   const short = "Skor = indeks liputan+objek+register — bukan vonis operasional.";
+  const bias = DATA.meta?.methodology?.coverage_bias;
+  const biasShort =
+    bias?.bias_flag
+      ? " Liputan Extended LP bisa bias ke Polres yang lebih lengkap — skor ranking tidak dikalibrasi dari Extended mentah."
+      : "";
   const disc =
     DATA.meta?.methodology?.disclaimer ||
     DATA.polres?.model?.catatan ||
     short;
   const summary = document.getElementById("methodNoteSummary");
   const methodEl = document.getElementById("methodNote");
-  if (summary) summary.textContent = short;
+  if (summary) summary.textContent = short + biasShort;
   if (methodEl) methodEl.textContent = disc;
 
   // Seed kepmen heading before Analisis tab mounts charts
@@ -2343,7 +2348,7 @@ window.syncTablePaneScrollHints = syncTablePaneScrollHints;
 
 function setupDataTables() {
   const tabs = [
-    { id: "kasus", label: "Kasus konflik", rows: () => DATA.kasus.records, cols: ["id", "tipe_entri", "kab_kota", "polres", "tahun", "nomor_lp", "perusahaan", "status", "uraian"] },
+    { id: "kasus", label: "Kasus konflik", rows: () => DATA.kasus.records, cols: ["id", "tipe_entri", "sumber_lapisan", "kab_kota", "polres", "tahun", "nomor_lp", "perusahaan", "status", "uraian"] },
     { id: "objek", label: "Objek Agrinas", rows: () => DATA.objek.records, cols: ["id", "nama", "lapisan", "kab_primary", "kab_kota", "mappable", "prioritas", "status_kredibilitas", "kaitan_agrinas"] },
     { id: "polres", label: "Ranking Polres", rows: () => DATA.polres.records, cols: ["peringkat", "polres", "skor", "kategori", "n_agrinas", "n_aksi_massa", "alasan"] },
     { id: "kab", label: "Kab/Kota", rows: () => DATA.kab.records, cols: ["kab_kota", "kategori_peta", "skor_komposit", "n_kasus", "polres_proksi", "objek_sinyal_utama"] },

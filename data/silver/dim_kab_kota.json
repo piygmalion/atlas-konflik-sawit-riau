@@ -20,7 +20,7 @@
       "lon": 100.55,
       "lat": 0.88,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
-      "n_kasus": 12,
+      "n_kasus": 16,
       "risiko_register": {
         "skor": 61.2,
         "level": "TINGGI",
@@ -88,7 +88,7 @@
       "lon": 102.35,
       "lat": -0.35,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
-      "n_kasus": 10,
+      "n_kasus": 11,
       "risiko_register": {
         "skor": 84.0,
         "level": "SANGAT TINGGI",
@@ -122,7 +122,7 @@
       "lon": 101.55,
       "lat": -0.55,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
-      "n_kasus": 8,
+      "n_kasus": 33,
       "risiko_register": {
         "skor": 64.5,
         "level": "TINGGI",
@@ -156,7 +156,7 @@
       "lon": 102.15,
       "lat": 0.25,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
-      "n_kasus": 6,
+      "n_kasus": 11,
       "risiko_register": {
         "skor": 56.0,
         "level": "TINGGI",
@@ -190,7 +190,7 @@
       "lon": 103.05,
       "lat": -0.35,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
-      "n_kasus": 5,
+      "n_kasus": 7,
       "risiko_register": {
         "skor": 58.0,
         "level": "TINGGI",
@@ -224,7 +224,7 @@
       "lon": 101.15,
       "lat": 0.35,
       "catatan_peta": "Layer titik + koridor; bukan poligon resmi Agrinas",
-      "n_kasus": 6,
+      "n_kasus": 76,
       "risiko_register": {
         "skor": 66.0,
         "level": "TINGGI",
@@ -292,7 +292,7 @@
       "lon": 101.45,
       "lat": 0.53,
       "catatan_peta": "Pendalaman / monitoring",
-      "n_kasus": 10,
+      "n_kasus": 11,
       "risiko_register": {
         "skor": 77.0,
         "level": "SANGAT TINGGI",
@@ -326,7 +326,7 @@
       "lon": 101.45,
       "lat": 1.67,
       "catatan_peta": "Pendalaman / monitoring",
-      "n_kasus": 6,
+      "n_kasus": 50,
       "risiko_register": {
         "skor": 58.5,
         "level": "TINGGI",
@@ -360,7 +360,7 @@
       "lon": 102.05,
       "lat": 0.85,
       "catatan_peta": "Pendalaman / monitoring",
-      "n_kasus": 3,
+      "n_kasus": 7,
       "risiko_register": {
         "skor": 20.0,
         "level": "RENDAH",
@@ -394,7 +394,7 @@
       "lon": 102.4,
       "lat": 0.9,
       "catatan_peta": "Pendalaman / monitoring",
-      "n_kasus": 0,
+      "n_kasus": 1,
       "risiko_register": {
         "skor": null,
         "level": null,

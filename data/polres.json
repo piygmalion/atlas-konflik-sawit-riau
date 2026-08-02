@@ -9,10 +9,10 @@
       "osint": 0.7,
       "register": 0.3
     },
-    "catatan": "Indeks liputan+objek+register terbuka — bukan vonis operasional. Skor early-warning intel terbuka, bukan vonis operasional. 41 entri tidak terpetakan ke Polres (umumnya 'Lintas Provinsi Riau'). Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi."
+    "catatan": "Indeks liputan+objek+register terbuka — bukan vonis operasional. Skor early-warning intel terbuka, bukan vonis operasional. 41 entri tidak terpetakan ke Polres (umumnya 'Lintas Provinsi Riau'). Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi. Register gold mencakup lapisan Extended LP; distribusi Polres/kab bisa bias ke unit yang lebih lengkap (mis. Kampar/Dumai). Skor Polres ranking tetap dari indeks liputan+objek+register — tidak dikalibrasi ulang dari hitungan Extended mentah."
   },
   "coverage": {
-    "total_entri_terpetakan": 83,
+    "total_entri_terpetakan": 240,
     "entri_tidak_terpetakan": 30,
     "bucket_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
     "label_terpetakan": "Entri terpetakan ke Polres",
@@ -20,7 +20,34 @@
     "n_polres": 12,
     "prioritas": 4,
     "waspada": 4,
-    "pantau": 4
+    "pantau": 4,
+    "kasus_coverage": {
+      "n_kasus": 270,
+      "sumber_lapisan": {
+        "master": 113,
+        "extended": 152,
+        "master+extended": 5
+      },
+      "n_extended_like": 157,
+      "n_master_like": 118,
+      "top_polres": [
+        {
+          "polres": "Polda Riau (Intelkam)",
+          "n": 76
+        },
+        {
+          "polres": "Polres Kampar",
+          "n": 70
+        },
+        {
+          "polres": "Polres Dumai",
+          "n": 46
+        }
+      ],
+      "top3_share": 0.711,
+      "bias_flag": true,
+      "note": "Register gold mencakup lapisan Extended LP; distribusi Polres/kab bisa bias ke unit yang lebih lengkap (mis. Kampar/Dumai). Skor Polres ranking tetap dari indeks liputan+objek+register — tidak dikalibrasi ulang dari hitungan Extended mentah."
+    }
   },
   "records": [
     {

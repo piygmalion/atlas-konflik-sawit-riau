@@ -138,7 +138,7 @@ META_SUMBER = [
         "tipe_data": "tabular",
         "kredibilitas": "tinggi",
         "grain": "1 entri / kasus",
-        "path_sot": "master_kasus_sawit_riau.csv",
+        "path_sot": "master_kasus_sawit_riau_gold.csv",
         "refresh_cadence": "berkala",
         "status": "active",
     },

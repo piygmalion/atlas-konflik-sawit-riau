@@ -420,12 +420,14 @@ def patch_polres_coverage(kasus: list[dict], polres_records: list[dict]):
     path = OUT / "polres.json"
     payload = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"records": polres_records}
     cov = payload.get("coverage") or {}
+    cov_stats = kasus_coverage_stats(kasus)
     cov.update(
         {
             "n_polres": len(payload.get("records") or polres_records),
             "prioritas": sum(1 for p in (payload.get("records") or []) if p.get("kategori") == "PRIORITAS"),
             "waspada": sum(1 for p in (payload.get("records") or []) if p.get("kategori") == "WASPADA"),
             "pantau": sum(1 for p in (payload.get("records") or []) if p.get("kategori") == "PANTAU"),
+            "kasus_coverage": cov_stats,
             "total_entri_terpetakan": mapped,
             "entri_tidak_terpetakan": lintas,
             "bucket_tidak_terpetakan": "Lintas Provinsi Riau / tidak terpetakan Polres",
@@ -434,46 +436,151 @@ def patch_polres_coverage(kasus: list[dict], polres_records: list[dict]):
         }
     )
     payload["coverage"] = cov
+    model = payload.get("model") or {}
+    base_catatan = str(model.get("catatan") or "")
+    if cov_stats.get("bias_flag") and "Extended LP" not in base_catatan:
+        model["catatan"] = (
+            (base_catatan + " " if base_catatan else "")
+            + cov_stats["note"]
+        ).strip()
+        payload["model"] = model
     write_json("polres.json", payload)
     return cov
 
 
+def _load_geo_objek_override() -> dict[str, dict]:
+    rows = read_csv("geo_objek_override.csv")
+    out: dict[str, dict] = {}
+    for r in rows:
+        oid = r.get("objek_id") or r.get("id")
+        if oid:
+            out[str(oid)] = r
+    return out
+
+
 def export_objek():
-    rows = read_csv("master_list_objek_agrinas_satgas_riau.csv")
-    records = [
-        {
-            "id": r.get("id"),
-            "nama": r.get("nama_kanonik"),
-            "tipe_badan": r.get("tipe_badan"),
-            "lapisan": r.get("lapisan"),
-            "lapisan_semua": r.get("lapisan_semua"),
-            "peran": r.get("peran"),
-            "klaster": r.get("klaster"),
-            "kab_kota": r.get("kab_kota"),
-            "kab_primary": r.get("kab_primary"),
-            "kab_list": r.get("kab_list"),
-            "polres_primary": r.get("polres_primary"),
-            "mappable": r.get("mappable"),
-            "luas_disebut": r.get("luas_disebut"),
-            "status_kredibilitas": r.get("status_kredibilitas"),
-            "prioritas": r.get("prioritas"),
-            "kaitan_agrinas": r.get("kaitan_agrinas"),
-            "cro_regional": r.get("cro_regional"),
-            "mitra_pair": r.get("mitra_pair"),
-            "ada_di_bps": r.get("ada_di_bps"),
-            "ada_di_konflik_polda": r.get("ada_di_konflik_polda"),
-            "sumber": r.get("sumber"),
-        }
-        for r in rows
-    ]
+    """Prefer enriched SoT + geo override; fall back to satgas registry."""
+    rows = read_csv("master_list_objek_agrinas_enriched.csv")
+    source = "master_list_objek_agrinas_enriched.csv"
+    if not rows:
+        rows = read_csv("master_list_objek_agrinas_satgas_riau.csv")
+        source = "master_list_objek_agrinas_satgas_riau.csv"
+    overrides = _load_geo_objek_override()
+    records = []
+    n_resolved = 0
+    n_map_promoted = 0
+    for r in rows:
+        oid = r.get("id")
+        ov = overrides.get(str(oid) if oid else "") or {}
+        kab_primary = r.get("kab_primary")
+        resolved = (
+            ov.get("kab_primary_resolved")
+            or r.get("kab_primary_resolved")
+            or None
+        )
+        geo_conf = ov.get("geo_confidence") or r.get("geo_confidence")
+        if resolved and str(resolved).strip().upper() != "MULTI":
+            if str(kab_primary or "").strip().upper() == "MULTI" or not kab_primary:
+                n_resolved += 1
+            kab_primary = resolved
+        polres_primary = (
+            r.get("polres_primary_kanonik") or r.get("polres_primary") or None
+        )
+        mappable = r.get("mappable")
+        pri = str(r.get("prioritas") or "").strip().lower()
+        conf = str(geo_conf or "").strip().lower()
+        map_yes = str(mappable or "").strip().lower() in {"ya", "true", "1", "yes"}
+        # Promote high-prio objects with resolved kab + medium/high geo confidence
+        # so centroid-kab expand can plot them (still proksi, not legal polygon).
+        if (
+            not map_yes
+            and kab_primary
+            and str(kab_primary).strip().upper() != "MULTI"
+            and pri in {"tinggi", "kritis"}
+            and conf in {"medium", "high", "tinggi", "sedang"}
+        ):
+            mappable = "ya"
+            n_map_promoted += 1
+            map_yes = True
+        records.append(
+            {
+                "id": oid,
+                "nama": r.get("nama_kanonik"),
+                "tipe_badan": r.get("tipe_badan"),
+                "lapisan": r.get("lapisan"),
+                "lapisan_semua": r.get("lapisan_semua"),
+                "peran": r.get("peran"),
+                "klaster": r.get("klaster"),
+                "kab_kota": r.get("kab_kota"),
+                "kab_primary": kab_primary,
+                "kab_list": r.get("kab_list"),
+                "polres_primary": polres_primary,
+                "mappable": mappable,
+                "geo_confidence": geo_conf,
+                "geo_override": ov.get("dasar")
+                or r.get("geo_override_dasar")
+                or r.get("geo_override"),
+                "luas_disebut": r.get("luas_disebut"),
+                "status_kredibilitas": r.get("status_kredibilitas"),
+                "prioritas": r.get("prioritas"),
+                "kaitan_agrinas": r.get("kaitan_agrinas"),
+                "cro_regional": r.get("cro_regional"),
+                "mitra_pair": r.get("mitra_pair"),
+                "ada_di_bps": r.get("ada_di_bps"),
+                "ada_di_konflik_polda": r.get("ada_di_konflik_polda"),
+                "sumber": r.get("sumber"),
+            }
+        )
+    multi = sum(1 for r in records if str(r.get("kab_primary") or "").upper() == "MULTI")
+    print(
+        f"    objek source={source} n={len(records)} MULTI={multi} "
+        f"resolved_from_MULTI/empty={n_resolved} mappable_promoted={n_map_promoted}"
+    )
     write_json("objek_agrinas.json", {"total": len(records), "records": records})
     return records
 
 
+def kasus_coverage_stats(kasus: list[dict]) -> dict:
+    """C5: flag Extended/master coverage bias without recomputing Polres skor."""
+    from collections import Counter
+
+    layers = Counter(str(r.get("sumber_lapisan") or "unknown") for r in kasus)
+    polres_c = Counter(str(r.get("polres") or "?") for r in kasus)
+    top = [{"polres": p, "n": n} for p, n in polres_c.most_common(3)]
+    top3_n = sum(x["n"] for x in top)
+    top3_share = round(top3_n / max(len(kasus), 1), 3)
+    n_ext = int(layers.get("extended", 0) + layers.get("master+extended", 0))
+    n_master = int(layers.get("master", 0) + layers.get("master+extended", 0))
+    bias_flag = bool(kasus) and (top3_share >= 0.5 or n_ext > n_master)
+    note = (
+        "Register gold mencakup lapisan Extended LP; distribusi Polres/kab bisa bias "
+        "ke unit yang lebih lengkap (mis. Kampar/Dumai). Skor Polres ranking tetap dari "
+        "indeks liputan+objek+register — tidak dikalibrasi ulang dari hitungan Extended mentah."
+    )
+    return {
+        "n_kasus": len(kasus),
+        "sumber_lapisan": dict(layers),
+        "n_extended_like": n_ext,
+        "n_master_like": n_master,
+        "top_polres": top,
+        "top3_share": top3_share,
+        "bias_flag": bias_flag,
+        "note": note,
+    }
+
+
 def export_kasus():
-    """Prefer DQ-cleaned CSV; fall back to workbook sheet."""
+    """Prefer gold register; fall back to ringkas CSV then workbook sheet."""
     records = []
-    csv_rows = read_csv("master_kasus_sawit_riau.csv")
+    source = None
+    csv_rows = read_csv("master_kasus_sawit_riau_gold.csv")
+    if csv_rows:
+        source = "master_kasus_sawit_riau_gold.csv"
+    else:
+        csv_rows = read_csv("master_kasus_sawit_riau.csv")
+        if csv_rows:
+            source = "master_kasus_sawit_riau.csv"
+
     if csv_rows:
         for r in csv_rows:
             if not r.get("id"):
@@ -484,31 +591,45 @@ def export_kasus():
             uraian = str(r.get("uraian") or "")
             if re.search(r"historikonflik\s*nihil|nihil\s*nihil", uraian, re.I):
                 continue
+            nomor_lp = r.get("nomor_lp_norm") or r.get("nomor_lp")
+            tipe = r.get("tipe_entri")
+            tanpa_lp = str(r.get("tanpa_lp") or "").lower() in {"true", "1", "ya"}
+            tanpa_lp_alasan = r.get("tanpa_lp_alasan")
+            if (
+                not tanpa_lp
+                and str(tipe or "").lower().startswith("kasus")
+                and not (nomor_lp or "").strip()
+            ):
+                tanpa_lp = True
+                tanpa_lp_alasan = tanpa_lp_alasan or "Tidak tercantum nomor LP di sumber register"
             rec = {
                 "id": r.get("id"),
                 "sumber_dokumen": r.get("sumber_dokumen"),
-                "polres": r.get("polres"),
-                "kab_kota": r.get("kab_kota"),
+                "polres": r.get("polres_kanonik") or r.get("polres"),
+                "kab_kota": r.get("kab_kota_kanonik") or r.get("kab_kota"),
                 "tahun": r.get("tahun"),
-                "nomor_lp": r.get("nomor_lp"),
+                "nomor_lp": nomor_lp,
                 "jenis": r.get("jenis"),
                 "kategori": r.get("kategori"),
                 "pihak": r.get("pihak"),
                 "lokasi": r.get("lokasi"),
                 "uraian": r.get("uraian"),
                 "upaya": r.get("upaya"),
-                "status": r.get("status"),
+                "status": r.get("status") or r.get("status_sumber"),
                 "hambatan": r.get("hambatan"),
                 "perusahaan": r.get("perusahaan"),
                 "tema": r.get("tema"),
-                "tipe_entri": r.get("tipe_entri"),
+                "tipe_entri": tipe,
                 "indikator_sawit": r.get("indikator_sawit"),
-                "tanpa_lp": str(r.get("tanpa_lp") or "").lower() in {"true", "1", "ya"},
-                "tanpa_lp_alasan": r.get("tanpa_lp_alasan"),
+                "tanpa_lp": tanpa_lp,
+                "tanpa_lp_alasan": tanpa_lp_alasan,
                 "status_verifikasi": r.get("status_verifikasi") or "ok",
+                "sumber_lapisan": r.get("sumber_lapisan") or "master",
+                "kelas_bukti": r.get("kelas_bukti"),
             }
             records.append(rec)
     else:
+        source = "TABEL_KONFLIK_AGRARIA_SAWIT_RIAU.xlsx#Master_Kasus_Sawit"
         rows = sheet_rows("TABEL_KONFLIK_AGRARIA_SAWIT_RIAU.xlsx", "Master_Kasus_Sawit")
         for r in rows:
             if not r.get("ID") and not r.get("Uraian_Singkat"):
@@ -535,6 +656,7 @@ def export_kasus():
                     "tema": r.get("Kata_Kunci_Tema"),
                     "tipe_entri": r.get("Tipe_Entri"),
                     "indikator_sawit": r.get("Indikator_Sawit"),
+                    "sumber_lapisan": "workbook",
                 }
             )
     for rec in records:
@@ -546,6 +668,7 @@ def export_kasus():
         for k in ("nomor_lp", "status", "upaya", "uraian"):
             if rec.get(k) is not None:
                 rec[k] = re.sub(r"[ \t]+", " ", str(rec[k]).replace("\r", "")).strip() or None
+    print(f"    kasus source={source} n={len(records)}")
     write_json("kasus.json", {"total": len(records), "records": records})
     return records
 
@@ -583,8 +706,9 @@ def match_wilayah_py(a, b) -> bool:
     return any(x in y or y in x for x in bag_a for y in bag_b if x and y)
 
 
-def export_spatial_layers(kab_records: list[dict]):
+def export_spatial_layers(kab_records: list[dict], objek: list[dict] | None = None):
     features = []
+    seen_objek_ids: set[str] = set()
 
     # Titik objek Agrinas — skip centroid REF (noise visual / ID duplikat historis)
     path = ROOT / "proksi_peta_titik_agrinas.geojson"
@@ -597,12 +721,15 @@ def export_spatial_layers(kab_records: list[dict]):
             nama = str(props.get("nama") or "").lower()
             if "REF" in prioritas or "centroid" in tipe or "centroid" in nama:
                 continue
+            oid = props.get("id")
+            if oid:
+                seen_objek_ids.add(str(oid))
             features.append(
                 {
                     "type": "Feature",
                     "geometry": f.get("geometry"),
                     "properties": {
-                        "id": props.get("id"),
+                        "id": oid,
                         "nama": props.get("nama"),
                         "kab_kota": props.get("kab_kota"),
                         "tipe": props.get("tipe") or "objek",
@@ -615,6 +742,46 @@ def export_spatial_layers(kab_records: list[dict]):
                     },
                 }
             )
+
+    # Expand mappable registry rows (enriched/override) ke centroid kab — proksi, bukan titik legal
+    expand_n = 0
+    for r in objek or []:
+        oid = str(r.get("id") or "")
+        if not oid or oid in seen_objek_ids:
+            continue
+        if str(r.get("mappable") or "").strip().lower() not in {"ya", "true", "1", "yes"}:
+            continue
+        kab = r.get("kab_primary") or ""
+        if not kab or str(kab).strip().upper() == "MULTI":
+            continue
+        rec = match_kab_record(kab_records, str(kab))
+        if not rec or rec.get("lon") is None or rec.get("lat") is None:
+            continue
+        expand_n += 1
+        seen_objek_ids.add(oid)
+        features.append(
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [rec["lon"], rec["lat"]],
+                },
+                "properties": {
+                    "id": oid,
+                    "nama": r.get("nama"),
+                    "kab_kota": kab,
+                    "tipe": "centroid_kab_proksi",
+                    "prioritas": r.get("prioritas"),
+                    "perusahaan": r.get("nama"),
+                    "catatan": "Proksi centroid kab dari objek mappable (enriched/override).",
+                    "polres_proksi": r.get("polres_primary") or rec.get("polres_proksi"),
+                    "sumber": "objek_agrinas_mappable_expand",
+                    "layer": "objek_titik",
+                },
+            }
+        )
+    if expand_n:
+        print(f"    objek_titik expand centroid-kab: +{expand_n}")
 
     # Koridor dari bbox teks; fallback envelope dari anggota kab
     koridor_n = 0
@@ -1415,7 +1582,67 @@ def count_objek_mappable(objek: list[dict]) -> int:
     )
 
 
-def export_meta(counts: dict, catatan: str | None = None):
+def export_meta(
+    counts: dict,
+    catatan: str | None = None,
+    coverage_bias: dict | None = None,
+):
+    # Preserve counts owned by later pipeline steps (dossier / entity_matches).
+    meta_path = OUT / "meta.json"
+    if meta_path.exists():
+        try:
+            prev = json.loads(meta_path.read_text(encoding="utf-8")).get("counts") or {}
+            for k in ("dossier", "entity_matches"):
+                if k not in counts and k in prev:
+                    counts[k] = prev[k]
+        except Exception:
+            pass
+    # Align with on-disk gold if present (export may run before materialize).
+    for fname, key in (("dossier.json", "dossier"), ("entity_matches.json", "entity_matches")):
+        fpath = OUT / fname
+        if key not in counts and fpath.exists():
+            try:
+                payload = json.loads(fpath.read_text(encoding="utf-8"))
+                recs = payload.get("records") if isinstance(payload, dict) else None
+                if isinstance(recs, list):
+                    counts[key] = len(recs)
+                elif isinstance(payload, dict) and "total" in payload:
+                    counts[key] = int(payload["total"])
+            except Exception:
+                pass
+    methodology = {
+        "skor_type": "indeks_liputan_objek_register",
+        "disclaimer": (
+            "Indeks liputan+objek+register terbuka — bukan vonis operasional. "
+            f"Setelah DQ: {counts.get('entri_terpetakan', '–')}/"
+            f"{counts.get('entri_tidak_terpetakan', '–')} entri terpetakan/tidak. "
+            "Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi."
+        ),
+        "blend_default": "70% OSINT + 30% register",
+        "kalibrasi": "Menunggu rekap LP/SPKT 36 bulan resmi",
+        "dq_note": (
+            "DQ plan applied: noise kasus dropped; tanpa_lp flag; kab_primary pada objek; "
+            "match_id cocokan; sk36 record_id; company alias; atlas_full; izin_2017 vintage; "
+            "kasus SoT = master_kasus_sawit_riau_gold.csv; objek geo dari enriched+override."
+        ),
+        "dual_grain": (
+            "objek_agrinas = entity registry; objek_titik = proksi spasial campuran; "
+            "objek_mappable = subset registry yang layak diplot. Jangan bandingkan titik vs registry 1:1."
+        ),
+        "izin_2017": (
+            "Rekap perizinan perkebunan vintage 2017 — bukan status izin terkini."
+        ),
+        "kasus_grain": (
+            "Serving kasus = register gold (master + Extended LP). "
+            "CSV ringkas master_kasus_sawit_riau.csv adalah subset/legacy fallback."
+        ),
+    }
+    if coverage_bias:
+        methodology["coverage_bias"] = coverage_bias
+        if coverage_bias.get("bias_flag"):
+            methodology["disclaimer"] = (
+                methodology["disclaimer"] + " " + str(coverage_bias.get("note") or "")
+            ).strip()
     write_json(
         "meta.json",
         {
@@ -1435,30 +1662,12 @@ def export_meta(counts: dict, catatan: str | None = None):
                 {"id": "gfw_konsesi", "label": "Konsesi GFW", "default": False},
             ],
             "views": ["peta", "analisis", "cerita", "data"],
-            "methodology": {
-                "skor_type": "indeks_liputan_objek_register",
-                "disclaimer": (
-                    "Indeks liputan+objek+register terbuka — bukan vonis operasional. "
-                    f"Setelah DQ: {counts.get('entri_terpetakan', '–')}/"
-                    f"{counts.get('entri_tidak_terpetakan', '–')} entri terpetakan/tidak. "
-                    "Kalibrasi ulang dengan rekap LP/SPKT 36 bulan resmi."
-                ),
-                "blend_default": "70% OSINT + 30% register",
-                "kalibrasi": "Menunggu rekap LP/SPKT 36 bulan resmi",
-                "dq_note": (
-                    "DQ plan applied: noise kasus dropped; tanpa_lp flag; kab_primary pada objek; "
-                    "match_id cocokan; sk36 record_id; company alias; atlas_full; izin_2017 vintage."
-                ),
-                "dual_grain": (
-                    "objek_agrinas = entity registry; objek_titik = proksi spasial campuran; "
-                    "objek_mappable = subset registry yang layak diplot. Jangan bandingkan titik vs registry 1:1."
-                ),
-                "izin_2017": (
-                    "Rekap perizinan perkebunan vintage 2017 — bukan status izin terkini."
-                ),
-            },
+            "methodology": methodology,
             "sumber": [
+                "master_kasus_sawit_riau_gold.csv",
                 "TABEL_KONFLIK_AGRARIA_SAWIT_RIAU",
+                "master_list_objek_agrinas_enriched.csv",
+                "geo_objek_override.csv",
                 "Master_List_Objek_Agrinas_Satgas_Riau",
                 "Ranking_Potensi_Konflik_Per_Polres",
                 "cluster_kabkota_agrinas",
@@ -1476,7 +1685,6 @@ def export_meta(counts: dict, catatan: str | None = None):
                 "Baseline_Publik_Rantai_Satgas_Agrinas",
             ],
             "update_command": (
-                "python website/scripts/apply_dq_fixes.py && "
                 "python website/scripts/export_web_data.py && "
                 "python website/scripts/materialize_serving.py"
             ),
@@ -1513,6 +1721,7 @@ def main():
     apply_fase2_objek_flags(ROOT, objek)
     write_json("objek_agrinas.json", {"total": len(objek), "records": objek})
     kasus = export_kasus()
+    coverage_bias = kasus_coverage_stats(kasus)
     patch_polres_coverage(kasus, polres)
     attach_kasus_counts(kab_records, kasus)
     write_json("kab_kota.json", {"updated": True, "records": kab_records})
@@ -1524,7 +1733,7 @@ def main():
     atlas_full = export_konsesi_atlas()
     export_penertiban()
     gfw_full = export_konsesi_gfw_full()
-    geo = export_spatial_layers(kab_records)
+    geo = export_spatial_layers(kab_records, objek)
     gfw = export_gfw_overlay()
     export_analytics(polres, objek, kasus)
     desa_payload = export_desa_lock(ROOT, OUT)
@@ -1588,6 +1797,7 @@ def main():
             counts["objek_mappable"],
             counts["objek_titik"],
         ),
+        coverage_bias=coverage_bias,
     )
     # DQ gate + report
     try:

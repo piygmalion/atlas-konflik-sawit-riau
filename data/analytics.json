@@ -710,39 +710,39 @@
     ],
     "by_jenis": {
       "2025": {
-        "Situasional KSO/Agrinas": 1,
-        "Sengketa lahan": 8,
+        "Situasional KSO/Agrinas": 2,
+        "Sengketa lahan": 23,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 7
+        "Lainnya": 27
       },
       "2024": {
         "Situasional KSO/Agrinas": 0,
-        "Sengketa lahan": 4,
+        "Sengketa lahan": 10,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 4
+        "Lainnya": 34
       },
       "2026": {
-        "Situasional KSO/Agrinas": 77,
-        "Sengketa lahan": 15,
+        "Situasional KSO/Agrinas": 84,
+        "Sengketa lahan": 35,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 0
+        "Lainnya": 10
       },
       "2021": {
         "Situasional KSO/Agrinas": 0,
         "Sengketa lahan": 2,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 0
+        "Lainnya": 15
       },
       "2023": {
         "Situasional KSO/Agrinas": 0,
         "Sengketa lahan": 4,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 3
+        "Lainnya": 23
       },
       "2019": {
         "Situasional KSO/Agrinas": 0,
@@ -753,78 +753,101 @@
       },
       "2020": {
         "Situasional KSO/Agrinas": 0,
-        "Sengketa lahan": 0,
+        "Sengketa lahan": 1,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 2
+        "Lainnya": 20
       },
       "2018": {
         "Situasional KSO/Agrinas": 0,
         "Sengketa lahan": 2,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 0
+        "Lainnya": 1
       },
       "2022": {
         "Situasional KSO/Agrinas": 0,
-        "Sengketa lahan": 1,
+        "Sengketa lahan": 2,
         "Ekonomi": 0,
         "Aksi / kekerasan": 0,
-        "Lainnya": 0
+        "Lainnya": 12
       }
     },
     "by_polres": {
       "2025": {
         "Bengkalis": 1,
-        "Inhu": 1,
+        "Indragiri Hulu": 1,
         "Polda Riau (Ditreskrimum)": 6,
-        "Kuansing": 3,
-        "Rohil": 2,
-        "Rohul": 1,
-        "Dumai": 1,
-        "Polda Riau (Intelkam)": 1
+        "Kuantan Singingi": 5,
+        "Rokan Hilir": 2,
+        "Rokan Hulu": 2,
+        "Dumai": 2,
+        "Polda Riau (Intelkam)": 1,
+        "Kampar": 31,
+        "Siak": 1
       },
       "2024": {
         "Polda Riau (Ditreskrimum)": 5,
-        "Dumai": 1,
-        "Rohil": 1,
-        "Siak": 1
+        "Dumai": 4,
+        "Rokan Hilir": 1,
+        "Siak": 4,
+        "Kampar": 21,
+        "Kuantan Singingi": 9
       },
       "2026": {
-        "Inhil": 2,
-        "Inhu": 5,
-        "Kuansing": 2,
+        "Indragiri Hilir": 4,
+        "Indragiri Hulu": 6,
+        "Kuantan Singingi": 3,
         "Polda Riau (Ditreskrimum)": 3,
-        "Rohil": 2,
-        "Rohul": 2,
-        "Polda Riau (Intelkam)": 76
+        "Rokan Hilir": 2,
+        "Rokan Hulu": 6,
+        "Polda Riau (Intelkam)": 76,
+        "Kampar": 22,
+        "Pelalawan": 5,
+        "Pekanbaru": 1,
+        "Kepulauan Meranti": 1
       },
       "2021": {
-        "Inhu": 1,
-        "Rohil": 1
+        "Indragiri Hulu": 1,
+        "Rokan Hilir": 1,
+        "Kampar": 1,
+        "Dumai": 12,
+        "Kuantan Singingi": 2
       },
       "2023": {
-        "Inhu": 1,
+        "Indragiri Hulu": 1,
         "Polda Riau (Ditreskrimum)": 3,
-        "Kuansing": 2,
-        "Siak": 1
+        "Kuantan Singingi": 10,
+        "Siak": 1,
+        "Kampar": 3,
+        "Dumai": 9
       },
       "2019": {
         "Polda Riau (Ditreskrimum)": 1
       },
       "2020": {
-        "Polda Riau (Ditreskrimum)": 2
+        "Polda Riau (Ditreskrimum)": 2,
+        "Kampar": 1,
+        "Dumai": 14,
+        "Kuantan Singingi": 4
       },
       "2018": {
-        "Kuansing": 1,
-        "Rohil": 1
+        "Kuantan Singingi": 1,
+        "Rokan Hilir": 1,
+        "Kampar": 1
       },
       "2022": {
-        "Kuansing": 1
+        "Kuantan Singingi": 1,
+        "Kampar": 1,
+        "Dumai": 12
       }
     },
     "disebut": {
       "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
         "2024",
         "2025",
         "2026"
@@ -832,45 +855,99 @@
       "by_jenis": {
         "2025": {
           "Situasional KSO/Agrinas": 1,
-          "Sengketa lahan": 3,
+          "Sengketa lahan": 15,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 10
+          "Lainnya": 27
         },
         "2024": {
           "Situasional KSO/Agrinas": 0,
-          "Sengketa lahan": 2,
+          "Sengketa lahan": 7,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 40
+        },
+        "2026": {
+          "Situasional KSO/Agrinas": 84,
+          "Sengketa lahan": 45,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 21
+        },
+        "2020": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 0,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 14
+        },
+        "2021": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 0,
+          "Ekonomi": 0,
+          "Aksi / kekerasan": 0,
+          "Lainnya": 14
+        },
+        "2022": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 0,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
           "Lainnya": 10
         },
-        "2026": {
-          "Situasional KSO/Agrinas": 77,
-          "Sengketa lahan": 24,
+        "2023": {
+          "Situasional KSO/Agrinas": 0,
+          "Sengketa lahan": 0,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 11
+          "Lainnya": 17
         }
       },
       "by_polres": {
         "2025": {
           "Bengkalis": 1,
           "Polda Riau (Ditreskrimum)": 12,
-          "Polda Riau (Intelkam)": 1
+          "Polda Riau (Intelkam)": 1,
+          "Kampar": 27,
+          "Siak": 1,
+          "Kuantan Singingi": 1
         },
         "2024": {
-          "Polda Riau (Ditreskrimum)": 12
+          "Polda Riau (Ditreskrimum)": 12,
+          "Kampar": 20,
+          "Siak": 3,
+          "Dumai": 3,
+          "Kuantan Singingi": 9
         },
         "2026": {
           "Polda Riau (Ditreskrimum)": 13,
-          "Inhil": 2,
-          "Inhu": 5,
-          "Kuansing": 5,
-          "Rohil": 5,
-          "Rohul": 3,
+          "Indragiri Hilir": 4,
+          "Indragiri Hulu": 6,
+          "Kuantan Singingi": 6,
+          "Rokan Hilir": 5,
+          "Rokan Hulu": 7,
           "Dumai": 2,
           "Siak": 1,
-          "Polda Riau (Intelkam)": 76
+          "Polda Riau (Intelkam)": 76,
+          "Kampar": 23,
+          "Pelalawan": 5,
+          "Pekanbaru": 1,
+          "Kepulauan Meranti": 1
+        },
+        "2020": {
+          "Dumai": 10,
+          "Kuantan Singingi": 4
+        },
+        "2021": {
+          "Dumai": 12,
+          "Kuantan Singingi": 2
+        },
+        "2022": {
+          "Dumai": 10
+        },
+        "2023": {
+          "Dumai": 9,
+          "Kuantan Singingi": 8
         }
       }
     },
@@ -888,39 +965,39 @@
       ],
       "by_jenis": {
         "2025": {
-          "Situasional KSO/Agrinas": 1,
-          "Sengketa lahan": 8,
+          "Situasional KSO/Agrinas": 2,
+          "Sengketa lahan": 23,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 7
+          "Lainnya": 27
         },
         "2024": {
           "Situasional KSO/Agrinas": 0,
-          "Sengketa lahan": 4,
+          "Sengketa lahan": 10,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 4
+          "Lainnya": 34
         },
         "2026": {
-          "Situasional KSO/Agrinas": 77,
-          "Sengketa lahan": 15,
+          "Situasional KSO/Agrinas": 84,
+          "Sengketa lahan": 35,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 0
+          "Lainnya": 10
         },
         "2021": {
           "Situasional KSO/Agrinas": 0,
           "Sengketa lahan": 2,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 0
+          "Lainnya": 15
         },
         "2023": {
           "Situasional KSO/Agrinas": 0,
           "Sengketa lahan": 4,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 3
+          "Lainnya": 23
         },
         "2019": {
           "Situasional KSO/Agrinas": 0,
@@ -931,74 +1008,93 @@
         },
         "2020": {
           "Situasional KSO/Agrinas": 0,
-          "Sengketa lahan": 0,
+          "Sengketa lahan": 1,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 2
+          "Lainnya": 20
         },
         "2018": {
           "Situasional KSO/Agrinas": 0,
           "Sengketa lahan": 2,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 0
+          "Lainnya": 1
         },
         "2022": {
           "Situasional KSO/Agrinas": 0,
-          "Sengketa lahan": 1,
+          "Sengketa lahan": 2,
           "Ekonomi": 0,
           "Aksi / kekerasan": 0,
-          "Lainnya": 0
+          "Lainnya": 12
         }
       },
       "by_polres": {
         "2025": {
           "Bengkalis": 1,
-          "Inhu": 1,
+          "Indragiri Hulu": 1,
           "Polda Riau (Ditreskrimum)": 6,
-          "Kuansing": 3,
-          "Rohil": 2,
-          "Rohul": 1,
-          "Dumai": 1,
-          "Polda Riau (Intelkam)": 1
+          "Kuantan Singingi": 5,
+          "Rokan Hilir": 2,
+          "Rokan Hulu": 2,
+          "Dumai": 2,
+          "Polda Riau (Intelkam)": 1,
+          "Kampar": 31,
+          "Siak": 1
         },
         "2024": {
           "Polda Riau (Ditreskrimum)": 5,
-          "Dumai": 1,
-          "Rohil": 1,
-          "Siak": 1
+          "Dumai": 4,
+          "Rokan Hilir": 1,
+          "Siak": 4,
+          "Kampar": 21,
+          "Kuantan Singingi": 9
         },
         "2026": {
-          "Inhil": 2,
-          "Inhu": 5,
-          "Kuansing": 2,
+          "Indragiri Hilir": 4,
+          "Indragiri Hulu": 6,
+          "Kuantan Singingi": 3,
           "Polda Riau (Ditreskrimum)": 3,
-          "Rohil": 2,
-          "Rohul": 2,
-          "Polda Riau (Intelkam)": 76
+          "Rokan Hilir": 2,
+          "Rokan Hulu": 6,
+          "Polda Riau (Intelkam)": 76,
+          "Kampar": 22,
+          "Pelalawan": 5,
+          "Pekanbaru": 1,
+          "Kepulauan Meranti": 1
         },
         "2021": {
-          "Inhu": 1,
-          "Rohil": 1
+          "Indragiri Hulu": 1,
+          "Rokan Hilir": 1,
+          "Kampar": 1,
+          "Dumai": 12,
+          "Kuantan Singingi": 2
         },
         "2023": {
-          "Inhu": 1,
+          "Indragiri Hulu": 1,
           "Polda Riau (Ditreskrimum)": 3,
-          "Kuansing": 2,
-          "Siak": 1
+          "Kuantan Singingi": 10,
+          "Siak": 1,
+          "Kampar": 3,
+          "Dumai": 9
         },
         "2019": {
           "Polda Riau (Ditreskrimum)": 1
         },
         "2020": {
-          "Polda Riau (Ditreskrimum)": 2
+          "Polda Riau (Ditreskrimum)": 2,
+          "Kampar": 1,
+          "Dumai": 14,
+          "Kuantan Singingi": 4
         },
         "2018": {
-          "Kuansing": 1,
-          "Rohil": 1
+          "Kuantan Singingi": 1,
+          "Rokan Hilir": 1,
+          "Kampar": 1
         },
         "2022": {
-          "Kuansing": 1
+          "Kuantan Singingi": 1,
+          "Kampar": 1,
+          "Dumai": 12
         }
       }
     },

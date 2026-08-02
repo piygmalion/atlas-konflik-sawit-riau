@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-31T00:20:19+07:00",
+  "generated_at": "2026-08-02T09:31:21+07:00",
   "validate_exit_code": 0,
   "validate_pass": true,
-  "validate_stdout": "=== validate_web_data ===\ndata: website/data\nkasus=113 objek=139 kab=12 polres=12 gfw=287\nRESULT: PASS (0 warnings)\n",
+  "validate_stdout": "=== validate_web_data ===\ndata: website/data\nkasus=270 objek=139 kab=12 polres=12 gfw=287\nRESULT: PASS (0 warnings)\n",
   "validate_stderr": "",
   "grade_counts": {
-    "A": 26,
-    "C": 1
+    "A": 25,
+    "C": 3
   },
   "overview": [
     {
@@ -46,7 +46,8 @@
       "grade": "A",
       "note": "bersih",
       "top_null_fields": [
-        "polres_primary 75.5%",
+        "fase2_gap 97.1%",
+        "mitra_eval 87.1%",
         "kab_list 74.8%",
         "mitra_pair 30.9%",
         "luas_disebut 10.1%"
@@ -54,18 +55,18 @@
     },
     {
       "table": "kasus.json",
-      "n": 113,
+      "n": 270,
       "status": "ok",
-      "avg_fill_important": 100.0,
+      "avg_fill_important": 90.3,
       "pk_dup_groups": 0,
-      "grade": "A",
-      "note": "bersih",
+      "grade": "C",
+      "note": "1 important fields >=20% null",
       "top_null_fields": [
-        "tanpa_lp_alasan 100.0%",
-        "hambatan 97.3%",
-        "nomor_lp 85.8%",
-        "status 75.2%",
-        "upaya 66.4%"
+        "tanpa_lp_alasan 99.6%",
+        "hambatan 70.7%",
+        "perusahaan 58.9%",
+        "tema 58.1%",
+        "upaya 54.8%"
       ]
     },
     {
@@ -109,6 +110,22 @@
         "ada_di_bps 45.8%",
         "area_ha 16.7%",
         "gfwid 16.7%"
+      ]
+    },
+    {
+      "table": "konsesi.json::atlas_full",
+      "n": 436,
+      "status": "ok",
+      "avg_fill_important": 85.3,
+      "pk_dup_groups": 0,
+      "grade": "C",
+      "note": "2 important fields >=20% null",
+      "top_null_fields": [
+        "ispo 100.0%",
+        "luas_izin_ha 99.5%",
+        "nomor_izin 99.1%",
+        "status_izin 96.8%",
+        "tipe_izin 94.5%"
       ]
     },
     {
@@ -175,18 +192,18 @@
     },
     {
       "table": "layers.geojson",
-      "n": 70,
+      "n": 130,
       "status": "ok",
       "avg_fill_important": 93.2,
       "pk_dup_groups": 0,
       "grade": "C",
-      "note": "1 important fields >=20% null",
+      "note": "2 important fields >=20% null",
       "top_null_fields": [
-        "anggota_kab 92.9%",
-        "karakter 92.9%",
-        "level_risiko 84.3%",
-        "n_kasus 84.3%",
-        "skor 84.3%"
+        "osint 96.9%",
+        "anggota_kab 96.2%",
+        "karakter 96.2%",
+        "skor_register 91.5%",
+        "level_risiko 90.8%"
       ]
     },
     {
@@ -377,30 +394,30 @@
     }
   ],
   "cross": {
-    "layers_objek_titik": 54,
+    "layers_objek_titik": 98,
     "objek_total": 139,
     "kab_n": 12,
     "polres_n": 12,
-    "kasus_n": 113,
-    "kasus_ops_n": 16,
+    "kasus_n": 270,
+    "kasus_ops_n": 164,
     "kasus_ops_lp_fill_pct": 100.0,
     "kasus_ops_status_fill_pct": 100.0,
-    "kasus_polres_distinct": 10,
+    "kasus_polres_distinct": 14,
     "kasus_polres_null": 0,
-    "kasus_nomor_lp_null": 97,
+    "kasus_nomor_lp_null": 103,
     "kasus_uraian_null": 3,
-    "kasus_perusahaan_null": 21,
+    "kasus_perusahaan_null": 159,
     "kasus_kategori_null": 10,
     "kasus_jenis_null": 30,
     "objek_kab_primary_filled": 139,
-    "objek_kab_primary_single": 34,
-    "objek_kab_multi_or_broad": 105,
+    "objek_kab_primary_single": 111,
+    "objek_kab_multi_or_broad": 28,
     "objek_mitra_pair_null": 43,
     "perusahaan_norm_dup_groups": 0,
     "perusahaan_norm_dup_rows": 0,
-    "gfw_companies": 199,
+    "gfw_companies": 175,
     "atlas_companies": 289,
-    "company_name_overlap_norm": 92
+    "company_name_overlap_norm": 111
   },
   "baseline_cross": {
     "layers_objek_titik": 20,
